@@ -67,7 +67,7 @@
                                     "tabWidget": {
                                         "selectedIndex": 0,
                                         "controlWidth": 40,
-                                        "controlHeight": 755,
+                                        "controlHeight": 731,
                                         "collapsed": false,
                                         "controls": [
                                             {
@@ -83,7 +83,7 @@
                                                 "widthProperty": "fixed",
                                                 "heightProperty": "free",
                                                 "controlWidth": 40,
-                                                "controlHeight": 755
+                                                "controlHeight": 731
                                             }
                                         ]
                                     }
@@ -92,7 +92,7 @@
                                     "tabWidget": {
                                         "selectedIndex": 0,
                                         "controlWidth": 260,
-                                        "controlHeight": 901,
+                                        "controlHeight": 742,
                                         "controls": [
                                             {
                                                 "objectName": "Outliner",
@@ -117,7 +117,7 @@
                                     "tabWidget": {
                                         "selectedIndex": 0,
                                         "controlWidth": 949,
-                                        "controlHeight": 755,
+                                        "controlHeight": 731,
                                         "collapsed": false,
                                         "controls": [
                                             {
@@ -133,7 +133,7 @@
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
                                                 "controlWidth": 949,
-                                                "controlHeight": 755,
+                                                "controlHeight": 731,
                                                 "initCallback": "mainPaneStateCallback",
                                                 "stateString": "global string $gMainPane; paneLayout -edit -configuration single $gMainPane;if(`modelPanel -exists modelPanel4`){ modelPanel -edit -parent $gMainPane modelPanel4; paneLayout -edit -setPane modelPanel4 1 $gMainPane;}"
                                             }
@@ -144,7 +144,7 @@
                                     "tabWidget": {
                                         "selectedIndex": 0,
                                         "controlWidth": 260,
-                                        "controlHeight": 755,
+                                        "controlHeight": 731,
                                         "collapsed": false,
                                         "controls": [
                                             {
@@ -160,7 +160,7 @@
                                                 "widthProperty": "preferred",
                                                 "heightProperty": "free",
                                                 "controlWidth": 260,
-                                                "controlHeight": 755
+                                                "controlHeight": 731
                                             },
                                             {
                                                 "objectName": "NEXDockControl",
@@ -205,7 +205,7 @@
                         "tabWidget": {
                             "selectedIndex": 0,
                             "controlWidth": 1276,
-                            "controlHeight": 36,
+                            "controlHeight": 60,
                             "collapsed": false,
                             "controls": [
                                 {
