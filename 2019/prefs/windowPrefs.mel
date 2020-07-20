@@ -21,3 +21,5 @@ windowPref -topLeftCorner 480 905 -widthHeight 450 320 -maximized false -parentM
 windowPref -topLeftCorner 210 390 -widthHeight 958 658 -maximized false -parentMain true PreferencesWindow;
 windowPref -topLeftCorner 341 493 -widthHeight 1427 700 -maximized false -parentMain true HotkeyEditor;
 windowPref -topLeftCorner 480 905 -widthHeight 256 262 -maximized false -parentMain true uvSetEditor;
+windowPref -topLeftCorner 480 905 -widthHeight 470 540 -maximized false -parentMain true shelfEditor;
+windowPref -topLeftCorner 480 905 -widthHeight 450 411 -maximized false -parentMain true pluginManagerWindow;

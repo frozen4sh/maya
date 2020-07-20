@@ -1,4 +1,4 @@
-global proc shelf_XGen () {
+global proc shelf_Sculpting () {
     global string $gBuffStr;
     global string $gBuffStr0;
     global string $gBuffStr1;
@@ -14,12 +14,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Open the XGen Window" 
+        -annotation "Lift a surface" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Open Description Editor" 
+        -label "Sculpt Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -28,14 +28,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgDEditor.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgDEditor.png" 
+        -image "Sculpt.png" 
+        -image1 "Sculpt.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "if (!`pluginInfo -q -loaded xgenToolkit`) loadPlugin xgenToolkit.mll;XgCreateDescriptionEditor" 
+        -command "SetMeshSculptTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshSculptToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -49,12 +49,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Update the XGen Preview" 
+        -annotation "Smooth the surface of a mesh." 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Update Preview" 
+        -label "Smooth Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -63,14 +63,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgPreview.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgPreview.png" 
+        -image "Smooth.png" 
+        -image1 "Smooth.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "XgPreview" 
+        -command "SetMeshSmoothTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshSmoothToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -84,12 +84,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Clear the XGen Preview" 
+        -annotation "Smooth the surface of a mesh without changing its original shape." 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Clear Preview" 
+        -label "Relax Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -98,14 +98,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgPreviewClear.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgPreviewClear.png" 
+        -image "Relax.png" 
+        -image1 "Relax.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "python(\"xgui.createDescriptionEditor(False).preview(True)\")" 
+        -command "SetMeshRelaxTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshRelaxToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -119,12 +119,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new XGen Description" 
+        -annotation "Pull a single vertex along a surface in any direction" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Create Description" 
+        -label "Grab Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -133,14 +133,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgCreateDescription.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgCreateDescription.png" 
+        -image "Grab.png" 
+        -image1 "Grab.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "if (!`pluginInfo -q -loaded xgenToolkit`) loadPlugin xgenToolkit.mll;XgCreateDescription" 
+        -command "SetMeshGrabTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshGrabToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -154,12 +154,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Patches bindings menu." 
+        -annotation "Sharpen soft edges" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Bind Patches" 
+        -label "Pinch Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -168,14 +168,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgBindFaces.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgBindFaces.png" 
+        -image "Pinch.png" 
+        -image1 "Pinch.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "python(\"from PySide2 import QtGui, QtCore, QtWidgets\\nfrom PySide2.QtGui import *\\nfrom PySide2.QtCore import *\\nfrom PySide2.QtWidgets import *\\nm = QMenu()\\nm.addAction(u\\\"Add Selected Faces\\\",  lambda: xgui.createDescriptionEditor(False).modifyBinding(\\\"Append\\\") )\\nm.addAction(u\\\"Replace with Selected Faces\\\", lambda: xgui.createDescriptionEditor(False).modifyBinding(\\\"Replace\\\") )\\nm.addAction(u\\\"Remove Selected Faces\\\",  lambda: xgui.createDescriptionEditor(False).modifyBinding(\\\"Remove\\\") )\\nm.addAction(u\\\"Bind Faces Based on Map...\\\",     lambda: xgui.createDescriptionEditor(False).modifyBinding(\\\"Map\\\") )\\nm.addSeparator()\\nm.addAction(u\\\"Select Bound Faces\\\",  lambda: xgui.createDescriptionEditor(False).selectBinding() )\\nm.popup(QCursor.pos())\\n\")" 
+        -command "SetMeshPinchTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshPinchToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -189,12 +189,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Add or Move Guides" 
+        -annotation "Level a surface" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Add/Move Guides" 
+        -label "Flatten Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -203,14 +203,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgGuideContext.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgGuideContext.png" 
+        -image "Flatten.png" 
+        -image1 "Flatten.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "XgGuideTool" 
+        -command "SetMeshFlattenTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshFlattenToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -224,12 +224,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Hide/Show the Guides of the current XGen Description" 
+        -annotation "Softly lift a surface." 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Toggle Guides Visibility" 
+        -label "Foamy Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -238,14 +238,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgToggleGuide.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgToggleGuide.png" 
+        -image "Foamy.png" 
+        -image1 "Foamy.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "python(\"xgen.toggleGuideDisplay(xgui.createDescriptionEditor(False).currentDescription())\")" 
+        -command "SetMeshFoamyTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshFoamyToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -259,12 +259,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Turn the Selectability of Guides on and off" 
+        -annotation "Randomly spray a stamp imprint on a surface" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Toggle Guides Selectability" 
+        -label "Spray Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -273,14 +273,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgToggleGuideReference.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgToggleGuideReference.png" 
+        -image "Spray.png" 
+        -image1 "Spray.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "python(\"xgen.toggleGuideReference(xgui.createDescriptionEditor(False).currentDescription())\")" 
+        -command "SetMeshSprayTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshSprayToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -294,12 +294,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Mirror selected Guides across the X-axis" 
+        -annotation "Stamp a pattern on a surface repeatedly." 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Mirror Guides X-axis" 
+        -label "Repeat Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -308,14 +308,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgFlipGuides.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgFlipGuides.png" 
+        -image "Repeat.png" 
+        -image1 "Repeat.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "xgmFlipGuides( python(\"xgui.createDescriptionEditor(False).currentDescription()\") )" 
+        -command "SetMeshRepeatTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshRepeatToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -329,12 +329,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Match XGen patch visibility to geometry visibility." 
+        -annotation "Imprint a single copy of a stamp on a surface" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Sync Patch Visibility" 
+        -label "Imprint Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -343,14 +343,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgSyncPatchVisibility.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgSyncPatchVisibility.png" 
+        -image "Imprint.png" 
+        -image1 "Imprint.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "xgmSyncPatchVisibility" 
+        -command "SetMeshImprintTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshImprintToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -364,12 +364,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Flip selected between patches and their associated geometry" 
+        -annotation "Build up a surface" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Flip Selected" 
+        -label "Wax Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -378,14 +378,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgSelectionToggle.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgSelectionToggle.png" 
+        -image "Wax.png" 
+        -image1 "Wax.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "python(\"xgen.selectionToggle(xgui.createDescriptionEditor(False).currentDescription())\")" 
+        -command "SetMeshWaxTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshWaxToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -399,12 +399,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Select Primitives\nMMB to Isolate Primitves" 
+        -annotation "Minimize or remove raised areas on a surface" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Select Primitives" 
+        -label "Scrape Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -413,14 +413,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgPrimSelection.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgPrimSelection.png" 
+        -image "Scrape.png" 
+        -image1 "Scrape.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "python(\"xgui.createDescriptionEditor(False).primSelectionContext()\")" 
+        -command "SetMeshScrapeTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshScrapeToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -434,12 +434,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Cull selected Primitves\nMore culling options can be found in the Generator Tab" 
+        -annotation "Fill in the valleys on a surface" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Cull Primitives" 
+        -label "Fill Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -448,14 +448,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgCullPrimContextSelect.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgCullPrimContextSelect.png" 
+        -image "Fill.png" 
+        -image1 "Fill.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2015" 
-        -command "python(\"xgui.createDescriptionEditor(False).cullSelectedPrimitives()\")" 
+        -command "SetMeshFillTool" 
         -sourceType "mel" 
+        -doubleClickCommand "ShowMeshFillToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -469,12 +469,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Sculpt guides" 
+        -annotation "Cut fine strokes into a surface" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Sculpt Guides" 
+        -label "Knife Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -483,15 +483,14 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgGuideSculptTool.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgGuideSculptTool.png" 
+        -image "Knife.png" 
+        -image1 "Knife.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2016" 
-        -command "python(\"xgui.createDescriptionEditor(False).guideSculptContext(False)\")" 
+        -command "SetMeshKnifeTool" 
         -sourceType "mel" 
-        -doubleClickCommand "python(\"xgui.createDescriptionEditor(False).guideSculptContext(True)\")" 
+        -doubleClickCommand "ShowMeshKnifeToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -505,12 +504,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Convert primitives to polygons" 
+        -annotation "Pull a surface in the direction of the stroke" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Convert Primitives to Polygons" 
+        -label "Smear Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -519,26 +518,129 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgConvertToPoly.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgConvertToPoly.png" 
+        -image "Smear.png" 
+        -image1 "Smear.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2017" 
-        -command "python(\"import xgenm.xmaya.xgmConvertPrimToPolygon as cpp;cpp.convertPrimToPolygon(False)\")" 
+        -command "SetMeshSmearTool" 
         -sourceType "mel" 
-        -doubleClickCommand "python(\"import xgenm.xmaya.xgmConvertPrimToPolygon as cpp;cpp.convertPrimToPolygon(True)\")" 
+        -doubleClickCommand "ShowMeshSmearToolOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Inflate an area on a surface" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Bulge Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "Bulge.png" 
+        -image1 "Bulge.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SetMeshBulgeTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "ShowMeshBulgeToolOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Accentuate surface detail" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Amplify Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "Amplify.png" 
+        -image1 "Amplify.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SetMeshAmplifyTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "ShowMeshAmplifyToolOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Paint areas of a surface to prevent further modification" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Freeze Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "Freeze.png" 
+        -image1 "Freeze.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "SetMeshFreezeTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "ShowMeshFreezeToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
     separator
         -enable 1
-        -width 34
+        -width 12
         -height 35
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "XGenSeparator" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
@@ -555,12 +657,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Open the Interactive Groom Editor to create, edit, and manage grooms." 
+        -annotation "Convert To Frozen" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Interactive Groom Editor" 
+        -label "Convert To Frozen" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -569,13 +671,12 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_editor.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_editor.png" 
+        -image "freezeSelected.png" 
+        -image1 "freezeSelected.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -version "2017" 
-        -command "XgCreateIgSplineEditor" 
+        -command "ConvertToFrozen" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -590,12 +691,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create Interactive Groom Splines" 
+        -annotation "Open Content Browser for Sculpting Base Meshes" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Create Interactive Groom Splines" 
+        -label "Base Meshes" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -604,15 +705,62 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_creation.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_creation.png" 
+        -image "Objects.png" 
+        -image1 "Objects.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "OpenVisorForMeshes" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 12
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Shape Editor: Create, edit and manage shapes" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Shape Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "blendShapeEditor.png" 
+        -image1 "blendShapeEditor.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
         -version "2017" 
-        -command "XgmCreateInteractiveGroomSplinesOption" 
+        -command "ShapeEditor" 
         -sourceType "mel" 
-        -doubleClickCommand "XgmCreateInteractiveGroomSplinesOption" 
+        -doubleClickCommand "CreateBlendShapeOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -626,12 +774,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Add or reduce the number of hairs." 
+        -annotation "Pose Editor: Create, edit and manage pose space deformations" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Density Brush" 
+        -label "Pose Editor" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -640,15 +788,63 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_density.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_density.png" 
+        -image "poseEditor.png" 
+        -image1 "poseEditor.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
         -version "2017" 
-        -command "XgmSetDensityBrushTool" 
+        -command "PoseEditor" 
         -sourceType "mel" 
-        -doubleClickCommand "XgmSetDensityBrushToolOption" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 12
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Even out surface detail only for the current blend shape target in Edit mode" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Smooth Target Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "SmoothTarget.png" 
+        -image1 "SmoothTarget.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -version "2017" 
+        -command "SetMeshSmoothTargetTool" 
+        -sourceType "mel" 
+        -doubleClickCommand "ShowMeshSmoothTargetToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -662,12 +858,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Adds a single hair." 
+        -annotation "Copy edits from a blend shape target source to the current target in Edit mode" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Place Brush" 
+        -label "Clone Target Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -676,15 +872,15 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_place.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_place.png" 
+        -image "CloneTarget.png" 
+        -image1 "CloneTarget.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
         -version "2017" 
-        -command "XgmSetPlaceBrushTool" 
+        -command "SetMeshCloneTargetTool" 
         -sourceType "mel" 
-        -doubleClickCommand "XgmSetPlaceBrushToolOption" 
+        -doubleClickCommand "ShowMeshCloneTargetToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -698,12 +894,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Lengthen or shorten hairs." 
+        -annotation "Paint areas on a mesh to hide edits for the current blend shape target in Edit mode" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Length Brush" 
+        -label "Mask Target Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -712,15 +908,15 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_length.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_length.png" 
+        -image "Mask.png" 
+        -image1 "Mask.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
         -version "2017" 
-        -command "XgmSetLengthBrushTool" 
+        -command "SetMeshMaskTool" 
         -sourceType "mel" 
-        -doubleClickCommand "XgmSetLengthBrushToolOption" 
+        -doubleClickCommand "ShowMeshMaskToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -734,12 +930,12 @@ global proc shelf_XGen () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Trim hairs." 
+        -annotation "Remove edits for the current blend shape target in Edit mode" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Cut Brush" 
+        -label "Erase Target Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -748,375 +944,15 @@ global proc shelf_XGen () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_cut.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_cut.png" 
+        -image "Erase.png" 
+        -image1 "Erase.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
         -version "2017" 
-        -command "XgmSetCutBrushTool" 
+        -command "SetMeshEraseTool" 
         -sourceType "mel" 
-        -doubleClickCommand "XgmSetCutBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Scales the width of hairs." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Width Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_width.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_width.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetWidthBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetWidthBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Rotates the primitive faces of hairs." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Twist Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_twist.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_twist.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetDirectionBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetDirectionBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Change the orientation and bend of hairs in the direction of the brush stroke." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Comb Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_comb.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_comb.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetCombBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetCombBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Pulls a selection of hairs in any direction." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Grab Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_grab.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_grab.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetGrabBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetGrabBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Straightens hairs or smooth transitions between hairs of different size and shape." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Smooth Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_smooth.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_smooth.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetSmoothBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetSmoothBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Noise Tool: Paint 3D noise to vary hair orientation making hair appear more natural." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Noise Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_noise.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_noise.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetNoiseBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetNoiseBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Pull hairs together to form clumps." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Clump Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_clump.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_clump.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetClumpBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetClumpBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Push hairs away from each other." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Part Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_part.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_part.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetPartBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetPartBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Lock hairs so they cannot be modified." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Freeze Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_freeze.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_freeze.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetFreezeBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetFreezeBrushToolOption" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Select hairs by painting." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Select Brush" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_select.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2019/plug-ins/xgen//icons/xgIG_select.png" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -version "2017" 
-        -command "XgmSetSelectBrushTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "XgmSetSelectBrushToolOption" 
+        -doubleClickCommand "ShowMeshEraseToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;
