@@ -533,7 +533,7 @@ global proc shelf_XGen () {
     ;
     separator
         -enable 1
-        -width 12
+        -width 34
         -height 35
         -manage 1
         -visible 1
