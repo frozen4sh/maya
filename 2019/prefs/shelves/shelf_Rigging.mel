@@ -723,5 +723,368 @@ global proc shelf_Rigging () {
         -commandRepeatable 1
         -flat 1
     ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "kisJoint_orientWin" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "kisJoint_orientWin" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "kisJoint_orientWin" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "kisJoint_orientWin" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "dxyzBridge" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "dxyzBridge" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "dxyzBridge" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "dxyzBridge" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "RISE FOLDER SET" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "# -*- coding: utf-8 -*- \n'''\n2020.04.02\n���� �̸� ���� �̸� ��..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "RISE FOLDER SET" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "folder-closed.png" 
+        -image1 "folder-closed.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "# -*- coding: utf-8 -*- \n'''\n2020.04.02\n���� �̸� ���� �̸� �߿� - ���� �����ϱ� ������.\n\n\n���߹ڽ� �ƹ��� �������?Ȯ�ο�\n\n\nimport sys\nsys.path.append(\"Z:/Teams/CINEMA/03.Animation/temp/animation_part_scripts/\")\nimport risefolderopen as rfo\nfrom risefolderopen import *\nreload(rfo)\nrfo.UI()\n'''\n\n\nimport maya.cmds as cmds\nimport os\nimport glob\nimport maya.mel as mel\n\n\n\nfilename=cmds.file(q=1,ns=1)\nfilenames=filename.split('_')\n#[u'9999', u'0010', u'anim', u'polishing', u'lod0', u'012', u'edit', u'03', u'02']\n\n\nprojectname = 'rise'\n\n\nglobal setdrive\nsetdrive = 'Z' # �ʱ⼳���� Z ����̺�?n\n\nglobal localdrive\nlocaldrive = 'D' # 'D', 'E', 'Y'\n\n\n#buttonlabel = 'scenes' # 'movies'\n\n\n#'Z:/Projects/rise/dev/shots/9999/0010/anim/polishing/maya/scenes/'\n\n\n#'%s:/Projects/%s/dev/shots/%s/%s/%s/%s/maya/%s/'%(localdrive,projectname,filenames[0],filenames[1],filenames[2],filenames[3],buttonlabel)\n\n\n\n'''\ndef localdriveset():\n    #localdrive = localdrive\n    global localdrive\n    if not localdrive == 'Z' :\n        localdrive = 'Z'\n    else :\n        localdrive = 'D'\n    return localdrive\n'''\n\n\n\n\ndef openfolder(buttonlabel):\n    dir = '%s:/Projects/%s/dev/shots/%s/%s/%s/%s/maya/%s/'%(setdrive,projectname,filenames[0],filenames[1],filenames[2],filenames[3],buttonlabel)\n    if not glob.glob(dir):\n        print dir\n        print 'non Path'\n    else :\n        os.startfile(dir)\n\n\n\n\n\ndef setprj():    \n    maya_dir = '%s:/Projects/%s/dev/shots/%s/%s/%s/%s/maya'%(setdrive,projectname,filenames[0],filenames[1],filenames[2],filenames[3])\n    #directory = maya_dir\n    def create_folder( directory ):\n        if not os.path.exists( directory ):\n            os.makedirs( directory )\n    \n    create_folder( maya_dir )\n    \n    for file_rule in cmds.workspace(query=True, fileRuleList=True):    \n        file_rule_dir = cmds.workspace(fileRuleEntry=file_rule)    \n        maya_file_rule_dir = os.path.join( maya_dir, file_rule_dir)    \n        create_folder( maya_file_rule_dir )\n    \n    mel.eval('setProject \\\"' + maya_dir + '\\\"')\n    # // Warning: file: C:/Program Files/Autodesk/Maya2019/scripts/others/setProject.mel line 304: A project definition file (workspace.mel) was not found at location D:/Projects/rise/dev/shots/9999/0010/anim/polishing/maya, a default project definition will be created. // \n    \n    cmds.confirmDialog( title='Confirm', message= ' set project :\\n\\n' + maya_dir , button='OK')\n\n\n\n\n\ndef UI():\n    win = 'openfolder'\n    if cmds.window(win,exists=1) :\n        cmds.deleteUI(win)\n    cmds.window(win,title=\"Open Folder       ( Hangouts : yslee@locus.com )\",widthHeight=(150,200),s=1,tlb=True)\n    cmds.columnLayout(adjustableColumn=1)\n    cmds.text(\"Rise Folder\\nselect drive\",fn=\"fixedWidthFont\",h=30)\n\n\n    cmds.radioCollection()\n    cmds.radioButton( label=localdrive , cc = \"setdrive = localdrive \" )\n    cmds.radioButton( label='Z' ,select =1, cc = \"setdrive = 'Z' \" )\n    \n    #cmds.textField('sqnumber', height=30 ,tx='Enter SQ num')\n    #cmds.textField('shotnumber', height=30 ,tx='Enter Shot num')\n    cmds.button(h=35,bgc=(0.7,0.8,0.8),l=\"set project\" ,c=\"setprj()\")\n    cmds.button(h=35,bgc=(0.8,0.8,0.8),l=\"Scene\",c=\"openfolder('scenes')\")\n    cmds.button(h=35,bgc=(0.9,0.8,0.8),l=\"Movies\" ,c=\"openfolder('movies')\")\n    #cmds.button(h=35,bgc=(0.1,0.1,0.1),l=\"Close\",c=\"win='openfolder';cmds.deleteUI(win)\")\n    cmds.showWindow(win)\n\n\n\n\nUI()\n\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    separator
+        -enable 1
+        -width 12
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as cmds\n\ncmds.file('D:\\Justin\\Greyworm\\Venjamin_Maya_reskined_FFX_BodyAnim.ma', open=True, f=1 )" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import maya.cmds as cmds\n\ncmds.file('D:\\Justin\\Greyworm\\Venjamin..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "openFile" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n\ncmds.file('D:\\Justin\\Greyworm\\Venjamin_Maya_reskined_FFX_BodyAnim.ma', open=True, f=1 )" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as cmds\n\ncmds.delete('Rig_Face_All', 'Rig_Facial_jnt_skin_grp')" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import maya.cmds as cmds\n\ncmds.delete('Rig_Face_All', 'Rig_Facia..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "delete" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as cmds\nimport maya.mel as mel\n\n'''\nif cmds.objExists('Rig_Face_All', 'Rig_Facial_jnt_skin_grp' ):\n    cmds.delete('Rig_Face_All', 'Rig_Facial_jnt_skin_grp')\n\nelse:\n  print(\"Warning: no exists.\")\n'''\n\nif cmds.objExists('Rig_Face_All' ):\n    cmds.delete('Rig_Face_All' )\n\nif cmds.objExists('Rig_Facial_jnt_skin_grp' ):\n    cmds.delete('Rig_Facial_jnt_skin_grp')\n\n  \n\n# cmds.delete('Rig_Face_All', 'Rig_Facial_jnt_skin_grp') \n\n\ncmds.select( 'Rig', hierarchy=True )\ncmds.cutKey( time=(0,0) )\ncmds.filterCurve( f=\"euler\" )\n\n\n \ndef setAnimRange():\n    objs = cmds.ls(sl= True)\n    timeRange= []\n    for obj in objs:\n        #obj = objs[0]\n        animAttributes = cmds.listAnimatable(obj)\n        \n        for attribute in animAttributes:\n            numKeyframes = cmds.keyframe(attribute, q= True, keyframeCount= True)\n            \n            if (numKeyframes > 0):\n                #print(\"--------------------------------\")\n                #print(\"Found \", numKeyframes, \" keyframes on \", attribute)\n                \n                times = cmds.keyframe(attribute, q= True, index= (0, numKeyframes), timeChange= True)\n                \n                values = cmds.keyframe(attribute, q= True, index= (0, numKeyframes), valueChange= True)\n                \n                #print('frame#, time, value')\n                for i in range(0, numKeyframes):\n                    #print(i, times[i], values[i])\n                    timeRange.append(times[i])\n                \n                #print(\"--------------------------------\")\n    keyRange= sorted(timeRange)\n    \n    cmds.playbackOptions(minTime= keyRange[0], maxTime= keyRange[-1])\n \nsetAnimRange()\n\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Export selected objects (and related info) to a new file" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Export Selection..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "ES" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconFile.png" 
+        -image1 "menuIconFile.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ExportSelection" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "performEulerFilter graphEditor1FromOutliner;\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "performEulerFilter graphEditor1FromOutliner;\n" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Euler" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "performEulerFilter graphEditor1FromOutliner;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "setAnimRange()\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAnimRange()\n" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "setAnimRange" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n \ndef setAnimRange():\n    objs = cmds.ls(sl= True)\n    timeRange= []\n    for obj in objs:\n        #obj = objs[0]\n        animAttributes = cmds.listAnimatable(obj)\n        \n        for attribute in animAttributes:\n            numKeyframes = cmds.keyframe(attribute, q= True, keyframeCount= True)\n            \n            if (numKeyframes > 0):\n                #print(\"--------------------------------\")\n                #print(\"Found \", numKeyframes, \" keyframes on \", attribute)\n                \n                times = cmds.keyframe(attribute, q= True, index= (0, numKeyframes), timeChange= True)\n                \n                values = cmds.keyframe(attribute, q= True, index= (0, numKeyframes), valueChange= True)\n                \n                #print('frame#, time, value')\n                for i in range(0, numKeyframes):\n                    #print(i, times[i], values[i])\n                    timeRange.append(times[i])\n                \n                #print(\"--------------------------------\")\n    keyRange= sorted(timeRange)\n    \n    cmds.playbackOptions(minTime= keyRange[0], maxTime= keyRange[-1])\n    #Justin Added set render range\n    cmds.setAttr('defaultRenderGlobals.startFrame', keyRange[0] )\n    cmds.setAttr('defaultRenderGlobals.endFrame',  keyRange[-1] )\n    \n \nsetAnimRange()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "from  Snappers.rig_manager import snappers_rig_manager\nsnappers_rig_manager.showRigManagerWindow()\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "from  Snappers.rig_manager import snappers_rig_manager\nsnappers_..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Snappers" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "from SnappersRigAManager import RigManager\nrig_manager = RigManager.create()\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "abSymMesh" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "abSymMesh" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "abSymMesh" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "abSymMesh" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
 
 } 

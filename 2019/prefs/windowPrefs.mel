@@ -23,3 +23,5 @@ windowPref -topLeftCorner 341 493 -widthHeight 1427 700 -maximized false -parent
 windowPref -topLeftCorner 480 905 -widthHeight 256 262 -maximized false -parentMain true uvSetEditor;
 windowPref -topLeftCorner 480 905 -widthHeight 470 540 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 480 905 -widthHeight 450 411 -maximized false -parentMain true pluginManagerWindow;
+windowPref -topLeftCorner 480 905 -widthHeight 500 500 -maximized false -parentMain true FbxWarningWindow;
+windowPref -topLeftCorner 295 1347 -widthHeight 726 645 -maximized false -parentMain true OptionBoxWindow;
