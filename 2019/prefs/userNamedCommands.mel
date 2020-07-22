@@ -128,3 +128,9 @@ nameCommand
 	-command ("SeparatePolygon")
 	SeparatePolygonNameCommand;
 
+nameCommand
+	-annotation "FrameAllNameCommand"
+	-sourceType "mel"
+	-command ("FrameAll")
+	FrameAllNameCommand;
+

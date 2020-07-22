@@ -29,3 +29,21 @@ The following display layers are affected: Export_Bone Ani_Body Model Twist_Body
 The following display layers are affected: Export_Bone Ani_Body Model Twist_Body Weapon_Ctrler
 2020-07-21 14:46:13: LOG: Import: D:/Justin/Snappers_0518/scenes/Snappers_FaceAR.fbx
 2020-07-21 14:47:58: LOG: Import: D:/Justin/Snappers_0518/scenes/Snappers_FaceAR.fbx
+2020-07-22 09:48:40: LOG: Import: Z:/Projects/rise/dev/assets/pc/prologueMan/rig/skeletal/maya/scenes/pc_prologueMan_lod0_v001.fbx
+2020-07-22 09:48:45: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Face_Body
+2020-07-22 09:53:11: LOG: Import: \\share/public/Teams/CINEMA/04.Mocap/03.prepare/20200417/Argos_MB_v03.fbx
+2020-07-22 09:53:13: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. face
+2020-07-22 10:08:17: LOG: Import: Z:/Teams/CINEMA/05.Rig/03.test/Ingame_Biped/PC_Argos_LOD0_Rig.FBX
+2020-07-22 10:08:19: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Rig_Spine Rig_Pelvis Rig
+2020-07-22 10:08:19: LOG: [WARNING] BindPose - Incomplete BindPose [link nodes] - The following Link node(s) is/are not part of the BindPose definition. Rig_Head Rig_Neck Rig_Spine1 Rig_R_Clavicle Rig_L_Clavicle Rig_R_Foot Rig_R_Calf Rig_R_ForeTwist Rig_R_Finger02 Rig_R_Hand Rig_R_Forearm Rig_R_UpperArm Rig_R_UpperTwist Rig_Spine Rig_Pelvis Rig_L_Calf Rig_L_Thigh Rig_L_Foot Rig_R_ThighTwist Rig_R_Thigh Rig_L_UpperTwist Rig_L_UpperArm Rig_L_Forearm Rig_L_ForeTwist Rig_L_Finger02 Rig_L_ThighTwist Rig_L_Hand Rig_L_Finger0 Rig_L_Finger1 Rig_L_Finger11 Rig_L_Finger12 Rig_L_Finger2 Rig_L_Finger21 Rig_L_Finger22 Rig_L_Finger3 Rig_L_Finger31 Rig_L_Finger32 Rig_L_Finger4 Rig_L_Finger41 Rig_L_Finger42 Rig_L_Finger01 Rig_R_Finger0 Rig_R_Finger1 Rig_R_Finger11 Rig_R_Finger12 Rig_R_Finger2 Rig_R_Finger21 Rig_R_Finger22 Rig_R_Finger3 Rig_R_Finger31 Rig_R_Finger32 Rig_R_Finger4 Rig_R_Finger41 Rig_R_Finger42 Rig_R_Finger01 Rig_L_Toe0 Rig_R_Toe0 Rig_Acc01
+2020-07-22 10:08:19: LOG: [WARNING] BindPose - Incomplete BindPose [link nodes parents] - The following parent and/or ancestor node of the Link(s) is/are not part of the BindPose definition. Rig_Neck Rig_Spine1 Rig_Spine Rig_Pelvis Rig Root Rig_R_Calf Rig_R_ThighTwist Rig_R_Thigh Rig_R_Forearm Rig_R_UpperTwist Rig_R_UpperArm Rig_R_Finger01 Rig_R_Finger0 Rig_R_Hand Rig_L_ThighTwist Rig_L_Thigh Rig_L_UpperArm Rig_L_Finger01 Rig_L_Finger0 Rig_L_Hand Rig_Acc0
+2020-07-22 10:08:19: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2020-07-22 10:08:19: LOG: [WARNING] Changed display layer color - The FBX Plug-in cannot find a match for an indexed color used in Maya for a display layer. It will be substituted by a new color.
+The following display layers are affected: Export_Bone Ani_Body Model Twist_Body Weapon_Ctrler
+2020-07-22 10:40:20: LOG: Import: Z:/Projects/rise/dev/assets/npc/bavis/rig/mocap/maya/scenes/pc_babis_rig_mocap_v001.fbx
+2020-07-22 10:43:10: LOG: Import: Z:/Projects/rise/dev/assets/npc/bernhard/rig/mocap/maya/scenes/pc_bernhard_rig_mocap_v001.fbx
+2020-07-22 10:45:58: LOG: Import: Z:/Projects/rise/dev/assets/npc/bernhard/rig/mocap/maya/scenes/npc_bernhard_rig_mocap_v001.fbx
+2020-07-22 10:56:20: LOG: Import: Z:/Projects/rise/dev/assets/npc/bernhard/rig/mocap/maya/scenes/npc_bernhard_rig_mocap_v001.fbx
+2020-07-22 10:57:12: LOG: Import: Z:/Projects/rise/dev/assets/npc/bernhard/rig/mocap/maya/scenes/npc_bernhard_rig_mocap_v001.fbx
