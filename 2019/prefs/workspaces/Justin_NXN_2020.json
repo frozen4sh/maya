@@ -91,7 +91,7 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 283,
+                                        "controlWidth": 312,
                                         "controlHeight": 1101,
                                         "collapsed": false,
                                         "controls": [
@@ -107,7 +107,7 @@
                                                 "closed": false,
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
-                                                "controlWidth": 283,
+                                                "controlWidth": 312,
                                                 "controlHeight": 1101
                                             }
                                         ]
@@ -116,7 +116,7 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 1178,
+                                        "controlWidth": 1297,
                                         "controlHeight": 1118,
                                         "collapsed": false,
                                         "controls": [
@@ -132,7 +132,7 @@
                                                 "closed": false,
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
-                                                "controlWidth": 1178,
+                                                "controlWidth": 1297,
                                                 "controlHeight": 1118,
                                                 "initCallback": "mainPaneStateCallback",
                                                 "stateString": "global string $gMainPane; paneLayout -edit -configuration single $gMainPane;if(`modelPanel -exists modelPanel4`){ modelPanel -edit -parent $gMainPane modelPanel4; paneLayout -edit -setPane modelPanel4 1 $gMainPane;}"
@@ -353,16 +353,6 @@
     ],
     "closedControls": [
         {
-            "objectName": "graphEditor1Window",
-            "posX": -2560,
-            "posY": 29,
-            "controlHeight": 1369,
-            "controlWidth": 2556,
-            "widthProperty": "free",
-            "heightProperty": "free",
-            "maximized": 1
-        },
-        {
             "objectName": "shapePanel1Window",
             "posX": 853,
             "posY": 491,
@@ -372,30 +362,12 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "ToolSettings",
+            "objectName": "referenceEditorPanel1Window",
             "posX": 250,
             "posY": 200,
-            "controlHeight": 800,
-            "controlWidth": 460,
-            "widthProperty": "preferred",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "polyTexturePlacementPanel1Window",
-            "posX": 353,
-            "posY": 303,
-            "controlHeight": 766,
-            "controlWidth": 1110,
+            "controlHeight": 325,
+            "controlWidth": 475,
             "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "UVToolkitDockControl",
-            "posX": 1471,
-            "posY": 322,
-            "controlHeight": 766,
-            "controlWidth": 291,
-            "widthProperty": "preferred",
             "heightProperty": "free"
         },
         {
@@ -404,6 +376,15 @@
             "posY": 200,
             "controlHeight": 325,
             "controlWidth": 475,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "polyTexturePlacementPanel1Window",
+            "posX": 353,
+            "posY": 303,
+            "controlHeight": 766,
+            "controlWidth": 1110,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -417,12 +398,31 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "referenceEditorPanel1Window",
+            "objectName": "UVToolkitDockControl",
+            "posX": 1471,
+            "posY": 322,
+            "controlHeight": 766,
+            "controlWidth": 291,
+            "widthProperty": "preferred",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "graphEditor1Window",
+            "posX": -2560,
+            "posY": 29,
+            "controlHeight": 1369,
+            "controlWidth": 2556,
+            "widthProperty": "free",
+            "heightProperty": "free",
+            "maximized": 1
+        },
+        {
+            "objectName": "ToolSettings",
             "posX": 250,
             "posY": 200,
-            "controlHeight": 325,
-            "controlWidth": 475,
-            "widthProperty": "free",
+            "controlHeight": 800,
+            "controlWidth": 460,
+            "widthProperty": "preferred",
             "heightProperty": "free"
         }
     ]

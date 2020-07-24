@@ -134,3 +134,9 @@ nameCommand
 	-command ("FrameAll")
 	FrameAllNameCommand;
 
+nameCommand
+	-annotation "ReversePolygonNormalsNameCommand"
+	-sourceType "mel"
+	-command ("ReversePolygonNormals")
+	ReversePolygonNormalsNameCommand;
+
