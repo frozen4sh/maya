@@ -91,7 +91,7 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 312,
+                                        "controlWidth": 317,
                                         "controlHeight": 1101,
                                         "collapsed": false,
                                         "controls": [
@@ -107,7 +107,7 @@
                                                 "closed": false,
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
-                                                "controlWidth": 312,
+                                                "controlWidth": 317,
                                                 "controlHeight": 1101
                                             }
                                         ]
@@ -116,7 +116,7 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 1297,
+                                        "controlWidth": 1317,
                                         "controlHeight": 1118,
                                         "collapsed": false,
                                         "controls": [
@@ -132,7 +132,7 @@
                                                 "closed": false,
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
-                                                "controlWidth": 1297,
+                                                "controlWidth": 1317,
                                                 "controlHeight": 1118,
                                                 "initCallback": "mainPaneStateCallback",
                                                 "stateString": "global string $gMainPane; paneLayout -edit -configuration single $gMainPane;if(`modelPanel -exists modelPanel4`){ modelPanel -edit -parent $gMainPane modelPanel4; paneLayout -edit -setPane modelPanel4 1 $gMainPane;}"
@@ -353,24 +353,6 @@
     ],
     "closedControls": [
         {
-            "objectName": "shapePanel1Window",
-            "posX": 853,
-            "posY": 491,
-            "controlHeight": 699,
-            "controlWidth": 660,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "referenceEditorPanel1Window",
-            "posX": 250,
-            "posY": 200,
-            "controlHeight": 325,
-            "controlWidth": 475,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
             "objectName": "hyperGraphPanel2Window",
             "posX": 250,
             "posY": 200,
@@ -378,6 +360,16 @@
             "controlWidth": 475,
             "widthProperty": "free",
             "heightProperty": "free"
+        },
+        {
+            "objectName": "graphEditor1Window",
+            "posX": -2560,
+            "posY": 29,
+            "controlHeight": 1369,
+            "controlWidth": 2556,
+            "widthProperty": "free",
+            "heightProperty": "free",
+            "maximized": 1
         },
         {
             "objectName": "polyTexturePlacementPanel1Window",
@@ -398,6 +390,15 @@
             "heightProperty": "free"
         },
         {
+            "objectName": "referenceEditorPanel1Window",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 325,
+            "controlWidth": 475,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
             "objectName": "UVToolkitDockControl",
             "posX": 1471,
             "posY": 322,
@@ -407,22 +408,21 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "graphEditor1Window",
-            "posX": -2560,
-            "posY": 29,
-            "controlHeight": 1369,
-            "controlWidth": 2556,
-            "widthProperty": "free",
-            "heightProperty": "free",
-            "maximized": 1
-        },
-        {
             "objectName": "ToolSettings",
             "posX": 250,
             "posY": 200,
             "controlHeight": 800,
             "controlWidth": 460,
             "widthProperty": "preferred",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "shapePanel1Window",
+            "posX": 853,
+            "posY": 491,
+            "controlHeight": 699,
+            "controlWidth": 660,
+            "widthProperty": "free",
             "heightProperty": "free"
         }
     ]
