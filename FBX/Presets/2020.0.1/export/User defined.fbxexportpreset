@@ -36,8 +36,8 @@
         <Quaternion UIH="0" UID="0" UIG="0" lbENU="Quaternion Interpolation Mode" dt="Enum" enumSelected="Resample As Euler Interpolation" v="2" enumItem_0="Retain Quaternion Interpolation" enumItem_1="Set As Euler Interpolation" enumItem_2="Resample As Euler Interpolation"/>
       </ExtraGrp>
       <BakeComplexAnimation UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Bake Animation" dt="Bool" v="0">
-        <BakeFrameStart UIH="0" UID="0" UIG="0" lbENU="Start" dt="Integer" v="1"/>
-        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="200"/>
+        <BakeFrameStart UIH="0" UID="0" UIG="0" lbENU="Start" dt="Integer" v="0"/>
+        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="1"/>
         <BakeFrameStep UIH="0" UID="0" UIG="0" lbENU="Step" dt="Integer" v="1"/>
         <ResampleAnimationCurves UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Resample All" dt="Bool" v="0"/>
         <HideComplexAnimationBakedWarning UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Hide Complex Animation Baked Warning" dt="Bool" v="0"/>
@@ -56,7 +56,7 @@
         </CurveFilterApplyCstKeyRed>
       </CurveFilter>
       <PointCache UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Geometry Cache File(s)" dt="Bool" v="0">
-        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="defaultLightSet" enumItem_2="defaultObjectSet" enumItem_3="skinCluster1Set" enumItem_4="skinCluster2Set" enumItem_5="skinCluster3Set" enumItem_6="tweakSet1" enumItem_7="tweakSet2" enumItem_8="tweakSet3"/>
+        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="blendShape1Set" enumItem_2="blendShape2Set" enumItem_3="blendShape3Set" enumItem_4="defaultLightSet" enumItem_5="defaultObjectSet" enumItem_6="skinCluster1Set" enumItem_7="skinCluster2Set" enumItem_8="skinCluster3Set" enumItem_9="skinCluster4Set" enumItem_10="skinCluster5Set" enumItem_11="skinCluster6Set" enumItem_12="skinCluster7Set" enumItem_13="skinCluster8Set" enumItem_14="tweakSet1" enumItem_15="tweakSet2" enumItem_16="tweakSet3" enumItem_17="tweakSet4" enumItem_18="tweakSet5" enumItem_19="tweakSet6" enumItem_20="tweakSet7" enumItem_21="tweakSet8"/>
       </PointCache>
       <ConstraintsGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Constraints">
         <Constraint UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Constraints" dt="Bool" v="1"/>
@@ -106,7 +106,7 @@
     <Collada UIH="1" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Collada">
       <Triangulate UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Triangulate" dt="Bool" v="1"/>
       <SingleMatrix UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Single Matrix" dt="Bool" v="1"/>
-      <FrameRate UIH="0" UID="0" UIG="0" lbENU="Frame Rate" dt="Number" v="24"/>
+      <FrameRate UIH="0" UID="0" UIG="0" lbENU="Frame Rate" dt="Number" v="60"/>
     </Collada>
   </AdvOptGrp>
   <FBXExtentionsSDK UIH="1" UID="0" UIG="1" UIX="0" UIP="1" lbENU="FBX Extensions SDK">

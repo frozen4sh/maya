@@ -24,4 +24,5 @@ windowPref -topLeftCorner 480 905 -widthHeight 256 262 -maximized false -parentM
 windowPref -topLeftCorner 480 905 -widthHeight 470 540 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 480 905 -widthHeight 450 411 -maximized false -parentMain true pluginManagerWindow;
 windowPref -topLeftCorner 480 905 -widthHeight 500 500 -maximized false -parentMain true FbxWarningWindow;
-windowPref -topLeftCorner 295 1347 -widthHeight 546 842 -maximized false -parentMain true OptionBoxWindow;
+windowPref -topLeftCorner 295 1347 -widthHeight 546 350 -maximized false -parentMain true OptionBoxWindow;
+windowPref -topLeftCorner 171 -2225 -widthHeight 1138 1130 -maximized false -parentMain true expressionEditorWin;
