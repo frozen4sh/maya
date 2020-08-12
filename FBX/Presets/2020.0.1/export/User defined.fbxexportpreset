@@ -37,7 +37,7 @@
       </ExtraGrp>
       <BakeComplexAnimation UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Bake Animation" dt="Bool" v="0">
         <BakeFrameStart UIH="0" UID="0" UIG="0" lbENU="Start" dt="Integer" v="0"/>
-        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="1"/>
+        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="150"/>
         <BakeFrameStep UIH="0" UID="0" UIG="0" lbENU="Step" dt="Integer" v="1"/>
         <ResampleAnimationCurves UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Resample All" dt="Bool" v="0"/>
         <HideComplexAnimationBakedWarning UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Hide Complex Animation Baked Warning" dt="Bool" v="0"/>
@@ -56,7 +56,7 @@
         </CurveFilterApplyCstKeyRed>
       </CurveFilter>
       <PointCache UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Geometry Cache File(s)" dt="Bool" v="0">
-        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="blendShape1Set" enumItem_2="blendShape2Set" enumItem_3="blendShape3Set" enumItem_4="defaultLightSet" enumItem_5="defaultObjectSet" enumItem_6="skinCluster1Set" enumItem_7="skinCluster2Set" enumItem_8="skinCluster3Set" enumItem_9="skinCluster4Set" enumItem_10="skinCluster5Set" enumItem_11="skinCluster6Set" enumItem_12="skinCluster7Set" enumItem_13="skinCluster8Set" enumItem_14="tweakSet1" enumItem_15="tweakSet2" enumItem_16="tweakSet3" enumItem_17="tweakSet4" enumItem_18="tweakSet5" enumItem_19="tweakSet6" enumItem_20="tweakSet7" enumItem_21="tweakSet8"/>
+        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="defaultLightSet" enumItem_2="defaultObjectSet" enumItem_3="set1" enumItem_4="set2" enumItem_5="skinCluster5Set" enumItem_6="skinCluster8Set" enumItem_7="skinCluster13Set" enumItem_8="skinCluster20Set1" enumItem_9="skinCluster25Set" enumItem_10="skinCluster44Set" enumItem_11="skinCluster48Set" enumItem_12="skinCluster49Set" enumItem_13="skinCluster50Set" enumItem_14="skinCluster51Set" enumItem_15="skinCluster53Set" enumItem_16="skinCluster54Set" enumItem_17="skinCluster55Set" enumItem_18="skinCluster56Set" enumItem_19="skinCluster58Set" enumItem_20="skinCluster59Set" enumItem_21="skinCluster60Set" enumItem_22="skinCluster61Set" enumItem_23="skinCluster62Set" enumItem_24="skinCluster63Set" enumItem_25="tweakSet5" enumItem_26="tweakSet8" enumItem_27="tweakSet13" enumItem_28="tweakSet20" enumItem_29="tweakSet25" enumItem_30="tweakSet44" enumItem_31="tweakSet471" enumItem_32="tweakSet472" enumItem_33="tweakSet473" enumItem_34="tweakSet474" enumItem_35="tweakSet476" enumItem_36="tweakSet477" enumItem_37="tweakSet478" enumItem_38="tweakSet479" enumItem_39="tweakSet481" enumItem_40="tweakSet482" enumItem_41="tweakSet483" enumItem_42="tweakSet484" enumItem_43="tweakSet485" enumItem_44="tweakSet486"/>
       </PointCache>
       <ConstraintsGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Constraints">
         <Constraint UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Constraints" dt="Bool" v="1"/>
@@ -76,7 +76,7 @@
     <BindPose UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bind Pose" dt="Bool" v="1"/>
     <PivotToNulls UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Pivot To Null" dt="Bool" v="0"/>
     <BypassRrsInheritance UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bypass Rrs Inheritance" dt="Bool" v="0"/>
-    <InputConnectionsGrp UIH="1" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Connections">
+    <InputConnectionsGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Connections">
       <IncludeChildren UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Include Children" dt="Bool" v="1"/>
       <InputConnections UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Input Connections" dt="Bool" v="1"/>
     </InputConnectionsGrp>
