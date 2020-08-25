@@ -19,7 +19,7 @@ windowPref -topLeftCorner 235 230 -widthHeight 1430 710 -maximized false -parent
 windowPref -topLeftCorner -9 69 -widthHeight 1280 1024 -maximized true -parentMain false MayaWindow;
 windowPref -topLeftCorner 480 905 -widthHeight 450 320 -maximized false -parentMain true NewFeatureHighlightWnd;
 windowPref -topLeftCorner 210 390 -widthHeight 958 658 -maximized false -parentMain true PreferencesWindow;
-windowPref -topLeftCorner 341 493 -widthHeight 1427 700 -maximized false -parentMain true HotkeyEditor;
+windowPref -topLeftCorner 363 474 -widthHeight 1427 700 -maximized false -parentMain true HotkeyEditor;
 windowPref -topLeftCorner 480 905 -widthHeight 256 262 -maximized false -parentMain true uvSetEditor;
 windowPref -topLeftCorner 480 905 -widthHeight 470 540 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 480 905 -widthHeight 450 411 -maximized false -parentMain true pluginManagerWindow;
@@ -28,3 +28,4 @@ windowPref -topLeftCorner 295 1347 -widthHeight 546 350 -maximized false -parent
 windowPref -topLeftCorner 171 -2225 -widthHeight 1138 1130 -maximized false -parentMain true expressionEditorWin;
 windowPref -topLeftCorner 623 1386 -widthHeight 358 217 -maximized false -parentMain true LayerEditorQuickEditWindow;
 windowPref -topLeftCorner 808 -487 -widthHeight 248 75 -maximized false -parentMain true jdsWnd;
+windowPref -topLeftCorner 489 1057 -widthHeight 514 527 -maximized false -parentMain true object_replace;

@@ -146,3 +146,21 @@ nameCommand
 	-command ("Import")
 	ImportNameCommand;
 
+nameCommand
+	-annotation "Reset_TNameCommand"
+	-sourceType "mel"
+	-command ("Reset_T")
+	Reset_TNameCommand;
+
+nameCommand
+	-annotation "Reset_RNameCommand"
+	-sourceType "mel"
+	-command ("Reset_R")
+	Reset_RNameCommand;
+
+nameCommand
+	-annotation "Reset_SNameCommand"
+	-sourceType "mel"
+	-command ("Reset_S")
+	Reset_SNameCommand;
+

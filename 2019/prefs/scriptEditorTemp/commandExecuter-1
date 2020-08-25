@@ -1,6 +1,3 @@
-joints = cmds.ls(sl= True)
-
-for jnt in joints:
-    cmds.setAttr(jnt+".ovc", 17)
-
-
+import mulit_object_replace
+reload(mulit_object_replace)
+mulit_object_replace.run()
