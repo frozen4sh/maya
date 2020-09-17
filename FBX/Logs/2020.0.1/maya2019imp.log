@@ -245,3 +245,41 @@ The following display layers are affected: Export_Bone Ani_Body
 2020-08-12 16:37:03: LOG: Import: D:/Justin/2020_3Q/scenes/prologueMan_FFX_ROM.fbx
 2020-08-12 16:37:09: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. prologueMan_Body mod prologueMan_weapon prologueMan_Face
 2020-08-12 16:44:43: LOG: Import: \\share/public/개인자료/김영수/이민기 업로드 요청/20.08.12 다운/Bernhard_Head_8.11.2020/Bernhard_Head_8.11.2020/Bernhard_Head.fbx
+2020-09-14 12:26:34: LOG: Import: D:/Justin/2020_3Q/scenes/Justin_Cam_Bavis.fbx
+2020-09-14 16:29:23: LOG: Import: D:/Justin/Snappers_0518/scenes/JustinCam.fbx
+2020-09-14 17:30:59: LOG: Import: Z:/Teams/CINEMA/03.Animation/03.layout/0010/BG/0010_BG.fbx
+2020-09-14 17:31:34: LOG: Import: Z:/Projects/rise/dev/shots/0010/0040/anim/body/motionbuilder/0010_0003_pc_body_d_001.fbx
+2020-09-14 18:56:47: LOG: Import: Z:/Teams/CINEMA/03.Animation/03.layout/0010/BG/0010_BG.fbx
+2020-09-14 18:56:49: LOG: Import: Z:/Projects/rise/dev/shots/0010/0040/anim/body/motionbuilder/0010_0003_pc_body_d_001.fbx
+2020-09-14 20:56:43: LOG: Import: Z:/Projects/rise/dev/shots/0010/0160/anim/polishing/maya/data/0010_0160_cam_main_f0432_lod0_003.fbx
+2020-09-15 10:14:28: LOG: Import: Z:/Projects/rise/dev/shots/0010/0160/anim/polishing/maya/data/0010_0160_cam_main_f0432_lod0_003.fbx
+2020-09-15 10:26:17: LOG: Import: Z:/Projects/rise/dev/shots/0010/0130/anim/polishing/maya/data/0010_0130_cam_main_f0572_lod0_001.fbx
+2020-09-15 10:52:19: LOG: Import: Z:/Projects/rise/dev/shots/0010/0130/anim/polishing/maya/data/0010_0130_cam_main_f0572_lod0_001.fbx
+2020-09-15 12:29:18: LOG: Import: Z:/Projects/rise/dev/shots/0010/0030/anim/polishing/maya/data/0010_0030_cam_main_f0502_lod0_001.fbx
+2020-09-15 12:31:05: LOG: Import: Z:/Teams/CINEMA/03.Animation/03.layout/0010/BG/0010_BG.fbx
+2020-09-15 12:31:38: LOG: Import: Z:/Projects/rise/dev/shots/0010/0030/anim/polishing/maya/data/0010_0030_cam_main_f0501_lod0_001.fbx
+2020-09-15 12:40:38: LOG: Import: Z:/Projects/rise/dev/shots/0010/0030/anim/polishing/maya/data/0010_0030_cam_main_f0502_lod0_001.fbx
+2020-09-15 14:56:56: LOG: Import: Z:/Projects/rise/dev/shots/0010/0000/motioncapture/body/optitrack/0010_0005_pc_body_cd_002.fbx
+2020-09-15 15:38:39: LOG: Import: Z:/Projects/rise/dev/shots/0010/0120/anim/polishing/maya/data/0010_0120_cam_main_f1574_lod0_001.fbx
+2020-09-15 15:39:19: LOG: Import: Z:/Projects/rise/dev/shots/0010/0120/anim/vcs/motionbuilder/0010_0120_cam_vcs_main_003.fbx
+2020-09-15 15:44:13: LOG: Import: Z:/Projects/rise/dev/shots/0010/0120/anim/polishing/maya/data/0010_0120_cam_main_f1574_lod0_001.fbx
+2020-09-15 15:44:13: LOG: Import: Z:/Teams/CINEMA/03.Animation/03.layout/0010/CHR/wolf/wolf_pose_01_motionbuilder.fbx
+2020-09-15 15:44:15: LOG: Import: Z:/Teams/CINEMA/03.Animation/03.layout/0010/BG/0010_BG.fbx
+2020-09-16 17:36:57: LOG: Import: Z:/Teams/CINEMA/05.Rig/03.test/npc_bernard_SK_test.fbx
+2020-09-16 18:02:13: LOG: Import: D:/WrinkleMap_R&D/Kiban_WrinkleMap/WrinkleMap_01.fbx
+2020-09-16 18:02:22: LOG: Import: D:/WrinkleMap_R&D/Kiban_WrinkleMap/WrinkleMap_02.fbx
+2020-09-16 18:02:41: LOG: Import: D:/WrinkleMap_R&D/Kiban_WrinkleMap/WrinkleMap_03.fbx
+2020-09-16 18:02:54: LOG: Import: D:/WrinkleMap_R&D/Kiban_WrinkleMap/WrinkleMap_04.fbx
+2020-09-16 20:38:16: LOG: Import: Z:/Teams/CINEMA/05.Rig/03.test/npc_bernard_SK_test.fbx
+2020-09-16 20:40:29: LOG: Import: Z:/Teams/CINEMA/05.Rig/03.test/npc_bernard_SK_test.fbx
+2020-09-16 21:26:54: LOG: Import: Z:/Projects/rise/dev/assets/npc/bavis/rig/skeletal/maya/scenes/npc_bavis_SK_cinema_v005.fbx
+2020-09-16 21:27:03: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face
+2020-09-16 21:28:04: LOG: Import: Z:/Projects/rise/dev/assets/npc/bavis/rig/skeletal/maya/scenes/npc_bavis_SK_cinema_v004.fbx
+2020-09-16 21:28:13: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face
+2020-09-17 10:09:13: LOG: Import: Z:/Projects/rise/dev/assets/npc/linus/rig/skeletal/maya/scenes/npc_linus_SK_cinema_v007.fbx
+2020-09-17 10:09:34: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face
+2020-09-17 10:25:25: LOG: Import: Z:/Projects/rise/dev/shots/0010/0080/anim/polishing/maya/data/0010_0080_npc_linus_p001_lod0_005.fbx
+2020-09-17 10:26:18: LOG: Import: D:/Justin/2020_3Q/scenes/0010_0080_npc_linus_p001_lod0_005.fbx
+2020-09-17 10:28:03: LOG: Import: D:/Justin/2020_3Q/scenes/0010_0080_npc_linus_p001_lod0_005.fbx
+2020-09-17 10:35:21: LOG: Import: Z:/Projects/rise/dev/assets/npc/linus/rig/skeletal/maya/scenes/npc_linus_SK_cinema_v007.fbx
+2020-09-17 10:35:42: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face
