@@ -5,8 +5,8 @@
     "panels": [
         {
             "mainWindowPanel": false,
-            "posX": -757,
-            "posY": 261,
+            "posX": -2322,
+            "posY": 172,
             "splitter": {
                 "orientation": "horizontal",
                 "children": [
@@ -31,41 +31,6 @@
                                     "heightProperty": "free",
                                     "controlWidth": 2129,
                                     "controlHeight": 1146
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "mainWindowPanel": false,
-            "posX": -896,
-            "posY": 454,
-            "splitter": {
-                "orientation": "horizontal",
-                "children": [
-                    {
-                        "tabWidget": {
-                            "selectedIndex": 0,
-                            "controlWidth": 617,
-                            "controlHeight": 527,
-                            "collapsed": false,
-                            "controls": [
-                                {
-                                    "objectName": "referenceEditorPanel1Window",
-                                    "title": "Reference Editor",
-                                    "uiScript": "if(!`panel -q -exists referenceEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"referenceEditorPanel1\";\n\tscriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  referenceEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent referenceEditorPanel1;\n}\nscriptedPanel -e -parent referenceEditorPanel1Window referenceEditorPanel1;\n",
-                                    "retain": false,
-                                    "deleteLater": true,
-                                    "loadImmediately": false,
-                                    "checkPlugins": false,
-                                    "tabDirection": 0,
-                                    "closed": false,
-                                    "widthProperty": "free",
-                                    "heightProperty": "free",
-                                    "controlWidth": 617,
-                                    "controlHeight": 527
                                 }
                             ]
                         }
@@ -434,18 +399,44 @@
                     }
                 ]
             }
+        },
+        {
+            "mainWindowPanel": false,
+            "posX": -896,
+            "posY": 454,
+            "splitter": {
+                "orientation": "horizontal",
+                "children": [
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 617,
+                            "controlHeight": 527,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "referenceEditorPanel1Window",
+                                    "title": "Reference Editor",
+                                    "uiScript": "if(!`panel -q -exists referenceEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"referenceEditorPanel1\";\n\tscriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  referenceEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent referenceEditorPanel1;\n}\nscriptedPanel -e -parent referenceEditorPanel1Window referenceEditorPanel1;\n",
+                                    "retain": false,
+                                    "deleteLater": true,
+                                    "loadImmediately": false,
+                                    "checkPlugins": false,
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "free",
+                                    "controlWidth": 617,
+                                    "controlHeight": 527
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
         }
     ],
     "closedControls": [
-        {
-            "objectName": "hyperGraphPanel2Window",
-            "posX": 250,
-            "posY": 200,
-            "controlHeight": 325,
-            "controlWidth": 475,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
         {
             "objectName": "unifiedRenderGlobalsWindow",
             "posX": 250,
@@ -466,6 +457,24 @@
             "maximized": 1
         },
         {
+            "objectName": "hyperGraphPanel2Window",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 325,
+            "controlWidth": 475,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "RigManagerWorkspaceControl",
+            "posX": 1957,
+            "posY": 398,
+            "controlHeight": 800,
+            "controlWidth": 431,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
             "objectName": "hyperShadePanel1Window",
             "posX": -2688,
             "posY": 118,
@@ -484,11 +493,11 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "RigManagerWorkspaceControl",
-            "posX": 1957,
-            "posY": 398,
-            "controlHeight": 800,
-            "controlWidth": 431,
+            "objectName": "polyTexturePlacementPanel1Window",
+            "posX": 655,
+            "posY": 349,
+            "controlHeight": 766,
+            "controlWidth": 1110,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -499,15 +508,6 @@
             "controlHeight": 766,
             "controlWidth": 291,
             "widthProperty": "preferred",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "polyTexturePlacementPanel1Window",
-            "posX": 655,
-            "posY": 349,
-            "controlHeight": 766,
-            "controlWidth": 1110,
-            "widthProperty": "free",
             "heightProperty": "free"
         }
     ]
