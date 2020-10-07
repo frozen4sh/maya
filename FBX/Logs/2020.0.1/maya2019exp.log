@@ -54,3 +54,11 @@ The following surface shaders will be converted to Lambert material:
  Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighPart1_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckPart1_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_6_visibility tongue_7_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility nosalabial_fold_02_l_jnt_visibility nosalabial_fold_02_r_jnt_visibility upperlip_01_l_jnt_visibility upperlip_01_r_jnt_visibility upperlip_03_edge_l_jnt_visibility upperlip_03_edge_r_jnt_visibility lowerlip_
 2020-09-17 10:38:26: LOG: Export: D:/Justin/2020_3Q/scenes/npc_linus_SK_cinema_v007.fbx
 2020-09-17 10:38:28: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_Neck / Rig_NeckP ...  / tongue_0 / tongue_1 / tongue_2 / tongue_3 / tongue_4 / tongue_5 / tongue_6 / tongue_7. Use the DAG node current transform. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_Neck / Rig_NeckP ... t / Jaw_Jnt / tongue_0 / tongue_1 / tongue_2 / tongue_3 / tongue_4 / tongue_5 / tongue_6. Use the DAG node current transform.
+2020-09-18 17:12:52: LOG: Export: D:/Justin/2020_3Q/scenes/Kiban_Cam.fbx
+2020-09-18 17:13:04: LOG: Export: D:/Justin/2020_3Q/scenes/Kiban_Cam.fbx
+2020-09-21 16:45:20: LOG: Export: D:/Justin/2020_3Q/scenes/pc_argos_SK_cinema_v007_cloth.fbx
+2020-09-23 19:04:59: LOG: Export: D:/Justin/2020_3Q/scenes/Snappers_Bernard_SKM.fbx
+2020-09-23 20:38:55: LOG: Export: D:/Justin/2020_3Q/scenes/0010_1000_pc_facial_c_005_Snappers_v001.fbx
+2020-09-24 10:50:59: LOG: Export: D:/Justin/2020_3Q/scenes/Snappers_Bernard_aeiou.fbx
+2020-09-24 15:43:31: LOG: Export: D:/Justin/2020_3Q/scenes/npc_linus_rig_bodyCinema_v008_aeiou.fbx
+2020-10-05 20:29:49: LOG: Export: D:/Justin/2020_4Q/scenes/Kiban_Wrinkle_aeiou.fbx

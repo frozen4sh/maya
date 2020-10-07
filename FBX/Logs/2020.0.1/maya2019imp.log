@@ -283,3 +283,20 @@ The following display layers are affected: Export_Bone Ani_Body
 2020-09-17 10:28:03: LOG: Import: D:/Justin/2020_3Q/scenes/0010_0080_npc_linus_p001_lod0_005.fbx
 2020-09-17 10:35:21: LOG: Import: Z:/Projects/rise/dev/assets/npc/linus/rig/skeletal/maya/scenes/npc_linus_SK_cinema_v007.fbx
 2020-09-17 10:35:42: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face
+2020-09-21 16:40:11: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/skeletal/maya/scenes/pc_argos_SK_cinema_v007.fbx
+2020-09-21 16:40:23: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body Face
+2020-09-21 16:40:23: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  prologueMan
+2020-09-24 11:14:18: LOG: Import: D:/Bernard20200911/Bernard/Maya/scenes/Bernard_Cam.fbx
+2020-09-24 17:00:09: LOG: Import: Z:/Projects/rise/dev/assets/pc/kiban/rig/skeletal/maya/scenes/pc_kiban_SK_cinema_v003.fbx
+2020-09-24 17:00:22: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. face body
+2020-09-28 15:57:22: LOG: Import: Z:/Projects/rise/dev/assets/npc/linus/rig/skeletal/maya/scenes/npc_linus_SK_cinema_v009.fbx
+2020-09-28 15:57:52: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face
+2020-09-28 15:58:00: LOG: Import: D:/Justin/2020_3Q/scenes/npc_linus_rig_bodyCinema_v008_aeiou.fbx
+2020-10-05 18:05:31: LOG: Import: Z:/Teams/INGAME/mirabelle_0010_004.fbx
+2020-10-05 18:06:01: LOG: Import: Z:/Teams/INGAME/mirabelle_0010_004.fbx
+2020-10-05 18:06:58: LOG: Import: Z:/Teams/INGAME/00. Mocap/Characterize/mirabelle_CR.fbx
+2020-10-05 18:07:37: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. mirabelle_Tpose:pc_mirabelle_hood_rig_bodyGame_v002:body mirabelle_Tpose:pc_mirabelle_hood_rig_bodyGame_v002:head
+2020-10-05 18:16:58: LOG: Import: Z:/Teams/INGAME/mirabelle_0010_004.fbx
+2020-10-05 18:23:11: LOG: Import: Z:/Teams/INGAME/mirabelle_0010_004.fbx
+2020-10-06 17:40:35: LOG: Import: Z:/Teams/CINEMA/05.Rig/03.test/FaceFX/03_Other_Data/FBX/prologueMan_FFX_ROM.fbx
+2020-10-06 17:40:42: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. prologueMan_Body mod prologueMan_weapon prologueMan_Face
