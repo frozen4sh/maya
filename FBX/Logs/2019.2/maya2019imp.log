@@ -1,0 +1,6 @@
+2020-12-31 11:46:40: LOG: Import: D:/SEQ_02_FaceFX/Kiban/pc_kiban_rig_body_lod0_v004_FFX_v004_Default_201208_00.fbx
+2020-12-31 11:46:48: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
+2020-12-31 11:53:11: LOG: Import: D:/SEQ_02_FaceFX/Kiban/pc_kiban_rig_body_lod0_v004_FFX_v004_Default_201208_00.fbx
+2020-12-31 11:53:18: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
+2020-12-31 11:59:31: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2020-12-31 12:00:30: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
