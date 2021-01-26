@@ -4,3 +4,164 @@
 2020-12-31 11:53:18: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
 2020-12-31 11:59:31: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
 2020-12-31 12:00:30: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2020-12-31 12:26:42: LOG: Import: D:/SEQ_02_FaceFX/Kiban/pc_kiban_rig_body_lod0_v004_FFX_v004_Default_201208_00.fbx
+2020-12-31 12:26:49: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
+2020-12-31 12:36:00: LOG: Import: D:/SEQ_02_FaceFX/Linus/npc_linus_rig_body_lod0_v008_FFX_v004_Default_201208_10.fbx
+2020-12-31 12:36:12: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face
+2020-12-31 12:58:20: LOG: Import: D:/SEQ_02_FaceFX/Kiban/pc_kiban_rig_body_lod0_v004_FFX_v004_Default_201208_00.fbx
+2020-12-31 12:58:27: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
+2020-12-31 12:59:46: LOG: Import: D:/SEQ_02_FaceFX/Kiban/pc_kiban_rig_body_lod0_v004_FFX_v004_Default_201208_00.fbx
+2020-12-31 12:59:53: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
+2020-12-31 14:40:22: LOG: Import: D:/SEQ_02_FaceFX/eLightInfantry_member/npc_eLightInfantry_member_rig_body_lod0_v006_FFX_v004_Default_201208_23.fbx
+2020-12-31 14:40:28: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 14:41:02: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2020-12-31 14:46:51: LOG: Import: D:/SEQ_02_FaceFX/eLightInfantry_member/npc_eLightInfantry_member_rig_body_lod0_v006_FFX_v004_Default_201208_25.fbx
+2020-12-31 14:46:58: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 14:50:12: LOG: Import: D:/SEQ_02_FaceFX/eLightInfantry_member/npc_eLightInfantry_member_rig_body_lod0_v006_FFX_v004_Default_201208_27.fbx
+2020-12-31 14:50:18: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:20:41: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_24.fbx
+2020-12-31 15:20:47: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:21:49: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2020-12-31 15:26:48: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_26.fbx
+2020-12-31 15:26:54: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:29:17: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_28.fbx
+2020-12-31 15:29:23: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:35:24: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_31.fbx
+2020-12-31 15:35:30: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:40:09: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_33.fbx
+2020-12-31 15:40:15: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:43:53: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_38.fbx
+2020-12-31 15:43:59: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:46:06: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_39.fbx
+2020-12-31 15:46:11: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:51:01: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_40.fbx
+2020-12-31 15:51:07: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:53:53: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_42.fbx
+2020-12-31 15:53:59: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:56:26: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_44.fbx
+2020-12-31 15:56:32: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 15:57:54: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_46.fbx
+2020-12-31 15:58:00: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2020-12-31 16:03:19: LOG: Import: D:/SEQ_02_FaceFX/eCavalry_member/npc_eCavalry_member_rig_body_lod0_v002_FFX_v004_Default_201208_30.fbx
+2020-12-31 16:03:26: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2020-12-31 16:03:49: LOG: Import: D:/SEQ_02_FaceFX/eCavalry_member/npc_eCavalry_member_rig_body_lod0_v002_FFX_v004_Default_201208_30.fbx
+2020-12-31 16:03:56: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2020-12-31 16:08:17: LOG: Import: D:/SEQ_02_FaceFX/eCavalry_member/npc_eCavalry_member_rig_body_lod0_v002_FFX_v004_Default_201208_32.fbx
+2020-12-31 16:08:24: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2020-12-31 16:09:39: LOG: Import: D:/SEQ_02_FaceFX/eCavalry_member/npc_eCavalry_member_rig_body_lod0_v002_FFX_v004_Default_201208_34.fbx
+2020-12-31 16:09:46: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2020-12-31 16:11:32: LOG: Import: D:/SEQ_02_FaceFX/eHeavyInfantry_member/npc_eHeavyInfantry_member_rig_body_lod0_v005_FFX_v004_Default_201208_36.fbx
+2020-12-31 16:11:38: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_eHeavyInfantry_member_lod0 GrpGeo_face_lod0
+2020-12-31 16:15:48: LOG: Import: D:/SEQ_02_FaceFX/eHeavyInfantry_member/npc_eHeavyInfantry_member_rig_body_lod0_v005_FFX_v004_Default_201208_41.fbx
+2020-12-31 16:15:53: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_eHeavyInfantry_member_lod0 GrpGeo_face_lod0
+2020-12-31 16:17:59: LOG: Import: D:/SEQ_02_FaceFX/eHeavyInfantry_leader/npc_eHeavyInfantry_leader_rig_body_lod0_v004_FFX_v004_Default_201208_43.fbx
+2020-12-31 16:18:10: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_eHeavyInfantry_lod0 GrpGeo_face_lod0
+2020-12-31 16:19:56: LOG: Import: D:/SEQ_02_FaceFX/eHeavyInfantry_leader/npc_eHeavyInfantry_leader_rig_body_lod0_v004_FFX_v004_Default_201208_45.fbx
+2020-12-31 16:20:07: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_eHeavyInfantry_lod0 GrpGeo_face_lod0
+2021-01-04 16:13:44: LOG: Import: D:/SEQ_02_FaceFX/Factor/pc_factor_rig_body_lod0_v006_FFX_v004_Default_201208_50.fbx
+2021-01-04 16:13:49: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2021-01-04 16:17:20: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2021-01-04 16:26:02: LOG: Import: D:/SEQ_02_FaceFX/Factor/pc_factor_rig_body_lod0_v006_FFX_v004_Default_201208_48.fbx
+2021-01-04 16:26:08: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2021-01-04 16:27:42: LOG: Import: D:/SEQ_02_FaceFX/Factor/pc_factor_rig_body_lod0_v006_FFX_v004_Default_201208_50.fbx
+2021-01-04 16:27:48: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2021-01-04 16:40:28: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_47.fbx
+2021-01-04 16:40:34: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2021-01-04 16:42:49: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_49.fbx
+2021-01-04 16:42:55: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2021-01-04 16:44:41: LOG: Import: D:/SEQ_02_FaceFX/Diggor/pc_diggor_rig_body_lod0_v007_FFX_v004_Default_201208_51.fbx
+2021-01-04 16:44:48: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGeo_face_lod0 GrpGeo_lod0 GrpGeo_body_lod0
+2021-01-06 10:50:58: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2021-01-06 11:29:05: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/DynamiXYZ/Performer/20210104_SEQ_02/JustinCam_Kiban.fbx
+2021-01-06 12:32:01: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/DynamiXYZ/Performer/20210104_SEQ_02/JustinCam_Diggor.fbx
+2021-01-06 12:32:21: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/DynamiXYZ/Performer/20210104_SEQ_02/JustinCam_Diggor.fbx
+2021-01-06 14:45:51: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/DynamiXYZ/Performer/20210104_SEQ_02/JustinCam_Kiban.fbx
+2021-01-06 15:08:45: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/DynamiXYZ/Performer/20210104_SEQ_02/JustinCam_Kiban.fbx
+2021-01-06 17:27:32: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Factor.fbx
+2021-01-06 17:27:52: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2021-01-06 20:15:23: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2021-01-06 20:32:21: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2021-01-06 21:09:50: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Factor.fbx
+2021-01-06 21:42:29: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/DynamiXYZ/Performer/20210104_SEQ_02/JustinCam_Linus.fbx
+2021-01-07 10:36:26: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Diggor.fbx
+2021-01-07 10:57:58: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Diggor.fbx
+2021-01-07 11:36:13: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Diggor.fbx
+2021-01-07 14:30:40: LOG: Import: D:/Justin/2020_4Q/scenes/npc_bernard_rig_body_lod0_v004_FFX_v004.fbx
+2021-01-07 14:30:45: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face_grp
+2021-01-07 14:39:41: LOG: Import: D:/SEQ_02_FaceFX/Bernard/npc_bernard_rig_body_lod0_v004_FFX_v003_Default_201208_15.fbx
+2021-01-07 14:39:54: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face_grp
+2021-01-07 14:39:54: LOG: [WARNING] Keyframe and Constraint Animation Clash - There are both keyframe and constraint animations for the following attribute(s). 
+	The driving constraint(s) is(are) used instead of keyframe animation. Jaw_Jnt.translateX Jaw_Jnt.translateY Jaw_Jnt.translateZ Jaw_Jnt.rotateX Jaw_Jnt.rotateY Jaw_Jnt.rotateZ eyepatch_1_jnt.translateX eyepatch_1_jnt.translateY eyepatch_1_jnt.translateZ eyepatch_1_jnt.rotateX eyepatch_1_jnt.rotateY eyepatch_1_jnt.rotateZ eyepatch_2_jnt.translateX eyepatch_2_jnt.translateY eyepatch_2_jnt.translateZ eyepatch_2_jnt.rotateX eyepatch_2_jnt.rotateY eyepatch_2_jnt.rotateZ eyepatch_3_jnt.translateX eyepatch_3_jnt.translateY eyepatch_3_jnt.translateZ eyepatch_3_jnt.rotateX eyepatch_3_jnt.rotateY eyepatch_3_jnt.rotateZ regionJoint_01_M.translateX regionJoint_01_M.translateY regionJoint_01_M.translateZ regionJoint_01_M.rotateX regionJoint_01_M.rotateY regionJoint_01_M.rotateZ regionJoint_02_M.translateX regionJoint_02_M.translateY regionJoint_02_M.translateZ regionJoint_02_M.rotateX reg
+2021-01-07 14:39:54: LOG: [WARNING] Non-keyable attribute - Cannot transfer data. Affected object(s):
+ PressorCntr_L.translateX: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.translateZ: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.scaleX: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.scaleY: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.scaleZ: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.rotateX: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.rotateY: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.rotateZ: this attribute is non-keyable. Cannot transfer animation data.
+
+ EyeopenerCntr_L.translateX: this attribute is non-keyable. Cannot transfer animation data.
+
+ EyeopenerCntr_L.translateZ: this attribute is non-keyable. Cannot transfer animation data.
+
+ EyeopenerCntr_L.scaleX: this attr
+2021-01-07 14:44:33: LOG: Import: D:/SEQ_02_FaceFX/Bernard/npc_bernard_rig_body_lod0_v004_FFX_v003_Default_201208_15.fbx
+2021-01-07 14:44:37: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face_grp
+2021-01-07 14:44:37: LOG: [WARNING] Keyframe and Constraint Animation Clash - There are both keyframe and constraint animations for the following attribute(s). 
+	The driving constraint(s) is(are) used instead of keyframe animation. Jaw_Jnt.translateX Jaw_Jnt.translateY Jaw_Jnt.translateZ Jaw_Jnt.rotateX Jaw_Jnt.rotateY Jaw_Jnt.rotateZ eyepatch_1_jnt.translateX eyepatch_1_jnt.translateY eyepatch_1_jnt.translateZ eyepatch_1_jnt.rotateX eyepatch_1_jnt.rotateY eyepatch_1_jnt.rotateZ eyepatch_2_jnt.translateX eyepatch_2_jnt.translateY eyepatch_2_jnt.translateZ eyepatch_2_jnt.rotateX eyepatch_2_jnt.rotateY eyepatch_2_jnt.rotateZ eyepatch_3_jnt.translateX eyepatch_3_jnt.translateY eyepatch_3_jnt.translateZ eyepatch_3_jnt.rotateX eyepatch_3_jnt.rotateY eyepatch_3_jnt.rotateZ regionJoint_01_M.translateX regionJoint_01_M.translateY regionJoint_01_M.translateZ regionJoint_01_M.rotateX regionJoint_01_M.rotateY regionJoint_01_M.rotateZ regionJoint_02_M.translateX regionJoint_02_M.translateY regionJoint_02_M.translateZ regionJoint_02_M.rotateX reg
+2021-01-07 14:44:37: LOG: [WARNING] Non-keyable attribute - Cannot transfer data. Affected object(s):
+ PressorCntr_L.translateX: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.translateZ: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.scaleX: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.scaleY: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.scaleZ: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.rotateX: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.rotateY: this attribute is non-keyable. Cannot transfer animation data.
+
+ PressorCntr_L.rotateZ: this attribute is non-keyable. Cannot transfer animation data.
+
+ EyeopenerCntr_L.translateX: this attribute is non-keyable. Cannot transfer animation data.
+
+ EyeopenerCntr_L.translateZ: this attribute is non-keyable. Cannot transfer animation data.
+
+ EyeopenerCntr_L.scaleX: this attr
+2021-01-07 14:44:45: LOG: Import: D:/SEQ_02_FaceFX/Bernard/npc_bernard_rig_body_lod0_v004_FFX_v003_Default_201208_15.fbx
+2021-01-07 14:44:51: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body face_grp
+2021-01-07 14:46:47: LOG: Import: D:/Justin/2020_4Q/scenes/JustinCam_Bernard.fbx
+2021-01-19 21:14:25: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/LeftCam.fbx
+2021-01-20 11:58:18: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Argos.fbx
+2021-01-20 13:09:46: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Kiban.fbx
+2021-01-20 16:04:43: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Linus.fbx
+2021-01-20 17:39:24: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Diggor.fbx
+2021-01-20 18:38:41: LOG: Import: Z:/Projects/rise/dev/assets/prop/ballista/rig/skeletal/maya/scenes/prop_ballista_SK_lod0_v006.fbx
+2021-01-20 18:38:43: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GeoGrp_ballista_lod0
+2021-01-21 11:57:49: LOG: Import: D:/SEQ_02_FaceFX/Argos/pc_argos_rig_body_lod0_v005_FFX_v003_Default_201208_03.fbx
+2021-01-21 11:57:58: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Body GrpGeo_argos_lod0
+2021-01-22 16:57:55: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Pracinus.fbx
+2021-01-22 16:58:48: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/SEQ_02_FFX/FBX/pc_pracinus_rig_body_lod0_v006_FFX_v005_Default_0025_6000_pracinus_001.fbx
+2021-01-22 16:59:04: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2021-01-22 17:01:46: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/SEQ_02_FFX/FBX/pc_pracinus_rig_body_lod0_v006_FFX_v005_Default_0025_6000_pracinus_001.fbx
+2021-01-22 17:02:01: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2021-01-22 17:05:37: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/SEQ_02_FFX/FBX/npc_newt_rig_body_lod0_v006_FFX_v005_Default_0025_5600_newt_001.fbx
+2021-01-22 17:05:42: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp robe_grp face_grp
+2021-01-22 17:05:59: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Newt.fbx
+2021-01-22 17:07:33: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/SEQ_02_FFX/FBX/npc_newt_rig_body_lod0_v006_FFX_v005_Default_0025_5600_newt_001.fbx
+2021-01-22 17:07:38: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp robe_grp face_grp
+2021-01-22 17:09:56: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/SEQ_02_FFX/FBX/npc_newt_rig_body_lod0_v006_FFX_v005_Default_0025_5600_newt_001.fbx
+2021-01-22 17:10:01: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp robe_grp face_grp
+2021-01-22 17:10:16: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Newt.fbx

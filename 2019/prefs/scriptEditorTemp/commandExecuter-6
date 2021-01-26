@@ -1,0 +1,26 @@
+import maya.cmds as cmds
+
+def mirror_key():
+    
+    ctrls = [ u'BrowInRaiserCntr_R', u'BrowDownCntr_R', u'BrowOutRaiserCntr_R', u'BrowSqueezerCntr_R', u'EyeopenerCntr_R', u'EyeTightnerCntr_R', u'CheekRaiserCntr_R', u'SquinterCntr_R', u'NoseWrinklerCntr_R', u'UprLipRaiserCntr_R', u'NlDeepenerCntr_R', u'TightnerTCntr_R', u'CornerRaiserCntr_R', u'CornerPullerCntr_R', u'UprLipDepressorCntr_R', u'PressorCntr_R', u'FunnelerTCntr_R', u'PuckererTCntr_R', u'DimplerCntr_R', u'StretcherCntr_R', u'PuckererBCntr_R', u'CornerDepressorCntr_R', u'FunnelerBCntr_R', u'TightnerBCntr_R', u'ChinRaiserCntr_R', u'LwrLipDepressorCntr_R',  u'NeckTensionCntr_R', '' ]
+
+    for ctrl in ctrls:
+        get_ctrl_attrs = cmds.listAttr(ctrl, v= True, k= True)
+        
+        left_ctrl_name = ctrl.replace('_R','_L')
+                
+        for ctrl_attr in get_ctrl_attrs:
+            get_values = cmds.getAttr('{0}.{1}'.format(ctrl,ctrl_attr))
+            
+            left_ctrl_attr = ctrl_attr.replace('_R','_L')
+                        
+            cmds.setAttr('{0}.{1}'.format(left_ctrl_name, ctrl_attr), get_values)
+        
+    cmds.copyKey(ctrl)
+    cmds.pasteKey(left_ctrl_name)
+
+
+mirror_key()
+
+
+

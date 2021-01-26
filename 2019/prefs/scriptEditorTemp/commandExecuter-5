@@ -1,5 +1,5 @@
-0020'''
-Created on 2020. 12. 22.
+c'''
+Created on 2021. 01. 08.
 NXN
 @author: LeeSungJun
 '''
@@ -61,17 +61,19 @@ def writeFile(path,keyData):
 
 def expAnim(*args):
    
-    if 0 != len(pm.ls('ControllersParent')):
-        node = pm.ls('ControllersParent')
+    if 0 != len(pm.ls('Controllers')):
+        node = pm.ls('Controllers','EyeCntr_p')
     
-    elif 0 != len(pm.ls('*:ControllersParent')):
-        node = pm.ls('*:ControllersParent')
+    elif 0 != len(pm.ls('*:Controllers')):
+        node = pm.ls('*:Controllers','*:EyeCntr_p')
         
     else:
-        _logger.error('No object matches name: ControllersParent')
+        _logger.error('No object matches name: SnappersFacialRig')
         
     
-    get_key_data = getTransform(node[0])
+    print node
+    
+    get_key_data = getTransform(node)
     path = cmds.textField(filePathLine,q=True,text=True)
     writeFile(path , get_key_data)
     
