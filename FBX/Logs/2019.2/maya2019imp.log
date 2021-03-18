@@ -165,3 +165,156 @@
 2021-01-22 17:09:56: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/SEQ_02_FFX/FBX/npc_newt_rig_body_lod0_v006_FFX_v005_Default_0025_5600_newt_001.fbx
 2021-01-22 17:10:01: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp robe_grp face_grp
 2021-01-22 17:10:16: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Newt.fbx
+2021-01-29 12:28:09: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/body/outsourcing/v001/2021-01-cutscene/Sq0025_Sh4300_part1_01_02_bernard_ashton.fbx
+2021-02-15 18:49:43: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Bavis.fbx
+2021-02-16 10:04:05: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Kiban.fbx
+2021-02-16 10:17:54: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/LeftCam_Kiban.fbx
+2021-02-16 10:18:22: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Kiban.fbx
+2021-02-16 12:37:50: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute.fbx
+2021-02-16 12:38:27: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute@angrypoint.fbx
+2021-02-16 12:38:42: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute@facefx_poses.fbx
+2021-02-16 12:38:52: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute@facefx_poses.fbx
+2021-02-16 12:50:51: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Roger.fbx
+2021-02-16 13:02:55: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Roger.fbx
+2021-02-16 16:12:07: LOG: Import: D:/FaceFX/Emote_Test/Brute.fbx
+2021-02-16 16:12:56: LOG: Import: D:/FaceFX/Emote_Test/Brute.fbx
+2021-02-16 17:30:10: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute.fbx
+2021-02-16 17:30:26: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute@facefx_poses.fbx
+2021-02-16 17:32:09: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute.fbx
+2021-02-16 18:46:12: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute@angrypoint.fbx
+2021-02-16 18:46:29: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute@question.fbx
+2021-02-16 18:46:42: LOG: Import: C:/Program Files/FaceFX/FaceFX 2018/Samples/Src/Brute@idle.fbx
+2021-02-17 10:03:51: LOG: Import: Z:/Projects/rise/dev/assets/pc/pracinus/rig/mocap/maya/scenes/pc_pracinus_rig_mocap_v001.fbx
+2021-02-17 10:12:10: LOG: Import: Z:/Projects/rise/dev/assets/pc/pracinus/rig/mocap/maya/scenes/pc_pracinus_rig_mocap_v002.fbx
+2021-02-17 10:12:51: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Controllers SnappersFacialRig GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2021-02-17 10:16:54: LOG: Import: Z:/Projects/rise/dev/assets/pc/pracinus/rig/mocap/maya/scenes/pc_pracinus_rig_mocap_v002.fbx
+2021-02-17 10:17:37: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Controllers SnappersFacialRig GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2021-02-17 10:29:10: LOG: Import: Z:/Projects/rise/dev/assets/pc/pracinus/rig/mocap/maya/scenes/pc_pracinus_rig_mocap_v002.fbx
+2021-02-17 10:29:27: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_lod0 GrpGeo_face_lod0
+2021-02-18 10:00:47: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/Templates/faceFX_280Rom.fbx
+2021-02-18 10:00:50: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. ROM:Geo
+2021-02-18 10:05:25: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/SEQ_02_FFX/FBX/faceFX_280Rom_Default_0025_0400_kiban_001 - Copy.fbx
+2021-02-18 10:05:27: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. ROM:Geo
+2021-02-18 11:01:20: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/Templates/kiban_280Rom.fbx
+2021-02-18 11:01:30: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
+2021-02-18 11:09:00: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/Templates/kiban_280Rom.fbx
+2021-02-18 11:09:10: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
+2021-02-18 11:16:54: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/SEQ_02_FFX/FBX/kiban_280Rom_Default_0025_0400_kiban_001 - Copy.fbx
+2021-02-18 11:16:57: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
+2021-02-18 11:24:24: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/SEQ_02_FFX/FBX/kiban_280Rom_Default_0025_0400_kiban_001 - Copy.fbx
+2021-02-18 11:24:26: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body_grp face_grp
+2021-02-18 11:30:15: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Kiban.fbx
+2021-02-22 10:16:54: LOG: Import: Z:/Projects/rise/dev/assets/pc/kastuck/rig/mocap/maya/scenes/pc_kastuck_rig_mocap_v001.fbx
+2021-02-22 10:17:05: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Geo_body_layout_seperated GrpeGeo_body_layout
+2021-02-22 10:30:49: LOG: Import: Z:/Projects/rise/dev/assets/pc/kastuck/rig/mocap/maya/scenes/pc_kastuck_rig_mocap_v001.fbx
+2021-02-22 10:31:00: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Geo_body_layout_seperated GrpeGeo_body_layout
+2021-02-22 10:32:41: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v006.fbx
+2021-02-22 10:32:48: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Body GrpGeo_argos_lod0
+2021-02-22 10:32:48: LOG: [ERROR  ] Unexpected Skin Hierarchy - The plug-in encountered the following unexpected skin hierarchy :  The skin Rig_R_Weapon is parented to the deforming bone Rig_R_Weapon. This skin may not deform as expected.
+2021-02-26 14:58:47: LOG: Import: Z:/Teams/CINEMA/04.Mocap/97.R&D/Motion Builder Edit Test/0035_4300_hand_e_0003_v002.fbx
+2021-02-26 14:59:09: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. face_grp body_grp
+2021-02-26 17:07:24: LOG: Import: Z:/Teams/CINEMA/04.Mocap/97.R&D/Motion Builder Edit Test/0035_4300_hand_e_0003_v002.fbx
+2021-02-26 17:07:46: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. face_grp body_grp
+2021-02-26 17:12:14: LOG: Import: Z:/Teams/CINEMA/04.Mocap/08.Hand/HandPolishingTest/20210226/0035_4300_hand_e_0003_v002_test.fbx
+2021-02-26 17:12:38: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. face_grp body_grp
+2021-02-26 17:14:41: LOG: Import: Z:/Teams/CINEMA/04.Mocap/08.Hand/HandPolishingTest/20210226/0035_4300_hand_e_0003_v002_test.fbx
+2021-02-26 17:17:24: LOG: Import: Z:/Teams/CINEMA/04.Mocap/08.Hand/HandPolishingTest/20210226/0035_4300_hand_e_0003_v002_test.fbx
+2021-02-26 17:20:45: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/body/maya/data/pc_argos_rig_body_lod0_v002.fbx
+2021-02-26 17:20:52: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Body GrpGeo_argos_lod0
+2021-02-26 17:20:52: LOG: [ERROR  ] Unexpected Skin Hierarchy - The plug-in encountered the following unexpected skin hierarchy :  The skin Rig_R_Weapon is parented to the deforming bone Rig_R_Weapon. This skin may not deform as expected.
+2021-02-26 17:29:17: LOG: Import: Z:/Projects/rise/dev/assets/pc/kiban/rig/mocap/maya/scenes/pc_kiban_rig_mocap_v001.fbx
+2021-02-26 17:29:27: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. face_grp body_grp
+2021-02-26 18:43:31: LOG: Import: Z:/Projects/rise/dev/assets/pc/kastuck/rig/mocap/maya/scenes/pc_kastuck_rig_mocap_v001.fbx
+2021-02-26 18:43:41: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Geo_body_layout_seperated GrpeGeo_body_layout
+2021-03-03 17:07:03: LOG: Import: Z:/Projects/rise/dev/assets/pc/diggor/moc/facial/maya/data/pc_diggor_facial_frontcam_v001.fbx
+2021-03-04 12:58:44: LOG: Import: Z:/Projects/rise/dev/shots/0035/9999/anim/hand/maya/scenes/0035_4300_hand_a_0003_v004.fbx
+2021-03-04 14:41:10: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/body/outsourcing/v001/2021-01-cutscene/Sq0025_Sh3510_Sh3520_part01_02_11_kiban_maciek.fbx
+2021-03-04 14:51:36: LOG: Import: Z:/Projects/rise/dev/shots/0035/9999/anim/body/maya/scenes/0035_9999_pc_body_a_0006.fbx
+2021-03-04 14:52:18: LOG: Import: Z:/Projects/rise/dev/shots/0035/9999/anim/body/maya/scenes/0035_9999_pc_body_a_0006.fbx
+2021-03-04 16:52:58: LOG: Import: Z:/Teams/CINEMA/04.Mocap/08.Hand/HandPolishingTest/20210302/0035_4300_hand_e_0003_v005.fbx
+2021-03-04 16:53:10: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. face_grp body_grp
+2021-03-04 16:54:49: LOG: Import: Z:/Teams/CINEMA/04.Mocap/08.Hand/HandPolishingTest/20210302/0035_4300_hand_e_0003_v005.fbx
+2021-03-05 15:38:59: LOG: Import: Z:/Teams/CINEMA/04.Mocap/08.Hand/HandPolishingTest/20210302/0035_4300_hand_e_0003_v005.fbx
+2021-03-09 14:46:35: LOG: Import: Z:/Projects/rise/dev/assets/pc/diggor/moc/facial/maya/data/pc_diggor_facial_frontcam_v001.fbx
+2021-03-09 17:23:58: LOG: Import: Z:/Projects/rise/dev/assets/pc/greyworm/moc/facial/maya/data/pc_greyworm_facial_frontcam_v001.fbx
+2021-03-09 18:50:19: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Brook.fbx
+2021-03-09 18:50:40: LOG: Import: Z:/Projects/rise/dev/shots/0025/0000/moc/facial/maya/data/JustinCam_Newt.fbx
+2021-03-09 18:51:54: LOG: Import: Z:/Projects/rise/dev/assets/npc/newt/moc/facial/maya/data/npc_newt_facial_frontcam_v001.fbx
+2021-03-10 10:25:30: LOG: Import: Z:/Projects/rise/dev/assets/npc/newt/moc/facial/maya/data/npc_newt_facial_frontcam_v001.fbx
+2021-03-10 10:41:51: LOG: Import: Z:/Projects/rise/dev/assets/pc/greyworm/moc/facial/maya/data/pc_greyworm_facial_frontcam_v001.fbx
+2021-03-11 18:00:18: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh10200_Sh11300_part01_01_06_argos_maciek.fbx
+2021-03-11 18:01:00: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh10200_Sh11300_part01_01_06_diggor_michael.fbx
+2021-03-11 18:23:53: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part4/Sq0035_Sh9200_Sh9700_01_03_factor_maciek.fbx
+2021-03-11 18:24:49: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part4/Sq0035_Sh9200_Sh9700_01_03_diggor_slawek.fbx
+2021-03-11 18:54:14: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_factor_maciek.fbx
+2021-03-11 18:54:35: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_diggor_slawek.fbx
+2021-03-11 18:55:37: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_diggor_slawek.fbx
+2021-03-11 18:55:55: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_factor_maciek.fbx
+2021-03-12 10:17:49: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9500_pickup_01_08_factor_maciek.fbx
+2021-03-12 10:26:06: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9500_pickup_01_08_diggor_slawek.fbx
+2021-03-12 10:40:04: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_factor_maciek.fbx
+2021-03-12 10:40:16: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_diggor_slawek.fbx
+2021-03-12 10:50:23: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_factor_maciek.fbx
+2021-03-12 10:50:33: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_factor_maciek.fbx
+2021-03-12 10:55:14: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_diggor_slawek.fbx
+2021-03-12 11:05:07: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_diggor_slawek.fbx
+2021-03-12 11:05:09: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh9000_Sh9100_02_03_factor_maciek.fbx
+2021-03-12 11:19:24: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_sheela_ildiko.fbx
+2021-03-12 11:19:39: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_argos_maciek.fbx
+2021-03-12 11:19:53: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_factor_michael.fbx
+2021-03-12 11:19:59: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_diggor_slawek.fbx
+2021-03-12 11:38:19: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_sheela_ildiko.fbx
+2021-03-12 11:38:31: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_argos_maciek.fbx
+2021-03-12 11:38:36: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_factor_michael.fbx
+2021-03-12 11:38:42: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_diggor_slawek.fbx
+2021-03-12 11:47:51: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_sheela_ildiko.fbx
+2021-03-12 11:48:01: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_argos_maciek.fbx
+2021-03-12 11:48:07: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_factor_michael.fbx
+2021-03-12 11:48:12: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_diggor_slawek.fbx
+2021-03-12 11:58:57: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_argos_maciek.fbx
+2021-03-12 11:58:59: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_diggor_slawek.fbx
+2021-03-12 11:59:01: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_factor_michael.fbx
+2021-03-12 11:59:02: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_sheela_ildiko.fbx
+2021-03-12 14:37:13: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_sheela_ildiko.fbx
+2021-03-12 14:38:00: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_argos_maciek.fbx
+2021-03-12 14:38:09: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_diggor_slawek.fbx
+2021-03-12 14:38:17: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh2400_Sh2500_01_05_factor_michael.fbx
+2021-03-12 16:44:20: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0035_Sh8400_Sh8600_par03_01_05_factor_slawek.fbx
+2021-03-12 16:45:36: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0035_Sh8400_Sh8600_par03_01_06_factor_ashton.fbx
+2021-03-12 16:47:14: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0035_Sh8400_Sh8600_par03_01_06_factor_maciek.fbx
+2021-03-12 16:47:56: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0035_Sh8400_Sh8600_par03_01_04_factor_maciek.fbx
+2021-03-12 17:17:03: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_argos_maciek.fbx
+2021-03-12 17:17:05: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_kastuck_ashton.fbx
+2021-03-12 17:21:09: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_argos_maciek.fbx
+2021-03-12 17:21:11: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_kastuck_ashton.fbx
+2021-03-12 17:25:45: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_argos_maciek.fbx
+2021-03-12 17:25:54: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_kastuck_ashton.fbx
+2021-03-12 17:54:38: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part4/Sq0035_Sh8900_pickup_02_05_bernard_maciek.fbx
+2021-03-17 17:27:39: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_kastuck_ashton.fbx
+2021-03-17 17:28:05: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_argos_maciek.fbx
+2021-03-17 17:28:23: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_argos_maciek.fbx
+2021-03-17 17:28:48: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8700_Sh8800_01_04_kastuck_ashton.fbx
+2021-03-17 17:56:02: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh1000_Sh1700_pickup_01_02_argos_maciek.fbx
+2021-03-17 17:56:33: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh0100_Sh0500_01_06_factor_ashton.fbx
+2021-03-17 17:56:47: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh1000_Sh1600_01_03_diggor_slawek.fbx
+2021-03-18 10:01:46: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh1000_Sh1700_pickup_01_02_argos_maciek.fbx
+2021-03-18 10:01:47: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh0100_Sh0500_01_06_factor_ashton.fbx
+2021-03-18 10:01:49: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh1000_Sh1600_01_03_diggor_slawek.fbx
+2021-03-18 10:08:53: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh0600_Sh0900_01_03_diggor_maciek.fbx
+2021-03-18 10:45:07: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0035_Sh4300_Sh5100_part02_01_04_factor_maciek.fbx
+2021-03-18 10:46:11: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0035_Sh4300_Sh5100_part02_01_04_factor_ashton.fbx
+2021-03-18 10:51:38: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part4/Sq0035_Sh8900_pickup_02_05_bernard_maciek.fbx
+2021-03-18 10:53:00: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_slawek.fbx
+2021-03-18 10:55:53: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_maciek.fbx
+2021-03-18 10:58:08: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part1/Sq0035_Sh8900_pickup_01_03_factor_maciek.fbx
+2021-03-18 11:11:09: LOG: Import: Z:/Projects/rise/dev/shots/0035/9700/anim/hand/maya/data/0035_9700_pc_hand_c_0001_v001.fbx
+2021-03-18 11:36:18: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_slawek.fbx
+2021-03-18 11:37:45: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_maciek.fbx
+2021-03-18 11:47:36: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_maciek.fbx
+2021-03-18 11:50:30: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_maciek.fbx
+2021-03-18 12:00:49: LOG: Import: Z:/Projects/rise/dev/shots/0035/9700/anim/hand/maya/data/0035_9700_pc_hand_c_0001_v001.fbx
+2021-03-18 12:05:36: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_maciek.fbx
+2021-03-18 12:05:55: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_maciek.fbx
+2021-03-18 12:09:19: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_maciek.fbx
+2021-03-18 12:10:18: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_maciek.fbx
+2021-03-18 12:20:01: LOG: Import: Z:/Projects/rise/dev/shots/0035/0000/moc/body/Delivery/2021-02-cutscene_Part2/Sq0035_Sh8900_01_03_factor_maciek.fbx

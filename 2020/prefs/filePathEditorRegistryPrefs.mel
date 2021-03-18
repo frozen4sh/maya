@@ -1,3 +1,6 @@
+//Maya Preference 2020 (Release 1)
+//
+//
 filePathEditor -registerType "aiImage.filename" -typeLabel "Image" ;
 filePathEditor -registerType "aiPhotometricLight.aiFilename" -typeLabel "IES" ;
 filePathEditor -registerType "aiStandIn.dso" -typeLabel "Standin" ;

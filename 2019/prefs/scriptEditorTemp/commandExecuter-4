@@ -1,2 +1,0 @@
-import animMocapConnect
-reload(animMocapConnect)
