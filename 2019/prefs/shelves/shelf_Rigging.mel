@@ -1539,5 +1539,144 @@ global proc shelf_Rigging () {
         -commandRepeatable 1
         -flat 1
     ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Namespace Editor" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Namespace Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "NE" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconWindow.png" 
+        -image1 "menuIconWindow.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "NamespaceEditor" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "'''\nCreated on 2020. 8. 7.\nNXN\n@author: LeeSungJun\n'''\nimport maya.cmds as cmds\nimport pymel.core as pm\nimport maya.mel as mel\n\nchr_name='Character'\n\ndef create(charName):\n   \n\n    charDef = mel.eval('hikCreateCharacter(\"'+charName+'\")')\n\n    try:\n        mel.eval('hikUpdateCharacterList()')\n        mel.eval('hikSelectDefinitionTab()')\n    except:\n        pass\n\n    \n    mel.eval('setCharacterObject(\"Root\",\"'+charDef+'\",0,0)')\n    mel.eval('setCharacterObject(\"Rig_Pelvis\",\"'+charDef+'\",1,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine\",\"'+charDef+'\",8,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine1\",\"'+charDef+'\",23,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine2\",\"'+charDef+'\",24,0)')\n\n    mel.eval('setCharacterObject(\"Rig_L_Thigh\",\"'+charDef+'\",2,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Calf\",\"'+charDef+'\",3,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Foot\",\"'+charDef+'\",4,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Toe0\",\"'+charDef+'\",16,0)')\n    \n    mel.eval('setCharacterObject(\"Rig_R_Thigh\",\"'+charDef+'\",5,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Calf\",\"'+charDef+'\",6,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Foot\",\"'+charDef+'\",7,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Toe0\",\"'+charDef+'\",17,0)')\n    \n    mel.eval('setCharacterObject(\"Rig_Head\",\"'+charDef+'\",15,0)')\n    mel.eval('setCharacterObject(\"Rig_Neck\",\"'+charDef+'\",20,0)')\n\n    mel.eval('setCharacterObject(\"Rig_L_Clavicle\",\"'+charDef+'\",18,0)')\n    mel.eval('setCharacterObject(\"Rig_L_UpperArm\",\"'+charDef+'\",9,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ForeArm\",\"'+charDef+'\",10,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Hand\",\"'+charDef+'\",11,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger0\",\"'+charDef+'\",50,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger01\",\"'+charDef+'\",51,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger02\",\"'+charDef+'\",52,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger1\",\"'+charDef+'\",54,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger11\",\"'+charDef+'\",55,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger12\",\"'+charDef+'\",56,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger2\",\"'+charDef+'\",58,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger21\",\"'+charDef+'\",59,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger22\",\"'+charDef+'\",60,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger3\",\"'+charDef+'\",62,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger31\",\"'+charDef+'\",63,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger32\",\"'+charDef+'\",64,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger4\",\"'+charDef+'\",66,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger41\",\"'+charDef+'\",67,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger42\",\"'+charDef+'\",68,0)')\n    \n    \n\n    mel.eval('setCharacterObject(\"Rig_R_Clavicle\",\"'+charDef+'\",19,0)')\n    mel.eval('setCharacterObject(\"Rig_R_UpperArm\",\"'+charDef+'\",12,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ForeArm\",\"'+charDef+'\",13,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Hand\",\"'+charDef+'\",14,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger0\",\"'+charDef+'\",74,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger01\",\"'+charDef+'\",75,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger02\",\"'+charDef+'\",76,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger1\",\"'+charDef+'\",78,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger11\",\"'+charDef+'\",79,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger12\",\"'+charDef+'\",80,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger2\",\"'+charDef+'\",82,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger21\",\"'+charDef+'\",83,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger22\",\"'+charDef+'\",84,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger3\",\"'+charDef+'\",86,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger31\",\"'+charDef+'\",87,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger32\",\"'+charDef+'\",88,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger4\",\"'+charDef+'\",90,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger41\",\"'+charDef+'\",91,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger42\",\"'+charDef+'\",92,0)')\n    \n    \n    mel.eval('setCharacterObject(\"Rig_L_UpperTwist\",\"'+charDef+'\",176,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ForeTwist\",\"'+charDef+'\",177,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ThighTwist\",\"'+charDef+'\",172,0)')\n    \n    \n    mel.eval('setCharacterObject(\"Rig_R_UpperTwist\",\"'+charDef+'\",178,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ForeTwist\",\"'+charDef+'\",179,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ThighTwist\",\"'+charDef+'\",174,0)')\n    \n    mel.eval('hikToggleLockDefinition()')\n    \n    \n\ncreate(chr_name)\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "'''\nCreated on 2020. 8. 7.\nNXN\n@author: LeeSungJun\n'''\nimport ma..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "T-HIK" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "'''\nCreated on 2020. 8. 7.\nNXN\n@author: LeeSungJun\n'''\nimport maya.cmds as cmds\nimport pymel.core as pm\nimport maya.mel as mel\n\nchr_name='Character'\n\ndef create(charName):\n   \n\n    charDef = mel.eval('hikCreateCharacter(\"'+charName+'\")')\n\n    try:\n        mel.eval('hikUpdateCharacterList()')\n        mel.eval('hikSelectDefinitionTab()')\n    except:\n        pass\n\n    \n    mel.eval('setCharacterObject(\"Root\",\"'+charDef+'\",0,0)')\n    mel.eval('setCharacterObject(\"Rig_Pelvis\",\"'+charDef+'\",1,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine\",\"'+charDef+'\",8,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine1\",\"'+charDef+'\",23,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine2\",\"'+charDef+'\",24,0)')\n\n    mel.eval('setCharacterObject(\"Rig_L_Thigh\",\"'+charDef+'\",2,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Calf\",\"'+charDef+'\",3,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Foot\",\"'+charDef+'\",4,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Toe0\",\"'+charDef+'\",16,0)')\n    \n    mel.eval('setCharacterObject(\"Rig_R_Thigh\",\"'+charDef+'\",5,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Calf\",\"'+charDef+'\",6,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Foot\",\"'+charDef+'\",7,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Toe0\",\"'+charDef+'\",17,0)')\n    \n    mel.eval('setCharacterObject(\"Rig_Head\",\"'+charDef+'\",15,0)')\n    mel.eval('setCharacterObject(\"Rig_Neck\",\"'+charDef+'\",20,0)')\n\n    mel.eval('setCharacterObject(\"Rig_L_Clavicle\",\"'+charDef+'\",18,0)')\n    mel.eval('setCharacterObject(\"Rig_L_UpperArm\",\"'+charDef+'\",9,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ForeArm\",\"'+charDef+'\",10,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Hand\",\"'+charDef+'\",11,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger0\",\"'+charDef+'\",50,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger01\",\"'+charDef+'\",51,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger02\",\"'+charDef+'\",52,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger1\",\"'+charDef+'\",54,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger11\",\"'+charDef+'\",55,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger12\",\"'+charDef+'\",56,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger2\",\"'+charDef+'\",58,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger21\",\"'+charDef+'\",59,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger22\",\"'+charDef+'\",60,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger3\",\"'+charDef+'\",62,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger31\",\"'+charDef+'\",63,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger32\",\"'+charDef+'\",64,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger4\",\"'+charDef+'\",66,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger41\",\"'+charDef+'\",67,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger42\",\"'+charDef+'\",68,0)')\n    \n    \n\n    mel.eval('setCharacterObject(\"Rig_R_Clavicle\",\"'+charDef+'\",19,0)')\n    mel.eval('setCharacterObject(\"Rig_R_UpperArm\",\"'+charDef+'\",12,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ForeArm\",\"'+charDef+'\",13,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Hand\",\"'+charDef+'\",14,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger0\",\"'+charDef+'\",74,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger01\",\"'+charDef+'\",75,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger02\",\"'+charDef+'\",76,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger1\",\"'+charDef+'\",78,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger11\",\"'+charDef+'\",79,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger12\",\"'+charDef+'\",80,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger2\",\"'+charDef+'\",82,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger21\",\"'+charDef+'\",83,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger22\",\"'+charDef+'\",84,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger3\",\"'+charDef+'\",86,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger31\",\"'+charDef+'\",87,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger32\",\"'+charDef+'\",88,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger4\",\"'+charDef+'\",90,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger41\",\"'+charDef+'\",91,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger42\",\"'+charDef+'\",92,0)')\n    \n    \n    mel.eval('setCharacterObject(\"Rig_L_UpperTwist\",\"'+charDef+'\",176,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ForeTwist\",\"'+charDef+'\",177,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ThighTwist\",\"'+charDef+'\",172,0)')\n    \n    \n    mel.eval('setCharacterObject(\"Rig_R_UpperTwist\",\"'+charDef+'\",178,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ForeTwist\",\"'+charDef+'\",179,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ThighTwist\",\"'+charDef+'\",174,0)')\n    \n    mel.eval('hikToggleLockDefinition()')\n    \n    \n\ncreate(chr_name)\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Export entire scene (including contents of all references) into one file" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Export All..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "EA" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconFile.png" 
+        -image1 "menuIconFile.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "Export" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r pc_diggor_rig_mocap_v002:Root ;\nselect -r pc_diggor_rig_mocap_v002:Root pc_diggor_rig_mocap_v002:MOD_grp ;\nselect -add pc_diggor_rig_mocap_v002:Diggor ;\nselect -add pc_diggor_rig_mocap_v002:HIKproperties1 ;\nselect -add pc_diggor_rig_mocap_v002:HIKSolverNode1 ;\nselect -add pc_diggor_rig_mocap_v002:HIKState2SK1 ;" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "select -r pc_diggor_rig_mocap_v002:Root ;\nselect -r pc_diggor_ri..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "select -r pc_diggor_rig_mocap_v002:Root ;\nselect -r pc_diggor_rig_mocap_v002:Root pc_diggor_rig_mocap_v002:MOD_grp ;\nselect -add pc_diggor_rig_mocap_v002:Diggor ;\nselect -add pc_diggor_rig_mocap_v002:HIKproperties1 ;\nselect -add pc_diggor_rig_mocap_v002:HIKSolverNode1 ;\nselect -add pc_diggor_rig_mocap_v002:HIKState2SK1 ;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
 
 } 

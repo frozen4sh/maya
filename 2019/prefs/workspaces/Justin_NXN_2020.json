@@ -20,6 +20,7 @@
                                     "title": "Status Line",
                                     "uiScript": "global string $gStatusLineForm; formLayout $gStatusLineForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -44,6 +45,7 @@
                                     "title": "Shelf",
                                     "uiScript": "global string $gShelfForm; formLayout $gShelfForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -73,6 +75,7 @@
                                                 "title": "Tool Box",
                                                 "uiScript": "global string $gToolboxForm; formLayout $gToolboxForm;",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 0,
@@ -88,7 +91,7 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 473,
+                                        "controlWidth": 300,
                                         "controlHeight": 1101,
                                         "collapsed": false,
                                         "controls": [
@@ -97,13 +100,14 @@
                                                 "title": "Script Editor",
                                                 "uiScript": "if(!`panel -q -exists scriptEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"scriptEditorPanel1\";\n\tscriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  scriptEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent scriptEditorPanel1;\n}\nscriptedPanel -e -parent scriptEditorPanel1Window scriptEditorPanel1;\n",
                                                 "retain": false,
+                                                "deleteLater": true,
                                                 "loadImmediately": false,
                                                 "checkPlugins": false,
                                                 "tabDirection": 0,
                                                 "closed": false,
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
-                                                "controlWidth": 473,
+                                                "controlWidth": 300,
                                                 "controlHeight": 1101
                                             }
                                         ]
@@ -112,7 +116,7 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 1323,
+                                        "controlWidth": 1419,
                                         "controlHeight": 1118,
                                         "collapsed": false,
                                         "controls": [
@@ -121,13 +125,14 @@
                                                 "title": "viewPanes",
                                                 "uiScript": "global string $gMainPane; paneLayout -nbg 0 $gMainPane;",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 0,
                                                 "closed": false,
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
-                                                "controlWidth": 1323,
+                                                "controlWidth": 1419,
                                                 "controlHeight": 1118,
                                                 "initCallback": "mainPaneStateCallback",
                                                 "stateString": "global string $gMainPane; paneLayout -edit -configuration single $gMainPane;if(`modelPanel -exists modelPanel4`){ modelPanel -edit -parent $gMainPane modelPanel4; paneLayout -edit -setPane modelPanel4 1 $gMainPane;}"
@@ -138,7 +143,7 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 318,
+                                        "controlWidth": 398,
                                         "controlHeight": 1101,
                                         "collapsed": false,
                                         "controls": [
@@ -147,16 +152,17 @@
                                                 "title": "Outliner",
                                                 "uiScript": "outlinerPanel -menuBarVisible true -label panelLabel Outliner",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 0,
                                                 "closed": false,
                                                 "widthProperty": "preferred",
                                                 "heightProperty": "free",
-                                                "controlWidth": 318,
+                                                "controlWidth": 398,
                                                 "controlHeight": 1101,
                                                 "initCallback": "outlinerStateCallback",
-                                                "stateString": "outlinerEditor -e -docTag \"isolOutln_fromSeln\" -showShapes 0 -showAssignedMaterials 0 -showTimeEditor 1 -showReferenceNodes 0 -showReferenceMembers 0 -showAttributes 0 -showConnected 0 -showAnimCurvesOnly 0 -showMuteInfo 0 -organizeByLayer 1 -organizeByClip 1 -showAnimLayerWeight 1 -autoExpandLayers 1 -autoExpand 0 -showDagOnly 1 -showAssets 1 -showContainedOnly 1 -showPublishedAsConnected 0 -showParentContainers 0 -showContainerContents 1 -ignoreDagHierarchy 0 -expandConnections 0 -showUpstreamCurves 1 -showUnitlessCurves 1 -showCompounds 1 -showLeafs 1 -showNumericAttrsOnly 0 -highlightActive 1 -autoSelectNewObjects 0 -doNotSelectNewObjects 0 -dropIsParent 1 -transmitFilters 0 -setFilter \"defaultSetFilter\" -showSetMembers 1 -allowMultiSelection 1 -alwaysToggleSelect 0 -directSelect 0 -isSet 0 -isSetMember 0 -displayMode \"DAG\" -expandObjects 0 -setsIgnoreFilters 1 -containersIgnoreFilters 0 -editAttrName 0 -showAttrValues 0 -highlightSecondary 0 -showUVAttrsOnly 0 -showTextureNodesOnly 0 -attrAlphaOrder \"default\" -animLayerFilterOptions \"allAffecting\" -sortOrder \"none\" -longNames 0 -niceNames 1 -selectCommand \"print(\\\"\\\")\" -showNamespace 1 -showPinIcons 0 -mapMotionTrails 0 -ignoreHiddenAttribute 0 -ignoreOutlinerColor 0 -renderFilterVisible 0 -renderFilterIndex 0 -selectionOrder \"chronological\" -expandAttribute 0 $editorName"
+                                                "stateString": "outlinerEditor -e -docTag \"isolOutln_fromSeln\" -showShapes 0 -showAssignedMaterials 0 -showTimeEditor 1 -showReferenceNodes 1 -showReferenceMembers 1 -showAttributes 0 -showConnected 0 -showAnimCurvesOnly 0 -showMuteInfo 0 -organizeByLayer 1 -organizeByClip 1 -showAnimLayerWeight 1 -autoExpandLayers 1 -autoExpand 0 -showDagOnly 1 -showAssets 1 -showContainedOnly 1 -showPublishedAsConnected 0 -showParentContainers 0 -showContainerContents 1 -ignoreDagHierarchy 0 -expandConnections 0 -showUpstreamCurves 1 -showUnitlessCurves 1 -showCompounds 1 -showLeafs 1 -showNumericAttrsOnly 0 -highlightActive 1 -autoSelectNewObjects 0 -doNotSelectNewObjects 0 -dropIsParent 1 -transmitFilters 0 -setFilter \"defaultSetFilter\" -showSetMembers 1 -allowMultiSelection 1 -alwaysToggleSelect 0 -directSelect 0 -isSet 0 -isSetMember 0 -displayMode \"DAG\" -expandObjects 0 -setsIgnoreFilters 1 -containersIgnoreFilters 0 -editAttrName 0 -showAttrValues 0 -highlightSecondary 0 -showUVAttrsOnly 0 -showTextureNodesOnly 0 -attrAlphaOrder \"default\" -animLayerFilterOptions \"allAffecting\" -sortOrder \"none\" -longNames 0 -niceNames 1 -selectCommand \"print(\\\"\\\")\" -showNamespace 1 -showPinIcons 0 -mapMotionTrails 0 -ignoreHiddenAttribute 0 -ignoreOutlinerColor 0 -renderFilterVisible 0 -renderFilterIndex 0 -selectionOrder \"chronological\" -expandAttribute 0 $editorName"
                                             }
                                         ]
                                     }
@@ -173,13 +179,14 @@
                                                 "title": "Channel Box / Layer Editor",
                                                 "uiScript": "global string $gChannelsLayersForm; formLayout $gChannelsLayersForm;",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 3,
                                                 "closed": false,
                                                 "widthProperty": "preferred",
                                                 "heightProperty": "free",
-                                                "controlWidth": 260,
+                                                "controlWidth": 261,
                                                 "controlHeight": 1118
                                             },
                                             {
@@ -187,6 +194,7 @@
                                                 "title": "Modeling Toolkit",
                                                 "uiScript": "dR_createNEXDockControl();",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 3,
@@ -204,6 +212,7 @@
                                                 "title": "Attribute Editor",
                                                 "uiScript": "global string $gAttributeEditorForm; formLayout $gAttributeEditorForm;",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 3,
@@ -218,6 +227,7 @@
                                                 "title": "Human IK",
                                                 "uiScript": "hikBuildCharacterControlsDockableWindow();",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 3,
@@ -236,6 +246,7 @@
                                                 "title": "Tool Settings",
                                                 "uiScript": "global string $gToolSettingsForm; formLayout $gToolSettingsForm;",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 3,
@@ -263,6 +274,7 @@
                                     "title": "Time Slider",
                                     "uiScript": "global string $gTimeSliderForm; formLayout $gTimeSliderForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -287,6 +299,7 @@
                                     "title": "Range Slider",
                                     "uiScript": "global string $gPlaybackRangeForm; formLayout $gPlaybackRangeForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -311,6 +324,7 @@
                                     "title": "Command Line",
                                     "uiScript": "global string $gCommandLineForm; formLayout $gCommandLineForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -335,6 +349,7 @@
                                     "title": "Help Line",
                                     "uiScript": "global string $gHelpLineForm; formLayout $gHelpLineForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -349,85 +364,15 @@
                     }
                 ]
             }
-        },
-        {
-            "mainWindowPanel": false,
-            "posX": -1305,
-            "posY": 531,
-            "splitter": {
-                "orientation": "horizontal",
-                "children": [
-                    {
-                        "tabWidget": {
-                            "selectedIndex": 0,
-                            "controlWidth": 832,
-                            "controlHeight": 527,
-                            "collapsed": false,
-                            "controls": [
-                                {
-                                    "objectName": "referenceEditorPanel1Window",
-                                    "title": "Reference Editor",
-                                    "uiScript": "if(!`panel -q -exists referenceEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"referenceEditorPanel1\";\n\tscriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  referenceEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent referenceEditorPanel1;\n}\nscriptedPanel -e -parent referenceEditorPanel1Window referenceEditorPanel1;\n",
-                                    "retain": false,
-                                    "loadImmediately": false,
-                                    "checkPlugins": false,
-                                    "tabDirection": 0,
-                                    "closed": false,
-                                    "widthProperty": "free",
-                                    "heightProperty": "free",
-                                    "controlWidth": 832,
-                                    "controlHeight": 527
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
         }
     ],
     "closedControls": [
         {
-            "objectName": "clipEditorPanel1Window",
-            "posX": -2560,
-            "posY": 29,
-            "controlHeight": 1369,
-            "controlWidth": 2556,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "UVToolkitDockControl",
-            "posX": 1913,
-            "posY": 321,
-            "controlHeight": 766,
-            "controlWidth": 291,
-            "widthProperty": "preferred",
-            "heightProperty": "free"
-        },
-        {
             "objectName": "unifiedRenderGlobalsWindow",
-            "posX": -2087,
-            "posY": 97,
+            "posX": 1229,
+            "posY": 271,
             "controlHeight": 1217,
             "controlWidth": 456,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "hyperGraphPanel2Window",
-            "posX": 250,
-            "posY": 200,
-            "controlHeight": 325,
-            "controlWidth": 475,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "timeEditorPanel1Window",
-            "posX": -1961,
-            "posY": 357,
-            "controlHeight": 781,
-            "controlWidth": 1601,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -441,38 +386,20 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "hyperShadePanel1Window",
-            "posX": -2688,
-            "posY": 118,
-            "controlHeight": 1407,
-            "controlWidth": 2478,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "modelPanel5Window",
-            "posX": -1417,
-            "posY": 154,
-            "controlHeight": 1116,
-            "controlWidth": 1338,
+            "objectName": "hyperGraphPanel2Window",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 325,
+            "controlWidth": 475,
             "widthProperty": "free",
             "heightProperty": "free"
         },
         {
             "objectName": "nodeEditorPanel1Window",
-            "posX": -1906,
-            "posY": 237,
+            "posX": 242,
+            "posY": 234,
             "controlHeight": 993,
             "controlWidth": 1775,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "shapePanel1Window",
-            "posX": -958,
-            "posY": 417,
-            "controlHeight": 699,
-            "controlWidth": 701,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -486,20 +413,101 @@
             "heightProperty": "free"
         },
         {
+            "objectName": "timeEditorPanel1Window",
+            "posX": -1961,
+            "posY": 357,
+            "controlHeight": 781,
+            "controlWidth": 1601,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "hyperShadePanel1Window",
+            "posX": -113,
+            "posY": 126,
+            "controlHeight": 1407,
+            "controlWidth": 2478,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
             "objectName": "RigManagerWorkspaceControl",
-            "posX": 1957,
-            "posY": 398,
+            "posX": 448,
+            "posY": 394,
             "controlHeight": 800,
             "controlWidth": 431,
             "widthProperty": "free",
             "heightProperty": "free"
         },
         {
+            "objectName": "UVToolkitDockControl",
+            "posX": 1913,
+            "posY": 321,
+            "controlHeight": 766,
+            "controlWidth": 291,
+            "widthProperty": "preferred",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "shapePanel1Window",
+            "posX": -958,
+            "posY": 417,
+            "controlHeight": 699,
+            "controlWidth": 701,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "componentEditorPanel1Window",
+            "posX": 1152,
+            "posY": 390,
+            "controlHeight": 763,
+            "controlWidth": 1064,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "modelPanel5Window",
+            "posX": -1417,
+            "posY": 154,
+            "controlHeight": 1116,
+            "controlWidth": 1338,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "clipEditorPanel1Window",
+            "posX": -2560,
+            "posY": 29,
+            "controlHeight": 1369,
+            "controlWidth": 2556,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "dopeSheetPanel1Window",
+            "posX": 289,
+            "posY": 437,
+            "controlHeight": 987,
+            "controlWidth": 1776,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "referenceEditorPanel1Window",
+            "posX": 432,
+            "posY": 381,
+            "controlHeight": 855,
+            "controlWidth": 1374,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
             "objectName": "graphEditor1Window",
-            "posX": -2346,
-            "posY": 225,
-            "controlHeight": 1056,
-            "controlWidth": 2146,
+            "posX": -2560,
+            "posY": 29,
+            "controlHeight": 1369,
+            "controlWidth": 2556,
             "widthProperty": "free",
             "heightProperty": "free"
         }

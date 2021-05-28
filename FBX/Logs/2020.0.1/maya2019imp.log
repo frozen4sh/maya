@@ -300,3 +300,81 @@ The following display layers are affected: Export_Bone Ani_Body
 2020-10-05 18:23:11: LOG: Import: Z:/Teams/INGAME/mirabelle_0010_004.fbx
 2020-10-06 17:40:35: LOG: Import: Z:/Teams/CINEMA/05.Rig/03.test/FaceFX/03_Other_Data/FBX/prologueMan_FFX_ROM.fbx
 2020-10-06 17:40:42: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. prologueMan_Body mod prologueMan_weapon prologueMan_Face
+2021-05-26 11:42:07: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v007.fbx
+2021-05-26 11:42:14: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_argos_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod2 GrpGeo_argos_lod2 LOD_2 GrpGeo_body_lod2 GrpGeo_argos_lod3 LOD_3 GrpGeo_argos_lod4 LOD_4 GrpGeo_face_lod1
+2021-05-26 11:42:32: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v007.fbx
+2021-05-26 11:42:37: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_argos_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod2 GrpGeo_argos_lod2 LOD_2 GrpGeo_body_lod2 GrpGeo_argos_lod3 LOD_3 GrpGeo_argos_lod4 LOD_4 GrpGeo_face_lod1
+2021-05-26 11:42:48: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part4/Sq0075_Sh5200_Sh7800_01_03_argos_maciek.fbx
+2021-05-26 11:48:13: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part4/Sq0075_Sh5200_Sh7800_01_03_argos_maciek.fbx
+2021-05-26 11:54:26: LOG: Import: D:/Justin/2021_2Q/scenes/mm_test.fbx
+2021-05-26 11:54:32: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_argos_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod2 GrpGeo_argos_lod2 LOD_2 GrpGeo_body_lod2 GrpGeo_argos_lod3 LOD_3 GrpGeo_argos_lod4 LOD_4 GrpGeo_face_lod1
+2021-05-26 11:58:44: LOG: Import: Z:/Projects/rise/dev/shots/0075/4700/anim/combine/maya/data/0075_4700_pc_argos_combine_cinema_p001_v001.fbx
+2021-05-26 12:00:56: LOG: Import: D:/Justin/2021_2Q/scenes/mm_test.fbx
+2021-05-26 12:01:30: LOG: Import: D:/Justin/2021_2Q/scenes/mm_test.fbx
+2021-05-26 12:05:03: LOG: Import: Z:/Projects/rise/dev/shots/0075/4700/anim/combine/maya/data/0075_4700_pc_argos_combine_cinema_p001_v001.fbx
+2021-05-26 12:08:58: LOG: Import: D:/Justin/2021_2Q/scenes/mm_test.fbx
+2021-05-26 14:55:58: LOG: Import: Z:/Projects/rise/dev/assets/pc/greyworm/moc/facial/maya/data/pc_greyworm_facial_frontcam_v001.fbx
+2021-05-26 14:58:20: LOG: Import: Z:/Teams/CINEMA/04.Mocap/07.Facial/FaceFX/maya/data/nxn_310Rom_facial_frontcam_v002.fbx
+2021-05-27 10:04:29: LOG: Import: Z:/Projects/rise/dev/shots/0075/4000/anim/combine/maya/data/0075_4000_npc_gLegnoMember_010_combine_cinema_p001_v001.fbx
+2021-05-27 10:07:11: LOG: Import: Z:/Projects/rise/dev/assets/pc/factor/rig/mocap/maya/scenes/pc_factor_mocap_v004.fbx
+2021-05-27 10:07:18: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_factor_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod1 GrpGeo_face_lod0 GrpGeo_factor_lod0 LOD_0 GrpGeo_body_lod0 GrpGeo_body_lod3 GrpGrp_factor_lod3 LOD_3 GrpGeo_face_lod3 GrpGeo_body_lod4 GrpGeo_factor_lod4 LOD_4 GrpGeo_face_lod4 GrpGeo_body_lod2 GrpGeo_factor_lod2 LOD_2 GrpGeo_face_lod2
+2021-05-27 10:11:09: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0075_Sh8400_Sh8600_par03_01_04_factor_maciek.fbx
+2021-05-27 15:30:10: LOG: Import: Z:/Projects/rise/dev/assets/npc/gLegnoMember_010/rig/mocap/maya/scenes/npc_gLegnoMember_010_rig_mocap_lod0_v001.fbx
+2021-05-27 15:30:11: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_gLegnoMember_010_lod0 GrpGeo_face_lod0
+2021-05-27 15:40:27: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p001_v002.fbx
+2021-05-27 15:46:09: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p001_v002.fbx
+2021-05-27 15:49:03: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p004_v001.fbx
+2021-05-27 15:56:14: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p001_v002.fbx
+2021-05-27 15:58:02: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p001_v002.fbx
+2021-05-27 16:01:06: LOG: Import: Z:/Projects/rise/dev/assets/pc/factor/rig/mocap/maya/scenes/pc_factor_mocap_v004.fbx
+2021-05-27 16:01:19: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_factor_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod1 GrpGeo_face_lod0 GrpGeo_factor_lod0 LOD_0 GrpGeo_body_lod0 GrpGeo_body_lod3 GrpGrp_factor_lod3 LOD_3 GrpGeo_face_lod3 GrpGeo_body_lod4 GrpGeo_factor_lod4 LOD_4 GrpGeo_face_lod4 GrpGeo_body_lod2 GrpGeo_factor_lod2 LOD_2 GrpGeo_face_lod2
+2021-05-27 16:01:47: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0075_Sh8400_Sh8600_par03_01_05_factor_slawek.fbx
+2021-05-27 16:03:51: LOG: Import: Z:/Projects/rise/dev/assets/npc/gLegnoMember_020/rig/mocap/maya/scenes/npc_gLegnoMember_020_rig_mocap_lod0_v001.fbx
+2021-05-27 16:03:53: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_gLegnoMember_020_lod0 GrpGeo_face_lod0
+2021-05-27 16:05:47: LOG: Import: Z:/Projects/rise/dev/assets/pc/factor/rig/mocap/maya/scenes/pc_factor_mocap_v004.fbx
+2021-05-27 16:05:56: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_factor_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod1 GrpGeo_face_lod0 GrpGeo_factor_lod0 LOD_0 GrpGeo_body_lod0 GrpGeo_body_lod3 GrpGrp_factor_lod3 LOD_3 GrpGeo_face_lod3 GrpGeo_body_lod4 GrpGeo_factor_lod4 LOD_4 GrpGeo_face_lod4 GrpGeo_body_lod2 GrpGeo_factor_lod2 LOD_2 GrpGeo_face_lod2
+2021-05-27 16:06:22: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0075_Sh8400_Sh8600_par03_01_06_factor_ashton.fbx
+2021-05-27 16:07:32: LOG: Import: Z:/Projects/rise/dev/assets/npc/gLegnoMember_030/rig/mocap/maya/scenes/npc_gLegnoMember_030_rig_mocap_lod0_v003.fbx
+2021-05-27 16:07:37: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_gLegnoMember_030_lod0 LOD_0 LOD_Group_1 GrpGeo_face_lod0 GrpGeo_body_lod1 GrpGeo_gLegnoMember_030_lod1 LOD_1 GrpGeo_face_lod1 GrpGeo_body_lod2 GrpGeo_gLegnoMember_030_lod2 LOD_2 GrpGeo_face_lod2 GrpGeo_gLegnoMember_030_lod3 LOD_3 GrpGeo_gLegnoMember_030_lod4 LOD_4
+2021-05-27 16:10:40: LOG: Import: Z:/Projects/rise/dev/assets/pc/factor/rig/mocap/maya/scenes/pc_factor_mocap_v004.fbx
+2021-05-27 16:10:48: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_factor_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod1 GrpGeo_face_lod0 GrpGeo_factor_lod0 LOD_0 GrpGeo_body_lod0 GrpGeo_body_lod3 GrpGrp_factor_lod3 LOD_3 GrpGeo_face_lod3 GrpGeo_body_lod4 GrpGeo_factor_lod4 LOD_4 GrpGeo_face_lod4 GrpGeo_body_lod2 GrpGeo_factor_lod2 LOD_2 GrpGeo_face_lod2
+2021-05-27 16:11:33: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0075_Sh8400_Sh8600_par03_01_06_factor_maciek.fbx
+2021-05-27 16:12:17: LOG: Import: Z:/Projects/rise/dev/assets/npc/gLegnoMember_010/rig/mocap/maya/scenes/npc_gLegnoMember_010_rig_mocap_lod0_v001.fbx
+2021-05-27 16:12:18: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_gLegnoMember_010_lod0 GrpGeo_face_lod0
+2021-05-27 16:21:40: LOG: Import: Z:/Projects/rise/dev/assets/pc/factor/rig/mocap/maya/scenes/pc_factor_mocap_v004.fbx
+2021-05-27 16:21:48: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_factor_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod1 GrpGeo_face_lod0 GrpGeo_factor_lod0 LOD_0 GrpGeo_body_lod0 GrpGeo_body_lod3 GrpGrp_factor_lod3 LOD_3 GrpGeo_face_lod3 GrpGeo_body_lod4 GrpGeo_factor_lod4 LOD_4 GrpGeo_face_lod4 GrpGeo_body_lod2 GrpGeo_factor_lod2 LOD_2 GrpGeo_face_lod2
+2021-05-27 16:22:05: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0075_Sh8400_Sh8600_par03_01_04_factor_maciek.fbx
+2021-05-27 16:22:38: LOG: Import: Z:/Projects/rise/dev/assets/npc/gLegnoMember_010/rig/mocap/maya/scenes/npc_gLegnoMember_010_rig_mocap_lod0_v001.fbx
+2021-05-27 16:22:40: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_gLegnoMember_010_lod0 GrpGeo_face_lod0
+2021-05-27 16:24:35: LOG: Import: Z:/Projects/rise/dev/assets/pc/factor/rig/mocap/maya/scenes/pc_factor_mocap_v004.fbx
+2021-05-27 16:24:44: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_factor_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod1 GrpGeo_face_lod0 GrpGeo_factor_lod0 LOD_0 GrpGeo_body_lod0 GrpGeo_body_lod3 GrpGrp_factor_lod3 LOD_3 GrpGeo_face_lod3 GrpGeo_body_lod4 GrpGeo_factor_lod4 LOD_4 GrpGeo_face_lod4 GrpGeo_body_lod2 GrpGeo_factor_lod2 LOD_2 GrpGeo_face_lod2
+2021-05-27 16:25:59: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0075_Sh8400_Sh8600_par03_01_06_factor_ashton.fbx
+2021-05-27 16:26:21: LOG: Import: Z:/Projects/rise/dev/assets/npc/gLegnoMember_030/rig/mocap/maya/scenes/npc_gLegnoMember_030_rig_mocap_lod0_v003.fbx
+2021-05-27 16:26:25: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_gLegnoMember_030_lod0 LOD_0 LOD_Group_1 GrpGeo_face_lod0 GrpGeo_body_lod1 GrpGeo_gLegnoMember_030_lod1 LOD_1 GrpGeo_face_lod1 GrpGeo_body_lod2 GrpGeo_gLegnoMember_030_lod2 LOD_2 GrpGeo_face_lod2 GrpGeo_gLegnoMember_030_lod3 LOD_3 GrpGeo_gLegnoMember_030_lod4 LOD_4
+2021-05-27 16:28:45: LOG: Import: Z:/Projects/rise/dev/assets/pc/factor/rig/mocap/maya/scenes/pc_factor_mocap_v004.fbx
+2021-05-27 16:28:54: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_factor_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod1 GrpGeo_face_lod0 GrpGeo_factor_lod0 LOD_0 GrpGeo_body_lod0 GrpGeo_body_lod3 GrpGrp_factor_lod3 LOD_3 GrpGeo_face_lod3 GrpGeo_body_lod4 GrpGeo_factor_lod4 LOD_4 GrpGeo_face_lod4 GrpGeo_body_lod2 GrpGeo_factor_lod2 LOD_2 GrpGeo_face_lod2
+2021-05-27 16:29:28: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0075_Sh8400_Sh8600_par03_01_06_factor_ashton.fbx
+2021-05-27 16:29:42: LOG: Import: Z:/Projects/rise/dev/assets/npc/gLegnoMember_030/rig/mocap/maya/scenes/npc_gLegnoMember_030_rig_mocap_lod0_v003.fbx
+2021-05-27 16:29:45: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_gLegnoMember_030_lod0 LOD_0 LOD_Group_1 GrpGeo_face_lod0 GrpGeo_body_lod1 GrpGeo_gLegnoMember_030_lod1 LOD_1 GrpGeo_face_lod1 GrpGeo_body_lod2 GrpGeo_gLegnoMember_030_lod2 LOD_2 GrpGeo_face_lod2 GrpGeo_gLegnoMember_030_lod3 LOD_3 GrpGeo_gLegnoMember_030_lod4 LOD_4
+2021-05-27 16:30:57: LOG: Import: Z:/Projects/rise/dev/assets/pc/factor/rig/mocap/maya/scenes/pc_factor_mocap_v004.fbx
+2021-05-27 16:31:09: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_factor_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod1 GrpGeo_face_lod0 GrpGeo_factor_lod0 LOD_0 GrpGeo_body_lod0 GrpGeo_body_lod3 GrpGrp_factor_lod3 LOD_3 GrpGeo_face_lod3 GrpGeo_body_lod4 GrpGeo_factor_lod4 LOD_4 GrpGeo_face_lod4 GrpGeo_body_lod2 GrpGeo_factor_lod2 LOD_2 GrpGeo_face_lod2
+2021-05-27 16:33:11: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/moc/body/Delivery/2021-02-cutscene_Part3/Sq0075_Sh8400_Sh8600_par03_01_06_factor_maciek.fbx
+2021-05-27 16:33:27: LOG: Import: Z:/Projects/rise/dev/assets/npc/gLegnoMember_010/rig/mocap/maya/scenes/npc_gLegnoMember_010_rig_mocap_lod0_v001.fbx
+2021-05-27 16:33:29: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod0 GrpGeo_gLegnoMember_010_lod0 GrpGeo_face_lod0
+2021-05-27 17:21:17: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_020_combine_cinema_p002_v002.fbx
+2021-05-27 17:21:38: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_030_combine_cinema_p003_v002.fbx
+2021-05-27 17:21:58: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p004_v002.fbx
+2021-05-27 17:22:13: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p005_v002.fbx
+2021-05-27 17:42:11: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_030_combine_cinema_p006_v002.fbx
+2021-05-27 17:44:57: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p007_v002.fbx
+2021-05-27 18:07:21: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p001_v002.fbx
+2021-05-27 18:07:48: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_020_combine_cinema_p002_v002.fbx
+2021-05-27 18:08:53: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_030_combine_cinema_p003_v002.fbx
+2021-05-27 18:09:24: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p004_v002.fbx
+2021-05-27 18:10:21: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p005_v002.fbx
+2021-05-27 18:11:34: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_030_combine_cinema_p006_v002.fbx
+2021-05-27 18:12:02: LOG: Import: Z:/Projects/rise/dev/shots/0085/7800/anim/combine/maya/data/0085_7800_npc_gLegnoMember_010_combine_cinema_p007_v002.fbx
+2021-05-28 10:13:39: LOG: Import: Z:/Projects/rise/dev/shots/0075/0900/anim/combine/maya/data/0075_0900_pc_argos_combine_cinema_p001_v002.fbx
+2021-05-28 10:18:04: LOG: Import: Z:/Projects/rise/dev/shots/0075/0900/anim/combine/maya/data/0075_0900_pc_argos_combine_cinema_p001_v002.fbx
+2021-05-28 10:19:02: LOG: Import: Z:/Projects/rise/dev/shots/0075/0900/anim/combine/maya/data/0075_0900_pc_argos_combine_cinema_p001_v002.fbx
+2021-05-28 10:19:48: LOG: Import: Z:/Projects/rise/dev/shots/0075/0900/anim/combine/maya/data/0075_0900_pc_argos_combine_cinema_p001_v002.fbx

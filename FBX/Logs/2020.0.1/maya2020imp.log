@@ -1,1 +1,7 @@
 2020-09-15 17:57:49: LOG: Import: Z:/Projects/rise/dev/shots/0010/0030/anim/polishing/maya/data/0010_0030_cam_main_f0502_lod0_001.fbx
+2021-04-12 16:43:28: LOG: Import: C:/Users/NXN-088/AppData/Local/Temp/MotionBuilder_to_Maya_cidrFO.fbx
+2021-04-12 16:43:39: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Rig Body GrpGeo_argos_lod0
+2021-04-12 16:43:39: LOG: [ERROR  ] Unexpected Skin Hierarchy - The plug-in encountered the following unexpected skin hierarchy :  The skin Rig_R_Weapon is parented to the deforming bone Rig_R_Weapon. This skin may not deform as expected.
+2021-04-12 16:43:39: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
