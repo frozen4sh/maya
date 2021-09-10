@@ -54,3 +54,29 @@ runTimeCommand
 	-command ("#alloff_needTurnOn\n\nimport maya.cmds as mc\n\n#getPannel\ndef getPanel():\n    currentPannel = mc.getPanel(underPointer = True) \n    if currentPannel == None:\n        currentPannel = mc.getPanel(withFocus = True)\n    print(currentPannel)\n    return currentPannel\n    \n    \nmyPanel = getPanel()\n\n\nmc.modelEditor(myPanel, e=True, allObjects=False)\nmc.modelEditor(myPanel, e=True, imagePlane=True)\nmc.modelEditor(myPanel, e=True, polymeshes=True)\nmc.modelEditor(myPanel, e=True, nurbsCurves=True)\nmc.modelEditor(myPanel, e=True, pluginObjects=('gpuCacheDisplayFilter',True))")
 	Show_Toggle;
 
+runTimeCommand
+	-label ""
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-annotation ""
+	-category "Custom Scripts"
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("timeSliderPasteKey false;\n")
+	timeSliderPasteKey_bind;
+
+runTimeCommand
+	-label ""
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-annotation ""
+	-category "Custom Scripts"
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("timeSliderCopyKey;")
+	timeSliderCopyKey_bind;
+

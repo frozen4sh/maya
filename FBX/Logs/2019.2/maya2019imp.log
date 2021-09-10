@@ -1245,3 +1245,19 @@
 2021-05-26 11:19:13: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_argos_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod2 GrpGeo_argos_lod2 LOD_2 GrpGeo_body_lod2 GrpGeo_argos_lod3 LOD_3 GrpGeo_argos_lod4 LOD_4 GrpGeo_face_lod1
 2021-05-26 11:29:00: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v007.fbx
 2021-05-26 11:29:06: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_argos_lod1 LOD_1 LOD_Group_1 GrpGeo_face_lod2 GrpGeo_argos_lod2 LOD_2 GrpGeo_body_lod2 GrpGeo_argos_lod3 LOD_3 GrpGeo_argos_lod4 LOD_4 GrpGeo_face_lod1
+2021-08-17 12:23:44: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M1_body_s18_0001_v004.fbx
+2021-08-17 12:27:04: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M1_body_s18_0001_v004.fbx
+2021-08-17 12:30:00: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M1_body_s18_0001_v004.fbx
+2021-08-17 12:30:38: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M1_body_s18_0001_v004.fbx
+2021-08-17 12:31:41: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M1_body_s18_0001_v004.fbx
+2021-08-17 12:41:43: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M1_body_s18_0001_v004.fbx
+2021-08-17 12:42:08: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M1_body_s18_0001_v004.fbx
+2021-08-17 12:42:43: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M1_body_s18_0001_v004.fbx
+2021-08-17 14:46:23: LOG: Import: Z:/Projects/rise/dev/assets/animal/thoroughbred/rig/skeletal/maya/scenes/animal_thoroughbred_SK_lod0_v001.fbx
+2021-08-17 14:46:25: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_Thoroughbred_lod0
+2021-08-17 15:41:23: LOG: Import: Z:/Projects/rise/dev/shots/0115/0000/moc/body/motionbuilder/0115_0050_body_m23_0004_v003.fbx
+2021-08-17 15:41:27: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. monstrum_musves_rig_mocap_lod0_v001_quadpadHand:GrpGeo_musves_lod0
+2021-08-17 17:52:38: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M8_body_s18_0001_v004.fbx
+2021-08-17 17:52:48: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M8_body_s18_0001_v004.fbx
+2021-08-17 18:02:56: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M8_body_s18_0001_v004.fbx
+2021-08-17 18:03:54: LOG: Import: D:/Justin/2021_3Q/scenes/NEU_M8_body_s18_0001_v004.fbx

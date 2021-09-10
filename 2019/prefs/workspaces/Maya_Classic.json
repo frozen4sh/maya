@@ -1,7 +1,7 @@
 {
     "linkedMenu": "modelingMenuSet",
     "autoSave": true,
-    "selectedShelf": "Polygons",
+    "selectedShelf": "Rigging",
     "panels": [
         {
             "mainWindowPanel": true,
@@ -20,6 +20,7 @@
                                     "title": "Status Line",
                                     "uiScript": "global string $gStatusLineForm; formLayout $gStatusLineForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -44,6 +45,7 @@
                                     "title": "Shelf",
                                     "uiScript": "global string $gShelfForm; formLayout $gShelfForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -73,6 +75,7 @@
                                                 "title": "Tool Box",
                                                 "uiScript": "global string $gToolboxForm; formLayout $gToolboxForm;",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 0,
@@ -89,21 +92,22 @@
                                     "tabWidget": {
                                         "selectedIndex": 0,
                                         "controlWidth": 260,
-                                        "controlHeight": 1101,
+                                        "controlHeight": 633,
                                         "controls": [
                                             {
                                                 "objectName": "Outliner",
                                                 "title": "Outliner",
                                                 "uiScript": "outlinerPanel -menuBarVisible true -label panelLabel Outliner",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 0,
                                                 "closed": true,
                                                 "widthProperty": "preferred",
                                                 "heightProperty": "free",
-                                                "controlWidth": 319,
-                                                "controlHeight": 1101,
+                                                "controlWidth": 260,
+                                                "controlHeight": 633,
                                                 "initCallback": "outlinerStateCallback"
                                             }
                                         ]
@@ -121,6 +125,7 @@
                                                 "title": "viewPanes",
                                                 "uiScript": "global string $gMainPane; paneLayout -nbg 0 $gMainPane;",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 0,
@@ -147,6 +152,7 @@
                                                 "title": "Channel Box / Layer Editor",
                                                 "uiScript": "global string $gChannelsLayersForm; formLayout $gChannelsLayersForm;",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 3,
@@ -161,6 +167,7 @@
                                                 "title": "Modeling Toolkit",
                                                 "uiScript": "dR_createNEXDockControl();",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 3,
@@ -178,6 +185,7 @@
                                                 "title": "Attribute Editor",
                                                 "uiScript": "global string $gAttributeEditorForm; formLayout $gAttributeEditorForm;",
                                                 "retain": true,
+                                                "deleteLater": true,
                                                 "loadImmediately": true,
                                                 "checkPlugins": false,
                                                 "tabDirection": 3,
@@ -205,6 +213,7 @@
                                     "title": "Time Slider",
                                     "uiScript": "global string $gTimeSliderForm; formLayout $gTimeSliderForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -229,6 +238,7 @@
                                     "title": "Range Slider",
                                     "uiScript": "global string $gPlaybackRangeForm; formLayout $gPlaybackRangeForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -253,6 +263,7 @@
                                     "title": "Command Line",
                                     "uiScript": "global string $gCommandLineForm; formLayout $gCommandLineForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -277,6 +288,7 @@
                                     "title": "Help Line",
                                     "uiScript": "global string $gHelpLineForm; formLayout $gHelpLineForm;",
                                     "retain": true,
+                                    "deleteLater": true,
                                     "loadImmediately": true,
                                     "checkPlugins": false,
                                     "tabDirection": 0,
@@ -295,20 +307,11 @@
     ],
     "closedControls": [
         {
-            "objectName": "UVToolkitDockControl",
-            "posX": 1324,
-            "posY": 169,
-            "controlHeight": 783,
-            "controlWidth": 287,
-            "widthProperty": "preferred",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "hyperShadePanel1Window",
-            "posX": 75,
-            "posY": 75,
-            "controlHeight": 900,
-            "controlWidth": 1440,
+            "objectName": "graphEditor1Window",
+            "posX": 200,
+            "posY": 250,
+            "controlHeight": 400,
+            "controlWidth": 660,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -322,6 +325,15 @@
             "heightProperty": "free"
         },
         {
+            "objectName": "hyperShadePanel1Window",
+            "posX": 75,
+            "posY": 75,
+            "controlHeight": 900,
+            "controlWidth": 1440,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
             "objectName": "polyTexturePlacementPanel1Window",
             "posX": 200,
             "posY": 150,
@@ -331,16 +343,16 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "graphEditor1Window",
-            "posX": 200,
-            "posY": 250,
-            "controlHeight": 400,
-            "controlWidth": 660,
-            "widthProperty": "free",
+            "objectName": "UVToolkitDockControl",
+            "posX": 1324,
+            "posY": 169,
+            "controlHeight": 783,
+            "controlWidth": 287,
+            "widthProperty": "preferred",
             "heightProperty": "free"
         },
         {
-            "objectName": "hyperGraphPanel2Window",
+            "objectName": "referenceEditorPanel1Window",
             "posX": 250,
             "posY": 200,
             "controlHeight": 325,
@@ -349,7 +361,7 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "referenceEditorPanel1Window",
+            "objectName": "hyperGraphPanel2Window",
             "posX": 250,
             "posY": 200,
             "controlHeight": 325,
