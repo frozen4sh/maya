@@ -194,3 +194,782 @@ The following surface shaders will be converted to Lambert material:
 
 2021-09-09 18:26:07: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
 
+2021-09-12 17:19:00: LOG: Export: Z:/Projects/rise/dev/assets/pc/greyworm/moc/facial/maya/data/pc_greyworm_facial_frontcam_v002.fbx
+2021-09-12 17:19:01: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-09-12 17:20:51: LOG: Export: Z:/Projects/rise/dev/assets/pc/greyworm/moc/facial/maya/data/pc_greyworm_facial_sidecam_v001.fbx
+2021-09-12 17:20:51: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-09-14 21:23:54: LOG: Export: Z:/Projects/rise/dev/shots/0025/5601/anim/clip/maya/data/0025_5601_army_GEN_MCN_LEA_LINF_clip_p001_lod0_v003.fbx
+2021-09-14 21:24:03: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_R_Scroll_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility regionJoint_27_L_visibility regionJoint_08_M_visibility regionJoint_27_R_visibility Rig_R_Clavicle_visibility Rig_R_UpperArm_visibility Rig_R_UpperTwist_visibility Rig_R_ForeArm_visibility Rig_R_ForeTwist_visibility Rig_R_Hand_visibility Rig_R_Weapon_visibility Rig_R_Finger0_visibility Rig_R_Finger01_visibility Rig_R_Finger02_visibility Rig_R_Finger4_visibility Rig_R_Finger41_visibility Rig_R_Finger42_visibility Rig_R_Finger3_visibility Rig_R_Finger31_visibility Rig_R_Finger32_
+2021-09-16 12:57:09: LOG: Export: Z:/Projects/rise/dev/assets/pc/mirabelle/moc/facial/maya/data/pc_mirabelle_facial_frontcam_v002.fbx
+2021-09-16 12:57:09: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-09-16 12:57:09: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-09-16 12:57:25: LOG: Export: Z:/Projects/rise/dev/assets/pc/mirabelle/moc/facial/maya/data/pc_mirabelle_facial_sidecam_v001.fbx
+2021-09-16 12:57:26: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-09-16 12:57:26: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-09-16 12:57:38: LOG: Export: Z:/Projects/rise/dev/assets/pc/mirabelle/moc/facial/maya/data/pc_mirabelle_facial_frontcam_v002.fbx
+2021-09-16 12:57:38: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-09-16 12:57:38: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-13 11:08:35: LOG: Export: Z:/Projects/rise/dev/shots/0075/0000/moc/combine/maya/data/Sq0075_sc0020_part02_01_02_factor_michael_30fps.fbx
+2021-10-13 11:08:39: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:08:39: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:11:03: LOG: Export: Z:/Projects/rise/dev/shots/0075/0000/moc/combine/maya/data/Sq0075_sc0020_part02_01_02_ednRegLeaLinf_marco_30fps.fbx
+2021-10-13 11:11:07: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:11:07: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:13:25: LOG: Export: Z:/Projects/rise/dev/shots/0075/0000/moc/combine/maya/data/Sq0075_sc0010_part02_01_03_factor_michael_30fps.fbx
+2021-10-13 11:13:28: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:13:28: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:15:57: LOG: Export: Z:/Projects/rise/dev/shots/0115/0000/moc/body/Delivery/2021-07-21/Sq0115_sc0060_part02_03_02_royden_maciek_30fps.fbx
+2021-10-13 11:15:58: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:15:58: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:18:44: LOG: Export: Z:/Projects/rise/dev/shots/0115/0000/moc/body/Delivery/2021-07-21/Sq0115_sc0060_part02_02_01_royden_maciek_30fps.fbx
+2021-10-13 11:18:46: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:18:46: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:19:53: LOG: Export: Z:/Projects/rise/dev/shots/0115/0000/moc/body/Delivery/2021-07-21/Sq0115_sc0060_part02_01_03_royden_maciek_30fps.fbx
+2021-10-13 11:19:55: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:19:55: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:21:04: LOG: Export: Z:/Projects/rise/dev/shots/0115/0000/moc/body/Delivery/2021-07-21/Sq0115_sc0060_part02_01_03_millestone_michael_30fps.fbx
+2021-10-13 11:21:06: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:21:06: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:32:56: LOG: Export: Z:/Projects/rise/dev/shots/0115/0000/moc/body/Delivery/2021-07-21/Sq0115_sc0060_part01_01_01_argos_maciek_30fps.fbx
+2021-10-13 11:32:59: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:32:59: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:33:48: LOG: Export: Z:/Projects/rise/dev/shots/0115/0000/moc/body/Delivery/2021-07-21/Sq0115_sc0060_part01_01_01_diggor_marco_30fps.fbx
+2021-10-13 11:33:51: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:33:51: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:35:41: LOG: Export: Z:/Projects/rise/dev/shots/0115/0000/moc/body/Delivery/2021-07-21/Sq0115_sc0060_part01_01_01_millestone_michael_30fps.fbx
+2021-10-13 11:35:44: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:35:44: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-13 11:36:59: LOG: Export: Z:/Projects/rise/dev/shots/0115/0000/moc/body/Delivery/2021-07-21/Sq0115_sc0060_part02_01_03_diggor_marco_30fps.fbx
+2021-10-13 11:37:02: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-13 11:37:02: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_TCHour Root_TCMinute Root_TCSecond Root_TCFrame
+2021-10-14 10:44:33: LOG: Export: Z:/Teams/CINEMA/04.Mocap/98.LAB/WrinkleMap/Snappers_WrinkleMap_Test_Anim_01.fbx
+2021-10-14 10:44:43: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig / pc_argos_rig1:Rig_Pelvis. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig. Use the DAG node current transform. Unable to find the bind pose for :  / pc_argos_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig / pc_argos_rig1:Rig_Pelvis / pc_argos_rig1:Rig_Spine. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig / pc_argos_rig1:Rig_Pelvis / pc_argos_rig1:Rig_Spine / pc_argos_rig1:Rig_Spine1. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig / pc_argos_rig1:Rig_Pelvis / pc_argos_r
+2021-10-14 10:44:43: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-14 10:44:43: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:37:36: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_FaceCompression_v001.fbx
+2021-10-21 12:37:41: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:37:41: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:37:41: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:38:10: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_EyesWide_v001.fbx
+2021-10-21 12:38:16: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:38:16: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:38:16: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:40:26: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_FaceCompression_v001.fbx
+2021-10-21 12:40:31: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:40:31: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:40:31: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:41:02: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_EyesWide_v001.fbx
+2021-10-21 12:41:07: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:41:07: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:41:07: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:41:33: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_Snarl_v001.fbx
+2021-10-21 12:41:38: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:41:38: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:41:38: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:42:13: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_Happy_v001.fbx
+2021-10-21 12:42:18: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:42:18: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:42:18: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:46:59: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_anim_v001.fbx
+2021-10-21 12:47:07: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_21_L. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_22_L. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ...  npc_sebastian_rig1:tongue_3 / npc_sebastian_rig1:tongue_4 / npc_sebastian_rig1:tongue_5. No bind poses in the hierarchy containi
+2021-10-21 12:47:07: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:47:07: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:54:43: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_FaceCompression_v001.fbx
+2021-10-21 12:54:48: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:54:48: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:54:48: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:55:12: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_EyesWide_v001.fbx
+2021-10-21 12:55:17: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:55:17: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:55:17: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:56:42: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_FaceCompression_v001.fbx
+2021-10-21 12:56:44: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:56:44: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:56:44: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:57:07: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_EyesWide_v001.fbx
+2021-10-21 12:57:09: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:57:09: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:57:09: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:57:25: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_Snarl_v001.fbx
+2021-10-21 12:57:27: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:57:27: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:57:27: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 12:57:45: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_Happy_v001.fbx
+2021-10-21 12:57:47: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_sebastian_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... sebastian_rig1:Rig_NeckTwist / npc_sebastian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_sebastian_rig1:Root / npc_sebastian_rig1:Rig / npc_sebastian_rig1:Rig_Pelvis / n ... astian_rig1:Rig_Head / npc_sebastian_rig1:Head_Jnt / npc_sebastian_rig1:regionJoint_02_M. No bind poses in the hierarchy containi
+2021-10-21 12:57:47: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 12:57:47: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 13:00:45: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_FaceCompression_v001.fbx
+2021-10-21 13:00:50: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / Root. Use the DAG node current transform. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_Neck / Rig_NeckTwist / Rig_Head / Head_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_Neck / Rig_NeckTwist / Rig_Head / Head_Jnt / regionJoint_01_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_Neck / Rig_NeckTwist / Rig_Head / Head_Jnt / regionJoint_02_M. No bind poses in the hierarchy containing the object will be exported.
+2021-10-21 13:00:50: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 13:00:50: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 13:02:11: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_FaceCompression_v001.fbx
+2021-10-21 13:02:11: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 13:02:11: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 13:04:18: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_FaceCompression_v001.fbx
+2021-10-21 13:04:19: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 13:04:19: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 13:04:55: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_EyesWide_v001.fbx
+2021-10-21 13:04:55: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 13:04:55: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 13:05:16: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_Snarl_v001.fbx
+2021-10-21 13:05:16: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 13:05:16: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 13:05:37: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_Happy_v001.fbx
+2021-10-21 13:05:37: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 13:05:37: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 14:31:52: LOG: Export: Z:/Projects/rise/dev/assets/npc/donald/moc/facial/maya/data/npc_donald_wrinkle_FaceCompression_v001.fbx
+2021-10-21 14:31:52: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 14:31:52: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 14:32:30: LOG: Export: Z:/Projects/rise/dev/assets/npc/donald/moc/facial/maya/data/npc_donald_wrinkle_EyesWide_v001.fbx
+2021-10-21 14:32:30: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 14:32:30: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 14:34:37: LOG: Export: Z:/Projects/rise/dev/assets/npc/donald/moc/facial/maya/data/npc_donald_wrinkle_Snarl_v001.fbx
+2021-10-21 14:34:38: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 14:34:38: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 14:35:11: LOG: Export: Z:/Projects/rise/dev/assets/npc/donald/moc/facial/maya/data/npc_donald_wrinkle_Smile_v001.fbx
+2021-10-21 14:35:11: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 14:35:11: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 14:40:11: LOG: Export: Z:/Projects/rise/dev/assets/npc/donald/moc/facial/maya/data/npc_donald_wrinkle_anim_v001.fbx
+2021-10-21 14:40:21: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_donald_B_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_donald_B_rig1:Root / npc_donald_B_rig1:Rig / npc_donald_B_rig1:Rig_Pelvis / npc_ ... ld_B_rig1:Rig_R_ForeArm / npc_donald_B_rig1:Rig_R_Hand / npc_donald_B_rig1:Rig_R_Finger4. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_donald_B_rig1:Root / npc_donald_B_rig1:Rig / npc_donald_B_rig1:Rig_Pelvis / npc_ ... rig1:Rig_R_Finger4 / npc_donald_B_rig1:Rig_R_Finger41 / npc_donald_B_rig1:Rig_R_Finger42. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_donald_B_rig1:Root / npc_donald_B_rig1:Rig / npc_donald_B_rig1:Rig_Pelvis / npc_ ... d_B_rig1:Rig_R_Hand / npc_donald_B_rig1:Rig_R_Finger4 / npc_donald_B_rig1:Rig_R_Finger41. Use the DAG node current transform.
+2021-10-21 14:40:21: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 14:40:21: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:09:35: LOG: Export: Z:/Projects/rise/dev/assets/npc/dylan/moc/facial/maya/data/npc_dylan_wrinkle_FaceCompression_v001.fbx
+2021-10-21 16:09:35: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:09:35: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:10:06: LOG: Export: Z:/Projects/rise/dev/assets/npc/dylan/moc/facial/maya/data/npc_dylan_wrinkle_EyesWide_v001.fbx
+2021-10-21 16:10:06: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:10:06: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:10:44: LOG: Export: Z:/Projects/rise/dev/assets/npc/dylan/moc/facial/maya/data/npc_dylan_wrinkle_Snarl_v001.fbx
+2021-10-21 16:10:44: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:10:44: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:12:17: LOG: Export: Z:/Projects/rise/dev/assets/npc/dylan/moc/facial/maya/data/npc_dylan_wrinkle_Happy_v001.fbx
+2021-10-21 16:12:18: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:12:18: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:13:05: LOG: Export: Z:/Projects/rise/dev/assets/npc/dylan/moc/facial/maya/data/npc_dylan_wrinkle_anim_v001.fbx
+2021-10-21 16:13:15: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_dylan_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_dylan_rig1:Root / npc_dylan_rig1:Rig / npc_dylan_rig1:Rig_Pelvis / npc_dylan_rig ... st / npc_dylan_rig1:Rig_Head / npc_dylan_rig1:Head_Jnt / npc_dylan_rig1:regionJoint_02_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_dylan_rig1:Root / npc_dylan_rig1:Rig / npc_dylan_rig1:Rig_Pelvis / npc_dylan_rig ... _Neck / npc_dylan_rig1:Rig_NeckTwist / npc_dylan_rig1:Rig_Head / npc_dylan_rig1:Head_Jnt. Use the DAG node current transform. Unable to find the bind pose for :  / npc_dylan_rig1:Root / npc_dylan_rig1:Rig / npc_dylan_rig1:Rig_Pelvis / npc_dylan_rig ... st / npc_dylan_rig1:Rig_Head / npc_dylan_rig1:Head_Jnt / npc_dylan_rig1:regionJoint_03_M. No bind poses in the hierarchy containing the object will be exported. Unable 
+2021-10-21 16:13:15: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:13:15: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:22:20: LOG: Export: Z:/Projects/rise/dev/assets/npc/vince/moc/facial/maya/data/npc_vince_wrinkle_FaceCompression_v001.fbx
+2021-10-21 16:22:21: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:22:21: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:22:49: LOG: Export: Z:/Projects/rise/dev/assets/npc/vince/moc/facial/maya/data/npc_vince_wrinkle_EyesWide_v001.fbx
+2021-10-21 16:22:49: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:22:49: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:23:18: LOG: Export: Z:/Projects/rise/dev/assets/npc/vince/moc/facial/maya/data/npc_vince_wrinkle_Snarl_v001.fbx
+2021-10-21 16:23:19: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:23:19: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:23:42: LOG: Export: Z:/Projects/rise/dev/assets/npc/vince/moc/facial/maya/data/npc_vince_wrinkle_Happy_v001.fbx
+2021-10-21 16:23:43: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:23:43: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 16:24:17: LOG: Export: Z:/Projects/rise/dev/assets/npc/vince/moc/facial/maya/data/npc_vince_wrinkle_anim_v001.fbx
+2021-10-21 16:24:24: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_vince_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_vince_rig1:Root / npc_vince_rig1:Rig / npc_vince_rig1:Rig_Pelvis / npc_vince_rig ... 1:tongue_1 / npc_vince_rig1:tongue_2 / npc_vince_rig1:tongue_3 / npc_vince_rig1:tongue_4. Use the DAG node current transform. Unable to find the bind pose for :  / npc_vince_rig1:Root / npc_vince_rig1:Rig / npc_vince_rig1:Rig_Pelvis / npc_vince_rig ... 1:tongue_0 / npc_vince_rig1:tongue_1 / npc_vince_rig1:tongue_2 / npc_vince_rig1:tongue_3. Use the DAG node current transform. Unable to find the bind pose for :  / npc_vince_rig1:Root / npc_vince_rig1:Rig / npc_vince_rig1:Rig_Pelvis / npc_vince_rig ... g1:Jaw_Jnt / npc_vince_rig1:tongue_0 / npc_vince_rig1:tongue_1 / npc_vince_rig1:tongue_2. Use the DAG node current transform. Unable to find the bind pose for :  / npc_vince_rig1:Root / npc_vince_rig1:Ri
+2021-10-21 16:24:24: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 16:24:24: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:08:22: LOG: Export: Z:/Projects/rise/dev/assets/npc/brenton/moc/facial/maya/data/npc_brenton_wrinkle_FaceCompression_v001.fbx
+2021-10-21 17:08:22: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:08:22: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:10:01: LOG: Export: Z:/Projects/rise/dev/assets/npc/brenton/moc/facial/maya/data/npc_brenton_wrinkle_EyesWide_v001.fbx
+2021-10-21 17:10:01: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:10:01: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:12:12: LOG: Export: Z:/Projects/rise/dev/assets/npc/brenton/moc/facial/maya/data/npc_brenton_wrinkle_Snarl_v001.fbx
+2021-10-21 17:12:12: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:12:12: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:12:26: LOG: Export: Z:/Projects/rise/dev/assets/npc/brenton/moc/facial/maya/data/npc_brenton_wrinkle_Snarl_v001.fbx
+2021-10-21 17:12:26: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:12:26: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:13:32: LOG: Export: Z:/Projects/rise/dev/assets/npc/brenton/moc/facial/maya/data/npc_brenton_wrinkle_Happy_v001.fbx
+2021-10-21 17:13:32: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:13:32: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:15:39: LOG: Export: Z:/Projects/rise/dev/assets/npc/brenton/moc/facial/maya/data/npc_brenton_wrinkle_anim_v001.fbx
+2021-10-21 17:15:45: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_brenton_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_brenton_rig1:Root / npc_brenton_rig1:Rig / npc_brenton_rig1:Rig_Pelvis / npc_brenton_rig1:Rig_Spine. Use the DAG node current transform. Unable to find the bind pose for :  / npc_brenton_rig1:Root / npc_brenton_rig1:Rig. Use the DAG node current transform. Unable to find the bind pose for :  / npc_brenton_rig1:Root / npc_brenton_rig1:Rig / npc_brenton_rig1:Rig_Pelvis / npc_bre ... / npc_brenton_rig1:Rig_Neck / npc_brenton_rig1:Rig_NeckTwist / npc_brenton_rig1:Rig_Head. Use the DAG node current transform. Unable to find the bind pose for :  / npc_brenton_rig1:Root / npc_brenton_rig1:Rig / npc_brenton_rig1:Rig_Pelvis / npc_bre ... npc_brenton_rig1:Rig_Spine2 / npc_brenton_rig1:Rig_Neck / npc_brenton_rig1:Rig_NeckTwist. Use the DAG node current transform. Unable to find the bind pose 
+2021-10-21 17:15:45: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:15:45: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:29:00: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_FaceCompression_v001.fbx
+2021-10-21 17:29:00: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2021-10-21 17:29:00: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:29:00: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:29:40: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_EyesWide_v001.fbx
+2021-10-21 17:29:41: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2021-10-21 17:29:41: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:29:41: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:30:09: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_Snarl_v001.fbx
+2021-10-21 17:30:09: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2021-10-21 17:30:09: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:30:09: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:30:46: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_Happy_v001.fbx
+2021-10-21 17:30:46: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2021-10-21 17:30:46: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:30:46: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:34:25: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_anim_v001.fbx
+2021-10-21 17:34:33: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / army_GEN_REG_Giant_Cutscene_rig1:Root. Use the DAG node current transform.
+2021-10-21 17:34:33: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:34:33: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:37:05: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_FaceCompression_v001.fbx
+2021-10-21 17:37:05: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2021-10-21 17:37:05: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:37:05: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:38:44: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_FaceCompression_v001.fbx
+2021-10-21 17:38:45: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2021-10-21 17:38:45: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:38:45: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:41:06: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_Happy_v001.fbx
+2021-10-21 17:41:06: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:41:06: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:41:56: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_Snarl_v001.fbx
+2021-10-21 17:41:57: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2021-10-21 17:41:57: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:41:57: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:42:53: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_Snarl_v001.fbx
+2021-10-21 17:42:53: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:42:53: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:44:01: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_EyesWide_v001.fbx
+2021-10-21 17:44:01: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:44:01: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:45:25: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_FaceCompression_v001.fbx
+2021-10-21 17:45:25: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:45:25: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 17:47:41: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_anim_v001.fbx
+2021-10-21 17:47:47: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / army_GEN_REG_Giant_Cutscene_rig1:Root. Use the DAG node current transform.
+2021-10-21 17:47:47: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 17:47:47: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 18:59:08: LOG: Export: Z:/Projects/rise/dev/assets/npc/mea/moc/facial/maya/data/npc_mea_wrinkle_FaceCompression_v001.fbx
+2021-10-21 18:59:08: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 18:59:08: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 19:00:01: LOG: Export: Z:/Projects/rise/dev/assets/npc/mea/moc/facial/maya/data/npc_mea_wrinkle_EyesWide_v001.fbx
+2021-10-21 19:00:07: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_mea_rig1:Root. Use the DAG node current transform.
+2021-10-21 19:00:07: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 19:00:07: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 19:00:30: LOG: Export: Z:/Projects/rise/dev/assets/npc/mea/moc/facial/maya/data/npc_mea_wrinkle_EyesWide_v001.fbx
+2021-10-21 19:00:30: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 19:00:30: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 19:02:56: LOG: Export: Z:/Projects/rise/dev/assets/npc/mea/moc/facial/maya/data/npc_mea_wrinkle_Snarl_v001.fbx
+2021-10-21 19:02:56: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 19:02:56: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 19:03:31: LOG: Export: Z:/Projects/rise/dev/assets/npc/mea/moc/facial/maya/data/npc_mea_wrinkle_Happy_v001.fbx
+2021-10-21 19:03:32: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 19:03:32: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-21 19:05:28: LOG: Export: Z:/Projects/rise/dev/assets/npc/mea/moc/facial/maya/data/npc_mea_wrinkle_anim_v001.fbx
+2021-10-21 19:05:38: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / npc_mea_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / npc_mea_rig1:Root / npc_mea_rig1:Rig / npc_mea_rig1:Rig_Pelvis / npc_mea_rig1:Rig_Sp ... ig1:Rig_NeckTwist / npc_mea_rig1:Rig_Head / npc_mea_rig1:Head_Jnt / npc_mea_rig1:Jaw_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_mea_rig1:Root / npc_mea_rig1:Rig / npc_mea_rig1:Rig_Pelvis / npc_mea_rig1:Rig_Sp ... mea_rig1:Rig_Head / npc_mea_rig1:Head_Jnt / npc_mea_rig1:Jaw_Jnt / npc_mea_rig1:tongue_0. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / npc_mea_rig1:Root / npc_mea_rig1:Rig / npc_mea_rig1:Rig_Pelvis / npc_mea_rig1:Rig_Sp ... mea_rig1:Jaw_Jnt / npc_mea_rig1:tongue_0 / npc_mea_rig1:tongue_1 / npc_mea_rig1:tongue_2. Use the DAG node current transform. Unable to
+2021-10-21 19:05:38: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-21 19:05:38: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 09:56:10: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_FaceCompression_v001.fbx
+2021-10-22 09:56:10: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 09:56:10: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 09:59:29: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_EyesWide_v001.fbx
+2021-10-22 09:59:30: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 09:59:30: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 10:00:25: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_Snarl_v001.fbx
+2021-10-22 10:00:25: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 10:00:25: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 10:04:04: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_FaceCompression_v001.fbx
+2021-10-22 10:04:04: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 10:04:04: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 10:04:37: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_EyesWide_v001.fbx
+2021-10-22 10:04:38: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 10:04:38: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 10:05:00: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_Snarl_v001.fbx
+2021-10-22 10:05:00: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 10:05:00: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 10:08:37: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_Happy_v001.fbx
+2021-10-22 10:08:37: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 10:08:37: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 10:09:10: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_Happy_v001.fbx
+2021-10-22 10:09:10: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 10:09:10: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 10:12:25: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_anim_v001.fbx
+2021-10-22 10:12:33: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig / pc_argos_rig1:Rig_Pelvis. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig. Use the DAG node current transform. Unable to find the bind pose for :  / pc_argos_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig / pc_argos_rig1:Rig_Pelvis / pc_argos_rig1:Rig_Spine. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig / pc_argos_rig1:Rig_Pelvis / pc_argos_rig1:Rig_Spine / pc_argos_rig1:Rig_Spine1. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_argos_rig1:Root / pc_argos_rig1:Rig / pc_argos_rig1:Rig_Pelvis / pc_argos_r
+2021-10-22 10:12:33: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 10:12:33: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 10:43:35: LOG: Export: Z:/Projects/rise/dev/assets/pc/josheph/moc/facial/maya/data/pc_josheph_wrinkle_FaceCompression_v001.fbx
+2021-10-22 10:43:35: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 10:43:35: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 10:44:02: LOG: Export: Z:/Projects/rise/dev/assets/pc/josheph/moc/facial/maya/data/pc_josheph_wrinkle_EyesWide_v001.fbx
+2021-10-22 10:44:02: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 10:44:02: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 11:38:21: LOG: Export: Z:/Projects/rise/dev/assets/pc/josheph/moc/facial/maya/data/pc_josheph_wrinkle_Snarl_v001.fbx
+2021-10-22 11:38:21: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 11:38:21: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 11:38:54: LOG: Export: Z:/Projects/rise/dev/assets/pc/josheph/moc/facial/maya/data/pc_josheph_wrinkle_Happy_v001.fbx
+2021-10-22 11:38:55: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 11:38:55: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 11:39:33: LOG: Export: Z:/Projects/rise/dev/assets/pc/josheph/moc/facial/maya/data/pc_josheph_wrinkle_anim_v001.fbx
+2021-10-22 11:39:41: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_josheph_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / pc_josheph_rig1:Root / pc_josheph_rig1:Rig / pc_josheph_rig1:Rig_Pelvis / pc_josheph ... ck / pc_josheph_rig1:Rig_NeckTwist / pc_josheph_rig1:Rig_Head / pc_josheph_rig1:Head_Jnt. Use the DAG node current transform. Unable to find the bind pose for :  / pc_josheph_rig1:Root / pc_josheph_rig1:Rig / pc_josheph_rig1:Rig_Pelvis / pc_josheph ... eckTwist / pc_josheph_rig1:Rig_Head / pc_josheph_rig1:Head_Jnt / pc_josheph_rig1:Jaw_Jnt. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_josheph_rig1:Root / pc_josheph_rig1:Rig / pc_josheph_rig1:Rig_Pelvis / pc_josheph ... ongue_1 / pc_josheph_rig1:tongue_2 / pc_josheph_rig1:tongue_3 / pc_josheph_rig1:tongue_4. Use the DAG node current transform. Unable to find the bind pose for :  / pc_
+2021-10-22 11:39:41: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 11:39:41: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 11:59:34: LOG: Export: Z:/Projects/rise/dev/assets/pc/talbot/moc/facial/maya/data/pc_talbot_wrinkle_FaceCompression_v001.fbx
+2021-10-22 11:59:35: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 11:59:35: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:00:02: LOG: Export: Z:/Projects/rise/dev/assets/pc/talbot/moc/facial/maya/data/pc_talbot_wrinkle_EyesWide_v001.fbx
+2021-10-22 12:00:02: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:00:02: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:00:34: LOG: Export: Z:/Projects/rise/dev/assets/pc/talbot/moc/facial/maya/data/pc_talbot_wrinkle_Snarl_v001.fbx
+2021-10-22 12:00:34: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:00:34: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:01:02: LOG: Export: Z:/Projects/rise/dev/assets/pc/talbot/moc/facial/maya/data/pc_talbot_wrinkle_Happy_v001.fbx
+2021-10-22 12:01:02: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:01:02: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:02:55: LOG: Export: Z:/Projects/rise/dev/assets/pc/talbot/moc/facial/maya/data/pc_talbot_wrinkle_anim_v001.fbx
+2021-10-22 12:03:04: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_talbot_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / pc_talbot_rig1:Root / pc_talbot_rig1:Rig / pc_talbot_rig1:Rig_Pelvis / pc_talbot_rig ... st / pc_talbot_rig1:Rig_Head / pc_talbot_rig1:Head_Jnt / pc_talbot_rig1:regionJoint_10_L. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_talbot_rig1:Root / pc_talbot_rig1:Rig / pc_talbot_rig1:Rig_Pelvis. Use the DAG node current transform. Unable to find the bind pose for :  / pc_talbot_rig1:Root / pc_talbot_rig1:Rig / pc_talbot_rig1:Rig_Pelvis / pc_talbot_rig ... st / pc_talbot_rig1:Rig_Head / pc_talbot_rig1:Head_Jnt / pc_talbot_rig1:regionJoint_11_L. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_talbot_rig1:Root / pc_talbot_rig1:Rig / pc_talbot_rig1:Rig_Pelvis / pc_talb
+2021-10-22 12:03:04: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:03:04: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:11:11: LOG: Export: Z:/Projects/rise/dev/assets/pc/mirabelle/moc/facial/maya/data/pc_mirabelle_wrinkle_FaceCompression_v001.fbx
+2021-10-22 12:11:11: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:11:11: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:11:40: LOG: Export: Z:/Projects/rise/dev/assets/pc/mirabelle/moc/facial/maya/data/pc_mirabelle_wrinkle_EyesWide_v001.fbx
+2021-10-22 12:11:40: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:11:40: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:12:05: LOG: Export: Z:/Projects/rise/dev/assets/pc/mirabelle/moc/facial/maya/data/pc_mirabelle_wrinkle_Snarl_v001.fbx
+2021-10-22 12:12:05: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:12:05: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:12:29: LOG: Export: Z:/Projects/rise/dev/assets/pc/mirabelle/moc/facial/maya/data/pc_mirabelle_wrinkle_Happy_v001.fbx
+2021-10-22 12:12:30: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:12:30: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:15:27: LOG: Export: Z:/Projects/rise/dev/assets/pc/mirabelle/moc/facial/maya/data/pc_mirabelle_wrinkle_anim_v001.fbx
+2021-10-22 12:15:41: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_mirabelle_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / pc_mirabelle_rig1:Root / pc_mirabelle_rig1:Rig / pc_mirabelle_rig1:Rig_Pelvis / pc_m ... 2 / pc_mirabelle_rig1:tongue_3 / pc_mirabelle_rig1:tongue_4 / pc_mirabelle_rig1:tongue_5. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_mirabelle_rig1:Root / pc_mirabelle_rig1:Rig / pc_mirabelle_rig1:Rig_Pelvis / pc_m ... irabelle_rig1:Rig_Head / pc_mirabelle_rig1:Head_Jnt / pc_mirabelle_rig1:regionJoint_03_M. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_mirabelle_rig1:Root / pc_mirabelle_rig1:Rig / pc_mirabelle_rig1:Rig_Pelvis / pc_m ... irabelle_rig1:Rig_Head / pc_mirabelle_rig1:Head_Jnt / pc_mirabelle_rig1:regionJoint_07_M. No bind poses in the hierarchy containin
+2021-10-22 12:15:41: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:15:41: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:40:22: LOG: Export: Z:/Projects/rise/dev/assets/pc/kastuk/moc/facial/maya/data/pc_kastuk_wrinkle_FaceCompression_v001.fbx
+2021-10-22 12:40:23: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:40:23: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:40:51: LOG: Export: Z:/Projects/rise/dev/assets/pc/kastuk/moc/facial/maya/data/pc_kastuk_wrinkle_EyesWide_v001.fbx
+2021-10-22 12:40:51: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:40:51: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:41:20: LOG: Export: Z:/Projects/rise/dev/assets/pc/kastuk/moc/facial/maya/data/pc_kastuk_wrinkle_Snarl_v001.fbx
+2021-10-22 12:41:20: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:41:20: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:41:44: LOG: Export: Z:/Projects/rise/dev/assets/pc/kastuk/moc/facial/maya/data/pc_kastuk_wrinkle_Happy_v001.fbx
+2021-10-22 12:41:44: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:41:44: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 12:42:14: LOG: Export: Z:/Projects/rise/dev/assets/pc/kastuk/moc/facial/maya/data/pc_kastuk_wrinkle_anim_v001.fbx
+2021-10-22 12:42:24: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_kastuk_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / pc_kastuk_rig1:Root / pc_kastuk_rig1:Rig / pc_kastuk_rig1:Rig_Pelvis / pc_kastuk_rig1:Rig_R_Thigh. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_kastuk_rig1:Root / pc_kastuk_rig1:Rig / pc_kastuk_rig1:Rig_Pelvis / pc_kastuk_rig1:Rig_R_Thigh / pc_kastuk_rig1:Rig_R_Calf. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_kastuk_rig1:Root / pc_kastuk_rig1:Rig / pc_kastuk_rig1:Rig_Pelvis / pc_kastuk_rig1:Rig_R_frontSkirt00. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_kastuk_rig1:Root / pc_kastuk_rig1:Rig / pc_kastuk_rig1:Rig_Pelvis / pc_kastuk_rig1:Rig_R_frontSkirt00 / pc_kastuk_rig1:Rig_R_frontSkirt0
+2021-10-22 12:42:24: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 12:42:24: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:00:19: LOG: Export: Z:/Projects/rise/dev/assets/pc/sheela/moc/facial/maya/data/pc_sheela_wrinkle_FaceCompression_v001.fbx
+2021-10-22 13:00:19: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:00:19: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:00:54: LOG: Export: Z:/Projects/rise/dev/assets/pc/sheela/moc/facial/maya/data/pc_sheela_wrinkle_EyesWide_v001.fbx
+2021-10-22 13:00:55: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:00:55: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:01:32: LOG: Export: Z:/Projects/rise/dev/assets/pc/sheela/moc/facial/maya/data/pc_sheela_wrinkle_Snarl_v001.fbx
+2021-10-22 13:01:32: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:01:32: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:03:26: LOG: Export: Z:/Projects/rise/dev/assets/pc/sheela/moc/facial/maya/data/pc_sheela_wrinkle_Happy_v001.fbx
+2021-10-22 13:03:26: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:03:26: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:05:16: LOG: Export: Z:/Projects/rise/dev/assets/pc/sheela/moc/facial/maya/data/pc_sheela_wrinkle_anim_v001.fbx
+2021-10-22 13:05:27: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_sheela_rig1:Root. Use the DAG node current transform. Unable to find the bind pose for :  / pc_sheela_rig1:Root / pc_sheela_rig1:Rig / pc_sheela_rig1:Rig_Pelvis / pc_sheela_rig ... 1:tongue_2 / pc_sheela_rig1:tongue_3 / pc_sheela_rig1:tongue_4 / pc_sheela_rig1:tongue_5. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_sheela_rig1:Root / pc_sheela_rig1:Rig / pc_sheela_rig1:Rig_Pelvis / pc_sheela_rig ... 1:tongue_1 / pc_sheela_rig1:tongue_2 / pc_sheela_rig1:tongue_3 / pc_sheela_rig1:tongue_4. Use the DAG node current transform. Unable to find the bind pose for :  / pc_sheela_rig1:Root / pc_sheela_rig1:Rig / pc_sheela_rig1:Rig_Pelvis / pc_sheela_rig ... 1:tongue_0 / pc_sheela_rig1:tongue_1 / pc_sheela_rig1:tongue_2 / pc_sheela_rig1:tongue_3. Use the DAG node current transform. Unable to find the bind pose for :  / pc_s
+2021-10-22 13:05:27: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:05:27: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:10:41: LOG: Export: Z:/Projects/rise/dev/assets/pc/diggor/moc/facial/maya/data/pc_diggor_wrinkle_FaceCompression_v001.fbx
+2021-10-22 13:10:42: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:10:42: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:11:13: LOG: Export: Z:/Projects/rise/dev/assets/pc/diggor/moc/facial/maya/data/pc_diggor_wrinkle_EyesWide_v001.fbx
+2021-10-22 13:11:13: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:11:13: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:11:35: LOG: Export: Z:/Projects/rise/dev/assets/pc/diggor/moc/facial/maya/data/pc_diggor_wrinkle_Snarl_v001.fbx
+2021-10-22 13:11:35: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:11:35: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:12:01: LOG: Export: Z:/Projects/rise/dev/assets/pc/diggor/moc/facial/maya/data/pc_diggor_wrinkle_Happy_v001.fbx
+2021-10-22 13:12:01: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:12:01: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 13:12:47: LOG: Export: Z:/Projects/rise/dev/assets/pc/diggor/moc/facial/maya/data/pc_diggor_wrinkle_anim_v001.fbx
+2021-10-22 13:12:59: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine / pc_diggor_rig1:Rig_Spine1 / pc_diggor_rig1:Rig_Spine2. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine / pc_diggor_rig1:Rig_Spine1. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig. Use the DAG node current transform. Unable to find the bind pose for :  / p
+2021-10-22 13:12:59: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 13:12:59: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:35:51: LOG: Export: Z:/Projects/rise/dev/assets/pc/factor/moc/facial/maya/data/pc_factor_wrinkle_FaceCompression_v001.fbx
+2021-10-22 14:35:52: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:35:52: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:36:33: LOG: Export: Z:/Projects/rise/dev/assets/pc/factor/moc/facial/maya/data/pc_factor_wrinkle_EyesWide_v001.fbx
+2021-10-22 14:36:33: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:36:33: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:37:09: LOG: Export: Z:/Projects/rise/dev/assets/pc/factor/moc/facial/maya/data/pc_factor_wrinkle_Snarl_v001.fbx
+2021-10-22 14:37:09: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:37:09: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:37:40: LOG: Export: Z:/Projects/rise/dev/assets/pc/factor/moc/facial/maya/data/pc_factor_wrinkle_Happy_v001.fbx
+2021-10-22 14:37:40: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:37:40: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:38:13: LOG: Export: Z:/Projects/rise/dev/assets/pc/factor/moc/facial/maya/data/pc_factor_wrinkle_anim_v001.fbx
+2021-10-22 14:38:25: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_factor_rig1:Root. Use the DAG node current transform.
+2021-10-22 14:38:25: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:38:25: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:48:05: LOG: Export: Z:/Projects/rise/dev/assets/pc/lester/moc/facial/maya/data/pc_lester_wrinkle_FaceCompression_v001.fbx
+2021-10-22 14:48:11: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_lester_rig1:Root. Use the DAG node current transform.
+2021-10-22 14:48:11: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:48:11: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:48:32: LOG: Export: Z:/Projects/rise/dev/assets/pc/lester/moc/facial/maya/data/pc_lester_wrinkle_FaceCompression_v001.fbx
+2021-10-22 14:48:32: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:48:32: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:49:40: LOG: Export: Z:/Projects/rise/dev/assets/pc/lester/moc/facial/maya/data/pc_lester_wrinkle_EyesWide_v001.fbx
+2021-10-22 14:49:40: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:49:40: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:50:13: LOG: Export: Z:/Projects/rise/dev/assets/pc/lester/moc/facial/maya/data/pc_lester_wrinkle_Snarl_v001.fbx
+2021-10-22 14:50:13: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:50:13: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:51:27: LOG: Export: Z:/Projects/rise/dev/assets/pc/lester/moc/facial/maya/data/pc_lester_wrinkle_Happy_v001.fbx
+2021-10-22 14:51:27: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:51:27: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-22 14:52:11: LOG: Export: Z:/Projects/rise/dev/assets/pc/lester/moc/facial/maya/data/pc_lester_wrinkle_anim_v001.fbx
+2021-10-22 14:52:23: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_lester_rig1:Root. Use the DAG node current transform.
+2021-10-22 14:52:23: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2021-10-22 14:52:23: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2021-10-29 11:10:46: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/pc_royden_mocap_layout_v001_test.fbx
+2021-10-29 11:14:31: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/pc_royden_mocap_layout_v001_test.fbx
+2021-10-29 17:50:32: LOG: Export: D:/Justin/2021_4Q/scenes/0002_0040_body_a01p02l04_0005_v004.fbx
+2021-10-29 17:50:56: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Rig_Pelvis_translateX Rig_Pelvis_translateY Rig_Pelvis_translateZ Rig_Pelvis_scaleX Rig_Pelvis_scaleY Rig_Pelvis_scaleZ Rig_Pelvis_rotateX Rig_Pelvis_rotateY Rig_Pelvis_rotateZ Rig_R_Thigh_scaleX Rig_R_Thigh_scaleY Rig_R_Thigh_scaleZ Rig_R_Thigh_rotateX Rig_R_Thigh_rotateY Rig_R_Thigh_rotateZ Rig_R_Calf_scaleX Rig_R_Calf_scaleY Rig_R_Calf_scaleZ Rig_R_Calf_rotateX Rig_R_Calf_rotateY Rig_R_Calf_rotateZ Rig_R_Foot_scaleX Rig_R_Foot_scaleY Rig_R_Foot_scaleZ Rig_R_Foot_rotateX Rig_R_Foot_rotateY Rig_R_Foot_rotateZ Rig_R_Toe0_scaleX Rig_R_Toe0_scaleY Rig_R_Toe0_scaleZ Rig_R_Toe0_rotateX Rig_R_Toe0_rotateY Rig_R_Toe0_rotateZ Rig_Spine_scaleX Rig_Spine_scaleY Rig_Spine_scaleZ Rig_Spine_rotateX Rig_Spine_rotateY Rig_Spine_rotateZ Rig_Spine1_scaleX Rig_Spine1_scaleY Rig_Spine1_scaleZ Rig_Spine1_rotateX R
+2021-10-29 17:50:56: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ SHS_Hips_translateX SHS_Hips_translateY SHS_Hips_translateZ SHS_Hips_rotateX SHS_Hips_rotateY SHS_Hips_rotateZ SHS_Spine_translateX SHS_Spine_translateY SHS_Spine_translateZ SHS_Spine_rotateX SHS_Spine_rotateY SHS_Spine_rotateZ SHS_Spine1_translateX SHS_Spine1_translateY SHS_Spine1_translateZ SHS_Spine1_rotateX SHS_Spine1_rotateY SHS_Spine1_rotateZ SHS_Neck_translateX SHS_Neck_translateY SHS_Neck_translateZ SHS_Neck_rotateX SHS_Neck_rotateY SHS_Neck_rotateZ SHS_Head_translateX SHS_Head_translateY SHS_Head_translateZ SHS_Head_rotateX SHS_Head_rotateY SHS_Head_rotateZ SHS_LeftShoulder_translateX SHS_LeftShoulder_translateY SHS_LeftShoulder_translateZ SHS_LeftShoulder_rotateX SHS_LeftShoulder_rotateY SHS_LeftShoulder_rotateZ SHS_LeftArm_translateX SHS_LeftArm_translateY SHS_LeftArm_translateZ SHS_L
+2021-10-29 18:53:03: LOG: Export: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_wrinkle_anim_v001.fbx
+2021-10-29 18:53:09: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-10-29 18:54:56: LOG: Export: Z:/Projects/rise/dev/assets/pc/josheph/moc/facial/maya/data/pc_josheph_wrinkle_anim_v001.fbx
+2021-10-29 18:55:03: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-10-29 18:56:16: LOG: Export: Z:/Projects/rise/dev/assets/pc/talbot/moc/facial/maya/data/pc_talbot_wrinkle_anim_v001.fbx
+2021-10-29 18:56:23: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-10-29 18:57:40: LOG: Export: Z:/Projects/rise/dev/assets/pc/mirabelle/moc/facial/maya/data/pc_mirabelle_wrinkle_anim_v001.fbx
+2021-10-29 18:57:50: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Rig_R_hair01_visibility Rig_R_hair02_visibility Rig_R_hair03_visibility Rig_L_hair01_visibility Rig_L_hair02_visibility Rig_L_hair03_visibility Head_Jnt_visibility LeftEye_visibility RightEye_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_6_visibility tongue_7_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJ
+2021-10-29 18:58:48: LOG: Export: Z:/Projects/rise/dev/assets/pc/kastuk/moc/facial/maya/data/pc_kastuk_wrinkle_anim_v001.fbx
+2021-10-29 18:58:55: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_R_frontSkirt00_visibility Rig_R_frontSkirt01_visibility Rig_R_frontSkirt02_visibility Rig_R_backSkirt00_visibility Rig_R_backSkirt01_visibility Rig_R_backSkirt02_visibility Rig_backCenterSkirt00_visibility Rig_backCenterSkirt01_visibility Rig_backCenterSkirt02_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility reg
+2021-10-29 18:59:44: LOG: Export: Z:/Projects/rise/dev/assets/pc/sheela/moc/facial/maya/data/pc_sheela_wrinkle_anim_v001.fbx
+2021-10-29 18:59:52: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Rig_R_HairA1_visibility Rig_R_HairA2_visibility Rig_R_HairA3_visibility Rig_R_HairB1_visibility Rig_R_HairB2_visibility Rig_R_HairB3_visibility Rig_HairC1_visibility Rig_HairC2_visibility Rig_HairC3_visibility Rig_R_HairTail0_visibility Rig_R_HairTail01_visibility Rig_R_HairTail02_visibility Rig_L_HairA1_visibility Rig_L_HairA2_visibility Rig_L_HairA3_visibility Rig_L_HairB1_visibility Rig_L_HairB2_visibility Rig_L_HairB3_visibility Rig_L_HairTail0_visibility Rig_L_HairTail01_visibility Rig_L_HairTail02_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tong
+2021-10-29 19:00:51: LOG: Export: Z:/Projects/rise/dev/assets/pc/diggor/moc/facial/maya/data/pc_diggor_wrinkle_anim_v001.fbx
+2021-10-29 19:00:59: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-10-29 19:01:44: LOG: Export: Z:/Projects/rise/dev/assets/pc/factor/moc/facial/maya/data/pc_factor_wrinkle_anim_v001.fbx
+2021-10-29 19:01:51: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_R_SkirtA1_visibility Rig_R_SkirtA2_visibility Rig_R_SkirtA3_visibility Rig_R_SkirtA4_visibility Rig_R_ClothB1_visibility Rig_R_ClothB2_visibility Rig_R_ClothB3_visibility Rig_R_SkirtBSide_visibility Rig_R_SkirtBRight_visibility Rig_R_SkirtBLeft1_visibility Rig_R_SkirtBLeft2_visibility Rig_R_SkirtBLeft3_visibility Rig_R_BottleA_visibility Rig_R_BottleB_visibility Rig_R_pouchA_visibility Rig_R_BottleC_visibility Rig_R_Book1_visibility Rig_R_Book2_visibility Rig_R_Scabbard_visibility Rig_R_ClothA1_visibility Rig_R_ClothA2_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwi
+2021-10-29 19:02:05: LOG: Export: Z:/Projects/rise/dev/assets/pc/lester/moc/facial/maya/data/pc_lester_wrinkle_anim_v001.fbx
+2021-10-29 19:02:11: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_R_SkirtA00_visibility Rig_R_SkirtA01_visibility Rig_R_SkirtA02_visibility Rig_R_SkirtB00_visibility Rig_R_SkirtB01_visibility Rig_R_SkirtB02_visibility Rig_R_SkirtC00_visibility Rig_R_SkirtC01_visibility Rig_R_SkirtC02_visibility Rig_Spine_visibility Rig_R_Sheath00_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEy
+2021-10-29 19:03:08: LOG: Export: Z:/Projects/rise/dev/assets/npc/dylan/moc/facial/maya/data/npc_dylan_wrinkle_anim_v001.fbx
+2021-10-29 19:03:15: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_R_sheath1_visibility Rig_Spine_visibility Rig_R_sideBag1_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility 
+2021-10-29 19:03:26: LOG: Export: Z:/Projects/rise/dev/assets/army/GEN_MCN_LEA_LINF_Cutscene/moc/facial/maya/data/army_GEN_REG_Giant_Cutscene_rig_wrinkle_anim_v001.fbx
+2021-10-29 19:03:32: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Rig_Hair2_visibility Rig_R_Hair1_visibility Rig_R_Hair11_visibility Rig_R_Hair0_visibility Rig_R_Hair01_visibility Rig_R_HairBangs0_visibility Rig_L_Hair1_visibility Rig_L_Hair11_visibility Rig_L_Hair0_visibility Rig_L_Hair01_visibility Rig_L_HairBangs0_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility Ri
+2021-10-29 19:04:14: LOG: Export: Z:/Projects/rise/dev/assets/npc/brenton/moc/facial/maya/data/npc_brenton_wrinkle_anim_v001.fbx
+2021-10-29 19:04:21: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-10-29 19:04:35: LOG: Export: Z:/Projects/rise/dev/assets/npc/mea/moc/facial/maya/data/npc_mea_wrinkle_anim_v001.fbx
+2021-10-29 19:04:41: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-10-29 19:05:54: LOG: Export: Z:/Projects/rise/dev/assets/npc/sebastian/moc/facial/maya/data/npc_sebastian_wrinkle_anim_v001.fbx
+2021-10-29 19:06:01: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_R_SkirtA1_visibility Rig_R_SkirtA2_visibility Rig_R_SkirtB1_visibility Rig_R_SkirtB2_visibility Rig_R_SkirtC1_visibility Rig_R_SkirtC2_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_0
+2021-10-29 19:06:35: LOG: Export: Z:/Projects/rise/dev/assets/npc/vince/moc/facial/maya/data/npc_vince_wrinkle_anim_v001.fbx
+2021-10-29 19:06:42: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-10-29 19:08:13: LOG: Export: Z:/Projects/rise/dev/assets/pc/talbot/moc/facial/maya/data/pc_talbot_wrinkle_anim_v001.fbx
+2021-10-29 19:08:19: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-11-03 13:06:03: LOG: Export: D:/Justin/2021_4Q/scenes/0105_1040_diggor_facial.fbx
+2021-11-03 13:06:27: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine / pc_diggor_rig1:Rig_Spine1 / pc_diggor_rig1:Rig_Spine2. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine / pc_diggor_rig1:Rig_Spine1. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig. Use the DAG node current transform. Unable to find the bind pose for :  / p
+2021-11-03 14:41:13: LOG: Export: D:/Justin/2021_4Q/scenes/0105_1040_diggor_facial.fbx
+2021-11-03 14:41:32: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine / pc_diggor_rig1:Rig_Spine1 / pc_diggor_rig1:Rig_Spine2. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine / pc_diggor_rig1:Rig_Spine1. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig. Use the DAG node current transform. Unable to find the bind pose for :  / p
+2021-11-03 14:41:40: LOG: Export: D:/Justin/2021_4Q/scenes/0105_1040_diggor_NOfacial.fbx
+2021-11-03 14:42:00: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine / pc_diggor_rig1:Rig_Spine1 / pc_diggor_rig1:Rig_Spine2. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine / pc_diggor_rig1:Rig_Spine1. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig1:Rig_Spine. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig. Use the DAG node current transform. Unable to find the bind pose for :  / p
+2021-11-03 14:50:13: LOG: Export: D:/Justin/2021_4Q/scenes/0105_1040_diggor_facial.fbx
+2021-11-03 14:50:28: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig ... g1:Jaw_Jnt / pc_diggor_rig1:tongue_0 / pc_diggor_rig1:tongue_1 / pc_diggor_rig1:tongue_2. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig ... g1:Head_Jnt / pc_diggor_rig1:Jaw_Jnt / pc_diggor_rig1:tongue_0 / pc_diggor_rig1:tongue_1. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig ... 1:tongue_4 / pc_diggor_rig1:tongue_5 / pc_diggor_rig1:tongue_8 / pc_diggor_rig1:tongue_9. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig ... 1:tongue_3 / pc_diggor_rig1:tongue_4 / pc_dig
+2021-11-03 14:50:28: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-11-03 14:52:13: LOG: Export: D:/Justin/2021_4Q/scenes/0105_1040_diggor_NOfacial.fbx
+2021-11-03 14:52:28: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig ... g1:Jaw_Jnt / pc_diggor_rig1:tongue_0 / pc_diggor_rig1:tongue_1 / pc_diggor_rig1:tongue_2. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig ... g1:Head_Jnt / pc_diggor_rig1:Jaw_Jnt / pc_diggor_rig1:tongue_0 / pc_diggor_rig1:tongue_1. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig ... 1:tongue_4 / pc_diggor_rig1:tongue_5 / pc_diggor_rig1:tongue_8 / pc_diggor_rig1:tongue_9. Use the DAG node current transform. Unable to find the bind pose for :  / pc_diggor_rig1:Root / pc_diggor_rig1:Rig / pc_diggor_rig1:Rig_Pelvis / pc_diggor_rig ... 1:tongue_3 / pc_diggor_rig1:tongue_4 / pc_dig
+2021-11-03 14:52:28: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ Root_visibility Rig_visibility Rig_Pelvis_visibility Rig_R_Thigh_visibility Rig_R_ThighTwist_visibility Rig_R_Calf_visibility Rig_R_Foot_visibility Rig_R_Toe0_visibility Rig_Spine_visibility Rig_Spine1_visibility Rig_Spine2_visibility Rig_Neck_visibility Rig_NeckTwist_visibility Rig_Head_visibility Head_Jnt_visibility Jaw_Jnt_visibility tongue_0_visibility tongue_1_visibility tongue_2_visibility tongue_3_visibility tongue_4_visibility tongue_5_visibility tongue_8_visibility tongue_9_visibility tongue_10_visibility LeftEye_visibility RightEye_visibility regionJoint_01_M_visibility regionJoint_02_M_visibility regionJoint_03_M_visibility regionJoint_04_M_visibility regionJoint_05_M_visibility regionJoint_06_M_visibility regionJoint_07_M_visibility regionJoint_09_L_visibility regionJoint_10_L_visibi
+2021-11-05 12:55:57: LOG: Export: D:/Justin/2021_4Q/scenes/argos_LSW.fbx
+2021-11-05 13:04:39: LOG: Export: D:/Justin/2021_4Q/scenes/argos_LSW_MOCAP.fbx
+2021-11-19 10:49:53: LOG: Export: D:/Justin/2021_4Q/scenes/argos_bake_error_test.fbx
+2021-11-26 11:24:24: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/Lampas_Heel_Issue/pc_lampas_mocap_layout_v002_no_heelcape.fbx
+2021-11-26 11:24:27: LOG: [ERROR  ] Unsupported Operation on Mesh Vertices - The plug-in has detected mesh nodes with unsupported operators that 
+	affect the vertex and/or face count. To correct this, delete the Non-deformer history 
+	before exporting. The following nodes will not be processed:  dup_Geo_body_layout
+2021-11-26 11:26:47: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/Lampas_Heel_Issue/pc_lampas_mocap_layout_v002_no_heelcape.fbx
+2021-11-26 11:28:07: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/Lampas_Heel_Issue/pc_lampas_mocap_layout_v002_no_heelcape.fbx
+2021-11-26 11:28:09: LOG: [ERROR  ] Unsupported Operation on Mesh Vertices - The plug-in has detected mesh nodes with unsupported operators that 
+	affect the vertex and/or face count. To correct this, delete the Non-deformer history 
+	before exporting. The following nodes will not be processed:  dup_Geo_body_layout
+2021-11-26 11:30:31: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/Lampas_Heel_Issue/pc_lampas_mocap_layout_v002_no_heelcape.fbx
+2021-11-26 21:39:45: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/Lampas_Heel_Issue/pc_lampas_mocap_layout_v002_no_heelcape.fbx
+2021-12-01 15:55:27: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/DOF_Test/pc_argos_mocap_lod0_v017_DOF_Test.fbx
+2021-12-02 11:05:22: LOG: Export: Z:/Teams/CINEMA/04.Mocap/03.FACIAL/03.FaceFX/05.P.Tool/ROM/npc_EDN_corliTown_farmer_M_A/npc_EDN_corliTown_farmer_M_A_ffx_v001.fbx
+2021-12-02 11:05:32: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / Root. Use the DAG node current transform. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_Neck / Rig_NeckTwist. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_Neck / Rig_NeckTwist / Rig_Head / Head_Jnt / regionJoint_11_L. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_R_Thigh / Rig_R_ThighTwist. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_R_Thigh / Rig_R_Calf / Rig_R_Foot. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spi
+2021-12-02 12:10:35: LOG: Export: Z:/Teams/CINEMA/04.Mocap/03.FACIAL/03.FaceFX/05.P.Tool/ROM/npc_EDN_corliTown_farmer_M_C/npc_EDN_corliTown_farmer_M_C_ffx_v001.fbx
+2021-12-02 12:10:45: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / Root. Use the DAG node current transform. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_R_Thigh / Rig_R_ThighTwist. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_R_Thigh / Rig_R_Calf / Rig_R_Foot. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_Neck / Rig_NeckTwist. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_R_Clavicle. No bind poses in the hierarchy containing the object will be exported. Unable to find the bind pose for :  / Root / Rig / Rig_Pelvis / Rig_Spine / Rig_Spine1 / Rig_Spine2 / Rig_R_Clavicle / Rig
+2021-12-07 15:54:58: LOG: Export: Z:/Projects/rise/dev/shots/0000/0000/dia_tmp/0075_2070_pc_argos_polishing_p001_lod0_v002.fbx
+2021-12-07 16:30:06: LOG: Export: Z:/Projects/rise/dev/shots/0000/0000/dia_tmp/0055_1200_pc_talbot_clip_p001_lod0_v001.fbx
+2021-12-07 16:53:12: LOG: Export: Z:/Projects/rise/dev/shots/0000/0000/dia_tmp/0075_2080_pc_argos_polishing_p001_lod0_v002.fbx
+2021-12-07 17:50:23: LOG: Export: Z:/Projects/rise/dev/shots/0000/0000/dia_tmp/0085_9300_pc_diggor_polishing_p001_lod0_v004.fbx
+2021-12-07 18:17:46: LOG: Export: Z:/Projects/rise/dev/shots/0000/0000/dia_tmp/0105_1000_pc_argos_polishing_lod0_p001_0020_v009.fbx
+2021-12-07 18:59:27: LOG: Export: Z:/Projects/rise/dev/shots/0000/0000/dia_tmp/0105_1000_pc_argos_polishing_lod0_p001_0040_v007.fbx
+2021-12-08 11:00:52: LOG: Export: Z:/Projects/rise/dev/shots/0000/0000/dia_tmp/0025_5601_npc_sebastian_clip_p002_lod0_v006.fbx
+2021-12-08 11:10:13: LOG: Export: Z:/Projects/rise/dev/shots/0000/0000/dia_tmp/0085_9940_pc_diggor_polishing_p001_lod0_v001.fbx
+2021-12-08 18:11:48: LOG: Export: Z:/Projects/rise/dev/shots/0000/0000/dia_tmp/v001/0015_0140_pc_argos_p001_lod0_003.fbx
+2021-12-08 18:25:55: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/TwistTest/pc_standard_body_rig_mocap_lod0_v004_TwistTest.fbx
+2021-12-08 18:31:14: LOG: Export: Z:/Teams/CINEMA/04.Mocap/99.TEMP/TwistTest/pc_standard_body_rig_mocap_lod0_v004_TwistTest.fbx
+2021-12-10 15:31:23: LOG: Export: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0001_body_a01_0001_v001_DOF_Test.fbx
+2021-12-10 15:31:24: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ HSW_Hips_translateX HSW_Hips_translateY HSW_Hips_translateZ HSW_Hips_rotateX HSW_Hips_rotateY HSW_Hips_rotateZ HSW_Spine_translateX HSW_Spine_translateY HSW_Spine_translateZ HSW_Spine_rotateX HSW_Spine_rotateY HSW_Spine_rotateZ HSW_Spine1_translateX HSW_Spine1_translateY HSW_Spine1_translateZ HSW_Spine1_rotateX HSW_Spine1_rotateY HSW_Spine1_rotateZ HSW_Neck_translateX HSW_Neck_translateY HSW_Neck_translateZ HSW_Neck_rotateX HSW_Neck_rotateY HSW_Neck_rotateZ HSW_Head_translateX HSW_Head_translateY HSW_Head_translateZ HSW_Head_rotateX HSW_Head_rotateY HSW_Head_rotateZ HSW_LeftShoulder_translateX HSW_LeftShoulder_translateY HSW_LeftShoulder_translateZ HSW_LeftShoulder_rotateX HSW_LeftShoulder_rotateY HSW_LeftShoulder_rotateZ HSW_LeftArm_translateX HSW_LeftArm_translateY HSW_LeftArm_translateZ HSW_L
+2021-12-16 10:08:51: LOG: Export: Z:/Teams/CINEMA/04.Mocap/98.LAB/DOF_Test/pc_standard_body_rig_mocap_lod0_v004_DOF_Test.fbx

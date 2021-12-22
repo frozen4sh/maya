@@ -15,27 +15,32 @@ import shutil
 
 _logger = logging.getLogger(__name__)
 
-CAM_NAME = 'FrontCamShape'
+CAM_NAME_FRONT = 'FrontCam'
+CAM_NAME_SIDE = 'SideCam'
 TIME_UNIT = 'ntsc'
+HIDE_LIST = ["*:RIG_grp", "RIG_grp"]
 
 class FacialPBExport():
-    def __init__(self,path):
+    def __init__(self, path, opt):
+        self.opt = opt
+        print("FacialPBExport", self.opt)
         self.input_path = path
-        self.output_mov = self.out_path(type='mov')
-        self.output_bin = self.out_path(type='bin')
+        self.output_sound = self.out_path(typeV='wav')
+        self.output_bin = self.out_path(typeV='bin')
         self.open_file()
         
     
-    def out_path(self,type='mov'):
+    def out_path(self, typeV='mov', suffix=""):
         path ,fmt = os.path.splitext(self.input_path)
-        if type == 'mov':
-            re_path = path + '.mov'
-        
-        elif type == 'bin':
-            re_path = path + '.bin'
-        
+
+        if suffix:
+            re_path = path + '_{}.{}'.format(suffix, typeV)
+        else:
+            re_path = path + '.{}'.format(typeV)
+
         return re_path
-        
+
+
     def open_file(self):
         try:
             cmds.file(self.input_path , o=True ,force=True)
@@ -43,13 +48,26 @@ class FacialPBExport():
         except Exception as e:
             print 'open error:',e
             return
-        
-        self.set_maya_cam(0)
-        self.set_playblast(self.output_mov)
-        self.expAnim()
-        self.set_maya_cam(1)
-        
-    def set_maya_cam(self,value):
+        if self.opt["PB"]:
+            print("camList", self.opt["PBcam"])
+            
+            for camName in self.opt["PBcam"]:
+                if cmds.objExists(camName):
+                    exportCamName = camName.split("Cam")[0].lower()
+                    exportPBpath = self.out_path(suffix=exportCamName)
+
+                    self.set_maya_cam(0, camName)
+
+                    self.export_playblast(exportPBpath, camName)
+
+                    self.set_maya_cam(1, camName)
+        if self.opt["WAV"]:
+            self.export_sound(self.output_sound)
+        if self.opt["BIN"]:
+            self.export_anim()
+
+
+    def set_maya_cam(self,value,camName):
         
         allCam = cmds.ls(type = 'camera')
     
@@ -57,7 +75,7 @@ class FacialPBExport():
             #print cam
             cmds.setAttr (cam + '. rnd', False) 
         
-        myCam= cmds.ls(CAM_NAME)
+        myCam= cmds.ls(camName)
         cmds.setAttr ('%s.rnd'%myCam[0], True)
         
         '''
@@ -75,44 +93,80 @@ class FacialPBExport():
         
         for ctrl in ctrls:
             ctrl.visibility.set(value)
-        
-        
-    def set_playblast(self,path):
-        
-        
+
+
+    def export_sound(self, soundpath):
         sound_track = cmds.ls(type='audio')
-        
         if sound_track:
-            try:
-                cmds.playblast(f=path,fmt='qt',qlt=100,fp=0,c='H.264'
-                               ,wh=[600,800],p=100,viewer=0,offScreen = True
-                               ,fo=True,s=sound_track[0])
-                
-                sound_dir = os.path.dirname(path).replace('/movies','/sound')
-                sound_file = os.path.basename(path).replace('.mov','.wav')
-                sound_path = sound_dir + '/' + sound_file
+            try:    
+                #sound_dir = os.path.dirname(soundpath).replace('/movies','/sound')
+                #sound_file = os.path.basename(soundpath).replace('.mov','.wav')
+                #sound_path = sound_dir + '/' + sound_file
+                soundpath = soundpath.replace('/movies','/sound')
                 sound_file = cmds.sound(sound_track[0],q=True,f=True)
-                shutil.copy(sound_file,sound_path)
+                print("soundfile", sound_file, soundpath)
+                shutil.copy(sound_file, soundpath)
             except Exception as e:
                 print 'playblast ERROR:',e
+
         
+    def export_playblast(self, path, camName=""):
+        '''
+        try:
+            import hud_onoff
+            reload(hud_onoff)
+
+            hud_onoff.spp_animHUD(0) # swich on
+        except:
+            print("Load failed : hud_onoff")
+        '''
+        
+        for hideObj in HIDE_LIST:
+            if cmds.objExists(hideObj):
+                cmds.hide(hideObj)
+
+        if camName:
+            sound_track = cmds.ls(type='audio')
             
-        else:
-            try:
-                cmds.playblast(f=path,fmt='qt',qlt=100,fp=0,c='H.264'
-                               ,wh=[600,800],p=100,viewer=0,offScreen = True
-                               ,fo=True)
-            except Exception as e:
-                print 'playblast ERROR:',e
+            if sound_track:
+                try:
+                    focusPanel = cmds.getPanel( withFocus=True )
+                    cmds.lookThru(camName)
+                    cmds.modelEditor(focusPanel, edit=True, allObjects=False, polymeshes=True, displayAppearance="smoothShaded", displayTextures=1)
+                    print(focusPanel)
+                    cmds.playblast(f=path,fmt='qt',qlt=100,fp=0,c='H.264'
+                                # ,wh=[600,800],p=100,viewer=0,offScreen = True
+                                ,wh=[self.opt['width'],self.opt['height']],p=95,viewer=0,offScreen = True
+                                ,fo=True,s=sound_track[0])
+                except Exception as e:
+                    print 'playblast ERROR:',e
+            else:
+                try:                  
+                    focusPanel = cmds.getPanel( withFocus=True )
+                    cmds.lookThru(camName)
+                    cmds.modelEditor(focusPanel, edit=True, allObjects=False, polymeshes=True, displayAppearance="smoothShaded", displayTextures=1)
+                    print(focusPanel)
+                    cmds.playblast(f=path,fmt='qt',qlt=100,fp=0,c='H.264'
+                                # ,wh=[600,800],p=100,viewer=0,offScreen = True
+                                ,wh=[self.opt['width'],self.opt['height']],p=95,viewer=0,offScreen = True
+                                ,fo=True)
+                except Exception as e:
+                    print 'playblast ERROR:',e
         
+        for hideObj in HIDE_LIST:
+            if cmds.objExists(hideObj):
+                cmds.showHidden(hideObj)
+
         return
     
+
     def getTransform(self,root):
             obj = pm.ls(root,dag=True ,type='transform')
             result = self.getKeyframes(obj)
             
             return result
     
+
     def getKeyframes(self,objs):
             
             all_key_frames = {}
@@ -147,7 +201,8 @@ class FacialPBExport():
     
         return
     
-    def expAnim(self):
+
+    def export_anim(self):
         print 'export key frames'
         
         if 0 != len(pm.ls('ControllersParent')):
@@ -162,11 +217,8 @@ class FacialPBExport():
             
         get_key_data = self.getTransform(node)
         
-        
         try:
             self.writeFile(self.output_bin , get_key_data)
-        
-       
         except Exception as e:
             print 'ERROR'
            

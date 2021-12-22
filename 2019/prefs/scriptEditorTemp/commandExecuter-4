@@ -1,0 +1,13 @@
+joints = cmds.ls(sl= True)
+
+for jnt in joints:
+    cmds.setAttr("{0}.drawStyle".format(jnt), 0)
+
+for jnt in joints:
+    cmds.setAttr("{0}.{1}".format(jnt, "drawStyle"), 0)
+
+for jnt in joints:
+    cmds.setAttr(jnt+".drawStyle", 0)
+
+for jnt in joints:
+    cmds.setAttr("%s.drawStyle" % jnt, 0)

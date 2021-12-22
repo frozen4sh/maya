@@ -37,7 +37,7 @@
       </ExtraGrp>
       <BakeComplexAnimation UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Bake Animation" dt="Bool" v="0">
         <BakeFrameStart UIH="0" UID="0" UIG="0" lbENU="Start" dt="Integer" v="0"/>
-        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="1869"/>
+        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="200"/>
         <BakeFrameStep UIH="0" UID="0" UIG="0" lbENU="Step" dt="Integer" v="1"/>
         <ResampleAnimationCurves UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Resample All" dt="Bool" v="0"/>
         <HideComplexAnimationBakedWarning UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Hide Complex Animation Baked Warning" dt="Bool" v="0"/>
@@ -56,27 +56,27 @@
         </CurveFilterApplyCstKeyRed>
       </CurveFilter>
       <PointCache UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Geometry Cache File(s)" dt="Bool" v="0">
-        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="AllSet" enumItem_2="ControlSet" enumItem_3="DeformSet" enumItem_4="Sets" enumItem_5="UI2DBSSet" enumItem_6="blendShape7Set" enumItem_7="defaultLightSet" enumItem_8="defaultObjectSet" enumItem_9="set1" enumItem_10="skinCluster14Set" enumItem_11="skinCluster39Set" enumItem_12="skinCluster57Set" enumItem_13="skinCluster58Set" enumItem_14="skinCluster86Set" enumItem_15="skinCluster87Set" enumItem_16="skinCluster88Set" enumItem_17="skinCluster89Set" enumItem_18="skinCluster90Set" enumItem_19="skinCluster91Set" enumItem_20="skinCluster92Set" enumItem_21="skinCluster93Set" enumItem_22="skinCluster94Set" enumItem_23="skinCluster95Set" enumItem_24="skinCluster96Set" enumItem_25="skinCluster97Set" enumItem_26="skinCluster98Set" enumItem_27="skinCluster99Set" enumItem_28="skinCluster100Set" enumItem_29="skinCluster101Set" enumItem_30="skinCluster102Set" enumItem_31="skinCluster103Set" enumItem_32="skinCluster104Set" enumItem_33="skinCluster105Set" enumItem_34="skinCluster106Set" enumItem_35="skinCluster107Set" enumItem_36="skinCluster108Set" enumItem_37="skinCluster109Set" enumItem_38="skinCluster110Set" enumItem_39="skinCluster111Set" enumItem_40="skinCluster112Set" enumItem_41="skinCluster113Set" enumItem_42="skinCluster114Set" enumItem_43="skinCluster115Set" enumItem_44="skinCluster116Set" enumItem_45="skinCluster117Set" enumItem_46="skinCluster118Set" enumItem_47="skinCluster119Set" enumItem_48="skinCluster120Set" enumItem_49="skinCluster121Set" enumItem_50="skinCluster122Set" enumItem_51="skinCluster123Set" enumItem_52="skinCluster124Set" enumItem_53="skinCluster125Set" enumItem_54="tweakSet439" enumItem_55="tweakSet448" enumItem_56="tweakSet486" enumItem_57="tweakSet487" enumItem_58="tweakSet515" enumItem_59="tweakSet516" enumItem_60="tweakSet517" enumItem_61="tweakSet518" enumItem_62="tweakSet519" enumItem_63="tweakSet520" enumItem_64="tweakSet521" enumItem_65="tweakSet522" enumItem_66="tweakSet523" enumItem_67="tweakSet524" enumItem_68="tweakSet525" enumItem_69="tweakSet526" enumItem_70="tweakSet527" enumItem_71="tweakSet528" enumItem_72="tweakSet529" enumItem_73="tweakSet530" enumItem_74="tweakSet531" enumItem_75="tweakSet532" enumItem_76="tweakSet533" enumItem_77="tweakSet534" enumItem_78="tweakSet535" enumItem_79="tweakSet536" enumItem_80="tweakSet537" enumItem_81="tweakSet538" enumItem_82="tweakSet539" enumItem_83="tweakSet540" enumItem_84="tweakSet541" enumItem_85="tweakSet542" enumItem_86="tweakSet543" enumItem_87="tweakSet544" enumItem_88="tweakSet545" enumItem_89="tweakSet546" enumItem_90="tweakSet547" enumItem_91="tweakSet548" enumItem_92="tweakSet549" enumItem_93="tweakSet550" enumItem_94="tweakSet551" enumItem_95="tweakSet552" enumItem_96="tweakSet553" enumItem_97="tweakSet554"/>
+        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="defaultLightSet" enumItem_2="defaultObjectSet" enumItem_3="skinCluster1Set" enumItem_4="skinCluster2Set" enumItem_5="skinCluster3Set" enumItem_6="skinCluster4Set" enumItem_7="skinCluster5Set" enumItem_8="skinCluster6Set" enumItem_9="tweakSet1" enumItem_10="tweakSet2" enumItem_11="tweakSet3" enumItem_12="tweakSet4" enumItem_13="tweakSet5" enumItem_14="tweakSet6"/>
       </PointCache>
       <ConstraintsGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Constraints">
-        <Constraint UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Constraints" dt="Bool" v="0"/>
-        <Character UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Skeleton Definitions" dt="Bool" v="0"/>
+        <Constraint UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Constraints" dt="Bool" v="1"/>
+        <Character UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Skeleton Definitions" dt="Bool" v="1"/>
       </ConstraintsGrp>
     </Animation>
     <CameraGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Cameras">
-      <Camera UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Cameras" dt="Bool" v="1"/>
+      <Camera UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Cameras" dt="Bool" v="0"/>
     </CameraGrp>
     <LightGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Lights">
       <Light UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Lights" dt="Bool" v="0"/>
     </LightGrp>
     <Audio UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Audio" dt="Bool" v="0"/>
-    <EmbedTextureGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Embed Media">
+    <EmbedTextureGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Embed Media">
       <EmbedTexture UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Embed Media" dt="Bool" v="0"/>
     </EmbedTextureGrp>
     <BindPose UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bind Pose" dt="Bool" v="1"/>
     <PivotToNulls UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Pivot To Null" dt="Bool" v="0"/>
     <BypassRrsInheritance UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bypass Rrs Inheritance" dt="Bool" v="0"/>
-    <InputConnectionsGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Connections">
+    <InputConnectionsGrp UIH="1" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Connections">
       <IncludeChildren UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Include Children" dt="Bool" v="1"/>
       <InputConnections UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Input Connections" dt="Bool" v="1"/>
     </InputConnectionsGrp>

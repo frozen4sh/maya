@@ -59,7 +59,7 @@ UI_PATH = cmds.internalVar(usd=True) + UI_NAME
 UI_NAME = '/nxnUI/nxn_animBuildTools.ui'
 UI_PATH = 'C:/NXN_Tools/maya/ANIMATION' + UI_NAME
 '''
-WIN_TITLE = 'NXN Facial Export PB Tool'
+WIN_TITLE = 'NXN MOCAP PB Export Tool'
 MAIN_WIN_NAME = 'facialExpToolWin'
 MAYAPY_PATH = 'c:/program files/autodesk/maya2019/bin/mayapy.exe'
 PYTHON_FILE = 'D:/jun_set/Git/mayaProj/FacialExpTool/facialPBExport.py'
@@ -91,15 +91,13 @@ class FacialExpToolUI(QMainWindow):
         self.faceExpTool_ui.show()
         self.signal_button()
     
+
     def signal_button(self):
         self.faceExpTool_ui.shotLoadBtn.clicked.connect(self.show_dialog)
         self.faceExpTool_ui.dataExpBtn.clicked.connect(self.send_data)
 
     def show_dialog(self):
-        
-        
         self.impFacefile = QFileDialog.getOpenFileNames()[0]
-            
             
         if 0 < len(self.impFacefile) : self.faceExpTool_ui.shotPathListWdg.clear()
         
@@ -107,6 +105,7 @@ class FacialExpToolUI(QMainWindow):
             #print os.path.splitext(os.path.basename(file))
             self.faceExpTool_ui.shotPathListWdg.addItem(file)
      
+
     def get_facial_path(self):
         count_ = self.faceExpTool_ui.shotPathListWdg.count()
         wdg_items = []
@@ -117,16 +116,29 @@ class FacialExpToolUI(QMainWindow):
 
         return wdg_items
     
+
     def send_data(self):
         path_list = self.get_facial_path()
         
+        selItem = self.faceExpTool_ui.PB_listWidget.selectedItems()
+        selCamList = []
+        for i in selItem:
+            selCamList.append(str(i.text()))
+        
+        optDic = {
+            "width":self.faceExpTool_ui.pb_width_spinBox.value(),
+            "height":self.faceExpTool_ui.pb_height_spinBox.value(),
+            "PB":self.faceExpTool_ui.PB_checkBox.isChecked(),
+            "PBcam":selCamList,
+            "BIN":self.faceExpTool_ui.BIN_checkBox.isChecked(),
+            "WAV":self.faceExpTool_ui.WAV_checkBox.isChecked(),
+        }
+        print("optDic", optDic)
+        
         for path_ in path_list:
-            c = facialPBExport.FacialPBExport(path_)
+            c = facialPBExport.FacialPBExport(path_, optDic)
             
-            
-        
-             
-        
+
 if __name__ == '__main__':
     show_ui = FacialExpToolUI()
     show_ui.init_UI()

@@ -106,8 +106,8 @@
                                                 "closed": true,
                                                 "widthProperty": "preferred",
                                                 "heightProperty": "free",
-                                                "controlWidth": 260,
-                                                "controlHeight": 633,
+                                                "controlWidth": 370,
+                                                "controlHeight": 1171,
                                                 "initCallback": "outlinerStateCallback"
                                             }
                                         ]
@@ -307,24 +307,6 @@
     ],
     "closedControls": [
         {
-            "objectName": "graphEditor1Window",
-            "posX": 200,
-            "posY": 250,
-            "controlHeight": 400,
-            "controlWidth": 660,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "scriptEditorPanel1Window",
-            "posX": 710,
-            "posY": 139,
-            "controlHeight": 325,
-            "controlWidth": 475,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
             "objectName": "hyperShadePanel1Window",
             "posX": 75,
             "posY": 75,
@@ -352,9 +334,9 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "referenceEditorPanel1Window",
-            "posX": 250,
-            "posY": 200,
+            "objectName": "scriptEditorPanel1Window",
+            "posX": 710,
+            "posY": 139,
             "controlHeight": 325,
             "controlWidth": 475,
             "widthProperty": "free",
@@ -366,6 +348,24 @@
             "posY": 200,
             "controlHeight": 325,
             "controlWidth": 475,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "referenceEditorPanel1Window",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 325,
+            "controlWidth": 475,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "graphEditor1Window",
+            "posX": 200,
+            "posY": 250,
+            "controlHeight": 400,
+            "controlWidth": 660,
             "widthProperty": "free",
             "heightProperty": "free"
         }
