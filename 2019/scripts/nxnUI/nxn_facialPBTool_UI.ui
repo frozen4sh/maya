@@ -123,6 +123,20 @@
            </widget>
           </item>
           <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>scale : 1920 이상만 적용</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="pb_scale_doubleSpinBox">
+            <property name="value">
+             <double>0.940000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item>
            <widget class="QCheckBox" name="PB_checkBox">
             <property name="text">
              <string>PB </string>

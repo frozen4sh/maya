@@ -24,7 +24,7 @@
     </Geometry>
     <Animation UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Animation" dt="Bool" v="1">
       <ExtraGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Extra Options">
-        <Take UIH="0" UID="0" UIG="0" lbENU="Animation Take" dt="Enum" enumSelected="0002_0080_body_l04_0003_v001" v="1" enumItem_0="No Animation" enumItem_1="0002_0080_body_l04_0003_v001"/>
+        <Take UIH="0" UID="0" UIG="0" lbENU="Animation Take" dt="Enum" enumSelected="0018_2120_body_s18_0002_v001" v="1" enumItem_0="No Animation" enumItem_1="0018_2120_body_s18_0002_v001"/>
         <TimeLine UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Fill Timeline" dt="Bool" v="1"/>
         <BakeAnimationLayers UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Bake Animation Layers" dt="Bool" v="0"/>
         <Markers UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Optical Markers" dt="Bool" v="0"/>

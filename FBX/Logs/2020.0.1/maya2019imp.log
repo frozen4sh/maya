@@ -1768,3 +1768,270 @@ The following display layers are affected: Export_Bone Ani_Body
 2021-12-21 18:27:14: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_18_body_s18_0001_v004.fbx
 2021-12-21 18:28:53: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_18_body_s18_0001_v004.fbx
 2021-12-21 18:32:24: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_18_body_s18_0001_v001.fbx
+2021-12-22 14:57:17: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_16_body_s18_0001_v004.fbx
+2021-12-22 15:00:39: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_16_body_s18_0001_v004.fbx
+2021-12-22 18:28:37: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_18_body_s18_0001_v004.fbx
+2021-12-22 18:30:40: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_18_body_s18_0001_v004_test.fbx
+2021-12-22 18:55:57: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_07_body_s18_0001_v004.fbx
+2021-12-22 18:57:53: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_07_body_s18_0001_v004_test.fbx
+2021-12-23 14:58:17: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_09_body_s18_0001_v004.fbx
+2021-12-27 10:30:47: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_09_body_s18_0001_v003.fbx
+2021-12-27 10:30:58: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. pc_standard_body_rig_mocap_lod0_v004:meshDeletedSecoundary_MOD_grp
+2021-12-27 16:49:04: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_10_body_s18_0002_v004_FpsTest_BakeSkeleton.fbx
+2021-12-27 16:49:10: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  HSW
+2021-12-27 17:00:31: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_10_body_s18_0002_v004_FpsTest_BakeSkeleton_120fps.fbx
+2021-12-27 17:00:38: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  HSW
+2021-12-27 18:23:38: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004.fbx
+2021-12-27 18:26:47: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_10_body_s18_0002_v004_FpsTest_BakeSkeleton_30fps.fbx
+2021-12-27 18:26:54: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  HSW
+2021-12-27 18:39:54: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004.fbx
+2021-12-27 18:44:02: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_09_body_s18_0001_v004.fbx
+2021-12-28 11:26:57: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004.fbx
+2021-12-28 14:56:57: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2021-12-28 14:58:42: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2021-12-28 17:45:02: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_facial_frontcam_v002.fbx
+2021-12-28 17:45:33: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/moc/facial/maya/data/pc_argos_facial_sidecam_v001.fbx
+2021-12-28 18:23:41: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0002_v004_LSW.fbx
+2021-12-28 18:23:41: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-28 18:23:41: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-28 18:23:41: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0003_v004_LSW.fbx
+2021-12-28 18:23:42: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-28 18:23:42: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-28 18:23:42: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0005_v004_LSW.fbx
+2021-12-28 18:23:42: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-28 18:23:42: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 10:36:43: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0002_v004_LSW.fbx
+2021-12-30 10:36:43: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 10:36:43: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 10:36:44: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0003_v004_LSW.fbx
+2021-12-30 10:36:44: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 10:36:44: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 10:36:44: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0005_v004_LSW.fbx
+2021-12-30 10:36:45: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 10:36:45: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 10:54:49: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0002_v004_LSW.fbx
+2021-12-30 10:54:50: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 10:54:50: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 10:54:50: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0003_v004_LSW.fbx
+2021-12-30 10:54:50: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 10:54:50: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 10:54:50: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0005_v004_LSW.fbx
+2021-12-30 10:54:50: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 10:54:50: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 11:34:39: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0002_v004_LSW.fbx
+2021-12-30 11:34:40: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 11:34:40: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 11:34:40: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0003_v004_LSW.fbx
+2021-12-30 11:34:41: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 11:34:41: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 11:34:41: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0005_v004_LSW.fbx
+2021-12-30 11:34:41: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 11:34:41: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 11:43:21: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0002_v004_LSW.fbx
+2021-12-30 11:43:21: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 11:43:21: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 11:43:21: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0003_v004_LSW.fbx
+2021-12-30 11:43:22: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 11:43:22: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 11:43:23: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0005_v004_LSW.fbx
+2021-12-30 11:43:23: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 11:43:23: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 12:38:15: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0002_v004_LSW.fbx
+2021-12-30 12:38:16: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 12:38:16: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 12:38:16: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0003_v004_LSW.fbx
+2021-12-30 12:38:17: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 12:38:17: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 12:38:17: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0005_v004_LSW.fbx
+2021-12-30 12:38:18: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 12:38:18: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 13:07:58: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0002_v004_LSW.fbx
+2021-12-30 13:07:59: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 13:07:59: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 13:07:59: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0003_v004_LSW.fbx
+2021-12-30 13:08:00: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 13:08:00: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2021-12-30 13:08:01: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20211104/0002_0003_body_a01_0005_v004_LSW.fbx
+2021-12-30 13:08:01: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. argos_LSW_MOCAP:Root
+2021-12-30 13:08:01: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2022-01-03 16:55:07: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_09_body_s18_0001_v004.fbx
+2022-01-03 16:55:48: LOG: Import: D:/Justin/2122_1Q/DIA_Z01_24_body_s18_0006_v004.fbx
+2022-01-03 16:56:33: LOG: Import: D:/Justin/2122_1Q/DIA_Z01_24_body_s18_0006_v004.fbx
+2022-01-05 19:19:18: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_s18_0006_v004.fbx
+2022-01-06 18:18:26: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_2301_body_s18_0002_v004.fbx
+2022-01-06 18:21:03: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/DIA_z00_04_body_s18_0002_v004.fbx
+2022-01-06 18:25:47: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_1202_body_s19_0002_v004.fbx
+2022-01-06 18:28:46: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_1202_body_s19_0004_v004.fbx
+2022-01-06 18:32:52: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_2501_body_s19_0001_v004.fbx
+2022-01-06 18:42:25: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_2501_body_s19_0005_v004.fbx
+2022-01-06 18:48:54: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_1202_body_s19_0002_v004.fbx
+2022-01-07 10:52:36: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_2301_body_s18_0002_v004.fbx
+2022-01-07 11:01:46: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_2501_body_s19_0007_v004.fbx
+2022-01-07 11:06:46: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_2501_body_s19_0007_v004.fbx
+2022-01-07 11:26:09: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_2501_body_s19_0007_v004.fbx
+2022-01-07 11:36:03: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_a14_0004_v004.fbx
+2022-01-07 11:36:15: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_a14_0005_v004.fbx
+2022-01-07 11:41:19: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_a14_0005_v004.fbx
+2022-01-07 11:46:27: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_a14_0006_v004.fbx
+2022-01-07 11:49:33: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_a14_0005_v004.fbx
+2022-01-07 11:50:15: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/DIA_z00_04_body_s18_0002_v004.fbx
+2022-01-07 11:52:13: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_a14_0005_v004.fbx
+2022-01-07 11:52:34: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/DIA_z00_04_body_s18_0002_v004.fbx
+2022-01-07 11:53:05: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_a14_0004_v004.fbx
+2022-01-07 11:59:24: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/DIA_z00_04_body_s18_0002_v004.fbx
+2022-01-07 12:05:54: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_s18_0006_v004.fbx
+2022-01-07 12:14:57: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/0002_9001_body_s18_0006_v004.fbx
+2022-01-07 18:28:14: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220104/0018_2601_body_s19_0001_motion01_v004.fbx
+2022-01-07 18:29:28: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220104/0018_2601_body_s19_0001_motion02_v004.fbx
+2022-01-07 18:33:38: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220104/0018_2601_body_s19_0001_motion02_v004.fbx
+2022-01-07 19:05:46: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_2601_body_s19_0001_motion03_v004.fbx
+2022-01-07 19:42:26: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/DIA_z00_03_body_s18_0002_v004.fbx
+2022-01-07 19:43:35: LOG: Import: Z:/Projects/rise/dev/shots/0002/0000/moc/body/motionbuilder/20220104/DIA_z00_03_body_s18_0003_v004.fbx
+2022-01-07 19:56:39: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_1202_body_s19_0002_v004.fbx
+2022-01-07 19:57:04: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_1202_body_s19_0002_v004.fbx
+2022-01-07 19:59:34: LOG: Import: D:/Justin/2022_1Q/motionbuilder/20220104/0018_2501_body_s19_0007_v004.fbx
+2022-01-10 10:23:13: LOG: Import: Z:/Projects/rise/dev/assets/pc/standard_body/rig/mocap/maya/scenes/pc_standard_body_rig_mocap_lod0_v004.fbx
+2022-01-10 10:23:17: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. meshDeletedSecoundary_MOD_grp
+2022-01-10 10:24:03: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-01-10 11:11:04: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-01-10 14:24:32: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-01-10 17:56:22: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-01-10 18:46:46: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-01-11 10:11:34: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-01-11 10:12:00: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-01-11 10:22:22: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_20_body_s18_0001_v004.fbx
+2022-01-11 10:45:18: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_18_body_s18_0001_v004.fbx
+2022-01-11 10:56:19: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-01-11 10:58:20: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-01-12 11:35:00: LOG: Import: Z:/Projects/rise/dev/shots/0075/0000/stage/env/SQ03_testGround.fbx
+2022-01-12 16:36:07: LOG: Import: D:/Justin/2022_1Q/motionbuilder/FpsTest/DIA_Z01_10_body_s18_0002_v004_FpsTest_BakeSkeleton_30fps.fbx
+2022-01-12 16:36:13: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  HSW
+2022-01-12 16:37:24: LOG: Import: D:/Justin/2022_1Q/motionbuilder/FpsTest/DIA_Z01_10_body_s18_0002_v004_FpsTest_BakeSkeleton_120fps.fbx
+2022-01-12 16:37:30: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  HSW
+2022-01-12 16:38:29: LOG: Import: D:/Justin/2022_1Q/motionbuilder/FpsTest/DIA_Z01_10_body_s18_0002_v004_FpsTest_BakeSkeleton_30fps.fbx
+2022-01-12 16:38:35: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  HSW
+2022-01-14 12:56:57: LOG: Import: D:/Justin/2020_3Q/scenes/pc_argos_SK_cinema_v007_cloth.fbx
+2022-01-14 12:57:18: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body Face
+2022-01-14 13:07:03: LOG: Import: D:/Justin/2021_2Q/scenes/pc_argos_rig_mocap_v006.fbx
+2022-01-14 13:07:14: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Body GrpGeo_argos_lod0
+2022-01-14 13:07:14: LOG: [ERROR  ] Unexpected Skin Hierarchy - The plug-in encountered the following unexpected skin hierarchy :  The skin Rig_R_Weapon is parented to the deforming bone Rig_R_Weapon. This skin may not deform as expected.
+2022-01-14 13:09:32: LOG: Import: D:/Justin/Argos/Argos_MB_v03.fbx
+2022-01-14 13:09:37: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. face
+2022-01-14 13:13:38: LOG: Import: D:/Justin/2020_3Q/scenes/pc_argos_SK_cinema_v007_cloth.fbx
+2022-01-14 13:13:59: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body Face
+2022-01-14 13:14:45: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v008.fbx
+2022-01-14 13:14:52: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_weapon_lod1 GrpGeo_lod1 GrpGeo_body_lod1 GrpGeo_face_lod1
+2022-01-14 17:36:12: LOG: Import: D:/Justin/2021_4Q/scenes/z01/DIA_Z01_18_body_s18_0001_v004.fbx
+2022-01-18 10:19:43: LOG: Import: D:/Justin/2022_1Q/motionbuilder/FpsTest/DIA_Z01_10_body_s18_0002_v004_FpsTest_ContolRig_30fps.fbx
+2022-01-18 10:23:06: LOG: Import: D:/Justin/2022_1Q/motionbuilder/FpsTest/DIA_Z01_10_body_s18_0002_v004_FpsTest_ContolRig_120fps.fbx
+2022-01-18 11:22:56: LOG: Import: D:/Justin/2022_1Q/motionbuilder/FpsTest/DIA_Z01_10_body_s18_0002_v004_FpsTest_BakeSkeleton_30fps.fbx
+2022-01-18 11:23:02: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  HSW
+2022-01-18 11:25:08: LOG: Import: D:/Justin/2022_1Q/motionbuilder/FpsTest/DIA_Z01_10_body_s18_0002_v004_FpsTest_BakeSkeleton_120fps.fbx
+2022-01-18 11:25:14: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  HSW
+2022-01-18 11:29:54: LOG: Import: D:/Justin/2022_1Q/motionbuilder/FpsTest/DIA_Z01_10_body_s18_0002_v004_FpsTest_ContolRig_30fps.fbx
+2022-01-18 11:31:54: LOG: Import: D:/Justin/2022_1Q/motionbuilder/FpsTest/DIA_Z01_10_body_s18_0002_v004_FpsTest_ContolRig_120fps.fbx
+2022-01-18 17:29:51: LOG: Import: Z:/Teams/CINEMA/04.Mocap/98.LAB/WrinkleMap/Snappers_WrinkleMap_Test_Anim_01.fbx
+2022-01-18 17:30:06: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. pc_argos_rig1:GrpGeo_body_lod0 pc_argos_rig1:GrpGeo_lod0 pc_argos_rig1:GrpGeo_face_lod0 pc_argos_rig1:GrpGeo_weapon_lod0 pc_argos_rig1:GrpGeo_face_lod2 pc_argos_rig1:GrpGeo_argos_lod2 pc_argos_rig1:GrpGeo_sheath_lod2 pc_argos_rig1:GrpGeo_body_lod2 pc_argos_rig1:GrpGeo_body_lod1 pc_argos_rig1:GrpGeo_argos_lod1 pc_argos_rig1:GrpGeo_face_lod1 pc_argos_rig1:GrpGeo_weapon_lod1
+2022-01-18 17:37:00: LOG: Import: Z:/Teams/CINEMA/04.Mocap/98.LAB/WrinkleMap/Snappers_WrinkleMap_Test_Anim_01.fbx
+2022-01-18 17:37:16: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. pc_argos_rig1:GrpGeo_body_lod0 pc_argos_rig1:GrpGeo_lod0 pc_argos_rig1:GrpGeo_face_lod0 pc_argos_rig1:GrpGeo_weapon_lod0 pc_argos_rig1:GrpGeo_face_lod2 pc_argos_rig1:GrpGeo_argos_lod2 pc_argos_rig1:GrpGeo_sheath_lod2 pc_argos_rig1:GrpGeo_body_lod2 pc_argos_rig1:GrpGeo_body_lod1 pc_argos_rig1:GrpGeo_argos_lod1 pc_argos_rig1:GrpGeo_face_lod1 pc_argos_rig1:GrpGeo_weapon_lod1
+2022-01-18 18:07:31: LOG: Import: Z:/Teams/CINEMA/04.Mocap/98.LAB/WrinkleMap/pc_standard_body_v2_WrinkleMap_Test_Anim_01.fbx
+2022-01-18 18:07:40: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Grp_face_lod0 GrpGeo_standard_body_lod0 Grp_body_lod0
+2022-01-19 11:20:27: LOG: Import: Z:/Teams/CINEMA/04.Mocap/98.LAB/WrinkleMap/pc_argos_rig_body_lod0_v021_WrinkleMap_Test_Anim_01.fbx
+2022-01-19 11:20:40: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_argos_lod1 GrpGeo_weapon_lod1 GrpGeo_face_lod1 GrpGeo_body_lod2 GrpGeo_argos_lod2 GrpGeo_sheath_lod2 GrpGeo_face_lod2 GrpGeo_argos_lod4
+2022-01-19 11:56:51: LOG: Import: Z:/Teams/CINEMA/04.Mocap/98.LAB/WrinkleMap/pc_argos_rig_body_lod0_v021_WrinkleMap_Test_Anim_01.fbx
+2022-01-19 11:57:01: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. GrpGeo_body_lod1 GrpGeo_argos_lod1 GrpGeo_weapon_lod1 GrpGeo_face_lod1
+2022-01-20 10:52:54: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v001.fbx
+2022-01-20 10:53:49: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v002.fbx
+2022-01-20 10:54:03: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v003.fbx
+2022-01-20 10:54:17: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v004.fbx
+2022-01-20 10:54:31: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v005.fbx
+2022-01-20 10:54:49: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. body Face
+2022-01-20 10:55:27: LOG: Import: Z:/Projects/rise/dev/assets/pc/argos/rig/mocap/maya/scenes/pc_argos_rig_mocap_v006.fbx
+2022-01-20 10:55:37: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. Body GrpGeo_argos_lod0
+2022-01-20 10:55:37: LOG: [ERROR  ] Unexpected Skin Hierarchy - The plug-in encountered the following unexpected skin hierarchy :  The skin Rig_R_Weapon is parented to the deforming bone Rig_R_Weapon. This skin may not deform as expected.
+2022-01-25 12:03:40: LOG: Import: C:/Program Files/Autodesk/Maya2019/presets/hik/examples/Dummy_HIK.fbx
+2022-01-25 15:05:16: LOG: Import: C:/Program Files/Autodesk/Maya2019/presets/hik/examples/Dummy_HIK.fbx
+2022-01-25 15:05:56: LOG: Import: C:/Program Files/Autodesk/Maya2019/presets/hik/examples/Dummy_HIK.fbx
+2022-02-09 11:44:36: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20211214/DIA_Z01_22_body_s18_0001_v004_test.fbx
+2022-02-11 15:48:08: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_1120_body_s18_0001_v004.fbx
+2022-02-11 15:49:44: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_1120_body_s18_0001_v004_desk.fbx
+2022-02-11 15:52:20: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_1120_body_s18_0001_v004_desk.fbx
+2022-02-11 16:21:23: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_1120_body_s18_0001_v004_desk.fbx
+2022-02-11 16:29:29: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_1110_body_s18_0005_v004.fbx
+2022-02-11 16:57:25: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_1120_body_s18_0001_v004_desk.fbx
+2022-02-11 17:01:00: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_1120_body_s18_0001_v004_desk.fbx
+2022-02-11 17:02:41: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_1120_body_s18_0001_v004_desk.fbx
+2022-02-11 18:05:18: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004.fbx
+2022-02-11 18:07:16: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 10:18:19: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 10:31:58: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004.fbx
+2022-02-14 10:38:13: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 11:05:24: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 11:06:45: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 11:07:44: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 11:11:49: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 11:22:32: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 12:16:25: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_noDOFTest.fbx
+2022-02-14 13:06:09: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_DOFMatchSourceTest.fbx
+2022-02-14 13:06:52: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_DOFNoMatchSourceTest.fbx
+2022-02-14 13:10:07: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v001.fbx
+2022-02-14 16:17:49: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004.fbx
+2022-02-14 16:47:53: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_desk.fbx
+2022-02-14 16:48:46: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_desk.fbx
+2022-02-14 17:42:00: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 18:19:11: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 18:19:50: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004.fbx
+2022-02-14 18:21:22: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_desk.fbx
+2022-02-14 18:21:37: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004.fbx
+2022-02-14 18:24:01: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_desk.fbx
+2022-02-14 18:28:11: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004_desk.fbx
+2022-02-14 18:28:11: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2110_body_s18_0002_v004.fbx
+2022-02-15 11:06:13: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_desk.fbx
+2022-02-15 11:06:27: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004.fbx
+2022-02-15 11:09:20: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_desk.fbx
+2022-02-15 11:10:06: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004.fbx
+2022-02-15 11:12:28: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0018_2120_body_s18_0002_v004_desk.fbx
+2022-02-15 13:14:01: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0015_3510_body_s18_0003_v004.fbx
+2022-02-15 15:44:54: LOG: Import: Z:/Projects/rise/dev/shots/0000/0000/moc/body/motionbuilder/20220210/0015_3510_body_s18_0003_v004.fbx

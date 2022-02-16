@@ -128,6 +128,7 @@ class FacialExpToolUI(QMainWindow):
         optDic = {
             "width":self.faceExpTool_ui.pb_width_spinBox.value(),
             "height":self.faceExpTool_ui.pb_height_spinBox.value(),
+            "scale":self.faceExpTool_ui.pb_scale_doubleSpinBox.value(),
             "PB":self.faceExpTool_ui.PB_checkBox.isChecked(),
             "PBcam":selCamList,
             "BIN":self.faceExpTool_ui.BIN_checkBox.isChecked(),

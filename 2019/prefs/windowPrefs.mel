@@ -23,8 +23,8 @@ windowPref -topLeftCorner 551 3327 -widthHeight 1427 700 -maximized false -paren
 windowPref -topLeftCorner 480 905 -widthHeight 256 262 -maximized false -parentMain true uvSetEditor;
 windowPref -topLeftCorner 416 3504 -widthHeight 674 747 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 478 3380 -widthHeight 450 658 -maximized false -parentMain true pluginManagerWindow;
-windowPref -topLeftCorner 522 937 -widthHeight 491 500 -maximized false -parentMain true FbxWarningWindow;
-windowPref -topLeftCorner 368 2892 -widthHeight 723 576 -maximized false -parentMain true OptionBoxWindow;
+windowPref -topLeftCorner 541 961 -widthHeight 491 500 -maximized false -parentMain true FbxWarningWindow;
+windowPref -topLeftCorner 505 862 -widthHeight 701 559 -maximized false -parentMain true OptionBoxWindow;
 windowPref -topLeftCorner 171 -2225 -widthHeight 1138 1130 -maximized false -parentMain true expressionEditorWin;
 windowPref -topLeftCorner 623 1386 -widthHeight 358 217 -maximized false -parentMain true LayerEditorQuickEditWindow;
 windowPref -topLeftCorner 808 -487 -widthHeight 248 75 -maximized false -parentMain true jdsWnd;
@@ -43,3 +43,5 @@ windowPref -topLeftCorner 480 905 -widthHeight 380 730 -maximized false -parentM
 windowPref -topLeftCorner 480 905 -widthHeight 832 474 -maximized false -parentMain true menuSearchWindow;
 windowPref -topLeftCorner 592 3246 -widthHeight 320 110 -maximized false -parentMain true downloadCheckUI;
 windowPref -topLeftCorner 868 -988 -widthHeight 300 26 -maximized false -parentMain true animKeyCopy;
+windowPref -topLeftCorner 467 853 -widthHeight 525 350 -maximized false -parentMain true colorPreferenceWindow;
+windowPref -topLeftCorner 529 1212 -widthHeight 239 142 -maximized false -parentMain true bh_aimTools;

@@ -559,7 +559,7 @@ global proc shelf_NXNani () {
         -flexibleWidthType 3
         -flexibleWidthValue 32
         -enable 1
-        -width 39
+        -width 35
         -height 34
         -manage 1
         -visible 1
@@ -574,14 +574,15 @@ global proc shelf_NXNani () {
         -flipY 0
         -useAlpha 1
         -font "plainLabelFont" 
+        -imageOverlayLabel "AnimPicker" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Users/NXN-035/Documents/maya/2019/scripts\\AnimSchoolLogoIcon.png" 
-        -image1 "C:/Users/NXN-035/Documents/maya/2019/scripts\\AnimSchoolLogoIcon.png" 
+        -image "C:/Users/Justin/Documents/maya/2019/scripts/maya2019\\AnimSchoolLogoIcon.png" 
+        -image1 "C:/Users/Justin/Documents/maya/2019/scripts/maya2019\\AnimSchoolLogoIcon.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "loadPlugin -qt \"C:/Users/NXN-035/Documents/maya/2019/scripts/AnimSchoolPicker.mll\";\nAnimSchoolPicker();" 
+        -command "loadPlugin -qt \"C:/Users/Justin/Documents/maya/2019/scripts/maya2019/AnimSchoolPicker.mll\";\nAnimSchoolPicker();" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -653,6 +654,41 @@ global proc shelf_NXNani () {
         -marginHeight 1
         -command "import animMoveTools\nreload(animMoveTools)" 
         -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "source \"C:/Users/Justin/Documents/maya/2019/scripts/bh_aimTools_v1.1/bh_aimTools.mel\";\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "source \"C:/Users/Justin/Documents/maya/2019/scripts/bh_aimTools_..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "bh_aimTools" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/Justin/Documents/maya/2019/scripts/bh_aimTools_v1.1/bh_aimTools_ICON.png" 
+        -image1 "C:/Users/Justin/Documents/maya/2019/scripts/bh_aimTools_v1.1/bh_aimTools_ICON.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "source \"C:/Users/Justin/Documents/maya/2019/scripts/bh_aimTools_v1.1/bh_aimTools.mel\";\n" 
+        -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
     ;

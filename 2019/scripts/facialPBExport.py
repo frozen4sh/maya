@@ -127,16 +127,20 @@ class FacialPBExport():
 
         if camName:
             sound_track = cmds.ls(type='audio')
-            
+            percentV = 100
+            if self.opt['width'] >= 1920 :
+                percentV = self.opt['scale'] * 100
+
             if sound_track:
                 try:
                     focusPanel = cmds.getPanel( withFocus=True )
                     cmds.lookThru(camName)
                     cmds.modelEditor(focusPanel, edit=True, allObjects=False, polymeshes=True, displayAppearance="smoothShaded", displayTextures=1)
                     print(focusPanel)
+                    
                     cmds.playblast(f=path,fmt='qt',qlt=100,fp=0,c='H.264'
                                 # ,wh=[600,800],p=100,viewer=0,offScreen = True
-                                ,wh=[self.opt['width'],self.opt['height']],p=95,viewer=0,offScreen = True
+                                ,wh=[self.opt['width'],self.opt['height']],p=percentV,viewer=0,offScreen = True
                                 ,fo=True,s=sound_track[0])
                 except Exception as e:
                     print 'playblast ERROR:',e
@@ -148,7 +152,7 @@ class FacialPBExport():
                     print(focusPanel)
                     cmds.playblast(f=path,fmt='qt',qlt=100,fp=0,c='H.264'
                                 # ,wh=[600,800],p=100,viewer=0,offScreen = True
-                                ,wh=[self.opt['width'],self.opt['height']],p=95,viewer=0,offScreen = True
+                                ,wh=[self.opt['width'],self.opt['height']],p=percentV,viewer=0,offScreen = True
                                 ,fo=True)
                 except Exception as e:
                     print 'playblast ERROR:',e
