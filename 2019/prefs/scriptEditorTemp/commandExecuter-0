@@ -1,3 +1,6 @@
-import mulit_object_replace
-reload(mulit_object_replace)
-mulit_object_replace.run()
+joints = cmds.ls(sl= True)
+
+for jnt in joints:
+    cmds.setAttr(jnt+".side", 0)
+    cmds.setAttr(jnt+".type", 18)
+    cmds.setAttr(jnt+".otherType", jnt, type= 'string')

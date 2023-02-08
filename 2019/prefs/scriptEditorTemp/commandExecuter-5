@@ -1,0 +1,9 @@
+{
+// script creates a locator at the selection's average position - Naughty
+string $tool = `currentCtx`;
+setToolTo moveSuperContext;
+vector $pos = `manipMoveContext -q -p Move`;
+string $loc[] = `spaceLocator -n "average#"`;
+move -ws -a ($pos.x) ($pos.y) ($pos.z) $loc;
+setToolTo $tool;
+}

@@ -652,7 +652,7 @@ global proc shelf_Rendering () {
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "mayaSoftwareRenderDiagnostics" 
+        -command "RenderDiagnostics" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1

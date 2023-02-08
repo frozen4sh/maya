@@ -164,21 +164,3 @@ nameCommand
 	-command ("Reset_S")
 	Reset_SNameCommand;
 
-nameCommand
-	-annotation "Show_ToggleNameCommand"
-	-sourceType "mel"
-	-command ("Show_Toggle")
-	Show_ToggleNameCommand;
-
-nameCommand
-	-annotation "Copy_KeysNameCommand"
-	-sourceType "mel"
-	-command ("timeSliderCopyKey_bind")
-	Copy_KeysNameCommand;
-
-nameCommand
-	-annotation "timeSliderPasteKeyNameCommand"
-	-sourceType "mel"
-	-command ("timeSliderPasteKey_bind")
-	timeSliderPasteKeyNameCommand;
-

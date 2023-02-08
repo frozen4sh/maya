@@ -221,7 +221,7 @@ displayRGBColor -c nodeEditorCurveAttribute 0.254902 0.607843 1;
 displayRGBColor -c nodeEditorArrayAttribute 0.780392 0.811765 0.823529;
 displayRGBColor -c nodeEditorInOutMeshAttribute 0.541176 0.54902 0.494118;
 displayRGBColor -c nodeEditorMultiAmbiguousAttribute 0 0 0;
-displayRGBColor -c lockedVertex 9.82656e-39 7.0714e-39 1.11122e-38;
+displayRGBColor -c lockedVertex 6.24498e-39 6.7041e-39 7.53063e-39;
 displayRGBColor -c freezeVertex 0 0.5 1;
 displayRGBColor -c maskVertex 1 0 0;
 displayRGBColor -c pinUV 0 0.5 1;

@@ -1,2 +1,57 @@
-import versionctl
-versionctl.versionctl()
+
+# Guids To Export FacialRig to UE4 
+#########################################
+#
+# First make sure that skinshader mask attributes are connected to mask attributes on the root joint:
+# To create mask attributes on root joint run the following python script:
+###################################################################################################
+
+###################################################################################################
+root = 'Head_Jnt'
+bs_node = 'Head_blendShape'
+skinShader = 'SkinShader'
+
+for i in range(1,136):
+	try:
+		cmds.addAttr(root, sn='MaskVal_%d_mat'%i, k=True)
+	except:
+		print('MaskVal_%d_mat : Already Exists'%i)
+	try:
+		cmds.connectAttr('%s.Mask%d'%(skinShader, i), '%s.MaskVal_%d_mat'%(root,i))
+	except:
+		print('MaskVal_%d_mat : Already Connected'%i)
+
+
+bs_List = cmds.listAttr('%s.w'%bs_node, m=1)
+for bs in bs_List:
+	cmds.addAttr(root, sn=bs, k=True)
+	cmds.connectAttr("Head_blendShape.%s"%bs, '%s.%s'%(root,bs))
+	
+
+
+###################################################################################################
+#
+###################################################################################################
+# To Export Meshes to Unreal Engine
+####################################
+#
+# In Maya:
+# -------
+# Make Sure  Before Exporting To Bake Animation on the added root joint attributes
+# Select [ Head, Eyes, Teeth ] then click file -> export selection -> select fbx
+# Make Sure To check Animation under animation tab
+#
+# In UE4:
+# ------
+# when importing animation make sure to turn on import custom attributes
+# and material suffixes already containing "_mat" 
+# This will result in importing custom mask attributes as animation curves which will drive ue4 skinshader mask parameters
+#
+
+
+
+
+
+
+
+

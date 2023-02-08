@@ -5,7 +5,7 @@ menuSet -permanent 1 -hotBoxVisible 1 -label "Common" -menuArray { "mainFileMenu
 menuSet -moveMenuSet commonMenuSet 0;
 menuSet -permanent 0 -hotBoxVisible 1 -label "Modeling" -menuArray { "mainMeshMenu", "mainEditMeshMenu", "mainMeshToolsMenu", "mainMeshDisplayMenu", "mainCurvesMenu", "mainSurfacesMenu", "mainDeformMenu", "mainUVMenu", "mainGenerateMenu" } modelingMenuSet;
 menuSet -moveMenuSet modelingMenuSet 1;
-menuSet -permanent 0 -hotBoxVisible 1 -label "Rigging" -menuArray { "mainRigSkeletonsMenu", "mainRigSkinningMenu", "mainRigDeformationsMenu", "mainRigConstraintsMenu", "mainRigControlMenu", "mainNXN_rigTools" } riggingMenuSet;
+menuSet -permanent 0 -hotBoxVisible 1 -label "Rigging" -menuArray { "mainRigSkeletonsMenu", "mainRigSkinningMenu", "mainRigDeformationsMenu", "mainRigConstraintsMenu", "mainRigControlMenu" } riggingMenuSet;
 menuSet -moveMenuSet riggingMenuSet 2;
 menuSet -permanent 0 -hotBoxVisible 1 -label "Animation" -menuArray { "mainKeysMenu", "mainPlaybackMenu", "mainVisualizeMenu", "mainDeformationMenu", "mainConstraintsMenu", "mainMashMenu" } animationMenuSet;
 menuSet -moveMenuSet animationMenuSet 3;
