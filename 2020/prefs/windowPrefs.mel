@@ -16,6 +16,13 @@ windowPref -topLeftCorner 250 200 -widthHeight 700 400 -maximized false -parentM
 windowPref -topLeftCorner 250 200 -widthHeight 550 562 -maximized false -parentMain true blindDataEditor1Window;
 windowPref -topLeftCorner 150 200 -widthHeight 1120 640 -maximized false -parentMain true polyTexturePlacementPanel1Window;
 windowPref -topLeftCorner 235 230 -widthHeight 1430 710 -maximized false -parentMain true contentBrowserPanel1Window;
-windowPref -topLeftCorner -9 77 -widthHeight 1280 1024 -maximized true -parentMain false MayaWindow;
-windowPref -topLeftCorner 480 905 -widthHeight 450 320 -maximized false -parentMain true NewFeatureHighlightWnd;
-windowPref -topLeftCorner 479 899 -widthHeight 320 110 -maximized false -parentMain true downloadCheckUI;
+windowPref -topLeftCorner 700 1280 -widthHeight 676 480 -maximized false -parentMain true NewFeatureHighlightWnd;
+windowPref -topLeftCorner -11 -1 -widthHeight 1920 1536 -maximized true -parentMain false MayaWindow;
+windowPref -topLeftCorner 700 1280 -widthHeight 698 793 -maximized false -parentMain true shelfEditor;
+windowPref -topLeftCorner 678 1782 -widthHeight 420 826 -maximized false -parentMain true TopoWrap;
+windowPref -topLeftCorner 578 1060 -widthHeight 676 1059 -maximized false -parentMain true pluginManagerWindow;
+windowPref -topLeftCorner 270 314 -widthHeight 1203 1070 -maximized false -parentMain true PreferencesWindow;
+windowPref -topLeftCorner 700 1280 -widthHeight 750 750 -maximized false -parentMain true FbxWarningWindow;
+windowPref -topLeftCorner 678 1032 -widthHeight 1878 1050 -maximized false -parentMain true HotkeyEditor;
+windowPref -topLeftCorner 700 1280 -widthHeight 370 113 -maximized false -parentMain true jdsWnd;
+windowPref -topLeftCorner 772 1219 -widthHeight 820 526 -maximized false -parentMain true OptionBoxWindow;

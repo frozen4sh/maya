@@ -1,0 +1,1056 @@
+global proc shelf_Rigging_User () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "dxyzBridge" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "dxyzBridge" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "dxyzBridge;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "kisJoint_orientWin" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "kisJoint_orientWin" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "kisJoint_orientWin" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "kisJoint_orientWin" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "dxyzBridge" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "dxyzBridge" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "dxyzBridge" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "dxyzBridge" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "RISE FOLDER SET" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "# -*- coding: utf-8 -*- \n'''\n2020.04.02\nï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½ï¿½..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "RISE FOLDER SET" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "folder-closed.png" 
+        -image1 "folder-closed.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "# -*- coding: utf-8 -*- \n'''\n2020.04.02\nï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ì¸ï¿½ ï¿½ß¿ï¿½ - ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.\n\n\nï¿½ï¿½ï¿½ß¹Ú½ï¿½ ï¿½Æ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿?È®ï¿½Î¿ï¿½\n\n\nimport sys\nsys.path.append(\"Z:/Teams/CINEMA/03.Animation/temp/animation_part_scripts/\")\nimport risefolderopen as rfo\nfrom risefolderopen import *\nreload(rfo)\nrfo.UI()\n'''\n\n\nimport maya.cmds as cmds\nimport os\nimport glob\nimport maya.mel as mel\n\n\n\nfilename=cmds.file(q=1,ns=1)\nfilenames=filename.split('_')\n#[u'9999', u'0010', u'anim', u'polishing', u'lod0', u'012', u'edit', u'03', u'02']\n\n\nprojectname = 'rise'\n\n\nglobal setdrive\nsetdrive = 'Z' # ï¿½Ê±â¼³ï¿½ï¿½ï¿½ï¿½ Z ï¿½ï¿½ï¿½ï¿½Ìºï¿?n\n\nglobal localdrive\nlocaldrive = 'D' # 'D', 'E', 'Y'\n\n\n#buttonlabel = 'scenes' # 'movies'\n\n\n#'Z:/Projects/rise/dev/shots/9999/0010/anim/polishing/maya/scenes/'\n\n\n#'%s:/Projects/%s/dev/shots/%s/%s/%s/%s/maya/%s/'%(localdrive,proje
+ctname,filenames[0],filenames[1],filenames[2],filenames[3],buttonlabel)\n\n\n\n'''\ndef localdriveset():\n    #localdrive = localdrive\n    global localdrive\n    if not localdrive == 'Z' :\n        localdrive = 'Z'\n    else :\n        localdrive = 'D'\n    return localdrive\n'''\n\n\n\n\ndef openfolder(buttonlabel):\n    dir = '%s:/Projects/%s/dev/shots/%s/%s/%s/%s/maya/%s/'%(setdrive,projectname,filenames[0],filenames[1],filenames[2],filenames[3],buttonlabel)\n    if not glob.glob(dir):\n        print dir\n        print 'non Path'\n    else :\n        os.startfile(dir)\n\n\n\n\n\ndef setprj():    \n    maya_dir = '%s:/Projects/%s/dev/shots/%s/%s/%s/%s/maya'%(setdrive,projectname,filenames[0],filenames[1],filenames[2],filenames[3])\n    #directory = maya_dir\n    def create_folder( directory ):\n        if not os.path.exists( directory ):\n            os.makedirs( directory )\n    \n    create_folder( maya_dir )\n    \n    for file_rule in cmds.workspace(query=True, fileRuleList=Tru
+e):    \n        file_rule_dir = cmds.workspace(fileRuleEntry=file_rule)    \n        maya_file_rule_dir = os.path.join( maya_dir, file_rule_dir)    \n        create_folder( maya_file_rule_dir )\n    \n    mel.eval('setProject \\\"' + maya_dir + '\\\"')\n    # // Warning: file: C:/Program Files/Autodesk/Maya2019/scripts/others/setProject.mel line 304: A project definition file (workspace.mel) was not found at location D:/Projects/rise/dev/shots/9999/0010/anim/polishing/maya, a default project definition will be created. // \n    \n    cmds.confirmDialog( title='Confirm', message= ' set project :\\n\\n' + maya_dir , button='OK')\n\n\n\n\n\ndef UI():\n    win = 'openfolder'\n    if cmds.window(win,exists=1) :\n        cmds.deleteUI(win)\n    cmds.window(win,title=\"Open Folder       ( Hangouts : yslee@locus.com )\",widthHeight=(150,200),s=1,tlb=True)\n    cmds.columnLayout(adjustableColumn=1)\n    cmds.text(\"Rise Folder\\nselect drive\",fn=\"fixedWidthFont\",h=30)\n\n\n    cmds.radioCo
+llection()\n    cmds.radioButton( label=localdrive , cc = \"setdrive = localdrive \" )\n    cmds.radioButton( label='Z' ,select =1, cc = \"setdrive = 'Z' \" )\n    \n    #cmds.textField('sqnumber', height=30 ,tx='Enter SQ num')\n    #cmds.textField('shotnumber', height=30 ,tx='Enter Shot num')\n    cmds.button(h=35,bgc=(0.7,0.8,0.8),l=\"set project\" ,c=\"setprj()\")\n    cmds.button(h=35,bgc=(0.8,0.8,0.8),l=\"Scene\",c=\"openfolder('scenes')\")\n    cmds.button(h=35,bgc=(0.9,0.8,0.8),l=\"Movies\" ,c=\"openfolder('movies')\")\n    #cmds.button(h=35,bgc=(0.1,0.1,0.1),l=\"Close\",c=\"win='openfolder';cmds.deleteUI(win)\")\n    cmds.showWindow(win)\n\n\n\n\nUI()\n\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    separator
+        -enable 1
+        -width 12
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as cmds\n\ncmds.file('D:\\Justin\\Greyworm\\Venjamin_Maya_reskined_FFX_BodyAnim.ma', open=True, f=1 )" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import maya.cmds as cmds\n\ncmds.file('D:\\Justin\\Greyworm\\Venjamin..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "openFile" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n\ncmds.file('D:\\Justin\\Greyworm\\Venjamin_Maya_reskined_FFX_BodyAnim.ma', open=True, f=1 )" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as cmds\n\ncmds.delete('Rig_Face_All', 'Rig_Facial_jnt_skin_grp')" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import maya.cmds as cmds\n\ncmds.delete('Rig_Face_All', 'Rig_Facia..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "delete" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as cmds\nimport maya.mel as mel\n\n'''\nif cmds.objExists('Rig_Face_All', 'Rig_Facial_jnt_skin_grp' ):\n    cmds.delete('Rig_Face_All', 'Rig_Facial_jnt_skin_grp')\n\nelse:\n  print(\"Warning: no exists.\")\n'''\n\nif cmds.objExists('Rig_Face_All' ):\n    cmds.delete('Rig_Face_All' )\n\nif cmds.objExists('Rig_Facial_jnt_skin_grp' ):\n    cmds.delete('Rig_Facial_jnt_skin_grp')\n\n  \n\n# cmds.delete('Rig_Face_All', 'Rig_Facial_jnt_skin_grp') \n\n\ncmds.select( 'Rig', hierarchy=True )\ncmds.cutKey( time=(0,0) )\ncmds.filterCurve( f=\"euler\" )\n\n\n \ndef setAnimRange():\n    objs = cmds.ls(sl= True)\n    timeRange= []\n    for obj in objs:\n        #obj = objs[0]\n        animAttributes = cmds.listAnimatable(obj)\n        \n        for attribute in animAttributes:\n            numKeyframes = cmds.keyframe(attribute, q= True, keyframeCount= True)\n            \n            if (numKeyframes > 0):\n                #print(\"--------------------------------
+\")\n                #print(\"Found \", numKeyframes, \" keyframes on \", attribute)\n                \n                times = cmds.keyframe(attribute, q= True, index= (0, numKeyframes), timeChange= True)\n                \n                values = cmds.keyframe(attribute, q= True, index= (0, numKeyframes), valueChange= True)\n                \n                #print('frame#, time, value')\n                for i in range(0, numKeyframes):\n                    #print(i, times[i], values[i])\n                    timeRange.append(times[i])\n                \n                #print(\"--------------------------------\")\n    keyRange= sorted(timeRange)\n    \n    cmds.playbackOptions(minTime= keyRange[0], maxTime= keyRange[-1])\n \nsetAnimRange()\n\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "performEulerFilter graphEditor1FromOutliner;\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "performEulerFilter graphEditor1FromOutliner;\n" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "Euler" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "performEulerFilter graphEditor1FromOutliner;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "setAnimRange()\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "setAnimRange()\n" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "setAnimRange" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n \ndef setAnimRange():\n    objs = cmds.ls(sl= True)\n    timeRange= []\n    for obj in objs:\n        #obj = objs[0]\n        animAttributes = cmds.listAnimatable(obj)\n        \n        for attribute in animAttributes:\n            numKeyframes = cmds.keyframe(attribute, q= True, keyframeCount= True)\n            \n            if (numKeyframes > 0):\n                #print(\"--------------------------------\")\n                #print(\"Found \", numKeyframes, \" keyframes on \", attribute)\n                \n                times = cmds.keyframe(attribute, q= True, index= (0, numKeyframes), timeChange= True)\n                \n                values = cmds.keyframe(attribute, q= True, index= (0, numKeyframes), valueChange= True)\n                \n                #print('frame#, time, value')\n                for i in range(0, numKeyframes):\n                    #print(i, times[i], values[i])\n                    timeRange.append(times[i])
+\n                \n                #print(\"--------------------------------\")\n    keyRange= sorted(timeRange)\n    \n    cmds.playbackOptions(minTime= keyRange[0], maxTime= keyRange[-1])\n    #Justin Added set render range\n    cmds.setAttr('defaultRenderGlobals.startFrame', keyRange[0] )\n    cmds.setAttr('defaultRenderGlobals.endFrame',  keyRange[-1] )\n    \n \nsetAnimRange()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "from  Snappers.rig_manager import snappers_rig_manager\nsnappers_rig_manager.showRigManagerWindow()\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "from  Snappers.rig_manager import snappers_rig_manager\nsnappers_..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "Snappers" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "from SnappersRigAManager import RigManager\nrig_manager = RigManager.create()\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "abSymMesh" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "abSymMesh" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "abSymMesh" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "abSymMesh" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import mulit_object_replace\nreload(mulit_object_replace)\nmulit_object_replace.run()" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import mulit_object_replace\nreload(mulit_object_replace)\nmulit_o..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "SkinCopy" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import mulit_object_replace\nreload(mulit_object_replace)\nmulit_object_replace.run()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "build faceFX bridge rig set" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "faceFX bridge rig" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "FFXbr" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import ink_faceFX_bridge\nink_faceFX_bridge.create_bridge_joint()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Bake existing animation into keys" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Bake Simulation" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "bakeAnimation.png" 
+        -image1 "bakeAnimation.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "doBakeSimulationArgList 8 { \"2\",\"0\",\"10\",\"1\",\"1\",\"0\",\"1\",\"1\",\"0\",\"1\",\"animationList\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1\",\"0\",\"1\" };" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Remove unused items" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Optimize Scene Size" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "OSS" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconFile.png" 
+        -image1 "menuIconFile.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "OptimizeScene" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "0020'''\nCreated on 2020. 12. 22.\nNXN\n@author: LeeSungJun\n'''\nimport maya.cmds as cmds\nimport pymel.core as pm\nimport cPickle\nimport logging\n\n_logger = logging.getLogger(__name__)\n\n\n\ndef getTransform(root):\n        \n        obj = pm.ls(root,dag=True ,type='transform')\n        result = getKeyframes(obj)\n        \n        return result\n   \ndef getKeyframes(objs):\n        \n        all_key_frames = {}\n        attr_list =[]\n        time_list = []\n        value_list =[]\n        \n        for obj in objs:\n            anim_attr = pm.listAnimatable(obj)\n            \n            for attr in anim_attr:\n                num_key_frames = pm.keyframe(attr,q=True,keyframeCount=True)\n                \n                if (num_key_frames > 0):\n                    \n                    times = pm.keyframe(attr,q=True,index = (0,num_key_frames),timeChange=True)\n                    values = pm.keyframe(attr,q=True,index = (0,num_key_frames),valueChange=T
+rue)\n                    \n                    for i in range(0,num_key_frames):\n                        \n                        attr_list.append('%s'%attr)\n                        time_list.append(times[i])\n                        value_list.append(values[i])\n        \n        all_key_frames['Attribute'] = attr_list\n        all_key_frames['Time'] = time_list\n        all_key_frames['Value'] = value_list\n        \n        return all_key_frames\n\n\n\ndef writeFile(path,keyData):\n        \n    with open(path,'wb') as f:\n        f.write(cPickle.dumps(keyData,True))\n\n    return None\n\n\ndef expAnim(*args):\n   \n    if 0 != len(pm.ls('ControllersParent')):\n        node = pm.ls('ControllersParent')\n    \n    elif 0 != len(pm.ls('*:ControllersParent')):\n        node = pm.ls('*:ControllersParent')\n        \n    else:\n        _logger.error('No object matches name: ControllersParent')\n        \n    \n    get_key_data = getTransform(node[0])\n    path = cmds.textField(fileP
+athLine,q=True,text=True)\n    writeFile(path , get_key_data)\n    \n    _logger.info('export path: %s'%path)\n    \ndef saveFile(*args):\n    \n    singleFilter = \"bin Files (*.bin)\"\n    file_ = cmds.fileDialog2(fileFilter=singleFilter, dialogStyle=2)\n    cmds.textField(filePathLine,e=True,text='%s'%file_[0])\n\n\n\nif(cmds.window('animFacialExp',q=1,ex=1)):cmds.deleteUI('animFacialExp')\ncmds.window('animFacialExp',w=480,h=10,mb=1,resizeToFitChildren=True, sizeable=False)\ncmds.columnLayout(adj=1)\ncmds.rowLayout(nc=2)\nfilePathLine = cmds.textField(w=400)\ncmds.button(label = 'Save File',c = saveFile)\ncmds.columnLayout(p='animFacialExp',rs=10,adj=1)\ncmds.separator(w=400)\ncmds.button(label ='Export Anim Data',c=expAnim)\ncmds.showWindow('animFacialExp')\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "0020'''\nCreated on 2020. 12. 22.\nNXN\n@author: LeeSungJun\n'''\nimp..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "BrgFFX" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "'''\nCreated on 2020. 12. 22.\nNXN\n@author: LeeSungJun\n'''\nimport maya.cmds as cmds\nimport pymel.core as pm\nimport cPickle\nimport logging\n\n_logger = logging.getLogger(__name__)\n\n\n\ndef getTransform(root):\n        \n        obj = pm.ls(root,dag=True ,type='transform')\n        result = getKeyframes(obj)\n        \n        return result\n   \ndef getKeyframes(objs):\n        \n        all_key_frames = {}\n        attr_list =[]\n        time_list = []\n        value_list =[]\n        \n        for obj in objs:\n            anim_attr = pm.listAnimatable(obj)\n            \n            for attr in anim_attr:\n                num_key_frames = pm.keyframe(attr,q=True,keyframeCount=True)\n                \n                if (num_key_frames > 0):\n                    \n                    times = pm.keyframe(attr,q=True,index = (0,num_key_frames),timeChange=True)\n                    values = pm.keyframe(attr,q=True,index = (0,num_key_frames),valueChange=True)\n 
+                   \n                    for i in range(0,num_key_frames):\n                        \n                        attr_list.append('%s'%attr)\n                        time_list.append(times[i])\n                        value_list.append(values[i])\n        \n        all_key_frames['Attribute'] = attr_list\n        all_key_frames['Time'] = time_list\n        all_key_frames['Value'] = value_list\n        \n        return all_key_frames\n\n\n\ndef writeFile(path,keyData):\n        \n    with open(path,'wb') as f:\n        f.write(cPickle.dumps(keyData,True))\n\n    return None\n\n\ndef expAnim(*args):\n   \n    if 0 != len(pm.ls('ControllersParent')):\n        node = pm.ls('ControllersParent')\n    \n    elif 0 != len(pm.ls('*:ControllersParent')):\n        node = pm.ls('*:ControllersParent')\n        \n    else:\n        _logger.error('No object matches name: ControllersParent')\n        \n    \n    get_key_data = getTransform(node[0])\n    path = cmds.textField(filePathLine
+,q=True,text=True)\n    writeFile(path , get_key_data)\n    \n    _logger.info('export path: %s'%path)\n    \ndef saveFile(*args):\n    \n    singleFilter = \"bin Files (*.bin)\"\n    file_ = cmds.fileDialog2(fileFilter=singleFilter, dialogStyle=2)\n    cmds.textField(filePathLine,e=True,text='%s'%file_[0])\n\n\n\nif(cmds.window('animFacialExp',q=1,ex=1)):cmds.deleteUI('animFacialExp')\ncmds.window('animFacialExp',w=480,h=10,mb=1,resizeToFitChildren=True, sizeable=False)\ncmds.columnLayout(adj=1)\ncmds.rowLayout(nc=2)\nfilePathLine = cmds.textField(w=400)\ncmds.button(label = 'Save File',c = saveFile)\ncmds.columnLayout(p='animFacialExp',rs=10,adj=1)\ncmds.separator(w=400)\ncmds.button(label ='Export Anim Data',c=expAnim)\ncmds.showWindow('animFacialExp')\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Opens the Trax Editor, a non-linear character animation editor" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Trax Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "getTrax.png" 
+        -image1 "getTrax.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CharacterAnimationEditor" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "# -*- coding: utf-8 -*- \n\n## MIN studio animationteam tools v05 2016.04.26\n## Á÷Á¢¿¢¼¼½º·Î º¯°æ=¤µ= ¸íÄªµé ÂÉ²û º¯°æ 2017.05.26 // line.743 ffmpeg ÆÄÀÏ °æ·Î »óÈ²¿¡ ¸Â°Ô °æ·Î ¼öÁ¤ÇØÁÖ±â\n## leeyoonsin@gmail.com\n\n\nimport maya.cmds as mc\nimport maya.mel as mel\n\n\n## Ã¢ ¸¸µé±â ##\n\ndef anitools():\n    win = 'MINwindow'\n    if mc.window(win,exists=1) :\n        mc.deleteUI(win)\n    \n    mc.window(win,title=\"anitool v01\",widthHeight=(150,220),s=1)\n    mc.columnLayout(adjustableColumn=1)\n    mc.text(\"Ani Tools\",fn=\"fixedWidthFont\",h=40)\n    #mc.separator(height=30, style='in')\n    #mc.button(h=35,bgc=(0.8,0.8,0.8),l=\"¾À ¼¼ÆÃ\",c=\"spp_sceneFormat_fix()\")\n    mc.button(h=35,bgc=(0.9,0.9,0.9),l=\"ÀÛ¾÷ÀÚ Á¤º¸ ¼öÁ¤\",c=\"spp_animHUD_user()\")\n    mc.button(h=35,bgc=(0.67,0.67,0.67),l=\"¼¦ Á¤º¸ Ç¥½Ã\",c=\"spp_animHUD()\")\n    #mc.button(h=35,bgc=(0.38,0.38,0.38),l=\"¿µ»ó ¸¸µé±â\",c=\"UI()\")\n    #mc.button(h=35,bgc=(0,0,0),l=\"¼¦ ÀúÀå\",c=\"clear
+UI()\")    \n    mc.button(h=35,bgc=(0.2,0.2,0.2),l=\"Close\",c=(\"mc.deleteUI('%s',window=1)\" %win))\n    mc.showWindow(win)\n    \n    # È¯°æº¯¼ö ¸¸µê. ¾Æ·¡ HUDonoff¶û playblast ½ÇÇà ±¸°£¿¡µµ Áßº¹À¸·Î ³Ö¾î³ùÀ½.\n    if not mc.optionVar(q='sppAnimHUDUserName'):\n        mc.optionVar(sv=('sppAnimHUDUserName','UserName'))\n    if not mc.optionVar(q='sppAnimHUDUserCorp'):\n        mc.optionVar(sv=('sppAnimHUDUserCorp','UserCorp'))\n\n    # HUD ÄÃ·¯ º¯°æ ¸í·É¾î, ÇöÀç 17¹ø ³ë¶ûÀ¸·Î ÁöÁ¤\n    # 1 ºí·¢, 6 ÆÄ¶û, 9 ÇÎÅ©, 13 »¡°­, 16 È­ÀÌÆ®, 17 ³ë¶û, 18 ÇÏ´Ã, 27 ÃÊ·Ï\n    mc.displayColor('headsUpDisplayLabels' ,17 ,dormant=1)\n    mc.displayColor('headsUpDisplayValues' ,17 ,dormant=1)\n\n\n\n\n## ---------------------------------------------------------------------------------------------\n## pa_sceneFormat_fix.mel\n## ---------------------------------------------------------------------------------------------\n##\n## Source by KeeKee (gmdirect@ocon.kr)\n##\n## ------------------------------
+---------------------------------------------------------------\n\n\n#def spp_sceneFormat_fix_setup():\n#    btn = spp_sceneFormat_fix(spp_installShelfButton)  \n#    img = \"sceneFormat.bmp\"\n#    cmd = spp_sceneFormat_fix\n#    mc.shelfButton(\"spp_sceneFormat_fix\", ex=1, command=cmd+btn)\n\ndef spp_sceneFormat_fix():\n\n#    mc.displayColor(c=1, dormant=1, headsUpDisplayValues=17)\n\n    win = 'sppSceneFormatWindow'\n    \n    if mc.window(win,exists=1) :\n        mc.deleteUI(win)\n\n    mc.window(win, title='MIN Scene Format', sizeable=0, minimizeButton=0, maximizeButton=0)\n    mc.columnLayout(adjustableColumn=1, columnOffset=('both', 5)) \n    mc.text(label='', height=5)\n    mc.frameLayout(borderStyle=\"etchedIn\", labelVisible=0)\n    mc.columnLayout(adjustableColumn=1, columnOffset=('both', 10))\n    mc.text(label='', height=20)\n    mc.checkBox('sppSceneFormat_turnOnHud', label=\"Turn on HUD\", value=1) \n    mc.text(label='', height=10)\n    mc.rowLayout(numberOfColumns=2
+, columnWidth2=(100,100), columnOffset2=(0,0), columnAttach2=('both', 'both'), columnAlign2=('left','left')) \n    mc.text(label='Start Frame')\n    mc.text(label='End Frame')\n    mc.setParent('..')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(100,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left')) \n    mc.intField('sppSceneFormat_startFrame', height=30, value=101)\n    mc.intField('sppSceneFormat_endFrame', height=30, value=200)\n    mc.setParent('..')\n    mc.separator(height=30, style='in')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(60,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left')) \n    mc.text(label='Linear', align='right')\n    mc.textField(tx='centimeter', editable=0)\n    mc.setParent('..')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(60,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left'))\n    mc.text(label='Angular', align='right')\n    mc.tex
+tField(tx='degrees', editable=0)\n    mc.setParent('..')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(60,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left'))\n    mc.text(label='Time', align='right')\n   \n    ### ÃÊ´ç ÇÁ·¹ÀÓ\n    mc.optionMenu('timefps')\n    mc.menuItem( label='Film (24 fps)')\n    mc.menuItem( label='Pal (25 fps)')\n    mc.menuItem( label='NTSC (30 fps)')\n\n    mc.setParent('..')\n    mc.separator(height=30, style='in')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(100,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left')) \n    mc.text(label='Width')\n    mc.text (label='Height')\n    mc.setParent('..')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(100,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left')) \n    mc.intField('sppSceneFormat_width', height=30, value=1920)\n    mc.intField('sppSceneFormat_height', height=30, value=1080)\n    mc.setPar
+ent('..')\n    mc.text(label='', height=20)\n    mc.button(label='SCENE FORMAT', height=30, command='spp_sceneFormat_fix_run()')\n    mc.text(label='', height=10)\n    mc.text(label='', height=5)\n    mc.showWindow(win)\n\ndef spp_sceneFormat_fix_run():\n    \n    ## ÃÊ´ç ÇÁ·¹ÀÓ\n    if mc.optionMenu('timefps',q=1,v=1) == 'Film (24 fps)':\n        mc.currentUnit(time=\"film\")\n    if mc.optionMenu('timefps',q=1,v=1) == 'Pal (25 fps)':\n        mc.currentUnit(time=\"pal\")\n    if mc.optionMenu('timefps',q=1,v=1) == 'NTSC (30 fps)':\n        mc.currentUnit(time=\"ntsc\")\n\n    stFrame = mc.intField('sppSceneFormat_startFrame',q=1, value=1)\n    edFrame = mc.intField('sppSceneFormat_endFrame',q=1, value=1)\n    mc.playbackOptions(animationStartTime=(stFrame-5), animationEndTime=(edFrame+5), minTime=stFrame, maxTime=edFrame) \n    mc.currentTime(stFrame)\n    \n    hud = mc.checkBox('sppSceneFormat_turnOnHud', q=1,v=1)\n    spp_animHUD_switch(hud)\n    mc.currentUnit(l='centimeter')\n 
+   mc.currentUnit(angle=\"degree\")\n    \n    width = mc.intField('sppSceneFormat_width', q=1, v=1)\n    height = mc.intField('sppSceneFormat_height', q=1, v=1)\n    ## vray°¡ ¾øÀ» °æ¿ì¸¦ À§ÇØ ¿¹¿ÜÃ³¸® \n    try :\n        mc.setAttr('vraySettings.width',width)\n        mc.setAttr('vraySettings.height',height)\n    except :\n        pass\n    mc.setAttr('defaultResolution.width',width)\n    mc.setAttr('defaultResolution.height',height)\n    mc.setAttr('defaultResolution.imageSizeUnits', 0)\n    mc.setAttr('defaultResolution.dotsPerInch', 72.0)\n    mc.setAttr('defaultResolution.pixelDensityUnits', 0)\n    mc.setAttr('defaultResolution.deviceAspectRatio', (width / (height*1.0)))\n    mc.setAttr('defaultResolution.pixelAspect', 1.000)\n\n    win = 'sppSceneFormatWindow'\n    mc.deleteUI(win)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# ---------------------------------------------------------------------------------------------\n# spp_animHUD.mel\n# ----------------------------------------------
+-----------------------------------------------\n#\n# Source by KeeKee (gmdirect@ocon.kr)\n#\n# ---------------------------------------------------------------------------------------------\n\n#g_animHudState=0  #¹»±î?\n\n\n#def spp_animHUD_setup():\n#    btn1 = spp_animHUD(spp_installShelfButton)\n#    btn2 = spp_animHUD_user(spp_installShelfButton)\n#       img1 = \"animHUD.bmp\";\n#       img2 = \"animHUD_user.bmp\";\n#    cmd1 = \"spp_animHUD;\";\n#    cmd2 = \"spp_animHUD_user;\";\n#    mc.shelfButton(label='spp_animHUD', editable=1, command=cmd1+btn1)\n#    mc.shelfButton(label='spp_animHUD_user', editable=1, command=cmd2+btn2)\n\ndef spp_animHUD_user():\n\n    \n    win = 'sppAnimHUDWindow'\n    if mc.window(win, exists=1):\n        mc.deleteUI(win)\n       \n    \n    mc.window(win, title='HUD Name', sizeable=0, minimizeButton=0, maximizeButton=0)    \n    mainForm = mc.formLayout()\n    mainFrame = mc.frameLayout('mainFrame', borderStyle='etchedIn', labelVisible=0)\n    mc.co
+lumnLayout(adjustableColumn=1, columnOffset=('both',10))\n    mc.text (label=\"\", height=10)\n    mc.text (label=\"Input your name to print on display\")\n    mc.text (label=\"\", height=10)\n    mc.rowColumnLayout(nc=2)\n    \n        \n    mc.text (label=\"Corporation :   \" ,align=\"right\" ,font=\"boldLabelFont\")    \n    mc.textField ('sppAnimHUDWindow_inputUserCorp' ,height=22 ,text=mc.optionVar(q='sppAnimHUDUserCorp') )\n    mc.text (label=\"Name :   \" ,align=\"right\" ,font=\"boldLabelFont\")    \n    mc.textField ('sppAnimHUDWindow_inputUsername' ,height=22 ,text=mc.optionVar(q='sppAnimHUDUserName') )\n    mc.text (label=\"\", height=10)\n    mc.setParent('..')\n    \n    mc.button (label=\"SET TO THE NAME\", height=30, command=\"spp_animHUD_user_execute()\")\n    mc.text (label=\"\", height=10)\n    mc.formLayout(mainForm, edit=1, attachForm=[(mainFrame, 'top', 5),(mainFrame, 'left', 5),(mainFrame, 'right', 5),(mainFrame, 'bottom', 5)])\n    mc.showWindow(win)\n\n\n\n \n\
+ndef spp_animHUD_user_execute():\n    win = 'sppAnimHUDWindow'\n    corp = mc.textField('sppAnimHUDWindow_inputUserCorp',q=1, tx=1)\n    name = mc.textField('sppAnimHUDWindow_inputUsername',q=1, tx=1)\n    popcorp=0\n    popname=0\n    if corp :\n        mc.optionVar(sv=('sppAnimHUDUserCorp',corp))\n        popcorp=corp\n    else :\n        mc.optionVar(sv=('sppAnimHUDUserCorp','UserCorp'))\n        popcorp='UserCorp'\n\n    if name :\n        mc.optionVar(sv=('sppAnimHUDUserName',name))\n        popname=name\n    else :\n        mc.optionVar(sv=('sppAnimHUDUserName','UserName'))\n        popname='UserName'\n    \n    digiart_confirm (\"It is changed that the corporation of HUD to [ \" + popcorp + \" ]\\nIt is changed that the name of HUD to [ \" + popname + \" ]\")\n    mc.deleteUI(win)\n\n\n\n\n\n\n\ndef spp_animHUD_state():\n    if 'spp_animHUD_fps' in mc.headsUpDisplay(q=1,listHeadsUpDisplays=1):\n        HudState = 1\n    else:HudState = 0\n    return HudState\n\n\ndef spp_animHU
+D():\n#    g_animHudState = 0\n#    if not mc.optionVar(ex='sppAnimHUDUserName'):\n#        mc.optionVar('sppAnimHUDUserName', stringValue=\"MIN_USER\")\n    if not mc.optionVar(q='sppAnimHUDUserName'):\n        mc.optionVar(sv=('sppAnimHUDUserName','UserName'))\n    if not mc.optionVar(q='sppAnimHUDUserCorp'):\n        mc.optionVar(sv=('sppAnimHUDUserCorp','UserCorp'))\n        \n    if spp_animHUD_state() == 1:spp_animHUD_switch(0)\n    else:spp_animHUD_switch(1)\n#HUDList = mc.headsUpDisplay(q=1,listHeadsUpDisplays=1)\n#for selHud in HUDList:\n#    if 'spp' in selHud:\n#        mc.headsUpDisplay(selHud,rem=1)\n#mc.headsUpDisplay('spp_animHUD_sceneFileName',rem=1)\n#mc.headsUpDisplay('spp_animHUD_currentFrame',rem=1)\n\ndef spp_animHUD_switch(switch):\n#    g_animHudState = switch\n\n    ## Off the HUDViewAxis\n    if mc.headsUpDisplay('HUDViewAxis', ex=1):\n        mc.headsUpDisplay('HUDViewAxis', e=1, vis=0)\n    \n    hudList = [\"spp_animHUD_cameraType\",\n        \"spp_animHUD_
+stereoMode\",\n        \"spp_animHUD_focalLength\",\n        \"spp_animHUD_currentProject\",\n        \"spp_animHUD_sceneFileName\",\n        \"spp_animHUD_fps\",\n        \"spp_animHUD_runningTime\",\n        \"spp_animHUD_currentFrame\",\n        \"spp_animHUD_corp\",\n        \"spp_animHUD_staff\",\n        \"spp_animHUD_time\",\n        \"spp_animHUD_date\"]\n\n\n    for hud in hudList:\n        if mc.headsUpDisplay(hud, ex=1):\n            mc.headsUpDisplay(hud, rem=1)\n\n    if switch:\n        saveCorp=mc.optionVar(q='sppAnimHUDUserCorp') \n        saveName=mc.optionVar(q='sppAnimHUDUserName') \n        ##int $block = `headsUpDisplay -nextFreeBlock 4`;\n        ##headsUpDisplay -section 4 -block $block -attachToRefresh -label \"Camera Type\"\n        ##  -command \"spp_animHUD_displayCameraType\" spp_animHUD_cameraType;\n        \n        ##int $block = `headsUpDisplay -nextFreeBlock 4`;\n        ##headsUpDisplay -section 4 -block $block -attachToRefresh -label \"Stereo Mode\"\
+n        ##  -command \"spp_animHUD_displayStereoMode\" spp_animHUD_stereoMode;\n        \n        ##int $block = `headsUpDisplay -nextFreeBlock 4`;\n        ##headsUpDisplay -section 4 -block $block -attachToRefresh -label \"Project Dir\"\n        ##  -command \"string $project = `workspace -q -o`;\" spp_animHUD_currentProject;\n        \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_sceneFileName', section=5, block=block, label='Scene', attachToRefresh=1, command='mc.file(q=1 ,sn=1 ,shn=1)')\n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_fps', section=5, block=block, label='Fps', attachToRefresh=1, command='spp_animHUD_displayFps()') \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_runningTime', section=5, block=block, label='Range', attachToRefresh=1, command='spp_animHUD_runningTime()') \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        m
+c.headsUpDisplay('spp_animHUD_currentFrame', section=5, block=block, label='Frame', attachToRefresh=1, dataFontSize='large', command='mc.currentTime(q=1)')\n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_focalLength', section=5, block=block, label='Focal Length', attachToRefresh=1, dataFontSize='large', command='spp_animHUD_camFocalLength()')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_date', section=9, block=block, label='Date', attachToRefresh=1, command='mc.about(currentDate=1)')\n        \n        ##int $block = `headsUpDisplay -nextFreeBlock 9`;\n        ##headsUpDisplay -section 9 -block $block -label \"Time\" -attachToRefresh\n        ##  -command \"about -currentTime\" spp_animHUD_time;\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_staff', section=9, block=block, label='Name', attachToRefresh=1, command='mc.optionVar(q=\"sppAnimHUDUserName\"
+)')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_corp' ,section=9 ,block=block ,label='Corp' ,attachToRefresh=1 ,command='mc.optionVar(q=\"sppAnimHUDUserCorp\")')\n\n        #return g_animHudState\n\n    \n    \ndef spp_animHUD_displayFps():\n    time = mc.currentUnit(q=1, time=1)\n    if time == \"film\":\n        return \"24fps\"\n    elif time == \"ntsc\":\n        return \"30fps\"\n    else:\n        return mc.currentUnit(q=1, time=1)\n\n\ndef spp_animHUD_camFocalLength():\n    focaLength=0\n    try:\n        whichPanel = mc.getPanel(withFocus=1)\n        nameCamera = mc.modelPanel(whichPanel,q=1, camera=1)\n        focalLength = mc.getAttr(nameCamera + \".focalLength\")\n    except:\n        focalLength='cam'\n    return focalLength\n\n\n\ndef spp_animHUD_runningTime():\n    animationStartFrame = mc.playbackOptions(q=1, min=1)\n    animationEndFrame = mc.playbackOptions(q=1, max=1)\n    runningTime = animationEndFrame - animationStar
+tFrame + 1\n    form = '%d - %d ( %d )' % (int(animationStartFrame),int(animationEndFrame),int(runningTime))\n    return form\n\n\n\n\n\n\n\n\n#/////////////////////  spp_sceneFormat_fix ÇÔ¼ö¿¡¼­ ÇÊ¿äÇÑ ÇÔ¼ö //////////\n\ndef digiartArrayFirst (camList):\n    if len(camList): \n        return camList[0]\n    else : \n        return None\n\ndef digiart_confirm (printMsg):\n    mc.confirmDialog(title=\"MIN : Report\",messageAlign=\"center\",message=printMsg,icon=\"information\",button=\"OK\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#//////////////// playblast ¿øº» ¼Ò½º ÅëÂ°·Î ffmÀº ¿ÜºÎ °æ·Î °ü¸® ÇÏ±â\n\nimport os\n#import maya.cmds as mc\nfrom functools import partial\nimport maya.mel as mel\nimport maya.OpenMayaUI as omui\nimport maya.OpenMaya as om\nimport ast\n\ndef UI():\n    win='PB'\n    if mc.window(win, exists=True):\n        mc.deleteUI(win)\n    \n    mc.window(win, title=\"Playblaster ver.1.0\", mnb=False, mxb=False, sizeable=False)\n    \n    mc.columnLayout(columnOffset=(\"both\",10)
+, adj=True)\n\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2, columnWidth=[(1, 110), (2, 410)] )\n    mc.text(label=\"User Info\", align=\"left\",font=\"boldLabelFont\") \n    mc.separator(style=\"in\")    \n\n    mc.setParent('..')\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=6, columnWidth=[(1, 5), (2, 70), (3, 160), (4, 70), (5, 160), (6, 50)] )\n    mc.separator(h=10,style=\"none\")\n    \n    if not mc.optionVar(q='sppAnimHUDUserName'):\n        mc.optionVar(sv=('sppAnimHUDUserName','UserName'))\n    if not mc.optionVar(q='sppAnimHUDUserCorp'):\n        mc.optionVar(sv=('sppAnimHUDUserCorp','UserCorp'))\n    \n    saveCorp=mc.optionVar(q='sppAnimHUDUserCorp') \n    saveName=mc.optionVar(q='sppAnimHUDUserName') \n    \n    mc.text(label=\"Corp : \", align=\"right\")\n    mc.textField(\"corp\", text=saveCorp ,ed=0)\n    mc.text(label=\"Name : \", align=\"right\")\n    mc.textField(\"userName\", text=saveName ,ed=0) \n        \n    mc.setPar
+ent('..')\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2, columnWidth=[(1, 110), (2, 410)] )\n    mc.text(label=\"Dispaly Options\", align=\"left\",font=\"boldLabelFont\")    \n    mc.separator(style=\"in\")\n\n    mc.setParent('..')\n    mc.separator(h=10, style=\"none\")\n    mc.rowColumnLayout(nc=3, columnWidth=[(1,30),(2,250),(3,240)])\n    mc.separator(h=10,style=\"none\")\n    rvalue=getDisplayOptions(\"displayResolution\")\n    mc.checkBox(label=\"Display Resolution\", v=rvalue, onc=partial(displayOptions,\"displayResolution\", \"on\"), ofc=partial(displayOptions,\"displayResolution\", \"off\"))\n    savalue=getDisplayOptions(\"displaySafeAction\")\n    mc.checkBox(label=\"Display Safe Action\", v=savalue, onc=partial(displayOptions,\"displaySafeAction\", \"on\"), ofc=partial(displayOptions,\"displaySafeAction\", \"off\"))\n    mc.separator(style=\"none\")\n    gmvalue=getDisplayOptions(\"displayGateMask\")\n    mc.checkBox(label=\"Display Gate Mask\", v=gm
+value, onc=partial(displayOptions,\"displayGateMask\", \"on\"), ofc=partial(displayOptions,\"displayGateMask\", \"off\"))\n    stvalue=getDisplayOptions(\"displaySafeTitle\")\n    mc.checkBox(label=\"Display Safe Title\", v=stvalue, onc=partial(displayOptions,\"displaySafeTitle\", \"on\"), ofc=partial(displayOptions,\"displaySafeTitle\", \"off\"))\n    #mc.separator(h=10,style=\"none\")\n    #mc.rowColumnLayout(nc=2, columnWidth=[(1, 90), (2, 480)] )\n    #mc.text(label=\"Info \", align=\"left\",font=\"boldLabelFont\") \n    #mc.separator(style=\"in\")\n    \n    #mc.setParent( '..' )\n    #scName = mc.file(q=1,sceneName=1).split('/')[-1].partition(\".\")[0]\n    #iniOutput = defaultPath()\n    #duration = totalDuration()\n    #Fps = fps()\n    #mc.textScrollList(\"PBinof\", h=80, numberOfRows=8, append=[\"Scene Name : \" + scName, \"Outpath : \" + iniOutput, \"Duration : \" + duration, \"Fps : \"+ Fps +\"fps\"])\n        \n    # time range \n    mc.setParent( '..' )\n    mc.separator
+(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2, columnWidth=[(1, 110), (2, 410)] )\n    mc.text(label=\"Time Range  \", align=\"left\",font=\"boldLabelFont\")    \n    mc.separator(style=\"in\")\n       \n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=5, columnWidth=[(1, 5), (2, 70), (3, 160), (4, 70), (5, 160)] )\n    mc.separator(h=10,style=\"none\")\n    mc.text(label=\"Start : \", align=\"right\")\n    mc.intField(\"Start\", value= mc.playbackOptions(q=True, minTime=True))\n    mc.text(label=\"End : \", align=\"right\")\n    mc.intField(\"End\", value = mc.playbackOptions(q=True, maxTime=True)) \n    \n        # image size\n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2,columnWidth=[(1, 100), (2, 420)])\n    mc.text(\"Dispaly Size\", h=20, align=\"left\",font=\"boldLabelFont\")\n    \n    mc.separator(h=10,style=\"in\")\n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n   
+ mc.rowColumnLayout(nc=5, columnWidth=[(1, 5), (2, 70), (3, 160), (4, 70), (5, 160)] )\n    mc.separator(h=10,style=\"none\")\n    mc.text(label=\"Width :\", align=\"right\")\n    mc.intField(\"Width\", value = mc.getAttr('defaultResolution.width'))\n    mc.text(label=\"Height :\", align=\"right\")\n    mc.intField(\"Height\", value = mc.getAttr('defaultResolution.height'))  \n    mc.separator(h=15,style=\"none\")\n    mc.separator(h=15,style=\"none\")\n    mc.separator(h=15,style=\"none\")\n    \n    #mc.setParent( '..' )\n    mc.text(label=\"Scale:\", align=\"right\")\n    if not mc.optionVar(q='playblastScale') : Defaultscale = 100\n    else : Defaultscale = mc.optionVar(q='playblastScale')\n    mc.intField(\"Scale\", value = int(Defaultscale))\n    \n    # output\n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2,columnWidth=[(1, 60), (2, 460)])\n    mc.text(\"Output:\", align=\"left\",font=\"boldLabelFont\")\n    mc.separator(h=10, style
+=\"in\")\n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    \n    \n    mc.rowColumnLayout(nc=4, columnWidth=[(1, 5), (2, 200), (3, 5), (4, 200)])\n    \n    #mc.text(label=\"format : \", align=\"right\")\n    #Defaultfromat=defaultSet(\"format\")\n    mc.separator(style=\"none\")\n    formats=mc.optionMenu(\"formats\", label=\"format : \", w=200, cc=formatMenu)\n    formatMenu()\n\n    \n    #mc.text(label=\"Encoding : \", align=\"right\")\n    #Defaultencode = defaultSet(\"encoding\")\n    mc.separator(style=\"none\")\n    mc.optionMenu(\"Encoding\", label=\"     Encoding : \", w=200, cc=encodeMenu)\n    encodeMenu()\n\n    #mc.menuItem(label='image')\n    #mc.separator(h=10,style=\"none\")    \n    \n    \n    mc.setParent( '..' )\n    mc.rowColumnLayout(nc=3)\n    #mc.internalVar(uwd=True) +\"default/movies/\"\n    mc.text(label=\"Path : \", align=\"right\")\n    DefaultPath = defaultSet(\"path\")\n    mc.textField(\"outputPath\", h=30, w=420, text = DefaultPath
+)    \n    mc.button(label=\"...\", w=30, h=30, c=browseFilePath) #c=partial(browseFilePath, 3, \"*.mov\", \"outputPath\")\n    mc.text(label=\"Movie file : \", align=\"right\")\n    movieName=mc.file(q=True, sceneName=True).split(\"/\")[-1].partition(\".\")[0]\n    movieFile = mc.textField(\"movieFile\", h=30, w=420, text=movieName)    \n    mc.separator(h=10,style=\"none\")\n    \n    # button\n    mc.setParent( '..' )\n    mc.separator(h=20, style=\"in\")\n    mc.rowColumnLayout(nc=2, columnWidth=[(1, 258), (2, 258)])\n    mc.button(label=\"Playblast\", h=40, c=createMovie)\n    #mc.button(label=\"Apply\", c = Apply)\n    mc.button(label=\"Reload\", c = Reload)\n    mc.separator(h=10, style=\"none\")\n    \n    win='PB'\n    mc.showWindow(win)\n    \ndef formatMenu(*args):\n    menuItems = mc.optionMenu(\"formats\", q=True, itemListLong=True)\n    if menuItems != None :                                                                                           \n        for item in m
+enuItems:                                                                                    \n            mc.deleteUI(item)\n    \n    items = [ \"qt\",]#\"avi\", \"png\"]\n    \n    #filePath = mc.internalVar(usd=True) + \"YHplayblast.ini\"\n    \n    #if os.path.isfile(filePath):\n        #item = defaultSet(\"format\")\n        #mc.menuItem(label=item,  parent = \"formats\")\n        ##items.remove[item]\n        ##for item in items:\n            ##mc.menuItem(label=item, parent = \"formats\")       \n    #else:\n    for item in items:\n        mc.menuItem(label=item, parent = \"formats\")\n    \ndef encodeMenu(*args):\n    menuItems = mc.optionMenu(\"Encoding\", q=True, itemListLong=True)\n    if menuItems != None :                                                                                           \n        for item in menuItems:                                                                                    \n            mc.deleteUI(item)\n            \n    items = ['H.
+264'] #, 'photo_jepg']\n    for item in items:\n        mc.menuItem(label=item, parent = \"Encoding\")    \n        \ndef currentViewCamName(*args):\n        activeView = omui.M3dView.active3dView()\n        cameraPath = om.MDagPath()\n        activeView.getCamera(cameraPath)\n        return str(cameraPath.partialPathName())\n\ndef displayOptions(change, state,*args):\n    cameraName = currentViewCamName()\n    if state == 'on':onoff = 1\n    if state == 'off':onoff = 0\n    mc.setAttr(cameraName +'.'+change, onoff)\n\n\ndef getDisplayOptions(case,*args):\n    cameraName = currentViewCamName()\n    return mc.getAttr(cameraName +'.'+case)\n\ndef Apply(*args):\n    \n    Path=mc.textField(\"outputPath\", q=True, text =True)\n    Scale = mc.intField(\"Scale\", q=True, value = True) \n    mc.optionVar(sv=('playblastScale', Scale))\n    Fromat = mc.optionMenu(\"formats\", q=True, value = True)  \n    Encoding = mc.optionMenu(\"Encoding\", q=True, value = True)  \n    corp = mc.textField(\"
+corp\", q=True, text=True)\n    name = mc.textField(\"userName\", q=True, text=True)  \n    \n    filePath = mc.internalVar(usd=True)+\"YHplayblast.ini\"\n    f=open(filePath, 'w')\n    #f.write(corp+'\\n')\n    #f.write(name+'\\n') \n    f.write(Path +'\\n')\n    f.write('%d'%Scale+'\\n')\n    f.write(Fromat+'\\n')\n    f.write(Encoding+'\\n')\n    \n    f.close()\n    \ndef Reload(*args):\n    \n    mc.intField(\"Start\", edit=True, value= mc.playbackOptions(q=True, minTime=True))\n    mc.intField(\"End\", edit=True, value= mc.playbackOptions(q=True, maxTime=True))\n\n    width = mc.intField(\"Width\", q=True, value =True)\n    height = mc.intField(\"Height\", q=True, value =True)\n    deviceAspectRatio = width/float(height)\n    mc.setAttr('defaultResolution.width', width) \n    mc.setAttr('defaultResolution.height', height)  \n    mc.setAttr('defaultResolution.deviceAspectRatio', deviceAspectRatio)\n\n\ndef browseFilePath(*arg):\n    \n    returnPath = mc.fileDialog2(fm=3, fileFil
+ter=\"*.mov\",  ds=2)\n    \n    if returnPath > 0 :\n        returnPath = returnPath[0]\n        mc.textField(\"outputPath\", edit = True, text = returnPath)\n\ndef defaultSet(sets,*args):\n    \n    filePath = mc.internalVar(usd=True) + \"YHplayblast.ini\"\n    \n    if os.path.isfile(filePath):\n        f=open(filePath, 'r')\n        set=f.readlines()\n    \n        defaultPath = set[0].rstrip()\n        defaultScale = set[1].rstrip()\n        defaultFormat = set[2].rstrip()\n        defaultEncoding = set[3].rstrip()\n        f.close()\n\n        if sets == \"path\":\n            return defaultPath\n        \n        if sets == \"scale\":\n            defaultScale = int(defaultScale)\n            return defaultScale ### <------------------============= only panda project   ##\n        \n        if sets == \"format\":\n            return defaultFormat\n        \n        if sets == \"encoding\":\n            return defaultEncoding      \n        \n    else:\n\n        if sets == \"pa
+th\":\n            return mc.internalVar(uwd=True) +\"default/movies/\"\n        \n        if sets == \"scale\":\n            return 100\n        \n        if sets == \"format\":\n            return \"qt\"\n        \n        if sets == \"encoding\":\n            return \"h264\"       \n        \n\n#def fps(*args):\n    \n#    time = mc.currentUnit(q=True, time=True)\n        \n#    if time == \"film\":\n#        return \"24\"\n    \n#    if time == \"ntsc\":\n#        return \"30\" \n\n#    if time == \"ntscf\":\n#        return \"60\" \n\n\ndef createMovie(*args):\n    \n\n    movieFormat = mc.optionMenu(\"formats\", q=True, value=True)\n        \n#    if movieFormat == \"qt\":\n    stframe=mc.playbackOptions(q=True, minTime=True)\n    edframe=mc.playbackOptions(q=True, maxTime=True)\n    mc.playbackOptions(e=True, minTime=mc.intField(\"Start\", q=True, v=True))\n    mc.playbackOptions(e=True, maxTime=mc.intField(\"End\", q=True, v=True))\n    playBlast()\n    \n    movieName = mc.te
+xtField(\"movieFile\", q=True, text=True) \n    moviepath = mc.textField(\"outputPath\", q=True, text=True)   \n    avifileName= moviepath + \"/\"+ movieName + \".avi\"\n    movfileName= moviepath + \"/\"+ movieName + \".mov\"\n    \n    strSceneFileFullName = avifileName\n    strOutputMovFileFull = movfileName\n    \n    #strFfmpegOptions = '-y -i ' + strSceneFileFullName.replace('/', '\\\\') +' -vcodec prores -profile 0 -r  24 ' + strOutputMovFileFull.replace('/', '\\\\')\n    strFfmpegOptions = '-y -i ' + strSceneFileFullName.replace('/', '\\\\') +' -vcodec libx264 -profile Baseline -level 20 -threads 0 -pix_fmt yuv420p ' + strOutputMovFileFull.replace('/', '\\\\')\n    #strFfmpegOptions = '-y -i ' + strSceneFileFullName.replace('/', '\\\\') +' -vcodec libx264 -profile Baseline -level 20 -threads 0 -pix_fmt yuv420p -r ' + str(Fps) + ' '+ strOutputMovFileFull.replace('/', '\\\\')        \n    #a= mc.internalVar(usd=True)\n    a=\"Z:/min_wormhole/panda/tool/MIN_anitools\"            
+      ####<< ffmpeg ÆÄÀÏ °æ·Î À§Ä¡ ¾Ë·ÁÁÖ±â >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n    os.system( '%s/ffmpeg.exe' %a + ' ' + strFfmpegOptions)\n    os.remove(avifileName)\n    \n    os.startfile(movfileName)\n    \n    mc.playbackOptions(e=True, minTime=stframe)\n    mc.playbackOptions(e=True, maxTime=edframe)\n    \n#    if movieFormat == \"avi\":\n        \n#        playBlast()\n    \ndef checkPanel(*args):\n    \n    panelName=mc.getPanel(wf=True)\n    \n    ## check show options of focus panel\n    pcameras = mc.modelEditor(panelName, q=True, cameras=True )\n    plocators = mc.modelEditor(panelName, q=True, locators=True )\n    pdeformers = mc.modelEditor(panelName, q=True, deformers=True )\n    pcurves = mc.modelEditor(panelName, q=True, nurbsCurves=True )  \n    \n    showset = [pcameras , plocators, pdeformers, pcurves]\n    \n    return showset\n\n\ndef playBlast(*arg):\n    \n    st
+Frame = mc.intField(\"Start\", q=True, v=True)\n    endFrame = mc.intField(\"End\", q=True, v=True)\n    wid = mc.intField(\"Width\", q=True, v=True)\n    hei = mc.intField(\"Height\", q=True, v=True)\n\n    movieName = mc.textField(\"movieFile\", q=True, text=True) \n    moviepath = mc.textField(\"outputPath\", q=True, text=True)   \n    avifileName= moviepath + \"/\"+ movieName + \".avi\"\n    movfileName= moviepath + \"/\"+ movieName + \".mov\"\n    \n    scale=mc.intField(\"Scale\", q=True, v=True)  \n    \n    gPlayBackSlider = mel.eval( '$tmpVar=$gPlayBackSlider' )\n    isSound = mc.timeControl( gPlayBackSlider, q=True, ds=True )\n    strAudioNodeName =''\n    \n    ##check current panel show info\n    panelName=mc.getPanel(wf=True)\n    showset = checkPanel()\n    \n    mc.modelEditor(panelName, e=True, nurbsCurves=False)\n    mc.modelEditor(panelName, e=True, cameras=False)\n    mc.modelEditor(panelName, e=True, locators=False)  \n    mc.modelEditor(panelName, e=True, deformer
+s=False)      \n    \n    Apply()\n    \n    \n    \n    animHudSt = spp_animHUD_state()\n    spp_animHUD_switch(1)\n\n    if isSound:\n        strAudioNodeName = mc.timeControl(gPlayBackSlider, query = True, s = True)\n    \n        mc.playblast( format= \"avi\", \n                          sound=strAudioNodeName,\n                          startTime = stFrame, \n                          endTime = endFrame , \n                          filename=avifileName, \n                          forceOverwrite=1, \n                          sequenceTime=0, \n                          clearCache=1, \n                          viewer=0, \n                          showOrnaments=1, \n                          fp=4, \n                          percent=scale, \n                          compression= \"none\", \n                          quality=100, \n                          widthHeight=(wid,hei))\n    else:\n        mc.playblast( format= \"avi\", \n                          startTime = stFrame, 
+\n                          endTime = endFrame , \n                          filename=avifileName, \n                          forceOverwrite=1, \n                          sequenceTime=0, \n                          clearCache=1, \n                          viewer=0, \n                          showOrnaments=1, \n                          fp=4, \n                          percent=scale, \n                          compression= \"none\",\n                          quality=100, \n                          widthHeight=(wid,hei))            \n    \n    spp_animHUD_switch(animHudSt)\n    \n    mc.modelEditor(panelName, e=True, nurbsCurves=showset[3])\n    mc.modelEditor(panelName, e=True, cameras=showset[0])\n    mc.modelEditor(panelName, e=True, locators=showset[1])\n    mc.modelEditor(panelName, e=True, deformers=showset[2]) \n    \n\n            \ndef spp_animHUD_switch(switch):\n    \n    if mc.headsUpDisplay('HUDViewAxis', ex=1):\n        mc.headsUpDisplay('HUDViewAxis', e=1, vis=0)\
+n        \n    hudList = [\"spp_animHUD_cameraType\",\n        \"spp_animHUD_stereoMode\",\n        \"spp_animHUD_focalLength\",\n        \"spp_animHUD_currentProject\",\n        \"spp_animHUD_sceneFileName\",\n        \"spp_animHUD_fps\",\n        \"spp_animHUD_runningTime\",\n        \"spp_animHUD_currentFrame\",\n        \"spp_animHUD_corp\",\n        \"spp_animHUD_staff\",\n        \"spp_animHUD_time\",\n        \"spp_animHUD_date\"]\n    \n    for hud in hudList:\n        if mc.headsUpDisplay(hud, ex=1):\n            mc.headsUpDisplay(hud, rem=1)\n\n    if switch:\n        saveCorp=mc.optionVar(q='sppAnimHUDUserCorp') \n        saveName=mc.optionVar(q='sppAnimHUDUserName') \n        \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_sceneFileName', section=5, block=block, label='Scene', attachToRefresh=1, command='mc.file(q=1 ,sn=1 ,shn=1)')\n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_fps', 
+section=5, block=block, label='Fps', attachToRefresh=1, command='spp_animHUD_displayFps()') \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_runningTime', section=5, block=block, label='Range', attachToRefresh=1, command='spp_animHUD_runningTime()') \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_currentFrame', section=5, block=block, label='Frame', attachToRefresh=1, dataFontSize='large', command='mc.currentTime(q=1)')\n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_focalLength', section=5, block=block, label='Focal Length', attachToRefresh=1, dataFontSize='large', command='spp_animHUD_camFocalLength()')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_date', section=9, block=block, label='Date', attachToRefresh=1, command='mc.about(currentDate=1)')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        m
+c.headsUpDisplay('spp_animHUD_staff', section=9, block=block, label='Name', attachToRefresh=1, command='mc.optionVar(q=\"sppAnimHUDUserName\")')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_corp' ,section=9 ,block=block ,label='Corp' ,attachToRefresh=1 ,command='mc.optionVar(q=\"sppAnimHUDUserCorp\")')\n\n        \n\n\ndef spp_animHUD_displayFps():\n    time = mc.currentUnit(q=1, time=1)\n    if time == \"film\":\n        return \"24fps\"\n    elif time == \"ntsc\":\n        return \"30fps\"\n    else:\n        return mc.currentUnit(q=1, time=1)\n\n\ndef spp_animHUD_camFocalLength():\n    focaLength=0\n    try:\n        whichPanel = mc.getPanel(withFocus=1)\n        nameCamera = mc.modelPanel(whichPanel,q=1, camera=1)\n        focalLength = mc.getAttr(nameCamera + \".focalLength\")\n    except:\n        focalLength='cam'\n    return focalLength\n\n\n\ndef spp_animHUD_runningTime():\n    animationStartFrame = mc.playbackOptions(q=1, min=1)
+\n    animationEndFrame = mc.playbackOptions(q=1, max=1)\n    runningTime = animationEndFrame - animationStartFrame + 1\n    form = ' %d - %d ( %d )' % (int(animationStartFrame),int(animationEndFrame),int(runningTime))\n    return form\n\n\n\n\n\n\n\n# ---------------------------------------------------------------------------------------------\n# AssetA_gui.py\n# ---------------------------------------------------------------------------------------------\n#\n# Source by J.H.M MINstudio\n#\n# ---------------------------------------------------------------------------------------------\n\n\ndef clearUI():\n    \n    # get windows list\n    UI_list = mc.lsUI(windows = True)\n    \n    # close all windows without MainWindow\n    for del_UI in UI_list:\n        if not del_UI == 'MayaWindow':\n            mc.deleteUI(del_UI)    \n    \n    # remove all window preferences\n    mc.windowPref(removeAll = 1)\n    \n    # zoom to selected object\n    viewcamera = ['frontShape', 'perspShape', '
+sideShape', 'topShape']\n    \n    for camerallist in viewcamera:\n        mc.viewFit(camerallist)\n    \n    # Edit shaded mode to boundingBox\n    viewport = ['Persp View', 'Top View', 'Front View', 'Side View']\n    \n    for panellist in viewport:\n        panelmode = mc.getPanel(withLabel = panellist)\n        mc.modelEditor(panelmode, edit = True, displayAppearance = 'boundingBox')\n        \n    # set panel Layout to Single Perspective View\n    mel.eval('setNamedPanelLayout(\"Single Perspective View\")')\n    \n    # open the 'Save Scene As'\n    mc.SaveSceneAs()\n\n\n\n\n#spp_animHUD_user()\nspp_animHUD()\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "# -*- coding: utf-8 -*- \n\n## MIN studio animationteam tools v05 ..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "HUDonoff" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "# -*- coding: utf-8 -*- \n\n\n## MIN studio animationteam tools v05 2016.04.26\n## Á÷Á¢¿¢¼¼½º·Î º¯°æ=¤µ= ¸íÄªµé ÂÉ²û º¯°æ 2017.05.26 // line.743 ffmpeg ÆÄÀÏ °æ·Î »óÈ²¿¡ ¸Â°Ô °æ·Î ¼öÁ¤ÇØÁÖ±â\n## leeyoonsin@gmail.com\n\n\n\nimport maya.cmds as mc\nimport maya.mel as mel\n\n\n\n## Ã¢ ¸¸µé±â ##\n\n\ndef anitools():\n    win = 'MINwindow'\n    if mc.window(win,exists=1) :\n        mc.deleteUI(win)\n    \n    mc.window(win,title=\"anitool v01\",widthHeight=(150,220),s=1)\n    mc.columnLayout(adjustableColumn=1)\n    mc.text(\"Ani Tools\",fn=\"fixedWidthFont\",h=40)\n    #mc.separator(height=30, style='in')\n    #mc.button(h=35,bgc=(0.8,0.8,0.8),l=\"¾À ¼¼ÆÃ\",c=\"spp_sceneFormat_fix()\")\n    mc.button(h=35,bgc=(0.9,0.9,0.9),l=\"ÀÛ¾÷ÀÚ Á¤º¸ ¼öÁ¤\",c=\"spp_animHUD_user()\")\n    mc.button(h=35,bgc=(0.67,0.67,0.67),l=\"¼¦ Á¤º¸ Ç¥½Ã\",c=\"spp_animHUD()\")\n    #mc.button(h=35,bgc=(0.38,0.38,0.38),l=\"¿µ»ó ¸¸µé±â\",c=\"UI()\")\n    #mc.button(h=35,bgc=(0,0,0),l=\"¼¦ ÀúÀå\",c=\"
+clearUI()\")    \n    mc.button(h=35,bgc=(0.2,0.2,0.2),l=\"Close\",c=(\"mc.deleteUI('%s',window=1)\" %win))\n    mc.showWindow(win)\n    \n    # È¯°æº¯¼ö ¸¸µê. ¾Æ·¡ HUDonoff¶û playblast ½ÇÇà ±¸°£¿¡µµ Áßº¹À¸·Î ³Ö¾î³ùÀ½.\n    if not mc.optionVar(q='sppAnimHUDUserName'):\n        mc.optionVar(sv=('sppAnimHUDUserName','UserName'))\n    if not mc.optionVar(q='sppAnimHUDUserCorp'):\n        mc.optionVar(sv=('sppAnimHUDUserCorp','UserCorp'))\n\n\n    # HUD ÄÃ·¯ º¯°æ ¸í·É¾î, ÇöÀç 17¹ø ³ë¶ûÀ¸·Î ÁöÁ¤\n    # 1 ºí·¢, 6 ÆÄ¶û, 9 ÇÎÅ©, 13 »¡°­, 16 È­ÀÌÆ®, 17 ³ë¶û, 18 ÇÏ´Ã, 27 ÃÊ·Ï\n    mc.displayColor('headsUpDisplayLabels' ,17 ,dormant=1)\n    mc.displayColor('headsUpDisplayValues' ,17 ,dormant=1)\n\n\n\n\n\n## ---------------------------------------------------------------------------------------------\n## pa_sceneFormat_fix.mel\n## ---------------------------------------------------------------------------------------------\n##\n## Source by KeeKee (gmdirect@ocon.kr)\n##\n## ---------------------
+------------------------------------------------------------------------\n\n\n\n#def spp_sceneFormat_fix_setup():\n#    btn = spp_sceneFormat_fix(spp_installShelfButton)  \n#    img = \"sceneFormat.bmp\"\n#    cmd = spp_sceneFormat_fix\n#    mc.shelfButton(\"spp_sceneFormat_fix\", ex=1, command=cmd+btn)\n\n\ndef spp_sceneFormat_fix():\n\n\n#    mc.displayColor(c=1, dormant=1, headsUpDisplayValues=17)\n\n\n    win = 'sppSceneFormatWindow'\n    \n    if mc.window(win,exists=1) :\n        mc.deleteUI(win)\n\n\n    mc.window(win, title='MIN Scene Format', sizeable=0, minimizeButton=0, maximizeButton=0)\n    mc.columnLayout(adjustableColumn=1, columnOffset=('both', 5)) \n    mc.text(label='', height=5)\n    mc.frameLayout(borderStyle=\"etchedIn\", labelVisible=0)\n    mc.columnLayout(adjustableColumn=1, columnOffset=('both', 10))\n    mc.text(label='', height=20)\n    mc.checkBox('sppSceneFormat_turnOnHud', label=\"Turn on HUD\", value=1) \n    mc.text(label='', height=10)\n    mc.rowLayou
+t(numberOfColumns=2, columnWidth2=(100,100), columnOffset2=(0,0), columnAttach2=('both', 'both'), columnAlign2=('left','left')) \n    mc.text(label='Start Frame')\n    mc.text(label='End Frame')\n    mc.setParent('..')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(100,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left')) \n    mc.intField('sppSceneFormat_startFrame', height=30, value=101)\n    mc.intField('sppSceneFormat_endFrame', height=30, value=200)\n    mc.setParent('..')\n    mc.separator(height=30, style='in')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(60,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left')) \n    mc.text(label='Linear', align='right')\n    mc.textField(tx='centimeter', editable=0)\n    mc.setParent('..')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(60,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left'))\n    mc.text(label='Angular', align='
+right')\n    mc.textField(tx='degrees', editable=0)\n    mc.setParent('..')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(60,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left'))\n    mc.text(label='Time', align='right')\n   \n    ### ÃÊ´ç ÇÁ·¹ÀÓ\n    mc.optionMenu('timefps')\n    mc.menuItem( label='Film (24 fps)')\n    mc.menuItem( label='Pal (25 fps)')\n    mc.menuItem( label='NTSC (30 fps)')\n\n\n    mc.setParent('..')\n    mc.separator(height=30, style='in')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(100,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left')) \n    mc.text(label='Width')\n    mc.text (label='Height')\n    mc.setParent('..')\n    mc.rowLayout(numberOfColumns=2, columnWidth2=(100,100), columnOffset2=(0,0), columnAttach2=('both','both'), columnAlign2=('left','left')) \n    mc.intField('sppSceneFormat_width', height=30, value=1920)\n    mc.intField('sppSceneFormat_height', height=30, value
+=1080)\n    mc.setParent('..')\n    mc.text(label='', height=20)\n    mc.button(label='SCENE FORMAT', height=30, command='spp_sceneFormat_fix_run()')\n    mc.text(label='', height=10)\n    mc.text(label='', height=5)\n    mc.showWindow(win)\n\n\ndef spp_sceneFormat_fix_run():\n    \n    ## ÃÊ´ç ÇÁ·¹ÀÓ\n    if mc.optionMenu('timefps',q=1,v=1) == 'Film (24 fps)':\n        mc.currentUnit(time=\"film\")\n    if mc.optionMenu('timefps',q=1,v=1) == 'Pal (25 fps)':\n        mc.currentUnit(time=\"pal\")\n    if mc.optionMenu('timefps',q=1,v=1) == 'NTSC (30 fps)':\n        mc.currentUnit(time=\"ntsc\")\n\n\n    stFrame = mc.intField('sppSceneFormat_startFrame',q=1, value=1)\n    edFrame = mc.intField('sppSceneFormat_endFrame',q=1, value=1)\n    mc.playbackOptions(animationStartTime=(stFrame-5), animationEndTime=(edFrame+5), minTime=stFrame, maxTime=edFrame) \n    mc.currentTime(stFrame)\n    \n    hud = mc.checkBox('sppSceneFormat_turnOnHud', q=1,v=1)\n    spp_animHUD_switch(hud)\n    mc.curre
+ntUnit(l='centimeter')\n    mc.currentUnit(angle=\"degree\")\n    \n    width = mc.intField('sppSceneFormat_width', q=1, v=1)\n    height = mc.intField('sppSceneFormat_height', q=1, v=1)\n    ## vray°¡ ¾øÀ» °æ¿ì¸¦ À§ÇØ ¿¹¿ÜÃ³¸® \n    try :\n        mc.setAttr('vraySettings.width',width)\n        mc.setAttr('vraySettings.height',height)\n    except :\n        pass\n    mc.setAttr('defaultResolution.width',width)\n    mc.setAttr('defaultResolution.height',height)\n    mc.setAttr('defaultResolution.imageSizeUnits', 0)\n    mc.setAttr('defaultResolution.dotsPerInch', 72.0)\n    mc.setAttr('defaultResolution.pixelDensityUnits', 0)\n    mc.setAttr('defaultResolution.deviceAspectRatio', (width / (height*1.0)))\n    mc.setAttr('defaultResolution.pixelAspect', 1.000)\n\n\n    win = 'sppSceneFormatWindow'\n    mc.deleteUI(win)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# ---------------------------------------------------------------------------------------------\n# spp_animHUD.mel\n# -----------------
+----------------------------------------------------------------------------\n#\n# Source by KeeKee (gmdirect@ocon.kr)\n#\n# ---------------------------------------------------------------------------------------------\n\n\n#g_animHudState=0  #¹»±î?\n\n\n\n#def spp_animHUD_setup():\n#    btn1 = spp_animHUD(spp_installShelfButton)\n#    btn2 = spp_animHUD_user(spp_installShelfButton)\n#       img1 = \"animHUD.bmp\";\n#       img2 = \"animHUD_user.bmp\";\n#    cmd1 = \"spp_animHUD;\";\n#    cmd2 = \"spp_animHUD_user;\";\n#    mc.shelfButton(label='spp_animHUD', editable=1, command=cmd1+btn1)\n#    mc.shelfButton(label='spp_animHUD_user', editable=1, command=cmd2+btn2)\n\n\ndef spp_animHUD_user():\n\n\n    \n    win = 'sppAnimHUDWindow'\n    if mc.window(win, exists=1):\n        mc.deleteUI(win)\n       \n    \n    mc.window(win, title='HUD Name', sizeable=0, minimizeButton=0, maximizeButton=0)    \n    mainForm = mc.formLayout()\n    mainFrame = mc.frameLayout('mainFrame', borderStyle='
+etchedIn', labelVisible=0)\n    mc.columnLayout(adjustableColumn=1, columnOffset=('both',10))\n    mc.text (label=\"\", height=10)\n    mc.text (label=\"Input your name to print on display\")\n    mc.text (label=\"\", height=10)\n    mc.rowColumnLayout(nc=2)\n    \n        \n    mc.text (label=\"Corporation :   \" ,align=\"right\" ,font=\"boldLabelFont\")    \n    mc.textField ('sppAnimHUDWindow_inputUserCorp' ,height=22 ,text=mc.optionVar(q='sppAnimHUDUserCorp') )\n    mc.text (label=\"Name :   \" ,align=\"right\" ,font=\"boldLabelFont\")    \n    mc.textField ('sppAnimHUDWindow_inputUsername' ,height=22 ,text=mc.optionVar(q='sppAnimHUDUserName') )\n    mc.text (label=\"\", height=10)\n    mc.setParent('..')\n    \n    mc.button (label=\"SET TO THE NAME\", height=30, command=\"spp_animHUD_user_execute()\")\n    mc.text (label=\"\", height=10)\n    mc.formLayout(mainForm, edit=1, attachForm=[(mainFrame, 'top', 5),(mainFrame, 'left', 5),(mainFrame, 'right', 5),(mainFrame, 'bottom', 5)]
+)\n    mc.showWindow(win)\n\n\n\n\n \n\n\ndef spp_animHUD_user_execute():\n    win = 'sppAnimHUDWindow'\n    corp = mc.textField('sppAnimHUDWindow_inputUserCorp',q=1, tx=1)\n    name = mc.textField('sppAnimHUDWindow_inputUsername',q=1, tx=1)\n    popcorp=0\n    popname=0\n    if corp :\n        mc.optionVar(sv=('sppAnimHUDUserCorp',corp))\n        popcorp=corp\n    else :\n        mc.optionVar(sv=('sppAnimHUDUserCorp','UserCorp'))\n        popcorp='UserCorp'\n\n\n    if name :\n        mc.optionVar(sv=('sppAnimHUDUserName',name))\n        popname=name\n    else :\n        mc.optionVar(sv=('sppAnimHUDUserName','UserName'))\n        popname='UserName'\n    \n    digiart_confirm (\"It is changed that the corporation of HUD to [ \" + popcorp + \" ]\\nIt is changed that the name of HUD to [ \" + popname + \" ]\")\n    mc.deleteUI(win)\n\n\n\n\n\n\n\n\ndef spp_animHUD_state():\n    if 'spp_animHUD_fps' in mc.headsUpDisplay(q=1,listHeadsUpDisplays=1):\n        HudState = 1\n    else:HudState
+ = 0\n    return HudState\n\n\n\ndef spp_animHUD():\n#    g_animHudState = 0\n#    if not mc.optionVar(ex='sppAnimHUDUserName'):\n#        mc.optionVar('sppAnimHUDUserName', stringValue=\"MIN_USER\")\n    if not mc.optionVar(q='sppAnimHUDUserName'):\n        mc.optionVar(sv=('sppAnimHUDUserName','UserName'))\n    if not mc.optionVar(q='sppAnimHUDUserCorp'):\n        mc.optionVar(sv=('sppAnimHUDUserCorp','UserCorp'))\n        \n    if spp_animHUD_state() == 1:spp_animHUD_switch(0)\n    else:spp_animHUD_switch(1)\n#HUDList = mc.headsUpDisplay(q=1,listHeadsUpDisplays=1)\n#for selHud in HUDList:\n#    if 'spp' in selHud:\n#        mc.headsUpDisplay(selHud,rem=1)\n#mc.headsUpDisplay('spp_animHUD_sceneFileName',rem=1)\n#mc.headsUpDisplay('spp_animHUD_currentFrame',rem=1)\n\n\ndef spp_animHUD_switch(switch):\n#    g_animHudState = switch\n\n\n    ## Off the HUDViewAxis\n    if mc.headsUpDisplay('HUDViewAxis', ex=1):\n        mc.headsUpDisplay('HUDViewAxis', e=1, vis=0)\n    \n    hudList = [
+\"spp_animHUD_cameraType\",\n        \"spp_animHUD_stereoMode\",\n        \"spp_animHUD_focalLength\",\n        \"spp_animHUD_currentProject\",\n        \"spp_animHUD_sceneFileName\",\n        \"spp_animHUD_fps\",\n        \"spp_animHUD_runningTime\",\n        \"spp_animHUD_currentFrame\",\n        \"spp_animHUD_corp\",\n        \"spp_animHUD_staff\",\n        \"spp_animHUD_time\",\n        \"spp_animHUD_date\"]\n\n\n\n    for hud in hudList:\n        if mc.headsUpDisplay(hud, ex=1):\n            mc.headsUpDisplay(hud, rem=1)\n\n\n    if switch:\n        saveCorp=mc.optionVar(q='sppAnimHUDUserCorp') \n        saveName=mc.optionVar(q='sppAnimHUDUserName') \n        ##int $block = `headsUpDisplay -nextFreeBlock 4`;\n        ##headsUpDisplay -section 4 -block $block -attachToRefresh -label \"Camera Type\"\n        ##  -command \"spp_animHUD_displayCameraType\" spp_animHUD_cameraType;\n        \n        ##int $block = `headsUpDisplay -nextFreeBlock 4`;\n        ##headsUpDisplay -section 4
+ -block $block -attachToRefresh -label \"Stereo Mode\"\n        ##  -command \"spp_animHUD_displayStereoMode\" spp_animHUD_stereoMode;\n        \n        ##int $block = `headsUpDisplay -nextFreeBlock 4`;\n        ##headsUpDisplay -section 4 -block $block -attachToRefresh -label \"Project Dir\"\n        ##  -command \"string $project = `workspace -q -o`;\" spp_animHUD_currentProject;\n        \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_sceneFileName', section=5, block=block, label='Scene', attachToRefresh=1, command='mc.file(q=1 ,sn=1 ,shn=1)')\n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_fps', section=5, block=block, label='Fps', attachToRefresh=1, command='spp_animHUD_displayFps()') \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_runningTime', section=5, block=block, label='Range', attachToRefresh=1, command='spp_animHUD_runningTime()') \n      
+  block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_currentFrame', section=5, block=block, label='Frame', attachToRefresh=1, dataFontSize='large', command='mc.currentTime(q=1)')\n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_focalLength', section=5, block=block, label='Focal Length', attachToRefresh=1, dataFontSize='large', command='spp_animHUD_camFocalLength()')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_date', section=9, block=block, label='Date', attachToRefresh=1, command='mc.about(currentDate=1)')\n        \n        ##int $block = `headsUpDisplay -nextFreeBlock 9`;\n        ##headsUpDisplay -section 9 -block $block -label \"Time\" -attachToRefresh\n        ##  -command \"about -currentTime\" spp_animHUD_time;\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_staff', section=9, block=block, label='Name', attachToRe
+fresh=1, command='mc.optionVar(q=\"sppAnimHUDUserName\")')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_corp' ,section=9 ,block=block ,label='Corp' ,attachToRefresh=1 ,command='mc.optionVar(q=\"sppAnimHUDUserCorp\")')\n\n\n        #return g_animHudState\n\n\n    \n    \ndef spp_animHUD_displayFps():\n    time = mc.currentUnit(q=1, time=1)\n    if time == \"film\":\n        return \"24fps\"\n    elif time == \"ntsc\":\n        return \"30fps\"\n    else:\n        return mc.currentUnit(q=1, time=1)\n\n\n\ndef spp_animHUD_camFocalLength():\n    focaLength=0\n    try:\n        whichPanel = mc.getPanel(withFocus=1)\n        nameCamera = mc.modelPanel(whichPanel,q=1, camera=1)\n        focalLength = mc.getAttr(nameCamera + \".focalLength\")\n    except:\n        focalLength='cam'\n    return focalLength\n\n\n\n\ndef spp_animHUD_runningTime():\n    animationStartFrame = mc.playbackOptions(q=1, min=1)\n    animationEndFrame = mc.playbackOptions(q
+=1, max=1)\n    runningTime = animationEndFrame - animationStartFrame + 1\n    form = '%d - %d ( %d )' % (int(animationStartFrame),int(animationEndFrame),int(runningTime))\n    return form\n\n\n\n\n\n\n\n\n\n#/////////////////////  spp_sceneFormat_fix ÇÔ¼ö¿¡¼­ ÇÊ¿äÇÑ ÇÔ¼ö //////////\n\n\ndef digiartArrayFirst (camList):\n    if len(camList): \n        return camList[0]\n    else : \n        return None\n\n\ndef digiart_confirm (printMsg):\n    mc.confirmDialog(title=\"MIN : Report\",messageAlign=\"center\",message=printMsg,icon=\"information\",button=\"OK\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n#//////////////// playblast ¿øº» ¼Ò½º ÅëÂ°·Î ffmÀº ¿ÜºÎ °æ·Î °ü¸® ÇÏ±â\n\n\nimport os\n#import maya.cmds as mc\nfrom functools import partial\nimport maya.mel as mel\nimport maya.OpenMayaUI as omui\nimport maya.OpenMaya as om\nimport ast\n\n\ndef UI():\n    win='PB'\n    if mc.window(win, exists=True):\n        mc.deleteUI(win)\n    \n    mc.window(win, title=\"Playblaster ver.1.0\", mnb=False, mxb=F
+alse, sizeable=False)\n    \n    mc.columnLayout(columnOffset=(\"both\",10), adj=True)\n\n\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2, columnWidth=[(1, 110), (2, 410)] )\n    mc.text(label=\"User Info\", align=\"left\",font=\"boldLabelFont\") \n    mc.separator(style=\"in\")    \n\n\n    mc.setParent('..')\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=6, columnWidth=[(1, 5), (2, 70), (3, 160), (4, 70), (5, 160), (6, 50)] )\n    mc.separator(h=10,style=\"none\")\n    \n    if not mc.optionVar(q='sppAnimHUDUserName'):\n        mc.optionVar(sv=('sppAnimHUDUserName','UserName'))\n    if not mc.optionVar(q='sppAnimHUDUserCorp'):\n        mc.optionVar(sv=('sppAnimHUDUserCorp','UserCorp'))\n    \n    saveCorp=mc.optionVar(q='sppAnimHUDUserCorp') \n    saveName=mc.optionVar(q='sppAnimHUDUserName') \n    \n    mc.text(label=\"Corp : \", align=\"right\")\n    mc.textField(\"corp\", text=saveCorp ,ed=0)\n    mc.text(label=\"Name : \", align=\"right\")
+\n    mc.textField(\"userName\", text=saveName ,ed=0) \n        \n    mc.setParent('..')\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2, columnWidth=[(1, 110), (2, 410)] )\n    mc.text(label=\"Dispaly Options\", align=\"left\",font=\"boldLabelFont\")    \n    mc.separator(style=\"in\")\n\n\n    mc.setParent('..')\n    mc.separator(h=10, style=\"none\")\n    mc.rowColumnLayout(nc=3, columnWidth=[(1,30),(2,250),(3,240)])\n    mc.separator(h=10,style=\"none\")\n    rvalue=getDisplayOptions(\"displayResolution\")\n    mc.checkBox(label=\"Display Resolution\", v=rvalue, onc=partial(displayOptions,\"displayResolution\", \"on\"), ofc=partial(displayOptions,\"displayResolution\", \"off\"))\n    savalue=getDisplayOptions(\"displaySafeAction\")\n    mc.checkBox(label=\"Display Safe Action\", v=savalue, onc=partial(displayOptions,\"displaySafeAction\", \"on\"), ofc=partial(displayOptions,\"displaySafeAction\", \"off\"))\n    mc.separator(style=\"none\")\n    gmvalue=getDispl
+ayOptions(\"displayGateMask\")\n    mc.checkBox(label=\"Display Gate Mask\", v=gmvalue, onc=partial(displayOptions,\"displayGateMask\", \"on\"), ofc=partial(displayOptions,\"displayGateMask\", \"off\"))\n    stvalue=getDisplayOptions(\"displaySafeTitle\")\n    mc.checkBox(label=\"Display Safe Title\", v=stvalue, onc=partial(displayOptions,\"displaySafeTitle\", \"on\"), ofc=partial(displayOptions,\"displaySafeTitle\", \"off\"))\n    #mc.separator(h=10,style=\"none\")\n    #mc.rowColumnLayout(nc=2, columnWidth=[(1, 90), (2, 480)] )\n    #mc.text(label=\"Info \", align=\"left\",font=\"boldLabelFont\") \n    #mc.separator(style=\"in\")\n    \n    #mc.setParent( '..' )\n    #scName = mc.file(q=1,sceneName=1).split('/')[-1].partition(\".\")[0]\n    #iniOutput = defaultPath()\n    #duration = totalDuration()\n    #Fps = fps()\n    #mc.textScrollList(\"PBinof\", h=80, numberOfRows=8, append=[\"Scene Name : \" + scName, \"Outpath : \" + iniOutput, \"Duration : \" + duration, \"Fps : \"+ Fps +\
+"fps\"])\n        \n    # time range \n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2, columnWidth=[(1, 110), (2, 410)] )\n    mc.text(label=\"Time Range  \", align=\"left\",font=\"boldLabelFont\")    \n    mc.separator(style=\"in\")\n       \n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=5, columnWidth=[(1, 5), (2, 70), (3, 160), (4, 70), (5, 160)] )\n    mc.separator(h=10,style=\"none\")\n    mc.text(label=\"Start : \", align=\"right\")\n    mc.intField(\"Start\", value= mc.playbackOptions(q=True, minTime=True))\n    mc.text(label=\"End : \", align=\"right\")\n    mc.intField(\"End\", value = mc.playbackOptions(q=True, maxTime=True)) \n    \n        # image size\n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2,columnWidth=[(1, 100), (2, 420)])\n    mc.text(\"Dispaly Size\", h=20, align=\"left\",font=\"boldLabelFont\")\n    \n    mc.separator(h=10,st
+yle=\"in\")\n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=5, columnWidth=[(1, 5), (2, 70), (3, 160), (4, 70), (5, 160)] )\n    mc.separator(h=10,style=\"none\")\n    mc.text(label=\"Width :\", align=\"right\")\n    mc.intField(\"Width\", value = mc.getAttr('defaultResolution.width'))\n    mc.text(label=\"Height :\", align=\"right\")\n    mc.intField(\"Height\", value = mc.getAttr('defaultResolution.height'))  \n    mc.separator(h=15,style=\"none\")\n    mc.separator(h=15,style=\"none\")\n    mc.separator(h=15,style=\"none\")\n    \n    #mc.setParent( '..' )\n    mc.text(label=\"Scale:\", align=\"right\")\n    if not mc.optionVar(q='playblastScale') : Defaultscale = 100\n    else : Defaultscale = mc.optionVar(q='playblastScale')\n    mc.intField(\"Scale\", value = int(Defaultscale))\n    \n    # output\n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    mc.rowColumnLayout(nc=2,columnWidth=[(1, 60), (2, 460)])\n    mc.text(
+\"Output:\", align=\"left\",font=\"boldLabelFont\")\n    mc.separator(h=10, style=\"in\")\n    mc.setParent( '..' )\n    mc.separator(h=10,style=\"none\")\n    \n    \n    mc.rowColumnLayout(nc=4, columnWidth=[(1, 5), (2, 200), (3, 5), (4, 200)])\n    \n    #mc.text(label=\"format : \", align=\"right\")\n    #Defaultfromat=defaultSet(\"format\")\n    mc.separator(style=\"none\")\n    formats=mc.optionMenu(\"formats\", label=\"format : \", w=200, cc=formatMenu)\n    formatMenu()\n\n\n    \n    #mc.text(label=\"Encoding : \", align=\"right\")\n    #Defaultencode = defaultSet(\"encoding\")\n    mc.separator(style=\"none\")\n    mc.optionMenu(\"Encoding\", label=\"     Encoding : \", w=200, cc=encodeMenu)\n    encodeMenu()\n\n\n    #mc.menuItem(label='image')\n    #mc.separator(h=10,style=\"none\")    \n    \n    \n    mc.setParent( '..' )\n    mc.rowColumnLayout(nc=3)\n    #mc.internalVar(uwd=True) +\"default/movies/\"\n    mc.text(label=\"Path : \", align=\"right\")\n    DefaultPath = d
+efaultSet(\"path\")\n    mc.textField(\"outputPath\", h=30, w=420, text = DefaultPath)    \n    mc.button(label=\"...\", w=30, h=30, c=browseFilePath) #c=partial(browseFilePath, 3, \"*.mov\", \"outputPath\")\n    mc.text(label=\"Movie file : \", align=\"right\")\n    movieName=mc.file(q=True, sceneName=True).split(\"/\")[-1].partition(\".\")[0]\n    movieFile = mc.textField(\"movieFile\", h=30, w=420, text=movieName)    \n    mc.separator(h=10,style=\"none\")\n    \n    # button\n    mc.setParent( '..' )\n    mc.separator(h=20, style=\"in\")\n    mc.rowColumnLayout(nc=2, columnWidth=[(1, 258), (2, 258)])\n    mc.button(label=\"Playblast\", h=40, c=createMovie)\n    #mc.button(label=\"Apply\", c = Apply)\n    mc.button(label=\"Reload\", c = Reload)\n    mc.separator(h=10, style=\"none\")\n    \n    win='PB'\n    mc.showWindow(win)\n    \ndef formatMenu(*args):\n    menuItems = mc.optionMenu(\"formats\", q=True, itemListLong=True)\n    if menuItems != None :                             
+                                                              \n        for item in menuItems:                                                                                    \n            mc.deleteUI(item)\n    \n    items = [ \"qt\",]#\"avi\", \"png\"]\n    \n    #filePath = mc.internalVar(usd=True) + \"YHplayblast.ini\"\n    \n    #if os.path.isfile(filePath):\n        #item = defaultSet(\"format\")\n        #mc.menuItem(label=item,  parent = \"formats\")\n        ##items.remove[item]\n        ##for item in items:\n            ##mc.menuItem(label=item, parent = \"formats\")       \n    #else:\n    for item in items:\n        mc.menuItem(label=item, parent = \"formats\")\n    \ndef encodeMenu(*args):\n    menuItems = mc.optionMenu(\"Encoding\", q=True, itemListLong=True)\n    if menuItems != None :                                                                                           \n        for item in menuItems:                                                              
+                      \n            mc.deleteUI(item)\n            \n    items = ['H.264'] #, 'photo_jepg']\n    for item in items:\n        mc.menuItem(label=item, parent = \"Encoding\")    \n        \ndef currentViewCamName(*args):\n        activeView = omui.M3dView.active3dView()\n        cameraPath = om.MDagPath()\n        activeView.getCamera(cameraPath)\n        return str(cameraPath.partialPathName())\n\n\ndef displayOptions(change, state,*args):\n    cameraName = currentViewCamName()\n    if state == 'on':onoff = 1\n    if state == 'off':onoff = 0\n    mc.setAttr(cameraName +'.'+change, onoff)\n\n\n\ndef getDisplayOptions(case,*args):\n    cameraName = currentViewCamName()\n    return mc.getAttr(cameraName +'.'+case)\n\n\ndef Apply(*args):\n    \n    Path=mc.textField(\"outputPath\", q=True, text =True)\n    Scale = mc.intField(\"Scale\", q=True, value = True) \n    mc.optionVar(sv=('playblastScale', Scale))\n    Fromat = mc.optionMenu(\"formats\", q=True, value = True)  \n   
+ Encoding = mc.optionMenu(\"Encoding\", q=True, value = True)  \n    corp = mc.textField(\"corp\", q=True, text=True)\n    name = mc.textField(\"userName\", q=True, text=True)  \n    \n    filePath = mc.internalVar(usd=True)+\"YHplayblast.ini\"\n    f=open(filePath, 'w')\n    #f.write(corp+'\\n')\n    #f.write(name+'\\n') \n    f.write(Path +'\\n')\n    f.write('%d'%Scale+'\\n')\n    f.write(Fromat+'\\n')\n    f.write(Encoding+'\\n')\n    \n    f.close()\n    \ndef Reload(*args):\n    \n    mc.intField(\"Start\", edit=True, value= mc.playbackOptions(q=True, minTime=True))\n    mc.intField(\"End\", edit=True, value= mc.playbackOptions(q=True, maxTime=True))\n\n\n    width = mc.intField(\"Width\", q=True, value =True)\n    height = mc.intField(\"Height\", q=True, value =True)\n    deviceAspectRatio = width/float(height)\n    mc.setAttr('defaultResolution.width', width) \n    mc.setAttr('defaultResolution.height', height)  \n    mc.setAttr('defaultResolution.deviceAspectRatio', deviceAsp
+ectRatio)\n\n\n\ndef browseFilePath(*arg):\n    \n    returnPath = mc.fileDialog2(fm=3, fileFilter=\"*.mov\",  ds=2)\n    \n    if returnPath > 0 :\n        returnPath = returnPath[0]\n        mc.textField(\"outputPath\", edit = True, text = returnPath)\n\n\ndef defaultSet(sets,*args):\n    \n    filePath = mc.internalVar(usd=True) + \"YHplayblast.ini\"\n    \n    if os.path.isfile(filePath):\n        f=open(filePath, 'r')\n        set=f.readlines()\n    \n        defaultPath = set[0].rstrip()\n        defaultScale = set[1].rstrip()\n        defaultFormat = set[2].rstrip()\n        defaultEncoding = set[3].rstrip()\n        f.close()\n\n\n        if sets == \"path\":\n            return defaultPath\n        \n        if sets == \"scale\":\n            defaultScale = int(defaultScale)\n            return defaultScale ### <------------------============= only panda project   ##\n        \n        if sets == \"format\":\n            return defaultFormat\n        \n        if sets == \"en
+coding\":\n            return defaultEncoding      \n        \n    else:\n\n\n        if sets == \"path\":\n            return mc.internalVar(uwd=True) +\"default/movies/\"\n        \n        if sets == \"scale\":\n            return 100\n        \n        if sets == \"format\":\n            return \"qt\"\n        \n        if sets == \"encoding\":\n            return \"h264\"       \n        \n\n\n#def fps(*args):\n    \n#    time = mc.currentUnit(q=True, time=True)\n        \n#    if time == \"film\":\n#        return \"24\"\n    \n#    if time == \"ntsc\":\n#        return \"30\" \n\n\n#    if time == \"ntscf\":\n#        return \"60\" \n\n\n\ndef createMovie(*args):\n    \n\n\n    movieFormat = mc.optionMenu(\"formats\", q=True, value=True)\n        \n#    if movieFormat == \"qt\":\n    stframe=mc.playbackOptions(q=True, minTime=True)\n    edframe=mc.playbackOptions(q=True, maxTime=True)\n    mc.playbackOptions(e=True, minTime=mc.intField(\"Start\", q=True, v=True))\n    mc.playba
+ckOptions(e=True, maxTime=mc.intField(\"End\", q=True, v=True))\n    playBlast()\n    \n    movieName = mc.textField(\"movieFile\", q=True, text=True) \n    moviepath = mc.textField(\"outputPath\", q=True, text=True)   \n    avifileName= moviepath + \"/\"+ movieName + \".avi\"\n    movfileName= moviepath + \"/\"+ movieName + \".mov\"\n    \n    strSceneFileFullName = avifileName\n    strOutputMovFileFull = movfileName\n    \n    #strFfmpegOptions = '-y -i ' + strSceneFileFullName.replace('/', '\\\\') +' -vcodec prores -profile 0 -r  24 ' + strOutputMovFileFull.replace('/', '\\\\')\n    strFfmpegOptions = '-y -i ' + strSceneFileFullName.replace('/', '\\\\') +' -vcodec libx264 -profile Baseline -level 20 -threads 0 -pix_fmt yuv420p ' + strOutputMovFileFull.replace('/', '\\\\')\n    #strFfmpegOptions = '-y -i ' + strSceneFileFullName.replace('/', '\\\\') +' -vcodec libx264 -profile Baseline -level 20 -threads 0 -pix_fmt yuv420p -r ' + str(Fps) + ' '+ strOutputMovFileFull.replace('/', '\\
+\\')        \n    #a= mc.internalVar(usd=True)\n    a=\"Z:/min_wormhole/panda/tool/MIN_anitools\"                  ####<< ffmpeg ÆÄÀÏ °æ·Î À§Ä¡ ¾Ë·ÁÁÖ±â >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n    os.system( '%s/ffmpeg.exe' %a + ' ' + strFfmpegOptions)\n    os.remove(avifileName)\n    \n    os.startfile(movfileName)\n    \n    mc.playbackOptions(e=True, minTime=stframe)\n    mc.playbackOptions(e=True, maxTime=edframe)\n    \n#    if movieFormat == \"avi\":\n        \n#        playBlast()\n    \ndef checkPanel(*args):\n    \n    panelName=mc.getPanel(wf=True)\n    \n    ## check show options of focus panel\n    pcameras = mc.modelEditor(panelName, q=True, cameras=True )\n    plocators = mc.modelEditor(panelName, q=True, locators=True )\n    pdeformers = mc.modelEditor(panelName, q=True, deformers=True )\n    pcurves = mc.modelEditor(panelName, q=True, nurbsCurves=True )  \n    \n    showset = 
+[pcameras , plocators, pdeformers, pcurves]\n    \n    return showset\n\n\n\ndef playBlast(*arg):\n    \n    stFrame = mc.intField(\"Start\", q=True, v=True)\n    endFrame = mc.intField(\"End\", q=True, v=True)\n    wid = mc.intField(\"Width\", q=True, v=True)\n    hei = mc.intField(\"Height\", q=True, v=True)\n\n\n    movieName = mc.textField(\"movieFile\", q=True, text=True) \n    moviepath = mc.textField(\"outputPath\", q=True, text=True)   \n    avifileName= moviepath + \"/\"+ movieName + \".avi\"\n    movfileName= moviepath + \"/\"+ movieName + \".mov\"\n    \n    scale=mc.intField(\"Scale\", q=True, v=True)  \n    \n    gPlayBackSlider = mel.eval( '$tmpVar=$gPlayBackSlider' )\n    isSound = mc.timeControl( gPlayBackSlider, q=True, ds=True )\n    strAudioNodeName =''\n    \n    ##check current panel show info\n    panelName=mc.getPanel(wf=True)\n    showset = checkPanel()\n    \n    mc.modelEditor(panelName, e=True, nurbsCurves=False)\n    mc.modelEditor(panelName, e=True, camera
+s=False)\n    mc.modelEditor(panelName, e=True, locators=False)  \n    mc.modelEditor(panelName, e=True, deformers=False)      \n    \n    Apply()\n    \n    \n    \n    animHudSt = spp_animHUD_state()\n    spp_animHUD_switch(1)\n\n\n    if isSound:\n        strAudioNodeName = mc.timeControl(gPlayBackSlider, query = True, s = True)\n    \n        mc.playblast( format= \"avi\", \n                          sound=strAudioNodeName,\n                          startTime = stFrame, \n                          endTime = endFrame , \n                          filename=avifileName, \n                          forceOverwrite=1, \n                          sequenceTime=0, \n                          clearCache=1, \n                          viewer=0, \n                          showOrnaments=1, \n                          fp=4, \n                          percent=scale, \n                          compression= \"none\", \n                          quality=100, \n                          widthHei
+ght=(wid,hei))\n    else:\n        mc.playblast( format= \"avi\", \n                          startTime = stFrame, \n                          endTime = endFrame , \n                          filename=avifileName, \n                          forceOverwrite=1, \n                          sequenceTime=0, \n                          clearCache=1, \n                          viewer=0, \n                          showOrnaments=1, \n                          fp=4, \n                          percent=scale, \n                          compression= \"none\",\n                          quality=100, \n                          widthHeight=(wid,hei))            \n    \n    spp_animHUD_switch(animHudSt)\n    \n    mc.modelEditor(panelName, e=True, nurbsCurves=showset[3])\n    mc.modelEditor(panelName, e=True, cameras=showset[0])\n    mc.modelEditor(panelName, e=True, locators=showset[1])\n    mc.modelEditor(panelName, e=True, deformers=showset[2]) \n    \n\n\n            \ndef spp_animHUD_switch(
+switch):\n    \n    if mc.headsUpDisplay('HUDViewAxis', ex=1):\n        mc.headsUpDisplay('HUDViewAxis', e=1, vis=0)\n        \n    hudList = [\"spp_animHUD_cameraType\",\n        \"spp_animHUD_stereoMode\",\n        \"spp_animHUD_focalLength\",\n        \"spp_animHUD_currentProject\",\n        \"spp_animHUD_sceneFileName\",\n        \"spp_animHUD_fps\",\n        \"spp_animHUD_runningTime\",\n        \"spp_animHUD_currentFrame\",\n        \"spp_animHUD_corp\",\n        \"spp_animHUD_staff\",\n        \"spp_animHUD_time\",\n        \"spp_animHUD_date\"]\n    \n    for hud in hudList:\n        if mc.headsUpDisplay(hud, ex=1):\n            mc.headsUpDisplay(hud, rem=1)\n\n\n    if switch:\n        saveCorp=mc.optionVar(q='sppAnimHUDUserCorp') \n        saveName=mc.optionVar(q='sppAnimHUDUserName') \n        \n        \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_fps', section=5, block=block, label='Fps', attachToRefresh=1, command='spp_animH
+UD_displayFps()') \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_runningTime', section=5, block=block, label='Range', attachToRefresh=1, command='spp_animHUD_runningTime()') \n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_currentFrame', section=5, block=block, label='Frame', attachToRefresh=1, dataFontSize='large', command='mc.currentTime(q=1)')\n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_focalLength', section=5, block=block, label='Focal Length', attachToRefresh=1, dataFontSize='large', command='spp_animHUD_camFocalLength()')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_date', section=9, block=block, label='Date', attachToRefresh=1, command='mc.about(currentDate=1)')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_staff', section=9, block=block, label='Name'
+, attachToRefresh=1, command='mc.optionVar(q=\"sppAnimHUDUserName\")')\n        block = mc.headsUpDisplay(nextFreeBlock=9)\n        mc.headsUpDisplay('spp_animHUD_corp' ,section=9 ,block=block ,label='Corp' ,attachToRefresh=1 ,command='mc.optionVar(q=\"sppAnimHUDUserCorp\")')\n        block = mc.headsUpDisplay(nextFreeBlock=5)\n        mc.headsUpDisplay('spp_animHUD_sceneFileName', section=5, block=block, label='Scene', attachToRefresh=1, command='mc.file(q=1 ,sn=1 ,shn=1)')\n\n\n        \n\n\n\ndef spp_animHUD_displayFps():\n    time = mc.currentUnit(q=1, time=1)\n    if time == \"film\":\n        return \"24fps\"\n    elif time == \"ntsc\":\n        return \"30fps\"\n    else:\n        return mc.currentUnit(q=1, time=1)\n\n\n\ndef spp_animHUD_camFocalLength():\n    focaLength=0\n    try:\n        whichPanel = mc.getPanel(withFocus=1)\n        nameCamera = mc.modelPanel(whichPanel,q=1, camera=1)\n        focalLength = mc.getAttr(nameCamera + \".focalLength\")\n    except:\n        fo
+calLength='cam'\n    return focalLength\n\n\n\n\ndef spp_animHUD_runningTime():\n    animationStartFrame = mc.playbackOptions(q=1, min=1)\n    animationEndFrame = mc.playbackOptions(q=1, max=1)\n    runningTime = animationEndFrame - animationStartFrame + 1\n    form = ' %d - %d ( %d )' % (int(animationStartFrame),int(animationEndFrame),int(runningTime))\n    return form\n\n\n\n\n\n\n\n\n# ---------------------------------------------------------------------------------------------\n# AssetA_gui.py\n# ---------------------------------------------------------------------------------------------\n#\n# Source by J.H.M MINstudio\n#\n# ---------------------------------------------------------------------------------------------\n\n\n\ndef clearUI():\n    \n    # get windows list\n    UI_list = mc.lsUI(windows = True)\n    \n    # close all windows without MainWindow\n    for del_UI in UI_list:\n        if not del_UI == 'MayaWindow':\n            mc.deleteUI(del_UI)    \n    \n    # remove a
+ll window preferences\n    mc.windowPref(removeAll = 1)\n    \n    # zoom to selected object\n    viewcamera = ['frontShape', 'perspShape', 'sideShape', 'topShape']\n    \n    for camerallist in viewcamera:\n        mc.viewFit(camerallist)\n    \n    # Edit shaded mode to boundingBox\n    viewport = ['Persp View', 'Top View', 'Front View', 'Side View']\n    \n    for panellist in viewport:\n        panelmode = mc.getPanel(withLabel = panellist)\n        mc.modelEditor(panelmode, edit = True, displayAppearance = 'boundingBox')\n        \n    # set panel Layout to Single Perspective View\n    mel.eval('setNamedPanelLayout(\"Single Perspective View\")')\n    \n    # open the 'Save Scene As'\n    mc.SaveSceneAs()\n\n\n\n\n\n#spp_animHUD_user()\nspp_animHUD()\n\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as cmds\n\ndef mirror_key():\n    \n    ctrls = [u'BrowInRaiserCntr_R', u'BrowDownCntr_R', u'BrowOutRaiserCntr_R', u'BrowSqueezerCntr_R', u'EyeopenerCntr_R', u'EyeTightnerCntr_R', u'CheekRaiserCntr_R', u'SquinterCntr_R', u'NoseWrinklerCntr_R',\n             u'UprLipRaiserCntr_R', u'NlDeepenerCntr_R', u'TightnerTCntr_R', u'CornerRaiserCntr_R', u'CornerPullerCntr_R', u'UprLipDepressorCntr_R', u'PressorCntr_R', u'FunnelerTCntr_R', u'PuckererTCntr_R',\n             u'DimplerCntr_R', u'StretcherCntr_R', u'PuckererBCntr_R', u'CornerDepressorCntr_R', u'FunnelerBCntr_R', u'TightnerBCntr_R', u'ChinRaiserCntr_R', u'LwrLipDepressorCntr_R', u'NeckTensionCntr_R']\n\n    for ctrl in ctrls:\n        get_ctrl_attrs = cmds.listAttr(ctrl, v= True, k= True)\n        \n        left_ctrl_name = ctrl.replace('_R','_L')\n                \n        for ctrl_attr in get_ctrl_attrs:\n            get_values = cmds.getAttr('{0}.{1}'.format(ctrl,ctrl_attr))\n            \n    
+        left_ctrl_attr = ctrl_attr.replace('_R','_L')\n                        \n            cmds.setAttr('{0}.{1}'.format(left_ctrl_name, ctrl_attr), get_values)\n        \n        cmds.copyKey(ctrl)\n        cmds.pasteKey(left_ctrl_name)\n\n\nmirror_key()\n\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import maya.cmds as cmds\n\ndef mirror_key():\n    \n    ctrls = [u'..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "mirror_key" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n\n\ndef mirror_key():\n    \n    ctrls = [ u'BrowInRaiserCntr_R', u'BrowDownCntr_R', u'BrowOutRaiserCntr_R', u'BrowSqueezerCntr_R', u'EyeopenerCntr_R', u'EyeTightnerCntr_R', u'CheekRaiserCntr_R', u'SquinterCntr_R', u'NoseWrinklerCntr_R', u'UprLipRaiserCntr_R', u'NlDeepenerCntr_R', u'TightnerTCntr_R', u'CornerRaiserCntr_R', u'CornerPullerCntr_R', u'UprLipDepressorCntr_R', u'PressorCntr_R', u'FunnelerTCntr_R', u'PuckererTCntr_R', u'DimplerCntr_R', u'StretcherCntr_R', u'PuckererBCntr_R', u'CornerDepressorCntr_R', u'FunnelerBCntr_R', u'TightnerBCntr_R', u'ChinRaiserCntr_R', u'LwrLipDepressorCntr_R',  u'NeckTensionCntr_R', '' ]\n\n\n    for ctrl in ctrls:\n        get_ctrl_attrs = cmds.listAttr(ctrl, v= True, k= True)\n        \n        left_ctrl_name = ctrl.replace('_R','_L')\n                \n        for ctrl_attr in get_ctrl_attrs:\n            get_values = cmds.getAttr('{0}.{1}'.format(ctrl,ctrl_attr))\n            \n            left_ctrl_at
+tr = ctrl_attr.replace('_R','_L')\n                        \n            cmds.setAttr('{0}.{1}'.format(left_ctrl_name, ctrl_attr), get_values)\n        \n    cmds.copyKey(ctrl)\n    cmds.pasteKey(left_ctrl_name)\n\n\n\nmirror_key()\n\n\n\n\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import facialExp_UI\nreload(facialExp_UI)" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import facialExp_UI\nreload(facialExp_UI)" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "FacialExport" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0.9843 0.3098 0.0784 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import facialExp_UI\nreload(facialExp_UI)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import facialPBExport_UI\nreload(facialPBExport_UI)" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import facialPBExport_UI\nreload(facialPBExport_UI)" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "FacialPB" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import facialPBExport_UI\nreload(facialPBExport_UI)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "animTools" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "animTools" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "anim" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "<function callback at 0x000001F470DBB7B8>" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Namespace Editor" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Namespace Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "NE" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconWindow.png" 
+        -image1 "menuIconWindow.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "NamespaceEditor" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "'''\nCreated on 2020. 8. 7.\nNXN\n@author: LeeSungJun\n'''\nimport maya.cmds as cmds\nimport pymel.core as pm\nimport maya.mel as mel\n\nchr_name='Character'\n\ndef create(charName):\n   \n\n    charDef = mel.eval('hikCreateCharacter(\"'+charName+'\")')\n\n    try:\n        mel.eval('hikUpdateCharacterList()')\n        mel.eval('hikSelectDefinitionTab()')\n    except:\n        pass\n\n    \n    mel.eval('setCharacterObject(\"Root\",\"'+charDef+'\",0,0)')\n    mel.eval('setCharacterObject(\"Rig_Pelvis\",\"'+charDef+'\",1,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine\",\"'+charDef+'\",8,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine1\",\"'+charDef+'\",23,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine2\",\"'+charDef+'\",24,0)')\n\n    mel.eval('setCharacterObject(\"Rig_L_Thigh\",\"'+charDef+'\",2,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Calf\",\"'+charDef+'\",3,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Foot\",\"'+charDef+'\",4,0)')\n    mel.ev
+al('setCharacterObject(\"Rig_L_Toe0\",\"'+charDef+'\",16,0)')\n    \n    mel.eval('setCharacterObject(\"Rig_R_Thigh\",\"'+charDef+'\",5,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Calf\",\"'+charDef+'\",6,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Foot\",\"'+charDef+'\",7,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Toe0\",\"'+charDef+'\",17,0)')\n    \n    mel.eval('setCharacterObject(\"Rig_Head\",\"'+charDef+'\",15,0)')\n    mel.eval('setCharacterObject(\"Rig_Neck\",\"'+charDef+'\",20,0)')\n\n    mel.eval('setCharacterObject(\"Rig_L_Clavicle\",\"'+charDef+'\",18,0)')\n    mel.eval('setCharacterObject(\"Rig_L_UpperArm\",\"'+charDef+'\",9,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ForeArm\",\"'+charDef+'\",10,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Hand\",\"'+charDef+'\",11,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger0\",\"'+charDef+'\",50,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger01\",\"'+charDef+'\",51,0)')\n    mel.eval('setCharacterObject(\"
+Rig_L_Finger02\",\"'+charDef+'\",52,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger1\",\"'+charDef+'\",54,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger11\",\"'+charDef+'\",55,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger12\",\"'+charDef+'\",56,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger2\",\"'+charDef+'\",58,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger21\",\"'+charDef+'\",59,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger22\",\"'+charDef+'\",60,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger3\",\"'+charDef+'\",62,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger31\",\"'+charDef+'\",63,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger32\",\"'+charDef+'\",64,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger4\",\"'+charDef+'\",66,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger41\",\"'+charDef+'\",67,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger42\",\"'+charDef+'\",68,0)')\n    \n    \n\n    mel.eval('setCharac
+terObject(\"Rig_R_Clavicle\",\"'+charDef+'\",19,0)')\n    mel.eval('setCharacterObject(\"Rig_R_UpperArm\",\"'+charDef+'\",12,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ForeArm\",\"'+charDef+'\",13,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Hand\",\"'+charDef+'\",14,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger0\",\"'+charDef+'\",74,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger01\",\"'+charDef+'\",75,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger02\",\"'+charDef+'\",76,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger1\",\"'+charDef+'\",78,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger11\",\"'+charDef+'\",79,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger12\",\"'+charDef+'\",80,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger2\",\"'+charDef+'\",82,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger21\",\"'+charDef+'\",83,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger22\",\"'+charDef+'\",84,0)')\n    mel.eval('setCharacterObj
+ect(\"Rig_R_Finger3\",\"'+charDef+'\",86,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger31\",\"'+charDef+'\",87,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger32\",\"'+charDef+'\",88,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger4\",\"'+charDef+'\",90,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger41\",\"'+charDef+'\",91,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger42\",\"'+charDef+'\",92,0)')\n    \n    \n    mel.eval('setCharacterObject(\"Rig_L_UpperTwist\",\"'+charDef+'\",176,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ForeTwist\",\"'+charDef+'\",177,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ThighTwist\",\"'+charDef+'\",172,0)')\n    \n    \n    mel.eval('setCharacterObject(\"Rig_R_UpperTwist\",\"'+charDef+'\",178,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ForeTwist\",\"'+charDef+'\",179,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ThighTwist\",\"'+charDef+'\",174,0)')\n    \n    mel.eval('hikToggleLockDefinition()')\n    \n    \n\ncre
+ate(chr_name)\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "'''\nCreated on 2020. 8. 7.\nNXN\n@author: LeeSungJun\n'''\nimport ma..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "T-HIK" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "'''\nCreated on 2020. 8. 7.\nNXN\n@author: LeeSungJun\n'''\nimport maya.cmds as cmds\nimport pymel.core as pm\nimport maya.mel as mel\n\nchr_name='Character'\n\ndef create(charName):\n   \n\n    charDef = mel.eval('hikCreateCharacter(\"'+charName+'\")')\n\n    try:\n        mel.eval('hikUpdateCharacterList()')\n        mel.eval('hikSelectDefinitionTab()')\n    except:\n        pass\n\n    \n    mel.eval('setCharacterObject(\"Root\",\"'+charDef+'\",0,0)')\n    mel.eval('setCharacterObject(\"Rig_Pelvis\",\"'+charDef+'\",1,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine\",\"'+charDef+'\",8,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine1\",\"'+charDef+'\",23,0)')\n    mel.eval('setCharacterObject(\"Rig_Spine2\",\"'+charDef+'\",24,0)')\n\n    mel.eval('setCharacterObject(\"Rig_L_Thigh\",\"'+charDef+'\",2,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Calf\",\"'+charDef+'\",3,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Foot\",\"'+charDef+'\",4,0)')\n    mel.eval(
+'setCharacterObject(\"Rig_L_Toe0\",\"'+charDef+'\",16,0)')\n    \n    mel.eval('setCharacterObject(\"Rig_R_Thigh\",\"'+charDef+'\",5,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Calf\",\"'+charDef+'\",6,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Foot\",\"'+charDef+'\",7,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Toe0\",\"'+charDef+'\",17,0)')\n    \n    mel.eval('setCharacterObject(\"Rig_Head\",\"'+charDef+'\",15,0)')\n    mel.eval('setCharacterObject(\"Rig_Neck\",\"'+charDef+'\",20,0)')\n\n    mel.eval('setCharacterObject(\"Rig_L_Clavicle\",\"'+charDef+'\",18,0)')\n    mel.eval('setCharacterObject(\"Rig_L_UpperArm\",\"'+charDef+'\",9,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ForeArm\",\"'+charDef+'\",10,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Hand\",\"'+charDef+'\",11,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger0\",\"'+charDef+'\",50,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger01\",\"'+charDef+'\",51,0)')\n    mel.eval('setCharacterObject(\"Rig
+_L_Finger02\",\"'+charDef+'\",52,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger1\",\"'+charDef+'\",54,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger11\",\"'+charDef+'\",55,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger12\",\"'+charDef+'\",56,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger2\",\"'+charDef+'\",58,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger21\",\"'+charDef+'\",59,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger22\",\"'+charDef+'\",60,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger3\",\"'+charDef+'\",62,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger31\",\"'+charDef+'\",63,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger32\",\"'+charDef+'\",64,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger4\",\"'+charDef+'\",66,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger41\",\"'+charDef+'\",67,0)')\n    mel.eval('setCharacterObject(\"Rig_L_Finger42\",\"'+charDef+'\",68,0)')\n    \n    \n\n    mel.eval('setCharacter
+Object(\"Rig_R_Clavicle\",\"'+charDef+'\",19,0)')\n    mel.eval('setCharacterObject(\"Rig_R_UpperArm\",\"'+charDef+'\",12,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ForeArm\",\"'+charDef+'\",13,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Hand\",\"'+charDef+'\",14,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger0\",\"'+charDef+'\",74,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger01\",\"'+charDef+'\",75,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger02\",\"'+charDef+'\",76,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger1\",\"'+charDef+'\",78,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger11\",\"'+charDef+'\",79,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger12\",\"'+charDef+'\",80,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger2\",\"'+charDef+'\",82,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger21\",\"'+charDef+'\",83,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger22\",\"'+charDef+'\",84,0)')\n    mel.eval('setCharacterObject
+(\"Rig_R_Finger3\",\"'+charDef+'\",86,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger31\",\"'+charDef+'\",87,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger32\",\"'+charDef+'\",88,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger4\",\"'+charDef+'\",90,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger41\",\"'+charDef+'\",91,0)')\n    mel.eval('setCharacterObject(\"Rig_R_Finger42\",\"'+charDef+'\",92,0)')\n    \n    \n    mel.eval('setCharacterObject(\"Rig_L_UpperTwist\",\"'+charDef+'\",176,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ForeTwist\",\"'+charDef+'\",177,0)')\n    mel.eval('setCharacterObject(\"Rig_L_ThighTwist\",\"'+charDef+'\",172,0)')\n    \n    \n    mel.eval('setCharacterObject(\"Rig_R_UpperTwist\",\"'+charDef+'\",178,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ForeTwist\",\"'+charDef+'\",179,0)')\n    mel.eval('setCharacterObject(\"Rig_R_ThighTwist\",\"'+charDef+'\",174,0)')\n    \n    mel.eval('hikToggleLockDefinition()')\n    \n    \n\ncreate
+(chr_name)\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Export selected objects (and related info) to a new file" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Export Selection..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "ES" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconFile.png" 
+        -image1 "menuIconFile.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ExportSelection" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Export entire scene (including contents of all references) into one file" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Export All..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "EA" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconFile.png" 
+        -image1 "menuIconFile.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "Export" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import versionctl\nversionctl.versionctl()" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import versionctl\nversionctl.versionctl()" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "v00+1" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import versionctl\nversionctl.versionctl()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "AnimTools" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "AnimTools" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "Anim" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "import animTools.animBuildTools\nreload(animTools.animBuildTools)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+} 

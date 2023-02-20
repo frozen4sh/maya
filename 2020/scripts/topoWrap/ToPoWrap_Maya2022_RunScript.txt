@@ -1,0 +1,1418 @@
+# uncompyle6 version 3.5.0
+# Python bytecode 3.7 (3394)
+# Decompiled from: Python 2.7.5 (default, Nov 16 2020, 22:23:17) 
+# [GCC 4.8.5 20150623 (Red Hat 4.8.5-44)]
+# Embedded file name: C:/Users/Abhishek/Documents/maya/2022/scripts\topoWrap.py
+# Size of source mod 2**32: 60682 bytes  '314257216956563674'
+import uuid,platform
+
+PCN=platform.node()
+loc = str(uuid.uuid4())
+loc = loc.split('-')
+cmds.optionVar(sv=['sphereAxisModeTW', loc[0]])
+cmds.optionVar(sv=['cubeAxisModeTW', loc[2]])
+cmds.optionVar(sv=['planeAxisModeTW', loc[3]])
+cmds.optionVar(sv=['coneAxisModeTW', loc[1]])
+cmds.optionVar(sv=['cylinderAxisModeTW', PCN])
+cmds.savePrefs()
+cmds.scriptEditorInfo(clearHistory=1)
+#from maya.cmds import cmds
+import maya.cmds as cmds
+#from maya.mel import mel
+import maya.mel as mel
+from functools import partial
+import random as rand
+from math import *
+import time
+import maya.api.OpenMaya as om
+#from pymel.core import core as pm
+import pymel.core as pm
+import pymel.core as core
+import colorsys, json
+
+def Func1(mode='cust'):
+    networkNodes = cmds.ls(type='network')
+    if networkNodes:
+        for node in networkNodes:
+            if cmds.attributeQuery('isAtrapStripNode', node=node, exists=True):
+                pass
+            if cmds.getAttr(node + '.isAtrapStripNode'):
+                if mode == 'all':
+                    trapStripNodes.append(node)
+            elif mode == 'tras':
+                if cmds.attributeQuery('connectedtrasNode', node=node, exists=True):
+                    trapStripNodes.append(node)
+                elif not cmds.attributeQuery('connectedtrasNode', node=node, exists=True):
+                    trapStripNodes.append(node)
+
+
+def Func2():
+    return 10
+
+
+def tuts(*args):
+    import webbrowser
+    webbrowser.open('https://www.youtube.com/playlist?list=PLjdbFNyrLnM1i2jBLtlSnaqKdHr3jM0gE')
+
+
+def aboutUs(*args):
+    import webbrowser
+    webbrowser.open('https://www.facebook.com/UnPlugTools')
+
+
+def otherProducts(*args):
+    import webbrowser
+    webbrowser.open('https://gumroad.com/unplugtools')
+
+
+def bakeTex(selectedMenuItem, *args):
+    try:
+        res = cmds.optionMenu(selectedMenuItem, query=True, value=True)
+        res = int(res)
+        initialTime = time.time()
+        sel = cmds.ls(sl=1)
+        if len(sel) != 1:
+            cmds.warning('Please select one Valid Retopo-mesh for Texture Baking')
+        if len(sel) == 1:
+            progres = cmds.window(t=' Texture Baking in Progress ')
+            cmds.columnLayout()
+            progressControl = cmds.progressBar(width=380)
+            cmds.showWindow(progres)
+            progressInc = cmds.progressBar(progressControl, edit=True, pr=0)
+            sel = cmds.ls(sl=1)[0]
+            vs = cmds.getAttr(sel + '.visibility')
+            if vs == 0:
+                cmds.setAttr(sel + '.visibility', 1)
+            cmds.select(topoSetup)
+            loadSetup()
+            cmds.select(cl=1)
+            bb = cmds.xform(sel, bb=1, q=1)
+            wd = bb[3] - bb[0]
+            ht = bb[4] - bb[1]
+            ln = bb[5] - bb[2]
+            avg = (ln + wd + ht) / 3
+            val = 0.01
+            dup = cmds.duplicate(sel)[0]
+            cmds.displaySmoothness(divisionsU=0, divisionsV=0, pointsWire=4, pointsShaded=1, polygonObject=1)
+            cmds.polySmooth(dup, mth=0, sdt=0, ovb=1, ofb=3, ofc=0, ost=0, ocr=0, dv=1, bnr=1, c=1,
+              kb=0,
+              ksb=0,
+              khe=0,
+              kt=1,
+              kmb=1,
+              suv=1,
+              peh=0,
+              sl=1,
+              dpe=1,
+              ps=0.1,
+              ro=1,
+              ch=0)
+            progressInc = cmds.progressBar(progressControl, edit=True, pr=10)
+            cmds.select(dup, mb)
+            cmds.CreateShrinkWrap()
+            shp = cmds.listRelatives(s=1)[0]
+            shwrp = cmds.listConnections(shp, type='shrinkWrap')[0]
+            cmds.setAttr(shwrp + '.projection', 4)
+            cmds.select(cl=1)
+            cmds.delete(dup, ch=1)
+            progressInc = cmds.progressBar(progressControl, edit=True, pr=50)
+            tifBakePath = cmds.workspace(q=1, rd=1) + 'sourceimages/'
+            fileN = tifBakePath + sel + '_topoWrapTex'
+            print(fileN)
+            cmds.surfaceSampler(mo='diffuseRGB', fn=fileN, ff='tif', s=mb, t=dup,
+              uv='map1',
+              mw=res,
+              mh=res,
+              ss=0,
+              so=0,
+              msd=(avg * val * 1.1),
+              max=1,
+              sp='tangent',
+              mm=1,
+              sh=1,
+              ft=0,
+              fs=1,
+              os=1,
+              sm=1,
+              ugn=1,
+              imf=0,
+              fu=0,
+              fv=0)
+            finalTime = time.time()
+            TotalTime = finalTime - initialTime
+            TotalTime = round(TotalTime, 2)
+            progressInc = cmds.progressBar(progressControl, edit=True, pr=100)
+            cmds.deleteUI(progres)
+            cmds.warning('Tex Baking done- Time Taken: ' + str(TotalTime) + ' secs --- Texture Path:  ' + tifBakePath + fileN + '.tif')
+            cmds.select(sel)
+            if vs == 0:
+                cmds.setAttr(sel + '.visibility', 0)
+            cmds.delete(dup)
+    except:
+        cmds.warning('No Valid Retopo Setup Loaded')
+
+
+def toggleBallPnts(*args):
+    try:
+        cmds.select(topoSetup)
+        loadSetup()
+        elems = cmds.listRelatives(c=1)
+        cmds.select(cl=1)
+        pntsA = len(elems) == 6 and cmds.listRelatives(ga, c=1, pa=1)
+        pntsB = cmds.listRelatives(gb, c=1, pa=1)
+        if pntsA == None:
+            if pntsB == None:
+                cmds.warning('No Topo-Points found in the Setup')
+            else:
+                sphA = []
+                sphB = []
+                for e, f in zip(pntsA, pntsB):
+                    posA = cmds.xform(e, t=1, q=1, ws=1)
+                    posB = cmds.xform(f, t=1, q=1, ws=1)
+                    rad = float(cmds.getAttr(elems[4] + '.scl')) / 150
+                    s = cmds.sphere(r=rad)[0]
+                    cmds.setAttr(s + '.overrideEnabled', 1)
+                    cmds.setAttr(s + '.overrideDisplayType', 2)
+                    sphA.append(s)
+                    cmds.xform(s, t=posA, ws=1)
+                    rad = float(cmds.getAttr(elems[5] + '.scl')) / 150
+                    s = cmds.sphere(r=rad)[0]
+                    cmds.setAttr(s + '.overrideEnabled', 1)
+                    cmds.setAttr(s + '.overrideDisplayType', 2)
+                    sphB.append(s)
+                    cmds.xform(s, t=posB, ws=1)
+
+                grpA = cmds.group(sphA, n='markGeoA')
+                cmds.hyperShade(assign=(lam3[0]))
+                cmds.parent(grpA, topoSetup)
+                grpB = cmds.group(sphB, n='markGeoB')
+                cmds.hyperShade(assign=(lam4[0]))
+                cmds.parent(grpB, topoSetup)
+                cmds.select(cl=1)
+                cmds.warning('Geo Markers ON')
+            if len(elems) > 6:
+                cmds.delete(elems[6], elems[7])
+                cmds.warning('Geo Markers OFF')
+    except:
+        cmds.warning('No Valid Retopo Setup Loaded')
+
+
+def snapMarkers(*args):
+    try:
+        cmds.select(topoSetup)
+        loadSetup()
+        cmds.select(cl=1)
+        cmds.warning('Markers Snapping in Progress')
+        CPOM1 = cmds.createNode('closestPointOnMesh')
+        cmds.connectAttr(ma + '.worldMatrix', CPOM1 + '.inputMatrix')
+        cmds.connectAttr(ma + '.worldMesh', CPOM1 + '.inMesh')
+        CPOM2 = cmds.createNode('closestPointOnMesh')
+        cmds.connectAttr(mb + '.worldMatrix', CPOM2 + '.inputMatrix')
+        cmds.connectAttr(mb + '.worldMesh', CPOM2 + '.inMesh')
+        pntsA = cmds.listRelatives(ga, c=1, pa=1)
+        pntsB = cmds.listRelatives(gb, c=1, pa=1)
+        if pntsA == None:
+            if pntsB == None:
+                cmds.warning('No Topo-Points found in the Setup')
+            else:
+                x = len(pntsB)
+                window = cmds.window(t='Markers Snapping Progress')
+                cmds.columnLayout()
+                progressControl = cmds.progressBar(maxValue=x, width=300)
+                cmds.showWindow(window)
+                p = 0
+                for e, f in zip(pntsA, pntsB):
+                    posA = cmds.xform(e, t=1, q=1, ws=1)
+                    cmds.setAttr(CPOM1 + '.inPositionX', posA[0])
+                    cmds.setAttr(CPOM1 + '.inPositionY', posA[1])
+                    cmds.setAttr(CPOM1 + '.inPositionZ', posA[2])
+                    newPosA = cmds.getAttr(CPOM1 + '.p')[0]
+                    cmds.lockNode(e, lock=0)
+                    unlockT(e)
+                    cmds.xform(e, t=newPosA, ws=1)
+                    lockT(e)
+                    cmds.lockNode(e, lock=1)
+                    posB = cmds.xform(f, t=1, q=1, ws=1)
+                    cmds.setAttr(CPOM2 + '.inPositionX', posB[0])
+                    cmds.setAttr(CPOM2 + '.inPositionY', posB[1])
+                    cmds.setAttr(CPOM2 + '.inPositionZ', posB[2])
+                    newPosB = cmds.getAttr(CPOM2 + '.p')[0]
+                    x1 = str(posB[0])
+                    x1 = float(x1[0:8])
+                    x2 = str(newPosB[0])
+                    x2 = float(x2[0:8])
+                    y1 = str(posB[1])
+                    y1 = float(y1[0:8])
+                    y2 = str(newPosB[1])
+                    y2 = float(y2[0:8])
+                    z1 = str(posB[2])
+                    z1 = float(z1[0:8])
+                    z2 = str(newPosB[2])
+                    z2 = float(z2[0:8])
+                    if x1 != x2:
+                        pass
+                    if y1 != y2:
+                        if z1 != z2:
+                            cmds.lockNode(f, lock=0)
+                            unlockT(f)
+                            cmds.xform(f, t=newPosB, ws=1)
+                            lockT(f)
+                            cmds.lockNode(f, lock=1)
+                        progressInc = cmds.progressBar(progressControl, edit=True, pr=p)
+                        p = p + 1
+
+            cmds.delete(CPOM1, CPOM2)
+            cmds.deleteUI(window)
+            cmds.warning('Markers Snapping Complete')
+    except:
+        cmds.warning('No Valid Retopo Setup Loaded')
+
+
+def exportPoints(*args):
+    global posAs
+    global posBs
+    try:
+        cmds.select(topoSetup)
+        loadSetup()
+        cmds.select(cl=1)
+        pntsA = cmds.listRelatives(ga, c=1, pa=1)
+        pntsB = cmds.listRelatives(gb, c=1, pa=1)
+        if pntsA == None:
+            if pntsB == None:
+                cmds.warning('No Topo-Points found in the Setup')
+        else:
+            posAs = []
+            posBs = []
+            for e, f in zip(pntsA, pntsB):
+                posA = cmds.xform(e, t=1, q=1, ws=1)
+                posB = cmds.xform(f, t=1, q=1, ws=1)
+                posAs.append(posA)
+                posBs.append(posB)
+
+            PntsPosPair = (
+             posAs, posBs)
+            PntsPosPair = json.dumps(PntsPosPair)
+            savePath = cmds.fileDialog2(fileFilter='*.marks', dialogStyle=2)
+            f = open(savePath[0], 'w+')
+            f.write(PntsPosPair)
+            f.close()
+    except:
+        cmds.warning('No Valid Retopo Setup Loaded')
+
+
+def importPoints(*args):
+    try:
+        cmds.select(topoSetup)
+        loadSetup()
+        cmds.select(cl=1)
+        pntsA = cmds.listRelatives(ga, c=1, pa=1)
+        pntsB = cmds.listRelatives(gb, c=1, pa=1)
+        if ga == None:
+            if gb == None:
+                cmds.warning('No Topo-Points found in the Setup')
+        elif pntsA != None:
+            cmds.warning('The Setup already got Points')
+        else:
+            if pntsA == None:
+                loadPath = cmds.fileDialog()
+                load = open(loadPath, 'r')
+                PntsPosPair = load.read()
+                PntsPosPair = json.loads(PntsPosPair)
+                c = 1
+                for ps in PntsPosPair:
+                    cnt = 1
+                    for e in ps:
+                        s = cmds.sphere(r=0.01)[0]
+                        cmds.xform(s, t=e, ws=1)
+                        an = cmds.annotate(s, p=(e[0], e[1], e[2]))
+                        cmds.pickWalk(d='up')
+                        an = cmds.ls(sl=1)[0]
+                        cmds.delete(s)
+                        cmds.setAttr(an + '.displayArrow', 0)
+                        cmds.setAttr((an + '.text'), cnt, type='string')
+                        cmds.setAttr(an + '.overrideEnabled', 1)
+                        cmds.setAttr(an + '.overrideRGBColors', 1)
+                        if c == 1:
+                            cmds.setAttr(an + '.overrideColorRGB', 1, 0, 0)
+                        if c == 2:
+                            cmds.setAttr(an + '.overrideColorRGB', 0, 1, 0)
+                        cmds.select(an)
+                        if c == 1:
+                            cmds.rename('markerA_' + str(cnt))
+                        if c == 2:
+                            cmds.rename('markerB_' + str(cnt))
+                        an = cmds.ls(sl=1)[0]
+                        cnt += 1
+                        lockT(an)
+                        ann = pm.ls(sl=1)
+                        if c == 1:
+                            cmds.parent(an, ga)
+                        if c == 2:
+                            cmds.parent(an, gb)
+                        pm.lockNode(ann)
+                        cmds.select(cl=1)
+
+                    c += 1
+
+    except:
+        cmds.warning('No Valid Retopo Setup Loaded')
+
+
+def hideUnhidePnts(*args):
+    try:
+        cmds.select(topoSetup)
+        loadSetup()
+        cmds.select(cl=1)
+        pntsA = cmds.listRelatives(ga, c=1, pa=1)
+        pntsB = cmds.listRelatives(gb, c=1, pa=1)
+        if pntsA == None:
+            cmds.warning('No Topo-Points found in the Setup')
+        else:
+            hq = cmds.getAttr(pntsA[0] + '.visibility')
+            for e, f in zip(pntsA, pntsB):
+                if hq == True:
+                    cmds.setAttr(e + '.visibility', 0)
+                    cmds.setAttr(f + '.visibility', 0)
+                    cmds.warning('Show - OFF')
+                if hq == False:
+                    cmds.setAttr(e + '.visibility', 1)
+                    cmds.setAttr(f + '.visibility', 1)
+                    cmds.warning('Show - ON')
+
+    except:
+        cmds.warning('No Valid Retopo Setup Loaded')
+
+
+def deleteSetup(*args):
+    try:
+        cmds.select(topoSetup)
+        loadSetup()
+        pntsA = cmds.listRelatives(ga, c=1, pa=1)
+        pntsB = cmds.listRelatives(gb, c=1, pa=1)
+        try:
+            for e in pntsA:
+                cmds.lockNode(e, lock=0)
+
+            for e in pntsB:
+                cmds.lockNode(e, lock=0)
+
+        except:
+            pass
+
+        cmds.lockNode(ma, lock=0)
+        cmds.lockNode(mb, lock=0)
+        unlockT(ma)
+        unlockT(mb)
+        cmds.select(ga)
+        cmds.pickWalk(d='up')
+        cmds.delete()
+        cmds.warning('Retopo Setup Deleted')
+    except:
+        cmds.warning('No Retopo Setup Found')
+
+
+def loadSetup(*args):
+    global ga
+    global gb
+    global lam1
+    global lam2
+    global lam3
+    global lam4
+    global ma
+    global mb
+    global topoSetup
+    sell = cmds.ls(sl=1, l=1)
+    topoSetup = cmds.ls(sl=1, l=1)
+    if len(sell) == 0:
+        cmds.warning('Please Select A Retopo Setup to Load')
+    else:
+        try:
+            sel = cmds.listRelatives(sell, c=1, pa=1)
+            ga = sel[0]
+            gas = ga.split('|')
+            if len(gas) > 1:
+                ga = gas[(len(gas) - 1)]
+            if ga != 'markers_A_grp':
+                cmds.warning('Please Select B Valid Retopo Setup to Load')
+            else:
+                gb = sel[1]
+                ma = sel[2]
+                mb = sel[3]
+                shp = cmds.listRelatives(ma, pa=1)[0]
+                lc = cmds.listConnections(shp)
+                lam1 = cmds.listConnections(lc, type='lambert')[0]
+                shp = cmds.listRelatives(mb, pa=1)[0]
+                lc = cmds.listConnections(shp)
+                lam2 = cmds.listConnections(lc, type='lambert')[0]
+                lam3 = cmds.ls('markerAColor')
+                lam4 = cmds.ls('markerBColor')
+                cmds.warning(' Retopo Setup Loadaded')
+        except:
+            cmds.warning('Please Select C Valid Retopo Setup to Load')
+
+
+def createExcludeSet(*args):
+    global excludeSet
+    sel = cmds.ls(sl=1, fl=1)
+    if len(sel) == 0:
+        cmds.warning('Please Select some Vertices to Exclude from Snap')
+    else:
+        try:
+            vtx = sel[0].split('[')[0]
+            vtxN = vtx.split('.')[1]
+            if vtxN == 'vtx':
+                excludeSet = cmds.sets(n='excludeSet')
+            else:
+                cmds.warning('Please Select some Vertices to Exclude from Snap')
+        except:
+            cmds.warning('Please Select some Vertices to Exclude from Snap')
+
+
+def toggleRefMode(*args):
+    try:
+        cmds.select(topoSetup)
+        loadSetup()
+        cmds.select(cl=1)
+        ord = cmds.getAttr(ma + '.overrideEnabled')
+        if ord == 1:
+            cmds.setAttr(ma + '.overrideEnabled', 0)
+            cmds.setAttr(mb + '.overrideEnabled', 0)
+            cmds.warning('Set to Normal Select Mode')
+        if ord == 0:
+            cmds.setAttr(ma + '.overrideEnabled', 1)
+            cmds.setAttr(mb + '.overrideEnabled', 1)
+            cmds.warning('Set to Reference Mode')
+    except:
+        cmds.warning('No Retopo Setup Found')
+
+
+def createSetup(*args):
+    global ga
+    global gb
+    global lam1
+    global lam2
+    global lam3
+    global lam4
+    global ma
+    global mb
+    global topoSetup
+    sell = cmds.ls(sl=1)
+    if len(sell) == 2:
+        sel = cmds.duplicate(sell)
+        cmds.hide(sell)
+        pls = []
+        for e in sel:
+            cmds.setAttr(e + '.overrideEnabled', 1)
+            cmds.setAttr(e + '.overrideDisplayType', 2)
+            bb = cmds.xform(e, bb=1, q=1)
+            cntr = cmds.objectCenter(e, gl=1)
+            ln = bb[4] - bb[1]
+            ht = bb[5] - bb[2]
+            pl = cmds.polyPlane(w=(ln * 1.2), h=(ht * 1.2), n='axisRef_01')[0]
+            cmds.addAttr(pl, ln='scl', dt='string')
+            cmds.setAttr((pl + '.scl'), ht, type='string', l=1)
+            pls.append(pl)
+            shp = cmds.listRelatives(pl, s=1, pa=1)[0]
+            cmds.setAttr(shp + '.template', 1)
+            cmds.rotate(0, 0, 90)
+            cmds.move(cntr[0], cntr[1], cntr[2])
+            cmds.makeIdentity(apply=1, t=1, r=1, s=1, n=0, pn=1)
+            cmds.delete(ch=1)
+
+        topoSetup = cmds.group(em=1, n='Retop_Setup_01')
+        ga = cmds.group(em=1, n='markers_A_grp')
+        gb = cmds.group(em=1, n='markers_B_grp')
+        cmds.parent(ga, gb, topoSetup)
+        cmds.parent(sel, topoSetup)
+        cmds.parent(pls, topoSetup)
+        sel = cmds.listRelatives(topoSetup, c=1, pa=1)
+        ga = sel[0]
+        gb = sel[1]
+        ma = sel[2]
+        mb = sel[3]
+        lockT(sel[2])
+        lockT(sel[3])
+        cmds.lockNode(ma)
+        cmds.lockNode(mb)
+        lam1 = cmds.shadingNode('lambert', asShader=1, n='BaseTopoColor')
+        lam2 = cmds.shadingNode('lambert', asShader=1, n='RawModelColor')
+        lam3 = cmds.shadingNode('lambert', asShader=1, n='markerAColor')
+        lam4 = cmds.shadingNode('lambert', asShader=1, n='markerBColor')
+        cmds.setAttr((lam3 + '.color'), 1, 0, 0, type='double3')
+        cmds.setAttr((lam4 + '.color'), 0, 1, 0, type='double3')
+        cmds.select(ma)
+        cmds.hyperShade(assign=lam1)
+        cmds.select(mb)
+        cmds.hyperShade(assign=lam2)
+        cmds.select(cl=1)
+    else:
+        cmds.warning('Please Select 2 meshes: a Source and a Target Mesh')
+
+
+def tweakPointsA(*args):
+    try:
+        lamCol1 = cmds.getAttr(lam1 + '.color')
+        lamCol2 = cmds.getAttr(lam2 + '.color')
+        if lamCol1[0][0] == 0.5:
+            exitTweakPoints()
+            sel = cmds.ls(sl=1)
+            pntsA = cmds.listRelatives(ga, c=1, pa=1)
+            for e in pntsA:
+                cmds.lockNode(e, lock=0)
+                unlockT(e)
+                cmds.lockNode(e, lock=1)
+
+            cmds.setAttr((lam1 + '.color'), 0.2, 0.3, 0.5, type='double3')
+            cmds.setAttr((lam2 + '.color'), 0.5, 0.5, 0.5, type='double3')
+            cmds.setToolTo('Move')
+            cmds.select(ma)
+            cmds.makeLive()
+            cmds.select(sel)
+        else:
+            exitTweakPoints()
+    except:
+        cmds.warning('No Valid Retopo Setup Found')
+
+
+def tweakPointsB(*args):
+    try:
+        lamCol1 = cmds.getAttr(lam1 + '.color')
+        lamCol2 = cmds.getAttr(lam2 + '.color')
+        if lamCol2[0][0] == 0.5:
+            exitTweakPoints()
+            sel = cmds.ls(sl=1)
+            pntsB = cmds.listRelatives(gb, c=1, pa=1)
+            for e in pntsB:
+                cmds.lockNode(e, lock=0)
+                unlockT(e)
+                cmds.lockNode(e, lock=1)
+
+            cmds.setAttr((lam2 + '.color'), 0.2, 0.3, 0.5, type='double3')
+            cmds.setAttr((lam1 + '.color'), 0.5, 0.5, 0.5, type='double3')
+            cmds.setToolTo('Move')
+            cmds.select(mb)
+            cmds.makeLive()
+            cmds.select(sel)
+        else:
+            exitTweakPoints()
+    except:
+        cmds.warning('No Valid Retopo Setup Found')
+
+
+def paintRelax(*args):
+    sel = cmds.ls(sl=1)
+    if len(sel) == 0:
+        cmds.warning('Please Select a Mesh to Relax')
+    else:
+        cmds.SculptGeometryTool()
+        try:
+            cmds.artPuttyCtx('artPuttyContext')
+        except:
+            pass
+
+        cmds.setToolTo('artPuttyContext')
+        cmds.toolPropertyWindow()
+        mel.eval('artPuttyCtx -e -opacity 0.002 `currentCtx`')
+        mel.eval('artPuttyCtx -e -reflection  true `currentCtx`')
+        cmds.stackTrace(state=0)
+        mel.eval('artUpdatePuttyOperation artPuttyCtx relax ')
+        cmds.stackTrace(state=1)
+        cmds.scriptEditorInfo(clearHistory=True)
+
+
+def exitTweakPoints(*args):
+    sel = cmds.ls(sl=1)
+    pntsA = cmds.listRelatives(ga, c=1, pa=1)
+    pntsB = cmds.listRelatives(gb, c=1, pa=1)
+    try:
+        for e in pntsA:
+            cmds.lockNode(e, lock=0)
+            lockT(e)
+            cmds.lockNode(e, lock=1)
+
+    except:
+        pass
+
+    try:
+        for e in pntsB:
+            cmds.lockNode(e, lock=0)
+            lockT(e)
+            cmds.lockNode(e, lock=1)
+
+    except:
+        pass
+
+    cmds.setAttr((lam1 + '.color'), 0.5, 0.5, 0.5, type='double3')
+    cmds.setAttr((lam2 + '.color'), 0.5, 0.5, 0.5, type='double3')
+    cmds.select(cl=1)
+    cmds.makeLive()
+    cmds.select(sel)
+
+
+def deletePoints(*args):
+    sel = cmds.ls(sl=1)
+    if len(sel) == 0:
+        cmds.warning('Please Select Marker-Points to delete')
+    else:
+        try:
+            pntsA = cmds.listRelatives(ga, c=1, pa=1)
+            sell = []
+            for e in sel:
+                lr = cmds.listRelatives(e, c=1, pa=1)
+                typ = cmds.objectType(lr)
+                if typ == 'annotationShape':
+                    sell.append(e)
+                pntsA = cmds.listRelatives(ga, c=1, pa=1)
+                pntsB = cmds.listRelatives(gb, c=1, pa=1)
+                for sl in sell:
+                    for e, f in zip(pntsA, pntsB):
+                        if sl == e or sl == f:
+                            cmds.lockNode(e, lock=0)
+                            cmds.lockNode(f, lock=0)
+                            cmds.delete(e, f)
+
+                    try:
+                        cmds.delete(sl)
+                    except:
+                        pass
+
+                pntsA = cmds.listRelatives(ga, c=1, pa=1)
+                pntsB = cmds.listRelatives(gb, c=1, pa=1)
+                ct = 1
+                try:
+                    for e, f in zip(pntsA, pntsB):
+                        cmds.setAttr((e + '.text'), ct, type='string')
+                        cmds.setAttr((f + '.text'), ct, type='string')
+                        ct += 1
+
+                except:
+                    pass
+
+                cmds.select(cl=1)
+
+        except:
+            cmds.warning('No Valid Retopo Setup found')
+
+
+def mirrorPoints(*args):
+    try:
+        sel = cmds.ls(sl=1)
+        cmds.select(topoSetup)
+        loadSetup()
+        cmds.warning('Done')
+        cmds.select(sel)
+        if len(sel) > 0:
+            pntsA = cmds.listRelatives(ga, c=1, pa=1)
+            pntsB = cmds.listRelatives(gb, c=1, pa=1)
+            lenPnt = len(pntsB)
+            try:
+                cmds.lockNode((pntsA[lenPnt]), lock=0)
+                cmds.delete(pntsA[lenPnt])
+                pntsA = cmds.listRelatives(ga, c=1, pa=1)
+                pntsB = cmds.listRelatives(gb, c=1, pa=1)
+            except:
+                pass
+
+            dupPntsA = []
+            dupPntsB = []
+            for sl in sel:
+                for e, f in zip(pntsA, pntsB):
+                    if sl == e or sl == f:
+                        d = cmds.duplicate(e)[0]
+                        dupPntsA.append(d)
+                        d = cmds.duplicate(f)[0]
+                        dupPntsB.append(d)
+
+        else:
+            pntsA = cmds.listRelatives(ga, c=1, pa=1)
+            pntsB = cmds.listRelatives(gb, c=1, pa=1)
+            if pntsB == None:
+                cmds.warning('No Topo-Points found for Mirroring')
+            else:
+                lenPnt = len(pntsB)
+                try:
+                    cmds.lockNode((pntsA[lenPnt]), lock=0)
+                    cmds.delete(pntsA[lenPnt])
+                    pntsA = cmds.listRelatives(ga, c=1, pa=1)
+                    pntsB = cmds.listRelatives(gb, c=1, pa=1)
+                except:
+                    pass
+
+                pntsAB = (
+                 pntsA, pntsB)
+                for ee in pntsAB:
+                    pv = [
+                     'a']
+                    ng = ['a']
+                    for e in ee:
+                        p = cmds.xform(e, t=1, ws=1, q=1)[0]
+                        pe = [p, e]
+                        if p < 0:
+                            ng.append(pe)
+                        else:
+                            pv.append(pe)
+
+                    xxx = [
+                     [
+                      len(pv), pv], [len(ng), ng]]
+                    xxx.sort()
+                    for e in xxx[0][1]:
+                        try:
+                            cmds.lockNode((e[1]), lock=0)
+                            cmds.delete(e[1])
+                        except:
+                            pass
+
+                pntsA = cmds.listRelatives(ga, c=1, pa=1)
+                pntsB = cmds.listRelatives(gb, c=1, pa=1)
+                dupPntsA = cmds.duplicate(pntsA)
+                dupPntsB = cmds.duplicate(pntsB)
+        if pntsA == None:
+            cmds.warning('No Topo-Points found for Mirroring')
+        else:
+            for e, f in zip(dupPntsA, dupPntsB):
+                unlockT(e)
+                unlockT(f)
+                vl = cmds.getAttr(e + '.translateX')
+                cmds.setAttr(e + '.translateX', -vl)
+                vl = cmds.getAttr(f + '.translateX')
+                cmds.setAttr(f + '.translateX', -vl)
+                lockT(e)
+                lockT(f)
+                cmds.lockNode(e)
+                cmds.lockNode(f)
+
+            pntsA = cmds.listRelatives(ga, c=1)
+            pntsB = cmds.listRelatives(gb, c=1)
+            ct = 1
+            for e, f in zip(pntsA, pntsB):
+                cmds.setAttr((e + '.text'), ct, type='string')
+                cmds.setAttr((f + '.text'), ct, type='string')
+                ct += 1
+
+    except:
+        cmds.warning('No Valid Retopo Setup or Points Found')
+
+
+def drawPoints(*args):
+    try:
+        cmds.select(topoSetup)
+        loadSetup()
+        cmds.warning('Tip: Draw your Topo-Points Alternately on your Source & Target meshes')
+        cmds.jointDisplayScale(0.2)
+        pntsA = cmds.listRelatives(ga, c=1, pa=1)
+        pntsB = cmds.listRelatives(gb, c=1, pa=1)
+        if pntsA == None:
+            pntsA = 0
+        else:
+            pntsA = len(pntsA)
+        if pntsB == None:
+            pntsB = 0
+        else:
+            pntsB = len(pntsB)
+        if pntsA > pntsB:
+            live = mb
+        if pntsA == pntsB:
+            live = ma
+        cmds.select(live)
+        shp = cmds.listRelatives(live)[0]
+        lc = cmds.listConnections(shp)
+        lam = cmds.listConnections(lc, type='lambert')[0]
+        cmds.setAttr((lam + '.color'), 0.2, 0.4, 0.4, type='double3')
+        cmds.makeLive()
+        cmds.JointTool()
+        cmds.scriptJob(event=['DagObjectCreated', 'setPntsJb()'], compressUndo=True)
+        cmds.scriptJob(event=['ToolChanged', 'kldrwJb()'], runOnce=True)
+    except:
+        cmds.warning('No Valid Retopo Setup Found')
+
+
+def lockT(an):
+    cmds.setAttr((an + '.tx'), lock=1)
+    cmds.setAttr((an + '.ty'), lock=1)
+    cmds.setAttr((an + '.tz'), lock=1)
+    cmds.setAttr((an + '.rx'), lock=1)
+    cmds.setAttr((an + '.ry'), lock=1)
+    cmds.setAttr((an + '.rz'), lock=1)
+    cmds.setAttr((an + '.sx'), lock=1)
+    cmds.setAttr((an + '.sy'), lock=1)
+    cmds.setAttr((an + '.sz'), lock=1)
+
+
+def unlockT(an):
+    cmds.setAttr((an + '.tx'), lock=0)
+    cmds.setAttr((an + '.ty'), lock=0)
+    cmds.setAttr((an + '.tz'), lock=0)
+    cmds.setAttr((an + '.rx'), lock=0)
+    cmds.setAttr((an + '.ry'), lock=0)
+    cmds.setAttr((an + '.rz'), lock=0)
+    cmds.setAttr((an + '.sx'), lock=0)
+    cmds.setAttr((an + '.sy'), lock=0)
+    cmds.setAttr((an + '.sz'), lock=0)
+
+
+def setPntsJb(*args):
+    global an2
+    pntsA = cmds.listRelatives(ga, c=1)
+    pntsB = cmds.listRelatives(gb, c=1)
+    if pntsA == None:
+        pntsA = 0
+    else:
+        pntsA = len(pntsA)
+    if pntsB == None:
+        pntsB = 0
+    else:
+        pntsB = len(pntsB)
+    if pntsA > pntsB:
+        cnt = 0
+    if pntsA == pntsB:
+        cnt = 1
+    jt = cmds.ls(sl=1)[0]
+    cmds.setAttr(jt + '.radius', 0.01)
+    p = cmds.xform(jt, t=1, ws=1, q=1)
+    s = cmds.sphere(r=0.01)[0]
+    cmds.xform(s, t=p, ws=1)
+    an = cmds.annotate(s, p=(p[0], p[1], p[2]))
+    cmds.pickWalk(d='up')
+    an = cmds.ls(sl=1)[0]
+    cmds.delete(jt, s)
+    if cnt % 2 != 0:
+        cmds.setAttr((lam2 + '.color'), 0.2, 0.4, 0.4, type='double3')
+        cmds.setAttr((lam1 + '.color'), 0.5, 0.5, 0.5, type='double3')
+        cmds.setAttr(an + '.displayArrow', 0)
+        cmds.setAttr((an + '.text'), (pntsA + 1), type='string')
+        cmds.setAttr(an + '.overrideEnabled', 1)
+        cmds.setAttr(an + '.overrideRGBColors', 1)
+        cmds.setAttr(an + '.overrideColorRGB', 1, 1, 0)
+        cmds.select(an)
+        cmds.rename('markerA_' + str(pntsA + 1))
+        an = cmds.ls(sl=1)[0]
+        lockT(an)
+        ann = pm.ls(sl=1)
+        an2 = pm.ls(sl=1)[0]
+        cmds.parent(an, ga)
+        pm.lockNode(ann)
+        cmds.select(cl=1)
+        cmds.makeLive()
+        live = mb
+        cmds.select(live)
+        cmds.makeLive()
+        live = mb
+    if cnt % 2 == 0:
+        cmds.setAttr((lam2 + '.color'), 0.5, 0.5, 0.5, type='double3')
+        cmds.setAttr((lam1 + '.color'), 0.2, 0.4, 0.4, type='double3')
+        cmds.setAttr(an + '.displayArrow', 0)
+        cmds.setAttr((an + '.text'), (pntsB + 1), type='string')
+        cmds.setAttr(an + '.overrideEnabled', 1)
+        cmds.setAttr(an + '.overrideRGBColors', 1)
+        cmds.setAttr(an + '.overrideColorRGB', 0, 1, 0)
+        try:
+            pm.setAttr(an2 + '.overrideColorRGB', 1, 0, 0)
+        except:
+            pass
+
+        cmds.select(an)
+        cmds.rename('markerB_' + str(pntsB + 1))
+        an = cmds.ls(sl=1)[0]
+        lockT(an)
+        ann = pm.ls(sl=1)
+        cmds.parent(an, gb)
+        pm.lockNode(ann)
+        cmds.select(cl=1)
+        cmds.makeLive()
+        live = ma
+        cmds.select(live)
+        cmds.makeLive()
+        live = ma
+    cmds.scriptEditorInfo(clearHistory=1)
+
+
+def kldrwJb(*args):
+    all = cmds.scriptJob(lj=True)
+    for a in all:
+        if 'setPntsJb' in a:
+            b = int(a.split(':')[0])
+            cmds.scriptJob(kill=(int(a.split(':')[0])))
+            cmds.setAttr((lam1 + '.color'), 0.5, 0.5, 0.5, type='double3')
+            cmds.setAttr((lam2 + '.color'), 0.5, 0.5, 0.5, type='double3')
+            cmds.jointDisplayScale(1)
+            cmds.makeLive()
+
+
+def snapRetopo(*args):
+    try:
+        cmds.select(topoSetup)
+        loadSetup()
+        cmds.warning('Retopo Mesh Creation in Progress')
+        cmds.select(cl=1)
+        try:
+            pntsA = cmds.listRelatives(ga, c=1, pa=1)
+            pntsB = cmds.listRelatives(gb, c=1, pa=1)
+        except:
+            cmds.warning('Please Create Marker Points')
+
+        if pntsB == None:
+            cmds.warning('Please Create Marker Points')
+        else:
+            lenPnt = len(pntsB)
+            if lenPnt < 4:
+                cmds.warning('Cannot create Retopo Mesh, Please create minimum 4 Marker Points or more')
+            else:
+                progres = cmds.window(t=' Creating Retopo Mesh ')
+                cmds.columnLayout()
+                progressControl = cmds.progressBar(width=380)
+                cmds.showWindow(progres)
+                progressInc = cmds.progressBar(progressControl, edit=True, pr=0)
+                try:
+                    cmds.lockNode((pntsA[lenPnt]), lock=0)
+                    cmds.delete(pntsA[lenPnt])
+                    pntsA = cmds.listRelatives(ga, c=1, pa=1)
+                    pntsB = cmds.listRelatives(gb, c=1, pa=1)
+                except:
+                    pass
+
+                jtsA = []
+                pls = []
+                for e in pntsA:
+                    p = cmds.xform(e, t=1, ws=1, q=1)
+                    cmds.select(cl=1)
+                    jt = cmds.joint(radius=0.01, p=(p[0], p[1], p[2]))
+                    cmds.select(cl=1)
+                    pl = cmds.polyPlane(sx=1, sy=1, w=0.001, h=0.001)[0]
+                    cmds.xform(pl, t=p, ws=1)
+                    pls.append(pl)
+                    jtsA.append(jt)
+
+                progressInc = cmds.progressBar(progressControl, edit=True, pr=10)
+                plsGrp = cmds.group(pls)
+                ptc = cmds.polyUnite(ch=0, n='ptc')[0]
+                lowMesh = cmds.duplicate(ma, n='lowMesh')[0]
+                retopMesh = cmds.duplicate(ma, n='retopMesh_01')[0]
+                cmds.polySmooth(lowMesh, ch=0, dv=1)
+                progressInc = cmds.progressBar(progressControl, edit=True, pr=20)
+                cmds.transferAttributes(ptc, lowMesh, transferPositions=1, transferNormals=0, transferUVs=0, transferColors=0, sampleSpace=0,
+                  sourceUvSpace='map1',
+                  targetUvSpace='map1',
+                  searchMethod=3,
+                  flipUVs=0,
+                  colorBorders=1)
+                progressInc = cmds.progressBar(progressControl, edit=True, pr=40)
+                cmds.polyMergeVertex(lowMesh, d=0.005)
+                progressInc = cmds.progressBar(progressControl, edit=True, pr=60)
+                cmds.delete(lowMesh, ch=1)
+                cmds.delete(ptc)
+                cmds.skinCluster(jtsA, lowMesh)
+                cmds.skinCluster(jtsA, retopMesh)
+                cmds.copySkinWeights(lowMesh, retopMesh, noMirror=1, surfaceAssociation='closestPoint', influenceAssociation='closestJoint')
+                for e, f in zip(jtsA, pntsB):
+                    p = cmds.xform(f, t=1, ws=1, q=1)
+                    cmds.xform(e, t=p, ws=1)
+
+                cmds.select(retopMesh)
+                cmds.CenterPivot()
+                cmds.DeleteHistory()
+                cmds.makeIdentity(apply=1, t=1, r=1, s=1, n=0, pn=1)
+                progressInc = cmds.progressBar(progressControl, edit=True, pr=80)
+                baseWrapMesh = cmds.duplicate(retopMesh, n='baseWrap')
+                cmds.transferAttributes(mb, retopMesh, transferPositions=1, transferNormals=0, transferUVs=0, transferColors=0, sampleSpace=0,
+                  sourceUvSpace='map1',
+                  targetUvSpace='map1',
+                  searchMethod=3,
+                  flipUVs=0,
+                  colorBorders=1)
+                cmds.delete(retopMesh, ch=1)
+                cmds.polyNormalPerVertex(retopMesh, ufn=1)
+                cmds.polySoftEdge(retopMesh, a=180, ch=0)
+                cmds.delete(retopMesh, ch=1)
+                bs = cmds.blendShape(baseWrapMesh, retopMesh, n='shapeBlend', w=[(0, 1)])[0]
+                vcnt = cmds.polyEvaluate(retopMesh, v=1)
+                for e in range(vcnt):
+                    cmds.setAttr(bs + '.inputTarget[' + str(0) + '].inputTargetGroup[0].targetWeights' + '[' + str(e) + ']', 0.0)
+
+                try:
+                    cmds.select('excludeSet')
+                    vcnt = cmds.ls(sl=1, fl=1)
+                    vtxs = []
+                    for e in vcnt:
+                        vtx = e.split('[')[0]
+                        vtxN = vtx.split('.')[0]
+                        if vtxN == ma:
+                            vtxs.append(e)
+
+                    for e in vtxs:
+                        vtxNo = e.split('[')[1]
+                        vtxNo = int(vtxNo.split(']')[0])
+                        cmds.setAttr(bs + '.inputTarget[' + str(0) + '].inputTargetGroup[0].targetWeights' + '[' + str(vtxNo) + ']', 1)
+
+                except:
+                    pass
+
+                cmds.delete(baseWrapMesh)
+                cmds.setAttr(retopMesh + '.overrideEnabled', 0)
+                cmds.select(retopMesh)
+                cmds.hyperShade(assign='lambert1')
+                cmds.parent(w=1)
+                cmds.delete(jtsA, lowMesh)
+                progressInc = cmds.progressBar(progressControl, edit=True, pr=100)
+                cmds.deleteUI(progres)
+    except:
+        cmds.warning('No Valid Retopo Setup Found')
+
+
+def killruntimeJbs():
+    all = cmds.scriptJob(lj=True)
+    for a in all:
+        if 'kldrwJb' in a:
+            b = int(a.split(':')[0])
+            cmds.scriptJob(kill=(int(a.split(':')[0])))
+
+
+def paintRetainShape(*args):
+    sel = cmds.ls(sl=1)
+    if len(sel) == 0:
+        cmds.warning('Please Select a Rotopo Mesh to Retain')
+    else:
+        cmds.SculptGeometryTool()
+        try:
+            cmds.artAttrCtx('artAttrBlendShapeContext')
+        except:
+            pass
+
+        cmds.setToolTo('artAttrBlendShapeContext')
+
+
+def enterLicense(*args):
+
+    def feedLCK():
+        result = cmds.promptDialog(title='Enter your License Key for TopoWrap',
+          message='___________Enter your TopoWrap License Key___________',
+          button=[
+         'OK', 'Cancel'],
+          defaultButton='OK',
+          cancelButton='Cancel',
+          dismissString='Cancel')
+        if result == 'OK':
+            enc = cmds.promptDialog(query=True, text=True)
+            enc = str(enc)
+        try:
+
+            def getCPK():
+                return '314257216956563674'
+
+            import base64
+            key = getCPK().encode('ascii')
+            encB64 = enc.encode('ascii')
+            enc2 = base64.urlsafe_b64decode(encB64)
+            dec = []
+            for i in range(len(enc2)):
+                key_c = key[(i % len(key))]
+                dec_c = (256 + enc2[i] - key_c) % 256
+                dec.append(dec_c)
+
+            message = bytes(dec)
+            message = message.decode('ascii')
+            Lic = ''.join(message)
+            Lic = Lic.split('_')
+            chk1 = cmds.optionVar(q='sphereAxisModeTW')
+            chk2 = cmds.optionVar(q='cubeAxisModeTW')
+            if chk1 == Lic[0]:
+                if chk2 == Lic[1]:
+                    cmds.optionVar(sv=['sphereAxisModeTWR', Lic[0]])
+                    cmds.optionVar(sv=['cubeAxisModeTWR', Lic[2]])
+                    cmds.optionVar(sv=['planeAxisModeTWR', Lic[3]])
+                    cmds.optionVar(sv=['coneAxisModeTWR', Lic[1]])
+                    cmds.savePrefs()
+                    cmds.scriptEditorInfo(clearHistory=1)
+                    cmds.warning('CONGRATS..!! Your TopoWrap License is Activated.. Kindly relaunch the Tool UI')
+            else:
+                cmds.warning('License error: Please Enter Correct License Key')
+        except:
+            cmds.warning('License error: Please Enter Correct License Key')
+
+    exs = cmds.optionVar(ex='sphereAxisModeTWR')
+    if exs == 1:
+        cmds.warning('Your Copy is already Licensed')
+    if exs == 0:
+        import platform
+        OS = platform.system()
+        if OS != 'Windows':
+            feedLCK()
+    if OS == 'Windows':
+        feedLCK()
+
+
+def getActKey(*args):
+
+    def genActKY():
+        import uuid, platform, base64
+        PCN = platform.node()
+        OSnVer = platform.platform()
+        MayaVer = cmds.about(version=1)
+        ex1 = cmds.optionVar(ex='sphereAxisModeTW')
+        ex2 = cmds.optionVar(ex='cubeAxisModeTW')
+        ex3 = cmds.optionVar(ex='planeAxisModeTW')
+        ex4 = cmds.optionVar(ex='coneAxisModeTW')
+
+        def createKeyWin():
+            msgA = cmds.optionVar(q='sphereAxisModeTW')
+            msgB = cmds.optionVar(q='cubeAxisModeTW')
+            msgC = cmds.optionVar(q='planeAxisModeTW')
+            msgD = cmds.optionVar(q='coneAxisModeTW')
+            message = msgA + '_' + msgB + '_' + msgC + '_' + msgD + '_' + PCN + '_' + OSnVer + '_' + 'Maya' + MayaVer
+
+            def getCPK():
+                return '252403183365734451157'
+
+            enc = []
+            clear = message.encode('ascii')
+            key = getCPK().encode('ascii')
+            for i in range(len(clear)):
+                key_c = key[(i % len(key))]
+                enc_c = (clear[i] + key_c) % 256
+                enc.append(enc_c)
+
+            encB64 = base64.urlsafe_b64encode(bytes(enc))
+            enc = encB64.decode('ascii')
+            cmds.warning('Please Copy your TopoWrap ACTIVATION KEY.. and email it to- unplug.tools@gmail.com')
+            if cmds.window('ETWin', exists=True):
+                cmds.deleteUI('ETWin')
+            cmds.window('ETWin', title='Activation Key for TopoWrap', h=60, w=600)
+            cmds.columnLayout(adj=True)
+            cmds.text(label='Please Copy your TopoWrap ACTIVATION KEY.. and email it to- unplug.tools@gmail.com')
+            cmds.text(label='  ctrl+A then ctrl+C')
+            cmds.text(label='')
+            cmds.textField('licGBTextField', text=enc, ed=False, annotation='(Ctrl+A) (Ctrl+C)')
+            cmds.text(label='')
+            cmds.showWindow('ETWin')
+            cmds.setFocus('licGBTextField')
+            cmds.warning('Your Activation Key is')
+            cmds.warning(enc)
+
+        if ex1 != 1:
+            if ex2 != 1:
+                pass
+        if ex3 != 1:
+            if ex4 != 1:
+                loc = str(uuid.uuid4())
+                loc = loc.split('-')
+                cmds.optionVar(sv=['sphereAxisModeTW', loc[0]])
+                cmds.optionVar(sv=['cubeAxisModeTW', loc[2]])
+                cmds.optionVar(sv=['planeAxisModeTW', loc[3]])
+                cmds.optionVar(sv=['coneAxisModeTW', loc[1]])
+                cmds.optionVar(sv=['cylinderAxisModeTW', PCN])
+                cmds.savePrefs()
+                cmds.scriptEditorInfo(clearHistory=1)
+                createKeyWin()
+            if ex1 == 1:
+                if ex2 == 1:
+                    if ex3 == 1:
+                        pass
+        if ex4 == 1:
+            createKeyWin()
+
+    exs = cmds.optionVar(ex='sphereAxisModeTWR')
+    if exs == 1:
+        cmds.warning('Your TopoWrap Copy is already Licensed')
+    if exs == 0:
+        import platform
+        OS = platform.system()
+        if OS != 'Windows':
+            genActKY()
+    if OS == 'Windows':
+        genActKY()
+
+
+def removeLicense(*args):
+
+    def remLc():
+        remConfirm = cmds.confirmDialog(title='Confirm', message='Are you sure you want to remove TopoWrap License?', button=['Yes', 'No'], defaultButton='Yes', cancelButton='No', dismissString='No')
+        if remConfirm == 'No':
+            cmds.warning('Relax..Your TopoWrap License has NOT been removed')
+        if remConfirm == 'Yes':
+            reremConfirm = cmds.confirmDialog(title='Confirm', message='Please Re-comfrim..!! Are you sure you want to remove TopoWrap License?', button=['Yes', 'No'], defaultButton='Yes', cancelButton='No', dismissString='No')
+            if reremConfirm == 'No':
+                cmds.warning('Relax..Your TopoWrap License has NOT been removed')
+            if reremConfirm == 'Yes':
+                reeremConfirm = cmds.confirmDialog(title='Confirm', message='FINAL RECONFIRM..!! Your FINALLY SURE you want to REMOVE TopoWrap License?', button=['Yes', 'No'], defaultButton='Yes', cancelButton='No', dismissString='No')
+                if reeremConfirm == 'No':
+                    cmds.warning('Relax..Your TopoWrap License has NOT been removed')
+        if reeremConfirm == 'Yes':
+            cmds.optionVar(sv=['gooh3', 1])
+            cmds.optionVar(remove='sphereAxisModeTW')
+            cmds.optionVar(remove='cubeAxisModeTW')
+            cmds.optionVar(remove='planeAxisModeTW')
+            cmds.optionVar(remove='coneAxisModeTW')
+            cmds.optionVar(remove='sphereAxisModeTWR')
+            cmds.optionVar(remove='cubeAxisModeTWR')
+            cmds.optionVar(remove='planeAxisModeTWR')
+            cmds.optionVar(remove='coneAxisModeTWR')
+            cmds.optionVar(remove='cylinderAxisModeTW')
+            cmds.warning('Your `TopoWrap` License has been successfully REMOVED')
+            cmds.evalDeferred('cmds.quit(f=1)')
+
+    chk1 = cmds.optionVar(ex='sphereAxisModeTWR')
+    if chk1 == 0:
+        cmds.warning('NO LICENSE FOUND..!! Your TopoWrap Product is not Registered yet..!!')
+    if chk1 == 1:
+        import platform
+        OS = platform.system()
+        remLc()
+
+
+def topoWrapUI():
+    for _editor in cmds.lsUI(editors=True):
+        if not cmds.outlinerEditor(_editor, query=True, exists=True):
+            continue
+        _sel_cmd = cmds.outlinerEditor(_editor, query=True, selectCommand=True)
+        if _sel_cmd:
+            if not _sel_cmd.startswith('<function selCom at '):
+                pass
+            else:
+                cmds.outlinerEditor(_editor, edit=True, selectCommand='print("")')
+
+    windowID = 'TopoWrap'
+    if cmds.window(windowID, exists=True):
+        cmds.deleteUI(windowID)
+    import uuid
+    loc = str(uuid.uuid4())        
+    cmds.window(windowID, title='TopoWrap  V1.0 ', menuBar=1, sizeable=1, resizeToFitChildren=1, w=340, h=800)
+    cmds.menu(label=' HELP..!!', tearOff=1)
+    cmds.menuItem(label='Get your Activation Key', c=(partial(getActKey)))
+    cmds.menuItem(label='Enter your License Key', c=(partial(enterLicense)))
+    cmds.menuItem(label='Videos', c=(partial(tuts)))
+    cmds.menuItem(label='About Us', c=(partial(aboutUs)))
+    cmds.menuItem(label='More Products', c=(partial(otherProducts)))
+    cmds.menuItem(label='[Remove License]', c=(partial(removeLicense)), bld=1)
+    cmds.columnLayout(adjustableColumn=1)
+    cmds.text(label='    TOPO-WRAP - Powered by - UNPLUG TOOLS    ', bgc=(0.35, 0.4,
+                                                                          0.45), h=25)
+    cmds.text(label='     unplug.tools@gmail.com     ', bgc=(0.35, 0.4, 0.45), h=20)
+    cmds.text(label='    ', bgc=(0.35, 0.4, 0.4), h=5)
+    cmds.setParent('..')
+
+    def verifyLic():
+        msgA = cmds.optionVar(q='sphereAxisModeTWR')
+        msgB = cmds.optionVar(q='cubeAxisModeTWR')
+        msgC = cmds.optionVar(q='planeAxisModeTWR')
+        msgD = cmds.optionVar(q='coneAxisModeTWR')
+        import platform
+        PCN = platform.node()
+        try:
+            userL = str(msgA) + '_' + str(msgB) + '_' + str(msgC) + '_' + str(msgD) + '_' + PCN
+        except:
+            cmds.warning('License error Please contact your vendor')
+
+        try:
+            msgA = cmds.optionVar(q='sphereAxisModeTW')
+            msgB = cmds.optionVar(q='cubeAxisModeTW')
+            msgC = cmds.optionVar(q='planeAxisModeTW')
+            msgD = cmds.optionVar(q='coneAxisModeTW')
+            msgE = cmds.optionVar(q='cylinderAxisModeTW')
+            key = str(msgA) + '_' + str(msgC) + '_' + str(msgD) + '_' + str(msgB) + '_' + str(msgE)
+        except:
+            cmds.warning('License error: Please contact your vendor')
+
+        return (
+         key, userL)
+    """
+    if verifyLic()[0] != verifyLic()[1]:
+        cmds.window(windowID, e=1, h=340, w=250)
+        cmds.columnLayout(adjustableColumn=1)
+        cmds.text(label='No License Installed in this PC', h=20)
+        cmds.text(label='Click below on <Get your Activation Key>', h=20)
+        cmds.button(label='Get your Activation Key', command=(partial(getActKey)))
+        cmds.text(label='Copy your Unique Activation Key', h=20)
+        cmds.text(label='and mail it to - unplug.tools@gmail.com ', h=20)
+        cmds.text(label='along with your Purchase Receipt ', h=20)
+        cmds.text(label='OR your Purchase email ID ', h=20)
+        cmds.separator(h=10)
+        cmds.text(label='Once you recieve your License Key', h=20)
+        cmds.text(label=' Enter the Key by clicking below ', h=20)
+        cmds.button(label='Enter your License Key', c=(partial(enterLicense)))
+        cmds.separator(h=30)
+        cmds.setParent('..')
+        cmds.showWindow(windowID)
+    """        
+    #x = verifyLic()[0] == verifyLic()[1] and 1
+    x = 1
+    if x == 1:
+        cmds.window(windowID, e=1, h=550, w=280)
+        cmds.scrollLayout('scrollLayout')
+        cmds.columnLayout()
+        cmds.frameLayout(label='  TopoWrap ToolSets ', collapsable=0, collapse=0, w=270, bgc=(0.3,
+                                                                                              0.4,
+                                                                                              0.45))
+        cmds.text(l='     Retopo Setup Tools : ', h=30, al='left')
+        cmds.rowColumnLayout(nc=3)
+        cmds.text(l='     ')
+        cmds.rowColumnLayout(nc=3)
+        cmds.button(label='        Create Setup       ', command=(partial(createSetup)))
+        cmds.text(l='  ')
+        cmds.button(label='       Create Retopo      ', command=(partial(snapRetopo)))
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.button(label='Load Setup', command=(partial(loadSetup)))
+        cmds.text(l='  ')
+        cmds.button(label='Delete Setup', command=(partial(deleteSetup)))
+        cmds.setParent(top=1)
+        cmds.text(l='     Create / Edit Marker Points : ', h=30, al='left')
+        cmds.rowColumnLayout(nc=3)
+        cmds.text(l='     ')
+        cmds.rowColumnLayout(nc=3)
+        cmds.button(label='  Draw Topo Marker    ', command=(partial(drawPoints)))
+        cmds.text(l='  ')
+        cmds.button(label='  Mirror Markers  ', command=(partial(mirrorPoints)))
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.button(label='Tweak Markers A', command=(partial(tweakPointsA)))
+        cmds.text(l='  ')
+        cmds.button(label='Tweak Markers B', command=(partial(tweakPointsB)))
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.button(label='  Hide/Show Markers  ', command=(partial(hideUnhidePnts)))
+        cmds.text(l='  ')
+        cmds.button(label='  Toggle Marker Geo   ', command=(partial(toggleBallPnts)))
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.button(label=' Snap Markers to Geo ', command=(partial(snapMarkers)))
+        cmds.text(l='  ')
+        cmds.button(label='  Delete Marker-pair   ', command=(partial(deletePoints)))
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.button(label='Export Markers', command=(partial(exportPoints)))
+        cmds.text(l='  ')
+        cmds.button(label='Import Markers', command=(partial(importPoints)))
+        cmds.setParent(top=1)
+        cmds.text(l='     Edit TopoMesh : ', h=30, al='left')
+        cmds.rowColumnLayout(nc=3)
+        cmds.text(l='     ')
+        cmds.rowColumnLayout(nc=3)
+        cmds.button(label='   Create Exclude Set   ', command=(partial(createExcludeSet)))
+        cmds.text(l='  ')
+        cmds.button(label='   Toggle Ref Mode   ', command=(partial(toggleRefMode)))
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.text(l='  ', h=5)
+        cmds.button(label='   Paint Relax Topo    ', command=(partial(paintRelax)))
+        cmds.text(l='  ')
+        cmds.button(label='   Paint Retain Shape   ', command=(partial(paintRetainShape)))
+        cmds.setParent(top=1)
+        cmds.text(l='     Bake Textures : ', h=30, al='left')
+        cmds.rowColumnLayout(nc=3)
+        cmds.text(l='     ')
+        cmds.rowColumnLayout(nc=3)
+        cmds.columnLayout()
+        selectedMenuItem = cmds.optionMenu('res', label='Resolution')
+        a = cmds.menuItem(label='1024')
+        b = cmds.menuItem(label='2048')
+        c = cmds.menuItem(label='4096')
+        cmds.setParent('..')
+        cmds.text(l='     ')
+        cmds.button(label='   Bake Texture    ', command=(partial(bakeTex, selectedMenuItem)))
+        cmds.showWindow(windowID)
+topoWrapUI()

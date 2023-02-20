@@ -25,11 +25,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgDEditor.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgDEditor.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgDEditor.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgDEditor.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -60,11 +59,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPreview.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPreview.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPreview.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPreview.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -95,11 +93,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPreviewClear.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPreviewClear.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPreviewClear.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPreviewClear.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -130,11 +127,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgCreateDescription.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgCreateDescription.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgCreateDescription.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgCreateDescription.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -165,11 +161,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgBindFaces.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgBindFaces.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgBindFaces.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgBindFaces.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -200,11 +195,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgGuideContext.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgGuideContext.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgGuideContext.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgGuideContext.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -235,11 +229,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgToggleGuide.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgToggleGuide.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgToggleGuide.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgToggleGuide.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -270,11 +263,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgToggleGuideReference.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgToggleGuideReference.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgToggleGuideReference.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgToggleGuideReference.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -305,11 +297,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgFlipGuides.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgFlipGuides.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgFlipGuides.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgFlipGuides.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -340,11 +331,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgSyncPatchVisibility.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgSyncPatchVisibility.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgSyncPatchVisibility.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgSyncPatchVisibility.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -375,11 +365,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgSelectionToggle.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgSelectionToggle.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgSelectionToggle.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgSelectionToggle.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -410,11 +399,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPrimSelection.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPrimSelection.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPrimSelection.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgPrimSelection.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -445,11 +433,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgCullPrimContextSelect.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgCullPrimContextSelect.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgCullPrimContextSelect.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgCullPrimContextSelect.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -480,11 +467,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgGuideSculptTool.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgGuideSculptTool.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgGuideSculptTool.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgGuideSculptTool.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -516,11 +502,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgConvertToPoly.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgConvertToPoly.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgConvertToPoly.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgConvertToPoly.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -566,11 +551,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_editor.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_editor.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_editor.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_editor.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -601,11 +585,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_creation.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_creation.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_creation.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_creation.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -637,11 +620,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_density.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_density.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_density.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_density.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -673,11 +655,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_place.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_place.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_place.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_place.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -709,11 +690,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_length.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_length.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_length.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_length.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -745,11 +725,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_cut.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_cut.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_cut.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_cut.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -781,11 +760,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_width.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_width.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_width.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_width.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -817,11 +795,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_twist.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_twist.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_twist.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_twist.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -853,11 +830,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_comb.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_comb.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_comb.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_comb.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -889,11 +865,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_grab.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_grab.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_grab.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_grab.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -925,11 +900,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_smooth.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_smooth.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_smooth.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_smooth.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -961,11 +935,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_noise.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_noise.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_noise.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_noise.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -997,11 +970,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_clump.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_clump.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_clump.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_clump.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -1033,11 +1005,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_part.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_part.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_part.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_part.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -1069,11 +1040,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_freeze.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_freeze.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_freeze.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_freeze.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
@@ -1105,11 +1075,10 @@ global proc shelf_XGen () {
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_select.png" 
-        -image1 "C:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_select.png" 
+        -image "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_select.png" 
+        -image1 "D:/Program Files/Autodesk/Maya2020/plug-ins/xgen//icons/xgIG_select.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1

@@ -1,4 +1,4 @@
-global proc shelf_TURTLE () {
+global proc shelf_Rendering () {
     global string $gBuffStr;
     global string $gBuffStr0;
     global string $gBuffStr1;
@@ -14,26 +14,263 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Assign a new Bssrdf shader to the active objects" 
+        -annotation "Ambient Light: Create an ambient light on the grid or live surface" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Bssrdf Shader" 
+        -label "Ambient Light" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrBssrdfShader.xpm" 
-        -image1 "render_ilrBssrdfShader.xpm" 
+        -image "ambientlight.png" 
+        -image1 "ambientlight.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "createAndAssignShader ilrBssrdfShader \"\"" 
+        -command "CreateAmbientLight" 
+        -sourceType "mel" 
+        -doubleClickCommand "CreateAmbientLightOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Directional Light: Create a directional light on the grid or live surface" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Directional Light" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "directionallight.png" 
+        -image1 "directionallight.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CreateDirectionalLight" 
+        -sourceType "mel" 
+        -doubleClickCommand "CreateDirectionalLightOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Point Light: Create a point light on the grid or live surface" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Point Light" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pointlight.png" 
+        -image1 "pointlight.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CreatePointLight" 
+        -sourceType "mel" 
+        -doubleClickCommand "CreatePointLightOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Spot Light: Create a spot light on the grid or live surface" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Spot Light" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "spotlight.png" 
+        -image1 "spotlight.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CreateSpotLight" 
+        -sourceType "mel" 
+        -doubleClickCommand "CreateSpotLightOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Area Light: Create an area light on the grid or live surface" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Area Light" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "arealight.png" 
+        -image1 "arealight.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CreateAreaLight" 
+        -sourceType "mel" 
+        -doubleClickCommand "CreateAreaLightOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Volume Light: Create a volume light on the grid or live surface" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Volume Light" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "volumelight.png" 
+        -image1 "volumelight.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CreateVolumeLight" 
+        -sourceType "mel" 
+        -doubleClickCommand "CreateVolumeLightOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Create Camera: Create a camera on the grid" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Create Camera" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "view.png" 
+        -image1 "view.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "CreateCameraOnly" 
+        -sourceType "mel" 
+        -doubleClickCommand "CreateCameraOnlyOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Edit Material Attributes: Show shading group Attribute Editor" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Edit Material Attributes" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "materialEditor.png" 
+        -image1 "materialEditor.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "ShowShadingGroupAttributeEditor" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -48,26 +285,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Assign a new Occ Sampler shader to the active objects" 
+        -annotation "Anisotropic Material: Assign a new anisotropic material to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Occ Sampler Shader" 
+        -label "Anisotropic Material" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrOccSampler.xpm" 
-        -image1 "render_ilrOccSampler.xpm" 
+        -image "render_anisotropic.png" 
+        -image1 "render_anisotropic.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "createAndAssignShader ilrOccSampler \"\"" 
+        -command "createAndAssignShader anisotropic \"\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -82,26 +318,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Assign a new Oren Nayar shader to the active objects" 
+        -annotation "Blinn Material: Assign a new Blinn material to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Oren Nayar Shader" 
+        -label "Blinn Material" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrOrenNayarShader.xpm" 
-        -image1 "render_ilrOrenNayarShader.xpm" 
+        -image "render_blinn.png" 
+        -image1 "render_blinn.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "createAndAssignShader ilrOrenNayarShader \"\"" 
+        -command "createAndAssignShader blinn \"\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -116,26 +351,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Assign a new Ashikhmin shader to the active objects" 
+        -annotation "Lambert Material: Assign a new Lambert material to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Ashikhmin Shader" 
+        -label "Lambert Material" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrAshikhminShader.xpm" 
-        -image1 "render_ilrAshikhminShader.xpm" 
+        -image "render_lambert.png" 
+        -image1 "render_lambert.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "createAndAssignShader ilrAshikhminShader \"\"" 
+        -command "createAndAssignShader lambert \"\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -150,26 +384,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Assign a new Dielectric shader to the active objects" 
+        -annotation "Phong Material: Assign a new Phong material to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Dielectric Shader" 
+        -label "Phong Material" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrDielectricShader.xpm" 
-        -image1 "render_ilrDielectricShader.xpm" 
+        -image "render_phong.png" 
+        -image1 "render_phong.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "createAndAssignShader ilrDielectricShader \"\"" 
+        -command "createAndAssignShader phong \"\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -184,26 +417,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new Normal Map shader" 
+        -annotation "Phong E Material: Assign a new Phong E material to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Normal Map Shader" 
+        -label "Phong E Material" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrNormalMap.xpm" 
-        -image1 "render_ilrNormalMap.xpm" 
+        -image "render_phongE.png" 
+        -image1 "render_phongE.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrNormalMap" 
+        -command "createAndAssignShader phongE \"\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -218,26 +450,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new Ray Sampler shader" 
+        -annotation "Layered Material: Assign a new layered material to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Ray Sampler Shader" 
+        -label "Layered Material" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrRaySampler.xpm" 
-        -image1 "render_ilrRaySampler.xpm" 
+        -image "render_layeredShader.png" 
+        -image1 "render_layeredShader.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrRaySampler" 
+        -command "createAndAssignShader layeredShader \"\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -252,26 +483,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new Occ Data shader" 
+        -annotation "Ramp Material: Assign a new ramp material to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Occ Data Shader" 
+        -label "Ramp Material" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrOccData.xpm" 
-        -image1 "render_ilrOccData.xpm" 
+        -image "render_rampShader.png" 
+        -image1 "render_rampShader.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrOccData" 
+        -command "createAndAssignShader rampShader \"\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -286,26 +516,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new Surface Thickness shader" 
+        -annotation "Shading Map: Assign a new shading map to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Surface Thickness" 
+        -label "Shading Map" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrSurfaceThickness.xpm" 
-        -image1 "render_ilrSurfaceThickness.xpm" 
+        -image "render_shadingMap.png" 
+        -image1 "render_shadingMap.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrSurfaceThickness" 
+        -command "createAndAssignShader shadingMap \"\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -320,26 +549,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new Basic Photon shader" 
+        -annotation "Surface Material: Assign a new surface material to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Basic Photon Shader" 
+        -label "Surface Material" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrBasicPhotonShader.xpm" 
-        -image1 "render_ilrBasicPhotonShader.xpm" 
+        -image "render_surfaceShader.png" 
+        -image1 "render_surfaceShader.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrBasicPhotonShader" 
+        -command "createAndAssignShader surfaceShader \"\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -354,26 +582,58 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new Physic Photon shader" 
+        -annotation "Use Background: Assign a new Use Background material to the active objects" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Physic Photon Shader" 
+        -label "Use Background" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrPhysicPhotonShader.xpm" 
-        -image1 "render_ilrPhysicPhotonShader.xpm" 
+        -image "render_useBackground.png" 
+        -image1 "render_useBackground.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrPhysicPhotonShader" 
+        -command "createAndAssignShader useBackground \"\"" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 0
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Render diagnostics not supported by Maya Hardware 2.0" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.4 0.454902 
+        -align "center" 
+        -label "Render Diagnostics" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "renderDiagnostics.png" 
+        -image1 "renderDiagnostics.png" 
+        -style "iconOnly" 
+        -marginWidth 1
+        -marginHeight 1
+        -command "mayaSoftwareRenderDiagnostics" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -388,26 +648,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new Dielectric Photon shader" 
+        -annotation "Batch Render: Export the current scene to a file and render that file in the background" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Dielectric Photon Shader" 
+        -label "Batch Render" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrDielectricPhotonShader.xpm" 
-        -image1 "render_ilrDielectricPhotonShader.xpm" 
+        -image "batchRender.png" 
+        -image1 "batchRender.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "createNode ilrDielectricPhotonShader" 
+        -command "BatchRender" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -422,26 +681,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new Shadow Mask shader" 
+        -annotation "Cancel batch render" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Shadow Mask Shader" 
+        -label "Cancel Batch Render" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrShadowMask.xpm" 
-        -image1 "render_ilrShadowMask.xpm" 
+        -image "abortBatchRender.png" 
+        -image1 "abortBatchRender.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrShadowMask" 
+        -command "batchRender" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -456,26 +714,25 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a Poly Color Per Vertex shader" 
+        -annotation "Display the batch render image" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Poly Color Per Vertex" 
+        -label "Show Batch Render" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrPolyColorPerVertex.xpm" 
-        -image1 "render_ilrPolyColorPerVertex.xpm" 
+        -image "showBatchRender.png" 
+        -image1 "showBatchRender.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrPolyColorPerVertex" 
+        -command "batchRender -showImage true" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -490,26 +747,26 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new UV Mapping Visualizer node" 
+        -annotation "Render Sequence: Render all frames in the current animation sequence" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "UV Mapping Visualizer" 
+        -label "Render Sequence" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrUVMappingVisualizer.xpm" 
-        -image1 "render_ilrUVMappingVisualizer.xpm" 
+        -image "sequenceRender.png" 
+        -image1 "sequenceRender.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrUVMappingVisualizer" 
+        -version "2018" 
+        -command "RenderSequence" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -524,231 +781,27 @@ global proc shelf_TURTLE () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Create a new Output Shader Backend node" 
+        -annotation "3D Paint Tool: Paint file textures" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Output Shader Backend" 
+        -label "3D Paint Tool" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrOutputShaderBackendNode.xpm" 
-        -image1 "render_ilrOutputShaderBackendNode.xpm" 
+        -image "art3dPaint.png" 
+        -image1 "art3dPaint.png" 
         -style "iconOnly" 
         -marginWidth 1
         -marginHeight 1
-        -command "shadingNode -asUtility ilrOutputShaderBackendNode" 
+        -command "Art3dPaintTool" 
         -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Create a new Hardware Bake Visualizer node" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Hw Bake Visualizer" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "render_ilrHwBakeVisualizer.xpm" 
-        -image1 "render_ilrHwBakeVisualizer.xpm" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -command "createAndAssignShader ilrHwBakeVisualizer \"\"" 
-        -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Delete all Turtle nodes and clear all settings" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Clear Scene" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "turtleClearIcon.xpm" 
-        -image1 "turtleClearIcon.xpm" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -command "if (!exists(\"ilrClearScene\")) { eval(\"source ilrStartup.mel; ilrLoadScripts();\"); } ilrClearScene();" 
-        -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Opens the Bake Layer Editor" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Bake Layer Editor" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "turtleBakeLayerEditorIcon.xpm" 
-        -image1 "turtleBakeLayerEditorIcon.xpm" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -command "ilrBakeLayerEditor" 
-        -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Create a point cloud shape" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Point Cloud" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "turtlePCShapeIcon.xpm" 
-        -image1 "turtlePCShapeIcon.xpm" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -command "createNode ilrPointCloudShape" 
-        -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Opens the Point Cloud Bake Editor" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Point Cloud Bake Editor" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "turtlePCBakeIcon.xpm" 
-        -image1 "turtlePCBakeIcon.xpm" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -command "ilrPointCloudBakeEditor" 
-        -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Opens any Hardware Shader connected to selection" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Edit Hardware Shader" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "turtleInspectHwShaderIcon.xpm" 
-        -image1 "turtleInspectHwShaderIcon.xpm" 
-        -style "iconOnly" 
-        -marginWidth 1
-        -marginHeight 1
-        -command "ilrInspectHwShader" 
-        -sourceType "mel" 
+        -doubleClickCommand "Art3dPaintToolOptions" 
         -commandRepeatable 1
         -flat 1
     ;

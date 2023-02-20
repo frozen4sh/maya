@@ -1,0 +1,3 @@
+import mulit_object_replace
+reload(mulit_object_replace)
+mulit_object_replace.run()

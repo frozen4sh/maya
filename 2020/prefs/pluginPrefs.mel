@@ -11,11 +11,12 @@ evalDeferred("autoLoadPlugin(\"\", \"poseInterpolator\", \"poseInterpolator\")")
 evalDeferred("autoLoadPlugin(\"\", \"ATFPlugin\", \"ATFPlugin\")");
 evalDeferred("autoLoadPlugin(\"\", \"hairPhysicalShader\", \"hairPhysicalShader\")");
 evalDeferred("autoLoadPlugin(\"\", \"ikSpringSolver\", \"ikSpringSolver\")");
+evalDeferred("autoLoadPlugin(\"\", \"MayaUE4RBFPlugin2020\", \"MayaUE4RBFPlugin2020\")");
 evalDeferred("autoLoadPlugin(\"\", \"ik2Bsolver\", \"ik2Bsolver\")");
 evalDeferred("autoLoadPlugin(\"\", \"xgenToolkit\", \"xgenToolkit\")");
 evalDeferred("autoLoadPlugin(\"\", \"AbcExport\", \"AbcExport\")");
-evalDeferred("autoLoadPlugin(\"\", \"VectorRender\", \"VectorRender\")");
 evalDeferred("autoLoadPlugin(\"\", \"gameFbxExporter\", \"gameFbxExporter\")");
+evalDeferred("autoLoadPlugin(\"\", \"VectorRender\", \"VectorRender\")");
 evalDeferred("autoLoadPlugin(\"\", \"OpenEXRLoader\", \"OpenEXRLoader\")");
 evalDeferred("autoLoadPlugin(\"\", \"lookdevKit\", \"lookdevKit\")");
 evalDeferred("autoLoadPlugin(\"\", \"Unfold3D\", \"Unfold3D\")");
@@ -24,8 +25,9 @@ evalDeferred("autoLoadPlugin(\"\", \"mayaCharacterization\", \"mayaCharacterizat
 evalDeferred("autoLoadPlugin(\"\", \"mtoa\", \"mtoa\")");
 evalDeferred("autoLoadPlugin(\"\", \"meshReorder\", \"meshReorder\")");
 evalDeferred("autoLoadPlugin(\"\", \"modelingToolkit\", \"modelingToolkit\")");
-evalDeferred("autoLoadPlugin(\"\", \"rotateHelper\", \"rotateHelper\")");
 evalDeferred("autoLoadPlugin(\"\", \"MayaMuscle\", \"MayaMuscle\")");
+evalDeferred("autoLoadPlugin(\"\", \"rotateHelper\", \"rotateHelper\")");
+evalDeferred("autoLoadPlugin(\"\", \"dx11Shader\", \"dx11Shader\")");
 evalDeferred("autoLoadPlugin(\"\", \"matrixNodes\", \"matrixNodes\")");
 evalDeferred("autoLoadPlugin(\"\", \"AbcImport\", \"AbcImport\")");
 evalDeferred("autoLoadPlugin(\"\", \"autoLoader\", \"autoLoader\")");
