@@ -25,4 +25,5 @@ windowPref -topLeftCorner 270 314 -widthHeight 1203 1070 -maximized false -paren
 windowPref -topLeftCorner 700 1280 -widthHeight 750 750 -maximized false -parentMain true FbxWarningWindow;
 windowPref -topLeftCorner 678 1032 -widthHeight 1878 1050 -maximized false -parentMain true HotkeyEditor;
 windowPref -topLeftCorner 700 1280 -widthHeight 370 113 -maximized false -parentMain true jdsWnd;
-windowPref -topLeftCorner 772 1219 -widthHeight 820 526 -maximized false -parentMain true OptionBoxWindow;
+windowPref -topLeftCorner 700 1280 -widthHeight 820 526 -maximized false -parentMain true OptionBoxWindow;
+windowPref -topLeftCorner 948 2028 -widthHeight 420 172 -maximized false -parentMain true ExampleWindow7;
