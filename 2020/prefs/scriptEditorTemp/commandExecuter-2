@@ -1,0 +1,4 @@
+import dna
+
+import sys
+sys.modules["dna"]

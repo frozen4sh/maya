@@ -80,3 +80,16 @@ runTimeCommand
 	-command ("timeSliderCopyKey;")
 	timeSliderCopyKey_bind;
 
+runTimeCommand
+	-label ""
+	-image ""
+	-tags ""
+	-keywords ""
+	-plugin ""
+	-annotation ""
+	-category ""
+	-hotkeyCtx ""
+	-commandLanguage "mel"
+	-command ("sphere -name myName")
+	mySphere;
+

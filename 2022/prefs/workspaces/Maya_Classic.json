@@ -1,7 +1,7 @@
 {
     "linkedMenu": "modelingMenuSet",
     "autoSave": true,
-    "selectedShelf": "VIVESTUDIO",
+    "selectedShelf": "Custom",
     "panels": [
         {
             "mainWindowPanel": true,
@@ -305,18 +305,44 @@
                     }
                 ]
             }
+        },
+        {
+            "mainWindowPanel": false,
+            "posX": 162,
+            "posY": 304,
+            "splitter": {
+                "orientation": "horizontal",
+                "children": [
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 1040,
+                            "controlHeight": 935,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "scriptEditorPanel1Window",
+                                    "title": "Script Editor",
+                                    "uiScript": "if(!`panel -q -exists scriptEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"scriptEditorPanel1\";\n\tscriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  scriptEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent scriptEditorPanel1;\n}\nscriptedPanel -e -parent scriptEditorPanel1Window scriptEditorPanel1;\n",
+                                    "retain": false,
+                                    "deleteLater": true,
+                                    "loadImmediately": false,
+                                    "checkPlugins": false,
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "free",
+                                    "controlWidth": 1040,
+                                    "controlHeight": 935
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
         }
     ],
     "closedControls": [
-        {
-            "objectName": "referenceEditorPanel1Window",
-            "posX": 447,
-            "posY": 231,
-            "controlHeight": 504,
-            "controlWidth": 1086,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
         {
             "objectName": "studiolibrary_e16aad63-3064-44d5-8793-d2eb81e3b0b5WorkspaceControl",
             "posX": 3103,
@@ -327,47 +353,11 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "hyperShadePanel1Window",
-            "posX": 75,
-            "posY": 75,
-            "controlHeight": 900,
-            "controlWidth": 1440,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "scriptEditorPanel1Window",
-            "posX": 3233,
-            "posY": 454,
-            "controlHeight": 646,
-            "controlWidth": 1070,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_2f98af7a-5bfc-4566-9c5c-936a8f508b20WorkspaceControl",
-            "posX": 593,
-            "posY": 257,
-            "controlHeight": 925,
-            "controlWidth": 1373,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "UVToolkitDockControl",
-            "posX": 1324,
-            "posY": 169,
-            "controlHeight": 783,
-            "controlWidth": 287,
-            "widthProperty": "preferred",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "hyperGraphPanel2Window",
-            "posX": 250,
-            "posY": 200,
-            "controlHeight": 325,
-            "controlWidth": 475,
+            "objectName": "referenceEditorPanel1Window",
+            "posX": 447,
+            "posY": 231,
+            "controlHeight": 504,
+            "controlWidth": 1086,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -381,12 +371,48 @@
             "heightProperty": "free"
         },
         {
+            "objectName": "hyperShadePanel1Window",
+            "posX": 75,
+            "posY": 75,
+            "controlHeight": 900,
+            "controlWidth": 1440,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_2f98af7a-5bfc-4566-9c5c-936a8f508b20WorkspaceControl",
+            "posX": 593,
+            "posY": 257,
+            "controlHeight": 925,
+            "controlWidth": 1373,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "hyperGraphPanel2Window",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 325,
+            "controlWidth": 475,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
             "objectName": "polyTexturePlacementPanel1Window",
             "posX": 200,
             "posY": 150,
             "controlHeight": 783,
             "controlWidth": 1116,
             "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "UVToolkitDockControl",
+            "posX": 1324,
+            "posY": 169,
+            "controlHeight": 783,
+            "controlWidth": 287,
+            "widthProperty": "preferred",
             "heightProperty": "free"
         }
     ]
