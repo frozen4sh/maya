@@ -308,8 +308,8 @@
         },
         {
             "mainWindowPanel": false,
-            "posX": 162,
-            "posY": 304,
+            "posX": 477,
+            "posY": 365,
             "splitter": {
                 "orientation": "horizontal",
                 "children": [
@@ -344,20 +344,20 @@
     ],
     "closedControls": [
         {
+            "objectName": "hyperGraphPanel2Window",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 325,
+            "controlWidth": 475,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
             "objectName": "studiolibrary_e16aad63-3064-44d5-8793-d2eb81e3b0b5WorkspaceControl",
             "posX": 3103,
             "posY": 316,
             "controlHeight": 925,
             "controlWidth": 1373,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "referenceEditorPanel1Window",
-            "posX": 447,
-            "posY": 231,
-            "controlHeight": 504,
-            "controlWidth": 1086,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -371,11 +371,20 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "hyperShadePanel1Window",
-            "posX": 75,
-            "posY": 75,
-            "controlHeight": 900,
-            "controlWidth": 1440,
+            "objectName": "UVToolkitDockControl",
+            "posX": 1324,
+            "posY": 169,
+            "controlHeight": 783,
+            "controlWidth": 287,
+            "widthProperty": "preferred",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "referenceEditorPanel1Window",
+            "posX": 447,
+            "posY": 231,
+            "controlHeight": 504,
+            "controlWidth": 1086,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -389,11 +398,11 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "hyperGraphPanel2Window",
-            "posX": 250,
-            "posY": 200,
-            "controlHeight": 325,
-            "controlWidth": 475,
+            "objectName": "hyperShadePanel1Window",
+            "posX": 75,
+            "posY": 75,
+            "controlHeight": 900,
+            "controlWidth": 1440,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -404,15 +413,6 @@
             "controlHeight": 783,
             "controlWidth": 1116,
             "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "UVToolkitDockControl",
-            "posX": 1324,
-            "posY": 169,
-            "controlHeight": 783,
-            "controlWidth": 287,
-            "widthProperty": "preferred",
             "heightProperty": "free"
         }
     ]

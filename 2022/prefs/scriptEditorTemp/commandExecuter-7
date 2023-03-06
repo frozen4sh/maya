@@ -1,3 +1,0 @@
-from PySide2 import QtWidgets
-
-QtWidgets.QMessageBox.about(None, "Title", "Hey Iam PySide")
