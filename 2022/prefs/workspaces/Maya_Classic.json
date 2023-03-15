@@ -1,8 +1,78 @@
 {
     "linkedMenu": "modelingMenuSet",
     "autoSave": true,
-    "selectedShelf": "Custom",
+    "selectedShelf": "VIVESTUDIO",
     "panels": [
+        {
+            "mainWindowPanel": false,
+            "posX": 467,
+            "posY": 533,
+            "splitter": {
+                "orientation": "horizontal",
+                "children": [
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 676,
+                            "controlHeight": 532,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "referenceEditorPanel1Window",
+                                    "title": "Reference Editor",
+                                    "uiScript": "if(!`panel -q -exists referenceEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"referenceEditorPanel1\";\n\tscriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  referenceEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent referenceEditorPanel1;\n}\nscriptedPanel -e -parent referenceEditorPanel1Window referenceEditorPanel1;\n",
+                                    "retain": false,
+                                    "deleteLater": true,
+                                    "loadImmediately": false,
+                                    "checkPlugins": false,
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "free",
+                                    "controlWidth": 676,
+                                    "controlHeight": 532
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "mainWindowPanel": false,
+            "posX": 629,
+            "posY": 379,
+            "splitter": {
+                "orientation": "horizontal",
+                "children": [
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 1040,
+                            "controlHeight": 935,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "scriptEditorPanel1Window",
+                                    "title": "Script Editor",
+                                    "uiScript": "if(!`panel -q -exists scriptEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"scriptEditorPanel1\";\n\tscriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  scriptEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent scriptEditorPanel1;\n}\nscriptedPanel -e -parent scriptEditorPanel1Window scriptEditorPanel1;\n",
+                                    "retain": false,
+                                    "deleteLater": true,
+                                    "loadImmediately": false,
+                                    "checkPlugins": false,
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "free",
+                                    "controlWidth": 1040,
+                                    "controlHeight": 935
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
         {
             "mainWindowPanel": true,
             "splitter": {
@@ -11,7 +81,7 @@
                     {
                         "tabWidget": {
                             "selectedIndex": 0,
-                            "controlWidth": 2556,
+                            "controlWidth": 1792,
                             "controlHeight": 23,
                             "collapsed": false,
                             "controls": [
@@ -27,7 +97,7 @@
                                     "closed": false,
                                     "widthProperty": "free",
                                     "heightProperty": "fixed",
-                                    "controlWidth": 2556,
+                                    "controlWidth": 1792,
                                     "controlHeight": 23
                                 }
                             ]
@@ -36,7 +106,7 @@
                     {
                         "tabWidget": {
                             "selectedIndex": 0,
-                            "controlWidth": 2556,
+                            "controlWidth": 1792,
                             "controlHeight": 64,
                             "collapsed": false,
                             "controls": [
@@ -52,7 +122,7 @@
                                     "closed": false,
                                     "widthProperty": "free",
                                     "heightProperty": "fixed",
-                                    "controlWidth": 2556,
+                                    "controlWidth": 1792,
                                     "controlHeight": 64,
                                     "initCallback": "shelfInitCallback"
                                 }
@@ -67,7 +137,7 @@
                                     "tabWidget": {
                                         "selectedIndex": 0,
                                         "controlWidth": 40,
-                                        "controlHeight": 1111,
+                                        "controlHeight": 1103,
                                         "collapsed": false,
                                         "controls": [
                                             {
@@ -83,7 +153,7 @@
                                                 "widthProperty": "fixed",
                                                 "heightProperty": "free",
                                                 "controlWidth": 40,
-                                                "controlHeight": 1111
+                                                "controlHeight": 1103
                                             }
                                         ]
                                     }
@@ -91,8 +161,8 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 422,
-                                        "controlHeight": 1096,
+                                        "controlWidth": 172,
+                                        "controlHeight": 1088,
                                         "collapsed": false,
                                         "controls": [
                                             {
@@ -107,8 +177,8 @@
                                                 "closed": false,
                                                 "widthProperty": "preferred",
                                                 "heightProperty": "free",
-                                                "controlWidth": 422,
-                                                "controlHeight": 1096,
+                                                "controlWidth": 172,
+                                                "controlHeight": 1088,
                                                 "initCallback": "outlinerStateCallback",
                                                 "stateString": "outlinerEditor -e -docTag \"isolOutln_fromSeln\" -showShapes 0 -showAssignedMaterials 0 -showTimeEditor 1 -showReferenceNodes 1 -showReferenceMembers 1 -showAttributes 0 -showConnected 0 -showAnimCurvesOnly 0 -showMuteInfo 0 -organizeByLayer 1 -organizeByClip 1 -showAnimLayerWeight 1 -autoExpandLayers 1 -autoExpand 0 -showDagOnly 1 -showAssets 1 -showContainedOnly 1 -showPublishedAsConnected 0 -showParentContainers 0 -showContainerContents 1 -ignoreDagHierarchy 0 -expandConnections 0 -showUpstreamCurves 1 -showUnitlessCurves 1 -showCompounds 1 -showLeafs 1 -showNumericAttrsOnly 0 -highlightActive 1 -autoSelectNewObjects 0 -doNotSelectNewObjects 0 -dropIsParent 1 -transmitFilters 0 -setFilter \"defaultSetFilter\" -showSetMembers 1 -allowMultiSelection 1 -alwaysToggleSelect 0 -directSelect 0 -isSet 0 -isSetMember 0 -displayMode \"DAG\" -expandObjects 0 -setsIgnoreFilters 1 -containersIgnoreFilters 0 -editAttrName 0 -showAttrValues 0 -highlightSecondary 0 -showUVAttrsOnly 0 -showTextureNodesOnly 0 -attrAlphaOrder \"default\" -animLayerFilterOptions \"allAffecting\" -sortOrder \"none\" -longNames 0 -niceNames 1 -selectCommand \"print(\\\"\\\")\" -showNamespace 1 -showPinIcons 0 -mapMotionTrails 0 -ignoreHiddenAttribute 0 -ignoreOutlinerColor 0 -renderFilterVisible 0 -renderFilterIndex 0 -selectionOrder \"chronological\" -expandAttribute 0 $editorName"
                                             }
@@ -118,8 +188,8 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 1799,
-                                        "controlHeight": 1111,
+                                        "controlWidth": 1283,
+                                        "controlHeight": 1103,
                                         "collapsed": false,
                                         "controls": [
                                             {
@@ -134,10 +204,10 @@
                                                 "closed": false,
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
-                                                "controlWidth": 1799,
-                                                "controlHeight": 1111,
+                                                "controlWidth": 1283,
+                                                "controlHeight": 1103,
                                                 "initCallback": "mainPaneStateCallback",
-                                                "stateString": "global string $gMainPane; paneLayout -edit -configuration single $gMainPane;if(`modelPanel -exists modelPanel4`){ modelPanel -edit -parent $gMainPane modelPanel4; paneLayout -edit -setPane modelPanel4 1 $gMainPane;}"
+                                                "stateString": "global string $gMainPane; paneLayout -edit -configuration vertical2 $gMainPane;if(`modelPanel -exists modelPanel3`){ modelPanel -edit -parent $gMainPane modelPanel3; paneLayout -edit -setPane modelPanel3 1 $gMainPane;}if(`modelPanel -exists modelPanel4`){ modelPanel -edit -parent $gMainPane modelPanel4; paneLayout -edit -setPane modelPanel4 2 $gMainPane;}"
                                             }
                                         ]
                                     }
@@ -146,7 +216,7 @@
                                     "tabWidget": {
                                         "selectedIndex": 0,
                                         "controlWidth": 260,
-                                        "controlHeight": 1111,
+                                        "controlHeight": 1103,
                                         "collapsed": false,
                                         "controls": [
                                             {
@@ -162,7 +232,7 @@
                                                 "widthProperty": "preferred",
                                                 "heightProperty": "free",
                                                 "controlWidth": 260,
-                                                "controlHeight": 1111
+                                                "controlHeight": 1103
                                             },
                                             {
                                                 "objectName": "NEXDockControl",
@@ -206,7 +276,7 @@
                     {
                         "tabWidget": {
                             "selectedIndex": 0,
-                            "controlWidth": 2556,
+                            "controlWidth": 1792,
                             "controlHeight": 36,
                             "collapsed": false,
                             "controls": [
@@ -222,7 +292,7 @@
                                     "closed": false,
                                     "widthProperty": "free",
                                     "heightProperty": "fixed",
-                                    "controlWidth": 2556,
+                                    "controlWidth": 1792,
                                     "controlHeight": 32
                                 }
                             ]
@@ -231,7 +301,7 @@
                     {
                         "tabWidget": {
                             "selectedIndex": 0,
-                            "controlWidth": 2556,
+                            "controlWidth": 1792,
                             "controlHeight": 31,
                             "collapsed": false,
                             "controls": [
@@ -247,7 +317,7 @@
                                     "closed": false,
                                     "widthProperty": "free",
                                     "heightProperty": "fixed",
-                                    "controlWidth": 2556,
+                                    "controlWidth": 1792,
                                     "controlHeight": 27
                                 }
                             ]
@@ -256,7 +326,7 @@
                     {
                         "tabWidget": {
                             "selectedIndex": 0,
-                            "controlWidth": 2556,
+                            "controlWidth": 1792,
                             "controlHeight": 28,
                             "collapsed": false,
                             "controls": [
@@ -272,7 +342,7 @@
                                     "closed": false,
                                     "widthProperty": "free",
                                     "heightProperty": "fixed",
-                                    "controlWidth": 2556,
+                                    "controlWidth": 1792,
                                     "controlHeight": 28
                                 }
                             ]
@@ -281,7 +351,7 @@
                     {
                         "tabWidget": {
                             "selectedIndex": 0,
-                            "controlWidth": 2556,
+                            "controlWidth": 1792,
                             "controlHeight": 20,
                             "collapsed": false,
                             "controls": [
@@ -297,43 +367,8 @@
                                     "closed": false,
                                     "widthProperty": "free",
                                     "heightProperty": "fixed",
-                                    "controlWidth": 2556,
+                                    "controlWidth": 1792,
                                     "controlHeight": 20
-                                }
-                            ]
-                        }
-                    }
-                ]
-            }
-        },
-        {
-            "mainWindowPanel": false,
-            "posX": 477,
-            "posY": 365,
-            "splitter": {
-                "orientation": "horizontal",
-                "children": [
-                    {
-                        "tabWidget": {
-                            "selectedIndex": 0,
-                            "controlWidth": 1040,
-                            "controlHeight": 935,
-                            "collapsed": false,
-                            "controls": [
-                                {
-                                    "objectName": "scriptEditorPanel1Window",
-                                    "title": "Script Editor",
-                                    "uiScript": "if(!`panel -q -exists scriptEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"scriptEditorPanel1\";\n\tscriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  scriptEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent scriptEditorPanel1;\n}\nscriptedPanel -e -parent scriptEditorPanel1Window scriptEditorPanel1;\n",
-                                    "retain": false,
-                                    "deleteLater": true,
-                                    "loadImmediately": false,
-                                    "checkPlugins": false,
-                                    "tabDirection": 0,
-                                    "closed": false,
-                                    "widthProperty": "free",
-                                    "heightProperty": "free",
-                                    "controlWidth": 1040,
-                                    "controlHeight": 935
                                 }
                             ]
                         }
@@ -343,6 +378,15 @@
         }
     ],
     "closedControls": [
+        {
+            "objectName": "UVToolkitDockControl",
+            "posX": 1324,
+            "posY": 169,
+            "controlHeight": 783,
+            "controlWidth": 287,
+            "widthProperty": "preferred",
+            "heightProperty": "free"
+        },
         {
             "objectName": "hyperGraphPanel2Window",
             "posX": 250,
@@ -371,29 +415,11 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "UVToolkitDockControl",
-            "posX": 1324,
-            "posY": 169,
+            "objectName": "polyTexturePlacementPanel1Window",
+            "posX": 200,
+            "posY": 150,
             "controlHeight": 783,
-            "controlWidth": 287,
-            "widthProperty": "preferred",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "referenceEditorPanel1Window",
-            "posX": 447,
-            "posY": 231,
-            "controlHeight": 504,
-            "controlWidth": 1086,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_2f98af7a-5bfc-4566-9c5c-936a8f508b20WorkspaceControl",
-            "posX": 593,
-            "posY": 257,
-            "controlHeight": 925,
-            "controlWidth": 1373,
+            "controlWidth": 1116,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -407,11 +433,11 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "polyTexturePlacementPanel1Window",
-            "posX": 200,
-            "posY": 150,
-            "controlHeight": 783,
-            "controlWidth": 1116,
+            "objectName": "studiolibrary_2f98af7a-5bfc-4566-9c5c-936a8f508b20WorkspaceControl",
+            "posX": 593,
+            "posY": 257,
+            "controlHeight": 925,
+            "controlWidth": 1373,
             "widthProperty": "free",
             "heightProperty": "free"
         }
