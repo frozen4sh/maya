@@ -18,6 +18,7 @@ windowPref -topLeftCorner 150 200 -widthHeight 1120 640 -maximized true -parentM
 windowPref -topLeftCorner 235 230 -widthHeight 1430 710 -maximized true -parentMain true contentBrowserPanel1Window;
 windowPref -topLeftCorner 700 1280 -widthHeight 676 480 -maximized false -parentMain true NewFeatureHighlightWnd;
 windowPref -topLeftCorner -11 -1 -widthHeight 1920 1536 -maximized true -parentMain false MayaWindow;
-windowPref -topLeftCorner 604 1084 -widthHeight 1479 1049 -maximized false -parentMain true shelfEditor;
+windowPref -topLeftCorner 604 920 -widthHeight 1963 1049 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 210 390 -widthHeight 1497 1032 -maximized false -parentMain true PreferencesWindow;
 windowPref -topLeftCorner 700 1280 -widthHeight 820 526 -maximized false -parentMain true OptionBoxWindow;
+windowPref -topLeftCorner 666 982 -widthHeight 1878 1050 -maximized false -parentMain true HotkeyEditor;

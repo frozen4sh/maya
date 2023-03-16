@@ -1,0 +1,11 @@
+import maya.cmds as cmds
+
+# show current selected controllers
+selected_objects = cmds.ls(selection=True)
+print(selected_objects)
+
+# select mirrored right controllers
+right_controllers = [name.replace("_L_", "_R_") for name in selected_objects if "_L_" in name]
+left_controllers = [name.replace("_R_", "_L_") for name in selected_objects if "_R_" in name]
+
+cmds.select(selected_objects, right_controllers, left_controllers)

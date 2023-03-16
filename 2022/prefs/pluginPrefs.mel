@@ -4,8 +4,8 @@
 evalDeferred("autoLoadPlugin(\"\", \"mayaHIK\", \"mayaHIK\")");
 evalDeferred("autoLoadPlugin(\"\", \"invertShape\", \"invertShape\")");
 evalDeferred("autoLoadPlugin(\"\", \"curveWarp\", \"curveWarp\")");
-evalDeferred("autoLoadPlugin(\"\", \"ATFPlugin\", \"ATFPlugin\")");
 evalDeferred("autoLoadPlugin(\"\", \"hairPhysicalShader\", \"hairPhysicalShader\")");
+evalDeferred("autoLoadPlugin(\"\", \"ATFPlugin\", \"ATFPlugin\")");
 evalDeferred("autoLoadPlugin(\"\", \"ikSpringSolver\", \"ikSpringSolver\")");
 evalDeferred("autoLoadPlugin(\"\", \"sweep\", \"sweep\")");
 evalDeferred("autoLoadPlugin(\"\", \"lookdevKit\", \"lookdevKit\")");
