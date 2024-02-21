@@ -1,0 +1,920 @@
+global proc shelf_AnimTools () {
+    global string $gBuffStr;
+    global string $gBuffStr0;
+    global string $gBuffStr1;
+
+
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "AnimSchool Picker" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "AnimSchool Picker" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/icons/AnimSchoolLogoIcon.png" 
+        -image1 "A:/VFX/Ani_team/_maya_env/icons/AnimSchoolLogoIcon.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "loadPlugin -qt \"A:/VFX/Ani_team/_maya_env/2023/scripts/AnimSchoolPicker.mll\";\nAnimSchoolPicker();" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Studio Library" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Studio Library" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/scripts/studiolibrary-2.13.1/src/studiolibrary/resource/icons/icon.png" 
+        -image1 "A:/VFX/Ani_team/_maya_env/scripts/studiolibrary-2.13.1/src/studiolibrary/resource/icons/icon.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "\n# -----------------------------------\n# Studio Library\n# www.studiolibrary.com\n# -----------------------------------\n\nimport os\nimport sys\n    \nif not os.path.exists(r'A:\\VFX\\Ani_team\\_maya_env\\scripts\\studiolibrary-2.13.1\\src'):\n    raise IOError(r'The source path \"A:\\VFX\\Ani_team\\_maya_env\\scripts\\studiolibrary-2.13.1\\src\" does not exist!')\n    \nif r'A:\\VFX\\Ani_team\\_maya_env\\scripts\\studiolibrary-2.13.1\\src' not in sys.path:\n    sys.path.insert(0, r'A:\\VFX\\Ani_team\\_maya_env\\scripts\\studiolibrary-2.13.1\\src')\n    \nimport studiolibrary\nstudiolibrary.main()\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "zShotMask" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "zShotMask" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/icons/zShotMask.png" 
+        -image1 "A:/VFX/Ani_team/_maya_env/icons/zShotMask.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "from zshotmask_ui import ZShotMask, ZShotMaskUi\nZShotMaskUi.display()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "mmBakeCam" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "mmBakeCam" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/icons/mmBakeCam.png" 
+        -image1 "A:/VFX/Ani_team/_maya_env/icons/mmBakeCam.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import sys\n\npath = 'A:/VFX/Ani_team/_maya_env/scripts/'\n\nif path in sys.path :\n    pass\nelif path not in sys.path :\n    sys.path.append ( path )\n\nimport mmBakeCam;\nreload(mmBakeCam);\nmmBakeCam.mmBakeCam(3)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Rivet" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Rivet" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/icons/rivet.bmp" 
+        -image1 "A:/VFX/Ani_team/_maya_env/icons/rivet.bmp" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "source \"A:/VFX/Ani_team/_maya_env/scripts/rivet.mel\";\nrivet();" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "cMotionTrail" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "cMotionTrail" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/icons/cMotionTrail.bmp" 
+        -image1 "A:/VFX/Ani_team/_maya_env/icons/cMotionTrail.bmp" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "source \"A:/VFX/Ani_team/_maya_env/scripts/cMotionTrailUI.mel\";\ncMotionTrailUI;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "KK Controllers" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "KK Controllers" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/icons/kk_controllers.bmp" 
+        -image1 "A:/VFX/Ani_team/_maya_env/icons/kk_controllers.bmp" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "source \"A:/VFX/Ani_team/_maya_env/scripts/kk_controllers_v2.mel\";\nkk_controllers ();" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Quick Rename Tool" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Quick Rename Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/icons/Quick_rename_tool.bmp" 
+        -image1 "A:/VFX/Ani_team/_maya_env/icons/Quick_rename_tool.bmp" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "source \"A:/VFX/Ani_team/_maya_env/scripts/Quick_rename_tool.mel\";\nQuick_rename_tool();" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Snap" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Snap" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/icons/Snap.bmp" 
+        -image1 "A:/VFX/Ani_team/_maya_env/icons/Snap.bmp" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "source \"A:/VFX/Ani_team/_maya_env/scripts/Snap.mel\";\nSnap();" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "mog_IkFk Switch" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "mog_IkFk Switch" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:/VFX/Ani_team/_maya_env/icons/ikFkSwitch.png" 
+        -image1 "A:/VFX/Ani_team/_maya_env/icons/ikFkSwitch.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import pymel.core as pm\nimport mog_ikFkSwitchFree as mog_ikFkSwitchFree\nimport imp\nimp.reload(mog_ikFkSwitchFree)\nmog_ikFkSwitchFree.FkIk_UI()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "jop_baker\n1) Select controller(s).\n2) Click on the Baker icon.\nRight click to see option." 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "jop_baker" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/hyh14/OneDrive/����/maya/2023/prefs/icons/jop_baker_icon.png" 
+        -image1 "C:/Users/hyh14/OneDrive/����/maya/2023/prefs/icons/jop_baker_icon.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "\n# -----------------------------------\n# jop_baker\n# Copyright (c) <2020> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\nimport maya.cmds as mc\n\nif not os.path.exists(r'A:\\VFX\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\VFX\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\VFX\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\VFX\\Ani_team\\_maya_env\\scripts')\n\nimport jop_baker\nreload(jop_baker)\njop_baker.main()\n \n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+        -mi "Bake on 2s" ( "\n# -----------------------------------\n# jop_baker\n# Copyright (c) <2020> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_baker\nreload(jop_baker)\njop_baker.bakeOnTwos()\n \n" )
+        -mip 0
+        -mi "Bake on 4s" ( "\n# -----------------------------------\n# jop_baker\n# Copyright (c) <2020> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_baker\nreload(jop_baker)\njop_baker.bakeOnForths()\n \n" )
+        -mip 1
+        -mi "Scene Constraints Baker" ( "\n# -----------------------------------\n# jop_baker\n# Copyright (c) <2020> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_baker\nreload(jop_baker)\njop_baker.bakeAllSceneConstraints()\n \n" )
+        -mip 2
+        -mi "Merge All AnimLayers" ( "\n# -----------------------------------\n# jop_baker\n# Copyright (c) <2020> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_baker\nreload(jop_baker)\njop_baker.mergeAllSceneLayers()\n \n" )
+        -mip 3
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "jop_copyTiming" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "jop_copyTiming" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:\\Ani_team\\_maya_env\\icons\\jop_copyTiming_icon.png" 
+        -image1 "A:\\Ani_team\\_maya_env\\icons\\jop_copyTiming_icon.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "\n# -----------------------------------\n# jop_copyTiming\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\nimport maya.cmds as mc\n\nif not os.path.exists(r'A:\\VFX\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\VFX\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\VFX\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\VFX\\Ani_team\\_maya_env\\scripts')\n\nimport jop_copyTiming\nreload(jop_copyTiming)\njop_copyTiming.main()\n \n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+        -mi "Key ALL" ( "\n# -----------------------------------\n# jop_copyTiming\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_copyTiming\nreload(jop_copyTiming)\njop_copyTiming.menuCommand1()\n \n" )
+        -mip 0
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "jop_followCam" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "jop_followCam" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:\\Ani_team\\_maya_env\\icons\\jop_followCam_icon.png" 
+        -image1 "A:\\Ani_team\\_maya_env\\icons\\jop_followCam_icon.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "\n# -----------------------------------\n# jop_followCam\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\nimport maya.cmds as mc\n\nif not os.path.exists(r'A:\\VFX\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\VFX\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\VFX\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\VFX\\Ani_team\\_maya_env\\scripts')\n\nimport jop_followCam\nreload(jop_followCam)\njop_followCam.main()\n \n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+        -mi "omit Translation" ( "\n# -----------------------------------\n# jop_followCam\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_followCam\nreload(jop_followCam)\njop_followCam.menuCommand1()\n \n" )
+        -mip 0
+        -mi "omit Rotation" ( "\n# -----------------------------------\n# jop_followCam\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_followCam\nreload(jop_followCam)\njop_followCam.menuCommand2()\n \n" )
+        -mip 1
+        -mi "omit translationX" ( "\n# -----------------------------------\n# jop_followCam\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_followCam\nreload(jop_followCam)\njop_followCam.menuCommand3()\n \n" )
+        -mip 2
+        -mi "omit translationY" ( "\n# -----------------------------------\n# jop_followCam\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_followCam\nreload(jop_followCam)\njop_followCam.menuCommand4()\n \n" )
+        -mip 3
+        -mi "omit translationZ" ( "\n# -----------------------------------\n# jop_followCam\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_followCam\nreload(jop_followCam)\njop_followCam.menuCommand5()\n \n" )
+        -mip 4
+        -mi "omit RotationX" ( "\n# -----------------------------------\n# jop_followCam\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_followCam\nreload(jop_followCam)\njop_followCam.menuCommand6()\n \n" )
+        -mip 5
+        -mi "omit RotationY" ( "\n# -----------------------------------\n# jop_followCam\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_followCam\nreload(jop_followCam)\njop_followCam.menuCommand7()\n \n" )
+        -mip 6
+        -mi "omit RotationZ" ( "\n# -----------------------------------\n# jop_followCam\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_followCam\nreload(jop_followCam)\njop_followCam.menuCommand8()\n \n" )
+        -mip 7
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "jop_isolationToogle\n1) Select objects or faces you want to isolate.\n2) Update the isolate List by clicking on the SELECT button.\n3) Click Toggle Visibility." 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "jop_isolationToogle" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:\\Ani_team\\_maya_env\\icons\\jop_isolationToogle_icon.png" 
+        -image1 "A:\\Ani_team\\_maya_env\\icons\\jop_isolationToogle_icon.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "\n# -----------------------------------\n# jop_isolationToogle\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\nimport maya.cmds as mc\n\nif not os.path.exists(r'A:\\VFX\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\VFX\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\VFX\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\VFX\\Ani_team\\_maya_env\\scripts')\n\nimport jop_isolationToogle\nreload(jop_isolationToogle)\njop_isolationToogle.main()\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "jop_locator\n1) Select controller(s).\n2) Click on the locator icon.\nRight click to see option" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "jop_locator" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:\\Ani_team\\_maya_env\\icons\\jop_locator_icon.png" 
+        -image1 "A:\\Ani_team\\_maya_env\\icons\\jop_locator_icon.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\nimport maya.cmds as mc\n\nif not os.path.exists(r'A:\\VFX\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\VFX\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\VFX\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\VFX\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.main()\n \n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+        -mi "----------- Range : Time Slider -----" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.noAction()\n \n" )
+        -mip 0
+        -mi "On Every frames" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.timeSliderEveryFrames()\n \n" )
+        -mip 1
+        -mi "On Keyframes" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.timeSliderKeyframes()\n \n" )
+        -mip 2
+        -mi "World space Driver" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.timeSliderWorldSpaceDriver()\n \n" )
+        -mip 3
+        -mi "----------- Range : All Keys ---------" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.noAction()\n \n" )
+        -mip 4
+        -mi "On Every frames" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.allKeysEveryFrames()\n \n" )
+        -mip 5
+        -mi "On Keyframes" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.allKeysKeyframes()\n \n" )
+        -mip 6
+        -mi "World space Driver" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.allKeysWorldSpaceDriver()\n \n" )
+        -mip 7
+        -mi "----------- Zero Group  --------------" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.noAction()\n \n" )
+        -mip 8
+        -mi "On Current Frame" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.zeroGrpOnCurrentFrame()\n \n" )
+        -mip 9
+        -mi "Parent Constraint" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.zeroGrpConstraint()\n \n" )
+        -mip 10
+        -mi "Time Slider Bake" ( "\n# -----------------------------------\n# jop_locator\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\n\nif not os.path.exists(r'A:\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\Ani_team\\_maya_env\\scripts')\n\nimport jop_locator\nreload(jop_locator)\njop_locator.zeroGrpBake()\n \n" )
+        -mip 11
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "jop_lockToWorld" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "jop_lockToWorld" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "A:\\Ani_team\\_maya_env\\icons\\jop_lockToWorld_icon.png" 
+        -image1 "A:\\Ani_team\\_maya_env\\icons\\jop_lockToWorld_icon.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "\n# -----------------------------------\n# jop_lockToWorld\n# Copyright (c) <2021> <JesseOngPho>\n# jesseongpho@hotmail.com\n# -----------------------------------\n\nimport os\nimport sys\nfrom imp import reload\nimport maya.cmds as mc\n\nif not os.path.exists(r'A:\\VFX\\Ani_team\\_maya_env\\scripts'):\n    mc.error( r'The source path \"A:\\VFX\\Ani_team\\_maya_env\\scripts\" does not exist!')\nif r'A:\\VFX\\Ani_team\\_maya_env\\scripts' not in sys.path:\n    sys.path.insert(0, r'A:\\VFX\\Ani_team\\_maya_env\\scripts')\n\nimport jop_lockToWorld\nreload(jop_lockToWorld)\njop_lockToWorld.main()\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import sys\nsys.version\nscriptPath=r'A:\\Ani_team\\_maya_env\\scripts'\nsys.path.append(scriptPath)" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import sys\nsys.version\nscriptPath=r'A:\\Ani_team\\_maya_env\\script..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import sys\nsys.version\nscriptPath=r'A:\\Ani_team\\_maya_env\\scripts'\nsys.path.append(scriptPath)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import re\nimport maya.cmds as cmds\n\ndef increment_version():\n    # Get the current file name\n    current_file_path = cmds.file(query=True, sceneName=True)\n   \n    if not current_file_path:\n        print(\"No scene is currently open. Please open a scene and run the script.\")\n        return\n\n    # Extract information from the current file name using a regular expression\n    match = re.match(r'^(.*?_w)(\\d+)(\\.mb)$', current_file_path)\n   \n    if not match:\n        print(f\"Unable to extract version number from file: {current_file_path}\")\n        return\n   \n    prefix, version, extension = match.groups()\n   \n    # Increment the version number\n    new_version = int(version) + 1\n   \n    # Construct the new file name with the incremented version\n    new_file_path = f\"{prefix}{new_version:02d}{extension}\"\n   \n    # Save the current scene as the new file\n    cmds.file(rename=new_file_path)\n    cmds.file(save=True, type='mayaBinary')\n   \n    print(f\"File saved as: {new_file_path}\")\n\n# Example usage\nincrement_version()" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import re\nimport maya.cmds as cmds\n\ndef increment_version():\n   ..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "w0x +1" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import re\nimport maya.cmds as cmds\n\ndef increment_version():\n    # Get the current file name\n    current_file_path = cmds.file(query=True, sceneName=True)\n   \n    if not current_file_path:\n        print(\"No scene is currently open. Please open a scene and run the script.\")\n        return\n\n    # Extract information from the current file name using a regular expression\n    match = re.match(r'^(.*?_w)(\\d+)(\\.mb)$', current_file_path)\n   \n    if not match:\n        print(f\"Unable to extract version number from file: {current_file_path}\")\n        return\n   \n    prefix, version, extension = match.groups()\n   \n    # Increment the version number\n    new_version = int(version) + 1\n   \n    # Construct the new file name with the incremented version\n    new_file_path = f\"{prefix}{new_version:02d}{extension}\"\n   \n    # Save the current scene as the new file\n    cmds.file(rename=new_file_path)\n    cmds.file(save=True, type='mayaBinary')\n   \n    print(f\"File saved as: {new_file_path}\")\n\n# Example usage\nincrement_version()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import maya.cmds as cmds\n\ndef toggle_display_type(obj):\n    # Check if the override is already created\n    override_exists = cmds.attributeQuery('overrideDisplayType', node=obj, exists=True)\n\n    if not override_exists:\n        # Create the override\n        cmds.addAttr(obj, longName='overrideDisplayType', attributeType='long', defaultValue=0, hidden=False, keyable=True)\n\n    # Get the current value of overrideDisplayType\n    current_value = cmds.getAttr(obj + '.overrideDisplayType')\n    print(current_value)\n\n    # Toggle between 0 and 2\n    new_value = 2 if current_value == 0 else 0\n\n    # Set the new override value\n    cmds.setAttr(obj + '.overrideDisplayType', new_value)\n    print(f\"{obj}: overrideDisplayType toggled to {new_value}\")\n\n# Assuming you have an object selected or specified\nselected_objects = cmds.ls(selection=True)\n\nif selected_objects:\n    for obj in selected_objects:\n        toggle_display_type(obj)\nelse:\n    print(\"Please select an object.\")\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import maya.cmds as cmds\n\ndef toggle_display_type(obj):\n    # Ch..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "ToggleCTRL" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n\ndef toggle_display_type(obj):\n    # Check if the object is a transform or a shape\n    if cmds.objectType(obj) == 'transform':\n        # If it's a transform, get the shape node\n        shapes = cmds.listRelatives(obj, shapes=True)\n        if shapes:\n            obj = shapes[0]\n        else:\n            print(f\"No shape node found for transform {obj}. Skipping.\")\n            return\n\n    # Check if the override is already created\n    override_exists = cmds.attributeQuery('overrideDisplayType', node=obj, exists=True)\n\n    if not override_exists:\n        # Create the override\n        cmds.addAttr(obj, longName='overrideDisplayType', attributeType='long', defaultValue=0, hidden=False, keyable=True)\n\n    # Get the current value of overrideDisplayType\n    current_value = cmds.getAttr(obj + '.overrideDisplayType')\n    print(current_value)\n\n    # Toggle between 0 and 2\n    new_value = 2 if current_value == 0 else 0\n\n    # Set the new override value\n    cmds.setAttr(obj + '.overrideDisplayType', new_value)\n    print(f\"{obj}: overrideDisplayType toggled to {new_value}\")\n\n# Assuming you have an object selected or specified\nselected_objects = cmds.ls(selection=True)\n\nif selected_objects:\n    for obj in selected_objects:\n        toggle_display_type(obj)\nelse:\n    print(\"Please select an object.\")" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Task Manager" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Task Manager" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "app/app_task_manager.png" 
+        -image1 "app/app_task_manager.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import vive.app.task_manager\nreload(vive.app.task_manager)\nvive.app.task_manager.show_window()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Asset Loader" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Asset Loader" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "app/app_asset_loader.png" 
+        -image1 "app/app_asset_loader.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import vive.app.asset_loader\nreload(vive.app.asset_loader)\nvive.app.asset_loader.show_window()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Animation Manager" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Animation Manager" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "app/app_animation_manager.png" 
+        -image1 "app/app_animation_manager.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import vive.app.animation_manager\nreload(vive.app.animation_manager)\nvive.app.animation_manager.show_window()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Namespace Editor" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Namespace Editor" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "NE" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconWindow.png" 
+        -image1 "menuIconWindow.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "NamespaceEditor" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Constrain one object to the position/orientation/scale of another." 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Parent" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "parentConstraint.png" 
+        -image1 "parentConstraint.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "doCreateParentConstraintArgList 1 { \"1\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1\",\"\",\"1\" };" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Bake existing animation into keys" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Bake Simulation" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "bakeAnimation.png" 
+        -image1 "bakeAnimation.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "doBakeSimulationArgList 9 { \"2\",\"0\",\"10\",\"1\",\"0\",\"0\",\"1\",\"1\",\"0\",\"1\",\"animationList\",\"0\",\"0\",\"0\",\"0\",\"0\",\"1\",\"1\",\"1\",\"1\" };" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "cmds.outlinerEditor('outlinerPanel1',e=True,expandAllItems=1)" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "cmds.outlinerEditor('outlinerPanel1',e=True,expandAllItems=1)" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -imageOverlayLabel "CollapseAll" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "pythonFamily.png" 
+        -image1 "pythonFamily.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "cmds.outlinerEditor('outlinerPanel1',e=True,expandAllItems=0)" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+
+} 

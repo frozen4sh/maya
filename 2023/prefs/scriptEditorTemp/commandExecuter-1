@@ -1,0 +1,10 @@
+import pymel.core as pm
+import mog_ikFkSwitchFree as mog_ikFkSwitchFree
+import imp
+imp.reload(mog_ikFkSwitchFree)
+mog_ikFkSwitchFree.FkIk_UI()
+
+import mog_ikFkSwitchFree
+import imp
+imp.reload(pm)
+dir(imp)

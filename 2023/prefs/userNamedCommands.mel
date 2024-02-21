@@ -1,0 +1,82 @@
+//Maya Preference 2023 (Release 1)
+//
+//
+
+nameCommand
+	-annotation "samkayNameCommand"
+	-sourceType "mel"
+	-command ("samkay")
+	samkayNameCommand;
+
+nameCommand
+	-annotation "GraphEditorNameCommand"
+	-sourceType "mel"
+	-command ("GraphEditor")
+	GraphEditorNameCommand;
+
+nameCommand
+	-annotation "Reset_TNameCommand"
+	-sourceType "mel"
+	-command ("Reset_T")
+	Reset_TNameCommand;
+
+nameCommand
+	-annotation "Reset_RNameCommand"
+	-sourceType "mel"
+	-command ("Reset_R")
+	Reset_RNameCommand;
+
+nameCommand
+	-annotation "Reset_SNameCommand"
+	-sourceType "mel"
+	-command ("Reset_S")
+	Reset_SNameCommand;
+
+nameCommand
+	-annotation "PasteKeyNameCommand"
+	-sourceType "mel"
+	-command ("PasteKey")
+	PasteKeyNameCommand;
+
+nameCommand
+	-annotation "CopyKeyNameCommand"
+	-sourceType "mel"
+	-command ("CopyKey")
+	CopyKeyNameCommand;
+
+nameCommand
+	-annotation "HotkeyPreferencesWindowNameCommand"
+	-sourceType "mel"
+	-command ("HotkeyPreferencesWindow")
+	HotkeyPreferencesWindowNameCommand;
+
+nameCommand
+	-annotation "NodeEditorWindowNameCommand"
+	-sourceType "mel"
+	-command ("NodeEditorWindow")
+	NodeEditorWindowNameCommand;
+
+nameCommand
+	-annotation "ReferenceEditorNameCommand"
+	-sourceType "mel"
+	-command ("ReferenceEditor")
+	ReferenceEditorNameCommand;
+
+nameCommand
+	-annotation "SelectHierarchyNameCommand"
+	-sourceType "mel"
+	-command ("SelectHierarchy")
+	SelectHierarchyNameCommand;
+
+nameCommand
+	-annotation "FreezeTransformationsNameCommand"
+	-sourceType "mel"
+	-command ("FreezeTransformations")
+	FreezeTransformationsNameCommand;
+
+nameCommand
+	-annotation "CenterPivotNameCommand"
+	-sourceType "mel"
+	-command ("CenterPivot")
+	CenterPivotNameCommand;
+

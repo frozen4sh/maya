@@ -1,0 +1,21 @@
+
+# -----------------------------------
+# jop_locator
+# Copyright (c) <2021> <JesseOngPho>
+# jesseongpho@hotmail.com
+# -----------------------------------
+
+import os
+import sys
+from imp import reload
+import maya.cmds as mc
+
+if not os.path.exists(r'A:\VFX\Ani_team\_maya_env\scripts'):
+    mc.error( r'The source path "A:\VFX\Ani_team\_maya_env\scripts" does not exist!')
+if r'A:\VFX\Ani_team\_maya_env\scripts' not in sys.path:
+    sys.path.insert(0, r'A:\VFX\Ani_team\_maya_env\scripts')
+
+import jop_locator
+reload(jop_locator)
+jop_locator.main()
+ 

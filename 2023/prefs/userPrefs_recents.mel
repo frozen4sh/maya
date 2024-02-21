@@ -1,0 +1,43 @@
+//Maya Preference 2023 (Release 1)
+//
+//
+
+optionVar -version 3;
+
+// RecentFiles
+optionVar -cat "RecentFiles"
+ -sa "RecentFilesList"
+ -sva "RecentFilesList" "v:/vfx/ggj_v/shot/e131/e131_s001_1220/ani/wip/scenes/e131_s001_1220_ani_v001_w06.mb"
+ -sva "RecentFilesList" "v:/vfx/ggj_v/shot/e131/e131_s001_1250/ani/wip/scenes/e131_s001_1250_ani_v001_w02.mb"
+ -sva "RecentFilesList" "D:/Justin/maya/2024.1Q/bone_control_test_scene.mb"
+ -sva "RecentFilesList" "X:/VFX/moe/asset/character/crow/rig/wip/scenes/crow_rig_v001_w01.mb"
+ -sva "RecentFilesList" "D:/Justin/maya/2024.1Q/crow_rig_v001_w01_test.mb"
+ -sva "RecentFilesList" "c:/vtmpfsh/shot/e104/e104_s033_0350/ani/pub/scenes/e104_s033_0350_ani_v001.mb"
+ -sva "RecentFilesList" "v:/vfx/fsh/shot/e104/e104_s033_0315/ani/wip/scenes/e104_s033_0315_ani_v003_w01.mb"
+ -sva "RecentFilesList" "V:/VFX/FSH/shot/e104/e104_s033_0315/ani/wip/scenes/e104_s033_0315_ani_v004_w01.mb"
+ -sva "RecentFilesList" "D:/Justin/maya/Autosave/e104_s033_0315_ani_v004_w01.0002.mb"
+ -sva "RecentFilesList" "V:/VFX/FSH/shot/e104/e104_s033_0315/ani/wip/scenes/e104_s033_0315_ani_v004_w02.mb"
+ -sa "RecentFilesTypeList"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sa "RecentProjectsList"
+ -sva "RecentProjectsList" "R:\\VFX\\FSH\\shot\\e102\\e102_s006_0570\\ani\\wip\\maya"
+ -sva "RecentProjectsList" "R:/VFX/FSH/shot/e101/e101_s002_0020/ani/wip/maya"
+ -sva "RecentProjectsList" "R:/VFX/FSH/shot/e101/e101_s002_0020/ani/wip"
+ -sva "RecentProjectsList" "R:/VFX/FSH/shot/e104/e104_s033_0315/ani/wip"
+ -sva "RecentProjectsList" "P:/VFX/GGJ_V/shot/e131/e131_s001_1210/ani/wip"
+ -sva "RecentProjectsList" "V:/VFX/ggj_v/shot/e131/e131_s001_1210/ani/wip"
+ -sva "RecentProjectsList" "V:/VFX/ggj_v/shot/e131/e131_s001_1270/ani/wip/scenes"
+ -sva "RecentProjectsList" "V:/VFX/ggj_v/shot/e131/e131_s001_1270/ani/wip"
+ -sva "RecentProjectsList" "V:\\VFX\\GGJ_V\\shot\\e131\\e131_s001_1220\\ani\\wip\\maya"
+ -sva "RecentProjectsList" "V:/VFX/FSH/shot/e104/e104_s033_0315/ani/wip"
+ ;
+

@@ -1,0 +1,28 @@
+import maya.cmds as cmds
+
+# Create a window
+window_name = "myWindow"
+if cmds.window(window_name, exists=True):
+    cmds.deleteUI(window_name, window=True)
+
+cmds.window(window_name)
+
+# Main layout
+main_layout = cmds.columnLayout(adjustableColumn=True)
+
+# First row
+cmds.rowLayout(numberOfColumns=2, parent=main_layout)
+cmds.text(label="Label 1", align="right")
+cmds.textField()
+
+# Second row
+cmds.rowLayout(numberOfColumns=2, parent=main_layout)
+cmds.text(label="Label 2", align="right")
+cmds.floatSlider()
+
+# Third row
+cmds.rowLayout(numberOfColumns=2, parent=main_layout)
+cmds.text(label="Label 3", align="right")
+cmds.checkBox()
+
+cmds.showWindow(window_name)
