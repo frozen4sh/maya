@@ -18,8 +18,8 @@ windowPref -topLeftCorner 150 200 -widthHeight 1120 640 -maximized true -parentM
 windowPref -topLeftCorner 235 230 -widthHeight 1000 495 -maximized true -parentMain true contentBrowserPanel1Window;
 windowPref -topLeftCorner -12 -1 -widthHeight 1920 1536 -maximized true -parentMain false MayaWindow;
 windowPref -topLeftCorner 1605 835 -widthHeight 612 471 -maximized true -parentMain true authentication_login_window;
-windowPref -topLeftCorner 668 462 -widthHeight 1400 1400 -maximized true -parentMain true msgbox;
-windowPref -topLeftCorner 417 418 -widthHeight 1921 1464 -maximized true -parentMain true task_manager_window;
+windowPref -topLeftCorner 641 465 -widthHeight 1400 1400 -maximized true -parentMain true msgbox;
+windowPref -topLeftCorner 390 421 -widthHeight 1921 1464 -maximized true -parentMain true task_manager_window;
 windowPref -topLeftCorner 143 -1883 -widthHeight 1531 1585 -maximized false -parentMain true PreferencesWindow;
 windowPref -topLeftCorner 453 927 -widthHeight 1276 1514 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 5946 553 -widthHeight 750 1050 -maximized true -parentMain true RiggingChecklistWidget;
