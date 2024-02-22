@@ -1,0 +1,21 @@
+{
+    "context": "ttf",
+    "history": [
+        [
+            "EnableConstraints",
+            "AttachToPath",
+            "OutlinerWindow",
+            "NamespaceEditor",
+            "EnterConnectTool",
+            "ToggleGrid",
+            "ReverseCurve",
+            "CreateMotionTrail",
+            "CreateCurveFromPoly",
+            "ToggleViewCube"
+        ],
+        [],
+        [],
+        []
+    ],
+    "version": "0.21"
+}

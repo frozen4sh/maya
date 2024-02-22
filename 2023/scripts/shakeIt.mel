@@ -1,0 +1,95 @@
+/* This file downloaded from Highend3d.com
+''  
+''  Highend3d.com File Information:
+''  
+''    Script Name: Shake It
+''    Author: pzhaojing 
+''    Last Updated: Jan 21, 2009
+''    Update/Change this file at:
+''    http://Highend3d.com/maya/downloads/mel_scripts/animation/2706.html
+''  
+''  Please do not alter any information above this line
+''  it is generated dynamically by Highend3d.com and will
+''  be changed automatically on any updates.
+*/
+global proc shakeIt(){
+	string $sel[] = `ls -sl -type transform`;
+	for ($i in $sel){
+		addShakeAttr ($i);
+		string $node=insertShakeNode ($i);
+		string $exp="//Shaker It Expression by ZhaoJing\n";
+		$exp+="float $mag=magnitude;\n";
+		$exp+="vector $freq = <<frequencyX, frequencyY, frequencyZ>> * 2;\n";
+		$exp+="vector $offs = <<offsetX, offsetY, offsetZ>>;\n";
+		$exp+="vector $shaker = $mag * <<noise(time * $freq.x + $offs.x), noise(time * $freq.y + $offs.y), noise(time * $freq.z + $offs.z)>>;\n";
+		$exp+=$node + ".input3D[2].input3Dx = $shaker.x;\n";
+		$exp+=$node + ".input3D[2].input3Dy = $shaker.y;\n";
+		$exp+=$node + ".input3D[2].input3Dz = $shaker.z;\n";
+		$exp+="//End Shaker It Expression \n";
+		expression -s $exp  -o $i -ae 1 -uc all ;
+	}
+	if (`size $sel`) select -r  $sel;
+}
+
+global proc string insertShakeNode(string $transNode){
+	if (`nodeType $transNode`!="transform") return  "";
+	string $node=`createNode plusMinusAverage`;
+	string $tx=$transNode+".tx";
+	string $ty=$transNode+".ty";
+	string $tz=$transNode+".tz";
+	setAttr -lock 0 $tx;
+	setAttr -lock 0 $ty;
+	setAttr -lock 0 $tz;
+	string $outX[]=`listConnections -s 1 -p 1 -d 1 $tx`;
+	string $outY[]=`listConnections -s 1 -p 1 -d 1 $ty`;
+	string $outZ[]=`listConnections -s 1 -p 1 -d 1 $tz`;
+	if (`size $outX`)connectAttr -f $outX[0] ($node+".input3D[0].input3Dx");
+	else setAttr ($node+".input3D[0].input3Dx") `getAttr  $tx`;
+	if (`size $outY`)connectAttr -f $outY[0] ($node+".input3D[0].input3Dy");
+	else setAttr ($node+".input3D[0].input3Dy") `getAttr  $ty`;
+	if (`size $outZ`)connectAttr -f $outZ[0] ($node+".input3D[0].input3Dz");
+	else setAttr ($node+".input3D[0].input3Dz") `getAttr  $tz`;
+	connectAttr -f ($node+".output3Dx") $tx;
+	connectAttr -f ($node+".output3Dy") $ty;
+	connectAttr -f ($node+".output3Dz") $tz;
+	return $node;
+}
+global proc addShakeAttr(string $output){
+	
+	if (!`attributeExists "shaker" $output`) {
+
+		addAttr -ln "shaker"  -at "enum" -en "attributes:" $output;
+		setAttr -e-keyable true ($output + ".shaker");
+		setAttr -lock true ($output + ".shaker");
+	}
+	
+	if (!`attributeExists "magnitude" $output`) {
+		addAttr -ln "magnitude"  -at double  -min 0 -dv 0 $output;
+		setAttr -e-keyable true ($output + ".magnitude");
+	}	
+	
+	if (!`attributeExists "frequency" $output`) {
+		addAttr -ln "frequency"  -at double3 $output;
+		addAttr -ln "frequencyX"  -at double -p frequency $output;
+		addAttr -ln "frequencyY"  -at double -p frequency $output;
+		addAttr -ln "frequencyZ"  -at double -p frequency $output;
+		setAttr -type double3 ($output + ".frequency") .5 2 1.333;
+		setAttr -e-keyable true ($output + ".frequency");
+		setAttr -e-keyable true ($output + ".frequencyX");
+		setAttr -e-keyable true ($output + ".frequencyY");
+		setAttr -e-keyable true ($output + ".frequencyZ");	
+	}
+	
+
+	if (!`attributeExists "offset" $output`) {
+		addAttr -ln "offset"  -at double3  $output;
+		addAttr -ln "offsetX"  -at double -p offset $output;
+		addAttr -ln "offsetY"  -at double -p offset $output;
+		addAttr -ln "offsetZ"  -at double -p offset $output;
+		setAttr -type double3 ($output + ".offset") 0 100 375;
+		setAttr -e-keyable true ($output + ".offset");
+		setAttr -e-keyable true ($output + ".offsetX");
+		setAttr -e-keyable true ($output + ".offsetY");
+		setAttr -e-keyable true ($output + ".offsetZ");
+	}
+}
