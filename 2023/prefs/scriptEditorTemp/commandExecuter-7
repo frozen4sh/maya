@@ -5,7 +5,7 @@ class BoneControllerUI:
         self.window_name = "boneControllerWindow"
         self.column_layout = "columnLayout"
         self.bone_list = ["Bone1", "Bone2", "Bone3"]  # Replace with your bone names
-        self.controller_list = ["Controller1", "Controller2", "Controller3"]  # Replace with your controller names
+        selff.controller_list = ["Controller1", "Controller2", "Controller3"]  # Replace with your controller names
         self.bone_text_scroll_list = "boneTextScrollList"
         self.controller_text_scroll_list = "controllerTextScrollList"
 

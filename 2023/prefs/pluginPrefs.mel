@@ -8,6 +8,7 @@ evalDeferred("autoLoadPlugin(\"\", \"hairPhysicalShader\", \"hairPhysicalShader\
 evalDeferred("autoLoadPlugin(\"\", \"ATFPlugin\", \"ATFPlugin\")");
 evalDeferred("autoLoadPlugin(\"\", \"ikSpringSolver\", \"ikSpringSolver\")");
 evalDeferred("autoLoadPlugin(\"\", \"sweep\", \"sweep\")");
+evalDeferred("autoLoadPlugin(\"\", \"zshotmask.py\", \"zshotmask\")");
 evalDeferred("autoLoadPlugin(\"\", \"lookdevKit\", \"lookdevKit\")");
 evalDeferred("autoLoadPlugin(\"\", \"Type\", \"Type\")");
 evalDeferred("autoLoadPlugin(\"\", \"bifrostGraph\", \"bifrostGraph\")");
@@ -26,7 +27,6 @@ evalDeferred("autoLoadPlugin(\"\", \"GamePipeline\", \"GamePipeline\")");
 evalDeferred("autoLoadPlugin(\"\", \"tiffFloatReader\", \"tiffFloatReader\")");
 evalDeferred("autoLoadPlugin(\"\", \"MASH\", \"MASH\")");
 evalDeferred("autoLoadPlugin(\"\", \"poseInterpolator\", \"poseInterpolator\")");
-evalDeferred("autoLoadPlugin(\"\", \"CharcoalEditor2\", \"CharcoalEditor2\")");
 evalDeferred("autoLoadPlugin(\"\", \"ik2Bsolver\", \"ik2Bsolver\")");
 evalDeferred("autoLoadPlugin(\"\", \"xgenToolkit\", \"xgenToolkit\")");
 evalDeferred("autoLoadPlugin(\"\", \"AbcExport\", \"AbcExport\")");

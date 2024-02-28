@@ -9,9 +9,14 @@
             "EnterConnectTool",
             "ToggleGrid",
             "ReverseCurve",
-            "CreateMotionTrail",
             "CreateCurveFromPoly",
-            "ToggleViewCube"
+            "ToggleViewCube",
+            "cmdLightPortal",
+            "cmdSkydomeLight",
+            "cmdArnoldExportAllStandIn",
+            "RenderGlobalsWindow",
+            "CreateMotionTrail",
+            "DistanceTool"
         ],
         [],
         [],

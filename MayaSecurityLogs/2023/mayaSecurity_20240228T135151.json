@@ -1,0 +1,16 @@
+{
+    "desc": "Initializing SafeModeController..."
+}{
+    "file": "T:/Ani_team/_maya_env/plug_ins",
+    "function": "zshotmask.py",
+    "reason": "Untrusted Plugin Loading - Security Warning",
+    "choice": "always",
+    "action": "AlwaysAllow",
+    "states": "loadingPlugin"
+}{
+    "file": "T:/Ani_team/_maya_env/plug_ins",
+    "function": "zshotmask.py",
+    "reason": "TrustCenter: Add directory T:/Ani_team/_maya_env/plug_ins to allowedlist path",
+    "action": "Allow",
+    "states": "loadingPlugin"
+}

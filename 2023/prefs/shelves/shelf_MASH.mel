@@ -39,7 +39,7 @@ global proc shelf_MASH () {
     ;
     separator
         -enable 1
-        -width 34
+        -width 12
         -height 35
         -manage 1
         -visible 1
@@ -283,7 +283,7 @@ global proc shelf_MASH () {
     ;
     separator
         -enable 1
-        -width 34
+        -width 12
         -height 35
         -manage 1
         -visible 1
@@ -362,7 +362,7 @@ global proc shelf_MASH () {
     ;
     separator
         -enable 1
-        -width 34
+        -width 12
         -height 35
         -manage 1
         -visible 1
@@ -540,7 +540,7 @@ global proc shelf_MASH () {
     ;
     separator
         -enable 1
-        -width 34
+        -width 12
         -height 35
         -manage 1
         -visible 1

@@ -1,4 +1,4 @@
-global proc shelf_QuadRemesh () {
+global proc shelf_Deadline () {
     global string $gBuffStr;
     global string $gBuffStr0;
     global string $gBuffStr1;
@@ -9,18 +9,16 @@ global proc shelf_QuadRemesh () {
         -flexibleWidthType 3
         -flexibleWidthValue 32
         -enable 1
-        -width 39
+        -width 8
         -height 34
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "QuadRemesher" 
-        -docTag "QRBfd456sg45" 
+        -annotation "Submit To Deadline" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "QR" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -28,13 +26,11 @@ global proc shelf_QuadRemesh () {
         -useAlpha 1
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "QuadRemesher.png" 
-        -image1 "QuadRemesher.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "import QuadRemesher\nqr = QuadRemesher.QuadRemesher()\n" 
-        -sourceType "python" 
+        -command "SubmitJobToDeadline" 
+        -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
     ;
