@@ -15,8 +15,8 @@
             "cmdSkydomeLight",
             "cmdArnoldExportAllStandIn",
             "RenderGlobalsWindow",
-            "CreateMotionTrail",
-            "DistanceTool"
+            "DistanceTool",
+            "CreateMotionTrail"
         ],
         [],
         [],

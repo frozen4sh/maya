@@ -19,11 +19,11 @@ windowPref -topLeftCorner 235 230 -widthHeight 1000 495 -maximized true -parentM
 windowPref -topLeftCorner -12 -1 -widthHeight 1920 1536 -maximized true -parentMain false MayaWindow;
 windowPref -topLeftCorner 1605 835 -widthHeight 612 471 -maximized true -parentMain true authentication_login_window;
 windowPref -topLeftCorner 700 471 -widthHeight 1400 1400 -maximized true -parentMain true msgbox;
-windowPref -topLeftCorner 449 427 -widthHeight 1921 1464 -maximized true -parentMain true task_manager_window;
+windowPref -topLeftCorner 447 337 -widthHeight 1921 1464 -maximized true -parentMain true task_manager_window;
 windowPref -topLeftCorner 291 -1775 -widthHeight 1531 1585 -maximized false -parentMain true PreferencesWindow;
 windowPref -topLeftCorner 312 566 -widthHeight 1276 1514 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 5946 553 -widthHeight 750 1050 -maximized true -parentMain true RiggingChecklistWidget;
-windowPref -topLeftCorner 640 1279 -widthHeight 882 720 -maximized false -parentMain true OptionBoxWindow;
+windowPref -topLeftCorner 866 566 -widthHeight 882 720 -maximized false -parentMain true OptionBoxWindow;
 windowPref -topLeftCorner 3967 603 -widthHeight 525 184 -maximized true -parentMain true path_master_window;
 windowPref -topLeftCorner 700 1280 -widthHeight 384 141 -maximized false -parentMain true objColorPaletteWnd;
 windowPref -topLeftCorner 550 787 -widthHeight 944 888 -maximized false -parentMain true pluginManagerWindow;
