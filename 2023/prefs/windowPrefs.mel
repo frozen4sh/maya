@@ -18,7 +18,7 @@ windowPref -topLeftCorner 150 200 -widthHeight 1120 640 -maximized true -parentM
 windowPref -topLeftCorner 235 230 -widthHeight 1000 495 -maximized true -parentMain true contentBrowserPanel1Window;
 windowPref -topLeftCorner -12 -1 -widthHeight 1920 1536 -maximized true -parentMain false MayaWindow;
 windowPref -topLeftCorner 1605 835 -widthHeight 612 471 -maximized true -parentMain true authentication_login_window;
-windowPref -topLeftCorner 700 471 -widthHeight 1400 1400 -maximized true -parentMain true msgbox;
+windowPref -topLeftCorner 698 381 -widthHeight 1400 1400 -maximized true -parentMain true msgbox;
 windowPref -topLeftCorner 447 337 -widthHeight 1921 1464 -maximized true -parentMain true task_manager_window;
 windowPref -topLeftCorner 291 -1775 -widthHeight 1531 1585 -maximized false -parentMain true PreferencesWindow;
 windowPref -topLeftCorner 312 566 -widthHeight 1276 1514 -maximized false -parentMain true shelfEditor;
@@ -34,7 +34,7 @@ windowPref -topLeftCorner 1347 2294 -widthHeight 323 150 -maximized false -paren
 windowPref -topLeftCorner 700 1280 -widthHeight 930 810 -maximized false -parentMain true expressionEditorWin;
 windowPref -topLeftCorner 1734 728 -widthHeight 354 688 -maximized true -parentMain true logged_window;
 windowPref -topLeftCorner 1126 666 -widthHeight 450 663 -maximized true -parentMain true task_manager_member_selection_window;
-windowPref -topLeftCorner 0 40 -widthHeight 3840 2036 -maximized true -parentMain true vive_asset_loader_window;
+windowPref -topLeftCorner -3840 40 -widthHeight 3840 2036 -maximized true -parentMain true vive_asset_loader_window;
 windowPref -topLeftCorner 700 1280 -widthHeight 660 240 -maximized false -parentMain true commandSearchAndReplaceWnd;
 windowPref -topLeftCorner 622 -446 -widthHeight 276 419 -maximized false -parentMain true KeyFriendPanel;
 windowPref -topLeftCorner 267 -1944 -widthHeight 1039 1155 -maximized false -parentMain true Viewport20OptionsWindow;

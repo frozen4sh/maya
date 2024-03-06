@@ -7,8 +7,6 @@ optionVar -version 3;
 // RecentFiles
 optionVar -cat "RecentFiles"
  -sa "RecentFilesList"
- -sva "RecentFilesList" "v:/vfx/ggj_v/shot/e131/e131_s022_0180/ani/wip/scenes/e131_s022_0180_ani_v001_w01.mb"
- -sva "RecentFilesList" "V:/VFX/ggj_v/shot/e131/e131_s022_0180/ani/wip/scenes/e131_s022_0180_ani_v002_w01.mb"
  -sva "RecentFilesList" "v:/vfx/ggj_v/shot/e131/e131_s022_0180/ani/wip/scenes/e131_s022_0180_ani_v002_w01.mb"
  -sva "RecentFilesList" "V:/VFX/FSH/shot/e104/e104_s033_0315/ani/wip/scenes/e104_s033_0315_ani_v005_w01.mb"
  -sva "RecentFilesList" "v:/vfx/fsh/shot/e104/e104_s033_0315/ani/wip/scenes/e104_s033_0315_ani_v005_w01.mb"
@@ -16,8 +14,9 @@ optionVar -cat "RecentFiles"
  -sva "RecentFilesList" "v:/vfx/fsh/shot/e101/e101_s039_0070/ani/wip/scenes/e101_s039_0070_ani_v002_w01.mb"
  -sva "RecentFilesList" "V:/VFX/FSH/shot/e101/e101_s039_0070/ani/wip/scenes/e101_s039_0070_ani_v002_w02.mb"
  -sva "RecentFilesList" "v:/vfx/fsh/shot/e101/e101_s039_0070/ani/wip/scenes/e101_s039_0070_ani_v002_w02.mb"
+ -sva "RecentFilesList" "c:/vtmpfsh/shot/e101/e101_s039_0070/ani/wip/scenes/e101_s039_0070_ani_v002_w02.mb"
+ -sva "RecentFilesList" "v:/vfx/fsh/shot/e104/e104_s033_0315/ani/wip/scenes/e104_s033_0315_ani_v005_w02.mb"
  -sva "RecentFilesList" "D:/Justin/maya/2024.1Q/bone_control_test_scene.mb"
- -iv "RecentFilesMaxSize" 10
  -sa "RecentFilesTypeList"
  -sva "RecentFilesTypeList" "mayaBinary"
  -sva "RecentFilesTypeList" "mayaBinary"
@@ -40,6 +39,5 @@ optionVar -cat "RecentFiles"
  -sva "RecentProjectsList" "V:/VFX/ggj_v/shot/e131/e131_s001_1270/ani/wip"
  -sva "RecentProjectsList" "V:\\VFX\\GGJ_V\\shot\\e131\\e131_s001_1220\\ani\\wip\\maya"
  -sva "RecentProjectsList" "V:/VFX/FSH/shot/e104/e104_s033_0315/ani/wip"
- -iv "RecentProjectsMaxSize" 10
  ;
 
