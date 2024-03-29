@@ -16,6 +16,8 @@
             "cmdArnoldExportAllStandIn",
             "RenderGlobalsWindow",
             "DistanceTool",
+            "SelectTextureReferenceObject",
+            "DeleteTextureReferenceObject",
             "CreateMotionTrail"
         ],
         [],

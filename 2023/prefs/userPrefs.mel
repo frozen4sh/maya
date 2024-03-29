@@ -7,13 +7,13 @@ optionVar -version 3;
 // Animation
 optionVar -cat "Animation"
  -iv "autoKeyframeState" 1
- -fv "playbackMax" 1279
+ -fv "playbackMax" 1053
  -fv "playbackMaxDefault" 1051
- -fv "playbackMaxRange" 1279
+ -fv "playbackMaxRange" 1053
  -fv "playbackMaxRangeDefault" 1051
- -fv "playbackMin" 1000
+ -fv "playbackMin" 1001
  -fv "playbackMinDefault" 1001
- -fv "playbackMinRange" 1000
+ -fv "playbackMinRange" 1001
  -fv "playbackMinRangeDefault" 1001
  -fv "timeSliderPlaySpeed" 1
  -sv "timeSliderPlayView" "all"
@@ -53,7 +53,7 @@ optionVar -cat "Animation.Constrain.Scale"
 optionVar -cat "Animation.Playback.Playblast"
  -sv "playblastCompression" "jpg"
  -iv "playblastDisplaySizeSource" 2
- -sv "playblastFile" "bone_control_test_scene"
+ -sv "playblastFile" "e102_s006_0640_ani_v001_w01"
  -sv "playblastFormat" "image"
  -iv "playblastHeight" 1080
  -iv "playblastQuality" 100
@@ -94,8 +94,9 @@ optionVar -cat "Cached Playback"
 
 // Color Management
 optionVar -cat "Color Management"
- -sv "colorManagementColorPickerColorSpaceSelection" "Rendering Space"
- -sv "colorManagementColorPickerViewSelection" "ACES 1.0 SDR-video"
+ -sv "colorManagementColorPickerColorSpaceSelection" "color_picking (Output - sRGB)"
+ -sv "colorManagementColorPickerViewSelection" "Rec.709"
+ -iv "colorManagementEnabledByDefault" 1
  -iv "colorManagementOCIORulesEnabled" 0
  ;
 
@@ -268,12 +269,13 @@ optionVar -cat "File References"
 
 // File.Optimize Scene Size
 optionVar -cat "File.Optimize Scene Size"
+ -iv "shadingNetworksOption" 1
  -iv "unknownNodesOption" 1
  ;
 
 // Files/Projects
 optionVar -cat "Files/Projects"
- -sv "" "v:/vfx/fsh/shot/e101/e101_s039_0070/ani/wip/scenes"
+ -sv "" "v:/vfx/fsh/shot/e102/e102_s006_0640/ani/wip/scenes"
  -sa "CustomFileDialogSidebarUrls"
  -sva "CustomFileDialogSidebarUrls" "file:"
  -sva "CustomFileDialogSidebarUrls" "C:/Users/vivestudios/Desktop"
@@ -285,23 +287,26 @@ optionVar -cat "Files/Projects"
  -sva "CustomFileDialogSidebarUrls" "D:/Justin/maya/Autosave"
  -sva "CustomFileDialogSidebarUrls" "V:/VFX/FSH/shot/e101/e101_s039_0070"
  -sva "CustomFileDialogSidebarUrls" "V:/VFX/FSH/shot/e104/e104_s033_0315"
+ -sv "FBX exportOptions" "v=0;"
  -sv "FBXOptions" ""
  -sv "animExportOptions" "precision=8;intValue=17;nodeNames=1;verboseUnits=0;whichRange=1;range=0:10;options=keys;hierarchy=below;controlPoints=0;shapes=1;helpPictures=0;useChannelBox=0;copyKeyCmd=-animation objects -option keys -hierarchy below -controlPoints 0 -shape 1 "
  -sv "animImportOptions" ";targetTime=4;copies=1;option=replace;pictures=0;connect=0;"
+ -iv "animRangeOpt" 2
  -iv "autoSaveDestination" 1
  -iv "autoSaveEnable" 1
  -sv "autoSaveFolder" "D:/Justin/maya/Autosave"
- -sv "browserLocationmayaBinaryscene" "D:/Justin/maya/2024.1Q"
- -sv "defaultFileExportActiveType" "mayaAscii"
+ -sv "defaultFileExportAllType" "FBX export"
  -sv "defaultFileImportType" "Best Guess"
  -sv "defaultFileOpenType" "Best Guess"
- -sv "defaultFileReferenceType" "mayaBinary"
- -sv "fileOptionsGroupNodeResolvedName" "|group"
+ -sv "defaultFileReferenceType" "Best Guess"
+ -sv "fileOptionsGroupNodeResolvedName" "group2"
  -sv "fileWorkingNamespaceName" ":"
- -sv "lastLocalWS" "V:/VFX/FSH/shot/e104/e104_s033_0315/ani/wip"
+ -iv "importOptionsImportFramerate" 1
+ -sv "lastLocalWS" "v:/vfx/fsh/shot/e102/e102_s006_0640/ani/wip"
  -sv "mayaAsciiOptions" "v=0;"
  -sv "mayaBinaryOptions" "v=0;"
  -sv "referenceOptionsRenamePrefix" "haweoo"
+ -iv "useNamespacesDuringFileIO" 0
  ;
 
 // Graph Editor
@@ -347,13 +352,6 @@ optionVar -cat "Graph Editor.Snap Keys"
  -fv "snapKeyValueMultiple" 0.001
  ;
 
-// Grid
-optionVar -cat "Grid"
- -fv "gridDivisions" 1
- -fv "gridSize" 1000
- -fv "gridSpacing" 50
- ;
-
 // Heads Up Display
 optionVar -cat "Heads Up Display"
  -iv "viewAxisVisibility" 0
@@ -392,7 +390,7 @@ optionVar -cat "Hotkey Editor"
 optionVar -cat "HumanIK"
  -sv "hikControlRigUIPath" "C:/Program Files/Autodesk/Maya2023/scripts/others/../../resources/CharacterControls/CharacterControlsConfig.xml"
  -iv "hikControlsTabWidth" 427
- -iv "hikCustomRigTabWidth" 425
+ -iv "hikCustomRigTabWidth" 424
  -sv "hikCustomRigUIPath" "C:/Program Files/Autodesk/Maya2023/scripts/others/../../resources/CharacterControls/CustomRigControlsConfig.xml"
  -iv "mayahikLastSelectedRigStyle" 0
  ;
@@ -501,6 +499,33 @@ optionVar -cat "Hypershade"
  -iv "hypershadeSwatchPauseButtonState" 1
  ;
 
+// In-View Editors
+optionVar -cat "In-View Editors"
+ -sa "kpolyBevel3CaddyElementNames"
+ -sva "kpolyBevel3CaddyElementNames" "fraction"
+ -sva "kpolyBevel3CaddyElementNames" "segments"
+ -sva "kpolyBevel3CaddyElementNames" "depth"
+ -sva "kpolyBevel3CaddyElementNames" "mitering"
+ -sva "kpolyBevel3CaddyElementNames" "miterAlong"
+ -sva "kpolyBevel3CaddyElementNames" "chamfer"
+ -iv "kpolyBevel3NumberOfCaddyElements" 6
+ -sa "kpolyCubeCaddyElementNames"
+ -sva "kpolyCubeCaddyElementNames" "width"
+ -sva "kpolyCubeCaddyElementNames" "height"
+ -sva "kpolyCubeCaddyElementNames" "depth"
+ -sva "kpolyCubeCaddyElementNames" "subdivisionsWidth"
+ -sva "kpolyCubeCaddyElementNames" "subdivisionsHeight"
+ -sva "kpolyCubeCaddyElementNames" "subdivisionsDepth"
+ -iv "kpolyCubeNumberOfCaddyElements" 6
+ -sa "kpolyExtrudeFaceCaddyElementNames"
+ -sva "kpolyExtrudeFaceCaddyElementNames" "thickness"
+ -sva "kpolyExtrudeFaceCaddyElementNames" "localTranslateZ"
+ -sva "kpolyExtrudeFaceCaddyElementNames" "offset"
+ -sva "kpolyExtrudeFaceCaddyElementNames" "divisions"
+ -sva "kpolyExtrudeFaceCaddyElementNames" "keepFacesTogether"
+ -iv "kpolyExtrudeFaceNumberOfCaddyElements" 5
+ ;
+
 // Interface
 optionVar -cat "Interface"
  -iv4 "OutputWindowGeometry" -32000 -32000 276 45
@@ -578,7 +603,6 @@ optionVar -cat "Modeling.Curves.Insert Knot"
 
 // Move Tool
 optionVar -cat "Move Tool"
- -iv "mode_Move" 0
  -fv3 "orientAxes_Move" -1.445623 0.512364 1.325101
  -iv "pinPivot_Move" 1
  ;
@@ -699,7 +723,7 @@ optionVar -cat "Settings"
 // Shelves
 optionVar -cat "Shelves"
  -iv "numShelves" 19
- -iv "selectedShelf" 2
+ -iv "selectedShelf" 19
  -sv "shelfAlign1" "left"
  -sv "shelfAlign10" "left"
  -sv "shelfAlign11" "left"
@@ -851,21 +875,22 @@ optionVar -cat "Undo"
 
 // Viewports
 optionVar -cat "Viewports"
- -sv "modelPanel1" "modelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels modelPanel1;\n$editorName = $panelName;\nmodelEditor -e -docTag \"RADRENDER\" -editorChanged \"CgAbBlastPanelOptChangeCallback\" -camera \"|top\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 256 256 -bumpResolution 512 512 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1\n-height 1\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
- -sv "modelPanel2" "modelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels modelPanel2;\n$editorName = $panelName;\nmodelEditor -e -docTag \"RADRENDER\" -editorChanged \"CgAbBlastPanelOptChangeCallback\" -camera \"|side\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 256 256 -bumpResolution 512 512 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1\n-height 1\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
- -sv "modelPanel3" "modelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels modelPanel3;\n$editorName = $panelName;\nmodelEditor -e -docTag \"RADRENDER\" -editorChanged \"CgAbBlastPanelOptChangeCallback\" -camera \"|front\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 256 256 -bumpResolution 512 512 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1\n-height 1\n-sceneRenderFilter 0\n-activeShadingGraph \"ballora_animatronic_shadow_rig:rsMaterial1SG,ballora_animatronic_shadow_rig:MAT_ballora,ballora_animatronic_shadow_rig:MAT_ballora\" -activeCustomGeometry \"meshShaderball\" -activeCustomLighSet \"defaultAreaLightSet\" $editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
- -sv "modelPanel4" "modelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels modelPanel4;\n$editorName = $panelName;\nmodelEditor -e -docTag \"RADRENDER\" -editorChanged \"CgAbBlastPanelOptChangeCallback\" -camera \"|persp\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 1\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 256 256 -bumpResolution 512 512 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1690\n-height 1365\n-sceneRenderFilter 0\n-activeShadingGraph \"ballora_animatronic_shadow_rig:rsMaterial1SG,ballora_animatronic_shadow_rig:MAT_ballora,ballora_animatronic_shadow_rig:MAT_ballora\" -activeCustomGeometry \"meshShaderball\" -activeCustomLighSet \"defaultAreaLightSet\" $editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
+ -sv "modelPanel1" "modelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels modelPanel1;\n$editorName = $panelName;\nmodelEditor -e -camera \"|top\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 2373\n-height 1365\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
+ -sv "modelPanel2" "modelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels modelPanel2;\n$editorName = $panelName;\nmodelEditor -e -camera \"|side\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1\n-height 1\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
+ -sv "modelPanel3" "modelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels modelPanel3;\n$editorName = $panelName;\nmodelEditor -e -camera \"|front\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1\n-height 1\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
+ -sv "modelPanel4" "modelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels modelPanel4;\n$editorName = $panelName;\nmodelEditor -e -camera \"|persp\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 1\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 0\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 2373\n-height 1365\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
  ;
 
 // Workspaces
 optionVar -cat "Workspaces"
- -sv "workspaceLayoutToLoadOnStartup" "General"
+ -sv "workspaceLayoutToLoadOnStartup" "Justin VIVE 2"
  -iv "workspaceLinkHotKeySetEnabled" 0
  -sv "workspaceLinkHotKeySetValue" "Maya_Default_Duplicate"
  -iv "workspaceLinkMenuSetEnabled" 0
  -sv "workspaceLinkMenuSetValue" "animationMenuSet"
  -iv "workspaceLinkVP2PresetEnabled" 0
- -iv "workspacesAutoSave" 1
+ -sv "workspaceLinkVP2PresetValue" "Default Settings"
+ -iv "workspacesAutoSave" 0
  -iv "workspacesLockDocking" 1
  ;
 
@@ -938,49 +963,52 @@ optionVar
  -sa "artAttrSkinInflClusters"
  -sva "artAttrSkinInflClusters" "kai_nana_rig:skinCluster3"
  -sa "artAttrSkinInflCollapsed"
- -sv "assignNewMaterialWindowState" "01d9d0cb0003000000000500000002b4000006c30000073000000501000002e8000006c20000072f00000000000000000f0000000501000002e8000006c20000072f"
+ -fv "asPickerBrightness" 1
  ;
 
 optionVar
+ -fv "asPickerTransparency" 0
+ -sv "assignNewMaterialWindowState" "01d9d0cb0003000000000500000002b4000006c30000073000000501000002e8000006c20000072f00000000000000000f0000000501000002e8000006c20000072f"
  -iv "bakeSimulationRemoveBakedAnimFromLayer" 1
  -sv "boneControllerWindowState" "01d9d0cb0003000000000500000002b4000007a30000042b00000500000002b4000007a30000042b00000000000000000f0000000500000002b4000007a30000042b"
  -fv2 "bottomManip_regionSelectKeyContext" 0 0
  -iv "cameraNodeCount" 1
  -sv "colorPreferenceWindowState" "01d9d0cb00030000fffff7770000027afffffa8b00000659fffff778000002a7fffffa8a0000065800000001000000000f00fffff778000002a7fffffa8a00000658"
+ -sv "createRenderNodeWindowState" "01d9d0cb0003000000000500000002bc0000073b0000073800000501000002f00000073a0000073700000000000000000f0000000501000002f00000073a00000737"
  -iv "cteKeepTransitionsModeEnabled" 0
  -iv "currentContainerVisibility" 0
- -sa "filterUISettings-Graph Editor"
- -sa "filterUISettings-ToggledOutliner"
- -sv "global_log_level" "debug"
  ;
 
 optionVar
+ -sa "filterUISettings-Graph Editor"
+ -sa "filterUISettings-ToggledOutliner"
+ -sv "global_log_level" "debug"
  -sv "graphCyclerUIState" "01d9d0cb00030000fffffe5a000006abffffffd5000007d9fffffe5b000006d8ffffffd4000007d800000001000000000f00fffffe5b000006d8ffffffd4000007d8"
- -sv "graphEditor1WindowState" "01d9d0cb00030000fffff10300000007fffffffa0000037afffff1040000003bfffffff90000037900000001000000000f00fffff1040000003bfffffff900000379"
+ -sv "graphEditor1WindowState" "01d9d0cb00030000fffff10300000009fffffffb00000339fffff1040000003dfffffffa0000033800000001000000000f00fffff1040000003dfffffffa00000338"
  -iv "graphEditorDisplayValues" 0
  -iv "graphEditorValueLinesToggle" 0
  -sv "hyperShadePanel1WindowState" "01d9d0cb00030000fffff0fffffffff50000000000000834fffff10000000022ffffffff0000083300000001020000000f00fffff10000000022ffffffff00000833"
  -iv "ikFKSwitchState" 0
  -sv "ikFkSwitch_UIState" "01d9d0cb00030000000006ac0000018c000008bb00000758000006ad000001c0000008ba0000075700000000000000000f00000006ad000001c0000008ba00000757"
- -fv2 "leftManip_regionSelectKeyContext" 0 0
- -sv "login_remember_id" "frozenash@vivestudios.com"
- -iv "login_remember_id_state" 1
  ;
 
 optionVar
+ -fv2 "leftManip_regionSelectKeyContext" 0 0
+ -sv "login_remember_id" "frozenash@vivestudios.com"
+ -iv "login_remember_id_state" 1
  -sv "matchTUIState" "01d9d0cb00030000fffffc7f0000047bfffffef8000004cefffffc80000004a8fffffef7000004cd00000001000000000f00fffffc80000004a8fffffef7000004cd"
  -iv "mayaUsd_ConfirmExistingFileSave" 1
  -iv "mayaUsd_SerializedUsdEditsLocation" 1
  -iv "mayaUsd_SerializedUsdEditsLocationPrompt" 1
  -sv "mmBakeCamWinState" "01d9d0cb00030000fffffc0800000317fffffe94000004bafffffc0900000344fffffe93000004b900000001000000000f00fffffc0900000344fffffe93000004b9"
- -sv "modelPanel5WindowState" "01d9d0cb00030000fffff0fffffffff4fffffffe0000081cfffff10000000028fffffffd0000081b00000001000000000f00fffff10000000028fffffffd0000081b"
+ -sv "modelPanel5WindowState" "01d9d0cb00030000fffff94c0000037fffffffc8000007d7fffff94d000003b3ffffffc7000007d600000001000000000f00fffff94d000003b3ffffffc7000007d6"
  -sv "modelPanel6WindowState" "01d9d0cb00030000fffff0fffffffff4fffffffe0000081cfffff10000000028fffffffd0000081b00000001000000000f00fffff10000000028fffffffd0000081b"
- -sv "modelPanel7WindowState" "01d9d0cb00030000fffff89300000372ffffff33000007c8fffff894000003a6ffffff32000007c700000001000000000f00fffff894000003a6ffffff32000007c7"
- -sv "mtoaBuildID" "6a048927 (fix-5.2.1)"
- -iv "multipleBindPosesOpt" 0
  ;
 
 optionVar
+ -sv "modelPanel7WindowState" "01d9d0cb00030000fffff89300000372ffffff33000007c8fffff894000003a6ffffff32000007c700000001000000000f00fffff894000003a6ffffff32000007c7"
+ -sv "mtoaBuildID" "6a048927 (fix-5.2.1)"
+ -iv "multipleBindPosesOpt" 0
  -sv "myWindowState" "01d9d0cb000300000000048d000002aa0000070e000004be0000048e000002de0000070d000004bd00000000000000000f000000048e000002de0000070d000004bd"
  -sv "nodeEditorPanel1WindowState" "01d9d0cb00030000fffff0fffffffff4fffffffe0000081cfffff10000000028fffffffd0000081b00000001000000000f00fffff10000000028fffffffd0000081b"
  -iv "oneTimeAutoLoadPluginbifrostGraph" 1
@@ -988,25 +1016,25 @@ optionVar
  -sa "playblastShowPluginObjects"
  -sv "pluginManagerWindowState" "01d9d0cb000300000000031300000226000005b8000005d2000003140000025a000005b7000005d100000000000000000f00000003140000025a000005b7000005d1"
  -iv "proxyOptionsNewReferenceTagSpecified" 0
- -sv "referenceEditorPanel1WindowState" "01d9d0cb00030000fffff0fffffffff4fffffffe0000081cfffff10000000028fffffffd0000081b00000001000000000f00fffff10000000028fffffffd0000081b"
- -sv "renderSetup_userPresetsDirectory" "C:\\Users\\hyh14\\OneDrive\\문서\\maya\\Presets"
- -sv "renderSetup_userPresetsDirectory_contents" "C:/Program Files/Autodesk/Maya2023\\presets\\Presets"
  ;
 
 optionVar
+ -sv "referenceEditorPanel1WindowState" "01d9d0cb00030000fffffbf3000001befffffec10000056cfffffbf4000001f2fffffec00000056b00000001000000000f00fffffbf4000001f2fffffec00000056b"
+ -sv "renderSetup_userPresetsDirectory" "C:\\Users\\hyh14\\OneDrive\\문서\\maya\\Presets"
+ -sv "renderSetup_userPresetsDirectory_contents" "C:/Program Files/Autodesk/Maya2023\\presets\\Presets"
  -sv "renderSetup_userTemplateDirectory" "C:\\Users\\hyh14\\OneDrive\\문서\\maya\\RSTemplates"
  -sv "renderSetup_userTemplateDirectory_contents" "C:/Program Files/Autodesk/Maya2023\\presets\\RSTemplates"
  -fv2 "rightManip_regionSelectKeyContext" 0 0
  -sv "scriptEditorPanel1WindowState" "01d9d0cb00030000fffff6900000013bfffffe2100000771fffff69100000168fffffe200000077000000001000000000f00fffff69100000168fffffe2000000770"
  -sv "shelfEditorState" "01d9d0cb0003000000001044000002d400001313000006540000104f000003010000130800000649ffffffff000000000f000000104f000003010000130800000649"
  -iv "skinClusterInflListSize" 550
- -sv "snapWinState" "01d9d0cb00030000000008f60000054300000a3a0000060d000008f70000057700000a390000060c00000000000000000f00000008f70000057700000a390000060c"
- -iv "sortSkinPaintList" 2
- -sv "studiolibrary_148ec4b8-fb99-49eb-932d-1d9a16a08758WorkspaceControlState" "01d9d0cb00030000fffff10c0000000cfffffff30000081afffff10d00000040fffffff20000081900000001000000000f00fffff10d00000040fffffff200000819"
- -sv "studiolibrary_21e8bd02-17c2-4ef7-a4c6-b353c6ad2bb7WorkspaceControlState" "01d9d0cb0003000000000213000001f30000097f0000067100000214000002200000097e0000067000000000000000000f0000000214000002200000097e00000670"
+ -sv "snapWinState" "01d9d0cb00030000000008de0000056d00000a2200000637000008df000005a100000a210000063600000000000000000f00000008df000005a100000a2100000636"
  ;
 
 optionVar
+ -iv "sortSkinPaintList" 2
+ -sv "studiolibrary_148ec4b8-fb99-49eb-932d-1d9a16a08758WorkspaceControlState" "01d9d0cb00030000fffff10c0000000cfffffff30000081afffff10d00000040fffffff20000081900000001000000000f00fffff10d00000040fffffff200000819"
+ -sv "studiolibrary_21e8bd02-17c2-4ef7-a4c6-b353c6ad2bb7WorkspaceControlState" "01d9d0cb0003000000000213000001f30000097f0000067100000214000002200000097e0000067000000000000000000f0000000214000002200000097e00000670"
  -sv "studiolibrary_328e339b-6ead-4cef-a0a4-ef25a14add6cWorkspaceControlState" "01d9d0cb00030000fffff0fffffffff4000000000000081cfffff10d00000035fffffff20000080e00000001020000000f00fffff10000000028ffffffff0000081b"
  -sv "studiolibrary_564d774a-5597-4617-ab59-5e65a0b927f3WorkspaceControlState" "01d9d0cb00030000fffff0fffffffff4000000000000081cfffff10d00000035fffffff20000080e00000001020000000f00fffff10000000028ffffffff0000081b"
  -sv "studiolibrary_8b4534b4-9681-4082-9dc9-23a39b212671WorkspaceControlState" "01d9d0cb00030000fffff0fffffffff4000000000000081cfffff8a100000267fffffbdc0000057a00000001020000000f00fffff10000000028ffffffff0000081b"
@@ -1014,12 +1042,12 @@ optionVar
  -sv "studiolibrary_b0a69043-ad22-4a24-afb1-11c2885bc467WorkspaceControlState" "01d9d0cb000300000000071e0000026000000cf90000055c0000071f0000028d00000cf80000055b00000000000000000f000000071f0000028d00000cf80000055b"
  -sv "studiolibrary_b3aa02c0-9c05-479e-a74f-5245e65c7ac5WorkspaceControlState" "01d9d0cb00030000fffff643000002fffffffdcb000006aefffff6440000032cfffffdca000006ad00000001000000000f00fffff6440000032cfffffdca000006ad"
  -sv "studiolibrary_c8ab064d-73bb-4d27-92a1-2b55e26deb44WorkspaceControlState" "01d9d0cb00030000fffff7d300000211ffffff5b000006abfffff7d40000023effffff5a000006aa00000001000000000f00fffff7d40000023effffff5a000006aa"
- -sv "studiolibrary_cd77df2d-093f-4444-af28-957dccdabf58WorkspaceControlState" "01d9d0cb00030000fffff82e0000020affffff6500000620fffff82f00000237ffffff640000061f00000001000000000f00fffff82f00000237ffffff640000061f"
- -sv "studiolibrary_e794b7c0-7ad1-4ecb-a101-1c8bbc52c268WorkspaceControlState" "01d9d0cb00030000fffff0fffffffff4000000000000081cfffff10d00000035fffffff20000080e00000001020000000f00fffff10000000028ffffffff0000081b"
- -sv "studiolibrary_faba2556-cacd-4355-b66b-7d6036a529c5WorkspaceControlState" "01d9d0cb000300000000015d0000014a000008c9000005c80000015e00000177000008c8000005c700000000000000000f000000015e00000177000008c8000005c7"
  ;
 
 optionVar
+ -sv "studiolibrary_cd77df2d-093f-4444-af28-957dccdabf58WorkspaceControlState" "01d9d0cb00030000fffff82e0000020affffff6500000620fffff82f00000237ffffff640000061f00000001000000000f00fffff82f00000237ffffff640000061f"
+ -sv "studiolibrary_e794b7c0-7ad1-4ecb-a101-1c8bbc52c268WorkspaceControlState" "01d9d0cb00030000fffff0fffffffff4000000000000081cfffff10d00000035fffffff20000080e00000001020000000f00fffff10000000028ffffffff0000081b"
+ -sv "studiolibrary_faba2556-cacd-4355-b66b-7d6036a529c5WorkspaceControlState" "01d9d0cb000300000000015d0000014a000008c9000005c80000015e00000177000008c8000005c700000000000000000f000000015e00000177000008c8000005c7"
  -iv "task_manager_header_width0" 120
  -iv "task_manager_header_width1" 120
  -iv "task_manager_header_width2" 317
@@ -1027,12 +1055,12 @@ optionVar
  -iv "task_manager_header_width4" 174
  -iv "task_manager_header_width5" 120
  -iv "task_manager_header_width6" 244
- -iv "task_manager_header_width7" 0
- -iv "task_manager_header_width8" 0
- -iv "task_manager_window_entity_selection_optionvar" 1
  ;
 
 optionVar
+ -iv "task_manager_header_width7" 0
+ -iv "task_manager_header_width8" 0
+ -iv "task_manager_window_entity_selection_optionvar" 1
  -sv "teClipExportsLastWorkspace" "R:/VFX/FSH/shot/e101/e101_s002_0020/ani/wip/maya/"
  -sv "timeEditorPanel1WindowState" "01d9d0cb00030000fffff0fffffffff4000000000000081afffff10000000028ffffffff0000081900000001000000000f00fffff10000000028ffffffff00000819"
  -fv2 "topManip_regionSelectKeyContext" 0 0
@@ -1040,12 +1068,12 @@ optionVar
  -iv "vive_asset_loader_window_icon_size_optionvar" 200
  -sv "window1State" "01d9d0cb0003000000000500000002b40000077f0000088f00000500000002b40000077f0000088f00000000000000000f0000000500000002b40000077f0000088f"
  -sv "window2State" "01d9d0cb0003000000000500000002b40000077f0000049300000500000002b40000077f0000049300000000000000000f0000000500000002b40000077f00000493"
- -sv "window3State" "01d9d0cb0003000000000500000002b40000077f0000049300000500000002b40000077f0000049300000000000000000f0000000500000002b40000077f00000493"
- -fv4 "zurShotMaskBorderColorOptVar" 0 0 1 0.321586
- -fv "zurShotMaskBorderScaleOptVar" 2
  ;
 
 optionVar
+ -sv "window3State" "01d9d0cb0003000000000500000002b40000077f0000049300000500000002b40000077f0000049300000000000000000f0000000500000002b40000077f00000493"
+ -fv4 "zurShotMaskBorderColorOptVar" 0 0 1 0.321586
+ -fv "zurShotMaskBorderScaleOptVar" 2
  -iv2 "zurShotMaskBorderVisibleOptVar" 1 1
  -sv "zurShotMaskCameraNameOptVar" "<All Cameras>"
  -iv "zurShotMaskCounterPaddingOptVar" 4
@@ -1053,6 +1081,9 @@ optionVar
  -fv4 "zurShotMaskLabelColorOptVar" 1 1 1 1
  -sv "zurShotMaskLabelFontOptVar" "Arial"
  -fv "zurShotMaskLabelScaleOptVar" 0.3
+ ;
+
+optionVar
  -sa "zurShotMaskLabelTextOptVar"
  -sva "zurShotMaskLabelTextOptVar" "E101_S012_0220"
  -sva "zurShotMaskLabelTextOptVar" ""

@@ -164,7 +164,7 @@ global proc shelf_AnimTools () {
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "source \"T:/Ani_team/_maya_env/scripts/rivet.mel\";\nrivet();" 
+        -command "source \"T:/Ani_team/_maya_env/scripts/rivet.mel\";\nrivet();\n\n" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -329,7 +329,7 @@ global proc shelf_AnimTools () {
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "import pymel.core as pm\nimport mog_ikFkSwitchFree as mog_ikFkSwitchFree\nimport imp\nimp.reload(mog_ikFkSwitchFree)\nmog_ikFkSwitchFree.FkIk_UI()" 
+        -command "import sys\n\npath = 'T:/Ani_team/_maya_env/scripts/'\n\nif path in sys.path :\n    pass\nelif path not in sys.path :\n    sys.path.append ( path )\n\n\nimport pymel.core as pm\nimport mog_ikFkSwitchFree as mog_ikFkSwitchFree\nimport imp\nimp.reload(mog_ikFkSwitchFree)\nmog_ikFkSwitchFree.FkIk_UI()" 
         -sourceType "python" 
         -commandRepeatable 1
         -flat 1
@@ -644,7 +644,7 @@ global proc shelf_AnimTools () {
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "import re\nimport maya.cmds as cmds\n\ndef increment_version():\n    # Get the current file name\n    current_file_path = cmds.file(query=True, sceneName=True)\n   \n    if not current_file_path:\n        print(\"No scene is currently open. Please open a scene and run the script.\")\n        return\n\n    # Extract information from the current file name using a regular expression\n    match = re.match(r'^(.*?_w)(/d+)(/.mb)$', current_file_path)\n   \n    if not match:\n        print(f\"Unable to extract version number from file: {current_file_path}\")\n        return\n   \n    prefix, version, extension = match.groups()\n   \n    # Increment the version number\n    new_version = int(version) + 1\n   \n    # Construct the new file name with the incremented version\n    new_file_path = f\"{prefix}{new_version:02d}{extension}\"\n   \n    # Save the current scene as the new file\n    cmds.file(rename=new_file_path)\n    cmds.file(save=True, type='mayaBinary')\n   \n    print(f\"File saved as: {new_file_path}\")\n\n# Example usage\nincrement_version()" 
+        -command "import re\nimport maya.cmds as cmds\n\ndef increment_version():\n    # Get the current file name\n    current_file_path = cmds.file(query=True, sceneName=True)\n\n    if not current_file_path:\n        print(\"No scene is currently open. Please open a scene and run the script.\")\n        return\n\n    # Extract information from the current file name using a regular expression\n    match = re.match(r'^(.*?_w)(\\d+)(\\.mb)$', current_file_path, re.IGNORECASE)\n\n    if not match:\n        print(f\"Unable to extract version number from file: {current_file_path}\")\n        return\n\n    prefix, version, extension = match.groups()\n\n    # Increment the version number\n    new_version = int(version) + 1\n\n    # Construct the new file name with the incremented version\n    new_file_path = f\"{prefix}{new_version:02d}{extension}\"\n\n    # Save the current scene as the new file\n    cmds.file(rename=new_file_path)\n    cmds.file(save=True, type='mayaBinary')\n\n    print(f\"File saved as: {new_file_path}\")\n\n# Example usage\nincrement_version()\n" 
         -sourceType "python" 
         -commandRepeatable 1
         -flat 1
@@ -913,6 +913,138 @@ global proc shelf_AnimTools () {
         -marginHeight 1
         -command "import maya.cmds as cmds\n\nfor i in range(1, 9):\n    try:\n        cmds.outlinerEditor('outlinerPanel' + str(i), e=True, expandAllItems=0)\n    except Exception as e:\n        print(f\"An error occurred for outlinerPanel{i}: {e}\")\n" 
         -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "AdvancedSkeleton" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "AdvancedSkeleton" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/icons/AS.png" 
+        -image1 "C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/icons/AS.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "source \"C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeleton.mel\";AdvancedSkeleton;" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Selector:biped" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Selector:biped" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/icons/asBiped.png" 
+        -image1 "C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/icons/asBiped.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "source \"C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/Selector/biped.mel\";" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Selector:face" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Selector:face" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/icons/asFace.png" 
+        -image1 "C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/icons/asFace.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "source \"C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/Selector/face.mel\";" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "picker" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "picker" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/picker/pickerFiles/icons/picker.png" 
+        -image1 "C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/picker/pickerFiles/icons/picker.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "source \"C:/Users/hyh14/OneDrive/문서/maya/scripts/AdvancedSkeleton/AdvancedSkeletonFiles/picker/picker.mel\";" 
+        -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
     ;

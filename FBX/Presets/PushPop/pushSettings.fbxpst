@@ -27,7 +27,7 @@
       <Animation UIH="0" UID="0" UIG="0" UIBG="1" UIX="0" lbENU="Animation" dt="Bool" v="1">
         <ExtraGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Extra Options">
           <Take UIH="0" UID="0" UIG="0" lbENU="Animation Take" dt="Enum"/>
-          <TimeLine UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Fill Timeline" dt="Bool" v="0"/>
+          <TimeLine UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Fill Timeline" dt="Bool" v="1"/>
           <BakeAnimationLayers UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Bake Animation Layers" dt="Bool" v="1"/>
           <Markers UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Optical Markers" dt="Bool" v="0"/>
           <Quaternion UIH="0" UID="0" UIG="0" lbENU="Quaternion Interpolation Mode" dt="Enum" enumSelected="Resample As Euler Interpolation" v="2" enumItem_0="Retain Quaternion Interpolation" enumItem_1="Set As Euler Interpolation" enumItem_2="Resample As Euler Interpolation"/>

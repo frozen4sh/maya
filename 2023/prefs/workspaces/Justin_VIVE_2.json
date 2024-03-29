@@ -1,70 +1,25 @@
 {
-    "autoSave": true,
+    "autoSave": false,
     "selectedShelf": "AnimTools",
     "panels": [
         {
             "mainWindowPanel": false,
-            "posX": -3836,
-            "posY": 59,
+            "posX": -1900,
+            "posY": 934,
             "splitter": {
-                "orientation": "vertical",
+                "orientation": "horizontal",
                 "children": [
                     {
                         "tabWidget": {
                             "selectedIndex": 0,
-                            "controlWidth": 2540,
-                            "controlHeight": 430,
-                            "controls": [
-                                {
-                                    "objectName": "referenceEditorPanel1Window",
-                                    "title": "Reference Editor",
-                                    "uiScript": "if(!`panel -q -exists referenceEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"referenceEditorPanel1\";\n\tscriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  referenceEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent referenceEditorPanel1;\n}\nscriptedPanel -e -parent referenceEditorPanel1Window referenceEditorPanel1;\n",
-                                    "retain": false,
-                                    "deleteLater": true,
-                                    "loadImmediately": false,
-                                    "checkPlugins": false,
-                                    "actLikeMayaUIElement": false,
-                                    "layoutDirectionCallback": "",
-                                    "layoutDirection": "horizontal",
-                                    "tabDirection": 0,
-                                    "closed": true,
-                                    "widthProperty": "free",
-                                    "heightProperty": "free",
-                                    "controlWidth": 2540,
-                                    "controlHeight": 430
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "tabWidget": {
-                            "selectedIndex": 0,
-                            "controlWidth": 2550,
-                            "controlHeight": 551,
+                            "controlWidth": 1127,
+                            "controlHeight": 702,
                             "collapsed": false,
                             "controls": [
                                 {
-                                    "objectName": "timeEditorPanel1Window",
-                                    "title": "Time Editor",
-                                    "uiScript": "if(!`panel -q -exists timeEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"timeEditorPanel1\";\n\tscriptedPanel -unParent  -type \"timeEditorPanel\" -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  timeEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent timeEditorPanel1;\n}\nscriptedPanel -e -parent timeEditorPanel1Window timeEditorPanel1;\n",
-                                    "retain": false,
-                                    "deleteLater": true,
-                                    "loadImmediately": false,
-                                    "checkPlugins": false,
-                                    "actLikeMayaUIElement": false,
-                                    "layoutDirectionCallback": "",
-                                    "layoutDirection": "horizontal",
-                                    "tabDirection": 0,
-                                    "closed": true,
-                                    "widthProperty": "free",
-                                    "heightProperty": "free",
-                                    "controlWidth": 2556,
-                                    "controlHeight": 638
-                                },
-                                {
-                                    "objectName": "graphEditor1Window",
-                                    "title": "Graph Editor",
-                                    "uiScript": "if(!`panel -q -exists graphEditor1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"graphEditor1\";\n\tscriptedPanel -unParent  -type \"graphEditor\" -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  graphEditor1;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n} else {\n\tscriptedPanel -e -unParent graphEditor1;\n}\nscriptedPanel -e -parent graphEditor1Window graphEditor1;\n",
+                                    "objectName": "modelPanel7Window",
+                                    "title": "Persp View",
+                                    "uiScript": "if(!`panel -q -exists modelPanel7`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"modelPanel7\";\n\tmodelPanel -unParent -l (localizedPanelLabel(\"\")) -mbv $menusOkayInPanels  modelPanel7;\n\t$editorName = $panelName;\n    modelEditor -e \n        -camera \"|main_cam\" \n        -useInteractiveMode 0\n        -displayLights \"default\" \n        -displayAppearance \"smoothShaded\" \n        -activeOnly 0\n        -ignorePanZoom 0\n        -wireframeOnShaded 0\n        -headsUpDisplay 1\n        -holdOuts 1\n        -selectionHiliteDisplay 1\n        -useDefaultMaterial 0\n        -bufferMode \"double\" \n        -twoSidedLighting 0\n        -backfaceCulling 0\n        -xray 0\n        -jointXray 0\n        -activeComponentsXray 0\n        -displayTextures 1\n        -smoothWireframe 0\n        -lineWidth 1\n        -textureAnisotropic 0\n        -textureHilight 1\n        -textureSampling 2\n        -textureDisplay \"modulate\" \n        -textureMaxSize 32768\n        -fogging 0\n        -fogSource \"fragment\" \n        -fogMode \"linear\" \n        -fogStart 0\n        -fogEnd 100\n        -fogDensity 0.1\n        -fogColor 0.5 0.5 0.5 1 \n        -depthOfFieldPreview 1\n        -maxConstantTransparency 1\n        -objectFilterShowInHUD 1\n        -isFiltered 0\n        -colorResolution 4 4 \n        -bumpResolution 4 4 \n        -textureCompression 0\n        -transparencyAlgorithm \"frontAndBackCull\" \n        -transpInShadows 0\n        -cullingOverride \"none\" \n        -lowQualityLighting 0\n        -maximumNumHardwareLights 0\n        -occlusionCulling 0\n        -shadingModel 0\n        -useBaseRenderer 0\n        -useReducedRenderer 0\n        -smallObjectCulling 0\n        -smallObjectThreshold -1 \n        -interactiveDisableShadows 0\n        -interactiveBackFaceCull 0\n        -sortTransparent 1\n        -controllers 1\n        -nurbsCurves 0\n        -nurbsSurfaces 1\n        -polymeshes 1\n        -subdivSurfaces 1\n        -planes 1\n        -lights 1\n        -cameras 1\n        -controlVertices 1\n        -hulls 1\n        -grid 1\n        -imagePlane 1\n        -joints 1\n        -ikHandles 1\n        -deformers 1\n        -dynamics 1\n        -particleInstancers 1\n        -fluids 1\n        -hairSystems 1\n        -follicles 1\n        -nCloths 1\n        -nParticles 1\n        -nRigids 1\n        -dynamicConstraints 1\n        -locators 1\n        -manipulators 1\n        -pluginShapes 1\n        -dimensions 1\n        -handles 1\n        -pivots 1\n        -textures 1\n        -strokes 1\n        -motionTrails 1\n        -clipGhosts 1\n        -bluePencil 1\n        -greasePencils 0\n        -shadows 0\n        -captureSequenceNumber -1\n        -width 0\n        -height 0\n        -sceneRenderFilter 0\n        $editorName;\n    modelEditor -e -viewSelected 0 $editorName;\n    modelEditor -e \n        -pluginObjects \"gpuCacheDisplayFilter\" 1 \n        $editorName;\n} else {\n\tmodelPanel -e -unParent modelPanel7;\n}\nmodelPanel -e -parent modelPanel7Window modelPanel7;\n",
                                     "retain": false,
                                     "deleteLater": true,
                                     "loadImmediately": false,
@@ -76,8 +31,8 @@
                                     "closed": false,
                                     "widthProperty": "free",
                                     "heightProperty": "free",
-                                    "controlWidth": 2550,
-                                    "controlHeight": 551
+                                    "controlWidth": 1127,
+                                    "controlHeight": 702
                                 }
                             ]
                         }
@@ -182,7 +137,7 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 351,
+                                        "controlWidth": 352,
                                         "controlHeight": 935,
                                         "collapsed": false,
                                         "controls": [
@@ -201,7 +156,7 @@
                                                 "closed": false,
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
-                                                "controlWidth": 351,
+                                                "controlWidth": 352,
                                                 "controlHeight": 935
                                             }
                                         ]
@@ -210,7 +165,7 @@
                                 {
                                     "tabWidget": {
                                         "selectedIndex": 0,
-                                        "controlWidth": 1581,
+                                        "controlWidth": 1583,
                                         "controlHeight": 952,
                                         "collapsed": false,
                                         "controls": [
@@ -229,7 +184,7 @@
                                                 "closed": false,
                                                 "widthProperty": "free",
                                                 "heightProperty": "free",
-                                                "controlWidth": 1581,
+                                                "controlWidth": 1583,
                                                 "controlHeight": 952,
                                                 "initCallback": "mainPaneStateCallback",
                                                 "stateString": "global string $gMainPane; paneLayout -edit -configuration single $gMainPane;if(`modelPanel -exists modelPanel1`){ modelPanel -edit -parent $gMainPane modelPanel1; paneLayout -edit -setPane modelPanel1 1 $gMainPane;}"
@@ -262,7 +217,7 @@
                                                 "controlWidth": 275,
                                                 "controlHeight": 935,
                                                 "initCallback": "outlinerStateCallback",
-                                                "stateString": "outlinerEditor -e -docTag \"isolOutln_fromSeln\" -showShapes 0 -showAssignedMaterials 0 -showTimeEditor 1 -showReferenceNodes 1 -showReferenceMembers 1 -showAttributes 0 -showConnected 0 -showAnimCurvesOnly 0 -showMuteInfo 0 -organizeByLayer 1 -organizeByClip 1 -showAnimLayerWeight 1 -autoExpandLayers 1 -autoExpand 0 -showDagOnly 1 -showAssets 1 -showContainedOnly 1 -showPublishedAsConnected 0 -showParentContainers 0 -showContainerContents 1 -ignoreDagHierarchy 0 -expandConnections 0 -showUpstreamCurves 1 -showUnitlessCurves 1 -showCompounds 1 -showLeafs 1 -showNumericAttrsOnly 0 -highlightActive 1 -autoSelectNewObjects 0 -doNotSelectNewObjects 0 -dropIsParent 1 -transmitFilters 0 -setFilter \"defaultSetFilter\" -showSetMembers 1 -allowMultiSelection 1 -alwaysToggleSelect 0 -directSelect 0 -isSet 0 -isSetMember 0 -showUfeItems 1 -displayMode \"DAG\" -expandObjects 0 -setsIgnoreFilters 1 -containersIgnoreFilters 0 -editAttrName 0 -showAttrValues 0 -highlightSecondary 0 -showUVAttrsOnly 0 -showTextureNodesOnly 0 -attrAlphaOrder \"default\" -animLayerFilterOptions \"allAffecting\" -sortOrder \"none\" -longNames 0 -niceNames 1 -selectCommand \"print(\\\"\\\")\" -showNamespace 1 -showPinIcons 0 -mapMotionTrails 0 -ignoreHiddenAttribute 0 -ignoreOutlinerColor 0 -renderFilterVisible 0 -renderFilterIndex 0 -selectionOrder \"chronological\" -expandAttribute 0 $editorName"
+                                                "stateString": "outlinerEditor -e -docTag \"isolOutln_fromSeln\" -showShapes 0 -showAssignedMaterials 0 -showTimeEditor 1 -showReferenceNodes 1 -showReferenceMembers 1 -showAttributes 0 -showConnected 0 -showAnimCurvesOnly 0 -showMuteInfo 0 -organizeByLayer 1 -organizeByClip 1 -showAnimLayerWeight 1 -autoExpandLayers 1 -autoExpand 0 -showDagOnly 1 -showAssets 1 -showContainedOnly 1 -showPublishedAsConnected 0 -showParentContainers 0 -showContainerContents 1 -ignoreDagHierarchy 0 -expandConnections 0 -showUpstreamCurves 1 -showUnitlessCurves 1 -showCompounds 1 -showLeafs 1 -showNumericAttrsOnly 0 -highlightActive 1 -autoSelectNewObjects 0 -doNotSelectNewObjects 0 -dropIsParent 1 -transmitFilters 0 -setFilter \"defaultSetFilter\" -showSetMembers 1 -allowMultiSelection 1 -alwaysToggleSelect 0 -directSelect 0 -isSet 0 -isSetMember 0 -showUfeItems 1 -displayMode \"DAG\" -expandObjects 0 -setsIgnoreFilters 1 -containersIgnoreFilters 0 -editAttrName 0 -showAttrValues 0 -highlightSecondary 0 -showUVAttrsOnly 0 -showTextureNodesOnly 0 -attrAlphaOrder \"default\" -animLayerFilterOptions \"allAffecting\" -sortOrder \"none\" -longNames 0 -niceNames 1 -selectCommand \"print(\\\"\\\")\" -showNamespace 1 -showPinIcons 0 -mapMotionTrails 0 -ignoreHiddenAttribute 0 -ignoreOutlinerColor 0 -renderFilterVisible 0 -renderFilterIndex 0 -selectionOrder \"chronological\" -expandAttribute 0 -ufeFilter \"USD\" \"InactivePrims\" -ufeFilterValue 1 $editorName"
                                             }
                                         ]
                                     }
@@ -369,7 +324,7 @@
                                                 "widthProperty": "preferred",
                                                 "heightProperty": "free",
                                                 "controlWidth": 460,
-                                                "controlHeight": 800
+                                                "controlHeight": 1027
                                             }
                                         ]
                                     }
@@ -501,22 +456,67 @@
         },
         {
             "mainWindowPanel": false,
-            "posX": -1900,
-            "posY": 934,
+            "posX": -3836,
+            "posY": 59,
             "splitter": {
-                "orientation": "horizontal",
+                "orientation": "vertical",
                 "children": [
                     {
                         "tabWidget": {
                             "selectedIndex": 0,
-                            "controlWidth": 1127,
-                            "controlHeight": 702,
+                            "controlWidth": 2540,
+                            "controlHeight": 430,
+                            "controls": [
+                                {
+                                    "objectName": "referenceEditorPanel1Window",
+                                    "title": "Reference Editor",
+                                    "uiScript": "if(!`panel -q -exists referenceEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"referenceEditorPanel1\";\n\tscriptedPanel -unParent  -type \"referenceEditorPanel\" -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  referenceEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent referenceEditorPanel1;\n}\nscriptedPanel -e -parent referenceEditorPanel1Window referenceEditorPanel1;\n",
+                                    "retain": false,
+                                    "deleteLater": true,
+                                    "loadImmediately": false,
+                                    "checkPlugins": false,
+                                    "actLikeMayaUIElement": false,
+                                    "layoutDirectionCallback": "",
+                                    "layoutDirection": "horizontal",
+                                    "tabDirection": 0,
+                                    "closed": true,
+                                    "widthProperty": "free",
+                                    "heightProperty": "free",
+                                    "controlWidth": 2540,
+                                    "controlHeight": 430
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 2550,
+                            "controlHeight": 551,
                             "collapsed": false,
                             "controls": [
                                 {
-                                    "objectName": "modelPanel7Window",
-                                    "title": "Persp View",
-                                    "uiScript": "if(!`panel -q -exists modelPanel7`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"modelPanel7\";\n\tmodelPanel -unParent -l (localizedPanelLabel(\"\")) -mbv $menusOkayInPanels  modelPanel7;\n\t$editorName = $panelName;\n    modelEditor -e \n        -camera \"|main_cam\" \n        -useInteractiveMode 0\n        -displayLights \"default\" \n        -displayAppearance \"smoothShaded\" \n        -activeOnly 0\n        -ignorePanZoom 0\n        -wireframeOnShaded 0\n        -headsUpDisplay 1\n        -holdOuts 1\n        -selectionHiliteDisplay 1\n        -useDefaultMaterial 0\n        -bufferMode \"double\" \n        -twoSidedLighting 0\n        -backfaceCulling 0\n        -xray 0\n        -jointXray 0\n        -activeComponentsXray 0\n        -displayTextures 1\n        -smoothWireframe 0\n        -lineWidth 1\n        -textureAnisotropic 0\n        -textureHilight 1\n        -textureSampling 2\n        -textureDisplay \"modulate\" \n        -textureMaxSize 32768\n        -fogging 0\n        -fogSource \"fragment\" \n        -fogMode \"linear\" \n        -fogStart 0\n        -fogEnd 100\n        -fogDensity 0.1\n        -fogColor 0.5 0.5 0.5 1 \n        -depthOfFieldPreview 1\n        -maxConstantTransparency 1\n        -objectFilterShowInHUD 1\n        -isFiltered 0\n        -colorResolution 4 4 \n        -bumpResolution 4 4 \n        -textureCompression 0\n        -transparencyAlgorithm \"frontAndBackCull\" \n        -transpInShadows 0\n        -cullingOverride \"none\" \n        -lowQualityLighting 0\n        -maximumNumHardwareLights 0\n        -occlusionCulling 0\n        -shadingModel 0\n        -useBaseRenderer 0\n        -useReducedRenderer 0\n        -smallObjectCulling 0\n        -smallObjectThreshold -1 \n        -interactiveDisableShadows 0\n        -interactiveBackFaceCull 0\n        -sortTransparent 1\n        -controllers 1\n        -nurbsCurves 0\n        -nurbsSurfaces 1\n        -polymeshes 1\n        -subdivSurfaces 1\n        -planes 1\n        -lights 1\n        -cameras 1\n        -controlVertices 1\n        -hulls 1\n        -grid 1\n        -imagePlane 1\n        -joints 1\n        -ikHandles 1\n        -deformers 1\n        -dynamics 1\n        -particleInstancers 1\n        -fluids 1\n        -hairSystems 1\n        -follicles 1\n        -nCloths 1\n        -nParticles 1\n        -nRigids 1\n        -dynamicConstraints 1\n        -locators 1\n        -manipulators 1\n        -pluginShapes 1\n        -dimensions 1\n        -handles 1\n        -pivots 1\n        -textures 1\n        -strokes 1\n        -motionTrails 1\n        -clipGhosts 1\n        -bluePencil 1\n        -greasePencils 0\n        -shadows 0\n        -captureSequenceNumber -1\n        -width 0\n        -height 0\n        -sceneRenderFilter 0\n        $editorName;\n    modelEditor -e -viewSelected 0 $editorName;\n    modelEditor -e \n        -pluginObjects \"gpuCacheDisplayFilter\" 1 \n        $editorName;\n} else {\n\tmodelPanel -e -unParent modelPanel7;\n}\nmodelPanel -e -parent modelPanel7Window modelPanel7;\n",
+                                    "objectName": "timeEditorPanel1Window",
+                                    "title": "Time Editor",
+                                    "uiScript": "if(!`panel -q -exists timeEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"timeEditorPanel1\";\n\tscriptedPanel -unParent  -type \"timeEditorPanel\" -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  timeEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent timeEditorPanel1;\n}\nscriptedPanel -e -parent timeEditorPanel1Window timeEditorPanel1;\n",
+                                    "retain": false,
+                                    "deleteLater": true,
+                                    "loadImmediately": false,
+                                    "checkPlugins": false,
+                                    "actLikeMayaUIElement": false,
+                                    "layoutDirectionCallback": "",
+                                    "layoutDirection": "horizontal",
+                                    "tabDirection": 0,
+                                    "closed": true,
+                                    "widthProperty": "free",
+                                    "heightProperty": "free",
+                                    "controlWidth": 2556,
+                                    "controlHeight": 638
+                                },
+                                {
+                                    "objectName": "graphEditor1Window",
+                                    "title": "Graph Editor",
+                                    "uiScript": "if(!`panel -q -exists graphEditor1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"graphEditor1\";\n\tscriptedPanel -unParent  -type \"graphEditor\" -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  graphEditor1;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -showUfeItems 1\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -keyMinScale 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 0\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n} else {\n\tscriptedPanel -e -unParent graphEditor1;\n}\nscriptedPanel -e -parent graphEditor1Window graphEditor1;\n",
                                     "retain": false,
                                     "deleteLater": true,
                                     "loadImmediately": false,
@@ -528,8 +528,8 @@
                                     "closed": false,
                                     "widthProperty": "free",
                                     "heightProperty": "free",
-                                    "controlWidth": 1127,
-                                    "controlHeight": 702
+                                    "controlWidth": 2550,
+                                    "controlHeight": 551
                                 }
                             ]
                         }
@@ -540,29 +540,11 @@
     ],
     "closedControls": [
         {
-            "objectName": "studiolibrary_a4cee492-2779-46bc-b03c-225ef5119f50WorkspaceControl",
-            "posX": 1470,
-            "posY": 641,
-            "controlHeight": 997,
-            "controlWidth": 1842,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "MayaLightEditorWindowWorkspaceControl",
-            "posX": 376,
-            "posY": 300,
-            "controlHeight": 900,
-            "controlWidth": 898,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "contentBrowserPanel1Window",
-            "posX": 346,
-            "posY": 353,
-            "controlHeight": 743,
-            "controlWidth": 1500,
+            "objectName": "modelPanel5Window",
+            "posX": -2332,
+            "posY": 546,
+            "controlHeight": 646,
+            "controlWidth": 2290,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -576,146 +558,11 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "nodeEditorPanel1Window",
-            "posX": -3840,
-            "posY": 40,
-            "controlHeight": 2032,
-            "controlWidth": 3834,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_f112fa10-5aac-457b-a302-daea744f4973WorkspaceControl",
-            "posX": -1833,
-            "posY": 911,
-            "controlHeight": 723,
-            "controlWidth": 1502,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_f3a010a6-fed2-40fc-865d-397beced8daaWorkspaceControl",
-            "posX": 1056,
-            "posY": 1132,
-            "controlHeight": 943,
-            "controlWidth": 1574,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_b36adbdc-c858-4e35-b952-4c2ea20de5deWorkspaceControl",
-            "posX": 415,
-            "posY": 650,
-            "controlHeight": 970,
-            "controlWidth": 1850,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_33c50d21-bd05-48bb-b98e-ebe955a1d7aaWorkspaceControl",
-            "posX": -2189,
-            "posY": 1047,
-            "controlHeight": 978,
-            "controlWidth": 1858,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_7ff05f21-8db3-4223-9655-f187ac522aebWorkspaceControl",
-            "posX": 1184,
-            "posY": 535,
-            "controlHeight": 1090,
-            "controlWidth": 1471,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "hyperShadePanel1Window",
-            "posX": 537,
-            "posY": 570,
-            "controlHeight": 1122,
-            "controlWidth": 2075,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_b3aa02c0-9c05-479e-a74f-5245e65c7ac5WorkspaceControl",
-            "posX": 1348,
-            "posY": 812,
-            "controlHeight": 898,
-            "controlWidth": 1927,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_32daf9d1-4873-46e1-b035-aba8d6783da9WorkspaceControl",
-            "posX": 0,
-            "posY": 62,
-            "controlHeight": 2040,
-            "controlWidth": 3844,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_3aceaea2-3f10-49f1-85bc-961cd1ebbb72WorkspaceControl",
-            "posX": 1169,
-            "posY": 718,
-            "controlHeight": 727,
-            "controlWidth": 1506,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
             "objectName": "studiolibrary_7df02860-533a-4457-9e34-f5e389d65309WorkspaceControl",
             "posX": 771,
             "posY": 642,
             "controlHeight": 970,
             "controlWidth": 1850,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "modelPanel5Window",
-            "posX": -2332,
-            "posY": 546,
-            "controlHeight": 646,
-            "controlWidth": 2290,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_350fcca9-5f37-4959-9bee-cdf86555e7fbWorkspaceControl",
-            "posX": -2119,
-            "posY": 689,
-            "controlHeight": 1105,
-            "controlWidth": 1899,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "modelPanel6Window",
-            "posX": -1957,
-            "posY": 546,
-            "controlHeight": 646,
-            "controlWidth": 1937,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_992c11d5-fad6-46f4-b88a-9f1fa6bd7ac5WorkspaceControl",
-            "posX": -1760,
-            "posY": 521,
-            "controlHeight": 1090,
-            "controlWidth": 1471,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_21e8bd02-17c2-4ef7-a4c6-b353c6ad2bb7WorkspaceControl",
-            "posX": 532,
-            "posY": 544,
-            "controlHeight": 1105,
-            "controlWidth": 1899,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -738,29 +585,29 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "componentEditorPanel1Window",
-            "posX": 376,
-            "posY": 300,
-            "controlHeight": 594,
-            "controlWidth": 1507,
+            "objectName": "modelPanel6Window",
+            "posX": -1957,
+            "posY": 546,
+            "controlHeight": 646,
+            "controlWidth": 1937,
             "widthProperty": "free",
             "heightProperty": "free"
         },
         {
-            "objectName": "studiolibrary_148ec4b8-fb99-49eb-932d-1d9a16a08758WorkspaceControl",
-            "posX": -3827,
-            "posY": 64,
-            "controlHeight": 2010,
-            "controlWidth": 3814,
+            "objectName": "contentBrowserPanel1Window",
+            "posX": 346,
+            "posY": 353,
+            "controlHeight": 743,
+            "controlWidth": 1500,
             "widthProperty": "free",
             "heightProperty": "free"
         },
         {
-            "objectName": "studiolibrary_1eaff8fd-431e-469b-8579-426e1b5deeacWorkspaceControl",
-            "posX": -1525,
-            "posY": 672,
-            "controlHeight": 1086,
-            "controlWidth": 1467,
+            "objectName": "studiolibrary_7ff05f21-8db3-4223-9655-f187ac522aebWorkspaceControl",
+            "posX": 1184,
+            "posY": 535,
+            "controlHeight": 1090,
+            "controlWidth": 1471,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -774,11 +621,39 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "studiolibrary_d2a0f966-9a6e-495c-8453-8569895001adWorkspaceControl",
-            "posX": 1129,
-            "posY": 664,
-            "controlHeight": 832,
-            "controlWidth": 1582,
+            "objectName": "studiolibrary_df8c78f6-f931-4e35-9702-167afafc1445WorkspaceControl",
+            "posX": 0,
+            "posY": 40,
+            "controlHeight": 2036,
+            "controlWidth": 3840,
+            "widthProperty": "free",
+            "heightProperty": "free",
+            "maximized": 1
+        },
+        {
+            "objectName": "studiolibrary_f3a010a6-fed2-40fc-865d-397beced8daaWorkspaceControl",
+            "posX": 1056,
+            "posY": 1132,
+            "controlHeight": 943,
+            "controlWidth": 1574,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_b36adbdc-c858-4e35-b952-4c2ea20de5deWorkspaceControl",
+            "posX": 415,
+            "posY": 650,
+            "controlHeight": 970,
+            "controlWidth": 1850,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "hyperShadePanel1Window",
+            "posX": 537,
+            "posY": 570,
+            "controlHeight": 1122,
+            "controlWidth": 2075,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -792,14 +667,113 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "studiolibrary_df8c78f6-f931-4e35-9702-167afafc1445WorkspaceControl",
+            "objectName": "unifiedRenderGlobalsWindow",
+            "posX": 984,
+            "posY": 523,
+            "controlHeight": 1006,
+            "controlWidth": 684,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_32daf9d1-4873-46e1-b035-aba8d6783da9WorkspaceControl",
             "posX": 0,
+            "posY": 62,
+            "controlHeight": 2040,
+            "controlWidth": 3844,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_a7b4ab3e-ab66-4397-a8a4-a8f90fc6fee2WorkspaceControl",
+            "posX": 1154,
+            "posY": 624,
+            "controlHeight": 930,
+            "controlWidth": 1582,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_992c11d5-fad6-46f4-b88a-9f1fa6bd7ac5WorkspaceControl",
+            "posX": -1760,
+            "posY": 521,
+            "controlHeight": 1090,
+            "controlWidth": 1471,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_4e158348-78b3-4532-955d-d7b6be57678cWorkspaceControl",
+            "posX": 1133,
+            "posY": 608,
+            "controlHeight": 951,
+            "controlWidth": 1582,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_3aceaea2-3f10-49f1-85bc-961cd1ebbb72WorkspaceControl",
+            "posX": 1169,
+            "posY": 718,
+            "controlHeight": 727,
+            "controlWidth": 1506,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "componentEditorPanel1Window",
+            "posX": 376,
+            "posY": 300,
+            "controlHeight": 594,
+            "controlWidth": 1507,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_aa5e7cd7-0fab-49f8-970a-717a047312b1WorkspaceControl",
+            "posX": -3840,
             "posY": 40,
             "controlHeight": 2036,
             "controlWidth": 3840,
             "widthProperty": "free",
             "heightProperty": "free",
             "maximized": 1
+        },
+        {
+            "objectName": "studiolibrary_350fcca9-5f37-4959-9bee-cdf86555e7fbWorkspaceControl",
+            "posX": -2119,
+            "posY": 689,
+            "controlHeight": 1105,
+            "controlWidth": 1899,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_b0a69043-ad22-4a24-afb1-11c2885bc467WorkspaceControl",
+            "posX": 1823,
+            "posY": 653,
+            "controlHeight": 719,
+            "controlWidth": 1498,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "nodeEditorPanel1Window",
+            "posX": -3840,
+            "posY": 40,
+            "controlHeight": 2032,
+            "controlWidth": 3834,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_21e8bd02-17c2-4ef7-a4c6-b353c6ad2bb7WorkspaceControl",
+            "posX": 532,
+            "posY": 544,
+            "controlHeight": 1105,
+            "controlWidth": 1899,
+            "widthProperty": "free",
+            "heightProperty": "free"
         },
         {
             "objectName": "studiolibrary_3e81e811-e290-456e-8845-91e6d65494e7WorkspaceControl",
@@ -820,30 +794,11 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "studiolibrary_aa5e7cd7-0fab-49f8-970a-717a047312b1WorkspaceControl",
-            "posX": -3840,
-            "posY": 40,
-            "controlHeight": 2036,
-            "controlWidth": 3840,
-            "widthProperty": "free",
-            "heightProperty": "free",
-            "maximized": 1
-        },
-        {
-            "objectName": "studiolibrary_b0a69043-ad22-4a24-afb1-11c2885bc467WorkspaceControl",
-            "posX": 1823,
-            "posY": 653,
-            "controlHeight": 719,
-            "controlWidth": 1498,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "studiolibrary_a7b4ab3e-ab66-4397-a8a4-a8f90fc6fee2WorkspaceControl",
-            "posX": 1154,
-            "posY": 624,
-            "controlHeight": 930,
-            "controlWidth": 1582,
+            "objectName": "mayaUsdLayerEditor",
+            "posX": 376,
+            "posY": 300,
+            "controlHeight": 900,
+            "controlWidth": 600,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -857,29 +812,56 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "mayaUsdLayerEditor",
+            "objectName": "studiolibrary_148ec4b8-fb99-49eb-932d-1d9a16a08758WorkspaceControl",
+            "posX": -3827,
+            "posY": 64,
+            "controlHeight": 2010,
+            "controlWidth": 3814,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_33c50d21-bd05-48bb-b98e-ebe955a1d7aaWorkspaceControl",
+            "posX": -2189,
+            "posY": 1047,
+            "controlHeight": 978,
+            "controlWidth": 1858,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_a4cee492-2779-46bc-b03c-225ef5119f50WorkspaceControl",
+            "posX": 1470,
+            "posY": 641,
+            "controlHeight": 997,
+            "controlWidth": 1842,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "MayaLightEditorWindowWorkspaceControl",
             "posX": 376,
             "posY": 300,
             "controlHeight": 900,
-            "controlWidth": 600,
+            "controlWidth": 898,
             "widthProperty": "free",
             "heightProperty": "free"
         },
         {
-            "objectName": "unifiedRenderGlobalsWindow",
-            "posX": 984,
-            "posY": 523,
-            "controlHeight": 1006,
-            "controlWidth": 684,
+            "objectName": "studiolibrary_1eaff8fd-431e-469b-8579-426e1b5deeacWorkspaceControl",
+            "posX": -1525,
+            "posY": 672,
+            "controlHeight": 1086,
+            "controlWidth": 1467,
             "widthProperty": "free",
             "heightProperty": "free"
         },
         {
-            "objectName": "studiolibrary_4e158348-78b3-4532-955d-d7b6be57678cWorkspaceControl",
-            "posX": 1133,
-            "posY": 608,
-            "controlHeight": 951,
-            "controlWidth": 1582,
+            "objectName": "studiolibrary_f112fa10-5aac-457b-a302-daea744f4973WorkspaceControl",
+            "posX": -1833,
+            "posY": 911,
+            "controlHeight": 723,
+            "controlWidth": 1502,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -889,6 +871,24 @@
             "posY": 300,
             "controlHeight": 900,
             "controlWidth": 515,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_d2a0f966-9a6e-495c-8453-8569895001adWorkspaceControl",
+            "posX": 1129,
+            "posY": 664,
+            "controlHeight": 832,
+            "controlWidth": 1582,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_b3aa02c0-9c05-479e-a74f-5245e65c7ac5WorkspaceControl",
+            "posX": 1348,
+            "posY": 812,
+            "controlHeight": 898,
+            "controlWidth": 1927,
             "widthProperty": "free",
             "heightProperty": "free"
         }

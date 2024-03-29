@@ -1,0 +1,7 @@
+MAYA_MODULE_PATH=T:/inhouse/pub/maya/modules;T:/Ani_team/_maya_env/scripts/__pycache__;T:/Ani_team/_maya_env/scripts/;
+MAYA_ENABLE_LEGACY_VIEWPORT=1;
+MAYA_COLOR_MANAGEMENT_NO_WARNING=1;
+
+
+MAYA_CM_DISABLE_ERROR_POPUPS=0;
+MAYA_COLOR_MGT_NO_LOGGING=1;
