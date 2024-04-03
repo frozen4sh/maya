@@ -7,9 +7,9 @@ optionVar -version 3;
 // Animation
 optionVar -cat "Animation"
  -iv "autoKeyframeState" 1
- -fv "playbackMax" 1053
+ -fv "playbackMax" 1057
  -fv "playbackMaxDefault" 1051
- -fv "playbackMaxRange" 1053
+ -fv "playbackMaxRange" 1057
  -fv "playbackMaxRangeDefault" 1051
  -fv "playbackMin" 1001
  -fv "playbackMinDefault" 1001
@@ -49,11 +49,16 @@ optionVar -cat "Animation.Constrain.Scale"
  -iv "scaleConstMaintainOffset" 1
  ;
 
+// Animation.Key.Set Key
+optionVar -cat "Animation.Key.Set Key"
+ -iv "keyUseChannelBox" 1
+ ;
+
 // Animation.Playback.Playblast
 optionVar -cat "Animation.Playback.Playblast"
  -sv "playblastCompression" "jpg"
  -iv "playblastDisplaySizeSource" 2
- -sv "playblastFile" "e102_s006_0640_ani_v001_w01"
+ -sv "playblastFile" "V:/VFX/FSH/shot/e102/e102_s006_0630/ani/wip/images/v003/e102_s006_0630_ani_v003"
  -sv "playblastFormat" "image"
  -iv "playblastHeight" 1080
  -iv "playblastQuality" 100
@@ -96,7 +101,7 @@ optionVar -cat "Cached Playback"
 optionVar -cat "Color Management"
  -sv "colorManagementColorPickerColorSpaceSelection" "color_picking (Output - sRGB)"
  -sv "colorManagementColorPickerViewSelection" "Rec.709"
- -iv "colorManagementEnabledByDefault" 1
+ -iv "colorManagementEnabledByDefault" 0
  -iv "colorManagementOCIORulesEnabled" 0
  ;
 
@@ -275,7 +280,7 @@ optionVar -cat "File.Optimize Scene Size"
 
 // Files/Projects
 optionVar -cat "Files/Projects"
- -sv "" "v:/vfx/fsh/shot/e102/e102_s006_0640/ani/wip/scenes"
+ -sv "" "V:/VFX/FSH/shot/e102/e102_s006_0630/ani/wip/scenes"
  -sa "CustomFileDialogSidebarUrls"
  -sva "CustomFileDialogSidebarUrls" "file:"
  -sva "CustomFileDialogSidebarUrls" "C:/Users/vivestudios/Desktop"
@@ -291,20 +296,21 @@ optionVar -cat "Files/Projects"
  -sv "FBXOptions" ""
  -sv "animExportOptions" "precision=8;intValue=17;nodeNames=1;verboseUnits=0;whichRange=1;range=0:10;options=keys;hierarchy=below;controlPoints=0;shapes=1;helpPictures=0;useChannelBox=0;copyKeyCmd=-animation objects -option keys -hierarchy below -controlPoints 0 -shape 1 "
  -sv "animImportOptions" ";targetTime=4;copies=1;option=replace;pictures=0;connect=0;"
- -iv "animRangeOpt" 2
  -iv "autoSaveDestination" 1
  -iv "autoSaveEnable" 1
  -sv "autoSaveFolder" "D:/Justin/maya/Autosave"
+ -sv "browserLocationmayaBinaryreference" "V:/VFX/FSH/shot/e102/e102_s006_0630/ani/wip/scenes"
+ -sv "browserLocationmayaBinaryscene" "V:/VFX/FSH/shot/e102/e102_s006_0630/ani/wip/scenes"
  -sv "defaultFileExportAllType" "FBX export"
  -sv "defaultFileImportType" "Best Guess"
  -sv "defaultFileOpenType" "Best Guess"
  -sv "defaultFileReferenceType" "Best Guess"
  -sv "fileOptionsGroupNodeResolvedName" "group2"
  -sv "fileWorkingNamespaceName" ":"
- -iv "importOptionsImportFramerate" 1
  -sv "lastLocalWS" "v:/vfx/fsh/shot/e102/e102_s006_0640/ani/wip"
  -sv "mayaAsciiOptions" "v=0;"
  -sv "mayaBinaryOptions" "v=0;"
+ -iv "proxyOptionsUseNewReferenceTag" 1
  -sv "referenceOptionsRenamePrefix" "haweoo"
  -iv "useNamespacesDuringFileIO" 0
  ;
@@ -359,9 +365,10 @@ optionVar -cat "Heads Up Display"
 
 // Hotbox
 optionVar -cat "Hotbox"
- -iv "isHotBoxAnimationRowVisible" 0
- -iv "isHotBoxCommonRowVisible" 0
- -iv "isHotBoxPaneSpecificRowVisible" 0
+ -iv "isHotBoxDynamicsRowVisible" 1
+ -iv "isHotBoxModelingRowVisible" 1
+ -iv "isHotBoxRenderingRowVisible" 1
+ -iv "isHotBoxRiggingRowVisible" 1
  -sv "nameOfHotBoxC1MarkingMenu" "CommonModelingPanes"
  -sv "nameOfHotBoxC2MarkingMenu" "CommonModelingPanes"
  -sv "nameOfHotBoxC3MarkingMenu" "CommonModelingPanes"
@@ -389,7 +396,7 @@ optionVar -cat "Hotkey Editor"
 // HumanIK
 optionVar -cat "HumanIK"
  -sv "hikControlRigUIPath" "C:/Program Files/Autodesk/Maya2023/scripts/others/../../resources/CharacterControls/CharacterControlsConfig.xml"
- -iv "hikControlsTabWidth" 427
+ -iv "hikControlsTabWidth" 424
  -iv "hikCustomRigTabWidth" 424
  -sv "hikCustomRigUIPath" "C:/Program Files/Autodesk/Maya2023/scripts/others/../../resources/CharacterControls/CustomRigControlsConfig.xml"
  -iv "mayahikLastSelectedRigStyle" 0
@@ -418,7 +425,7 @@ optionVar -cat "Hypershade"
  -iv "LookdevShaderballPanelHeight" 400
  -iv "LookdevShaderballPanelWidth" 700
  -iv "hyperShadeBringCreatePanelToFront" 1
- -sv "hyperShadeDockingLayout" "000000ff00000000fd00000003000000000000025e000004f9fc0200000001fc000002d4000004f9000000f601000019fa000000000200000002fb00000024004c006f006f006b00640065007600430072006500610074006500500061006e0065006c0100000000ffffffff000000dc00fffffffb00000020004c006f006f006b00640065007600420069006e007300500061006e0065006c0100000000ffffffff000000c900ffffff0000000100000299000007cdfc0200000002fb0000002c004c006f006f006b00640065007600530068006100640065007200620061006c006c00500061006e0065006c0100000000000003950000005300fffffffb00000028004c006f006f006b00640065007600500072006f0070006500720074007900500061006e0065006c010000039f0000042e0000011000ffffff0000000200000c55000002cafc0100000001fb00000026004c006f006f006b00640065007600420072006f007700730065007200500061006e0065006c010000000000000c550000009700ffffff000009ed000004f900000004000000020000000800000002fc00000000"
+ -sv "hyperShadeDockingLayout" "000000ff00000000fd00000003000000000000025e000004f9fc0200000001fc000002d4000004f9000000f601000019fa000000000200000002fb00000024004c006f006f006b00640065007600430072006500610074006500500061006e0065006c0100000000ffffffff000000dc00fffffffb00000020004c006f006f006b00640065007600420069006e007300500061006e0065006c0100000000ffffffff000000c900ffffff0000000100000299000007cdfc0200000002fb0000002c004c006f006f006b00640065007600530068006100640065007200620061006c006c00500061006e0065006c0100000000000003930000005300fffffffb00000028004c006f006f006b00640065007600500072006f0070006500720074007900500061006e0065006c010000039d000004300000015d00ffffff0000000200000c55000002cafc0100000001fb00000026004c006f006f006b00640065007600420072006f007700730065007200500061006e0065006c010000000000000c550000009700ffffff000009ed000004f900000004000000020000000800000002fc00000000"
  -sa "hyperShadeFirstPaneTabs"
  -sva "hyperShadeFirstPaneTabs" "hyperShadeTab1"
  -sva "hyperShadeFirstPaneTabs" "hyperShadeTab2"
@@ -431,7 +438,7 @@ optionVar -cat "Hypershade"
  -sva "hyperShadeFirstPaneTabs" "hyperShadeTab9"
  -sva "hyperShadeFirstPaneTabs" "hyperShadeTab10"
  -sv "hyperShadePanelTabSectionsShown" "showTopTabsOnly"
- -sv "hyperShadePanelWorkAreaTab" "hyperShadePanel1dockStation|buttonsAndPaneForm|paneArrangement|secondPaneTabs|formLayout169"
+ -sv "hyperShadePanelWorkAreaTab" "hyperShadePanel1dockStation|buttonsAndPaneForm|paneArrangement|secondPaneTabs|formLayout193"
  -sa "hyperShadeSecondPaneTabs"
  -sva "hyperShadeSecondPaneTabs" "hyperShadeTab11"
  -sv "hyperShadeShaderballEnvironmentName" "Interior1 Color"
@@ -603,6 +610,7 @@ optionVar -cat "Modeling.Curves.Insert Knot"
 
 // Move Tool
 optionVar -cat "Move Tool"
+ -iv "mode_Move" 0
  -fv3 "orientAxes_Move" -1.445623 0.512364 1.325101
  -iv "pinPivot_Move" 1
  ;
@@ -865,6 +873,7 @@ optionVar -cat "UI Elements"
  -iv2 "optionBoxDimensionsGridOptions" 596 501
  -iv2 "optionBoxDimensionsPlayblast" 588 480
  -iv2 "optionBoxDimensionsPoint" 546 348
+ -iv "toolSettingsVisible" 1
  ;
 
 // Undo
@@ -875,15 +884,15 @@ optionVar -cat "Undo"
 
 // Viewports
 optionVar -cat "Viewports"
- -sv "modelPanel1" "modelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels modelPanel1;\n$editorName = $panelName;\nmodelEditor -e -camera \"|top\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 2373\n-height 1365\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
- -sv "modelPanel2" "modelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels modelPanel2;\n$editorName = $panelName;\nmodelEditor -e -camera \"|side\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1\n-height 1\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
- -sv "modelPanel3" "modelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels modelPanel3;\n$editorName = $panelName;\nmodelEditor -e -camera \"|front\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1\n-height 1\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
- -sv "modelPanel4" "modelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels modelPanel4;\n$editorName = $panelName;\nmodelEditor -e -camera \"|persp\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 1\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 0\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 2373\n-height 1365\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
+ -sv "modelPanel1" "modelPanel -edit -l (localizedPanelLabel(\"Top View\")) -mbv $menusOkayInPanels modelPanel1;\n$editorName = $panelName;\nmodelEditor -e -camera \"|top\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1040\n-height 698\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
+ -sv "modelPanel2" "modelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels modelPanel2;\n$editorName = $panelName;\nmodelEditor -e -camera \"|layout_set|cam_gp|main_cam\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 0\n-nurbsCurves 0\n-nurbsSurfaces 0\n-polymeshes 1\n-subdivSurfaces 0\n-planes 0\n-lights 0\n-cameras 1\n-controlVertices 0\n-hulls 0\n-grid 0\n-imagePlane 1\n-joints 0\n-ikHandles 0\n-deformers 0\n-dynamics 0\n-particleInstancers 0\n-fluids 0\n-hairSystems 0\n-follicles 0\n-nCloths 0\n-nParticles 0\n-nRigids 0\n-dynamicConstraints 0\n-locators 0\n-manipulators 1\n-pluginShapes 0\n-dimensions 0\n-handles 0\n-pivots 0\n-textures 0\n-strokes 0\n-motionTrails 1\n-clipGhosts 0\n-bluePencil 0\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 2093\n-height 1462\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 0 $editorName"
+ -sv "modelPanel3" "modelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels modelPanel3;\n$editorName = $panelName;\nmodelEditor -e -camera \"|front\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"smoothShaded\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 0\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 1\n-nurbsCurves 1\n-nurbsSurfaces 1\n-polymeshes 1\n-subdivSurfaces 1\n-planes 1\n-lights 1\n-cameras 1\n-controlVertices 1\n-hulls 1\n-grid 1\n-imagePlane 1\n-joints 1\n-ikHandles 1\n-deformers 1\n-dynamics 1\n-particleInstancers 1\n-fluids 1\n-hairSystems 1\n-follicles 1\n-nCloths 1\n-nParticles 1\n-nRigids 1\n-dynamicConstraints 1\n-locators 1\n-manipulators 1\n-pluginShapes 1\n-dimensions 1\n-handles 1\n-pivots 1\n-textures 1\n-strokes 1\n-motionTrails 1\n-clipGhosts 1\n-bluePencil 1\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1040\n-height 697\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 1 $editorName"
+ -sv "modelPanel4" "modelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels modelPanel4;\n$editorName = $panelName;\nmodelEditor -e -camera \"|persp\" -useInteractiveMode 0\n-displayLights \"default\" -displayAppearance \"wireframe\" -activeOnly 0\n-ignorePanZoom 0\n-wireframeOnShaded 1\n-headsUpDisplay 1\n-holdOuts 1\n-selectionHiliteDisplay 1\n-useDefaultMaterial 0\n-bufferMode \"double\" -twoSidedLighting 0\n-backfaceCulling 0\n-xray 0\n-jointXray 0\n-activeComponentsXray 0\n-displayTextures 0\n-smoothWireframe 0\n-lineWidth 1\n-textureAnisotropic 0\n-textureHilight 1\n-textureSampling 2\n-textureDisplay \"modulate\" -textureMaxSize 32768\n-fogging 0\n-fogSource \"fragment\" -fogMode \"linear\" -fogStart 0\n-fogEnd 100\n-fogDensity 0.1\n-fogColor 0.5 0.5 0.5 1 -depthOfFieldPreview 1\n-maxConstantTransparency 1\n-rendererName \"vp2Renderer\" -objectFilterShowInHUD 1\n-isFiltered 0\n-colorResolution 4 4 -bumpResolution 4 4 -textureCompression 0\n-transparencyAlgorithm \"frontAndBackCull\" -transpInShadows 0\n-cullingOverride \"none\" -lowQualityLighting 0\n-maximumNumHardwareLights 1\n-occlusionCulling 0\n-shadingModel 0\n-useBaseRenderer 0\n-useReducedRenderer 0\n-smallObjectCulling 0\n-smallObjectThreshold -1 -interactiveDisableShadows 0\n-interactiveBackFaceCull 0\n-sortTransparent 1\n-controllers 0\n-nurbsCurves 1\n-nurbsSurfaces 0\n-polymeshes 1\n-subdivSurfaces 0\n-planes 0\n-lights 0\n-cameras 1\n-controlVertices 0\n-hulls 0\n-grid 0\n-imagePlane 0\n-joints 0\n-ikHandles 0\n-deformers 0\n-dynamics 0\n-particleInstancers 0\n-fluids 0\n-hairSystems 0\n-follicles 0\n-nCloths 0\n-nParticles 0\n-nRigids 0\n-dynamicConstraints 0\n-locators 1\n-manipulators 1\n-pluginShapes 0\n-dimensions 0\n-handles 0\n-pivots 0\n-textures 0\n-strokes 0\n-motionTrails 0\n-clipGhosts 0\n-bluePencil 0\n-greasePencils 0\n-shadows 0\n-captureSequenceNumber -1\n-width 1039\n-height 698\n-sceneRenderFilter 0\n$editorName;\nmodelEditor -e -viewSelected 0 $editorName;\nmodelEditor -e -pluginObjects \"gpuCacheDisplayFilter\" 0 $editorName"
  ;
 
 // Workspaces
 optionVar -cat "Workspaces"
- -sv "workspaceLayoutToLoadOnStartup" "Justin VIVE 2"
+ -sv "workspaceLayoutToLoadOnStartup" "Justin VIVE"
  -iv "workspaceLinkHotKeySetEnabled" 0
  -sv "workspaceLinkHotKeySetValue" "Maya_Default_Duplicate"
  -iv "workspaceLinkMenuSetEnabled" 0
@@ -984,7 +993,7 @@ optionVar
  -sa "filterUISettings-ToggledOutliner"
  -sv "global_log_level" "debug"
  -sv "graphCyclerUIState" "01d9d0cb00030000fffffe5a000006abffffffd5000007d9fffffe5b000006d8ffffffd4000007d800000001000000000f00fffffe5b000006d8ffffffd4000007d8"
- -sv "graphEditor1WindowState" "01d9d0cb00030000fffff10300000009fffffffb00000339fffff1040000003dfffffffa0000033800000001000000000f00fffff1040000003dfffffffa00000338"
+ -sv "graphEditor1WindowState" "01d9d0cb00030000fffff10300000007fffffffa000003a0fffff1040000003bfffffff90000039f00000001000000000f00fffff1040000003bfffffff90000039f"
  -iv "graphEditorDisplayValues" 0
  -iv "graphEditorValueLinesToggle" 0
  -sv "hyperShadePanel1WindowState" "01d9d0cb00030000fffff0fffffffff50000000000000834fffff10000000022ffffffff0000083300000001020000000f00fffff10000000022ffffffff00000833"
@@ -1006,7 +1015,7 @@ optionVar
  ;
 
 optionVar
- -sv "modelPanel7WindowState" "01d9d0cb00030000fffff89300000372ffffff33000007c8fffff894000003a6ffffff32000007c700000001000000000f00fffff894000003a6ffffff32000007c7"
+ -sv "modelPanel7WindowState" "01d9d0cb00030000fffff956000003aafffffff600000800fffff957000003defffffff5000007ff00000001000000000f00fffff957000003defffffff5000007ff"
  -sv "mtoaBuildID" "6a048927 (fix-5.2.1)"
  -iv "multipleBindPosesOpt" 0
  -sv "myWindowState" "01d9d0cb000300000000048d000002aa0000070e000004be0000048e000002de0000070d000004bd00000000000000000f000000048e000002de0000070d000004bd"
@@ -1019,7 +1028,7 @@ optionVar
  ;
 
 optionVar
- -sv "referenceEditorPanel1WindowState" "01d9d0cb00030000fffffbf3000001befffffec10000056cfffffbf4000001f2fffffec00000056b00000001000000000f00fffffbf4000001f2fffffec00000056b"
+ -sv "referenceEditorPanel1WindowState" "01d9d0cb00030000fffff678000003c9fffff93b000006eefffff679000003fdfffff93a000006ed00000001000000000f00fffff679000003fdfffff93a000006ed"
  -sv "renderSetup_userPresetsDirectory" "C:\\Users\\hyh14\\OneDrive\\문서\\maya\\Presets"
  -sv "renderSetup_userPresetsDirectory_contents" "C:/Program Files/Autodesk/Maya2023\\presets\\Presets"
  -sv "renderSetup_userTemplateDirectory" "C:\\Users\\hyh14\\OneDrive\\문서\\maya\\RSTemplates"

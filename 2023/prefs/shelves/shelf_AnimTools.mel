@@ -1048,5 +1048,38 @@ global proc shelf_AnimTools () {
         -commandRepeatable 1
         -flat 1
     ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Select object(s) to generate a motion trail over time" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Create Editable Motion Trail" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "motionTrail.png" 
+        -image1 "motionTrail.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "doMotionTrail 3 { \"snapshot  -motionTrail 1  -increment 1 -startTime `playbackOptions -query -min` -endTime `playbackOptions -query -max`\", \"1\",\"0\",\"0\",\"1\",\"1\",\"1\",\"0\",\"1\"}" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
 
 } 

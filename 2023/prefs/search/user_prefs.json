@@ -15,9 +15,9 @@
             "cmdSkydomeLight",
             "cmdArnoldExportAllStandIn",
             "RenderGlobalsWindow",
-            "DistanceTool",
             "SelectTextureReferenceObject",
             "DeleteTextureReferenceObject",
+            "DistanceTool",
             "CreateMotionTrail"
         ],
         [],
