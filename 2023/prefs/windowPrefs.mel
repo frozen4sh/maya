@@ -18,9 +18,9 @@ windowPref -topLeftCorner 150 200 -widthHeight 1120 640 -maximized true -parentM
 windowPref -topLeftCorner 235 230 -widthHeight 1000 495 -maximized true -parentMain true contentBrowserPanel1Window;
 windowPref -topLeftCorner -12 -1 -widthHeight 1920 1536 -maximized true -parentMain false MayaWindow;
 windowPref -topLeftCorner 1605 835 -widthHeight 612 471 -maximized true -parentMain true authentication_login_window;
-windowPref -topLeftCorner 1211 370 -widthHeight 1400 1400 -maximized true -parentMain true msgbox;
-windowPref -topLeftCorner 0 40 -widthHeight 3840 2036 -maximized true -parentMain true task_manager_window;
-windowPref -topLeftCorner 231 -1988 -widthHeight 1531 1585 -maximized false -parentMain true PreferencesWindow;
+windowPref -topLeftCorner 1033 456 -widthHeight 1400 1400 -maximized true -parentMain true msgbox;
+windowPref -topLeftCorner 294 412 -widthHeight 2897 1464 -maximized true -parentMain true task_manager_window;
+windowPref -topLeftCorner 269 -2007 -widthHeight 1531 1561 -maximized false -parentMain true PreferencesWindow;
 windowPref -topLeftCorner 368 555 -widthHeight 1276 1514 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 5946 553 -widthHeight 750 1050 -maximized true -parentMain true RiggingChecklistWidget;
 windowPref -topLeftCorner 640 1279 -widthHeight 882 720 -maximized false -parentMain true OptionBoxWindow;
@@ -43,7 +43,7 @@ windowPref -topLeftCorner 1707 -422 -widthHeight 378 257 -maximized false -paren
 windowPref -topLeftCorner 641 214 -widthHeight 1918 1050 -maximized false -parentMain true HotkeyEditor;
 windowPref -topLeftCorner 951 743 -widthHeight 450 450 -maximized true -parentMain true old_version_selection_window;
 windowPref -topLeftCorner 700 1280 -widthHeight 570 1096 -maximized false -parentMain true createRenderNodeWindow;
-windowPref -topLeftCorner -2161 742 -widthHeight 1501 1065 -maximized true -parentMain true scene_element_manager_window;
+windowPref -topLeftCorner -2258 727 -widthHeight 1501 1065 -maximized true -parentMain true scene_element_manager_window;
 windowPref -topLeftCorner 1611 791 -widthHeight 600 562 -maximized true -parentMain true shading_set_manager_window;
 windowPref -topLeftCorner 916 346 -widthHeight 656 377 -maximized false -parentMain true mmBakeCamWin;
 windowPref -topLeftCorner -1519 519 -widthHeight 1054 1335 -maximized true -parentMain true anim_manager;
@@ -52,11 +52,11 @@ windowPref -topLeftCorner 695 722 -widthHeight 750 916 -maximized false -parentM
 windowPref -topLeftCorner 1030 -1252 -widthHeight 535 623 -maximized false -parentMain true namespaceEditor;
 windowPref -topLeftCorner 1046 1584 -widthHeight 717 601 -maximized false -parentMain true isolationToggle_v06;
 windowPref -topLeftCorner 700 1280 -widthHeight 276 157 -maximized false -parentMain true lockToWorld_v10;
-windowPref -topLeftCorner 409 1923 -widthHeight 526 1432 -maximized false -parentMain true ikFkSwitch_UI;
+windowPref -topLeftCorner 464 1055 -widthHeight 526 1432 -maximized false -parentMain true ikFkSwitch_UI;
 windowPref -topLeftCorner 700 1280 -widthHeight 272 260 -maximized false -parentMain true sm;
 windowPref -topLeftCorner 510 935 -widthHeight 540 590 -maximized true -parentMain true memo_manager_window;
 windowPref -topLeftCorner 700 1280 -widthHeight 690 750 -maximized false -parentMain true showHistoryWindow;
-windowPref -topLeftCorner -1857 1131 -widthHeight 875 310 -maximized true -parentMain true progress_bar_window;
+windowPref -topLeftCorner -1954 1116 -widthHeight 875 310 -maximized true -parentMain true progress_bar_window;
 windowPref -topLeftCorner -1400 941 -widthHeight 1079 597 -maximized true -parentMain true scene_element_manager_shot_code_selector;
 windowPref -topLeftCorner 634 -2185 -widthHeight 787 946 -maximized false -parentMain true colorPreferenceWindow;
 windowPref -topLeftCorner 692 1280 -widthHeight 510 420 -maximized false -parentMain true PluginInfoWin;
@@ -84,3 +84,4 @@ windowPref -topLeftCorner 692 1280 -widthHeight 884 861 -maximized false -parent
 windowPref -topLeftCorner 945 1058 -widthHeight 450 150 -maximized false -parentMain true changeNamespaceWindow;
 windowPref -topLeftCorner 733 1797 -widthHeight 479 449 -maximized false -parentMain true asSelectorbiped;
 windowPref -topLeftCorner 692 1280 -widthHeight 844 436 -maximized false -parentMain true cMTrailWin;
+windowPref -topLeftCorner 1641 783 -widthHeight 540 575 -maximized true -parentMain true color_managementOnOff_window;
