@@ -1,10 +1,80 @@
-import sys
-sys.path.insert(0,'D:\\Justin\\Python\\VIVE_Python\\2024_1Q\\')
+'''
+여기서 부터 
+'''
+
+# # Hide warnings
+# cmds.scriptEditorInfo(suppressWarnings=1,suppressInfo=1,se=0)
+
+# def createLocators():
+#     print('createLocators')
+#     cmds.spaceLocator(n='ik_foot_loc')
+#     cmds.spaceLocator(n='ik_pv_loc')
+
+# def parentLocators():
+#     print('parentLocators')
+#     cmds.setAttr('FKIKLeg_R.FKIKBlend', 10)
+
+#     cmds.parent('ik_foot_loc','IKLeg_R')
+#     cmds.setAttr('ik_foot_loc.translate', 0, 0, 0, type="double3")
+#     cmds.setAttr('ik_foot_loc.rotate', 0, 0, 0, type="double3")
+#     cmds.parent('ik_foot_loc','Ankle_R')
+      
+#     cmds.parent('ik_pv_loc','PoleLeg_R')
+#     cmds.setAttr('ik_pv_loc.translate', 0, 0, 0, type="double3")
+#     cmds.parent('ik_pv_loc','Knee_R')
+#     cmds.setAttr('ik_pv_loc.translate', 0, 0, 0, type="double3")
+
+#     cmds.setAttr('FKIKLeg_R.FKIKBlend', 0)
+
+# def repeateAndKey():
+#     # # Constraint locator and IK controller
+#     a=cmds.parentConstraint('ik_foot_loc','IKLeg_R',mo=0)
+#     b=cmds.pointConstraint('ik_pv_loc','PoleLeg_R',mo=0)
+
+#     # Key 2 controllers
+#     cmds.setKeyframe('IKLeg_R')
+#     cmds.setKeyframe('PoleLeg_R')
+
+#     # Delete constraints
+#     cmds.delete(a)
+#     cmds.delete(b)   
+
+# def deleteConstraintLocators():
+    
+#     # Delete locators
+#     cmds.delete('ik_foot_loc')
+#     cmds.delete('ik_pv_loc')
 
 
-from importlib import reload
 
-import FK_IK_Switch
+# # Get the start and end frames of the timeline
+# start_frame = cmds.playbackOptions(query=True, minTime=True)
+# print('start_frame=',start_frame)
+# end_frame = cmds.playbackOptions(query=True, maxTime=True)
+# print('end_frame=',end_frame)
 
-reload(FK_IK_Switch)
-FK_IK_Switch.openWindow()
+# # Iterate over each frame in the timeline
+
+# createLocators()
+# parentLocators()
+
+# for frame in range(int(start_frame), int(end_frame) + 1):
+#     cmds.currentTime(frame)
+#     print('frame=',frame)
+
+#     # Check if controller A has a keyframe at the given frame
+#     FKAnkle_keyframe_times = cmds.keyframe('FKAnkle_R', query=True, timeChange=True)
+#     print('FKAnkle_keyframe_times=',FKAnkle_keyframe_times)
+#     if FKAnkle_keyframe_times and frame in FKAnkle_keyframe_times:
+#         repeateAndKey()
+
+#     FKKnee_keyframe_times = cmds.keyframe('FKKnee_R', query=True, timeChange=True)
+#     print('FKKnee_keyframe_times=',FKKnee_keyframe_times)
+#     if FKKnee_keyframe_times and frame in FKKnee_keyframe_times:
+#         repeateAndKey()
+
+# deleteConstraintLocators()
+
+'''
+여기까지가 코드만 돌려서 작동 완료 확인
+'''

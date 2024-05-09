@@ -1,4 +1,0 @@
-import maya.cmds as cmds
-
-cmds.spaceLocator(n='Justin')
-cmds.parentConstraint('kai_fc001:FKKnee_R', 'locator1', maintainOffset=False)
