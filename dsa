@@ -1,0 +1,233 @@
+[33mcommit 261a1ef5af10406747a8156bdc9039b8cc1616fd[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Justin Yehun HWANG <hyh1411@hotmail.com>
+Date:   Tue Mar 3 16:43:35 2026 +0900
+
+    20260303_Aurora
+
+ 2023/Maya.env                                      |       2 [32m+[m
+ .../hotkeys/userHotkeys_Justin_Hotkey_20240530.mel |      44 [32m+[m[31m-[m
+ 2023/prefs/mainWindowStates/startupMainWindowState |     Bin [31m264[m -> [32m264[m bytes
+ 2023/prefs/pluginPrefs.mel                         |       4 [32m+[m[31m-[m
+ 2023/prefs/scriptEditorTemp/commandExecuter-0      |       2 [32m+[m[31m-[m
+ 2023/prefs/scriptEditorTemp/commandExecuter-7      |       0
+ 2023/prefs/scriptEditorTemp/commandExecuter-8      |      70 [32m+[m
+ 2023/prefs/scriptEditorTemp/commandExecuter-9      |      35 [32m+[m
+ .../scriptEditorTemp/scriptEditorTabPrefs.txt      |       6 [32m+[m[31m-[m
+ 2023/prefs/shelves/shelf_Custom.mel                |     191 [32m+[m[31m-[m
+ 2023/prefs/userPrefs.mel                           |     155 [32m+[m[31m-[m
+ 2023/prefs/userPrefs_panelConfig.mel               |       4 [32m+[m[31m-[m
+ 2023/prefs/userPrefs_recents.mel                   |      48 [32m+[m[31m-[m
+ 2023/prefs/windowPrefs.mel                         |       9 [32m+[m[31m-[m
+ 2023/prefs/workspaces/Animation.json               |     178 [32m+[m[31m-[m
+ .../__pycache__/metahuman_api.cpython-39.pyc       |     Bin [31m0[m -> [32m16666[m bytes
+ .../metahuman_facial_transfer.cpython-39.pyc       |     Bin [31m0[m -> [32m11579[m bytes
+ .../metahuman_facial_transfer-main/.gitignore      |       2 [32m+[m
+ .../drag_and_drop_install.cpython-39.pyc           |     Bin [31m1927[m -> [32m1905[m bytes
+ .../drag_and_drop_install.py                       |       6 [32m+[m[31m-[m
+ 2025/modules/Fab.mod                               |       2 [32m+[m
+ 2025/prefs/mainWindowStates/startupMainWindowState |     Bin [31m98[m -> [32m98[m bytes
+ 2025/prefs/pluginPrefs.mel                         |       4 [32m+[m[31m-[m
+ 2025/prefs/shelves/shelf_XGen.mel                  |       2 [32m+[m[31m-[m
+ 2025/prefs/userPrefs.mel                           |      51 [32m+[m[31m-[m
+ 2025/prefs/userPrefs_recents.mel                   |       7 [32m+[m
+ 2025/prefs/windowPrefs.mel                         |       4 [32m+[m[31m-[m
+ 2025/prefs/workspaces/Animation.json               |       4 [32m+[m[31m-[m
+ FBX/Logs/2020.3.1/maya2023exp.log                  |     111 [32m+[m
+ FBX/Logs/2020.3.1/maya2023imp.log                  |     547 [32m+[m
+ FBX/Logs/2020.3.6/maya2025exp.log                  |      10 [32m+[m
+ .../2020.3.1/export/User defined.fbxexportpreset   |      16 [32m+[m[31m-[m
+ .../2020.3.6/export/User defined.fbxexportpreset   |      12 [32m+[m[31m-[m
+ mayaLog                                            |       2 [32m+[m[31m-[m
+ .../autosave/CH_Mem1_rig_ani_FullBody.0001.mb      |     Bin [31m0[m -> [32m321309796[m bytes
+ .../autosave/CH_Mem1_rig_ani_FullBody.0002.mb      |     Bin [31m0[m -> [32m321473628[m bytes
+ .../autosave/CH_Mem1_rig_ani_FullBody.0003.mb      |     Bin [31m0[m -> [32m322432108[m bytes
+ .../autosave/CH_Mem3_rig_ani_FullBody.0001.mb      |     Bin [31m0[m -> [32m259841208[m bytes
+ .../default/autosave/__AUTO-SAVE__untitled.0001.mb |     Bin [31m0[m -> [32m6192[m bytes
+ .../default/autosave/__AUTO-SAVE__untitled.0002.ma | 6614774 [32m+++++++++++++++++[m
+ .../default/autosave/__AUTO-SAVE__untitled.0002.mb |     Bin [31m0[m -> [32m6924[m bytes
+ .../default/autosave/__AUTO-SAVE__untitled.0003.ma | 6612878 [32m++++++++++++++++[m
+ scripts/AdvancedSkeleton/AdvancedSkeleton.mel      |    2679 [32m+[m[31m-[m
+ .../AdvancedSkeletonFiles/Selector/biped.mel       |     388 [32m+[m[31m-[m
+ .../AdvancedSkeletonFiles/Selector/face.mel        |     388 [32m+[m[31m-[m
+ .../div/images/help/asFBXRig.jpg                   |     Bin [31m0[m -> [32m29850[m bytes
+ .../AdvancedSkeletonFiles/fitSkeletons/UE5.ma      |      17 [32m+[m[31m-[m
+ .../moCapMatchers/HY-Motion.txt                    |      35 [32m+[m
+ .../moCapMatchers/MotionMaker.txt                  |      39 [32m+[m
+ .../AdvancedSkeletonFiles/moCapMatchers/Motive.txt |      40 [32m+[m
+ .../nameMatchers/MetaHuman.ma                      |       9 [31m-[m
+ .../AdvancedSkeletonFiles/nameMatchers/Unreal5.ma  |      71 [32m+[m[31m-[m
+ .../AdvancedSkeletonFiles/nameMatchers/Unreal5.txt |       3 [32m+[m[31m-[m
+ .../AdvancedSkeleton_v6.660/AdvancedSkeleton.mel   |   78694 [32m+[m
+ .../AdvancedSkeletonFiles/Selector/biped.mel       |   14670 [32m+[m
+ .../Selector/biped/install.mel                     |      59 [32m+[m
+ .../AdvancedSkeletonFiles/Selector/face.mel        |   14828 [32m+[m
+ .../Selector/face/install.mel                      |      59 [32m+[m
+ .../AdvancedSkeletonFiles/Selector/scenes/biped.ma |    3496 [32m+[m
+ .../AdvancedSkeletonFiles/Selector/scenes/face.ma  |    5139 [32m+[m
+ .../AdvancedSkeletonFiles/Selector/scenes/horse.ma |   22253 [32m+[m
+ .../AdvancedSkeletonFiles/bin/7za.e                |     Bin [31m0[m -> [32m587776[m bytes
+ .../AdvancedSkeletonFiles/bin/curl-ca-bundle.crt   |    3240 [32m+[m
+ .../AdvancedSkeletonFiles/bin/curl.e               |     Bin [31m0[m -> [32m3769976[m bytes
+ .../AdvancedSkeletonFiles/bin/libeay32.dll         |     Bin [31m0[m -> [32m1552412[m bytes
+ .../AdvancedSkeletonFiles/bin/libssl32.dll         |     Bin [31m0[m -> [32m354814[m bytes
+ .../AdvancedSkeletonFiles/div/as2cr/4.x.py         |     837 [32m+[m
+ .../AdvancedSkeletonFiles/div/as2cr/5.0.py         |     837 [32m+[m
+ .../AdvancedSkeletonFiles/div/as2cr/5.1.py         |     837 [32m+[m
+ .../AdvancedSkeletonFiles/div/as2cr/5.4.py         |     837 [32m+[m
+ .../div/as2cr/Face_CR/Face_CR.uasset               |     Bin [31m0[m -> [32m2846661[m bytes
+ .../div/as2cr/Face_CR/readme.txt                   |       1 [32m+[m
+ .../AdvancedSkeletonFiles/div/as2mr/5.4.py         |     413 [32m+[m
+ .../AdvancedSkeletonFiles/div/as2mr/5.5.py         |     413 [32m+[m
+ .../div/as2wd/wd_character_export.py               |    1119 [32m+[m
+ .../AdvancedSkeletonFiles/div/asGallery.ma         |    1731 [32m+[m
+ .../AdvancedSkeletonFiles/div/asGeometry.ma        |  320075 [32m+[m
+ .../AdvancedSkeletonFiles/div/asIcons.ma           |     887 [32m+[m
+ .../AdvancedSkeletonFiles/div/asMetaHuman.ma       |  157062 [32m+[m
+ .../AdvancedSkeletonFiles/div/asMotion.ma          |   14312 [32m+[m
+ .../AdvancedSkeletonFiles/div/asMuscular.ma        |  281981 [32m+[m
+ .../AdvancedSkeletonFiles/div/asUnreal.ma          |    5460 [32m+[m
+ .../div/headTopology/defaultHead.ma                |    6836 [32m+[m
+ .../div/headTopology/hiHead.ma                     |   13553 [32m+[m
+ .../div/headTopology/loHead.ma                     |    4237 [32m+[m
+ .../div/headTopologyEyeBall/defaultEyeBall.ma      |    2096 [32m+[m
+ .../div/headTopologyTeeth/defaultTeeth.ma          |    9016 [32m+[m
+ .../div/images/help/BodyPreAll.jpg                 |     Bin [31m0[m -> [32m31893[m bytes
+ .../div/images/help/BodyPreLeftEye.jpg             |     Bin [31m0[m -> [32m27850[m bytes
+ .../div/images/help/BodyPreRightEye.jpg            |     Bin [31m0[m -> [32m28070[m bytes
+ .../div/images/help/BodyPreSkin.jpg                |     Bin [31m0[m -> [32m36311[m bytes
+ .../div/images/help/asAboutCurrentVersion.jpg      |     Bin [31m0[m -> [32m68908[m bytes
+ .../div/images/help/asAboutUpdate.jpg              |     Bin [31m0[m -> [32m73125[m bytes
+ .../div/images/help/asAnimationTester.jpg          |     Bin [31m0[m -> [32m88885[m bytes
+ .../div/images/help/asBSWizard/asBSWizardStep0.jpg |     Bin [31m0[m -> [32m124515[m bytes
+ .../images/help/asBSWizard/asBSWizardStep15_.jpg   |     Bin [31m0[m -> [32m125553[m bytes
+ .../images/help/asBSWizard/asBSWizardStep16_.jpg   |     Bin [31m0[m -> [32m126407[m bytes
+ .../images/help/asBSWizard/asBSWizardStep17_.jpg   |     Bin [31m0[m -> [32m123807[m bytes
+ .../images/help/asBSWizard/asBSWizardStep18_.jpg   |     Bin [31m0[m -> [32m125519[m bytes
+ .../images/help/asBSWizard/asBSWizardStep19.jpg    |     Bin [31m0[m -> [32m125968[m bytes
+ .../images/help/asBSWizard/asBSWizardStep20.jpg    |     Bin [31m0[m -> [32m125881[m bytes
+ .../images/help/asBSWizard/asBSWizardStep21.jpg    |     Bin [31m0[m -> [32m125709[m bytes
+ .../images/help/asBSWizard/asBSWizardStep22.jpg    |     Bin [31m0[m -> [32m125449[m bytes
+ .../images/help/asBSWizard/asBSWizardStep23.jpg    |     Bin [31m0[m -> [32m125571[m bytes
+ .../images/help/asBSWizard/asBSWizardStep24.jpg    |     Bin [31m0[m -> [32m125566[m bytes
+ .../images/help/asBSWizard/asBSWizardStep25.jpg    |     Bin [31m0[m -> [32m124980[m bytes
+ .../images/help/asBSWizard/asBSWizardStep26.jpg    |     Bin [31m0[m -> [32m125536[m bytes
+ .../images/help/asBSWizard/asBSWizardStep27.jpg    |     Bin [31m0[m -> [32m125285[m bytes
+ .../images/help/asBSWizard/asBSWizardStep28.jpg    |     Bin [31m0[m -> [32m125565[m bytes
+ .../images/help/asBSWizard/asBSWizardStep29.jpg    |     Bin [31m0[m -> [32m125324[m bytes
+ .../images/help/asBSWizard/asBSWizardStep30.jpg    |     Bin [31m0[m -> [32m125695[m bytes
+ .../images/help/asBSWizard/asBSWizardStep31.jpg    |     Bin [31m0[m -> [32m125367[m bytes
+ .../images/help/asBSWizard/asBSWizardStep32.jpg    |     Bin [31m0[m -> [32m125712[m bytes
+ .../images/help/asBSWizard/asBSWizardStep36.jpg    |     Bin [31m0[m -> [32m125973[m bytes
+ .../images/help/asBSWizard/asBSWizardStep8_.jpg    |     Bin [31m0[m -> [32m124436[m bytes
+ .../asBSWizardStepctrlBrow_R.outerUpDown_10.jpg    |     Bin [31m0[m -> [32m126365[m bytes
+ .../asBSWizardStepctrlBrow_R.squeeze_10.jpg        |     Bin [31m0[m -> [32m126569[m bytes
+ .../asBSWizardStepctrlBrow_R.translateX_-1.jpg     |     Bin [31m0[m -> [32m125952[m bytes
+ .../asBSWizardStepctrlBrow_R.translateX_1.jpg      |     Bin [31m0[m -> [32m126531[m bytes
+ .../asBSWizardStepctrlBrow_R.translateY_-1.jpg     |     Bin [31m0[m -> [32m126195[m bytes
+ .../asBSWizardStepctrlBrow_R.translateY_1.jpg      |     Bin [31m0[m -> [32m127252[m bytes
+ .../asBSWizardStepctrlCheek_R.translateX_-1.jpg    |     Bin [31m0[m -> [32m125139[m bytes
+ .../asBSWizardStepctrlCheek_R.translateX_1.jpg     |     Bin [31m0[m -> [32m125988[m bytes
+ .../asBSWizardStepctrlCheek_R.translateY_1.jpg     |     Bin [31m0[m -> [32m125688[m bytes
+ ...BSWizardStepctrlMouthCorner_R.narrowWide_-1.jpg |     Bin [31m0[m -> [32m125617[m bytes
+ ...sBSWizardStepctrlMouthCorner_R.narrowWide_1.jpg |     Bin [31m0[m -> [32m125031[m bytes
+ ...BSWizardStepctrlMouthCorner_R.smileFrown_-1.jpg |     Bin [31m0[m -> [32m126187[m bytes
+ ...sBSWizardStepctrlMouthCorner_R.smileFrown_1.jpg |     Bin [31m0[m -> [32m125731[m bytes
+ .../asBSWizardStepctrlMouthCorner_R.upDown_-1.jpg  |     Bin [31m0[m -> [32m126187[m bytes
+ .../asBSWizardStepctrlMouthCorner_R.upDown_1.jpg   |     Bin [31m0[m -> [32m125731[m bytes
+ .../asBSWizardStepctrlNose_R.translateX_-1.jpg     |     Bin [31m0[m -> [32m125374[m bytes
+ .../asBSWizardStepctrlNose_R.translateX_1.jpg      |     Bin [31m0[m -> [32m125470[m bytes
+ .../asBSWizardStepctrlNose_R.translateY_1.jpg      |     Bin [31m0[m -> [32m125328[m bytes
+ .../div/images/help/asBakeHuamIK.jpg               |     Bin [31m0[m -> [32m56932[m bytes
+ .../div/images/help/asClusterControlCreate.jpg     |     Bin [31m0[m -> [32m57484[m bytes
+ .../div/images/help/asControlCurvesColor.jpg       |     Bin [31m0[m -> [32m80124[m bytes
+ .../div/images/help/asControlCurvesMirror.jpg      |     Bin [31m0[m -> [32m82080[m bytes
+ .../div/images/help/asControlCurvesScale.jpg       |     Bin [31m0[m -> [32m93055[m bytes
+ .../div/images/help/asControlCurvesSwap.jpg        |     Bin [31m0[m -> [32m76314[m bytes
+ .../div/images/help/asControlMeshCreate.jpg        |     Bin [31m0[m -> [32m76462[m bytes
+ .../div/images/help/asControlMeshesColorize.jpg    |     Bin [31m0[m -> [32m24210[m bytes
+ .../div/images/help/asControlMeshesCreate.jpg      |     Bin [31m0[m -> [32m21506[m bytes
+ .../div/images/help/asControlMeshesCreateIK.jpg    |     Bin [31m0[m -> [32m60190[m bytes
+ .../div/images/help/asControlOrientAxis.jpg        |     Bin [31m0[m -> [32m36599[m bytes
+ .../images/help/asControlOrientCurveUnafeccted.jpg |     Bin [31m0[m -> [32m38085[m bytes
+ .../div/images/help/asControlOrientCustom.jpg      |     Bin [31m0[m -> [32m39932[m bytes
+ .../div/images/help/asControlOrientMirror.jpg      |     Bin [31m0[m -> [32m25682[m bytes
+ .../help/asControlOrientMirroredBehaviour.jpg      |     Bin [31m0[m -> [32m50296[m bytes
+ .../div/images/help/asControlOrientWorldMatch.jpg  |     Bin [31m0[m -> [32m51071[m bytes
+ .../div/images/help/asControlOrientWorldOrient.jpg |     Bin [31m0[m -> [32m34257[m bytes
+ .../div/images/help/asConvertKeepBSTargets.jpg     |     Bin [31m0[m -> [32m53143[m bytes
+ .../div/images/help/asConvertKeepJoints.jpg        |     Bin [31m0[m -> [32m53033[m bytes
+ .../div/images/help/asConvertToBlendShapes.jpg     |     Bin [31m0[m -> [32m261023[m bytes
+ .../div/images/help/asCorrectiveShapesBake.jpg     |     Bin [31m0[m -> [32m55034[m bytes
+ .../div/images/help/asCorrectiveShapesCreate.jpg   |     Bin [31m0[m -> [32m77424[m bytes
+ .../images/help/asCorrectiveShapesCurveBased.jpg   |     Bin [31m0[m -> [32m95946[m bytes
+ .../div/images/help/asCorrectiveShapesEdit.jpg     |     Bin [31m0[m -> [32m71114[m bytes
+ .../div/images/help/asCreateHuamIK.jpg             |     Bin [31m0[m -> [32m55578[m bytes
+ .../div/images/help/asCreateNewBlendShape.jpg      |     Bin [31m0[m -> [32m56138[m bytes
+ .../div/images/help/asCustomOrientConnect.jpg      |     Bin [31m0[m -> [32m69294[m bytes
+ .../div/images/help/asCustomOrientCreateJoints.jpg |     Bin [31m0[m -> [32m65235[m bytes
+ .../div/images/help/asCustomOrientTransferSkin.jpg |     Bin [31m0[m -> [32m60047[m bytes
+ .../div/images/help/asDeformDeltaMushApply.jpg     |     Bin [31m0[m -> [32m19230[m bytes
+ .../div/images/help/asDeformDeltaMushHarden.jpg    |     Bin [31m0[m -> [32m36886[m bytes
+ .../div/images/help/asDeformSkinCage.jpg           |     Bin [31m0[m -> [32m90403[m bytes
+ .../help/asDeformSkinCageAddWristDetails.jpg       |     Bin [31m0[m -> [32m98178[m bytes
+ .../help/asDeformSkinCageAdjustGroinArea.jpg       |     Bin [31m0[m -> [32m86551[m bytes
+ .../images/help/asDeformSkinCageCopyWeights.jpg    |     Bin [31m0[m -> [32m52168[m bytes
+ .../help/asDeformSkinCageCreateGroinLocators.jpg   |     Bin [31m0[m -> [32m103152[m bytes
+ .../div/images/help/asDeformSkinCageDWidth.jpg     |     Bin [31m0[m -> [32m93795[m bytes
+ .../images/help/asDeformSkinCageDeleteCurves.jpg   |     Bin [31m0[m -> [32m47101[m bytes
+ .../div/images/help/asDeformSkinCageMirror.jpg     |     Bin [31m0[m -> [32m63200[m bytes
+ .../div/images/help/asDeformSkinCageSliders.jpg    |     Bin [31m0[m -> [32m77474[m bytes
+ .../div/images/help/asDeformSkinLoopsBind.jpg      |     Bin [31m0[m -> [32m72622[m bytes
+ .../div/images/help/asDeformSkinLoopsCopy.jpg      |     Bin [31m0[m -> [32m62662[m bytes
+ .../div/images/help/asDeformSkinLoopsCreate.jpg    |     Bin [31m0[m -> [32m99611[m bytes
+ .../div/images/help/asDeformSkinLoopsCutUp.jpg     |     Bin [31m0[m -> [32m70749[m bytes
+ .../div/images/help/asDeformSkinLoopsSelectAll.jpg |     Bin [31m0[m -> [32m68054[m bytes
+ .../div/images/help/asDeformSkinning.jpg           |     Bin [31m0[m -> [32m68532[m bytes
+ .../div/images/help/asDeformSubWrapAttach.jpg      |     Bin [31m0[m -> [32m46203[m bytes
+ .../div/images/help/asDeformSubWrapCage.jpg        |     Bin [31m0[m -> [32m95561[m bytes
+ .../div/images/help/asDeformSubWrapExlude.jpg      |     Bin [31m0[m -> [32m104385[m bytes
+ .../div/images/help/asDeformSubWrapWrap.jpg        |     Bin [31m0[m -> [32m66767[m bytes
+ .../div/images/help/asDeleteMotionSystem.jpg       |     Bin [31m0[m -> [32m49962[m bytes
+ .../div/images/help/asDeleteStaticChannels.jpg     |     Bin [31m0[m -> [32m29491[m bytes
+ .../div/images/help/asDeltaMushAll.jpg             |     Bin [31m0[m -> [32m153385[m bytes
+ .../div/images/help/asDelteEndJoints.jpg           |     Bin [31m0[m -> [32m45228[m bytes
+ .../div/images/help/asDemoCheckOnline.jpg          |     Bin [31m0[m -> [32m55488[m bytes
+ .../div/images/help/asDrivingSystemsCreate.jpg     |     Bin [31m0[m -> [32m82151[m bytes
+ .../div/images/help/asDrivingSystemsEdit.jpg       |     Bin [31m0[m -> [32m115536[m bytes
+ .../div/images/help/asEditBlendShapesCreate.jpg    |     Bin [31m0[m -> [32m141808[m bytes
+ .../images/help/asEditBlendShapesExtractAll.jpg    |     Bin [31m0[m -> [32m56600[m bytes
+ .../div/images/help/asEmotions.jpg                 |     Bin [31m0[m -> [32m45454[m bytes
+ .../div/images/help/asExportControlRig.jpg         |     Bin [31m0[m -> [32m100953[m bytes
+ .../div/images/help/asExportFBX.jpg                |     Bin [31m0[m -> [32m54127[m bytes
+ .../div/images/help/asExportMannequin.jpg          |     Bin [31m0[m -> [32m85242[m bytes
+ .../div/images/help/asExportWonderStudio.jpg       |     Bin [31m0[m -> [32m38444[m bytes
+ .../div/images/help/asExportZip.jpg                |     Bin [31m0[m -> [32m15145[m bytes
+ .../div/images/help/asExtraControllers.jpg         |     Bin [31m0[m -> [32m34745[m bytes
+ .../div/images/help/asEyeBallsIris.jpg             |     Bin [31m0[m -> [32m79886[m bytes
+ .../div/images/help/asEyeBallsPupil.jpg            |     Bin [31m0[m -> [32m46492[m bytes
+ .../div/images/help/asEyeBase.jpg                  |     Bin [31m0[m -> [32m52161[m bytes
+ .../div/images/help/asEyeSocket.jpg                |     Bin [31m0[m -> [32m60438[m bytes
+ .../div/images/help/asFBXRig.jpg                   |     Bin [31m0[m -> [32m29850[m bytes
+ .../div/images/help/asFaceDetachControllers.jpg    |     Bin [31m0[m -> [32m95357[m bytes
+ .../div/images/help/asFaceSetupSimplified.jpg      |     Bin [31m0[m -> [32m150418[m bytes
+ .../div/images/help/asFitAttributes.jpg            |     Bin [31m0[m -> [32m823897[m bytes
+ .../div/images/help/asFitAutoPlace.jpg             |     Bin [31m0[m -> [32m20390[m bytes
+ .../div/images/help/asFitCreate.jpg                |     Bin [31m0[m -> [32m72504[m bytes
+ .../div/images/help/asFitDisplayGeometry.jpg       |     Bin [31m0[m -> [32m94874[m bytes
+ .../div/images/help/asFitDisplayJointAxis.jpg      |     Bin [31m0[m -> [32m67447[m bytes
+ .../div/images/help/asFitDisplayJointOrient.jpg    |     Bin [31m0[m -> [32m96748[m bytes
+ .../div/images/help/asFitDisplayPoleVector.jpg     |     Bin [31m0[m -> [32m75132[m bytes
+ .../div/images/help/asFitExport.jpg                |     Bin [31m0[m -> [32m56701[m bytes
+ .../div/images/help/asFitLabels.jpg                |     Bin [31m0[m -> [32m159493[m bytes
+ .../div/images/help/asFitLimbs.jpg                 |     Bin [31m0[m -> [32m74402[m bytes
+ .../div/images/help/asFitMode.jpg                  |     Bin [31m0[m -> [32m77870[m bytes
+ .../div/images/help/asFitNonSymmetryJoints.jpg     |     Bin [31m0[m -> [32m28083[m bytes
+ .../div/images/help/asFitPlacement.jpg             |     Bin [31m0[m -> [32m59876[m bytes
+ .../div/images/help/asFitSkeletons.jpg             |     Bin [31m0[m -> [32m93409[m bytes
+ .../div/images/help/asFitStraightLimb.jpg          |     Bin [31m0[m -> [32m76616[m bytes
+ .../div/images/help/asFitUpdateNow.jpg             |     Bin [31m0[m -> [32m62744[m bytes
+ .../div/images/help/asGameEngineRootMotion.jpg     |     Bin [31m0[m -> [32m77910[m bytes
+ .../div/images/help/asGameEngineScaleBehaviour.jpg |     Bin [31m0[m -> [32m98731[m bytes
+ .../div/images/help/asGeometryBoxSkinCreate.jpg    |     Bin [31m0[m -> [32m66862[m bytes
+ .../images/help/asGeometryFaceRetopoConnect.jpg    |     Bin [31m0[m -> [32m89896[m bytes
+ .../div/images/help/asGeometryFaceRetopoCreate.jpg |     Bin [31m0[m -> [

@@ -1,0 +1,39 @@
+# 끝에 _joint 붙는건 search and replace 해서 스페이스 쳐서 바꿔야함
+
+import maya.cmds as cmds
+
+def convert_selected_to_joints():
+    # Get the selected objects
+    selected_objects = cmds.ls(selection=True, type='transform')
+    
+    if not selected_objects:
+        cmds.error("No objects selected. Please select objects to convert to joints.")
+        return
+    
+    joints = []
+    
+    for obj in selected_objects:
+        # Ensure the object is a locator
+        if not cmds.listRelatives(obj, shapes=True) or cmds.objectType(cmds.listRelatives(obj, shapes=True)[0]) != 'locator':
+            cmds.warning(f"Object {obj} is not a locator. Skipping...")
+            continue
+        
+        # Get the world position of the object
+        obj_position = cmds.xform(obj, query=True, worldSpace=True, translation=True)
+        
+        # Clear the selection to avoid any selection issues
+        cmds.select(clear=True)
+        
+        # Create a joint at the object's position
+        joint_name = cmds.joint(name=f"{obj}_joint", position=obj_position)
+        joints.append(joint_name)
+        
+        print(f"Object {obj} has been converted to joint {joint_name}.")
+        
+    # Delete the original locators
+    cmds.delete(selected_objects)
+    
+    return joints
+
+# Run the function
+convert_selected_to_joints()

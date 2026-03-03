@@ -1,0 +1,21 @@
+//Maya Preference 2025 (Release 1)
+//
+//
+
+optionVar -version 3;
+
+// RecentFiles
+optionVar -cat "RecentFiles"
+ -sa "RecentFilesList"
+ -sva "RecentFilesList" "D:/Maya/Freelance/GreyTabbyCat_reduce_w001.ma"
+ -sva "RecentFilesList" "D:/Justin/StudioBeardImportTest/Beard_Anim_MVC_Mem1_3_w001.ma"
+ -sva "RecentFilesList" "D:/Justin/StudioBeardImportTest/Beard_Anim_MVC_Mem1_3_w002.mb"
+ -iv "RecentFilesMaxSize" 10
+ -sa "RecentFilesTypeList"
+ -sva "RecentFilesTypeList" "mayaAscii"
+ -sva "RecentFilesTypeList" "mayaAscii"
+ -sva "RecentFilesTypeList" "mayaBinary"
+ -sa "RecentProjectsList"
+ -iv "RecentProjectsMaxSize" 10
+ ;
+

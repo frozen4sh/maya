@@ -1,0 +1,14 @@
+cody 6.570
+creature 6.570
+powder 6.570
+blaze 6.570
+chubby 6.570
+clairee 6.570
+conan 6.570
+max 6.570
+monsterTruck 6.570
+napoleon 6.570
+sam 6.570
+skateboard 6.570
+snook 6.570
+tuna 6.570

@@ -1,0 +1,6 @@
+{
+    string $sel[] = `ls -type locator`;
+    for ($s in $sel) {
+        if (`objExists ($s +".overrideEnabled")`) setAttr ($s +".overrideEnabled") 1;
+    }
+}

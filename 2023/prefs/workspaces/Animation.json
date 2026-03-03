@@ -1,0 +1,622 @@
+{
+    "linkedMenu": "animationMenuSet",
+    "autoSave": true,
+    "selectedShelf": "Custom",
+    "panels": [
+        {
+            "mainWindowPanel": true,
+            "splitter": {
+                "orientation": "vertical",
+                "children": [
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 2556,
+                            "controlHeight": 23,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "StatusLine",
+                                    "title": "Status Line",
+                                    "uiScript": "global string $gStatusLineForm; formLayout $gStatusLineForm;",
+                                    "retain": true,
+                                    "deleteLater": true,
+                                    "loadImmediately": true,
+                                    "checkPlugins": false,
+                                    "actLikeMayaUIElement": false,
+                                    "layoutDirectionCallback": "",
+                                    "layoutDirection": "horizontal",
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "fixed",
+                                    "controlWidth": 2556,
+                                    "controlHeight": 23
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 2556,
+                            "controlHeight": 64,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "Shelf",
+                                    "title": "Shelf",
+                                    "uiScript": "global string $gShelfForm; formLayout $gShelfForm;",
+                                    "retain": true,
+                                    "deleteLater": true,
+                                    "loadImmediately": true,
+                                    "checkPlugins": false,
+                                    "actLikeMayaUIElement": false,
+                                    "layoutDirectionCallback": "",
+                                    "layoutDirection": "horizontal",
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "fixed",
+                                    "controlWidth": 2556,
+                                    "controlHeight": 64,
+                                    "initCallback": "shelfInitCallback"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "splitter": {
+                            "orientation": "horizontal",
+                            "children": [
+                                {
+                                    "tabWidget": {
+                                        "selectedIndex": 0,
+                                        "controlWidth": 40,
+                                        "controlHeight": 1062,
+                                        "collapsed": false,
+                                        "controls": [
+                                            {
+                                                "objectName": "ToolBox",
+                                                "title": "Tool Box",
+                                                "uiScript": "global string $gToolboxForm; formLayout $gToolboxForm;",
+                                                "retain": true,
+                                                "deleteLater": true,
+                                                "loadImmediately": true,
+                                                "checkPlugins": false,
+                                                "actLikeMayaUIElement": false,
+                                                "layoutDirectionCallback": "",
+                                                "layoutDirection": "vertical",
+                                                "tabDirection": 0,
+                                                "closed": false,
+                                                "widthProperty": "fixed",
+                                                "heightProperty": "free",
+                                                "controlWidth": 40,
+                                                "controlHeight": 1062
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "splitter": {
+                                        "orientation": "vertical",
+                                        "children": [
+                                            {
+                                                "splitter": {
+                                                    "orientation": "horizontal",
+                                                    "children": [
+                                                        {
+                                                            "tabWidget": {
+                                                                "selectedIndex": 0,
+                                                                "controlWidth": 391,
+                                                                "controlHeight": 746,
+                                                                "collapsed": false,
+                                                                "controls": [
+                                                                    {
+                                                                        "objectName": "Outliner",
+                                                                        "title": "Outliner",
+                                                                        "uiScript": "outlinerPanel -menuBarVisible true -label panelLabel Outliner",
+                                                                        "retain": true,
+                                                                        "deleteLater": true,
+                                                                        "loadImmediately": true,
+                                                                        "checkPlugins": false,
+                                                                        "actLikeMayaUIElement": false,
+                                                                        "layoutDirectionCallback": "",
+                                                                        "layoutDirection": "horizontal",
+                                                                        "tabDirection": 0,
+                                                                        "closed": false,
+                                                                        "widthProperty": "preferred",
+                                                                        "heightProperty": "free",
+                                                                        "controlWidth": 391,
+                                                                        "controlHeight": 746,
+                                                                        "initCallback": "outlinerStateCallback",
+                                                                        "stateString": "outlinerEditor -e -docTag \"isolOutln_fromSeln\" -showShapes 0 -showAssignedMaterials 0 -showTimeEditor 1 -showReferenceNodes 1 -showReferenceMembers 1 -showAttributes 0 -showConnected 0 -showAnimCurvesOnly 0 -showMuteInfo 0 -organizeByLayer 1 -organizeByClip 1 -showAnimLayerWeight 1 -autoExpandLayers 1 -autoExpand 0 -showDagOnly 1 -showAssets 1 -showContainedOnly 1 -showPublishedAsConnected 0 -showParentContainers 0 -showContainerContents 1 -ignoreDagHierarchy 0 -expandConnections 0 -showUpstreamCurves 1 -showUnitlessCurves 1 -showCompounds 1 -showLeafs 1 -showNumericAttrsOnly 0 -highlightActive 1 -autoSelectNewObjects 0 -doNotSelectNewObjects 0 -dropIsParent 1 -transmitFilters 0 -setFilter \"defaultSetFilter\" -showSetMembers 1 -allowMultiSelection 1 -alwaysToggleSelect 0 -directSelect 0 -isSet 0 -isSetMember 0 -showUfeItems 1 -displayMode \"DAG\" -expandObjects 0 -setsIgnoreFilters 1 -containersIgnoreFilters 0 -editAttrName 0 -showAttrValues 0 -highlightSecondary 0 -showUVAttrsOnly 0 -showTextureNodesOnly 0 -attrAlphaOrder \"default\" -animLayerFilterOptions \"allAffecting\" -sortOrder \"none\" -longNames 0 -niceNames 1 -selectCommand \"print(\\\"\\\")\" -showNamespace 1 -showPinIcons 0 -mapMotionTrails 0 -ignoreHiddenAttribute 0 -ignoreOutlinerColor 0 -renderFilterVisible 0 -renderFilterIndex 0 -selectionOrder \"chronological\" -expandAttribute 0 -ufeFilter \"USD\" \"InactivePrims\" -ufeFilterValue 1 $editorName"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "tabWidget": {
+                                                                "selectedIndex": 0,
+                                                                "controlWidth": 1810,
+                                                                "controlHeight": 763,
+                                                                "collapsed": false,
+                                                                "controls": [
+                                                                    {
+                                                                        "objectName": "MainPane",
+                                                                        "title": "viewPanes",
+                                                                        "uiScript": "global string $gMainPane; paneLayout -nbg 0 $gMainPane;",
+                                                                        "retain": true,
+                                                                        "deleteLater": true,
+                                                                        "loadImmediately": true,
+                                                                        "checkPlugins": false,
+                                                                        "actLikeMayaUIElement": false,
+                                                                        "layoutDirectionCallback": "",
+                                                                        "layoutDirection": "horizontal",
+                                                                        "tabDirection": 0,
+                                                                        "closed": false,
+                                                                        "widthProperty": "free",
+                                                                        "heightProperty": "free",
+                                                                        "controlWidth": 1810,
+                                                                        "controlHeight": 763,
+                                                                        "initCallback": "mainPaneStateCallback",
+                                                                        "stateString": "global string $gMainPane; paneLayout -edit -configuration single $gMainPane;if(`modelPanel -exists modelPanel4`){ modelPanel -edit -parent $gMainPane modelPanel4; paneLayout -edit -setPane modelPanel4 1 $gMainPane;}"
+                                                                    }
+                                                                ]
+                                                            }
+                                                        },
+                                                        {
+                                                            "tabWidget": {
+                                                                "selectedIndex": 2,
+                                                                "controlWidth": 282,
+                                                                "controlHeight": 763,
+                                                                "collapsed": false,
+                                                                "controls": [
+                                                                    {
+                                                                        "objectName": "ToolSettings",
+                                                                        "title": "Tool Settings",
+                                                                        "uiScript": "global string $gToolSettingsForm; formLayout $gToolSettingsForm;",
+                                                                        "retain": true,
+                                                                        "deleteLater": true,
+                                                                        "loadImmediately": true,
+                                                                        "checkPlugins": false,
+                                                                        "actLikeMayaUIElement": false,
+                                                                        "layoutDirectionCallback": "",
+                                                                        "layoutDirection": "horizontal",
+                                                                        "tabDirection": 3,
+                                                                        "closed": false,
+                                                                        "widthProperty": "preferred",
+                                                                        "heightProperty": "free",
+                                                                        "controlWidth": 490,
+                                                                        "controlHeight": 766
+                                                                    },
+                                                                    {
+                                                                        "objectName": "contentBrowserPanel1Window",
+                                                                        "title": "Content Browser",
+                                                                        "uiScript": "if(!`panel -q -exists contentBrowserPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"contentBrowserPanel1\";\n\tscriptedPanel -unParent  -type \"contentBrowserPanel\" -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  contentBrowserPanel1;\n} else {\n\tscriptedPanel -e -unParent contentBrowserPanel1;\n}\nscriptedPanel -e -parent contentBrowserPanel1Window contentBrowserPanel1;\n",
+                                                                        "retain": false,
+                                                                        "deleteLater": true,
+                                                                        "loadImmediately": false,
+                                                                        "checkPlugins": false,
+                                                                        "actLikeMayaUIElement": false,
+                                                                        "layoutDirectionCallback": "",
+                                                                        "layoutDirection": "horizontal",
+                                                                        "tabDirection": 3,
+                                                                        "closed": true,
+                                                                        "widthProperty": "free",
+                                                                        "heightProperty": "free",
+                                                                        "controlWidth": 507,
+                                                                        "controlHeight": 768,
+                                                                        "initCallback": "contentBrowserInitCallback",
+                                                                        "stateString": "contentBrowserSetContext(\"WindowsMenu\", \"projects\", \";scenes\");"
+                                                                    },
+                                                                    {
+                                                                        "objectName": "ChannelBoxLayerEditor",
+                                                                        "title": "Channel Box / Layer Editor",
+                                                                        "uiScript": "global string $gChannelsLayersForm; formLayout $gChannelsLayersForm;",
+                                                                        "retain": true,
+                                                                        "deleteLater": true,
+                                                                        "loadImmediately": true,
+                                                                        "checkPlugins": false,
+                                                                        "actLikeMayaUIElement": false,
+                                                                        "layoutDirectionCallback": "",
+                                                                        "layoutDirection": "horizontal",
+                                                                        "tabDirection": 3,
+                                                                        "closed": false,
+                                                                        "widthProperty": "preferred",
+                                                                        "heightProperty": "free",
+                                                                        "controlWidth": 260,
+                                                                        "controlHeight": 763
+                                                                    },
+                                                                    {
+                                                                        "objectName": "hikCharacterControlsDock",
+                                                                        "title": "Human IK",
+                                                                        "uiScript": "hikBuildCharacterControlsDockableWindow();",
+                                                                        "retain": true,
+                                                                        "deleteLater": true,
+                                                                        "loadImmediately": true,
+                                                                        "checkPlugins": false,
+                                                                        "actLikeMayaUIElement": false,
+                                                                        "layoutDirectionCallback": "",
+                                                                        "layoutDirection": "horizontal",
+                                                                        "tabDirection": 3,
+                                                                        "closed": false,
+                                                                        "widthProperty": "free",
+                                                                        "heightProperty": "free",
+                                                                        "controlWidth": 282,
+                                                                        "controlHeight": 763,
+                                                                        "requiredPlugins": [
+                                                                            "mayaHIK",
+                                                                            "mayaCharacterization"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "objectName": "AttributeEditor",
+                                                                        "title": "Attribute Editor",
+                                                                        "uiScript": "global string $gAttributeEditorForm; formLayout $gAttributeEditorForm;",
+                                                                        "retain": true,
+                                                                        "deleteLater": true,
+                                                                        "loadImmediately": true,
+                                                                        "checkPlugins": false,
+                                                                        "actLikeMayaUIElement": false,
+                                                                        "layoutDirectionCallback": "",
+                                                                        "layoutDirection": "horizontal",
+                                                                        "tabDirection": 3,
+                                                                        "closed": false,
+                                                                        "widthProperty": "preferred",
+                                                                        "heightProperty": "free",
+                                                                        "controlWidth": 460,
+                                                                        "controlHeight": 762
+                                                                    }
+                                                                ]
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            {
+                                                "tabWidget": {
+                                                    "selectedIndex": 0,
+                                                    "controlWidth": 2495,
+                                                    "controlHeight": 293,
+                                                    "collapsed": false,
+                                                    "controls": [
+                                                        {
+                                                            "objectName": "graphEditor1Window",
+                                                            "title": "Graph Editor",
+                                                            "uiScript": "if(!`panel -q -exists graphEditor1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"graphEditor1\";\n\tscriptedPanel -unParent  -type \"graphEditor\" -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  graphEditor1;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                $editorName;\n} else {\n\tscriptedPanel -e -unParent graphEditor1;\n}\nscriptedPanel -e -parent graphEditor1Window graphEditor1;\n",
+                                                            "retain": false,
+                                                            "deleteLater": true,
+                                                            "loadImmediately": false,
+                                                            "checkPlugins": false,
+                                                            "actLikeMayaUIElement": false,
+                                                            "layoutDirectionCallback": "",
+                                                            "layoutDirection": "horizontal",
+                                                            "tabDirection": 2,
+                                                            "closed": false,
+                                                            "widthProperty": "free",
+                                                            "heightProperty": "free",
+                                                            "controlWidth": 2495,
+                                                            "controlHeight": 293
+                                                        },
+                                                        {
+                                                            "objectName": "timeEditorPanel1Window",
+                                                            "title": "Time Editor",
+                                                            "uiScript": "if(!`panel -q -exists timeEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"timeEditorPanel1\";\n\tscriptedPanel -unParent  -type \"timeEditorPanel\" -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  timeEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent timeEditorPanel1;\n}\nscriptedPanel -e -parent timeEditorPanel1Window timeEditorPanel1;\n",
+                                                            "retain": false,
+                                                            "deleteLater": true,
+                                                            "loadImmediately": false,
+                                                            "checkPlugins": false,
+                                                            "actLikeMayaUIElement": false,
+                                                            "layoutDirectionCallback": "",
+                                                            "layoutDirection": "horizontal",
+                                                            "tabDirection": 2,
+                                                            "closed": false,
+                                                            "widthProperty": "free",
+                                                            "heightProperty": "free",
+                                                            "controlWidth": 1855,
+                                                            "controlHeight": 300
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 2556,
+                            "controlHeight": 100,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "TimeSlider",
+                                    "title": "Time Slider",
+                                    "uiScript": "global string $gTimeSliderForm; formLayout $gTimeSliderForm;",
+                                    "retain": true,
+                                    "deleteLater": true,
+                                    "loadImmediately": true,
+                                    "checkPlugins": false,
+                                    "actLikeMayaUIElement": false,
+                                    "layoutDirectionCallback": "",
+                                    "layoutDirection": "horizontal",
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "preferred",
+                                    "controlWidth": 2556,
+                                    "controlHeight": 100
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 2556,
+                            "controlHeight": 31,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "RangeSlider",
+                                    "title": "Range Slider",
+                                    "uiScript": "global string $gPlaybackRangeForm; formLayout $gPlaybackRangeForm;",
+                                    "retain": true,
+                                    "deleteLater": true,
+                                    "loadImmediately": true,
+                                    "checkPlugins": false,
+                                    "actLikeMayaUIElement": false,
+                                    "layoutDirectionCallback": "",
+                                    "layoutDirection": "horizontal",
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "fixed",
+                                    "controlWidth": 2556,
+                                    "controlHeight": 29
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 2556,
+                            "controlHeight": 28,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "CommandLine",
+                                    "title": "Command Line",
+                                    "uiScript": "global string $gCommandLineForm; formLayout $gCommandLineForm;",
+                                    "retain": true,
+                                    "deleteLater": true,
+                                    "loadImmediately": true,
+                                    "checkPlugins": false,
+                                    "actLikeMayaUIElement": false,
+                                    "layoutDirectionCallback": "",
+                                    "layoutDirection": "horizontal",
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "fixed",
+                                    "controlWidth": 2556,
+                                    "controlHeight": 28
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 640,
+                            "controlHeight": 20,
+                            "controls": [
+                                {
+                                    "objectName": "HelpLine",
+                                    "title": "Help Line",
+                                    "uiScript": "global string $gHelpLineForm; formLayout $gHelpLineForm;",
+                                    "retain": true,
+                                    "deleteLater": true,
+                                    "loadImmediately": true,
+                                    "checkPlugins": false,
+                                    "actLikeMayaUIElement": false,
+                                    "layoutDirectionCallback": "",
+                                    "layoutDirection": "horizontal",
+                                    "tabDirection": 0,
+                                    "closed": true,
+                                    "widthProperty": "free",
+                                    "heightProperty": "fixed",
+                                    "controlWidth": 640,
+                                    "controlHeight": 20
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "mainWindowPanel": false,
+            "posX": -1543,
+            "posY": 144,
+            "splitter": {
+                "orientation": "horizontal",
+                "children": [
+                    {
+                        "tabWidget": {
+                            "selectedIndex": 0,
+                            "controlWidth": 1169,
+                            "controlHeight": 1142,
+                            "collapsed": false,
+                            "controls": [
+                                {
+                                    "objectName": "scriptEditorPanel1Window",
+                                    "title": "Script Editor",
+                                    "uiScript": "if(!`panel -q -exists scriptEditorPanel1`) {\n\tint $menusOkayInPanels = `optionVar -q allowMenusInPanels`;\n\tstring $panelName = \"scriptEditorPanel1\";\n\tscriptedPanel -unParent  -type \"scriptEditorPanel\" -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  scriptEditorPanel1;\n} else {\n\tscriptedPanel -e -unParent scriptEditorPanel1;\n}\nscriptedPanel -e -parent scriptEditorPanel1Window scriptEditorPanel1;\n",
+                                    "retain": false,
+                                    "deleteLater": true,
+                                    "loadImmediately": false,
+                                    "checkPlugins": false,
+                                    "actLikeMayaUIElement": false,
+                                    "layoutDirectionCallback": "",
+                                    "layoutDirection": "horizontal",
+                                    "tabDirection": 0,
+                                    "closed": false,
+                                    "widthProperty": "free",
+                                    "heightProperty": "free",
+                                    "controlWidth": 1169,
+                                    "controlHeight": 1142
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "closedControls": [
+        {
+            "objectName": "MayaPoseEditor_2ca44518-640e-4dd5-b92c-eaf933f2406aWorkspaceControl",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 676,
+            "controlWidth": 1278,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "polyTexturePlacementPanel1Window",
+            "posX": -2548,
+            "posY": 160,
+            "controlHeight": 1178,
+            "controlWidth": 2235,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "unifiedRenderGlobalsWindow",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 670,
+            "controlWidth": 456,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "NEXDockControl",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 800,
+            "controlWidth": 260,
+            "widthProperty": "preferred",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "epicmhexpressioneditorWorkspaceControl",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 950,
+            "controlWidth": 730,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "CharacterBrowser_cfeeab5b-6df1-4e90-b6e8-5c2115541657WorkspaceControl",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 740,
+            "controlWidth": 600,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "hyperShadePanel1Window",
+            "posX": -1946,
+            "posY": 301,
+            "controlHeight": 900,
+            "controlWidth": 1440,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "componentEditorPanel1Window",
+            "posX": 145,
+            "posY": 284,
+            "controlHeight": 1010,
+            "controlWidth": 1214,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "shapePanel1Window",
+            "posX": 676,
+            "posY": 599,
+            "controlHeight": 400,
+            "controlWidth": 660,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "referenceEditorPanel1Window",
+            "posX": 1351,
+            "posY": 878,
+            "controlHeight": 324,
+            "controlWidth": 475,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "nodeEditorPanel1Window",
+            "posX": 581,
+            "posY": 846,
+            "controlHeight": 600,
+            "controlWidth": 1040,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "studiolibrary_25e89dfe-2276-4c68-9d93-8b1ccf98cdd1WorkspaceControl",
+            "posX": 928,
+            "posY": 306,
+            "controlHeight": 780,
+            "controlWidth": 820,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "UVToolkitDockControl",
+            "posX": -305,
+            "posY": 179,
+            "controlHeight": 1178,
+            "controlWidth": 295,
+            "widthProperty": "preferred",
+            "heightProperty": "free"
+        }
+    ],
+    "contentBrowserContexts": [
+        {
+            "name": "WindowsMenuContentBrowserContext",
+            "value": [
+                "projects",
+                "D:/Maya/Clories_Jungle_Rig_v02",
+                "D:/Maya/Clories_Jungle_Rig_v02/scenes",
+                "0"
+            ],
+            "PanelsStatus": [
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+                1
+            ],
+            "ThumbnailSize": 1
+        }
+    ]
+}
