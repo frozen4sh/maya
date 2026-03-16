@@ -10,12 +10,11 @@ optionVar -cat "RecentFiles"
  -sva "RecentFilesList" "D:/Maya/Freelance/GreyTabbyCat_reduce_w001.ma"
  -sva "RecentFilesList" "D:/Justin/StudioBeardImportTest/Beard_Anim_MVC_Mem1_3_w001.ma"
  -sva "RecentFilesList" "D:/Justin/StudioBeardImportTest/Beard_Anim_MVC_Mem1_3_w002.mb"
- -iv "RecentFilesMaxSize" 10
+ -sva "RecentFilesList" "D:/UE_Test/From_Pony/Edited_Member_Motion_FBX/Mem1.fbx"
  -sa "RecentFilesTypeList"
  -sva "RecentFilesTypeList" "mayaAscii"
  -sva "RecentFilesTypeList" "mayaAscii"
  -sva "RecentFilesTypeList" "mayaBinary"
- -sa "RecentProjectsList"
- -iv "RecentProjectsMaxSize" 10
+ -sva "RecentFilesTypeList" "FBX"
  ;
 

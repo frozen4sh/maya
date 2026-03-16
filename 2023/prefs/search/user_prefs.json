@@ -10,7 +10,9 @@
             "HotkeyPreferencesWindow",
             "Symmetrize",
             "TransferVertexOrder",
-            "BakeDeformerTool"
+            "BakeDeformerTool",
+            "ExportAnim",
+            "ImportAnim"
         ],
         [],
         [],

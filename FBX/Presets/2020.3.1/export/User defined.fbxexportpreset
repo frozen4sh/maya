@@ -37,7 +37,7 @@
       </ExtraGrp>
       <BakeComplexAnimation UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Bake Animation" dt="Bool" v="0">
         <BakeFrameStart UIH="0" UID="0" UIG="0" lbENU="Start" dt="Integer" v="0"/>
-        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="60"/>
+        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="14855"/>
         <BakeFrameStep UIH="0" UID="0" UIG="0" lbENU="Step" dt="Integer" v="1"/>
         <ResampleAnimationCurves UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Resample All" dt="Bool" v="0"/>
         <HideComplexAnimationBakedWarning UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Hide Complex Animation Baked Warning" dt="Bool" v="0"/>
@@ -59,27 +59,27 @@
         </CurveFilterApplyCstKeyRed>
       </CurveFilter>
       <PointCache UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Geometry Cache File(s)" dt="Bool" v="0">
-        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="defaultLightSet" enumItem_2="defaultObjectSet"/>
+        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="AllSet" enumItem_2="Sets" enumItem_3="defaultLightSet" enumItem_4="defaultObjectSet"/>
       </PointCache>
       <ConstraintsGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Constraints">
         <Constraint UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Constraints" dt="Bool" v="0"/>
         <Character UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Skeleton Definitions" dt="Bool" v="0"/>
       </ConstraintsGrp>
     </Animation>
-    <CameraGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Cameras">
-      <Camera UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Cameras" dt="Bool" v="1"/>
+    <CameraGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Cameras">
+      <Camera UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Cameras" dt="Bool" v="0"/>
     </CameraGrp>
-    <LightGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Lights">
-      <Light UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Lights" dt="Bool" v="1"/>
+    <LightGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Lights">
+      <Light UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Lights" dt="Bool" v="0"/>
     </LightGrp>
-    <Audio UIH="0" UID="0" UIG="0" UIBG="1" UIX="0" lbENU="Audio" dt="Bool" v="1"/>
-    <EmbedTextureGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Embed Media">
+    <Audio UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Audio" dt="Bool" v="0"/>
+    <EmbedTextureGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Embed Media">
       <EmbedTexture UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Embed Media" dt="Bool" v="0"/>
     </EmbedTextureGrp>
     <BindPose UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bind Pose" dt="Bool" v="1"/>
     <PivotToNulls UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Pivot To Null" dt="Bool" v="0"/>
     <BypassRrsInheritance UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bypass Rrs Inheritance" dt="Bool" v="0"/>
-    <InputConnectionsGrp UIH="1" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Connections">
+    <InputConnectionsGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Connections">
       <IncludeChildren UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Include Children" dt="Bool" v="1"/>
       <InputConnections UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Input Connections" dt="Bool" v="1"/>
     </InputConnectionsGrp>

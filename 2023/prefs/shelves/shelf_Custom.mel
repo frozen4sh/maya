@@ -1050,6 +1050,41 @@ global proc shelf_Custom () {
         -manage 1
         -visible 1
         -preventOverride 0
+        -annotation "import maya.cmds as cmds\n\n# Get all materials in the scene\nmaterials = cmds.ls(materials=True)\n\nfor mat in materials:\n    \n    # reflectedColor\n    attr1 = mat + \".reflectedColor\"\n    if cmds.objExists(attr1):\n        try:\n            cmds.setAttr(attr1, 0, 0, 0, type=\"double3\")\n        except:\n            pass\n\n    # specularColor\n    attr2 = mat + \".specularColor\"\n    if cmds.objExists(attr2):\n        try:\n            cmds.setAttr(attr2, 0, 0, 0, type=\"double3\")\n        except:\n            pass\n\nprint(\"All material reflectedColor and specularColor set to black.\")\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "MatBlack" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "MatBlack" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "3dPaint.png" 
+        -image1 "3dPaint.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n\n# Get all materials in the scene\nmaterials = cmds.ls(materials=True)\n\nfor mat in materials:\n    \n    # reflectedColor\n    attr1 = mat + \".reflectedColor\"\n    if cmds.objExists(attr1):\n        try:\n            cmds.setAttr(attr1, 0, 0, 0, type=\"double3\")\n        except:\n            pass\n\n    # specularColor\n    attr2 = mat + \".specularColor\"\n    if cmds.objExists(attr2):\n        try:\n            cmds.setAttr(attr2, 0, 0, 0, type=\"double3\")\n        except:\n            pass\n\nprint(\"All material reflectedColor and specularColor set to black.\")\n" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
         -annotation "Remove unused items" 
         -enableBackground 0
         -backgroundColor 0 0 0 
@@ -1106,6 +1141,76 @@ global proc shelf_Custom () {
         -marginWidth 0
         -marginHeight 1
         -command "Export" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "import metahuman_facial_transfer\nmetahuman_facial_transfer.UI()" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import metahuman_facial_transfer\nmetahuman_facial_transfer.UI()" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "MH" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "BasicHead.png" 
+        -image1 "BasicHead.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import metahuman_facial_transfer\nmetahuman_facial_transfer.UI()" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "select -r SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_brow_raiseOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_lidPress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_pressU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsBlow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_nose_wrinkleUpper SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_dimple SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lowerLipDepress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_squintInner SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_nose_wrinkleUpper SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_jaw_ChinRaiseU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stickyInnerD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_cheekRaise SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_bendTwist SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_squintInner SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_jaw_chinCompress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_pupil SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lowerLipDepress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stretch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_lidPress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_purseU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_pupil SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stretchLipsClose SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_press SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_dimple SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth_stickyU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_jaw_ChinRaiseD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_brow_lateral SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_funnelU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipSticky SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_suckBlow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stickyOuterU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_towardsD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_cornerPull SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_tipMove SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsTogetherU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_move SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsTogetherU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_nose SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth_stickyD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_brow_raiseOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stretch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_sharpCornerPull SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_jaw_chinCompress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_purseD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_brow_raiseIn SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stickyOuterU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_towardsU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stickyOuterD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_purseU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_blink SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_brow_lateral SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_cornerDepress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_upperLipRaise SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_brow_raiseIn SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_cornerPull SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_ear_up SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_funnelU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_eye SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_brow_down SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_brow_down SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stickyInnerD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_sharpCornerPull SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stretchLipsClose SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_pressU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipSticky SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_purseD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_towardsU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_eye_parallelLook SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_roll SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_upperLipRaise SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_towardsD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stickyInnerU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_nose SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stickyInnerU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_funnelD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_ear_up SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_jaw_ChinRaiseU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_inOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_funnelD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_cheekRaise SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_jaw_ChinRaiseD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsBlow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_blink SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_cornerDepress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_wideNarrow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stickyOuterD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_suckBlow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipBiteD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsPressU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_tightenU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipBiteU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsPressU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_tightenD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_tightenD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_tightenU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipBiteU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipBiteD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_neck_digastricUpDown SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_jaw_openExtreme SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_neck_stretch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_jaw_clench SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_neck_throatExhaleInhale SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_jaw_fwdBack SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_neck_throatUpDown SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_jaw_clench SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_neck_mastoidContract SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_neck_mastoidContract SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_jaw SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_neck_stretch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsTogetherD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_pressD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsTogetherD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_pressD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eyelashes_tweakerIn SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsRollU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_pushPullU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsTowardsTeethD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_thicknessInwardU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_corner SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_pushPullD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_eyelidD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_teethU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_thicknessD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_corner SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_faceScrunch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_thicknessInwardU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth_lipShiftU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_thicknessU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsRollU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_teethD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_pushPullD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsTowardsTeethU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eyelashes_tweakerOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eyelashes_tweakerIn SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_nose_nasolabialDeepen SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_thicknessU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_eyelidU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_nose_nasolabialDeepen SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_teeth_fwdBackD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsTowardsTeethD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsRollD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_cornerSharpnessD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_eyelidU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_cornerSharpnessU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_teeth_fwdBackU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_pushPullU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsTowardsTeethU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_eyelidD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eyelashes_tweakerOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_cornerSharpnessU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_cornerSharpnessD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_thickThin SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_thicknessInwardD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_thicknessInwardD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_thicknessD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsRollD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth_lipShiftD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_faceScrunch ;\n" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "select -r SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth SKM_CH_Mem5..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "MHAll" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "commandButton.png" 
+        -image1 "commandButton.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "select -r SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_brow_raiseOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_lidPress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_pressU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsBlow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_nose_wrinkleUpper SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_dimple SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lowerLipDepress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_squintInner SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_nose_wrinkleUpper SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_jaw_ChinRaiseU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stickyInnerD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_cheekRaise SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_bendTwist SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_squintInner SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_jaw_chinCompress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_pupil SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lowerLipDepress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stretch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_lidPress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_purseU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_pupil SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stretchLipsClose SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_press SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_dimple SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth_stickyU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_jaw_ChinRaiseD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_brow_lateral SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_funnelU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipSticky SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_suckBlow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stickyOuterU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_towardsD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_cornerPull SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_tipMove SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsTogetherU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_move SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsTogetherU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_nose SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth_stickyD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_brow_raiseOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stretch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_sharpCornerPull SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_jaw_chinCompress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_purseD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_brow_raiseIn SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stickyOuterU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_towardsU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stickyOuterD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_purseU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_blink SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_brow_lateral SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_cornerDepress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_upperLipRaise SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_brow_raiseIn SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_cornerPull SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_ear_up SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_funnelU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_eye SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_brow_down SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_brow_down SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stickyInnerD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_sharpCornerPull SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stretchLipsClose SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_pressU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipSticky SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_purseD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_towardsU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_eye_parallelLook SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_roll SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_upperLipRaise SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_towardsD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_stickyInnerU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_nose SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stickyInnerU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_funnelD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_ear_up SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_jaw_ChinRaiseU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_inOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_funnelD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_cheekRaise SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_jaw_ChinRaiseD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsBlow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_blink SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_cornerDepress SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_wideNarrow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_stickyOuterD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_suckBlow SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipBiteD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsPressU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_tightenU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipBiteU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsPressU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_tightenD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_tightenD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_tightenU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipBiteU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipBiteD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_neck_digastricUpDown SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_jaw_openExtreme SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_neck_stretch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_jaw_clench SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_neck_throatExhaleInhale SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_jaw_fwdBack SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_neck_throatUpDown SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_jaw_clench SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_neck_mastoidContract SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_neck_mastoidContract SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_jaw SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_neck_stretch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsTogetherD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_pressD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsTogetherD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_pressD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eyelashes_tweakerIn SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsRollU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_pushPullU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsTowardsTeethD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_thicknessInwardU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_corner SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_pushPullD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_eyelidD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_teethU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_thicknessD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_corner SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_faceScrunch SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_thicknessInwardU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth_lipShiftU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_thicknessU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsRollU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_teethD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_pushPullD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsTowardsTeethU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eyelashes_tweakerOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eyelashes_tweakerIn SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_nose_nasolabialDeepen SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_thicknessU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_eyelidU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_nose_nasolabialDeepen SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_teeth_fwdBackD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsTowardsTeethD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_lipsRollD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_cornerSharpnessD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_eyelidU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_cornerSharpnessU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_teeth_fwdBackU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_pushPullU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsTowardsTeethU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_eye_eyelidD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eyelashes_tweakerOut SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_cornerSharpnessU SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_cornerSharpnessD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_tongue_thickThin SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_thicknessInwardD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_thicknessInwardD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_mouth_thicknessD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_R_mouth_lipsRollD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_C_mouth_lipShiftD SKM_CH_Mem5_MVC:Mem5_HeadOnly:CTRL_L_eye_faceScrunch ;\n" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1

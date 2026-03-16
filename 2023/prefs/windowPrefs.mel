@@ -20,7 +20,7 @@ windowPref -topLeftCorner -8 -1 -widthHeight 1280 1024 -maximized true -parentMa
 windowPref -topLeftCorner 453 1170 -widthHeight 450 411 -maximized false -parentMain true pluginManagerWindow;
 windowPref -topLeftCorner 366 698 -widthHeight 865 715 -maximized false -parentMain true FilePathEditor;
 windowPref -topLeftCorner 304 564 -widthHeight 817 652 -maximized false -parentMain true PreferencesWindow;
-windowPref -topLeftCorner 375 410 -widthHeight 546 350 -maximized false -parentMain true OptionBoxWindow;
+windowPref -topLeftCorner 415 699 -widthHeight 546 350 -maximized false -parentMain true OptionBoxWindow;
 windowPref -topLeftCorner 558 823 -widthHeight 357 275 -maximized false -parentMain true namespaceEditor;
 windowPref -topLeftCorner 313 600 -widthHeight 1023 778 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 348 365 -widthHeight 1369 700 -maximized false -parentMain true HotkeyEditor;
@@ -35,7 +35,7 @@ windowPref -topLeftCorner 558 740 -widthHeight 210 89 -maximized false -parentMa
 windowPref -topLeftCorner 466 853 -widthHeight 205 95 -maximized false -parentMain true asFitResample;
 windowPref -topLeftCorner 348 595 -widthHeight 249 110 -maximized false -parentMain true asAnimBake;
 windowPref -topLeftCorner 504 838 -widthHeight 321 295 -maximized false -parentMain true asSelectorbiped;
-windowPref -topLeftCorner 320 400 -widthHeight 389 614 -maximized false -parentMain true asMappingUI;
+windowPref -topLeftCorner 308 651 -widthHeight 389 614 -maximized false -parentMain true asMappingUI;
 windowPref -topLeftCorner 446 751 -widthHeight 417 411 -maximized false -parentMain true asMoCapLibraryUI;
 windowPref -topLeftCorner 585 823 -widthHeight 409 200 -maximized false -parentMain true fpeRepathWin;
 windowPref -topLeftCorner 464 853 -widthHeight 380 730 -maximized false -parentMain true createRenderNodeWindow;
@@ -45,3 +45,4 @@ windowPref -topLeftCorner 464 853 -widthHeight 500 525 -maximized false -parentM
 windowPref -topLeftCorner 464 853 -widthHeight 520 620 -maximized false -parentMain true connectWindow;
 windowPref -topLeftCorner 464 853 -widthHeight 620 540 -maximized false -parentMain true expressionEditorWin;
 windowPref -topLeftCorner 380 1460 -widthHeight 325 295 -maximized false -parentMain true asSelectorface;
+windowPref -topLeftCorner 464 853 -widthHeight 250 74 -maximized false -parentMain true locJnt;
