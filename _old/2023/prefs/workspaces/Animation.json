@@ -138,7 +138,7 @@
                                                         {
                                                             "tabWidget": {
                                                                 "selectedIndex": 0,
-                                                                "controlWidth": 1500,
+                                                                "controlWidth": 1531,
                                                                 "controlHeight": 808,
                                                                 "collapsed": false,
                                                                 "controls": [
@@ -157,7 +157,7 @@
                                                                         "closed": false,
                                                                         "widthProperty": "free",
                                                                         "heightProperty": "free",
-                                                                        "controlWidth": 1500,
+                                                                        "controlWidth": 1531,
                                                                         "controlHeight": 808,
                                                                         "initCallback": "mainPaneStateCallback",
                                                                         "stateString": "global string $gMainPane; paneLayout -edit -configuration single $gMainPane;if(`modelPanel -exists modelPanel4`){ modelPanel -edit -parent $gMainPane modelPanel4; paneLayout -edit -setPane modelPanel4 1 $gMainPane;}"
@@ -443,29 +443,20 @@
     ],
     "closedControls": [
         {
-            "objectName": "epicmhexpressioneditorWorkspaceControl",
-            "posX": 250,
-            "posY": 200,
-            "controlHeight": 950,
-            "controlWidth": 730,
+            "objectName": "referenceEditorPanel1Window",
+            "posX": 784,
+            "posY": 465,
+            "controlHeight": 324,
+            "controlWidth": 475,
             "widthProperty": "free",
             "heightProperty": "free"
         },
         {
-            "objectName": "studiolibrary_25e89dfe-2276-4c68-9d93-8b1ccf98cdd1WorkspaceControl",
-            "posX": 928,
-            "posY": 306,
-            "controlHeight": 780,
-            "controlWidth": 820,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "CharacterBrowser_cfeeab5b-6df1-4e90-b6e8-5c2115541657WorkspaceControl",
+            "objectName": "unifiedRenderGlobalsWindow",
             "posX": 250,
             "posY": 200,
-            "controlHeight": 740,
-            "controlWidth": 600,
+            "controlHeight": 670,
+            "controlWidth": 456,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -479,29 +470,20 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "nodeEditorPanel1Window",
-            "posX": 581,
-            "posY": 846,
-            "controlHeight": 600,
-            "controlWidth": 1040,
+            "objectName": "hyperShadePanel1Window",
+            "posX": -1611,
+            "posY": 291,
+            "controlHeight": 899,
+            "controlWidth": 1440,
             "widthProperty": "free",
             "heightProperty": "free"
         },
         {
-            "objectName": "MayaPoseEditor_2ca44518-640e-4dd5-b92c-eaf933f2406aWorkspaceControl",
+            "objectName": "CharacterBrowser_cfeeab5b-6df1-4e90-b6e8-5c2115541657WorkspaceControl",
             "posX": 250,
             "posY": 200,
-            "controlHeight": 676,
-            "controlWidth": 1278,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "scriptEditorPanel1Window",
-            "posX": 567,
-            "posY": 207,
-            "controlHeight": 1142,
-            "controlWidth": 1169,
+            "controlHeight": 740,
+            "controlWidth": 600,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -515,6 +497,33 @@
             "heightProperty": "free"
         },
         {
+            "objectName": "scriptEditorPanel1Window",
+            "posX": 567,
+            "posY": 207,
+            "controlHeight": 1142,
+            "controlWidth": 1169,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "epicmhexpressioneditorWorkspaceControl",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 950,
+            "controlWidth": 730,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
+            "objectName": "nodeEditorPanel1Window",
+            "posX": 581,
+            "posY": 846,
+            "controlHeight": 600,
+            "controlWidth": 1040,
+            "widthProperty": "free",
+            "heightProperty": "free"
+        },
+        {
             "objectName": "polyTexturePlacementPanel1Window",
             "posX": -2548,
             "posY": 160,
@@ -524,20 +533,11 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "NEXDockControl",
-            "posX": 250,
-            "posY": 200,
-            "controlHeight": 800,
-            "controlWidth": 260,
-            "widthProperty": "preferred",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "unifiedRenderGlobalsWindow",
-            "posX": 250,
-            "posY": 200,
-            "controlHeight": 670,
-            "controlWidth": 456,
+            "objectName": "studiolibrary_25e89dfe-2276-4c68-9d93-8b1ccf98cdd1WorkspaceControl",
+            "posX": 928,
+            "posY": 306,
+            "controlHeight": 780,
+            "controlWidth": 820,
             "widthProperty": "free",
             "heightProperty": "free"
         },
@@ -551,6 +551,15 @@
             "heightProperty": "free"
         },
         {
+            "objectName": "NEXDockControl",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 800,
+            "controlWidth": 260,
+            "widthProperty": "preferred",
+            "heightProperty": "free"
+        },
+        {
             "objectName": "UVToolkitDockControl",
             "posX": -307,
             "posY": 179,
@@ -560,20 +569,11 @@
             "heightProperty": "free"
         },
         {
-            "objectName": "hyperShadePanel1Window",
-            "posX": -1611,
-            "posY": 291,
-            "controlHeight": 899,
-            "controlWidth": 1440,
-            "widthProperty": "free",
-            "heightProperty": "free"
-        },
-        {
-            "objectName": "referenceEditorPanel1Window",
-            "posX": 784,
-            "posY": 465,
-            "controlHeight": 324,
-            "controlWidth": 475,
+            "objectName": "MayaPoseEditor_2ca44518-640e-4dd5-b92c-eaf933f2406aWorkspaceControl",
+            "posX": 250,
+            "posY": 200,
+            "controlHeight": 676,
+            "controlWidth": 1278,
             "widthProperty": "free",
             "heightProperty": "free"
         }
