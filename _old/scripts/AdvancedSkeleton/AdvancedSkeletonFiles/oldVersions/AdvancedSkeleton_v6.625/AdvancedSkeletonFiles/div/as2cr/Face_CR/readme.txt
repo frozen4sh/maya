@@ -1,1 +1,0 @@
-Copy Face_CR.uasset to your Unreal Project

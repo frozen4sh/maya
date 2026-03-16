@@ -16,15 +16,25 @@ evalDeferred("autoLoadPlugin(\"\", \"xgenToolkit\", \"xgenToolkit\")");
 evalDeferred("autoLoadPlugin(\"\", \"AbcExport\", \"AbcExport\")");
 evalDeferred("autoLoadPlugin(\"\", \"sweep\", \"sweep\")");
 evalDeferred("autoLoadPlugin(\"\", \"gameFbxExporter\", \"gameFbxExporter\")");
+evalDeferred("autoLoadPlugin(\"\", \"sweep\", \"sweep\")");
 evalDeferred("autoLoadPlugin(\"\", \"OpenEXRLoader\", \"OpenEXRLoader\")");
+<<<<<<< HEAD
+=======
+evalDeferred("autoLoadPlugin(\"\", \"CSVImport\", \"CSVImport\")");
+>>>>>>> 5dfd6f0 (20260316_1)
 evalDeferred("autoLoadPlugin(\"\", \"lookdevKit\", \"lookdevKit\")");
 evalDeferred("autoLoadPlugin(\"\", \"Unfold3D\", \"Unfold3D\")");
 evalDeferred("autoLoadPlugin(\"\", \"mayaCharacterization\", \"mayaCharacterization\")");
 evalDeferred("autoLoadPlugin(\"\", \"Type\", \"Type\")");
 evalDeferred("autoLoadPlugin(\"\", \"mtoa\", \"mtoa\")");
+<<<<<<< HEAD
 evalDeferred("autoLoadPlugin(\"\", \"bifrostGraph\", \"bifrostGraph\")");
 evalDeferred("autoLoadPlugin(\"\", \"meshReorder\", \"meshReorder\")");
 evalDeferred("autoLoadPlugin(\"\", \"modelingToolkit\", \"modelingToolkit\")");
+=======
+evalDeferred("autoLoadPlugin(\"\", \"modelingToolkit\", \"modelingToolkit\")");
+evalDeferred("autoLoadPlugin(\"\", \"meshReorder\", \"meshReorder\")");
+>>>>>>> 5dfd6f0 (20260316_1)
 evalDeferred("autoLoadPlugin(\"\", \"rotateHelper\", \"rotateHelper\")");
 evalDeferred("autoLoadPlugin(\"\", \"MayaMuscle\", \"MayaMuscle\")");
 evalDeferred("autoLoadPlugin(\"\", \"matrixNodes\", \"matrixNodes\")");
