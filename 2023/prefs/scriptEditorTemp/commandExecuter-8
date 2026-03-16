@@ -48,17 +48,7 @@ def pdf_strict_fbx_prepare():
         except:
             pass
 
-    # 4. 네임스페이스 삭제 및 병합 (가이드 7, 8번) 애니메이션 FBX 추출 가이드.pdf]
-    cmds.namespace(setNamespace=":")
-    namespaces = cmds.namespaceInfo(listOnlyNamespaces=True, recurse=True)
-    if namespaces:
-        namespaces.sort(reverse=True)
-        for ns in namespaces:
-            if ns not in ["UI", "shared"]:
-                try:
-                    cmds.namespace(removeNamespace=ns, mergeNamespaceWithRoot=True) 
-                except:
-                    pass
+
 
     # 5. 마무리 (저장 창 없이 선택 상태만 유지)
     root_base_name = root_node.split(":")[-1] 

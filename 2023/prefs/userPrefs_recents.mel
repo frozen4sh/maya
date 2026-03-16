@@ -17,7 +17,6 @@ optionVar -cat "RecentFiles"
  -sva "RecentFilesList" "D:/Justin/MetahumanFacialCSVTest/HeadAddedAnim/SKM_CH_Mem4_MVC.ma"
  -sva "RecentFilesList" "D:/Justin/SD_Paperman/SD_Paperman_High_V3.fbx"
  -sva "RecentFilesList" "Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Head.fbx"
- -iv "RecentFilesMaxSize" 10
  -sa "RecentFilesTypeList"
  -sva "RecentFilesTypeList" "mayaAscii"
  -sva "RecentFilesTypeList" "mayaAscii"
@@ -40,6 +39,5 @@ optionVar -cat "RecentFiles"
  -sva "RecentProjectsList" "D:/Justin/CSB/Mem1"
  -sva "RecentProjectsList" "D:/Justin/MetahumanFacialCSVTest"
  -sva "RecentProjectsList" "D:/Justin/SD_Paperman"
- -iv "RecentProjectsMaxSize" 10
  ;
 

@@ -59,7 +59,7 @@
         </CurveFilterApplyCstKeyRed>
       </CurveFilter>
       <PointCache UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Geometry Cache File(s)" dt="Bool" v="0">
-        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="AllSet" enumItem_2="Sets" enumItem_3="defaultLightSet" enumItem_4="defaultObjectSet"/>
+        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="SKM_CH_Mem4_MVC:AllSet" enumItem_2="SKM_CH_Mem4_MVC:Sets" enumItem_3="defaultLightSet" enumItem_4="defaultObjectSet"/>
       </PointCache>
       <ConstraintsGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Constraints">
         <Constraint UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Constraints" dt="Bool" v="0"/>
@@ -79,7 +79,7 @@
     <BindPose UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bind Pose" dt="Bool" v="1"/>
     <PivotToNulls UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Pivot To Null" dt="Bool" v="0"/>
     <BypassRrsInheritance UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bypass Rrs Inheritance" dt="Bool" v="0"/>
-    <InputConnectionsGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Connections">
+    <InputConnectionsGrp UIH="1" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Connections">
       <IncludeChildren UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Include Children" dt="Bool" v="1"/>
       <InputConnections UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Input Connections" dt="Bool" v="1"/>
     </InputConnectionsGrp>
