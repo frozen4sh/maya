@@ -12,7 +12,8 @@
             "TransferVertexOrder",
             "BakeDeformerTool",
             "ExportAnim",
-            "ImportAnim"
+            "ImportAnim",
+            "SculptGeometryTool"
         ],
         [],
         [],

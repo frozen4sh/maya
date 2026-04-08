@@ -20,8 +20,8 @@ windowPref -topLeftCorner -8 -1 -widthHeight 1280 1024 -maximized true -parentMa
 windowPref -topLeftCorner 453 1170 -widthHeight 450 411 -maximized false -parentMain true pluginManagerWindow;
 windowPref -topLeftCorner 366 698 -widthHeight 865 715 -maximized false -parentMain true FilePathEditor;
 windowPref -topLeftCorner 304 564 -widthHeight 817 652 -maximized false -parentMain true PreferencesWindow;
-windowPref -topLeftCorner 415 699 -widthHeight 546 350 -maximized false -parentMain true OptionBoxWindow;
-windowPref -topLeftCorner 558 823 -widthHeight 357 275 -maximized false -parentMain true namespaceEditor;
+windowPref -topLeftCorner 490 300 -widthHeight 546 368 -maximized false -parentMain true OptionBoxWindow;
+windowPref -topLeftCorner 611 -566 -widthHeight 357 275 -maximized false -parentMain true namespaceEditor;
 windowPref -topLeftCorner 313 600 -widthHeight 1023 778 -maximized false -parentMain true shelfEditor;
 windowPref -topLeftCorner 348 365 -widthHeight 1369 700 -maximized false -parentMain true HotkeyEditor;
 windowPref -topLeftCorner 696 1280 -widthHeight 750 600 -maximized false -parentMain true LockingKeyable;

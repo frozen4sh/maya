@@ -546,3 +546,158 @@ The following deformed shapes are affected:  |Male_Bushy|Male_BushyShape |CC_Bas
 2026-03-15 23:18:06: LOG: Export: D:/Justin/MetahumanFacialCSVTest/HeadAddedAnim/Mem5_FullBodyBaked.fbx
 2026-03-15 23:48:00: LOG: Export: D:/Justin/MetahumanFacialCSVTest/HeadAddedAnim/Mem5_BodyOnlyBaked.fbx
 2026-03-16 16:08:18: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestAll.fbx
+2026-03-17 09:38:58: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadRoot.fbx
+2026-03-17 09:39:23: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ neck_01_visibility FACIAL_C_Neck1Root_visibility FACIAL_C_NeckB_visibility FACIAL_L_NeckB1_visibility FACIAL_R_NeckB1_visibility FACIAL_L_NeckB2_visibility FACIAL_R_NeckB2_visibility FACIAL_C_12IPV_NeckB1_visibility FACIAL_C_12IPV_NeckB2_visibility FACIAL_L_12IPV_NeckB3_visibility FACIAL_R_12IPV_NeckB3_visibility FACIAL_L_12IPV_NeckB4_visibility FACIAL_R_12IPV_NeckB4_visibility FACIAL_L_12IPV_NeckB5_visibility FACIAL_R_12IPV_NeckB5_visibility FACIAL_L_12IPV_NeckB6_visibility FACIAL_R_12IPV_NeckB6_visibility FACIAL_L_12IPV_NeckB7_visibility FACIAL_R_12IPV_NeckB7_visibility FACIAL_C_NeckBackB_visibility FACIAL_L_NeckBackB_visibility FACIAL_R_NeckBackB_visibility FACIAL_C_12IPV_NeckBackB1_visibility FACIAL_C_12IPV_NeckBackB2_visibility FACIAL_L_12IPV_NeckBackB1_visibility FACIAL_R_12IPV_NeckBackB1_
+2026-03-17 09:39:36: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadRoot.fbx
+2026-03-17 09:40:01: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ neck_01_visibility FACIAL_C_Neck1Root_visibility FACIAL_C_NeckB_visibility FACIAL_L_NeckB1_visibility FACIAL_R_NeckB1_visibility FACIAL_L_NeckB2_visibility FACIAL_R_NeckB2_visibility FACIAL_C_12IPV_NeckB1_visibility FACIAL_C_12IPV_NeckB2_visibility FACIAL_L_12IPV_NeckB3_visibility FACIAL_R_12IPV_NeckB3_visibility FACIAL_L_12IPV_NeckB4_visibility FACIAL_R_12IPV_NeckB4_visibility FACIAL_L_12IPV_NeckB5_visibility FACIAL_R_12IPV_NeckB5_visibility FACIAL_L_12IPV_NeckB6_visibility FACIAL_R_12IPV_NeckB6_visibility FACIAL_L_12IPV_NeckB7_visibility FACIAL_R_12IPV_NeckB7_visibility FACIAL_C_NeckBackB_visibility FACIAL_L_NeckBackB_visibility FACIAL_R_NeckBackB_visibility FACIAL_C_12IPV_NeckBackB1_visibility FACIAL_C_12IPV_NeckBackB2_visibility FACIAL_L_12IPV_NeckBackB1_visibility FACIAL_R_12IPV_NeckBackB1_
+2026-03-17 09:56:26: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadRoot.fbx
+2026-03-17 09:57:03: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ pelvis_visibility spine_01_visibility spine_02_visibility spine_03_visibility spine_04_visibility spine_05_visibility clavicle_l_visibility upperarm_l_visibility lowerarm_l_visibility hand_l_visibility middle_metacarpal_l_visibility middle_01_l_visibility middle_02_l_visibility middle_03_l_visibility middle_03_half_l_visibility middle_03_in_l_visibility middle_02_dip_l_visibility middle_03_bulge_l_visibility middle_02_side_inn_l_visibility middle_02_side_out_l_visibility middle_02_half_l_visibility middle_02_in_l_visibility middle_02_pip_l_visibility middle_02_bulge_l_visibility middle_01_side_inn_l_visibility middle_01_side_out_l_visibility middle_01_half_l_visibility middle_01_palm_l_visibility middle_01_mcp_l_visibility middle_01_bulge_l_visibility middle_01_palmMid_l_visibility middle_metaca
+2026-03-17 11:21:58: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadEyeOnly.fbx
+2026-03-17 12:03:30: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMouthOnly.fbx
+2026-03-17 12:03:59: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ pelvis_translateX pelvis_translateY pelvis_translateZ pelvis_scaleX pelvis_scaleY pelvis_scaleZ pelvis_rotateX pelvis_rotateY pelvis_rotateZ spine_01_translateX spine_01_translateY spine_01_translateZ spine_01_scaleX spine_01_scaleY spine_01_scaleZ spine_01_rotateX spine_01_rotateY spine_01_rotateZ spine_02_translateX spine_02_translateY spine_02_translateZ spine_02_scaleX spine_02_scaleY spine_02_scaleZ spine_02_rotateX spine_02_rotateY spine_02_rotateZ spine_03_translateX spine_03_translateY spine_03_translateZ spine_03_scaleX spine_03_scaleY spine_03_scaleZ spine_03_rotateX spine_03_rotateY spine_03_rotateZ spine_04_translateX spine_04_translateY spine_04_translateZ spine_04_scaleX spine_04_scaleY spine_04_scaleZ spine_04_rotateX spine_04_rotateY spine_04_rotateZ spine_05_translateX spine_05_
+2026-03-17 12:11:38: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHTool.fbx
+2026-03-17 12:11:46: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 12:11:46: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 12:11:46: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2026-03-17 12:11:46: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHTool.fbx
+2026-03-17 12:11:54: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 12:11:54: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 12:11:54: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2026-03-17 14:35:10: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMouthOnly.fbx
+2026-03-17 14:35:11: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 14:35:11: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 14:35:11: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMouthOnly.fbx
+2026-03-17 14:35:12: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 14:35:12: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 14:43:31: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHTool.fbx
+2026-03-17 14:43:42: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 14:43:42: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 14:43:42: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2026-03-17 14:43:42: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHTool.fbx
+2026-03-17 14:43:50: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 14:43:50: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 14:43:50: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2026-03-17 14:44:34: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestBody.fbx
+2026-03-17 14:44:44: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ pelvis_visibility spine_01_visibility spine_02_visibility spine_03_visibility spine_04_visibility spine_05_visibility neck_01_visibility neck_02_visibility head_visibility clavicle_l_visibility upperarm_l_visibility lowerarm_l_visibility hand_l_visibility middle_metacarpal_l_visibility middle_01_l_visibility middle_02_l_visibility middle_03_l_visibility middle_03_half_l_visibility middle_03_in_l_visibility middle_02_dip_l_visibility middle_03_bulge_l_visibility middle_02_side_inn_l_visibility middle_02_side_out_l_visibility middle_02_half_l_visibility middle_02_in_l_visibility middle_02_pip_l_visibility middle_02_bulge_l_visibility middle_01_side_inn_l_visibility middle_01_side_out_l_visibility middle_01_half_l_visibility middle_01_palm_l_visibility middle_01_mcp_l_visibility middle_01_bulge_l_v
+2026-03-17 15:08:12: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHTool.fbx
+2026-03-17 15:08:15: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 15:08:15: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 15:08:15: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2026-03-17 15:08:15: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHTool.fbx
+2026-03-17 15:08:18: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 15:08:18: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 15:08:18: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2026-03-17 15:18:39: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHTool.fbx
+2026-03-17 15:18:43: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 15:18:43: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 15:45:44: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHTool.fbx
+2026-03-17 15:45:45: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 15:48:57: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHTool.fbx
+2026-03-17 15:48:58: LOG: [WARNING] Unable to export some material(s) - The plug-in does not support the following material types:
+ Material  will be exported as a grey Lambert material.
+2026-03-17 15:49:18: LOG: Export: D:/Justin/MetahumanFacialCSVTest/BakeTestHeadMHToolCTRLs.fbx
+2026-03-17 17:23:13: LOG: Export: Z:/OWIS/3D/Rig/CL/STA/Mem4/_Final/FBX/SKM_CL_Mem4_STA_In_Ear.fbx
+2026-03-17 17:34:25: LOG: Export: Z:/OWIS/3D/Rig/CL/STA/Mem4/_Final/FBX/SKM_CL_Mem1_STA_In_Ear.fbx
+2026-03-17 17:36:19: LOG: Export: D:/Justin/MetahumanFacialCSVTest/Uni_v01_Facial_CTRLs_Only.fbx
+2026-03-17 17:36:21: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-17 17:36:21: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2026-03-18 12:11:17: LOG: Export: D:/Justin/MetahumanFacialCSVTest/Uni_v01_Body_Only.fbx
+2026-03-18 12:11:17: LOG: [WARNING] Constraints export failed - The scene contains constraints. Activate the Export constraints or Bake Animation options before exporting.
+
+2026-03-18 12:11:17: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
+
+2026-03-18 14:29:41: LOG: Export: D:/Justin/MetahumanFacialCSVTest/Uni_v01_Body_Only.fbx
+2026-03-20 11:07:34: LOG: Export: Z:/OWIS/3D/Rig/CL/SCH/Mem2/_Final/FBX/SKM_CL_Mem2_SCH_Top.fbx
+2026-03-21 16:20:29: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem2/_Final/FBX/SKM_CL_Mem2_MVC_BodyCut.fbx
+2026-03-21 16:24:20: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem2/_Final/FBX/SKM_CL_Mem2_MVC_BodyCut.fbx
+2026-03-21 16:32:02: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem2/_Final/FBX/SKM_CL_Mem2_MVC_BodyCut.fbx
+2026-03-21 19:20:54: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem3/_Final/FBX/SKM_CH_Mem3_MVC_BodyCut.fbx
+2026-03-21 19:27:17: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem3/_Final/FBX/SKM_CH_Mem3_MVC_BodyCut.fbx
+2026-03-21 20:22:10: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem3/_Final/FBX/SKM_CH_Mem3_MVC_BodyCut.fbx
+2026-03-21 20:33:23: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem3/_Final/FBX/SKM_CH_Mem3_MVC_BodyCut.fbx
+2026-03-21 21:00:16: LOG: Export: Z:/OWIS/3D/Rig/CL/SCH/Mem2/_Final/FBX/SKM_CL_Mem2_SCH_Bottom.fbx
+2026-03-23 11:33:35: LOG: Export: Z:/OWIS/3D/Rig/CL/STA/Mem1/_Final/FBX/SKM_CL_Mem1_STA_In_Ear_Short.fbx
+2026-03-23 11:33:57: LOG: Export: Z:/OWIS/3D/Rig/CL/STA/Mem4/_Final/FBX/SKM_CL_Mem4_STA_In_Ear_Short.fbx
+2026-03-23 16:00:21: LOG: Export: C:/Users/Justin/Documents/maya/projects/default/test.fbx
+2026-03-23 16:00:27: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / root / pelvis / spine_01 / spine_02 / spine_03 / spine_04 / spine_05. Use the DAG node current transform. Unable to find the bind pose for :  / root / pelvis / spine_01 / spine_02 / spine_03 / spine_04 / spine_05 / clavicle_l /  ... and_l / middle_metacarpal_l / middle_01_l / middle_02_l / middle_03_l / middle_03_half_l. Use the DAG node current transform. Unable to find the bind pose for :  / root / pelvis / spine_01 / spine_02 / spine_03 / spine_04 / spine_05 / clavicle_l /  ... lowerarm_l / hand_l / middle_metacarpal_l / middle_01_l / middle_02_l / middle_02_half_l. Use the DAG node current transform. Unable to find the bind pose for :  / root / pelvis / spine_01 / spine_02 / spine_03 / spine_04 / spine_05 / clavicle_l /  ... l / hand_l / pinky_metacarpal_l / pinky_01_l / pinky_02_l / pinky_03_l / pinky_03_half_l. Use the DAG node current transform. Unable to find the bind pose
+2026-03-23 16:56:12: LOG: Export: Z:/OWIS/3D/Rig/CL/In_Ear/Mem5/_Final/FBX/SKM_CL_Mem5_In_Ear.fbx
+2026-03-23 16:56:13: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / root / pelvis / spine_01 / spine_02 / spine_03 / spine_04 / spine_05 / neck_01 / neck_02. Use the DAG node current transform.
+2026-03-23 21:43:29: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_CSD.fbx
+2026-03-23 21:44:16: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_CSD.fbx
+2026-03-24 01:55:18: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem2/_Final/FBX/SKM_CL_Mem2_MVC_BodyCut.fbx
+2026-03-24 16:47:04: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem2/_Final/FBX/SKM_CL_Mem2_MVC_BodyCut.fbx
+2026-03-24 16:47:58: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem2/_Final/FBX/SKM_CL_Mem2_MVC_BodyCut.fbx
+2026-03-25 16:38:33: LOG: Export: D:/Justin/CSA/Mem1/CL_Mem1_CSA.fbx
+2026-03-25 17:50:42: LOG: Export: D:/Justin/SD_Paperman/SD_Paperman_TestAnim.fbx
+2026-03-25 17:50:46: LOG: [WARNING] Animation curve tangent type changed to Auto - The plug-in has changed some animation curves tangents type to Auto to ensure interoperability.  This mode change will not affect the animation curves' values
+ Hips_translateX Hips_translateY Hips_translateZ Hips_rotateX Hips_rotateY Hips_rotateZ Spine_translateX Spine_translateY Spine_translateZ Spine_rotateX Spine_rotateY Spine_rotateZ Spine1_translateX Spine1_translateY Spine1_translateZ Spine1_rotateX Spine1_rotateY Spine1_rotateZ Neck_translateX Neck_translateY Neck_translateZ Neck_rotateX Neck_rotateY Neck_rotateZ Head_translateX Head_translateY Head_translateZ Head_rotateX Head_rotateY Head_rotateZ HeadEnd_translateX HeadEnd_translateY HeadEnd_translateZ HeadEnd_rotateX HeadEnd_rotateY HeadEnd_rotateZ LeftShoulder_translateX LeftShoulder_translateY LeftShoulder_translateZ LeftShoulder_rotateX LeftShoulder_rotateY LeftShoulder_rotateZ LeftArm_translateX LeftArm_translateY LeftArm_translateZ LeftArm_rotateX LeftArm_rotateY LeftArm_rotateZ LeftFore
+2026-03-26 12:28:27: LOG: Export: D:/Justin/SD_Paperman/SD_Paperman_rig_Justin_v01.fbx
+2026-03-26 13:56:15: LOG: Export: D:/Justin/SD_Paperman/SD_Paperman_rig_Justin_v01.fbx
+2026-03-26 17:46:22: LOG: Export: Z:/OWIS/3D/Rig/CL/MVC/Mem4/_Final/FBX/SKM_CL_Mem4_MVC_Bottom_test.fbx
+2026-03-27 11:40:12: LOG: Export: Z:/OWIS/3D/Rig/CH/SD/SD_Paperman/Paperman_HIK_v01_resized.fbx
+2026-03-27 11:47:38: LOG: Export: Z:/OWIS/3D/Rig/CH/SD/SD_Paperman/Paperman_HIK_v01_resized.fbx
+2026-03-27 11:47:58: LOG: Export: Z:/OWIS/3D/Rig/CH/SD/SD_Paperman/Paperman_HIK_v01_resized.fbx
+2026-03-27 12:11:28: LOG: Export: Z:/OWIS/3D/Rig/CH/SD/SD_Paperman/Paperman_HIK_v01_resized.fbx
+2026-03-27 14:03:12: LOG: Export: Z:/OWIS/3D/Rig/CL/SCH/Mem2/_Final/FBX/SKM_CL_Mem2_SCH_Bottom_new.fbx
+2026-03-28 16:59:49: LOG: Export: Z:/OWIS/3D/Rig/CH/Mem2/_Final/FBX/SKM_CH_Mem2_Body.fbx
+2026-03-28 18:41:14: LOG: Export: Z:/OWIS/3D/Rig/CL/MVB/Mem4/_Final/FBX/SKM_CL_Mem4_MVB_Bottom.fbx
+2026-03-28 18:45:14: LOG: Export: Z:/OWIS/3D/Rig/CL/MVB/Mem4/_Final/FBX/SKM_CL_Mem4_MVB_Top.fbx
+2026-03-30 15:28:18: LOG: Export: Z:/OWIS/3D/Rig/CL/SCH/Mem2/_Final/FBX/SKM_CL_Mem2_SCH_Top_no_inner.fbx
+2026-03-31 16:25:57: LOG: Export: Z:/RnD/Justin/20260331_Elbow_Twist/Yuni_Elbow_Twist_MH.fbx
+2026-03-31 16:25:58: LOG: [WARNING] Animation curve tangent type changed to User - The plug-in has changed some animation curves tangents type to User to ensure interoperability.  This mode change will not affect the animation curves' values
+ root_translateX root_translateY root_translateZ root_scaleX root_scaleY root_scaleZ root_rotateX root_rotateY root_rotateZ pelvis_translateX pelvis_translateY pelvis_translateZ pelvis_scaleX pelvis_scaleY pelvis_scaleZ pelvis_rotateX pelvis_rotateY pelvis_rotateZ spine_01_translateX spine_01_translateY spine_01_translateZ spine_01_scaleX spine_01_scaleY spine_01_scaleZ spine_01_rotateX spine_01_rotateY spine_01_rotateZ spine_02_translateX spine_02_translateY spine_02_translateZ spine_02_scaleX spine_02_scaleY spine_02_scaleZ spine_02_rotateX spine_02_rotateY spine_02_rotateZ spine_03_translateX spine_03_translateY spine_03_translateZ spine_03_scaleX spine_03_scaleY spine_03_scaleZ spine_03_rotateX spine_03_rotateY spine_03_rotateZ spine_04_translateX spine_04_translateY spine_04_translateZ spine
+2026-03-31 16:39:26: LOG: Export: D:/Justin/CSA/Mem4/CL_Mem4_CSA.fbx
+2026-03-31 16:45:20: LOG: Export: D:/Justin/CSA/Mem5/CL_Mem5_CSA.fbx
+2026-03-31 17:25:43: LOG: Export: D:/Justin/CSA/Mem2/CL_Mem2_CSA.fbx
+2026-03-31 17:38:02: LOG: Export: D:/Justin/CSA/Mem3/CL_Mem3_CSA.fbx
+2026-04-02 15:59:27: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_HBD_ACC_Crown.fbx
+2026-04-02 17:00:32: LOG: Export: D:/Justin/CSD/Mem1/CL_Mem1_CSD.fbx
+2026-04-02 17:16:13: LOG: Export: D:/Justin/CSD/Mem4/CL_Mem4_CSD.fbx
+2026-04-03 11:43:12: LOG: Export: D:/Justin/CSD/Mem2/CL_Mem2_CSD.fbx
+2026-04-03 11:46:13: LOG: Export: D:/Justin/CSD/Mem5/CL_Mem5_CSD.fbx
+2026-04-03 11:48:25: LOG: Export: D:/Justin/CSD/Mem5/CL_Mem5_CSD.fbx
+2026-04-06 09:34:21: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_HBD_ACC_Cakecream.fbx
+2026-04-06 09:34:47: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_HBD_ACC_Crown.fbx
+2026-04-06 13:41:07: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_HBD_ACC_Cakecream.fbx
+2026-04-06 13:47:50: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_HBD_ACC_Cakecream.fbx
+2026-04-06 16:13:09: LOG: Export: D:/Justin/CH_Mem5_Hairband_TEST/CH_Mem5_Hairband_TEST.fbx
+2026-04-06 16:13:10: LOG: [WARNING] Skin Definition - The plug-in has found the following skin definition problems :  Unable to find the bind pose for :  / root / pelvis / spine_01 / spine_02 / spine_03 / spine_04 / spine_05 / clavicle_l / upperarm_l / lowerarm_l / hand_l / middle_metacarpal_l. Use the DAG node current transform. Unable to find the bind pose for :  / root / pelvis / spine_01 / spine_02 / spine_03 / spine_04 / spine_05 / clavicle_l /  ... and_l / middle_metacarpal_l / middle_01_l / middle_02_l / middle_03_l / middle_03_half_l. Use the DAG node current transform. Unable to find the bind pose for :  / root / pelvis / spine_01 / spine_02 / spine_03 / spine_04 / spine_05 / clavicle_l /  ... lowerarm_l / hand_l / middle_metacarpal_l / middle_01_l / middle_02_l / middle_02_half_l. Use the DAG node current transform. Unable to find the bind pose for :  / root / pelvis / spine_01 / spine_02 / spine_03 / spine_04 / spine_05 / clavicle_l / upperarm_l / lowerarm_l / hand_l / pinky_metacarpal_l. Use the DAG node current transform
+2026-04-06 16:13:37: LOG: Export: D:/Justin/CH_Mem5_Hairband_TEST/CH_Mem5_Hairband_TEST.fbx
+2026-04-06 18:18:32: LOG: Export: Z:/OWIS/3D/Rig/CL/CSD/Mem3/_Final/FBX/SKM_CL_Mem3_CSD_Bottom.fbx
+2026-04-07 11:34:54: LOG: Export: D:/Justin/BlanketCharacterTest/Mem1_BlanketCharacterTest.fbx
+2026-04-07 11:48:42: LOG: Export: D:/Justin/BlanketCharacterTest/Mem1_BlanketCharacterTest.fbx
+2026-04-07 16:17:21: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_HBD_ACC_Crown.fbx
+2026-04-07 16:21:16: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_HBD_ACC_Cakecream.fbx
+2026-04-07 16:22:30: LOG: Export: D:/Justin/CSD/Mem3/CL_Mem3_HBD_ACC_Crown.fbx
