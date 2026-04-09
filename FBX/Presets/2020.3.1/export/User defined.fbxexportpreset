@@ -37,7 +37,7 @@
       </ExtraGrp>
       <BakeComplexAnimation UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Bake Animation" dt="Bool" v="0">
         <BakeFrameStart UIH="0" UID="0" UIG="0" lbENU="Start" dt="Integer" v="0"/>
-        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="500"/>
+        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="24"/>
         <BakeFrameStep UIH="0" UID="0" UIG="0" lbENU="Step" dt="Integer" v="1"/>
         <ResampleAnimationCurves UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Resample All" dt="Bool" v="0"/>
         <HideComplexAnimationBakedWarning UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Hide Complex Animation Baked Warning" dt="Bool" v="0"/>
@@ -109,7 +109,7 @@
     <Collada UIH="1" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Collada">
       <Triangulate UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Triangulate" dt="Bool" v="1"/>
       <SingleMatrix UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Single Matrix" dt="Bool" v="1"/>
-      <FrameRate UIH="0" UID="0" UIG="0" lbENU="Frame Rate" dt="Number" v="60"/>
+      <FrameRate UIH="0" UID="0" UIG="0" lbENU="Frame Rate" dt="Number" v="24"/>
     </Collada>
   </AdvOptGrp>
   <FBXExtentionsSDK UIH="1" UID="0" UIG="1" UIX="0" UIP="1" lbENU="FBX Extensions SDK">

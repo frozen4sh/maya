@@ -1215,5 +1215,75 @@ global proc shelf_Custom () {
         -commandRepeatable 1
         -flat 1
     ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Green Mesh" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import maya.cmds as cmds\n\nsel = cmds.ls(selection=True, long=Tru..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "GreenMesh" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "colorPresetSpectrum.png" 
+        -image1 "colorPresetSpectrum.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n\nsel = cmds.ls(selection=True, long=True)\nif not sel:\n    cmds.warning(\"Select objects first.\")\nelse:\n    count = 0\n    for obj in sel:\n        shapes = cmds.listRelatives(obj, shapes=True, fullPath=True) or []\n        targets = shapes if shapes else [obj]\n        for t in targets:\n            try:\n                # ????? ?? ?? ??\n                if cmds.getAttr(t + \".overrideEnabled\", lock=True):\n                    cmds.setAttr(t + \".overrideEnabled\", lock=False)\n                if cmds.getAttr(t + \".overrideRGBColors\", lock=True):\n                    cmds.setAttr(t + \".overrideRGBColors\", lock=False)\n                if cmds.getAttr(t + \".overrideColorRGB\", lock=True):\n                    cmds.setAttr(t + \".overrideColorRGB\", lock=False)\n                cmds.setAttr(t + \".overrideEnabled\", 1)\n                cmds.setAttr(t + \".overrideRGBColors\", 1)\n                cmds.setAttr(t + \".overrideColorRGB\", 0, 1, 0)\n                count += 1\n            except Exception as e:\n                cmds.warning(\"Skipped {}: {}\".format(t, e))\n    print(\"Set {} node(s) to green.\".format(count))" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Green Outliner" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "import maya.cmds as cmds\n\nsel = cmds.ls(selection=True, long=Tru..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "GreenOutliner" 
+        -overlayLabelColor 0 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "outliner.png" 
+        -image1 "outliner.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "import maya.cmds as cmds\n\nsel = cmds.ls(selection=True, long=True)\nif not sel:\n    cmds.warning(\"Select objects first.\")\nelse:\n    for obj in sel:\n        try:\n            cmds.setAttr(obj + \".useOutlinerColor\", 1)\n            cmds.setAttr(obj + \".outlinerColor\", 0, 1, 0)\n        except Exception as e:\n            cmds.warning(\"Skipped {}: {}\".format(obj, e))\n    print(\"Set {} object(s) outliner color to green.\".format(len(sel)))" 
+        -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
 
 } 
