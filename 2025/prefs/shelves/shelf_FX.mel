@@ -1,4 +1,4 @@
-global proc shelf_Polygons () {
+global proc shelf_FX () {
     global string $gBuffStr;
     global string $gBuffStr0;
     global string $gBuffStr1;
@@ -14,12 +14,12 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Polygon Sphere: Create a polygonal sphere on the grid" 
+        -annotation "Emitter: Generate moving or stationary particles in your simulations" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Polygon Sphere" 
+        -label "Emitter" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -28,14 +28,14 @@ global proc shelf_Polygons () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "polySphere.png" 
-        -image1 "polySphere.png" 
+        -image "posEmitter.png" 
+        -image1 "posEmitter.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "CreatePolygonSphere" 
+        -command "NCreateEmitter" 
         -sourceType "mel" 
-        -doubleClickCommand "CreatePolygonSphereOptions" 
+        -doubleClickCommand "NCreateEmitterOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -49,12 +49,12 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Polygon Cube: Create a polygonal cube on the grid" 
+        -annotation "Add Emitter: Select the object(s) to emit nParticles" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Polygon Cube" 
+        -label "Add Emitter" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -63,190 +63,14 @@ global proc shelf_Polygons () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyCube.png" 
-        -image1 "polyCube.png" 
+        -image "emitter.png" 
+        -image1 "emitter.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "CreatePolygonCube" 
+        -command "NEmitFromObject" 
         -sourceType "mel" 
-        -doubleClickCommand "CreatePolygonCubeOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Polygon Cylinder: Create a polygonal cylinder on the grid" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Polygon Cylinder" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyCylinder.png" 
-        -image1 "polyCylinder.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "CreatePolygonCylinder" 
-        -sourceType "mel" 
-        -doubleClickCommand "CreatePolygonCylinderOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Polygon Cone: Create a polygonal cone on the grid" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Polygon Cone" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyCone.png" 
-        -image1 "polyCone.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "CreatePolygonCone" 
-        -sourceType "mel" 
-        -doubleClickCommand "CreatePolygonConeOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Polygon Torus: Create a polygonal torus on the grid" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Polygon Torus" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyTorus.png" 
-        -image1 "polyTorus.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "CreatePolygonTorus" 
-        -sourceType "mel" 
-        -doubleClickCommand "CreatePolygonTorusOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Polygon Plane: Create a polygonal plane on the grid" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Polygon Plane" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyMesh.png" 
-        -image1 "polyMesh.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "CreatePolygonPlane" 
-        -sourceType "mel" 
-        -doubleClickCommand "CreatePolygonPlaneOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Polygon Disc: Create a polygon disc on the grid" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Polygon Disc" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyDisc.png" 
-        -image1 "polyDisc.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2018" 
-        -command "CreatePolygonDisc" 
-        -sourceType "mel" 
-        -doubleClickCommand "CreatePolygonDiscOptions" 
+        -doubleClickCommand "NEmitFromObjectOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -273,12 +97,12 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Platonic Solid: Create a polygon polyhedron on the grid\nRight-click for more polygon primitive types" 
+        -annotation "3D Fluid Container with Emitter: Create an emitter and a 3D fluid container" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Platonic Solid" 
+        -label "3D Fluid Container with Emitter" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -287,109 +111,14 @@ global proc shelf_Polygons () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyPlatonicSolid.png" 
-        -image1 "polyPlatonicSolid.png" 
+        -image "fluidCreate3D.png" 
+        -image1 "fluidCreate3D.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -version "2018" 
-        -command "CreatePolygonPlatonic" 
+        -command "Create3DContainerEmitter" 
         -sourceType "mel" 
-        -doubleClickCommand "CreatePolygonPlatonicOptions" 
-        -commandRepeatable 1
-        -flat 1
-        -mio "Pyramid" ( "CreatePolygonPyramid" ) ( "CreatePolygonPyramidOptions" )
-        -mio "Prism" ( "CreatePolygonPrism" ) ( "CreatePolygonPrismOptions" )
-        -mio "Pipe" ( "CreatePolygonPipe" ) ( "CreatePolygonPipeOptions" )
-        -mio "Helix" ( "CreatePolygonHelix" ) ( "CreatePolygonHelixOptions" )
-        -mio "Gear" ( "CreatePolygonGear" ) ( "CreatePolygonGearOptions" )
-        -mio "Soccer Ball" ( "CreatePolygonSoccerBall" ) ( "CreatePolygonSoccerBallOptions" )
-    ;
-    separator
-        -enable 1
-        -width 34
-        -height 35
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -style "shelf" 
-        -horizontal 0
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Super Shape: Create a polygon super shape on the grid\nRight-click to choose shape type" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Super Shape" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polySuperEllipse.png" 
-        -image1 "polySuperEllipse.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2018" 
-        -command "CreatePolygonSuperEllipse" 
-        -sourceType "mel" 
-        -doubleClickCommand "CreatePolygonSuperEllipseOptions" 
-        -commandRepeatable 1
-        -flat 1
-        -mio "Super Ellipse" ( "CreatePolygonSuperEllipse" ) ( "CreatePolygonSuperEllipseOptions" )
-        -mio "Spherical Harmonics" ( "CreatePolygonSphericalHarmonics" ) ( "CreatePolygonSphericalHarmonicsOptions" )
-        -mio "Ultra Shape" ( "CreatePolygonUltraShape" ) ( "CreatePolygonUltraShapeOptions" )
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Sweep Mesh: Create sweep mesh based on selected curve(s)" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Sweep Mesh" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "shelf_sweepMeshFromCurve.png" 
-        -image1 "shelf_sweepMeshFromCurve.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2022" 
-        -command "CreateSweepMesh" 
-        -sourceType "mel" 
-        -doubleClickCommand "CreateSweepMeshOptions" 
+        -doubleClickCommand "Create3DContainerEmitterOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -403,12 +132,12 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Polygon Type: Create 3D text on the grid" 
+        -annotation "2D Fluid Container with Emitter: Create an emitter and a 2D fluid container" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Polygon Type" 
+        -label "2D Fluid Container with Emitter" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -417,14 +146,14 @@ global proc shelf_Polygons () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyType.png" 
-        -image1 "polyType.png" 
+        -image "fluidCreate2D.png" 
+        -image1 "fluidCreate2D.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -version "2017" 
-        -command "CreatePolygonType" 
+        -command "Create2DContainerEmitter" 
         -sourceType "mel" 
+        -doubleClickCommand "Create2DContainerEmitterOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -438,12 +167,12 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "SVG: Create polygons using scalable vector graphics from the clipboard or an imported SVG file" 
+        -annotation "Emit Fluid from Object: Select a fluid and the emitting object(s)" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "SVG" 
+        -label "Emit Fluid from Object" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -452,14 +181,49 @@ global proc shelf_Polygons () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "polySVG.png" 
-        -image1 "polySVG.png" 
+        -image "fluidObjectEmit.png" 
+        -image1 "fluidObjectEmit.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -version "2017" 
-        -command "CreatePolygonSVG" 
+        -command "EmitFluidFromObject" 
         -sourceType "mel" 
+        -doubleClickCommand "EmitFluidFromObjectOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Make Collide: Select fluid object(s) and geometry object(s) to collide" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Make Collide" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "fluidCollide.png" 
+        -image1 "fluidCollide.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "MakeFluidCollide" 
+        -sourceType "mel" 
+        -doubleClickCommand "MakeFluidCollideOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -486,12 +250,12 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Content Browser: Browse assets and example content and import them into your scene" 
+        -annotation "Create Hair: Create hair options" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Content Browser" 
+        -label "Create Hair" 
         -labelOffset 0
         -rotation 0
         -flipX 0
@@ -500,12 +264,556 @@ global proc shelf_Polygons () {
         -font "plainLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "contentBrowserGeneric.png" 
-        -image1 "contentBrowserGeneric.png" 
+        -image "hairCreate.png" 
+        -image1 "hairCreate.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "OpenContentBrowser" 
+        -command "CreateHairOptions" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Paint hair tool options" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Paint Hair Tool Options" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairPaint.png" 
+        -image1 "hairPaint.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "paintHairTool 1" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Make Selected Curves Dynamic: Make selected curves dynamic" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Make Selected Curves Dynamic" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairDynamicCurves.png" 
+        -image1 "hairDynamicCurves.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "MakeCurvesDynamic" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Current Position: Display current position curves or pfxHair for selected or all hair systems" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Current Position" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairDisplayCurrent.png" 
+        -image1 "hairDisplayCurrent.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "displayHairCurves \"current\" 1" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Start Position: Display start position curves for selected or all hair systems" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Start Position" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairDisplayStart.png" 
+        -image1 "hairDisplayStart.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "displayHairCurves \"start\" 1" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Rest Position: Display rest position curves for selected or all hair systems" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Rest Position" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairDisplayRest.png" 
+        -image1 "hairDisplayRest.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "displayHairCurves \"rest\" 1" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "To Hair Systems: Select hair system nodes related to current selection" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "To Hair Systems" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairConvertHairSystem.png" 
+        -image1 "hairConvertHairSystem.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "convertHairSelection \"hairSystems\"" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "To Follicles: Select follicles related to current selection" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "To Follicles" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairConvertFollicles.png" 
+        -image1 "hairConvertFollicles.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "convertHairSelection \"follicles\"" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "To Start Curves: Select start curves related to current selection" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "To Start Curves" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairConvertStart.png" 
+        -image1 "hairConvertStart.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "convertHairSelection \"startCurves\"" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "To Rest Curves: Select rest curves related to current selection" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "To Rest Curves" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairConvertRest.png" 
+        -image1 "hairConvertRest.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "convertHairSelection \"restCurves\"" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Scale Hair Tool: Select hairs (directly or indirectly) then drag left and right to scale" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Scale Hair Tool" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairScaleTool.png" 
+        -image1 "hairScaleTool.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "scaleHairCtx" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "To Start Curve End CVs: Select start curve end CVs related to current selection" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "To Start Curve End CVs" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairConvertStartEndCVs.png" 
+        -image1 "hairConvertStartEndCVs.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "convertHairSelection \"startCurveEndCvs\"\r\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "To Rest Curve End CVs: Select rest curve end CVs related to current selection" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "To Rest Curve End CVs" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairConvertRestEndCVs.png" 
+        -image1 "hairConvertRestEndCVs.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "convertHairSelection \"restCurveEndCvs\"\r\n" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "From Current: Set start position to current position for selected hairs" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "From Current" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairStartFromCurrent.png" 
+        -image1 "hairStartFromCurrent.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "setSelectedHairCurves \"current\" \"start\"" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Current and Start: Display current and start position curves for selected or all hair systems" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Current and Start" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairDisplayCurrentStart.png" 
+        -image1 "hairDisplayCurrentStart.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "displayHairCurves \"currentAndStart\" 1" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "From Current: Set rest position to current position for selected hairs" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "From Current" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairRestFromCurrent.png" 
+        -image1 "hairRestFromCurrent.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "setSelectedHairCurves \"current\" \"rest\"" 
+        -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Current and Rest: Display current and rest position curves for selected or all hair systems" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Current and Rest" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "hairDisplayCurrentRest.png" 
+        -image1 "hairDisplayCurrentRest.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "displayHairCurves \"currentAndRest\" 1" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -533,26 +841,96 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Center Pivot: Resets the selected object's pivot to the center" 
+        -annotation "Create nCloth from the selected mesh." 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Center Pivot" 
+        -label "Create nCloth" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
+        -font "tinyBoldLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "CenterPivot.png" 
-        -image1 "CenterPivot.png" 
+        -image "nClothCreate.png" 
+        -image1 "nClothCreate.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "CenterPivot" 
+        -command "doCreateNCloth 0" 
+        -sourceType "mel" 
+        -doubleClickCommand "nClothCreateOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Select one or more polygon meshes to act as colliders for nCloth, nParticles, or nHair objects." 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Create Passive" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "tinyBoldLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "nClothCreatePassive.png" 
+        -image1 "nClothCreatePassive.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "makeCollideNCloth" 
+        -sourceType "mel" 
+        -doubleClickCommand "nClothMakeCollideOptions" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Revert the selected nCloth or passive collider to a regular mesh." 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Remove nCloth" 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "tinyBoldLabelFont" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "nClothRemove.png" 
+        -image1 "nClothRemove.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "removeNCloth \"selected\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -567,26 +945,26 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Delete By Type: History: Delete construction history on the selected object(s)" 
+        -annotation "Display the input mesh" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Delete By Type: History" 
+        -label "Display Input Mesh" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
+        -font "tinyBoldLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "DeleteHistory.png" 
-        -image1 "DeleteHistory.png" 
+        -image "nClothDisplayInput.png" 
+        -image1 "nClothDisplayInput.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "DeleteHistory" 
+        -command "displayNClothMesh \"input\"" 
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
@@ -601,332 +979,27 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Freeze Transformations: Select an object(s)" 
+        -annotation "Display the current mesh" 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Freeze Transformations" 
+        -label "Display Current Mesh" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
+        -font "tinyBoldLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "FreezeTransform.png" 
-        -image1 "FreezeTransform.png" 
+        -image "nClothDisplayCurrent.png" 
+        -image1 "nClothDisplayCurrent.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "FreezeTransformations" 
+        -command "displayNClothMesh \"current\"" 
         -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    separator
-        -enable 1
-        -width 34
-        -height 35
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -style "shelf" 
-        -horizontal 0
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Difference (A - B): Difference (A - B): Subtracts the second selected object (B) from the first selected object (A). RMB: More operations. Right-click for more Boolean operations." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Difference (A - B)" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyBooleansDifference.png" 
-        -image1 "polyBooleansDifference.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2023" 
-        -command "PolygonBooleanDifference" 
-        -sourceType "mel" 
-        -doubleClickCommand "PolygonBooleanDifferenceOptions" 
-        -commandRepeatable 1
-        -flat 1
-        -mio "Difference (B-A)" ( "PolygonBooleanDifferenceBA" ) ( "PolygonBooleanDifferenceBAOptions" )
-        -mio "Union" ( "PolygonBooleanUnion" ) ( "PolygonBooleanUnionOptions" )
-        -mio "Intersection" ( "PolygonBooleanIntersection" ) ( "PolygonBooleanIntersectionOptions" )
-        -mio "Slice" ( "PolygonBooleanSlice" ) ( "PolygonBooleanSliceOptions" )
-        -mio "Hole Punch" ( "PolygonBooleanHolePunch" ) ( "PolygonBooleanHolePunchOptions" )
-        -mio "Cut Out" ( "PolygonBooleanCutOut" ) ( "PolygonBooleanCutOutOptions" )
-        -mio "Split Edges" ( "PolygonBooleanSplitEdges" ) ( "PolygonBooleanSplitEdgesOptions" )
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Combine: Combine the selected polygon objects into one single object to allow operations such as merges or face trims." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Combine" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyUnite.png" 
-        -image1 "polyUnite.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "CombinePolygons" 
-        -sourceType "mel" 
-        -doubleClickCommand "CombinePolygonsOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Extract: Extract the currently selected faces from their shell and shows a manipulator to adjust their offset." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Extract" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyChipOff.png" 
-        -image1 "polyChipOff.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "ExtractFace" 
-        -sourceType "mel" 
-        -doubleClickCommand "ExtractFaceOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Mirror: Mirror geometry across an axis." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Mirror" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyMirrorGeometry.png" 
-        -image1 "polyMirrorGeometry.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2017" 
-        -command "MirrorPolygonGeometry" 
-        -sourceType "mel" 
-        -doubleClickCommand "MirrorPolygonGeometryOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Smooth: Add faces to the selected polygon objects to smooth them." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Smooth" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polySmooth.png" 
-        -image1 "polySmooth.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "SmoothPolygon" 
-        -sourceType "mel" 
-        -doubleClickCommand "SmoothPolygonOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Reduce: Reduce number of polygonal components for selected objects." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Reduce" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyReduce.png" 
-        -image1 "polyReduce.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2014" 
-        -command "ReducePolygon" 
-        -sourceType "mel" 
-        -doubleClickCommand "ReducePolygonOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Remesh: Redefines the topology of a mesh by splitting edges to add detail and/or collapsing edges to reduce detail. Use Remesh to create a uniformly tessellated triangular mesh." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Remesh" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyRemesh.png" 
-        -image1 "polyRemesh.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2020" 
-        -command "PolyRemesh" 
-        -sourceType "mel" 
-        -doubleClickCommand "PolyRemeshOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Retopologize: Generates clean, new topology that preserves the shape of the source while converting the mesh into four-sided faces (quads)." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Retopologize" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyRetopo.png" 
-        -image1 "polyRetopo.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2024" 
-        -command "PolyRetopo" 
-        -sourceType "mel" 
-        -doubleClickCommand "PolyRetopoOptions" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -953,460 +1026,27 @@ global proc shelf_Polygons () {
         -manage 1
         -visible 1
         -preventOverride 0
-        -annotation "Extrude: Extend new vertices/edges/faces from existing spots on a mesh." 
+        -annotation "Start Interactive playback." 
         -enableBackground 0
         -backgroundColor 0 0 0 
         -highlightColor 0.321569 0.521569 0.65098 
         -align "center" 
-        -label "Extrude" 
+        -label "Interactive playback" 
         -labelOffset 0
         -rotation 0
         -flipX 0
         -flipY 0
         -useAlpha 1
-        -font "plainLabelFont" 
+        -font "tinyBoldLabelFont" 
         -overlayLabelColor 0.8 0.8 0.8 
         -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyExtrudeFacet.png" 
-        -image1 "polyExtrudeFacet.png" 
+        -image "interactivePlayback.png" 
+        -image1 "interactivePlayback.png" 
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "PolyExtrude" 
+        -command "InteractivePlayback" 
         -sourceType "mel" 
-        -doubleClickCommand "PolyExtrudeOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Smart Extrude: Smart Extrude command annotation." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Smart Extrude" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "smartExtrudeTool.png" 
-        -image1 "smartExtrudeTool.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2025" 
-        -command "SmartExtrude" 
-        -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Bridge: Create a bridge between two sets of edges or faces " 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Bridge" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyBridge.png" 
-        -image1 "polyBridge.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "performBridgeOrFill" 
-        -sourceType "mel" 
-        -doubleClickCommand "BridgeEdgeOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Bevel Components: Create a bevel along the selected edges or faces" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Bevel Components" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyBevel.png" 
-        -image1 "polyBevel.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "performBevelOrChamfer" 
-        -sourceType "mel" 
-        -doubleClickCommand "BevelPolygonOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Merge: Merge vertices / border edges based on selection." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Merge" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyMerge.png" 
-        -image1 "polyMerge.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "PolyMerge" 
-        -sourceType "mel" 
-        -doubleClickCommand "PolyMergeOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Merge To Center: Merge selected components to their center point." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Merge To Center" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyMergeToCenter.png" 
-        -image1 "polyMergeToCenter.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "MergeToCenter" 
-        -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Flip Triangle Edge: Flip the edge between two triangles" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Flip Triangle Edge" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyFlipEdge.png" 
-        -image1 "polyFlipEdge.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "FlipTriangleEdge" 
-        -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Duplicate: Duplicate the currently selected faces in a new object." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Duplicate" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyDuplicateFacet.png" 
-        -image1 "polyDuplicateFacet.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "DuplicateFace" 
-        -sourceType "mel" 
-        -doubleClickCommand "DuplicateFaceOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Collapse: Removes selected components by merging their adjacent vertices." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Collapse" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyCollapseEdge.png" 
-        -image1 "polyCollapseEdge.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "PolygonCollapse" 
-        -sourceType "mel" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Circularize: Organize the vertices of selected components into a circle that aligns to the mesh surface." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Circularize" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "polyCircularize.png" 
-        -image1 "polyCircularize.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2018" 
-        -command "PolyCircularize" 
-        -sourceType "mel" 
-        -doubleClickCommand "PolyCircularizeOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    separator
-        -enable 1
-        -width 34
-        -height 35
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -style "shelf" 
-        -horizontal 0
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Multi-Cut Tool: Tools to cut, slice and insert edges on polygons" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Multi-Cut Tool" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "multiCut_NEX32.png" 
-        -image1 "multiCut_NEX32.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -version "2015" 
-        -command "dR_multiCutTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "dR_multiCutTool; toolPropertyWindow;" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Target Weld Tool: Merges two edges or vertices into a single component." 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Target Weld Tool" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "weld_NEX32.png" 
-        -image1 "weld_NEX32.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "MergeVertexTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "MergeVertexToolOptions" 
-        -commandRepeatable 1
-        -flat 1
-    ;
-    shelfButton
-        -enableCommandRepeat 1
-        -flexibleWidthType 3
-        -flexibleWidthValue 32
-        -enable 1
-        -width 35
-        -height 34
-        -manage 1
-        -visible 1
-        -preventOverride 0
-        -annotation "Quad Draw Tool: Drop points on Live objects to create new faces for re-topology" 
-        -enableBackground 0
-        -backgroundColor 0 0 0 
-        -highlightColor 0.321569 0.521569 0.65098 
-        -align "center" 
-        -label "Quad Draw Tool" 
-        -labelOffset 0
-        -rotation 0
-        -flipX 0
-        -flipY 0
-        -useAlpha 1
-        -font "plainLabelFont" 
-        -overlayLabelColor 0.8 0.8 0.8 
-        -overlayLabelBackColor 0 0 0 0.5 
-        -image "quadDraw_NEX32.png" 
-        -image1 "quadDraw_NEX32.png" 
-        -style "iconOnly" 
-        -marginWidth 0
-        -marginHeight 1
-        -command "dR_quadDrawTool" 
-        -sourceType "mel" 
-        -doubleClickCommand "dR_quadDrawTool; toolPropertyWindow;" 
         -commandRepeatable 1
         -flat 1
     ;

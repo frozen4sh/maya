@@ -1,0 +1,23 @@
+{
+    "context": "ttf",
+    "history": [
+        [
+            "ToggleGrid",
+            "ViewImage",
+            "CreateImagePlane",
+            "PrefixHierarchyNames",
+            "SearchAndReplaceNames",
+            "HotkeyPreferencesWindow",
+            "Symmetrize",
+            "TransferVertexOrder",
+            "BakeDeformerTool",
+            "ExportAnim",
+            "ImportAnim",
+            "SculptGeometryTool"
+        ],
+        [],
+        [],
+        []
+    ],
+    "version": "0.21"
+}

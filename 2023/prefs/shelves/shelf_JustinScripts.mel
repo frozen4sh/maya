@@ -1,4 +1,4 @@
-global proc shelf_Custom () {
+global proc shelf_JustinScripts () {
     global string $gBuffStr;
     global string $gBuffStr0;
     global string $gBuffStr1;
@@ -212,6 +212,19 @@ global proc shelf_Custom () {
         -commandRepeatable 1
         -flat 1
     ;
+    separator
+        -enable 1
+        -width 12
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
     shelfButton
         -enableCommandRepeat 1
         -flexibleWidthType 3
@@ -415,6 +428,19 @@ global proc shelf_Custom () {
         -commandRepeatable 1
         -flat 1
     ;
+    separator
+        -enable 1
+        -width 12
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
     shelfButton
         -enableCommandRepeat 1
         -flexibleWidthType 3
@@ -519,6 +545,19 @@ global proc shelf_Custom () {
         -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
+    ;
+    separator
+        -enable 1
+        -width 12
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
     ;
     shelfButton
         -enableCommandRepeat 1
@@ -971,6 +1010,19 @@ global proc shelf_Custom () {
         -commandRepeatable 1
         -flat 1
     ;
+    separator
+        -enable 1
+        -width 12
+        -height 35
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -style "shelf" 
+        -horizontal 0
+    ;
     shelfButton
         -enableCommandRepeat 1
         -flexibleWidthType 3
@@ -1003,6 +1055,41 @@ global proc shelf_Custom () {
         -marginHeight 1
         -command "SetProject" 
         -sourceType "mel" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Mesh to Ref" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "# add_ref_layer.py\n# ===========================================..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "Ref" 
+        -overlayLabelColor 0 1 0 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "reference.svg" 
+        -image1 "reference.svg" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "SearchAndReplaceNames" 
+        -sourceType "python" 
         -commandRepeatable 1
         -flat 1
     ;
@@ -1070,7 +1157,7 @@ global proc shelf_Custom () {
         -style "iconOnly" 
         -marginWidth 0
         -marginHeight 1
-        -command "import maya.cmds as cmds\n\n# Get all materials in the scene\nmaterials = cmds.ls(materials=True)\n\nfor mat in materials:\n    \n    # reflectedColor\n    attr1 = mat + \".reflectedColor\"\n    if cmds.objExists(attr1):\n        try:\n            cmds.setAttr(attr1, 0, 0, 0, type=\"double3\")\n        except:\n            pass\n\n    # specularColor\n    attr2 = mat + \".specularColor\"\n    if cmds.objExists(attr2):\n        try:\n            cmds.setAttr(attr2, 0, 0, 0, type=\"double3\")\n        except:\n            pass\n\nprint(\"All material reflectedColor and specularColor set to black.\")\n" 
+        -command "import maya.cmds as cmds\n\n# ----------------------------------------------\n# 1. reflectedColor / specularColor ??\n#    (rename ?? ?? ? ?? ?? ?? ??)\n# ----------------------------------------------\nmaterials = cmds.ls(materials=True)\n\nfor mat in materials:\n\n    # reflectedColor\n    attr1 = mat + \".reflectedColor\"\n    if cmds.objExists(attr1):\n        try:\n            cmds.setAttr(attr1, 0, 0, 0, type=\"double3\")\n        except:\n            pass\n\n    # specularColor\n    attr2 = mat + \".specularColor\"\n    if cmds.objExists(attr2):\n        try:\n            cmds.setAttr(attr2, 0, 0, 0, type=\"double3\")\n        except:\n            pass\n\nprint(\"All material reflectedColor and specularColor set to black.\")\n\n# ----------------------------------------------\n# 2. M_ ? MI_ ?? ??\n#    prefix? ??? M_? ???? ??? ??.\n#    SM_, FM_, M_Wall_M_Detail ?? ?? M_ ??? ???? ??.\n#    ?? MI_? ???? ????? ???.\n# ----------------------------------------------\nrename_count = 0\nmaterials = cmds.ls(materials=True)\n\nfor mat in materials:\n    mat_short = mat.split(\"|\")[-1]\n\n    if not mat_short.startswith(\"M_\"):\n        continue\n    if mat_short.startswith(\"MI_\"):\n        continue\n\n    new_name = \"MI_\" + mat_short[2:]\n\n    try:\n        result = cmds.rename(mat, new_name)\n        print(\"Renamed: {} -> {}\".format(mat_short, result))\n        rename_count += 1\n    except Exception as e:\n        # lambert1 ? Maya ?? ????? rename ??? ? ?? ??\n        print(\"Skipped (rename failed): {} | {}\".format(mat_short, e))\n\nprint(\"Rename complete. {} material(s) renamed.\".format(rename_count))\n" 
         -sourceType "python" 
         -commandRepeatable 1
         -flat 1
@@ -1282,6 +1369,41 @@ global proc shelf_Custom () {
         -marginHeight 1
         -command "import maya.cmds as cmds\n\nsel = cmds.ls(selection=True, long=True)\nif not sel:\n    cmds.warning(\"Select objects first.\")\nelse:\n    for obj in sel:\n        try:\n            cmds.setAttr(obj + \".useOutlinerColor\", 1)\n            cmds.setAttr(obj + \".outlinerColor\", 0, 1, 0)\n        except Exception as e:\n            cmds.warning(\"Skipped {}: {}\".format(obj, e))\n    print(\"Set {} object(s) outliner color to green.\".format(len(sel)))" 
         -sourceType "python" 
+        -commandRepeatable 1
+        -flat 1
+    ;
+    shelfButton
+        -enableCommandRepeat 1
+        -flexibleWidthType 3
+        -flexibleWidthValue 32
+        -enable 1
+        -width 35
+        -height 34
+        -manage 1
+        -visible 1
+        -preventOverride 0
+        -annotation "Rename objects in scene" 
+        -enableBackground 0
+        -backgroundColor 0 0 0 
+        -highlightColor 0.321569 0.521569 0.65098 
+        -align "center" 
+        -label "Search and Replace Names..." 
+        -labelOffset 0
+        -rotation 0
+        -flipX 0
+        -flipY 0
+        -useAlpha 1
+        -font "plainLabelFont" 
+        -imageOverlayLabel "SaRN" 
+        -overlayLabelColor 0.8 0.8 0.8 
+        -overlayLabelBackColor 0 0 0 0.5 
+        -image "menuIconModify.png" 
+        -image1 "menuIconModify.png" 
+        -style "iconOnly" 
+        -marginWidth 0
+        -marginHeight 1
+        -command "SearchAndReplaceNames" 
+        -sourceType "mel" 
         -commandRepeatable 1
         -flat 1
     ;

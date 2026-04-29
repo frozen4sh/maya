@@ -1,0 +1,322 @@
+// Set the current frame to 0
+currentTime 0;
+
+// Set the playback range from 0 to 10
+playbackOptions -min 0 -max 10;
+
+
+select -r temp_CC_Base_BoneRoot ;
+print("");
+CBselectionChanged;
+autoUpdateAttrEd;
+animationDetailsIKFK();
+// Result: No Solver
+updateAnimLayerEditor("AnimLayerTab");
+statusLineUpdateInputField;
+if (!`exists polyNormalSizeMenuUpdate`) {eval "source buildDisplayMenu";} polyNormalSizeMenuUpdate;
+dR_updateCounter;
+dR_updateCommandPanel;
+SelectHierarchy;
+select -hierarchy;
+CBselectionChanged;
+autoUpdateAttrEd;
+animationDetailsIKFK();
+// Result: No Solver
+updateAnimLayerEditor("AnimLayerTab");
+statusLineUpdateInputField;
+if (!`exists polyNormalSizeMenuUpdate`) {eval "source buildDisplayMenu";} polyNormalSizeMenuUpdate;
+dR_updateCounter;
+dR_updateCommandPanel;
+updateTimeSliderMenu TimeSlider|MainTimeSliderLayout|formLayout8|TimeSliderMenu;
+evalEcho timeSliderCopyKey;
+timeSliderCopyKey;
+doUpdateTangentFeedback;
+select -r CC_Base_BoneRoot ;
+print("");
+CBselectionChanged;
+autoUpdateAttrEd;
+animationDetailsIKFK();
+// Result: No Solver
+updateAnimLayerEditor("AnimLayerTab");
+statusLineUpdateInputField;
+if (!`exists polyNormalSizeMenuUpdate`) {eval "source buildDisplayMenu";} polyNormalSizeMenuUpdate;
+dR_updateCounter;
+dR_updateCommandPanel;
+SelectHierarchy;
+select -hierarchy;
+CBselectionChanged;
+autoUpdateAttrEd;
+animationDetailsIKFK();
+// Result: No Solver
+updateAnimLayerEditor("AnimLayerTab");
+statusLineUpdateInputField;
+if (!`exists polyNormalSizeMenuUpdate`) {eval "source buildDisplayMenu";} polyNormalSizeMenuUpdate;
+dR_updateCounter;
+dR_updateCommandPanel;
+updateTimeSliderMenu TimeSlider|MainTimeSliderLayout|formLayout8|TimeSliderMenu;
+evalEcho "timeSliderPasteKey false";
+timeSliderPasteKey false;
+setFilterScript "initialShadingGroup";
+// Result: 0
+setFilterScript "initialParticleSE";
+// Result: 0
+setFilterScript "defaultLightSet";
+// Result: 1
+setFilterScript "defaultObjectSet";
+// Result: 1
+setFilterScript "Male_TongueSG";
+// Result: 0
+setFilterScript "Male_BodySG";
+// Result: 0
+setFilterScript "Male_BodySG1";
+// Result: 0
+setFilterScript "Male_BodySG2";
+// Result: 0
+setFilterScript "Male_BodySG3";
+// Result: 0
+setFilterScript "Male_BodySG4";
+// Result: 0
+setFilterScript "Male_BodySG5";
+// Result: 0
+setFilterScript "Male_EyesSG";
+// Result: 0
+setFilterScript "Male_EyesSG1";
+// Result: 0
+setFilterScript "Male_EyesSG2";
+// Result: 0
+setFilterScript "Male_EyesSG3";
+// Result: 0
+setFilterScript "Male_TeethSG";
+// Result: 0
+setFilterScript "Male_TeethSG1";
+// Result: 0
+setFilterScript "Male_EyeOcclusionSG";
+// Result: 0
+setFilterScript "Male_EyeOcclusionSG1";
+// Result: 0
+setFilterScript "Male_TearLineSG";
+// Result: 0
+setFilterScript "Male_TearLineSG1";
+// Result: 0
+setFilterScript "Male_BrowsSG";
+// Result: 0
+setFilterScript "Male_BrowsSG1";
+// Result: 0
+setFilterScript "Male_JacketSG";
+// Result: 0
+setFilterScript "Male_PantsSG";
+// Result: 0
+setFilterScript "Male_ShirtSG";
+// Result: 0
+setFilterScript "Male_ShoesSG";
+// Result: 0
+setFilterScript "Male_MaskSG";
+// Result: 0
+doUpdateTangentFeedback;
+setFilterScript "initialShadingGroup";
+// Result: 0
+setFilterScript "initialParticleSE";
+// Result: 0
+setFilterScript "defaultLightSet";
+// Result: 1
+setFilterScript "defaultObjectSet";
+// Result: 1
+setFilterScript "Male_TongueSG";
+// Result: 0
+setFilterScript "Male_BodySG";
+// Result: 0
+setFilterScript "Male_BodySG1";
+// Result: 0
+setFilterScript "Male_BodySG2";
+// Result: 0
+setFilterScript "Male_BodySG3";
+// Result: 0
+setFilterScript "Male_BodySG4";
+// Result: 0
+setFilterScript "Male_BodySG5";
+// Result: 0
+setFilterScript "Male_EyesSG";
+// Result: 0
+setFilterScript "Male_EyesSG1";
+// Result: 0
+setFilterScript "Male_EyesSG2";
+// Result: 0
+setFilterScript "Male_EyesSG3";
+// Result: 0
+setFilterScript "Male_TeethSG";
+// Result: 0
+setFilterScript "Male_TeethSG1";
+// Result: 0
+setFilterScript "Male_EyeOcclusionSG";
+// Result: 0
+setFilterScript "Male_EyeOcclusionSG1";
+// Result: 0
+setFilterScript "Male_TearLineSG";
+// Result: 0
+setFilterScript "Male_TearLineSG1";
+// Result: 0
+setFilterScript "Male_BrowsSG";
+// Result: 0
+setFilterScript "Male_BrowsSG1";
+// Result: 0
+setFilterScript "Male_JacketSG";
+// Result: 0
+setFilterScript "Male_PantsSG";
+// Result: 0
+setFilterScript "Male_ShirtSG";
+// Result: 0
+setFilterScript "Male_ShoesSG";
+// Result: 0
+setFilterScript "Male_MaskSG";
+// Result: 0
+timeField -edit -value `currentTime -query` TimeSlider|MainTimeSliderLayout|formLayout8|timeField1;
+// Result: TimeSlider|MainTimeSliderLayout|formLayout8|timeField1
+headsUpDisplay -refresh HUDIKSolverState;
+// Result: 29
+animationDetailsIKFK();
+// Result: No Solver
+timeField -edit -value `currentTime -query` TimeSlider|MainTimeSliderLayout|formLayout8|timeField1;
+// Result: TimeSlider|MainTimeSliderLayout|formLayout8|timeField1
+headsUpDisplay -refresh HUDIKSolverState;
+// Result: 29
+animationDetailsIKFK();
+// Result: No Solver
+
+DeleteKeys;
+performClearKeyArgList 1 {"0", "animationList", "0", "0"};
+cutKey -clear -time ":" -hierarchy none -controlPoints 0 -shape 1 {"CC_Base_BoneRoot", "CC_Base_Hip", "CC_Base_Pelvis", "CC_Base_L_Thigh", "CC_Base_L_Calf", "CC_Base_L_Foot", "CC_Base_L_ToeBaseShareBone", "CC_Base_L_ToeBase", "CC_Base_L_PinkyToe1", "CC_Base_L_RingToe1", "CC_Base_L_MidToe1", "CC_Base_L_IndexToe1", "CC_Base_L_BigToe1", "CC_Base_L_CalfTwist01", "CC_Base_L_CalfTwist02", "CC_Base_L_KneeShareBone", "CC_Base_L_ThighTwist01", "CC_Base_L_ThighTwist02", "CC_Base_R_Thigh", "CC_Base_R_Calf", "CC_Base_R_KneeShareBone", "CC_Base_R_Foot", "CC_Base_R_ToeBase", "CC_Base_R_BigToe1", "CC_Base_R_PinkyToe1", "CC_Base_R_RingToe1", "CC_Base_R_IndexToe1", "CC_Base_R_MidToe1", "CC_Base_R_ToeBaseShareBone", "CC_Base_R_CalfTwist01", "CC_Base_R_CalfTwist02", "CC_Base_R_ThighTwist01", "CC_Base_R_ThighTwist02", "CC_Base_Waist", "CC_Base_Spine01", "CC_Base_Spine02", "CC_Base_NeckTwist01", "CC_Base_NeckTwist02", "CC_Base_Head", "CC_Base_FacialBone", "CC_Base_JawRoot", "CC_Base_Tongue01", "CC_Base_Tongue02", "CC_Base_Tongue03", "CC_Base_Teeth02", "CC_Base_R_Eye", "CC_Base_L_Eye", "CC_Base_UpperJaw", "CC_Base_Teeth01", "CC_Base_L_Clavicle", "CC_Base_L_Upperarm", "CC_Base_L_Forearm", "CC_Base_L_ForearmTwist01", "CC_Base_L_ForearmTwist02", "CC_Base_L_ElbowShareBone", "CC_Base_L_Hand", "CC_Base_L_Pinky1", "CC_Base_L_Pinky2", "CC_Base_L_Pinky3", "CC_Base_L_Ring1", "CC_Base_L_Ring2", "CC_Base_L_Ring3", "CC_Base_L_Mid1", "CC_Base_L_Mid2", "CC_Base_L_Mid3", "CC_Base_L_Index1", "CC_Base_L_Index2", "CC_Base_L_Index3", "CC_Base_L_Thumb1", "CC_Base_L_Thumb2", "CC_Base_L_Thumb3", "transform2", "CC_Base_L_Prop", "CC_Base_L_UpperarmTwist01", "CC_Base_L_UpperarmTwist02", "CC_Base_L_RibsTwist", "CC_Base_L_Breast", "CC_Base_R_RibsTwist", "CC_Base_R_Breast", "CC_Base_R_Clavicle", "CC_Base_R_Upperarm", "CC_Base_R_Forearm", "CC_Base_R_ElbowShareBone", "CC_Base_R_ForearmTwist01", "CC_Base_R_ForearmTwist02", "CC_Base_R_Hand", "CC_Base_R_Ring1", "CC_Base_R_Ring2", "CC_Base_R_Ring3", "CC_Base_R_Mid1", "CC_Base_R_Mid2", "CC_Base_R_Mid3", "CC_Base_R_Thumb1", "CC_Base_R_Thumb2", "CC_Base_R_Thumb3", "CC_Base_R_Index1", "CC_Base_R_Index2", "CC_Base_R_Index3", "CC_Base_R_Pinky1", "CC_Base_R_Pinky2", "CC_Base_R_Pinky3", "transform1", "CC_Base_R_Prop", "CC_Base_R_UpperarmTwist01", "CC_Base_R_UpperarmTwist02"};
+// Result: 0
+// Result: doClearKeyArgList 3 { "1","0:10","keys","none","0","1","0","0","animationList","0","noOptions","0","0" };
+setFilterScript "initialShadingGroup";
+// Result: 0
+setFilterScript "initialParticleSE";
+// Result: 0
+setFilterScript "defaultLightSet";
+// Result: 1
+setFilterScript "defaultObjectSet";
+// Result: 1
+setFilterScript "Male_TongueSG";
+// Result: 0
+setFilterScript "Male_BodySG";
+// Result: 0
+setFilterScript "Male_BodySG1";
+// Result: 0
+setFilterScript "Male_BodySG2";
+// Result: 0
+setFilterScript "Male_BodySG3";
+// Result: 0
+setFilterScript "Male_BodySG4";
+// Result: 0
+setFilterScript "Male_BodySG5";
+// Result: 0
+setFilterScript "Male_EyesSG";
+// Result: 0
+setFilterScript "Male_EyesSG1";
+// Result: 0
+setFilterScript "Male_EyesSG2";
+// Result: 0
+setFilterScript "Male_EyesSG3";
+// Result: 0
+setFilterScript "Male_TeethSG";
+// Result: 0
+setFilterScript "Male_TeethSG1";
+// Result: 0
+setFilterScript "Male_EyeOcclusionSG";
+// Result: 0
+setFilterScript "Male_EyeOcclusionSG1";
+// Result: 0
+setFilterScript "Male_TearLineSG";
+// Result: 0
+setFilterScript "Male_TearLineSG1";
+// Result: 0
+setFilterScript "Male_BrowsSG";
+// Result: 0
+setFilterScript "Male_BrowsSG1";
+// Result: 0
+setFilterScript "Male_JacketSG";
+// Result: 0
+setFilterScript "Male_PantsSG";
+// Result: 0
+setFilterScript "Male_ShirtSG";
+// Result: 0
+setFilterScript "Male_ShoesSG";
+// Result: 0
+setFilterScript "Male_MaskSG";
+// Result: 0
+doUpdateTangentFeedback;
+setFilterScript "initialShadingGroup";
+// Result: 0
+setFilterScript "initialParticleSE";
+// Result: 0
+setFilterScript "defaultLightSet";
+// Result: 1
+setFilterScript "defaultObjectSet";
+// Result: 1
+setFilterScript "Male_TongueSG";
+// Result: 0
+setFilterScript "Male_BodySG";
+// Result: 0
+setFilterScript "Male_BodySG1";
+// Result: 0
+setFilterScript "Male_BodySG2";
+// Result: 0
+setFilterScript "Male_BodySG3";
+// Result: 0
+setFilterScript "Male_BodySG4";
+// Result: 0
+setFilterScript "Male_BodySG5";
+// Result: 0
+setFilterScript "Male_EyesSG";
+// Result: 0
+setFilterScript "Male_EyesSG1";
+// Result: 0
+setFilterScript "Male_EyesSG2";
+// Result: 0
+setFilterScript "Male_EyesSG3";
+// Result: 0
+setFilterScript "Male_TeethSG";
+// Result: 0
+setFilterScript "Male_TeethSG1";
+// Result: 0
+setFilterScript "Male_EyeOcclusionSG";
+// Result: 0
+setFilterScript "Male_EyeOcclusionSG1";
+// Result: 0
+setFilterScript "Male_TearLineSG";
+// Result: 0
+setFilterScript "Male_TearLineSG1";
+// Result: 0
+setFilterScript "Male_BrowsSG";
+// Result: 0
+setFilterScript "Male_BrowsSG1";
+// Result: 0
+setFilterScript "Male_JacketSG";
+// Result: 0
+setFilterScript "Male_PantsSG";
+// Result: 0
+setFilterScript "Male_ShirtSG";
+// Result: 0
+setFilterScript "Male_ShoesSG";
+// Result: 0
+setFilterScript "Male_MaskSG";
+// Result: 0
+timeField -edit -value `currentTime -query` TimeSlider|MainTimeSliderLayout|formLayout8|timeField1;
+// Result: TimeSlider|MainTimeSliderLayout|formLayout8|timeField1
+headsUpDisplay -refresh HUDIKSolverState;
+// Result: 29
+ikSelectionChanged("MayaWindow|mainKeysMenu|menuItem2039|ikFKStateItem");
+animationDetailsIKFK();
+// Result: No Solver
+timeField -edit -value `currentTime -query` TimeSlider|MainTimeSliderLayout|formLayout8|timeField1;
+// Result: TimeSlider|MainTimeSliderLayout|formLayout8|timeField1
+headsUpDisplay -refresh HUDIKSolverState;
+// Result: 29
+ikSelectionChanged("MayaWindow|mainKeysMenu|menuItem2039|ikFKStateItem");
+animationDetailsIKFK();
+// Result: No Solver
+
+performPlayblast 4;
+onCloseCommand;
+saveOptionBoxSize();
+
+

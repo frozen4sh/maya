@@ -1,0 +1,13 @@
+import maya.cmds as cmds
+
+sel = cmds.ls(selection=True, long=True)
+if not sel:
+    cmds.warning("Select objects first.")
+else:
+    for obj in sel:
+        try:
+            cmds.setAttr(obj + ".useOutlinerColor", 1)
+            cmds.setAttr(obj + ".outlinerColor", 0, 1, 0)
+        except Exception as e:
+            cmds.warning("Skipped {}: {}".format(obj, e))
+    print("Set {} object(s) outliner color to green.".format(len(sel)))

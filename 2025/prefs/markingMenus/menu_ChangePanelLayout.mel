@@ -6,7 +6,6 @@
         -tearOff 0
         -command "setNamedPanelLayout \"Single Perspective View\";" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -19,7 +18,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem167;
+        menuItem160;
 
     menuItem
         -label "Hypershade/Render/Persp" 
@@ -28,7 +27,6 @@
         -tearOff 0
         -command "setNamedPanelLayout \"Hypershade/Render/Persp\";" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -41,7 +39,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem168;
+        menuItem161;
 
     menuItem
         -label "Hypershade/Outliner/Persp" 
@@ -50,7 +48,6 @@
         -tearOff 0
         -command "setNamedPanelLayout \"Hypershade/Outliner/Persp\";" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -63,7 +60,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem169;
+        menuItem162;
 
     menuItem
         -label "Hypershade/Persp" 
@@ -72,7 +69,6 @@
         -tearOff 0
         -command "setNamedPanelLayout \"Hypershade/Persp\";" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -85,7 +81,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem170;
+        menuItem163;
 
     menuItem
         -label "Toggle Outliner" 
@@ -94,7 +90,6 @@
         -tearOff 0
         -command "ToggleOutliner" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -107,7 +102,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem171;
+        menuItem164;
 
     menuItem
         -label "Persp/Graph/Outliner" 
@@ -116,7 +111,6 @@
         -tearOff 0
         -command "setNamedPanelLayout \"Persp/Graph/Outliner\";" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -129,7 +123,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem172;
+        menuItem165;
 
     menuItem
         -label "Persp/Graph" 
@@ -138,7 +132,6 @@
         -tearOff 0
         -command "setNamedPanelLayout \"Persp/Graph\";" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -151,7 +144,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem173;
+        menuItem166;
 
     menuItem
         -label "Persp/Relationship Editor" 
@@ -160,7 +153,6 @@
         -tearOff 0
         -command "setNamedPanelLayout \"Persp/Relationship Editor\";" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -173,7 +165,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem174;
+        menuItem167;
 
 setParent -m ..;
 

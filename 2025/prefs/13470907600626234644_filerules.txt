@@ -1,4 +1,4 @@
-ocio_profile_version: 2.3
+ocio_profile_version: 2.1
 
 environment:
   {}

@@ -1,0 +1,37 @@
+import pymel.core as pm
+def skinCopy(src,tar):
+   
+    shp = src.getShape()
+    targetShape = tar.getShape()
+    
+    pts = shp.getPoints()
+    targetPts = targetShape.getPoints()
+    
+    sc = src.listHistory(type='skinCluster')[0]
+    infulence = sc.getInfluence()
+
+    jntList = []
+    trList = []
+
+    for x in infulence:
+        if pm.objectType(x) == 'joint':
+            jntList.append(x)
+
+        elif pm.objectType(x) == 'transform':
+            trList.append(x)
+
+    # UNLOCK ATTRIBUTE : lockInflenceWeights'
+    for inf in infulence:
+        inf.setAttr('lockInfluenceWeights', l=0)
+
+    tarSc = pm.skinCluster(jntList, tar,tsb=1)
+    if trList:
+        tarSc.addInfluence(trList)
+
+    pm.copySkinWeights(ss=sc, ds=tarSc,nm=1,ia=['closestJoint','oneToOne','name'] )
+
+
+'''
+sel = pm.ls(sl=1)
+skinCopy(sel[0],sel[1])
+'''

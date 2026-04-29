@@ -6,7 +6,6 @@
         -tearOff 0
         -command "setSelectMode nurbsModeling NURBS" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -19,7 +18,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem195;
+        menuItem188;
 
     menuItem
         -label "Hierarchy" 
@@ -28,7 +27,6 @@
         -tearOff 0
         -command "setSelectMode hierarchy Hierarchy" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -41,7 +39,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem196;
+        menuItem189;
 
     menuItem
         -label "Animation Mask" 
@@ -50,7 +48,6 @@
         -tearOff 0
         -command "setSelectMode animation Animation" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -63,7 +60,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem197;
+        menuItem190;
 
     menuItem
         -label "Deformations Mask" 
@@ -72,7 +69,6 @@
         -tearOff 0
         -command "setSelectMode deformations Deformations" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -85,7 +81,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem198;
+        menuItem191;
 
     menuItem
         -label "Dynamics Mask" 
@@ -94,7 +90,6 @@
         -tearOff 0
         -command "setSelectMode dynamics Dynamics" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -107,7 +102,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem199;
+        menuItem192;
 
     menuItem
         -label "Polygons Mask" 
@@ -116,7 +111,6 @@
         -tearOff 0
         -command "setSelectMode polyModeling Polygons" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -129,7 +123,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem200;
+        menuItem193;
 
     menuItem
         -label "Rendering Mask" 
@@ -138,7 +132,6 @@
         -tearOff 0
         -command "setSelectMode rendering Rendering" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -151,7 +144,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem201;
+        menuItem194;
 
     menuItem
         -label "Object/Components" 
@@ -160,7 +153,6 @@
         -tearOff 0
         -command "if ( `selectMode -q -component` ) { setSelectMode objects Objects; } \t\t\t else { setSelectMode components Components; }" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -173,7 +165,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem202;
+        menuItem195;
 
 setParent -m ..;
 

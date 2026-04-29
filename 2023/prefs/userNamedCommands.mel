@@ -98,3 +98,15 @@ nameCommand
 	-command ("CombinePolygons")
 	CombinePolygonsNameCommand;
 
+nameCommand
+	-annotation "HideJointsNameCommand"
+	-sourceType "mel"
+	-command ("HideJoints")
+	HideJointsNameCommand;
+
+nameCommand
+	-annotation "ShowJointsNameCommand"
+	-sourceType "mel"
+	-command ("ShowJoints")
+	ShowJointsNameCommand;
+

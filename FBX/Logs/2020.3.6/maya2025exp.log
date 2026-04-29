@@ -11,3 +11,5 @@
 
 2026-02-27 13:32:44: LOG: [WARNING] Unsupported constraints export failed - The scene contains constraints that are not supported by the FBX file format. Activate the Bake Animation option before exporting.
 
+2026-04-15 17:38:18: LOG: Export: D:/Justin/MKT/Mem1/SKM_CL_Mem1_HAR_ACC_HairPin_A.fbx
+2026-04-15 17:39:14: LOG: Export: D:/Justin/MKT/Mem1/SKM_CL_Mem1_HAR_ACC_HairPin_A.fbx

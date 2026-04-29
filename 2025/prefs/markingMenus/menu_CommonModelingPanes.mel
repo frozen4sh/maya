@@ -6,7 +6,6 @@
         -tearOff 0
         -command "switchModelView persp" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -19,7 +18,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem203;
+        menuItem196;
 
     menuItem
         -label "Side View" 
@@ -28,7 +27,6 @@
         -tearOff 0
         -command "switchModelView side" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -41,7 +39,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem204;
+        menuItem197;
 
     menuItem
         -label "Front View" 
@@ -50,7 +48,6 @@
         -tearOff 0
         -command "switchModelView front" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -63,7 +60,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem205;
+        menuItem198;
 
     menuItem
         -label "Top View" 
@@ -72,7 +69,6 @@
         -tearOff 0
         -command "switchModelView top" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -85,7 +81,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem206;
+        menuItem199;
 
     menuItem
         -label "Left View" 
@@ -94,7 +90,6 @@
         -tearOff 0
         -command "MTviewChange(\"left\", \"-ls\");" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -108,7 +103,7 @@
         -sourceType "mel" 
         -version "2014" 
         -longDivider 1
-        menuItem207;
+        menuItem200;
 
     menuItem
         -label "Back View" 
@@ -117,7 +112,6 @@
         -tearOff 0
         -command "MTviewChange(\"back\", \"-b\");" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -131,7 +125,7 @@
         -sourceType "mel" 
         -version "2014" 
         -longDivider 1
-        menuItem208;
+        menuItem201;
 
     menuItem
         -label "Bottom View" 
@@ -140,7 +134,6 @@
         -tearOff 0
         -command "MTviewChange(\"bottom\", \"-bo\");" 
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -154,7 +147,7 @@
         -sourceType "mel" 
         -version "2014" 
         -longDivider 1
-        menuItem209;
+        menuItem202;
 
     menuItem
         -label "Hotbox Style" 
@@ -162,7 +155,6 @@
         -subMenu 1
         -tearOff 0
         -optionBox 0
-        -header 0
         -enable 1
         -visible 1
         -data 0
@@ -172,7 +164,7 @@
         -boldFont 0
         -sourceType "mel" 
         -longDivider 1
-        menuItem210;
+        menuItem203;
 
         menuItem
             -label "Zones and Menu Rows" 
@@ -181,7 +173,6 @@
             -tearOff 0
             -command "hotBox -dh" 
             -optionBox 0
-            -header 0
             -enable 1
             -visible 1
             -data 0
@@ -193,7 +184,7 @@
             -boldFont 0
             -sourceType "mel" 
             -longDivider 1
-            menuItem211;
+            menuItem204;
 
         menuItem
             -label "Zones Only" 
@@ -202,7 +193,6 @@
             -tearOff 0
             -command "hotBox -dzo" 
             -optionBox 0
-            -header 0
             -enable 1
             -visible 1
             -data 0
@@ -214,7 +204,7 @@
             -boldFont 0
             -sourceType "mel" 
             -longDivider 1
-            menuItem212;
+            menuItem205;
 
         menuItem
             -label "Center Zone Only" 
@@ -223,7 +213,6 @@
             -tearOff 0
             -command "hotBox -dco" 
             -optionBox 0
-            -header 0
             -enable 1
             -visible 1
             -data 0
@@ -235,7 +224,7 @@
             -boldFont 0
             -sourceType "mel" 
             -longDivider 1
-            menuItem213;
+            menuItem206;
 
     setParent -m ..;
 

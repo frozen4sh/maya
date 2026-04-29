@@ -7,7 +7,7 @@
     <PlugInUIYpos UIH="1" UID="0" UIG="0" lbENU="Plugin UI Y Position" dt="Integer" v="100"/>
     <UILIndex UIH="1" UID="0" UIG="0" lbENU="UI language" dt="Enum" enumSelected="ENU" v="0" enumItem_0="ENU" enumItem_1="DEU" enumItem_2="FRA" enumItem_3="JPN" enumItem_4="KOR" enumItem_5="CHS" enumItem_6="PTB"/>
     <PluginProductFamily UIH="0" UID="0" UIG="0" lbENU="Plugin product family" dt="KString" v="Maya  ( API cut number: 20250302 )"/>
-    <PresetSelected UIH="1" UID="0" UIG="0" lbENU="Preset Selected" dt="KString" v="C:\Program Files\Autodesk\Maya2025\plug-ins\fbx\plug-ins\FBX\Presets\export\Autodesk Media and Entertainment.fbxexportpreset"/>
+    <PresetSelected UIH="1" UID="0" UIG="0" lbENU="Preset Selected" dt="KString" v="C:\Users\Justin\Documents\maya\FBX\Presets\2020.3.6\export\User defined.fbxexportpreset"/>
   </PlugInGrp>
   <PresetsGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="1" lbENU="Presets">
     <Presets UIH="0" UID="0" UIG="0" lbENU="Current Preset" dt="Presets"/>
@@ -16,8 +16,8 @@
     <Statistics UIH="0" UID="0" UIG="0" lbENU="Statistics" dt="Statistics"/>
   </StatisticsGrp>
   <IncludeGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Include">
-    <Geometry UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Geometry">
-      <SmoothingGroups UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Smoothing Groups" dt="Bool" v="0"/>
+    <Geometry UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Geometry">
+      <SmoothingGroups UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Smoothing Groups" dt="Bool" v="1"/>
       <expHardEdges UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Split per-vertex Normals" dt="Bool" v="0"/>
       <TangentsandBinormals UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Tangents and Binormals" dt="Bool" v="0"/>
       <SmoothMesh UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Smooth Mesh" dt="Bool" v="1"/>
@@ -37,7 +37,7 @@
       </ExtraGrp>
       <BakeComplexAnimation UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Bake Animation" dt="Bool" v="0">
         <BakeFrameStart UIH="0" UID="0" UIG="0" lbENU="Start" dt="Integer" v="0"/>
-        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="14380"/>
+        <BakeFrameEnd UIH="0" UID="0" UIG="0" lbENU="End" dt="Integer" v="500"/>
         <BakeFrameStep UIH="0" UID="0" UIG="0" lbENU="Step" dt="Integer" v="1"/>
         <ResampleAnimationCurves UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Resample All" dt="Bool" v="0"/>
         <HideComplexAnimationBakedWarning UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Hide Complex Animation Baked Warning" dt="Bool" v="0"/>
@@ -59,32 +59,32 @@
         </CurveFilterApplyCstKeyRed>
       </CurveFilter>
       <PointCache UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Geometry Cache File(s)" dt="Bool" v="0">
-        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="SKM_CH_Mem1_MVC:AllSet" enumItem_2="SKM_CH_Mem1_MVC:ControlSet" enumItem_3="SKM_CH_Mem1_MVC:DeformSet" enumItem_4="SKM_CH_Mem1_MVC:Sets" enumItem_5="SKM_CH_Mem3_MVC:AllSet" enumItem_6="SKM_CH_Mem3_MVC:ControlSet" enumItem_7="SKM_CH_Mem3_MVC:DeformSet" enumItem_8="SKM_CH_Mem3_MVC:Sets" enumItem_9="defaultLightSet" enumItem_10="defaultObjectSet"/>
+        <SelectionSetNameAsPointCache UIH="0" UID="0" UIG="0" lbENU="Set" dt="Enum" enumSelected=" " v="0" enumItem_0=" " enumItem_1="defaultLightSet" enumItem_2="defaultObjectSet"/>
       </PointCache>
       <ConstraintsGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Constraints">
         <Constraint UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Constraints" dt="Bool" v="0"/>
         <Character UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Skeleton Definitions" dt="Bool" v="0"/>
       </ConstraintsGrp>
     </Animation>
-    <CameraGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Cameras">
-      <Camera UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Cameras" dt="Bool" v="1"/>
+    <CameraGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Cameras">
+      <Camera UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Cameras" dt="Bool" v="0"/>
     </CameraGrp>
-    <LightGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Lights">
-      <Light UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Lights" dt="Bool" v="1"/>
+    <LightGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Lights">
+      <Light UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Lights" dt="Bool" v="0"/>
     </LightGrp>
-    <Audio UIH="0" UID="0" UIG="0" UIBG="1" UIX="0" lbENU="Audio" dt="Bool" v="1"/>
-    <EmbedTextureGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Embed Media">
+    <Audio UIH="0" UID="0" UIG="0" UIBG="1" UIX="1" lbENU="Audio" dt="Bool" v="0"/>
+    <EmbedTextureGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Embed Media">
       <EmbedTexture UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Embed Media" dt="Bool" v="0"/>
     </EmbedTextureGrp>
     <BindPose UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bind Pose" dt="Bool" v="1"/>
     <PivotToNulls UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Pivot To Null" dt="Bool" v="0"/>
     <BypassRrsInheritance UIH="1" UID="0" UIG="0" UIBG="0" lbENU="Bypass Rrs Inheritance" dt="Bool" v="0"/>
-    <InputConnectionsGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Connections">
+    <InputConnectionsGrp UIH="1" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Connections">
       <IncludeChildren UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Include Children" dt="Bool" v="1"/>
       <InputConnections UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Input Connections" dt="Bool" v="1"/>
     </InputConnectionsGrp>
   </IncludeGrp>
-  <AdvOptGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Advanced Options">
+  <AdvOptGrp UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="Advanced Options">
     <UnitsGrp UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="Units">
       <TotalUnitsScale UIH="0" UID="0" UIG="0" lbENU="Total Units Scale" dt="TextLine"/>
       <DynamicScaleConversion UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Automatic" dt="Bool" v="1"/>
@@ -98,7 +98,7 @@
       <GenerateLogData UIH="0" UID="0" UIG="0" UIBG="0" lbENU="Generate Log Data" dt="Bool" v="1"/>
       <PluginVersionsURL UIH="1" UID="0" UIG="0" lbENU="Plugin Versions URL" dt="KString" v="http://download.autodesk.com/us/fbx/versions/fbxversion.xml"/>
     </UI>
-    <Fbx UIH="0" UID="0" UIG="1" UIX="0" UIP="0" lbENU="FBX File Format">
+    <Fbx UIH="0" UID="0" UIG="1" UIX="1" UIP="0" lbENU="FBX File Format">
       <AsciiFbx UIH="0" UID="0" UIG="0" lbENU="Type" dt="Enum" enumSelected="Binary" v="0" enumItem_0="Binary" enumItem_1="ASCII"/>
       <ExportFileVersion UIH="0" UID="0" UIG="0" lbENU="Version" dt="Alias" enumSelected="FBX202000" v="0" enumItem_0="FBX202000" enumItem_1="FBX201900" enumItem_2="FBX201800" enumItem_3="FBX201600" enumItem_4="FBX201400" enumItem_5="FBX201300" enumItem_6="FBX201200" enumItem_7="FBX201100" enumItem_8="FBX201000" enumItem_9="FBX200900" enumItem_10="FBX200611"/>
     </Fbx>
