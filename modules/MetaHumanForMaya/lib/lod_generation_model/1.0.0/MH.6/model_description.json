@@ -1,0 +1,14 @@
+{
+	"Version": "0.0.1",
+	"Models": {
+		"LODGenerationBinaries": [
+            "lod0.binary",
+            "lod1.binary",
+            "lod2.binary",
+            "lod3.binary",
+            "lod4.binary",
+            "lod5.binary",
+            "lod6.binary"
+        ]
+	}
+}

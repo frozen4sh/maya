@@ -1,0 +1,25 @@
+QToolButton[action="true"] {
+    width: 14px;
+    height: 14px;
+    background-color: var(--gray060);
+    border: 0px;
+    border-radius: 0px;
+    font-size: 12pt;
+    font-family: "Material Icons";
+}
+
+QToolButton::menu-indicator[action="true"] {
+    image: none;
+}
+
+QToolButton:hover[action="true"] {
+    color: var(--gray040);
+}
+
+QToolButton:hover:!pressed[action="true"] {
+    background-color: var(--gray100);
+}
+
+QTreeView {
+    background: none;
+}

@@ -1,0 +1,82 @@
+{
+    "append_sys_path": true,
+    "arch": "AMD64",
+    "building": true,
+    "caching": true,
+    "created": 1761644890,
+    "default_patch_lock": "no_lock",
+    "failure_description": null,
+    "from_cache": false,
+    "graph": "{'nodes': [((('fillcolor', '#FFFFAA'), ('fontsize', 10), ('style', 'filled,dashed')), [('_1', 'platform-windows'), ('_2', 'python-3.10')]), ((('fillcolor', '#AAFFAA'), ('fontsize', 10), ('style', 'filled')), [('_3', 'platform-windows[]'), ('_4', 'python-3.10.11[0]')])], 'edges': [((('arrowsize', '0.5'),), [('_1', '_3'), ('_2', '_4'), ('_4', '_1')])]}",
+    "host": "BEG-WD-0437",
+    "implicit_packages": [],
+    "load_time": 0.0,
+    "num_loaded_packages": 3,
+    "os": "windows-10.0",
+    "package_cache_async": true,
+    "package_caching": true,
+    "package_filter": [],
+    "package_orderers": [
+        {
+            "packages": [
+                "*"
+            ],
+            "patterns": [
+                "*.alpha*",
+                "*-alpha*",
+                "*.beta*",
+                "*-beta*",
+                "*.rc*",
+                "*-rc*"
+            ],
+            "type": "depriority_patterns"
+        }
+    ],
+    "package_paths": [
+        "L:/MetaHuman/Rez/packages/act",
+        "L:/MetaHuman/Rez/packages/int",
+        "L:/MetaHuman/Rez/packages/ext",
+        "L:/MetaHuman/Rez/packages/loc",
+        "L:/MetaHuman/Rez/packages/pip"
+    ],
+    "package_requests": [
+        "platform-windows",
+        "python-3.10"
+    ],
+    "parent_suite_path": null,
+    "patch_locks": {},
+    "platform": "windows",
+    "requested_timestamp": null,
+    "resolved_ephemerals": [],
+    "resolved_packages": [
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": null,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "platform",
+                "repository_type": "filesystem",
+                "version": "windows"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 0,
+                "location": "l:\\metahuman\\rez\\packages\\ext",
+                "name": "python",
+                "repository_type": "filesystem",
+                "version": "3.10.11"
+            }
+        }
+    ],
+    "rez_path": "L:\\MetaHuman\\Rez\\rez\\3.2.1-15\\windows\\cfg",
+    "rez_version": "3.2.1-15",
+    "serialize_version": "4.9",
+    "solve_time": 0.001001119613647461,
+    "status": "solved",
+    "suite_context_name": null,
+    "testing": false,
+    "timestamp": 1761644890,
+    "user": "Nemanja.Krza"
+}

@@ -1,0 +1,10 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="FlipHorizontal">
+        <path id="Vector 1" d="M14.0179 4.44445L8.02358 1.39188L4.35864 7.03264L13.9764 23.6082L14.0179 4.44445Z"
+              fill="white"/>
+        <path id="Vector 2" opacity="0.5"
+              d="M27.6414 7.03263L23.9764 1.39187L17.9821 4.44444L18.0236 23.6082L27.6414 7.03263Z" fill="white"/>
+        <path id="Vector" d="M17 28V26H24V23L29.5 27L24 31V28H17Z" fill="white"/>
+        <path id="Vector_2" opacity="0.5" d="M15 26L15 28L8 28L8 31L2.5 27L8 23L8 26L15 26Z" fill="white"/>
+    </g>
+</svg>

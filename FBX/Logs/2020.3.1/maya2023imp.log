@@ -2809,3 +2809,343 @@ The following display layers are affected: Bones Fingers Legs Arms
 2026-04-29 14:57:30: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
 2026-04-29 15:03:19: LOG: Import: Z:/OWIS/3D/Rig/CL/KDU/Mem1/_Final/FBX/SKM_CL_Mem1_KDU_Top.fbx
 2026-04-29 15:04:35: LOG: Import: Z:/OWIS/3D/Rig/CL/CSA/Mem1/_Final/FBX/SKM_CL_Mem1_CSA_Bottom.fbx
+2026-04-29 17:05:06: LOG: Import: D:/Justin/SCH_Mem3_Hairband/CL_Mem3_SCH_ACC_Hairband.fbx
+2026-04-29 17:05:35: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem2/Hair_B/_Final/FBX/SKM_HA_Mem2_Hair_B.fbx
+2026-04-29 17:10:33: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-04-29 17:10:36: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-04-29 17:15:36: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-04-29 17:15:39: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-04-29 17:17:43: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-04-29 17:17:45: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-04-29 17:19:26: LOG: Import: D:/Justin/MKT/Mem1/CL_Mem1_MKT_ACC_CatEar.fbx
+2026-04-29 17:24:40: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem1/Hair_B/_Final/FBX/SKM_HA_Mem1_Hair_B.fbx
+2026-04-30 11:27:28: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem2/_Final/FBX/SKM_CH_Mem2_Body.fbx
+2026-04-30 13:09:24: LOG: Import: Z:/OWIS/3D/Rig/CL/CSD/Mem2/_Final/FBX/SKM_CL_Mem2_CSD_Bottom.fbx
+2026-04-30 13:09:37: LOG: Import: Z:/OWIS/3D/Rig/CL/CSD/Mem2/_Final/FBX/SKM_CL_Mem2_CSD_Top.fbx
+2026-04-30 13:10:05: LOG: Import: Z:/OWIS/3D/Rig/CL/CSD/Mem2/_Final/FBX/SKM_CL_Mem2_CSD_Shoes.fbx
+2026-05-04 10:06:47: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Body.fbx
+2026-05-04 10:06:51: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem4_Mod_grp
+2026-05-04 11:42:01: LOG: Import: Z:/OWIS/3D/Rig/CL/MKT/Mem1/_Final/FBX/SKM_CL_Mem1_MKT_ACC_CatEar.fbx
+2026-05-04 11:51:18: LOG: Import: D:/Justin/MKT/Mem2/CL_Mem2_MKT_ACC_CatEar.fbx
+2026-05-04 11:51:40: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem2/_Final/FBX/SKM_CH_Mem2_Body.fbx
+2026-05-04 12:00:43: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem2/Hair_A/_Final/FBX/SKM_CH_Hair_Mem2_Hair_A.fbx
+2026-05-04 12:00:47: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem2_Hair_A_Back_In_Grp CH_Hair_Mem2_A_Front_L_grp CH_Hair_Mem2_A_Side_L_grp CH_Hair_Mem2_A_Side_In_L_grp CH_Mem2_Hair_A_Up_grp
+2026-05-04 12:10:22: LOG: Import: D:/Justin/MKT/Mem2/SKM_CL_Mem2_MKT_ACC_CatEar.fbx
+2026-05-04 12:10:23: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  Character1
+2026-05-04 12:12:11: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-04 12:12:14: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-04 12:12:34: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_CatEar.fbx
+2026-05-04 12:13:09: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_CatEar.fbx
+2026-05-04 12:14:13: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem3/Work/Export/CL_Mem3_MKT_ACC_CatEar/CL_Mem3_MKT_ACC_CatEar.fbx
+2026-05-04 12:14:39: LOG: Import: D:/Justin/MKT/Mem4/CL_Mem4_MKT_ACC_CatEar.fbx
+2026-05-04 12:14:50: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Body.fbx
+2026-05-04 12:14:53: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem4_Mod_grp
+2026-05-04 12:15:15: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem4/Hair_A/_Final/FBX/SKM_CH_Hair_Mem4_Hair_A.fbx
+2026-05-04 12:15:19: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem4_A_Front_grp CH_Hair_Mem4_A_Sim_grp CH_Hair_Mem4_A_H_grp CH_Hair_Mem4_A_Tail_grp
+2026-05-04 13:53:28: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-04 13:53:31: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-04 13:53:40: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem5/Hair_A/_Final/FBX/SKM_CH_Hair_Mem5_Hair_A.fbx
+2026-05-04 13:53:43: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem5_A_Front_grp CH_Hair_Mem5_A_Side_grp CH_Hair_Mem5_A_Side_Bk_grp CH_Hair_Mem5_A_Bk_grp
+2026-05-04 13:54:46: LOG: Import: D:/Justin/MKT/Mem5/CL_Mem5_MKT_ACC_CatEar.fbx
+2026-05-04 13:56:10: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem5/Hair_A/_Final/FBX/SKM_CH_Hair_Mem5_Hair_A.fbx
+2026-05-04 13:56:13: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem5_A_Front_grp CH_Hair_Mem5_A_Side_grp CH_Hair_Mem5_A_Side_Bk_grp CH_Hair_Mem5_A_Bk_grp
+2026-05-04 14:06:16: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_CatEar.fbx
+2026-05-04 14:06:32: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-04 14:06:36: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-04 14:07:05: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem3/Hair_A/_Final/FBX/SKM_CH_Hair_Mem3_Hair_A.fbx
+2026-05-04 14:07:08: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem3_A_Front_grp CH_Hair_Mem3_A_Side_L_grp CH_Hair_Mem3_A_Side_R_grp CH_Hair_Mem3_A_Bk_grp
+2026-05-04 15:57:11: LOG: Import: D:/Justin/MKT/Mem5/CL_Mem5_MKT_ACC_Gurmihair.fbx
+2026-05-05 16:28:52: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-05 16:28:56: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-05 16:29:43: LOG: Import: D:/Justin/MKT/Mem1/CL_Mem1_MKT_ACC_Gurmihair.fbx
+2026-05-05 16:32:07: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem2/_Final/FBX/SKM_CH_Mem2_Body.fbx
+2026-05-05 16:33:00: LOG: Import: D:/Justin/MKT/Mem2/CL_Mem2_MKT_ACC_Gurmihair.fbx
+2026-05-05 16:35:10: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-05 16:35:14: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-05 16:37:19: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_Gurmihair.fbx
+2026-05-05 16:42:49: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Body.fbx
+2026-05-05 16:42:53: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem4_Mod_grp
+2026-05-05 16:43:20: LOG: Import: D:/Justin/MKT/Mem4/CL_Mem4_MKT_ACC_Gurmihair.fbx
+2026-05-05 16:43:37: LOG: Import: D:/Justin/MKT/Mem4/CL_Mem4_MKT_ACC_Gurmihair.fbx
+2026-05-05 16:46:34: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem4/Hair_A/_Final/FBX/SKM_CH_Hair_Mem4_Hair_A.fbx
+2026-05-05 16:46:38: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem4_A_Front_grp CH_Hair_Mem4_A_Sim_grp CH_Hair_Mem4_A_H_grp CH_Hair_Mem4_A_Tail_grp
+2026-05-05 16:53:09: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-05 16:53:12: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-05 16:56:07: LOG: Import: D:/Justin/MKT/Mem4/SKM_CL_Mem4_MKT_ACC_Gurmihair.fbx
+2026-05-05 16:56:20: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem4/Hair_A/_Final/FBX/SKM_CH_Hair_Mem4_Hair_A.fbx
+2026-05-05 16:56:24: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem4_A_Front_grp CH_Hair_Mem4_A_Sim_grp CH_Hair_Mem4_A_H_grp CH_Hair_Mem4_A_Tail_grp
+2026-05-05 17:03:44: LOG: Import: D:/Justin/MKT/Mem5/CL_Mem5_MKT_ACC_Gurmihair.fbx
+2026-05-05 17:08:17: LOG: Import: D:/Justin/MKT/Mem5/SKM_CL_Mem5_MKT_ACC_Gurmihair.fbx
+2026-05-05 17:08:31: LOG: Import: D:/Justin/MKT/Mem4/SKM_CL_Mem4_MKT_ACC_Gurmihair.fbx
+2026-05-05 17:08:50: LOG: Import: D:/Justin/MKT/Mem3/SKM_CL_Mem3_MKT_ACC_Gurmihair.fbx
+2026-05-05 17:09:21: LOG: Import: D:/Justin/MKT/Mem2/SKM_CL_Mem2_MKT_ACC_Gurmihair.fbx
+2026-05-05 17:09:45: LOG: Import: D:/Justin/MKT/Mem1/SKM_CL_Mem1_MKT_ACC_Gurmihair.fbx
+2026-05-05 20:16:51: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-05 20:16:54: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-05 20:17:23: LOG: Import: D:/Justin/MKT/Mem1/CL_Mem1_MKT_ACC_Headset_Cat.fbx
+2026-05-05 20:26:37: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem2/_Final/FBX/SKM_CH_Mem2_Body.fbx
+2026-05-05 20:27:13: LOG: Import: D:/Justin/MKT/Mem2/CL_Mem2_MKT_ACC_Headset_Cat.fbx
+2026-05-05 20:27:23: LOG: Import: D:/Justin/MKT/Mem2/CL_Mem2_MKT_ACC_Headset_Cat.fbx
+2026-05-05 20:29:01: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-05 20:29:04: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-05 20:29:23: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_Headset_Cat.fbx
+2026-05-05 20:32:09: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Body.fbx
+2026-05-05 20:32:12: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem4_Mod_grp
+2026-05-05 20:32:37: LOG: Import: D:/Justin/MKT/Mem4/CL_Mem4_MKT_ACC_Headset_Cat.fbx
+2026-05-05 20:35:10: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-05 20:35:13: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-05 20:35:45: LOG: Import: D:/Justin/MKT/Mem5/CL_Mem5_MKT_ACC_Headset_Cat.fbx
+2026-05-05 20:39:03: LOG: Import: D:/Justin/MKT/Mem4/SKM_CL_Mem4_MKT_ACC_Headset_Cat.fbx
+2026-05-05 20:39:18: LOG: Import: D:/Justin/MKT/Mem3/SKM_CL_Mem3_MKT_ACC_Headset_Cat.fbx
+2026-05-05 20:39:34: LOG: Import: D:/Justin/MKT/Mem2/SKM_CL_Mem2_MKT_ACC_Headset_Cat.fbx
+2026-05-05 20:39:48: LOG: Import: D:/Justin/MKT/Mem1/SKM_CL_Mem1_MKT_ACC_Headset_Cat.fbx
+2026-05-06 15:14:15: LOG: Import: Z:/OWIS/3D/Rig/CL/MKT/Mem1/_Final/FBX/SKM_CL_Mem1_MKT_ACC_CatEar.fbx
+2026-05-06 15:16:26: LOG: Import: Z:/OWIS/3D/Rig/CL/MKT/Mem1/_Final/FBX/SKM_CL_Mem1_MKT_ACC_CatEar_test.fbx
+2026-05-06 15:16:27: LOG: [ERROR  ] HIK Character Import - HIK character not loaded. The FBX plug-in cannot merge an incomplete skeleton definition if the skeleton definition is not already in the destination scene :  Character1
+2026-05-11 09:44:27: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_ChineseHairpin/CL_Mem1_MKT_ACC_ChineseHairpin.fbx
+2026-05-11 09:46:21: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem1/Hair_C/_Final/FBX/SKM_HA_Mem1_Hair03.fbx
+2026-05-11 09:49:26: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem1/Hair_B/_Final/FBX/SKM_HA_Mem1_Hair_B.fbx
+2026-05-11 10:26:30: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-11 10:26:33: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-11 10:27:23: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/_Old/v03/SKM_CH_Mem3_Body.fbx
+2026-05-11 10:27:26: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-11 10:28:25: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/_Old/v02/SKM_CH_Mem3_Body.fbx
+2026-05-11 10:29:06: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/_Old/v03/SKM_CH_Mem3_Body.fbx
+2026-05-11 10:29:09: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-11 10:33:04: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-11 10:33:06: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-11 10:34:13: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-11 10:34:16: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-11 11:31:22: LOG: Import: Z:/OWIS/3D/Modeling/CL/TRW/Mem1/Work/Export/CL_Mem1_TRW_Top_A.fbx
+2026-05-11 11:35:58: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-11 11:36:02: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-12 11:00:24: LOG: Import: Z:/RND/RYS/Habin_MH.fbx
+2026-05-12 17:36:31: LOG: Import: Z:/OWIS/Outsourcing/To_Aurora/26.03.04/260304_MVB_Mem4/MVB_Mem4/CH/FBX/Mem4/SKM_CL_Mem4_MVB_Bottom.fbx
+2026-05-13 09:50:07: LOG: Import: Z:/OWIS/3D/Rig/CL/MVB/Mem4/_Final/FBX/SKM_CL_Mem4_MVB_Bottom.fbx
+2026-05-13 09:52:31: LOG: Import: Z:/OWIS/3D/Rig/CL/MVB/Mem4/_Final/FBX/SKM_CL_Mem4_MVB_Bottom.fbx
+2026-05-13 10:00:12: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Body.fbx
+2026-05-13 10:00:15: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem4_Mod_grp
+2026-05-13 10:00:51: LOG: Import: Z:/OWIS/3D/Rig/CL/MVB/Mem4/_Final/FBX/SKM_CL_Mem4_MVB_Bottom.fbx
+2026-05-13 13:55:23: LOG: Import: Z:/OWIS/3D/Modeling/CL/KRM/Mem1/Work/Export/CL_Mem1_KRM_Top.fbx
+2026-05-13 13:55:33: LOG: Import: Z:/OWIS/3D/Modeling/CL/KRM/Mem1/Work/Export/CL_Mem1_KRM_Top_ChineseHairpin.fbx
+2026-05-13 14:03:16: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CH_Hair_Mem1_A_Kitty.fbx
+2026-05-13 14:03:24: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CL_Mem1_MKT_ACC_Kitty.fbx
+2026-05-13 14:03:42: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CH_Hair_Mem1_A_Kitty.fbx
+2026-05-13 14:03:59: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CH_Hair_Mem1_A_Kitty.fbx
+2026-05-13 14:05:12: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem2/Work/Export/CL_Mem2_MKT_ACC_Kitty/CH_Hair_Mem2_C_Kitty.fbx
+2026-05-13 14:18:32: LOG: Import: D:/Justin/MKT/Mem1/CL_Mem1_MKT_ACC_Kitty.fbx
+2026-05-13 14:21:16: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-13 14:21:19: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-13 14:29:26: LOG: Import: D:/Justin/MKT/Mem2/CL_Mem2_MKT_ACC_Kitty.fbx
+2026-05-13 14:30:38: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem2/_Final/FBX/SKM_CH_Mem2_Body.fbx
+2026-05-13 14:31:31: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_Kitty.fbx
+2026-05-13 14:32:30: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-13 14:32:33: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-13 14:33:02: LOG: Import: D:/Justin/MKT/Mem4/CL_Mem4_MKT_ACC_Kitty.fbx
+2026-05-13 14:33:59: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Body.fbx
+2026-05-13 14:34:02: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem4_Mod_grp
+2026-05-13 14:34:44: LOG: Import: D:/Justin/MKT/Mem5/CL_Mem5_MKT_ACC_Kitty.fbx
+2026-05-13 14:35:51: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-13 14:35:54: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-13 15:52:43: LOG: Import: D:/Justin/KRM/Mem1/CL_Mem1_KRM_Top.fbx
+2026-05-13 15:56:14: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-13 15:56:17: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-13 15:58:13: LOG: Import: D:/Justin/KRM/Mem3/CL_Mem3_KRM_Top.fbx
+2026-05-13 15:59:21: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-13 15:59:24: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-13 16:00:09: LOG: Import: D:/Justin/KRM/Mem4/CL_Mem4_KRM_Top.fbx
+2026-05-13 16:00:49: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Body.fbx
+2026-05-13 16:00:52: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem4_Mod_grp
+2026-05-13 16:04:49: LOG: Import: D:/Justin/KRM/Mem5/CL_Mem5_KRM_Top.fbx
+2026-05-13 16:06:16: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-13 16:06:19: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-13 16:44:17: LOG: Import: D:/Justin/MKT/Mem5/CL_Mem5_MKT_ACC_ChineseHairpin.fbx
+2026-05-13 16:46:44: LOG: Import: D:/Justin/MKT/Mem4/CL_Mem4_MKT_ACC_ChineseHairpin.fbx
+2026-05-13 16:49:36: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_ChineseHairpin.fbx
+2026-05-13 16:51:07: LOG: Import: D:/Justin/MKT/Mem1/CL_Mem1_MKT_ACC_ChineseHairpin.fbx
+2026-05-13 17:08:12: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_ChineseHairpin.fbx
+2026-05-14 09:17:48: LOG: Import: Z:/OWIS/3D/Rig/CL/MVB/Mem4/_Final/FBX/_old/v03/SKM_CL_Mem4_MVB_Bottom.fbx
+2026-05-14 09:36:09: LOG: Import: Z:/OWIS/3D/Rig/CL/MVB/Mem4/_Final/FBX/SKM_CL_Mem4_MVB_Bottom.fbx
+2026-05-14 09:41:53: LOG: Import: Z:/OWIS/3D/Rig/CL/MVB/Mem4/_Final/FBX/SKM_CL_Mem4_MVB_Bottom.fbx
+2026-05-14 16:48:01: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem4/Hair_C/_Final/FBX/SKM_HA_Mem4_Hair_C.fbx
+2026-05-15 09:15:47: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CH_Hair_Mem1_A_Kitty.fbx
+2026-05-15 09:19:28: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem1/Hair_A/_Final/FBX/SKM_CH_Hair_Mem1_Hair_A.fbx
+2026-05-15 09:19:32: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem1_A_H_grp CH_Hair_Mem1_A_Front_grp CH_Hair_Mem1_A_Sim_grp CH_Hair_Mem1_A_Side_L_grp CH_Hair_Mem1_A_Side_R_grp CH_Hair_Mem1_A_Bk_grp
+2026-05-15 09:52:53: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CL_Mem1_MKT_ACC_Kitty.fbx
+2026-05-15 10:28:17: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem2/Work/Export/CL_Mem2_MKT_ACC_Kitty/CL_Mem2_MKT_ACC_Kitty.fbx
+2026-05-15 10:29:02: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem2/Hair_B/_Final/FBX/SKM_HA_Mem2_Hair_B.fbx
+2026-05-15 10:29:34: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem2/Work/Export/CL_Mem2_MKT_ACC_Kitty/CH_Hair_Mem2_C_Kitty.fbx
+2026-05-15 10:31:17: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem4/Work/Export/CL_Mem4_MKT_ACC_Kitty/CL_Mem4_MKT_ACC_Kitty.fbx
+2026-05-15 10:31:36: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem4/Hair_C/_Final/FBX/SKM_HA_Mem4_Hair_C.fbx
+2026-05-15 10:34:13: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem4/Work/Export/CL_Mem4_MKT_ACC_Kitty/CL_Mem4_MKT_ACC_Kitty.fbx
+2026-05-15 10:34:14: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem4/Hair_C/_Final/FBX/SKM_HA_Mem4_Hair_C.fbx
+2026-05-15 11:31:32: LOG: Import: D:/Justin/MKT/Mem1/CH_Hair_Mem1_A_MKT_Blanket.fbx
+2026-05-15 11:31:52: LOG: Import: D:/Justin/MKT/Mem1/SKM_CL_Mem1_MKT_Blanket.fbx
+2026-05-15 11:33:19: LOG: Import: D:/Justin/MKT/Mem1/_old/CH_Hair_Mem1_A_MKT_Blanket.fbx
+2026-05-15 14:06:48: LOG: Import: D:/Justin/PTS/Mem1/CL_Mem1_Patissier.fbx
+2026-05-15 14:15:56: LOG: Import: Z:/OWIS/3D/Modeling/CL/PTS/Mem2/Work/Export/CL_Mem2_Patissier.fbx
+2026-05-15 14:16:21: LOG: Import: Z:/OWIS/3D/Modeling/CL/PTS/Mem3/Work/Export/CL_Mem3_Patissier.fbx
+2026-05-15 14:16:37: LOG: Import: Z:/OWIS/3D/Modeling/CL/PTS/Mem4/Work/Export/CL_Mem4_Patissier.fbx
+2026-05-15 14:21:24: LOG: Import: Z:/OWIS/3D/Modeling/CL/PTS/Mem5/Work/Export/CL_Mem5_Patissier.fbx
+2026-05-15 14:22:45: LOG: Import: Z:/OWIS/3D/Modeling/CL/PTS/Mem1/Work/Export/CL_Mem1_Patissier.fbx
+2026-05-15 14:30:14: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-15 14:30:18: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-15 14:35:30: LOG: Import: D:/Justin/PTS/Mem1/SKM_CL_Mem1_PTS_Cap.fbx
+2026-05-15 16:29:06: LOG: Import: C:/Users/Justin/Downloads/EP_26_CONE_ALL.fbx
+2026-05-15 16:32:02: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-15 16:32:05: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-15 16:35:32: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem2/_Final/FBX/SKM_CH_Mem2_Body.fbx
+2026-05-15 16:37:12: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-15 16:37:15: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-15 16:39:18: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Body.fbx
+2026-05-15 16:39:21: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem4_Mod_grp
+2026-05-15 16:41:16: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-15 16:41:19: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-15 16:42:51: LOG: Import: D:/Justin/MKT/Mem1/EP_26_Mem1_Cone.fbx
+2026-05-15 17:37:04: LOG: Import: D:/Justin/PTS/Mem1/CL_Mem1_PTS.fbx
+2026-05-15 17:44:05: LOG: Import: D:/Justin/PTS/Mem2/CL_Mem2_PTS.fbx
+2026-05-15 17:46:26: LOG: Import: D:/Justin/PTS/Mem2/CL_Mem2_PTS.fbx
+2026-05-15 17:56:54: LOG: Import: D:/Justin/PTS/Mem1/CL_Mem1_PTS.fbx
+2026-05-15 17:57:11: LOG: Import: D:/Justin/PTS/Mem3/CL_Mem3_PTS.fbx
+2026-05-15 17:59:18: LOG: Import: D:/Justin/PTS/Mem4/CL_Mem4_PTS.fbx
+2026-05-15 17:59:27: LOG: Import: D:/Justin/PTS/Mem5/CL_Mem5_PTS.fbx
+2026-05-18 09:40:34: LOG: Import: D:/Justin/PTS/Mem4/CL_Mem4_PTS.fbx
+2026-05-18 09:49:56: LOG: Import: D:/Justin/PTS/Mem5/CL_Mem5_PTS.fbx
+2026-05-18 09:50:31: LOG: Import: D:/Justin/PTS/Mem5/CL_Mem5_PTS.fbx
+2026-05-18 09:55:57: LOG: Import: D:/Justin/PTS/Mem4/CL_Mem4_PTS.fbx
+2026-05-18 09:56:22: LOG: Import: D:/Justin/PTS/Mem1/CL_Mem1_PTS.fbx
+2026-05-18 10:09:21: LOG: Import: D:/Justin/PTS/Mem1/CL_Mem1_PTS.fbx
+2026-05-18 10:09:45: LOG: Import: D:/Justin/PTS/Mem2/CL_Mem2_PTS.fbx
+2026-05-18 10:09:58: LOG: Import: D:/Justin/PTS/Mem3/CL_Mem3_PTS.fbx
+2026-05-18 10:10:12: LOG: Import: D:/Justin/PTS/Mem4/CL_Mem4_PTS.fbx
+2026-05-18 10:10:24: LOG: Import: D:/Justin/PTS/Mem5/CL_Mem5_PTS.fbx
+2026-05-18 13:40:09: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-18 13:40:12: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-18 13:41:19: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem2/_Final/FBX/SKM_CH_Mem2_Body.fbx
+2026-05-18 13:41:59: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem3/_Final/FBX/SKM_CH_Mem3_Body.fbx
+2026-05-18 13:42:01: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem3_Mod_Grp
+2026-05-18 13:42:41: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem4/_Final/FBX/SKM_CH_Mem4_Body.fbx
+2026-05-18 13:42:44: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem4_Mod_grp
+2026-05-18 13:43:12: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-18 13:43:15: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-18 13:45:31: LOG: Import: D:/Justin/PTS/Mem1/SKM_CL_Mem1_PTS_Cap.fbx
+2026-05-18 13:45:54: LOG: Import: D:/Justin/PTS/Mem2/SKM_CL_Mem2_PTS_Cap.fbx
+2026-05-18 16:40:25: LOG: Import: Z:/OWIS/3D/Rig/PROP/Mem0_HeadPosition.fbx
+2026-05-18 16:41:07: LOG: Import: D:/Justin/PTS/Mem3/SM_CL_Mem3_PTS_Cap.fbx
+2026-05-18 16:53:47: LOG: Import: Z:/OWIS/3D/Rig/PROP/Mem0_HeadPosition.fbx
+2026-05-18 17:06:26: LOG: Import: D:/Justin/PTS/Mem3/SM_CL_Mem3_PTS_Cap.fbx
+2026-05-18 17:07:24: LOG: Import: Z:/OWIS/3D/Rig/PROP/Mem0_HeadPosition.fbx
+2026-05-18 17:07:55: LOG: Import: D:/Justin/PTS/Mem4/SM_CL_Mem4_PTS_Cap.fbx
+2026-05-18 17:09:31: LOG: Import: D:/Justin/PTS/Mem5/SM_CL_Mem5_PTS_Cap.fbx
+2026-05-18 17:40:12: LOG: Import: D:/Justin/MKT/Mem1/SKM_CL_Mem1_MKT_Blanket.fbx
+2026-05-19 10:07:31: LOG: Import: D:/Justin/Mem0_HeadPosition/Mem0_HeadPosition.fbx
+2026-05-19 10:07:56: LOG: Import: D:/Justin/MKT/Mem1/CL_Mem1_MKT_ACC_GeekChicGlasses.fbx
+2026-05-19 10:10:30: LOG: Import: D:/Justin/MKT/Mem2/CL_Mem2_MKT_ACC_GeekChicGlasses.fbx
+2026-05-19 10:12:56: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_GeekChicGlasses.fbx
+2026-05-19 10:16:47: LOG: Import: D:/Justin/MKT/Mem4/CL_Mem4_MKT_ACC_GeekChicGlasses.fbx
+2026-05-19 10:23:10: LOG: Import: D:/Justin/MKT/Mem5/CL_Mem5_MKT_ACC_GeekChicGlasses.fbx
+2026-05-19 10:33:49: LOG: Import: D:/Justin/MKT/Mem3/_old/SKM_CL_Mem3_MKT_Blanket.fbx
+2026-05-19 10:47:15: LOG: Import: Z:/OWIS/3D/Rig/CL/MKT/Mem5/_Final/FBX/SKM_HA_Mem4_Hair_C_MKT_Kitty.fbx
+2026-05-19 10:52:29: LOG: Import: D:/Justin/MKT/Mem5/SKM_CL_Mem5_MKT_Blanket.fbx
+2026-05-19 11:02:00: LOG: Import: D:/Justin/MKT/Mem1/SKM_CL_Mem1_MKT_Blanket.fbx
+2026-05-19 11:13:01: LOG: Import: D:/Justin/MKT/Mem2/SKM_CL_Mem2_MKT_Blanket.fbx
+2026-05-19 11:13:15: LOG: Import: D:/Justin/MKT/Mem3/_old/SKM_CL_Mem3_MKT_Blanket.fbx
+2026-05-19 11:13:26: LOG: Import: D:/Justin/MKT/Mem4/SKM_CL_Mem4_MKT_Blanket.fbx
+2026-05-19 11:13:37: LOG: Import: D:/Justin/MKT/Mem5/SKM_CL_Mem5_MKT_Blanket.fbx
+2026-05-19 16:27:36: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem1/Hair_A/_Final/FBX/SKM_CH_Hair_Mem1_Hair_A.fbx
+2026-05-19 16:27:38: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem1_A_H_grp CH_Hair_Mem1_A_Front_grp CH_Hair_Mem1_A_Sim_grp CH_Hair_Mem1_A_Side_L_grp CH_Hair_Mem1_A_Side_R_grp CH_Hair_Mem1_A_Bk_grp
+2026-05-19 16:27:39: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CL_Mem1_MKT_ACC_Kitty.fbx
+2026-05-21 10:31:02: LOG: Import: Z:/OWIS/Outsourcing/To_Animost/260513/KRM/Mem1/CL_Mem1_KRM_Top.fbx
+2026-05-21 10:31:23: LOG: Import: Z:/OWIS/Outsourcing/To_Animost/260513/KRM/Mem3/CL_Mem3_KRM_Top.fbx
+2026-05-21 10:31:32: LOG: Import: Z:/OWIS/Outsourcing/To_Animost/260513/KRM/Mem4/CL_Mem4_KRM_Top.fbx
+2026-05-21 10:31:45: LOG: Import: Z:/OWIS/Outsourcing/To_Animost/260513/KRM/Mem5/CL_Mem5_KRM_Top.fbx
+2026-05-26 16:00:50: LOG: Import: Z:/OWIS/Outsourcing/To_Doowoo/26.05.18/PTS/Mem5/CL_Mem5_PTS.fbx
+2026-05-26 16:01:06: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-26 16:01:09: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-26 16:07:42: LOG: Import: Z:/OWIS/Outsourcing/To_Doowoo/26.05.18/PTS/Mem5/CL_Mem5_PTS.fbx
+2026-05-26 16:24:48: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CL_Mem1_MKT_ACC_Kitty.fbx
+2026-05-26 16:25:36: LOG: Import: Z:/OWIS/Outsourcing/To_Doowoo/26.05.13/MKT_ACC_Kitty/Mem4/CL_Mem4_MKT_ACC_Kitty.fbx
+2026-05-26 16:32:11: LOG: Import: Z:/OWIS/3D/Rig/CL/CSC/Mem4/_Final/FBX/SKM_CL_Mem4_CSC_Shoes.fbx
+2026-05-26 16:45:22: LOG: Import: Z:/OWIS/3D/Modeling/CL/PTS/Mem5/Work/Export/CL_Mem5_PTS.fbx
+2026-05-26 16:45:36: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-26 16:45:39: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-26 16:46:40: LOG: Import: Z:/OWIS/3D/Rig/CL/CSC/Mem4/_Final/FBX/SKM_CL_Mem4_CSC_Shoes.fbx
+2026-05-26 16:52:01: LOG: Import: Z:/OWIS/3D/Modeling/CL/PTS/Mem5/Work/Export/CL_Mem5_PTS.fbx
+2026-05-26 16:52:11: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-05-26 16:52:14: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-05-26 16:53:53: LOG: Import: Z:/OWIS/Outsourcing/To_Doowoo/26.05.18/PTS/Mem5/CL_Mem5_PTS.fbx
+2026-05-26 17:12:19: LOG: Import: D:/Justin/MaterialOrder/Test_A.fbx
+2026-05-28 10:42:08: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-28 10:42:11: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-28 10:42:21: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Head.fbx
+2026-05-28 10:42:28: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Head_grp CH_Mem1_Mod_Grp CH_Mem1_Upper_grp CH_Mem1_Teeth_grp CH_Mem1_Under_grp
+2026-05-28 10:43:25: LOG: Import: Z:/OWIS/3D/Rig/CL/TRA/Mem1/_Final/FBX/SKM_CL_Mem1_TRA_Top_In.fbx
+2026-05-28 10:43:27: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CL_Mem1_Tr_Top_In_grp
+2026-05-28 10:53:46: LOG: Import: Z:/OWIS/3D/Rig/CL/STA/Mem1/_Final/FBX/SKM_CL_Mem1_STA_CL_Top.fbx
+2026-05-28 10:54:43: LOG: Import: Z:/OWIS/3D/Rig/CL/TRA/Mem1/_Final/FBX/SKM_CL_Mem1_TRA_Top_In.fbx
+2026-05-28 10:54:45: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CL_Mem1_Tr_Top_In_grp
+2026-05-28 11:37:31: LOG: Import: Z:/OWIS/3D/Rig/CL/TRA/Mem1/_Final/FBX/SKM_CL_Mem1_TRA_Top_Out.fbx
+2026-05-28 11:37:34: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CL_Mem1_Tr_Top_Out_grp
+2026-05-28 12:25:02: LOG: Import: D:/Outsourced/Beard/2026.03.23/20260323_fin/Serene/MVC_Mem1_baked.fbx
+2026-05-28 13:29:57: LOG: Import: Z:/OWIS/3D/Rig/CL/TRA/Mem1/_Final/FBX/SKM_CL_Mem1_TRA_Top_In.fbx
+2026-05-28 13:30:38: LOG: Import: D:/Outsourced/Beard/2026.03.23/20260323_fin/Serene/MVC_Mem1_baked.fbx
+2026-05-28 13:58:57: LOG: Import: D:/Justin/KyuhoTest/Mem1.fbx
+2026-05-28 13:59:16: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Head_grp CH_Mem1_Mod_Grp head neck_02 neck_01 spine_05 spine_04 spine_03 spine_02 spine_01 pelvis CH_Mem1_Upper_grp CH_Mem1_Teeth_grp CH_Mem1_Under_grp CL_Mem1_Tr_Bottom_grp CL_Mem1_Tr_Shose_grp CL_Mem1_Tr_Top_Out_grp FACIAL_L_EyelidUpperA1 FACIAL_L_EyelidUpperA FACIAL_L_EyelidUpperA2 FACIAL_L_EyelidUpperA3 FACIAL_R_EyelidUpperA1 FACIAL_R_EyelidUpperA FACIAL_R_EyelidUpperA2 FACIAL_R_EyelidUpperA3 FACIAL_L_EyelidLowerA FACIAL_R_EyelidLowerA FACIAL_L_EyeCornerInner FACIAL_R_EyeCornerInner FACIAL_L_EyeCornerOuter FACIAL_R_EyeCornerOuter1 FACIAL_R_EyeCornerOuter FACIAL_C_MouthUpper FACIAL_C_LowerLipRotation FACIAL_C_LipLower FACIAL_C_MouthLower FACIAL_L_LipLower FACIAL_R_LipLower FACIAL_L_LipLowerOuter FACIAL_R_LipLowerOuter FACIAL_C_Jaw FACIAL_L_EyeParallel CL_Mem1_Tr_Top_In_grp
+2026-05-28 13:59:16: LOG: [WARNING] BindPose - Incomplete BindPose [link nodes] - The following Link node(s) is/are not part of the BindPose definition. spine_04 clavicle_pec_l clavicle_pec_r spine_04_latissimus_l spine_04_latissimus_r clavicle_l clavicle_out_l clavicle_scap_l upperarm_out_l upperarm_fwd_l upperarm_in_l upperarm_bck_l clavicle_r clavicle_out_r clavicle_scap_r upperarm_out_r upperarm_fwd_r upperarm_in_r upperarm_bck_r head upperarm_correctiveRoot_l upperarm_correctiveRoot_r root pelvis spine_01 spine_02 spine_03 spine_05 neck_01 neck_02 upperarm_l lowerarm_l hand_l middle_metacarpal_l middle_01_l middle_02_l middle_03_l middle_03_half_l middle_03_in_l middle_02_dip_l middle_03_bulge_l middle_02_side_inn_l middle_02_side_out_l middle_02_half_l middle_02_in_l middle_02_pip_l middle_02_bulge_l middle_01_side_inn_l middle_01_side_out_l middle_01_half_l middle_01_palm_l middle_01_mcp_l middle_01_bulge_l middle_01_palmMid_l middle_metacarpal_slide_l pinky_metacarpal_l pinky_01_l pinky_02_l pinky_03_l pinky_03_half_l pinky_0
+2026-05-28 13:59:16: LOG: [WARNING] BindPose - Incomplete BindPose [link nodes parents] - The following parent and/or ancestor node of the Link(s) is/are not part of the BindPose definition. upperarm_correctiveRoot_l upperarm_l upperarm_correctiveRoot_r upperarm_r
+2026-05-28 13:59:16: LOG: [WARNING] Skin Definition - The imported scene has no initial binding position (Bind Pose) for the skin. 
+	The plug-in will compute one automatically. However, running the 'Go To Bind Pose' command 
+	may create unexpected results.   
+2026-05-28 13:59:40: LOG: Import: D:/Outsourced/Beard/2026.03.23/20260323_fin/Serene/MVC_Mem1_baked.fbx
+2026-05-28 14:02:04: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Body.fbx
+2026-05-28 14:02:07: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Mod_Grp
+2026-05-28 14:02:14: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem1/_Final/FBX/SKM_CH_Mem1_Head.fbx
+2026-05-28 14:02:22: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem1_Head_grp CH_Mem1_Mod_Grp CH_Mem1_Upper_grp CH_Mem1_Teeth_grp CH_Mem1_Under_grp
+2026-05-28 14:02:39: LOG: Import: Z:/OWIS/3D/Rig/CL/TRA/Mem1/_Final/FBX/SKM_CL_Mem1_TRA_Top_In.fbx
+2026-05-28 14:02:47: LOG: Import: Z:/OWIS/3D/Rig/CL/TRA/Mem1/_Final/FBX/SKM_CL_Mem1_TRA_Top_Out.fbx
+2026-05-28 14:52:45: LOG: Import: Z:/OWIS/3D/Rig/CL/TRA/Mem1/_Final/FBX/_old/v01/SKM_CL_Mem1_TRA_Top_Out.fbx
+2026-05-28 14:52:49: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CL_Mem1_Tr_Top_Out_grp
+2026-05-28 15:28:15: LOG: Import: D:/Outsourced/Animost/20260527_CSC_Mem4_5/FBX/CSC/Mem4/SKM_CL_Mem4_CSC_Top.fbx
+2026-05-28 17:10:00: LOG: Import: D:/Justin/MKT/Mem1/CL_Mem1_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:10:18: LOG: Import: D:/Justin/MKT/Mem1/SM_CL_Mem1_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:10:39: LOG: Import: D:/Justin/MKT/Mem1/CL_Mem1_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:11:13: LOG: Import: D:/Justin/MKT/Mem1/SM_CL_Mem1_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:11:35: LOG: Import: D:/Justin/MKT/Mem1/CL_Mem1_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:12:25: LOG: Import: D:/Justin/MKT/Mem1/SM_CL_Mem1_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:13:09: LOG: Import: D:/Justin/MKT/Mem2/CL_Mem2_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:13:22: LOG: Import: D:/Justin/MKT/Mem2/CL_Mem2_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:13:35: LOG: Import: D:/Justin/MKT/Mem2/SM_CL_Mem2_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:14:15: LOG: Import: D:/Justin/MKT/Mem3/CL_Mem3_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:14:24: LOG: Import: D:/Justin/MKT/Mem3/SM_CL_Mem3_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:15:23: LOG: Import: D:/Justin/MKT/Mem4/CL_Mem4_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:16:30: LOG: Import: D:/Justin/MKT/Mem4/SM_CL_Mem4_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:17:13: LOG: Import: D:/Justin/MKT/Mem5/CL_Mem5_MKT_ACC_GeekChicGlasses.fbx
+2026-05-28 17:18:26: LOG: Import: D:/Justin/MKT/Mem5/SM_CL_Mem5_MKT_ACC_GeekChicGlasses.fbx
+2026-05-29 09:58:34: LOG: Import: Z:/OWIS/3D/Rig/CL/CSC/Mem4/_Final/FBX/SKM_CL_Mem4_CSC_Bottom.fbx
+2026-05-29 10:17:14: LOG: Import: Z:/OWIS/3D/Modeling/CL/CSC/Mem5/Work/Export/CL_Mem5_CSC.fbx
+2026-05-29 10:18:29: LOG: Import: Z:/OWIS/3D/Modeling/CL/CSC/Mem5/Work/Export/CL_Mem5_CSC.fbx
+2026-05-29 14:41:15: LOG: Import: Z:/OWIS/Outsourcing/To_Animost/260416/CSC/Mem4/CL_Mem4_CSC.fbx
+2026-05-29 14:42:06: LOG: Import: Z:/OWIS/3D/Modeling/CL/CSC/Mem4/Work/Export/CL_Mem4_CSC.fbx
+2026-06-02 10:08:29: LOG: Import: D:/Outsourced/Animost/20260527_CSC_Mem4_5/FBX/CSC/Mem4/SKM_CL_Mem4_CSC_ACC_Headset.fbx
+2026-06-04 09:25:20: LOG: Import: Z:/OWIS/3D/Rig/CL/CSC/Mem5/_Final/FBX/SKM_CL_Mem5_CSC_BodyCut.fbx
+2026-06-04 10:17:33: LOG: Import: D:/Outsourced/Animost/20260529_CSC_Mem5/FBX/CSC/Mem5/SKM_CL_Mem5_CSC_BodyCut.fbx
+2026-06-04 10:21:32: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem5/_Final/FBX/SKM_CH_Mem5_Body.fbx
+2026-06-04 10:21:40: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Mem5_Mod_Grp
+2026-06-08 11:08:03: LOG: Import: Z:/OWIS/3D/Rig/CL/MKT/Mem2/_Final/FBX/SKM_CL_Mem2_MKT_ACC_KittyGLoves.fbx
+2026-06-08 11:14:19: LOG: Import: Z:/OWIS/3D/Rig/CH/Mem2/_Final/FBX/SKM_CH_Mem2_Body.fbx
+2026-06-08 12:00:48: LOG: Import: Z:/OWIS/Outsourcing/To_Doowoo/26.05.13/MKT_ACC_Kitty/Mem2/CL_Mem2_MKT_ACC_Kitty.fbx
+2026-06-08 12:10:59: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CH_Hair_Mem1_A_Kitty.fbx
+2026-06-08 12:17:30: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem1/Hair_A/_Final/FBX/SKM_CH_Hair_Mem1_Hair_A.fbx
+2026-06-08 12:17:37: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem1_A_H_grp CH_Hair_Mem1_A_Front_grp CH_Hair_Mem1_A_Sim_grp CH_Hair_Mem1_A_Side_L_grp CH_Hair_Mem1_A_Side_R_grp CH_Hair_Mem1_A_Bk_grp
+2026-06-08 12:17:37: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem1/Work/Export/CL_Mem1_MKT_ACC_Kitty/CL_Mem1_MKT_ACC_Kitty.fbx
+2026-06-08 15:47:52: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem2/Work/Export/CL_Mem2_MKT_ACC_Kitty/CL_Mem2_MKT_ACC_Kitty.fbx
+2026-06-08 15:47:52: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem2/Hair_B/_Final/FBX/SKM_HA_Mem2_Hair_B.fbx
+2026-06-08 15:48:03: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem2/Work/Export/CL_Mem2_MKT_ACC_Kitty/CH_Hair_Mem2_C_Kitty.fbx
+2026-06-08 17:22:02: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem2/Work/Export/CL_Mem2_MKT_ACC_Kitty/CL_Mem2_MKT_ACC_Kitty.fbx
+2026-06-08 17:22:03: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem2/Hair_B/_Final/FBX/SKM_HA_Mem2_Hair_B.fbx
+2026-06-08 17:22:15: LOG: Import: Z:/OWIS/3D/Modeling/CL/MKT/Mem2/Work/Export/CL_Mem2_MKT_ACC_Kitty/CH_Hair_Mem2_C_Kitty.fbx
+2026-06-08 17:59:31: LOG: Import: D:/Justin/MKT/Mem4/CL_Mem4_MKT_ACC_Kitty.fbx
+2026-06-08 18:00:01: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem4/Hair_C/_Final/FBX/SKM_HA_Mem4_Hair_C.fbx
+2026-06-09 09:02:55: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem4/Hair_C/_Final/FBX/SKM_HA_Mem4_Hair_C.fbx
+2026-06-09 17:02:33: LOG: Import: Z:/OWIS/3D/Rig/CH_Hair/Mem1/Hair_A/_Final/FBX/SKM_CH_Hair_Mem1_Hair_A.fbx
+2026-06-09 17:02:40: LOG: [WARNING] BindPose - Incomplete BindPose [nodes parents] - The following parent and/or ancestor node(s) is/are not part of the BindPose definition. CH_Hair_Mem1_A_H_grp CH_Hair_Mem1_A_Front_grp CH_Hair_Mem1_A_Sim_grp CH_Hair_Mem1_A_Side_L_grp CH_Hair_Mem1_A_Side_R_grp CH_Hair_Mem1_A_Bk_grp

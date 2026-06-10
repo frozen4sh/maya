@@ -1,0 +1,3 @@
+#!/usr/bin/env python
+import qtpy.__main__ as mod
+mod.main()

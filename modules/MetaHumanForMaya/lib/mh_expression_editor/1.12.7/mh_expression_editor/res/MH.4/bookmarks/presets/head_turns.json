@@ -1,0 +1,367 @@
+{
+  "nodes": {
+    "neck_stretch": {
+      "name": "neck_stretch",
+      "layer": 0,
+      "inputs": [],
+      "outputs": [
+        "HtiltLeft_NKstretch_tgt",
+        "HtiltRight_NKstretch_tgt",
+        "HturnDown_NKstretch_tgt",
+        "HturnLeft_NKstretch_tgt",
+        "HturnRight_NKstretch_tgt",
+        "HturnUp_NKstretch_tgt"
+      ],
+      "position": [
+        0.0,
+        -55.821000000000005
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "neck_throatExhale": {
+      "name": "neck_throatExhale",
+      "layer": 0,
+      "inputs": [],
+      "outputs": [
+        "HturnDown_NKthroatExhale_tgt",
+        "HturnUp_NKthroatExhale_tgt"
+      ],
+      "position": [
+        0.0,
+        55.821000000000005
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "neck_throatInhale": {
+      "name": "neck_throatInhale",
+      "layer": 0,
+      "inputs": [],
+      "outputs": [
+        "HturnDown_NKthroatInhale_tgt",
+        "HturnUp_NKthroatInhale_tgt"
+      ],
+      "position": [
+        0.0,
+        167.46300000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "head_tiltLeft_tgt": {
+      "name": "head_tiltLeft_tgt",
+      "layer": 1,
+      "inputs": [],
+      "outputs": [
+        "HtiltLeft_NKstretch_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -223.28400000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "head_tiltRight_tgt": {
+      "name": "head_tiltRight_tgt",
+      "layer": 1,
+      "inputs": [],
+      "outputs": [
+        "HtiltRight_NKstretch_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -111.64200000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "head_turnDown_tgt": {
+      "name": "head_turnDown_tgt",
+      "layer": 1,
+      "inputs": [],
+      "outputs": [
+        "HturnDown_NKstretch_tgt",
+        "HturnDown_NKthroatExhale_tgt",
+        "HturnDown_NKthroatInhale_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        0.0
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "head_turnLeft_tgt": {
+      "name": "head_turnLeft_tgt",
+      "layer": 1,
+      "inputs": [],
+      "outputs": [
+        "HturnLeft_NKstretch_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        111.64200000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "head_turnRight_tgt": {
+      "name": "head_turnRight_tgt",
+      "layer": 1,
+      "inputs": [],
+      "outputs": [
+        "HturnRight_NKstretch_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        223.28400000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "head_turnUp_tgt": {
+      "name": "head_turnUp_tgt",
+      "layer": 1,
+      "inputs": [],
+      "outputs": [
+        "HturnUp_NKstretch_tgt",
+        "HturnUp_NKthroatExhale_tgt",
+        "HturnUp_NKthroatInhale_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        334.92600000000004
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HtiltLeft_NKstretch_tgt": {
+      "name": "HtiltLeft_NKstretch_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_tiltLeft_tgt",
+        "neck_stretch"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        -446.56800000000004
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HtiltRight_NKstretch_tgt": {
+      "name": "HtiltRight_NKstretch_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_tiltRight_tgt",
+        "neck_stretch"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        -334.92600000000004
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HturnDown_NKstretch_tgt": {
+      "name": "HturnDown_NKstretch_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_turnDown_tgt",
+        "neck_stretch"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        -223.28400000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HturnDown_NKthroatExhale_tgt": {
+      "name": "HturnDown_NKthroatExhale_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_turnDown_tgt",
+        "neck_throatExhale"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        -111.64200000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HturnDown_NKthroatInhale_tgt": {
+      "name": "HturnDown_NKthroatInhale_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_turnDown_tgt",
+        "neck_throatInhale"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        0.0
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HturnLeft_NKstretch_tgt": {
+      "name": "HturnLeft_NKstretch_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_turnLeft_tgt",
+        "neck_stretch"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        111.64200000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HturnRight_NKstretch_tgt": {
+      "name": "HturnRight_NKstretch_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_turnRight_tgt",
+        "neck_stretch"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        223.28400000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HturnUp_NKstretch_tgt": {
+      "name": "HturnUp_NKstretch_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_turnUp_tgt",
+        "neck_stretch"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        334.92600000000004
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HturnUp_NKthroatExhale_tgt": {
+      "name": "HturnUp_NKthroatExhale_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_turnUp_tgt",
+        "neck_throatExhale"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        446.56800000000004
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "HturnUp_NKthroatInhale_tgt": {
+      "name": "HturnUp_NKthroatInhale_tgt",
+      "layer": 2,
+      "inputs": [
+        "head_turnUp_tgt",
+        "neck_throatInhale"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        558.21
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    }
+  }
+}

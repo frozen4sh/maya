@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px"
+     viewBox="0 0 16 16" version="1.1">
+    <g id="surface1">
+        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(20%,60.784314%,100%);fill-opacity:1;"
+              d="M 8 10.917969 L 0.640625 0.617188 L 15.359375 0.617188 Z M 8 10.917969 "/>
+        <path style=" stroke:none;fill-rule:evenodd;fill:rgb(20%,60.784314%,100%);fill-opacity:1;"
+              d="M 8 15.382812 L 0.640625 5.082031 L 2.71875 5.082031 L 8 12.523438 L 13.28125 5.082031 L 15.359375 5.082031 Z M 8 15.382812 "/>
+    </g>
+</svg>

@@ -3,3 +3,6 @@
 projects/default/autosave/
 *.mb
 *.ma
+
+# GitHub 100MB 제한 초과 - MetaHuman ML 모델 바이너리
+modules/MetaHumanForMaya/lib/ml_jm_model/

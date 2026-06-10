@@ -1,0 +1,12 @@
+QPushButton {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+QPushButton[Category=true] {
+    text-align: left;
+}
+
+QSplitter {
+    padding: 6px;
+}

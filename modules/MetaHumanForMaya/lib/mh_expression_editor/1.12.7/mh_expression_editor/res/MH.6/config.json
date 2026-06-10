@@ -1,0 +1,813 @@
+{
+  "pruning_threshold": {
+    "corrective_blend_shape_pruning_threshold": 0.002,
+    "joint_translation_pruning_threshold": 0.0001,
+    "joint_rotation_pruning_threshold": 0.00174533,
+    "joint_scale_pruning_threshold": 0.001
+  },
+  "phase_expression_views": {
+    "neck_swallow": {
+      "neutral_range": 10,
+      "phase_numbers": [8, 16, 24, 32, 40],
+      "view": {}
+    },
+    "mouth_lipsSticky_cmx": {
+      "neutral_range": 10,
+      "phase_numbers": [40],
+      "view": {}
+    },
+    "mouth_lipsSticky_tgt": {
+      "neutral_range": 10,
+      "phase_numbers": [10, 20, 30],
+      "view": {
+        "expression_name": "mouth_lipsSticky_cmx",
+        "frame": 3,
+        "multiplier": 1.0
+      }
+    }
+  },
+  "control_renaming": {
+    "neck_01.qx": "neck_01.rx",
+    "neck_01.qy": "neck_01.ry",
+    "neck_01.qz": "neck_01.rz",
+    "neck_02.qx": "neck_02.rx",
+    "neck_02.qy": "neck_02.ry",
+    "neck_02.qz": "neck_02.rz",
+    "head.qx": "head.rx",
+    "head.qy": "head.ry",
+    "head.qz": "head.rz"
+  },
+  "neck_joints": [
+    "head",
+    "neck_01",
+    "neck_02"
+  ],
+  "gui_positioning": {
+    "left_arm_joint_name": "upperarm_out_l",
+    "eye_aim_control_name": "CTRL_C_eyesAim",
+    "right_eye_control_name": "CTRL_R_eye",
+    "gui_object_name": "CTRL_faceGUI"
+  },
+  "additional_gui_controls": {
+    "CTRL_C_eye.tx": ["CTRL_L_eye.tx", "CTRL_R_eye.tx"],
+    "CTRL_C_eye.ty": ["CTRL_L_eye.ty", "CTRL_R_eye.ty"]
+  },
+  "skip_modeling_expressions": [
+    "eye_lidPress",
+    "head_back",
+    "head_back_tgt",
+    "head_fwd",
+    "head_fwd_tgt",
+    "head_sideLeft",
+    "head_sideLeft_tgt",
+    "head_sideRight",
+    "head_sideRight_tgt",
+    "head_tiltLeft",
+    "head_tiltRight",
+    "head_turnDown",
+    "head_turnLeft",
+    "head_turnRight",
+    "head_turnUp",
+    "jaw_openExtreme",
+    "mouth_lipsSticky_L_ph1",
+    "mouth_lipsSticky_L_ph2",
+    "mouth_lipsSticky_L_ph3",
+    "mouth_lipsSticky_R_ph1",
+    "mouth_lipsSticky_R_ph2",
+    "mouth_lipsSticky_R_ph3",
+    "mouth_lipsTogether",
+    "mouth_stretchLipsClose",
+    "neck_swallow_ph1",
+    "neck_swallow_ph2",
+    "neck_swallow_ph3",
+    "neck_swallow_ph4",
+    "nose_wrinkleUpper"
+  ],
+  "split_expressions": {
+    "brow_raise_cor": [
+      "brow_raiseOuter_left",
+      "brow_raiseOuter_right",
+      "brow_raiseIn"
+    ],
+    "nose_wrinkle_cor": [
+      "nose_wrinkle_left",
+      "nose_wrinkle_right"
+    ],
+    "cheek_blow_cor": [
+      "cheek_blow_left",
+      "cheek_blow_right"
+    ],
+    "mouth_upperLipRaise_cor": [
+      "mouth_upperLipRaise_left",
+      "mouth_upperLipRaise_right"
+    ],
+    "mouth_lowerLipDepress_cor": [
+      "mouth_lowerLipDepress_left",
+      "mouth_lowerLipDepress_right"
+    ],
+    "mouth_cornerPull_cor": [
+      "mouth_cornerPull_left",
+      "mouth_cornerPull_right"
+    ],
+    "mouth_stretch_cor": [
+      "mouth_stretch_left",
+      "mouth_stretch_right"
+    ],
+    "mouth_dimple_cor": [
+      "mouth_dimple_left",
+      "mouth_dimple_right"
+    ]
+  },
+  "head_turns_data": {
+    "main_expressions": [
+      "head_tiltLeft",
+      "head_tiltRight",
+      "head_turnDown",
+      "head_turnLeft",
+      "head_turnRight",
+      "head_turnUp"
+    ],
+    "neck_joints_animation": {
+      "head_tiltLeft": {
+        "head": [
+          0.0,
+          10.0,
+          0.0
+        ],
+        "neck_01": [
+          -3.27487562,
+          14.64615521,
+          -0.4209747351
+        ],
+        "neck_02": [
+          -3.038406945,
+          14.69596768,
+          -0.3919058552
+        ]
+      },
+      "head_tiltRight": {
+        "head": [
+          0.0,
+          -10.0,
+          0.0
+        ],
+        "neck_01": [
+          3.27487562,
+          -14.64615521,
+          -0.4209747349
+        ],
+        "neck_02": [
+          3.038406945,
+          -14.69596768,
+          -0.3919058551
+        ]
+      },
+      "head_turnDown": {
+        "head": [
+          0.0,
+          0.0,
+          -15.0
+        ],
+        "neck_01": [
+          0.0,
+          0.0,
+          -20.0
+        ],
+        "neck_02": [
+          0.0,
+          0.0,
+          -15.0
+        ]
+      },
+      "head_turnLeft": {
+        "head": [
+          25.0,
+          0.0,
+          0.0
+        ],
+        "neck_01": [
+          19.57359114,
+          4.190845941,
+          0.7089448564
+        ],
+        "neck_02": [
+          19.63470805,
+          3.882382477,
+          0.687337184
+        ]
+      },
+      "head_turnRight": {
+        "head": [
+          -25.0,
+          0.0,
+          0.0
+        ],
+        "neck_01": [
+          -19.57457497,
+          -4.186069084,
+          0.7366732244
+        ],
+        "neck_02": [
+          -19.6337312,
+          -3.887514341,
+          0.6576465374
+        ]
+      },
+      "head_turnUp": {
+        "head": [
+          0.0,
+          0.0,
+          25.0
+        ],
+        "neck_01": [
+          0.0,
+          0.0,
+          10.0
+        ],
+        "neck_02": [
+          0.0,
+          0.0,
+          20.0
+        ]
+      },
+      "head_tiltLeft_tgt": {
+        "head": [
+          0,
+          10,
+          0
+        ],
+        "neck_01": [
+          -3.27487562,
+          14.64615521,
+          -0.4209747351
+        ],
+        "neck_02": [
+          -3.038406945,
+          14.69596768,
+          -0.3919058552
+        ]
+      },
+      "HtiltLeft_NKstretch_tgt": {
+        "head": [
+          0,
+          10,
+          0
+        ],
+        "neck_01": [
+          -3.27487562,
+          14.64615521,
+          -0.4209747351
+        ],
+        "neck_02": [
+          -3.038406945,
+          14.69596768,
+          -0.3919058552
+        ]
+      },
+      "head_tiltRight_tgt": {
+        "head": [
+          0,
+          -10,
+          0
+        ],
+        "neck_01": [
+          3.27487562,
+          -14.64615521,
+          -0.4209747349
+        ],
+        "neck_02": [
+          3.038406945,
+          -14.69596768,
+          -0.3919058551
+        ]
+      },
+      "HtiltRight_NKstretch_tgt": {
+        "head": [
+          0,
+          -10,
+          0
+        ],
+        "neck_01": [
+          3.27487562,
+          -14.64615521,
+          -0.4209747349
+        ],
+        "neck_02": [
+          3.038406945,
+          -14.69596768,
+          -0.3919058551
+        ]
+      },
+      "head_turnDown_tgt": {
+        "head": [
+          0,
+          0,
+          -15
+        ],
+        "neck_01": [
+          0,
+          0,
+          -20
+        ],
+        "neck_02": [
+          0,
+          0,
+          -15
+        ]
+      },
+      "HturnDown_NKthroatExhale_tgt": {
+        "head": [
+          0,
+          0,
+          -15
+        ],
+        "neck_01": [
+          0,
+          0,
+          -20
+        ],
+        "neck_02": [
+          0,
+          0,
+          -15
+        ]
+      },
+      "HturnDown_NKstretch_tgt": {
+        "head": [
+          0,
+          0,
+          -15
+        ],
+        "neck_01": [
+          0,
+          0,
+          -20
+        ],
+        "neck_02": [
+          0,
+          0,
+          -15
+        ]
+      },
+      "HturnDown_NKthroatInhale_tgt": {
+        "head": [
+          0,
+          0,
+          -15
+        ],
+        "neck_01": [
+          0,
+          0,
+          -20
+        ],
+        "neck_02": [
+          0,
+          0,
+          -15
+        ]
+      },
+      "head_turnLeft_tgt": {
+        "head": [
+          25,
+          0,
+          0
+        ],
+        "neck_01": [
+          19.57359114,
+          4.190845941,
+          0.7089448564
+        ],
+        "neck_02": [
+          19.63470805,
+          3.882382477,
+          0.687337184
+        ]
+      },
+      "HturnLeft_NKstretch_tgt": {
+        "head": [
+          25,
+          0,
+          0
+        ],
+        "neck_01": [
+          19.57359114,
+          4.190845941,
+          0.7089448564
+        ],
+        "neck_02": [
+          19.63470805,
+          3.882382477,
+          0.687337184
+        ]
+      },
+      "head_turnRight_tgt": {
+        "head": [
+          -25,
+          0,
+          0
+        ],
+        "neck_01": [
+          -19.57457497,
+          -4.186069084,
+          0.7366732244
+        ],
+        "neck_02": [
+          -19.6337312,
+          -3.887514341,
+          0.6576465374
+        ]
+      },
+      "HturnRight_NKstretch_tgt": {
+        "head": [
+          -25,
+          0,
+          0
+        ],
+        "neck_01": [
+          -19.57457497,
+          -4.186069084,
+          0.7366732244
+        ],
+        "neck_02": [
+          -19.6337312,
+          -3.887514341,
+          0.6576465374
+        ]
+      },
+      "head_turnUp_tgt": {
+        "head": [
+          0,
+          0,
+          25
+        ],
+        "neck_01": [
+          0,
+          0,
+          10
+        ],
+        "neck_02": [
+          0,
+          0,
+          20
+        ]
+      },
+      "HturnUp_NKthroatExhale_tgt": {
+        "head": [
+          0,
+          0,
+          25
+        ],
+        "neck_01": [
+          0,
+          0,
+          10
+        ],
+        "neck_02": [
+          0,
+          0,
+          20
+        ]
+      },
+      "HturnUp_NKstretch_tgt": {
+        "head": [
+          0,
+          0,
+          25
+        ],
+        "neck_01": [
+          0,
+          0,
+          10
+        ],
+        "neck_02": [
+          0,
+          0,
+          20
+        ]
+      },
+      "HturnUp_NKthroatInhale_tgt": {
+        "head": [
+          0,
+          0,
+          25
+        ],
+        "neck_01": [
+          0,
+          0,
+          10
+        ],
+        "neck_02": [
+          0,
+          0,
+          20
+        ]
+      }
+    }
+  },
+  "shape_preview_data": {
+    "preview_head_offset": 80,
+    "orientation": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "anchor_node": "edit_grp|spine_04|spine_05"
+  },
+  "ml_jm_config": {
+    "expressions": {
+      "head_turnUp_tgt": "head_turns",
+      "head_turnDown_tgt": "head_turns",
+      "head_turnLeft_tgt": "head_turns",
+      "head_turnRight_tgt": "head_turns",
+      "head_tiltLeft_tgt": "head_turns",
+      "head_tiltRight_tgt": "head_turns",
+      "HturnUp_NKstretch_tgt": "head_turns",
+      "HturnDown_NKstretch_tgt": "head_turns",
+      "HturnLeft_NKstretch_tgt": "head_turns",
+      "HturnRight_NKstretch_tgt": "head_turns",
+      "HtiltLeft_NKstretch_tgt": "head_turns",
+      "HtiltRight_NKstretch_tgt": "head_turns",
+      "HturnUp_NKthroatExhale_tgt": "head_turns",
+      "HturnUp_NKthroatInhale_tgt": "head_turns",
+      "HturnDown_NKthroatExhale_tgt": "head_turns",
+      "HturnDown_NKthroatInhale_tgt": "head_turns",
+      "mouth_sticky_tgt": "stickies",
+      "mouth_lipsSticky_tgt": "stickies"
+    },
+    "data": {
+      "stickies": [
+        "FACIAL_L_12IPV_LipLower7",
+        "FACIAL_L_12IPV_LipUpper12",
+        "FACIAL_R_12IPV_LipLower7",
+        "FACIAL_L_LipUpperOuter3",
+        "FACIAL_R_LipUpperSkin",
+        "FACIAL_L_LipUpper2",
+        "FACIAL_R_12IPV_LipUpper19",
+        "FACIAL_R_12IPV_LipUpper21",
+        "FACIAL_L_12IPV_LipUpper24",
+        "FACIAL_L_12IPV_LipUpper1",
+        "FACIAL_L_12IPV_LipLower11",
+        "FACIAL_L_12IPV_LipLower4",
+        "FACIAL_L_12IPV_LipLowerOuterSkin1",
+        "FACIAL_L_12IPV_LipUpper19",
+        "FACIAL_R_12IPV_LipLower11",
+        "FACIAL_R_12IPV_LipLower16",
+        "FACIAL_R_12IPV_LipLower18",
+        "FACIAL_R_12IPV_LipUpperSkin",
+        "FACIAL_R_LipLowerOuter3",
+        "FACIAL_L_12IPV_LipLowerSkin",
+        "FACIAL_L_12IPV_LipLowerOuterSkin3",
+        "FACIAL_L_12IPV_LipLowerOuterSkin2",
+        "FACIAL_R_LipLowerOuterSkin",
+        "FACIAL_R_LipUpper3",
+        "FACIAL_L_LipLower3",
+        "FACIAL_R_12IPV_LipLower17",
+        "FACIAL_R_LipCorner3",
+        "FACIAL_R_12IPV_LipLower5",
+        "FACIAL_L_12IPV_LipUpper20",
+        "FACIAL_C_12IPV_LipUpperSkin2",
+        "FACIAL_R_12IPV_LipUpperOuterSkin1",
+        "FACIAL_L_12IPV_LipLower18",
+        "FACIAL_L_12IPV_LipUpper4",
+        "FACIAL_R_12IPV_LipUpper15",
+        "FACIAL_R_LipUpperOuter1",
+        "FACIAL_L_12IPV_LipUpper2",
+        "FACIAL_R_12IPV_LipLower22",
+        "FACIAL_L_12IPV_LipUpper8",
+        "FACIAL_R_12IPV_LipLowerOuterSkin1",
+        "FACIAL_R_12IPV_LipLowerOuterSkin3",
+        "FACIAL_L_LipUpper3",
+        "FACIAL_L_12IPV_LipUpper22",
+        "FACIAL_L_12IPV_LipLower10",
+        "FACIAL_L_12IPV_LipLower24",
+        "FACIAL_R_12IPV_LipUpper11",
+        "FACIAL_R_12IPV_LipLowerOuterSkin2",
+        "FACIAL_R_12IPV_LipUpper17",
+        "FACIAL_L_12IPV_LipLower19",
+        "FACIAL_R_12IPV_LipLower2",
+        "FACIAL_L_12IPV_LipLower20",
+        "FACIAL_C_LipUpper2",
+        "FACIAL_R_LipLowerOuter1",
+        "FACIAL_L_12IPV_LipUpper10",
+        "FACIAL_L_12IPV_LipUpper9",
+        "FACIAL_C_LipUpper3",
+        "FACIAL_L_LipLower2",
+        "FACIAL_R_12IPV_LipUpperOuterSkin2",
+        "FACIAL_R_12IPV_LipUpper10",
+        "FACIAL_L_12IPV_LipUpper7",
+        "FACIAL_R_12IPV_LipLower4",
+        "FACIAL_L_12IPV_LipLower12",
+        "FACIAL_R_12IPV_LipUpper2",
+        "FACIAL_L_LipCorner3",
+        "FACIAL_C_LipLowerSkin",
+        "FACIAL_C_12IPV_LipLowerSkin1",
+        "FACIAL_L_12IPV_LipUpper14",
+        "FACIAL_L_12IPV_LipLower16",
+        "FACIAL_R_LipLowerSkin",
+        "FACIAL_R_12IPV_LipCorner1",
+        "FACIAL_L_12IPV_LipUpperOuterSkin1",
+        "FACIAL_R_LipUpper1",
+        "FACIAL_R_LipUpperOuter3",
+        "FACIAL_L_12IPV_LipLower15",
+        "FACIAL_R_12IPV_LipUpper14",
+        "FACIAL_R_LipUpper2",
+        "FACIAL_L_12IPV_LipCorner1",
+        "FACIAL_L_12IPV_LipCorner3",
+        "FACIAL_R_12IPV_LipUpper18",
+        "FACIAL_R_12IPV_LipLower21",
+        "FACIAL_L_LipCorner2",
+        "FACIAL_L_LipLowerOuter1",
+        "FACIAL_R_12IPV_LipLower14",
+        "FACIAL_C_LipLower2",
+        "FACIAL_R_12IPV_LipUpper22",
+        "FACIAL_L_12IPV_LipLower6",
+        "FACIAL_R_12IPV_LipUpper16",
+        "FACIAL_L_12IPV_LipUpperSkin",
+        "FACIAL_L_12IPV_LipUpperOuterSkin2",
+        "FACIAL_R_LipCorner2",
+        "FACIAL_R_12IPV_LipLower9",
+        "FACIAL_R_12IPV_LipLower13",
+        "FACIAL_R_12IPV_LipLower20",
+        "FACIAL_L_12IPV_LipLower21",
+        "FACIAL_R_12IPV_LipLower8",
+        "FACIAL_R_12IPV_LipUpper23",
+        "FACIAL_L_LipLowerOuter3",
+        "FACIAL_R_12IPV_LipLower23",
+        "FACIAL_L_12IPV_LipLower22",
+        "FACIAL_R_LipLower1",
+        "FACIAL_L_12IPV_LipUpper18",
+        "FACIAL_R_12IPV_LipUpper5",
+        "FACIAL_R_12IPV_LipUpper24",
+        "FACIAL_R_LipUpperOuterSkin",
+        "FACIAL_L_12IPV_LipLower5",
+        "FACIAL_L_LipLowerOuterSkin",
+        "FACIAL_L_LipUpper1",
+        "FACIAL_R_LipCorner1",
+        "FACIAL_R_12IPV_LipUpper13",
+        "FACIAL_R_12IPV_LipUpper1",
+        "FACIAL_R_12IPV_LipLower6",
+        "FACIAL_R_12IPV_LipUpper3",
+        "FACIAL_R_12IPV_LipLower15",
+        "FACIAL_R_LipLowerOuter2",
+        "FACIAL_L_12IPV_LipLower14",
+        "FACIAL_L_12IPV_LipUpper13",
+        "FACIAL_R_12IPV_LipLowerSkin",
+        "FACIAL_L_12IPV_LipCorner2",
+        "FACIAL_L_LipLower1",
+        "FACIAL_L_12IPV_LipUpper15",
+        "FACIAL_R_12IPV_LipUpper20",
+        "FACIAL_L_12IPV_LipUpper17",
+        "FACIAL_R_12IPV_LipUpper9",
+        "FACIAL_R_LipLower2",
+        "FACIAL_L_12IPV_LipUpper21",
+        "FACIAL_C_LipUpperSkin",
+        "FACIAL_R_12IPV_LipCorner3",
+        "FACIAL_L_12IPV_LipUpper23",
+        "FACIAL_L_12IPV_LipUpper3",
+        "FACIAL_R_12IPV_LipLower12",
+        "FACIAL_L_LipUpperOuter1",
+        "FACIAL_C_LipUpper1",
+        "FACIAL_L_LipCorner1",
+        "FACIAL_R_12IPV_LipUpper4",
+        "FACIAL_L_12IPV_LipLower8",
+        "FACIAL_L_12IPV_LipLower2",
+        "FACIAL_R_12IPV_LipLower24",
+        "FACIAL_R_12IPV_LipUpper12",
+        "FACIAL_C_LipLower1",
+        "FACIAL_C_12IPV_LipUpperSkin1",
+        "FACIAL_L_LipUpperSkin",
+        "FACIAL_L_LipLowerSkin",
+        "FACIAL_L_12IPV_LipUpper6",
+        "FACIAL_R_12IPV_LipLower3",
+        "FACIAL_L_12IPV_LipLower17",
+        "FACIAL_L_12IPV_LipLower9",
+        "FACIAL_L_LipUpperOuterSkin",
+        "FACIAL_R_LipLower3",
+        "FACIAL_R_12IPV_LipLower1",
+        "FACIAL_R_12IPV_LipUpper7",
+        "FACIAL_L_12IPV_LipUpper5",
+        "FACIAL_L_12IPV_LipLower13",
+        "FACIAL_L_12IPV_LipLower23",
+        "FACIAL_L_12IPV_LipUpper11",
+        "FACIAL_R_12IPV_LipUpper6",
+        "FACIAL_R_LipUpperOuter2",
+        "FACIAL_R_12IPV_LipCorner2",
+        "FACIAL_L_12IPV_LipLower3",
+        "FACIAL_R_12IPV_LipLower10",
+        "FACIAL_L_12IPV_LipLower1",
+        "FACIAL_R_12IPV_LipLower19",
+        "FACIAL_L_12IPV_LipUpper16",
+        "FACIAL_R_12IPV_LipUpper8",
+        "FACIAL_C_LipLower3",
+        "FACIAL_L_LipLowerOuter2",
+        "FACIAL_L_LipUpperOuter2",
+        "FACIAL_C_12IPV_LipLowerSkin2"
+      ]
+    }
+  },
+  "user_defined_joints": [
+    "neck_01",
+    "neck_02",
+    "head",
+    "FACIAL_C_Jaw",
+    "FACIAL_C_LowerLipRotation",
+    "FACIAL_L_Eye",
+    "FACIAL_R_Eye",
+    "FACIAL_L_EyeParallel",
+    "FACIAL_R_EyeParallel",
+    "FACIAL_L_Pupil",
+    "FACIAL_R_Pupil",
+    "FACIAL_L_EyelashesUpperA1",
+    "FACIAL_R_EyelashesUpperA1",
+    "FACIAL_L_EyelashesUpperA2",
+    "FACIAL_R_EyelashesUpperA2",
+    "FACIAL_L_EyelashesUpperA3",
+    "FACIAL_R_EyelashesUpperA3",
+    "FACIAL_L_EyelashesCornerOuter1",
+    "FACIAL_R_EyelashesCornerOuter1",
+    "FACIAL_C_Skull",
+    "FACIAL_C_Nose",
+    "FACIAL_C_MouthUpper",
+    "FACIAL_C_MouthLower",
+    "FACIAL_C_TeethUpper",
+    "FACIAL_C_TeethLower"
+  ],
+  "export": {
+    "z": {
+      "dna_rotation": [
+        90.0,
+        0.0,
+        0.0
+      ],
+      "body_scene_orient": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "y": {
+      "dna_rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "body_scene_orient": [
+        -90.0,
+        0.0,
+        0.0
+      ]
+    },
+    "material_names": {
+      "head_lod0_mesh": "head_shader_shader",
+      "teeth_lod0_mesh": "teeth_shader_shader",
+      "saliva_lod0_mesh": "saliva_shader_shader",
+      "eyeLeft_lod0_mesh": "eyeLeft_shader_shader",
+      "eyeRight_lod0_mesh": "eyeRight_shader_shader",
+      "eyeshell_lod0_mesh": "eyeshell_shader_shader",
+      "eyelashes_lod0_mesh": "eyelashes_shader_shader",
+      "eyeEdge_lod0_mesh": "eyeEdge_shader_shader",
+      "cartilage_lod0_mesh": "cartilage_shader_shader",
+      "head_lod1_mesh": "head_LOD1_shader_shader",
+      "teeth_lod1_mesh": "teeth_shader_shader",
+      "saliva_lod1_mesh": "saliva_shader_shader",
+      "eyeLeft_lod1_mesh": "eyeLeft_shader_shader",
+      "eyeRight_lod1_mesh": "eyeRight_shader_shader",
+      "eyeshell_lod1_mesh": "eyeshell_shader_shader",
+      "eyelashes_lod1_mesh": "eyelashes_HiLOD_shader_shader",
+      "eyeEdge_lod1_mesh": "eyeEdge_shader_shader",
+      "cartilage_lod1_mesh": "cartilage_shader_shader",
+      "head_lod2_mesh": "head_LOD2_shader_shader",
+      "teeth_lod2_mesh": "teeth_shader_shader",
+      "saliva_lod2_mesh": "saliva_shader_shader",
+      "eyeLeft_lod2_mesh": "eyeLeft_shader_shader",
+      "eyeRight_lod2_mesh": "eyeRight_shader_shader",
+      "eyeshell_lod2_mesh": "eyeshell_shader_shader",
+      "eyelashes_lod2_mesh": "eyelashes_HiLOD_shader_shader",
+      "eyeEdge_lod2_mesh": "eyeEdge_shader_shader",
+      "head_lod3_mesh": "head_LOD3_shader_shader",
+      "teeth_lod3_mesh": "teeth_shader_shader",
+      "eyeLeft_lod3_mesh": "eyeLeft_shader_shader",
+      "eyeRight_lod3_mesh": "eyeRight_shader_shader",
+      "eyeshell_lod3_mesh": "eyeshell_shader_shader",
+      "eyelashes_lod3_mesh": "eyelashes_HiLOD_shader_shader",
+      "eyeEdge_lod3_mesh": "eyeEdge_shader_shader",
+      "head_lod4_mesh": "head_LOD4_shader_shader",
+      "teeth_lod4_mesh": "teeth_shader_shader",
+      "eyeLeft_lod4_mesh": "eyeLeft_shader_shader",
+      "eyeRight_lod4_mesh": "eyeRight_shader_shader",
+      "eyeshell_lod4_mesh": "eyeshell_shader_shader",
+      "head_lod5_mesh": "head_LOD57_shader_shader",
+      "teeth_lod5_mesh": "teeth_shader_shader",
+      "eyeLeft_lod5_mesh": "eyeLeft_shader_shader",
+      "eyeRight_lod5_mesh": "eyeRight_shader_shader",
+      "head_lod6_mesh": "head_LOD57_shader_shader",
+      "teeth_lod6_mesh": "teeth_shader_shader",
+      "eyeLeft_lod6_mesh": "eyeLeft_shader_shader",
+      "eyeRight_lod6_mesh": "eyeRight_shader_shader",
+      "head_lod7_mesh": "head_LOD57_shader_shader",
+      "teeth_lod7_mesh": "teeth_shader_shader",
+      "eyeLeft_lod7_mesh": "eyeLeft_shader_shader",
+      "eyeRight_lod7_mesh": "eyeRight_shader_shader"
+    }
+  }
+}

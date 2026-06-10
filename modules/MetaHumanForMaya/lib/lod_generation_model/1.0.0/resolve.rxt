@@ -1,0 +1,62 @@
+{
+    "append_sys_path": true,
+    "arch": "AMD64",
+    "building": true,
+    "caching": true,
+    "created": 1760015906,
+    "default_patch_lock": "no_lock",
+    "failure_description": null,
+    "from_cache": false,
+    "graph": "{'nodes': [((('fillcolor', '#FFFFAA'), ('fontsize', 10), ('style', 'filled,dashed')), [('_1', '~platform==windows'), ('_2', '~arch==AMD64'), ('_3', '~os==windows-10.0')])], 'edges': []}",
+    "host": "BEG-WD-0290",
+    "implicit_packages": [
+        "~platform==windows",
+        "~arch==AMD64",
+        "~os==windows-10.0"
+    ],
+    "load_time": 0.0,
+    "num_loaded_packages": 0,
+    "os": "windows-10.0",
+    "package_cache_async": true,
+    "package_caching": true,
+    "package_filter": [],
+    "package_orderers": [
+        {
+            "packages": [
+                "*"
+            ],
+            "patterns": [
+                "*.alpha*",
+                "*-alpha*",
+                "*.beta*",
+                "*-beta*",
+                "*.rc*",
+                "*-rc*"
+            ],
+            "type": "depriority_patterns"
+        }
+    ],
+    "package_paths": [
+        "L:/MetaHuman/Rez\\packages\\act",
+        "L:/MetaHuman/Rez\\packages\\int",
+        "L:/MetaHuman/Rez\\packages\\ext",
+        "L:/MetaHuman/Rez\\packages\\loc",
+        "L:/MetaHuman/Rez\\packages\\pip"
+    ],
+    "package_requests": [],
+    "parent_suite_path": null,
+    "patch_locks": {},
+    "platform": "windows",
+    "requested_timestamp": null,
+    "resolved_ephemerals": [],
+    "resolved_packages": [],
+    "rez_path": "L:\\MetaHuman\\Rez\\rez\\3.2.1-14\\windows\\cfg",
+    "rez_version": "3.2.1-14",
+    "serialize_version": "4.9",
+    "solve_time": 0.0,
+    "status": "solved",
+    "suite_context_name": null,
+    "testing": false,
+    "timestamp": 1760015906,
+    "user": "Nemanja.Krza"
+}

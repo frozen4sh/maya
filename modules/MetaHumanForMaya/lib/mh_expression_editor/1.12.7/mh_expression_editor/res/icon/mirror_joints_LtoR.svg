@@ -1,0 +1,15 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="FlipHorizontal">
+        <g id="Vector" opacity="0.5">
+            <path d="M15 8H17V10H15V8ZM15 5H17V7H15V5ZM15 11H17V13H15V11ZM15 14H17V16H15V14ZM15 17H17V19H15V17Z"
+                  fill="white"/>
+            <path d="M15 23H17V25H15V23ZM15 20H17V22H15V20ZM15 26H17V28H15V26ZM15 29H17V31H15V29Z" fill="white"/>
+            <path d="M17 2H15V4H17V2Z" fill="white"/>
+        </g>
+        <path id="Vector 3 (Stroke)" opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.37179 6.6914L2.53195 11.0622L9.98443 23.906L10.0166 9.05673L5.37179 6.6914ZM11.0179 8.44445L5.02358 5.39188L1.35864 11.0326L10.9764 27.6082L11.0179 8.44445Z"
+              fill="white"/>
+        <path id="Vector 4" d="M30.6414 11.0326L26.9764 5.39187L20.9821 8.44444L21.0236 27.6082L30.6414 11.0326Z"
+              fill="white"/>
+    </g>
+</svg>

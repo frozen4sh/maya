@@ -1,0 +1,163 @@
+{
+  "nodes": {
+    "jaw_open": {
+      "name": "jaw_open",
+      "layer": 0,
+      "inputs": [],
+      "outputs": [
+        "MlowerLipBite_Jopen_tgt",
+        "MupperLipBite_Jopen_tgt",
+        "mouth_sticky_tgt"
+      ],
+      "position": [
+        0.0,
+        -55.821000000000005
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "mouth_lowerLipBite": {
+      "name": "mouth_lowerLipBite",
+      "layer": 0,
+      "inputs": [],
+      "outputs": [
+        "MlowerLipBite_Jopen_tgt",
+        "mouth_lipsBite_tgt"
+      ],
+      "position": [
+        0.0,
+        55.821000000000005
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "mouth_upperLipBite": {
+      "name": "mouth_upperLipBite",
+      "layer": 0,
+      "inputs": [],
+      "outputs": [
+        "MupperLipBite_Jopen_tgt",
+        "mouth_lipsBite_tgt"
+      ],
+      "position": [
+        0.0,
+        167.46300000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "MlowerLipBite_Jopen_tgt": {
+      "name": "MlowerLipBite_Jopen_tgt",
+      "layer": 1,
+      "inputs": [
+        "mouth_lowerLipBite",
+        "jaw_open"
+      ],
+      "outputs": [
+        "MlowerLipBite_MupperLipBite_Jopen_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -111.64200000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "MupperLipBite_Jopen_tgt": {
+      "name": "MupperLipBite_Jopen_tgt",
+      "layer": 1,
+      "inputs": [
+        "mouth_upperLipBite",
+        "jaw_open"
+      ],
+      "outputs": [
+        "MlowerLipBite_MupperLipBite_Jopen_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        0.0
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "mouth_lipsBite_tgt": {
+      "name": "mouth_lipsBite_tgt",
+      "layer": 1,
+      "inputs": [
+        "mouth_upperLipBite",
+        "mouth_lowerLipBite"
+      ],
+      "outputs": [
+        "MlowerLipBite_MupperLipBite_Jopen_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        111.64200000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "mouth_sticky_tgt": {
+      "name": "mouth_sticky_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [],
+      "position": [
+        361.27351200000004,
+        223.28400000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "MlowerLipBite_MupperLipBite_Jopen_tgt": {
+      "name": "MlowerLipBite_MupperLipBite_Jopen_tgt",
+      "layer": 2,
+      "inputs": [
+        "MlowerLipBite_Jopen_tgt",
+        "MupperLipBite_Jopen_tgt",
+        "mouth_lipsBite_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        55.821000000000005
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    }
+  }
+}

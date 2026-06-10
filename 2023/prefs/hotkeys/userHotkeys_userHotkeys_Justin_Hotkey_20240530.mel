@@ -1,0 +1,50 @@
+//Maya Preference 2023 (Release 1)
+//
+//
+
+//
+// The hotkey set
+//
+hotkeySet -source "Maya_Default" -current userHotkeys_Justin_Hotkey_20240530;
+//
+// The hotkey contexts and hotkeys
+//
+hotkey -keyShortcut "u" -name ("samkayNameCommand");
+hotkey -keyShortcut "n" -sht -name ("ReversePolygonNormalsNameCommand");
+hotkey -keyShortcut "u" -releaseName ("");
+hotkey -keyShortcut "s" -alt -sht -name ("");
+hotkey -keyShortcut "F12" -name ("HotkeyPreferencesWindowNameCommand");
+hotkey -keyShortcut "r" -alt -sht -name ("Reset_SNameCommand");
+hotkey -keyShortcut "F6" -name ("GraphEditorNameCommand");
+hotkey -keyShortcut "F5" -name ("NodeEditorWindowNameCommand");
+hotkey -keyShortcut "~" -name ("CenterPivotNameCommand");
+hotkey -keyShortcut "z" -ctl -sht -name ("SelectHierarchyNameCommand");
+hotkey -keyShortcut "c" -ctl -name ("CopyKeyNameCommand");
+hotkey -keyShortcut "w" -alt -sht -name ("Reset_TNameCommand");
+hotkey -keyShortcut "!" -name ("FreezeTransformationsNameCommand");
+hotkey -keyShortcut "e" -ctl -sht -name ("");
+hotkey -keyShortcut "e" -alt -sht -name ("Reset_RNameCommand");
+hotkey -keyShortcut "v" -ctl -name ("PasteKeyNameCommand");
+hotkey -keyShortcut "+" -ctl -name ("");
+hotkey -keyShortcut "3" -alt -name ("dR_viewJointsTGLNameCommand");
+hotkey -keyShortcut "r" -ctl -sht -name ("ReferenceEditorNameCommand");
+hotkey -keyShortcut "a" -sht -name ("CombinePolygonsNameCommand");
+hotkey -keyShortcut "w" -ctl -sht -name ("");
+hotkeyCtx -type "Editor" -addClient "outlinerPanel";
+hotkeyCtx -type "Editor" -addClient "graphEditor";
+hotkeyCtx -type "Editor" -addClient "timeEditorPanel";
+hotkeyCtx -type "Editor" -addClient "posePanel";
+hotkeyCtx -type "Editor" -addClient "nodeEditorPanel";
+hotkeyCtx -type "Editor" -addClient "hyperShadePanel";
+hotkeyCtx -type "Editor" -addClient "hyperGraphPanel";
+hotkeyCtx -type "Editor" -addClient "polyTexturePlacementPanel";
+hotkeyCtx -type "Editor" -addClient "shapePanel";
+hotkeyCtx -type "Editor" -addClient "profilerPanel";
+hotkeyCtx -type "Tool" -addClient "polyCutUV";
+hotkeyCtx -type "Tool" -addClient "texCutContext";
+hotkeyCtx -type "Tool" -addClient "bpDraw";
+hotkeyCtx -type "Tool" -addClient "SymmetrizeUVBrush";
+hotkeyCtx -type "Tool" -addClient "sculptMeshCache";
+hotkeyCtx -type "Tool" -addClient "Unfold3DBrush";
+hotkeyCtx -type "Tool" -addClient "xgmIGBrush";
+hotkeyCtx -type "Tool" -addClient "texSculptCacheContext";

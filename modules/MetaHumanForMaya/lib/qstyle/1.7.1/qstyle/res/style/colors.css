@@ -1,0 +1,60 @@
+/* Colors */
+
+:root {
+    --text: #DDDDDD;
+    --selection: #1A354F;
+
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --gray010: #101014;
+    --gray020: #18181C;
+    --gray030: #202024;
+    --gray040: #28282C;
+    --gray050: #303034;
+    --gray060: #404044;
+    --gray070: #505054;
+    --gray080: #606064;
+    --gray090: #707074;
+    --gray100: #808084;
+    --gray110: #AAAAAE;
+    --gray120: #E6E6EA;
+
+    --blue200: #4BBCFE;
+    --lime200: #ACD344;
+    --yellow200: #F9C100;
+    --red200: #F43C52;
+    --pink200: #F553BA;
+    --purple200: #B940FF;
+    --indigo200: #7772FF;
+    --cyan200: #60DAC2;
+    --green200: #59C75C;
+    --amber200: #F68D00;
+    --orange200: #F4632A;
+    --brown200: #AC6F5B;
+
+    --blue300: #72CDFF;
+    --lime300: #C0DE75;
+    --yellow300: #FBD052;
+    --red300: #F55E71;
+    --pink300: #F671C7;
+    --purple300: #D080FE;
+    --indigo300: #ABA9FF;
+    --cyan300: #93E7D8;
+    --green300: #7ED683;
+    --amber300: #F7AF59;
+    --orange300: #F47B4E;
+    --brown300: #C39888;
+
+    --primary200: #0074E4;
+    --success200: #0B873A;
+    --warning200: #FFA640;
+    --error200: #DE3341;
+    --info200: #6C5BB7;
+
+    --primary300: #339BFF;
+    --success300: #11CF59;
+    --warning300: #FFCB8F;
+    --error300: #E97780;
+    --info300: #9D91CF;
+}

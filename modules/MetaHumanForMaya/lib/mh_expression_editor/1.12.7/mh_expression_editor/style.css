@@ -1,0 +1,66 @@
+/* Copyright Epic Games, Inc. All Rights Reserved. */
+
+* {
+    font-size: 8pt;
+    font-family: "Open Sans";
+}
+
+QToolButton[highlight=true] {
+    border: 1px solid #83D360;
+    background-color: #222;
+}
+
+QToolButton[highlight=true]:hover {
+    border: 1px solid #999;
+    background-color: none;
+}
+
+QToolButton[highlight=true]:disabled {
+    border: 1px solid #666;
+    background: none;
+}
+
+QFrame[line=true] {
+    border: 1px solid #2b2b2b;
+}
+
+QFrame[separator=true] {
+    border: 2px solid #565656;
+}
+
+/* Component CSS */
+#ModeLabel {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#SectionTitle {
+    background: #373737;
+}
+
+#SectionContent {
+    background: #444;
+}
+
+#BusyTitle {
+    color: white;
+    font-family: Open Sans;
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+#BusyMessage {
+    font-family: Consolas, Courier, monospace;
+}
+
+#BusyFrame {
+    border-color: #666666;
+    background-color: #363536;
+    border-width: 1px;
+    border-radius: 4px;
+    border-style: solid;
+}
+
+#BusyIndicatorFrame {
+    background-color: rgba(47, 47, 47, 0.6);
+}

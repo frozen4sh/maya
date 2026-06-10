@@ -1,0 +1,104 @@
+import maya.cmds as mc
+import maya.mel as mel
+
+sep = "=" * 60
+joints = mc.ls(type="joint") or []
+total = len(joints)
+print(sep)
+print(f"[OWIS 본 가시성 종합 진단] 총 조인트: {total}개")
+print(sep)
+
+# 1. drawStyle=2 (None)
+ds_none = [j for j in joints if mc.getAttr(f"{j}.drawStyle") == 2]
+print(f"[1] drawStyle=None(2) 조인트: {len(ds_none)}개")
+if ds_none[:5]: print(f"    샘플: {ds_none[:5]}")
+
+# 2. visibility=False
+vis_off = [j for j in joints if not mc.getAttr(f"{j}.visibility")]
+print(f"[2] visibility=False 조인트: {len(vis_off)}개")
+if vis_off[:5]: print(f"    샘플: {vis_off[:5]}")
+
+# 3. lodVisibility=False
+lod_off = [j for j in joints if not mc.getAttr(f"{j}.lodVisibility")]
+print(f"[3] lodVisibility=False 조인트: {len(lod_off)}개")
+if lod_off[:5]: print(f"    샘플: {lod_off[:5]}")
+
+# 4. overrideEnabled & overrideVisibility=False
+ov_off = [j for j in joints
+          if mc.getAttr(f"{j}.overrideEnabled") and not mc.getAttr(f"{j}.overrideVisibility")]
+print(f"[4] overrideEnabled+overrideVisibility=0 조인트: {len(ov_off)}개")
+if ov_off[:5]: print(f"    샘플: {ov_off[:5]}")
+
+# 5. 활성 모델 패널 joints/jointXray 표시 상태
+print(sep)
+active_panel = mc.getPanel(withFocus=True)
+ap_type = mc.getPanel(typeOf=active_panel) if active_panel else "없음"
+print(f"[5] 활성 패널: {active_panel} (type={ap_type})")
+if ap_type == "modelPanel":
+    j_disp   = mc.modelEditor(active_panel, q=True, joints=True)
+    jx_disp  = mc.modelEditor(active_panel, q=True, jointXray=True)
+    print(f"    joints 표시: {j_disp}  |  jointXray: {jx_disp}")
+else:
+    all_panels = mc.getPanel(type="modelPanel") or []
+    for p in all_panels:
+        j_disp  = mc.modelEditor(p, q=True, joints=True)
+        jx_disp = mc.modelEditor(p, q=True, jointXray=True)
+        print(f"    [{p}] joints={j_disp}  jointXray={jx_disp}")
+
+# 6. 모든 modelPanel isolateSelect 상태
+print(sep)
+all_panels = mc.getPanel(type="modelPanel") or []
+print("[6] isolateSelect 상태")
+for p in all_panels:
+    iso = mc.isolateSelect(p, q=True, state=True)
+    print(f"    [{p}] isolateSelect={iso}")
+
+# 7. 조인트가 속한 displayLayer 중 visibility=off
+print(sep)
+print("[7] displayLayer visibility 상태")
+layers = mc.ls(type="displayLayer") or []
+hidden_layers = []
+for layer in layers:
+    if layer == "defaultLayer":
+        continue
+    lv = mc.getAttr(f"{layer}.visibility")
+    members = mc.editDisplayLayerMembers(layer, q=True, noRecurse=True) or []
+    j_in_layer = [m for m in members if mc.objectType(m) == "joint"]
+    if j_in_layer:
+        status = "VISIBLE" if lv else "HIDDEN <--"
+        print(f"    {layer}: visibility={lv} ({status})  조인트수={len(j_in_layer)}")
+        if not lv:
+            hidden_layers.append(layer)
+if not hidden_layers:
+    print("    조인트 포함 레이어 중 숨겨진 것 없음")
+
+# 8. 루트 조인트 월드 바운딩박스 & 위치
+print(sep)
+print("[8] 루트 조인트 위치 및 바운딩박스")
+root_joints = [j for j in joints
+               if not mc.listRelatives(j, parent=True, type="joint")]
+print(f"    루트 조인트 수: {len(root_joints)}개  -> {root_joints[:5]}")
+if root_joints:
+    root = root_joints[0]
+    wp = mc.xform(root, q=True, worldSpace=True, translation=True)
+    print(f"    루트 월드 위치: X={wp[0]:.3f}  Y={wp[1]:.3f}  Z={wp[2]:.3f}")
+    bb = mc.exactWorldBoundingBox(*joints)
+    cx = (bb[0]+bb[3])/2; cy = (bb[1]+bb[4])/2; cz = (bb[2]+bb[5])/2
+    sx = bb[3]-bb[0];      sy = bb[4]-bb[1];      sz = bb[5]-bb[2]
+    print(f"    전체 BBox 중심: ({cx:.1f}, {cy:.1f}, {cz:.1f})")
+    print(f"    전체 BBox 크기: W={sx:.1f}  H={sy:.1f}  D={sz:.1f}")
+    dist = (cx**2 + cy**2 + cz**2) ** 0.5
+    print(f"    원점 거리: {dist:.1f}  {'<<< 경고: 원점에서 매우 멀리 있음!' if dist > 10000 else '(정상 범위)'}")
+    if sx < 0.01 and sy < 0.01 and sz < 0.01:
+        print("    <<< 경고: 바운딩박스 크기가 극단적으로 작음 (스케일=0에 가까움)")
+
+# 9. jointDisplayScale
+print(sep)
+jds = mel.eval("jointDisplayScale -q")
+print(f"[9] jointDisplayScale (전역 조인트 크기): {jds}")
+if jds < 0.001:
+    print("    <<< 경고: jointDisplayScale이 거의 0 — 조인트가 점 크기로 렌더됨")
+
+print(sep)
+print("[진단 완료] 결과를 그대로 복붙해 주세요.")
+print(sep)

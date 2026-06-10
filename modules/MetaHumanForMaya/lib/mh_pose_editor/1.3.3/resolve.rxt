@@ -1,0 +1,284 @@
+{
+    "append_sys_path": true,
+    "arch": "AMD64",
+    "building": true,
+    "caching": true,
+    "created": 1761921704,
+    "default_patch_lock": "no_lock",
+    "failure_description": null,
+    "from_cache": false,
+    "graph": "{'nodes': [((('fillcolor', '#FFFFAA'), ('fontsize', 10), ('style', 'filled,dashed')), [('_1', 'maya-2023|2024|2025|2026'), ('_2', 'python-3.9|3.10|3.11'), ('_3', 'qstyle-1'), ('_4', 'PyDNA-9.4'), ('_5', 'PyDNACalib2-3.2'), ('_6', 'riglogic4_maya-2.10'), ('_7', 'SwingTwistEvaluatorPlugin-1.3'), ('_8', 'MayaUERBFPlugin-2.0'), ('_9', 'mh_assemble_lib-0'), ('_10', '.sanitizers-off'), ('_11', '.json-0'), ('_12', '~platform==windows'), ('_13', '~arch==AMD64'), ('_14', '~os==windows-10.0')]), ((('fillcolor', '#AAFFAA'), ('fontsize', 10), ('style', 'filled')), [('_15', 'platform-windows[]'), ('_16', 'maya-2026[0]'), ('_17', 'python-3.11.9[0]'), ('_18', 'packaging-24.0[0]'), ('_19', 'QtPy-2.4.1[0]'), ('_20', 'qstyle-1.7.1[]'), ('_23', 'PolyAlloc-1.3.18[2]'), ('_24', 'StatusCode-1.2.12[2]'), ('_25', 'TRiO-4.0.21[2]'), ('_26', 'DNA-9.4.7[5]'), ('_27', 'PyDNA-9.4.7[16]'), ('_28', 'RDF-6.4.1[2]'), ('_29', 'DNACalib2-3.2.4[2]'), ('_30', 'PyRDF-6.4.1[4]'), ('_31', 'PyDNACalib2-3.2.4[10]'), ('_32', 'riglogic4_maya-2.10.3.12[6]'), ('_33', 'SwingTwistEvaluatorPlugin-1.3.2[7]'), ('_34', 'MayaUERBFPlugin-2.0.4[1]'), ('_35', 'mh_assemble_lib-0.9.2[]')]), ((('fillcolor', '#F6F6F6'), ('fontsize', 10), ('style', 'filled')), [('_21', '.sanitizers-off'), ('_22', '.json-0')]), ((('fillcolor', '#F6F6F6'), ('fontsize', 10), ('style', 'filled,dashed')), [('_36', '~python-3.11'), ('_37', '!PySide6'), ('_38', '!PySide2'), ('_39', 'platform-windows'), ('_40', 'python-3.7+<3_'), ('_41', 'packaging-24.0'), ('_42', '~maya-2022|2023|2024|2025|2026'), ('_43', '~PySide2-5.15'), ('_44', '~PySide6-6.5'), ('_45', 'python-3.7|3.9|3.10|3.11'), ('_46', 'QtPy-2.4'), ('_47', 'PolyAlloc-1.3.18'), ('_48', 'StatusCode-1.2.12'), ('_49', 'TRiO-4.0.21'), ('_50', 'DNA-9.4.7'), ('_51', 'python-3.11'), ('_52', 'RDF-6.4.1'), ('_53', 'PyDNA-9.4.7'), ('_54', 'PyRDF-6.4.1'), ('_55', 'DNACalib2-3.2.4'), ('_56', '~knitengine-2|4'), ('_57', 'maya-2026')])], 'edges': [((('arrowsize', '0.5'),), [('_1', '_16'), ('_2', '_17'), ('_3', '_20'), ('_4', '_27'), ('_5', '_31'), ('_6', '_32'), ('_7', '_33'), ('_8', '_34'), ('_9', '_35'), ('_10', '_21'), ('_11', '_22'), ('_12', '_15'), ('_16', '_36'), ('_16', '_37'), ('_16', '_38'), ('_16', '_39'), ('_17', '_39'), ('_18', '_40'), ('_19', '_40'), ('_19', '_41'), ('_20', '_42'), ('_20', '_43'), ('_20', '_44'), ('_20', '_45'), ('_20', '_46'), ('_23', '_39'), ('_23', '_10'), ('_24', '_39'), ('_24', '_10'), ('_25', '_47'), ('_25', '_48'), ('_25', '_39'), ('_25', '_10'), ('_26', '_47'), ('_26', '_48'), ('_26', '_49'), ('_26', '_39'), ('_26', '_10'), ('_26', '_11'), ('_27', '_50'), ('_27', '_47'), ('_27', '_48'), ('_27', '_49'), ('_27', '_39'), ('_27', '_10'), ('_27', '_11'), ('_27', '_51'), ('_28', '_47'), ('_28', '_48'), ('_28', '_49'), ('_28', '_39'), ('_28', '_10'), ('_29', '_50'), ('_29', '_47'), ('_29', '_48'), ('_29', '_49'), ('_29', '_52'), ('_29', '_39'), ('_29', '_10'), ('_30', '_52'), ('_30', '_47'), ('_30', '_48'), ('_30', '_49'), ('_30', '_39'), ('_30', '_10'), ('_30', '_51'), ('_31', '_53'), ('_31', '_50'), ('_31', '_47'), ('_31', '_48'), ('_31', '_49'), ('_31', '_54'), ('_31', '_52'), ('_31', '_55'), ('_31', '_39'), ('_31', '_10'), ('_31', '_51'), ('_32', '_56'), ('_32', '_39'), ('_32', '_57'), ('_33', '_56'), ('_33', '_39'), ('_33', '_57'), ('_34', '_56'), ('_34', '_39'), ('_34', '_57'), ('_35', '_4'), ('_35', '_46'), ('_35', '_1'), ('_35', '_2'), ('_35', '_6'), ('_36', '_17'), ('_39', '_15'), ('_40', '_17'), ('_41', '_18'), ('_42', '_16'), ('_45', '_17'), ('_46', '_19'), ('_47', '_23'), ('_48', '_24'), ('_49', '_25'), ('_50', '_26'), ('_51', '_17'), ('_52', '_28'), ('_53', '_27'), ('_54', '_30'), ('_55', '_29'), ('_57', '_16')])]}",
+    "host": "m-shliz4rfju79a",
+    "implicit_packages": [
+        "~platform==windows",
+        "~arch==AMD64",
+        "~os==windows-10.0"
+    ],
+    "load_time": 0.0,
+    "num_loaded_packages": 103,
+    "os": "windows-10.0",
+    "package_cache_async": true,
+    "package_caching": true,
+    "package_filter": [
+        {
+            "excludes": [
+                "glob(maya-*)",
+                "glob(photoshop-*)",
+                "glob(zbrush-*)",
+                "glob(deadline_monitor-*)",
+                "glob(substance_designer-*)",
+                "glob(metashape-*)",
+                "glob(knald-*)"
+            ],
+            "includes": [
+                "range(maya-2023|2025|2026)",
+                "range(photoshop-2022)"
+            ]
+        }
+    ],
+    "package_orderers": [
+        {
+            "packages": [
+                "*"
+            ],
+            "patterns": [
+                "*.alpha*",
+                "*-alpha*",
+                "*.beta*",
+                "*-beta*",
+                "*.rc*",
+                "*-rc*"
+            ],
+            "type": "depriority_patterns"
+        }
+    ],
+    "package_paths": [
+        "L:/MetaHuman/Rez/packages/act",
+        "L:/MetaHuman/Rez/packages/int",
+        "L:/MetaHuman/Rez/packages/ext",
+        "L:/MetaHuman/Rez/packages/loc",
+        "L:/MetaHuman/Rez/packages/pip"
+    ],
+    "package_requests": [
+        "maya-2023|2024|2025|2026",
+        "python-3.9|3.10|3.11",
+        "qstyle-1",
+        "PyDNA-9.4",
+        "PyDNACalib2-3.2",
+        "riglogic4_maya-2.10",
+        "SwingTwistEvaluatorPlugin-1.3",
+        "MayaUERBFPlugin-2.0",
+        "mh_assemble_lib-0",
+        ".sanitizers-off",
+        ".json-0"
+    ],
+    "parent_suite_path": null,
+    "patch_locks": {},
+    "platform": "windows",
+    "requested_timestamp": null,
+    "resolved_ephemerals": [
+        ".sanitizers-off",
+        ".json-0"
+    ],
+    "resolved_packages": [
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": null,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "platform",
+                "repository_type": "filesystem",
+                "version": "windows"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 0,
+                "location": "l:\\metahuman\\rez\\packages\\loc",
+                "name": "maya",
+                "repository_type": "filesystem",
+                "version": "2026"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 0,
+                "location": "l:\\metahuman\\rez\\packages\\ext",
+                "name": "python",
+                "repository_type": "filesystem",
+                "version": "3.11.9"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 0,
+                "location": "l:\\metahuman\\rez\\packages\\pip",
+                "name": "packaging",
+                "repository_type": "filesystem",
+                "version": "24.0"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 0,
+                "location": "l:\\metahuman\\rez\\packages\\pip",
+                "name": "QtPy",
+                "repository_type": "filesystem",
+                "version": "2.4.1"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": null,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "qstyle",
+                "repository_type": "filesystem",
+                "version": "1.7.1"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 2,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "PolyAlloc",
+                "repository_type": "filesystem",
+                "version": "1.3.18"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 2,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "StatusCode",
+                "repository_type": "filesystem",
+                "version": "1.2.12"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 2,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "TRiO",
+                "repository_type": "filesystem",
+                "version": "4.0.21"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 5,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "DNA",
+                "repository_type": "filesystem",
+                "version": "9.4.7"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 16,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "PyDNA",
+                "repository_type": "filesystem",
+                "version": "9.4.7"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 2,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "RDF",
+                "repository_type": "filesystem",
+                "version": "6.4.1"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 2,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "DNACalib2",
+                "repository_type": "filesystem",
+                "version": "3.2.4"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 4,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "PyRDF",
+                "repository_type": "filesystem",
+                "version": "6.4.1"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 10,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "PyDNACalib2",
+                "repository_type": "filesystem",
+                "version": "3.2.4"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 6,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "riglogic4_maya",
+                "repository_type": "filesystem",
+                "version": "2.10.3.12"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 7,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "SwingTwistEvaluatorPlugin",
+                "repository_type": "filesystem",
+                "version": "1.3.2"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": 1,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "MayaUERBFPlugin",
+                "repository_type": "filesystem",
+                "version": "2.0.4"
+            }
+        },
+        {
+            "key": "filesystem.variant",
+            "variables": {
+                "index": null,
+                "location": "l:\\metahuman\\rez\\packages\\int",
+                "name": "mh_assemble_lib",
+                "repository_type": "filesystem",
+                "version": "0.9.2"
+            }
+        }
+    ],
+    "rez_path": "L:\\MetaHuman\\Rez\\rez\\3.2.1-15\\windows\\cfg",
+    "rez_version": "3.2.1-15",
+    "serialize_version": "4.9",
+    "solve_time": 0.1654524803161621,
+    "status": "solved",
+    "suite_context_name": null,
+    "testing": false,
+    "timestamp": 1761921704,
+    "user": "chris.theodosius"
+}

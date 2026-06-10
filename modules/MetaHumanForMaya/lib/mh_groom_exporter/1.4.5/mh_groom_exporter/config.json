@@ -1,0 +1,58 @@
+{
+    "top_group": "groom",
+    "guides_group": "guides",
+    "curves_group": "curves",
+    "user_attribute":
+    {
+        "version_major": {
+            "name": "groom_version_major",
+            "maya_data_type": "short"
+        },
+        "version_minor": {
+            "name": "groom_version_minor",
+            "maya_data_type": "short"
+        },
+        "tool": {
+            "name": "groom_tool",
+            "maya_data_type": "string"
+        },
+        "properties": {
+            "name": "groom_properties",
+            "maya_data_type": "string"
+        }
+    },
+    "attribute":
+    {
+        "guide": {
+            "name": "groom_guide",
+            "maya_data_type": "short",
+            "abc_geom_scope": "con"
+        },
+        "group_id": {
+            "name": "groom_group_id",
+            "maya_data_type": "long",
+            "abc_geom_scope": "con"
+        },
+        "id": {
+            "name": "groom_id",
+            "maya_data_type": "Int32Array",
+            "abc_geom_scope": "uni"
+        },
+        "root_uv": {
+            "name": "groom_root_uv",
+            "maya_data_type": "vectorArray",
+            "abc_type": "vector2",
+            "abc_geom_scope": "uni"
+        },        
+        "color": {
+            "name": "groom_color",
+            "maya_data_type": "vectorArray",
+            "abc_geom_scope": "vtx"
+        },
+        "group_name": {
+            "name": "groom_group_name",
+            "maya_data_type": "string",
+            "abc_geom_scope": "con"
+        }        
+    }
+}

@@ -1,0 +1,872 @@
+{
+  "nodes": {
+    "jaw_open": {
+      "name": "jaw_open",
+      "layer": 0,
+      "inputs": [],
+      "outputs": [
+        "tongue_bendDown_tgt",
+        "tongue_bendUp_tgt",
+        "tongue_down_tgt",
+        "tongue_in_tgt",
+        "tongue_left_tgt",
+        "tongue_narrow_tgt",
+        "tongue_out_tgt",
+        "tongue_press_tgt",
+        "tongue_right_tgt",
+        "tongue_roll_tgt",
+        "tongue_thick_tgt",
+        "tongue_thin_tgt",
+        "tongue_tipDown_tgt",
+        "tongue_tipLeft_tgt",
+        "tongue_tipRight_tgt",
+        "tongue_tipUp_tgt",
+        "tongue_twistLeft_tgt",
+        "tongue_twistRight_tgt",
+        "tongue_up_tgt",
+        "tongue_wide_tgt"
+      ],
+      "position": [
+        0.0,
+        111.64200000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_bendDown_tgt": {
+      "name": "tongue_bendDown_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_bendDownTwistLeft_tgt",
+        "tongue_bendDownTwistRight_tgt",
+        "tongue_outBendDown_tgt",
+        "tongue_upBendDown_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -948.9570000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_bendUp_tgt": {
+      "name": "tongue_bendUp_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_bendUpTwistLeft_tgt",
+        "tongue_bendUpTwistRight_tgt",
+        "tongue_outBendUp_tgt",
+        "tongue_upBendUp_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -837.315
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_down_tgt": {
+      "name": "tongue_down_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [],
+      "position": [
+        361.27351200000004,
+        -725.6730000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_in_tgt": {
+      "name": "tongue_in_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_retraction_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -614.0310000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_left_tgt": {
+      "name": "tongue_left_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_narrowLeft_tgt",
+        "tongue_outLeft_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -502.38900000000007
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_narrow_tgt": {
+      "name": "tongue_narrow_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_dartingOut_tgt",
+        "tongue_narrowLeft_tgt",
+        "tongue_narrowRight_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -390.747
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_out_tgt": {
+      "name": "tongue_out_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_dartingOut_tgt",
+        "tongue_outBendDown_tgt",
+        "tongue_outBendUp_tgt",
+        "tongue_outLeft_tgt",
+        "tongue_outRight_tgt",
+        "tongue_outRoll_tgt",
+        "tongue_outUp_tgt",
+        "tongue_protrusion_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -279.105
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_press_tgt": {
+      "name": "tongue_press_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [],
+      "position": [
+        361.27351200000004,
+        -167.46300000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_right_tgt": {
+      "name": "tongue_right_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_narrowRight_tgt",
+        "tongue_outRight_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        -55.821000000000005
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_roll_tgt": {
+      "name": "tongue_roll_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_outRoll_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        55.821000000000005
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_thick_tgt": {
+      "name": "tongue_thick_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [],
+      "position": [
+        361.27351200000004,
+        167.46300000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_thin_tgt": {
+      "name": "tongue_thin_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [],
+      "position": [
+        361.27351200000004,
+        279.105
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_tipDown_tgt": {
+      "name": "tongue_tipDown_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [],
+      "position": [
+        361.27351200000004,
+        390.747
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_tipLeft_tgt": {
+      "name": "tongue_tipLeft_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [],
+      "position": [
+        361.27351200000004,
+        502.38900000000007
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_tipRight_tgt": {
+      "name": "tongue_tipRight_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [],
+      "position": [
+        361.27351200000004,
+        614.0310000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_tipUp_tgt": {
+      "name": "tongue_tipUp_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [],
+      "position": [
+        361.27351200000004,
+        725.6730000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_twistLeft_tgt": {
+      "name": "tongue_twistLeft_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_bendDownTwistLeft_tgt",
+        "tongue_bendUpTwistLeft_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        837.315
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_twistRight_tgt": {
+      "name": "tongue_twistRight_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_bendDownTwistRight_tgt",
+        "tongue_bendUpTwistRight_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        948.9570000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_up_tgt": {
+      "name": "tongue_up_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_outUp_tgt",
+        "tongue_upBendDown_tgt",
+        "tongue_upBendUp_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        1060.5990000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_wide_tgt": {
+      "name": "tongue_wide_tgt",
+      "layer": 1,
+      "inputs": [
+        "jaw_open"
+      ],
+      "outputs": [
+        "tongue_protrusion_tgt",
+        "tongue_retraction_tgt"
+      ],
+      "position": [
+        361.27351200000004,
+        1172.2410000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_bendDownTwistLeft_tgt": {
+      "name": "tongue_bendDownTwistLeft_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_twistLeft_tgt",
+        "tongue_bendDown_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        -781.494
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_bendDownTwistRight_tgt": {
+      "name": "tongue_bendDownTwistRight_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_twistRight_tgt",
+        "tongue_bendDown_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        -669.8520000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_bendUpTwistLeft_tgt": {
+      "name": "tongue_bendUpTwistLeft_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_twistLeft_tgt",
+        "tongue_bendUp_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        -558.21
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_bendUpTwistRight_tgt": {
+      "name": "tongue_bendUpTwistRight_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_twistRight_tgt",
+        "tongue_bendUp_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        -446.56800000000004
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_dartingOut_tgt": {
+      "name": "tongue_dartingOut_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_narrow_tgt",
+        "tongue_out_tgt"
+      ],
+      "outputs": [
+        "tongue_lateralLeft_tgt",
+        "tongue_lateralRight_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        -334.92600000000004
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_narrowLeft_tgt": {
+      "name": "tongue_narrowLeft_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_narrow_tgt",
+        "tongue_left_tgt"
+      ],
+      "outputs": [
+        "tongue_lateralLeft_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        -223.28400000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_narrowRight_tgt": {
+      "name": "tongue_narrowRight_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_narrow_tgt",
+        "tongue_right_tgt"
+      ],
+      "outputs": [
+        "tongue_lateralRight_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        -111.64200000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_outBendDown_tgt": {
+      "name": "tongue_outBendDown_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_bendDown_tgt",
+        "tongue_out_tgt"
+      ],
+      "outputs": [
+        "tongue_depression_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        0.0
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_outBendUp_tgt": {
+      "name": "tongue_outBendUp_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_bendUp_tgt",
+        "tongue_out_tgt"
+      ],
+      "outputs": [
+        "tongue_elevation_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        111.64200000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_outLeft_tgt": {
+      "name": "tongue_outLeft_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_out_tgt",
+        "tongue_left_tgt"
+      ],
+      "outputs": [
+        "tongue_lateralLeft_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        223.28400000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_outRight_tgt": {
+      "name": "tongue_outRight_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_out_tgt",
+        "tongue_right_tgt"
+      ],
+      "outputs": [
+        "tongue_lateralRight_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        334.92600000000004
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_outRoll_tgt": {
+      "name": "tongue_outRoll_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_roll_tgt",
+        "tongue_out_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        446.56800000000004
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_outUp_tgt": {
+      "name": "tongue_outUp_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_out_tgt",
+        "tongue_up_tgt"
+      ],
+      "outputs": [
+        "tongue_depression_tgt",
+        "tongue_elevation_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        558.21
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_protrusion_tgt": {
+      "name": "tongue_protrusion_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_wide_tgt",
+        "tongue_out_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        669.8520000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_retraction_tgt": {
+      "name": "tongue_retraction_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_wide_tgt",
+        "tongue_in_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        722.5470240000001,
+        781.494
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_upBendDown_tgt": {
+      "name": "tongue_upBendDown_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_bendDown_tgt",
+        "tongue_up_tgt"
+      ],
+      "outputs": [
+        "tongue_depression_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        893.1360000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_upBendUp_tgt": {
+      "name": "tongue_upBendUp_tgt",
+      "layer": 2,
+      "inputs": [
+        "tongue_bendUp_tgt",
+        "tongue_up_tgt"
+      ],
+      "outputs": [
+        "tongue_elevation_tgt"
+      ],
+      "position": [
+        722.5470240000001,
+        1004.7780000000001
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_depression_tgt": {
+      "name": "tongue_depression_tgt",
+      "layer": 3,
+      "inputs": [
+        "tongue_upBendDown_tgt",
+        "tongue_outUp_tgt",
+        "tongue_outBendDown_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        1083.8205360000002,
+        -55.821000000000005
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_elevation_tgt": {
+      "name": "tongue_elevation_tgt",
+      "layer": 3,
+      "inputs": [
+        "tongue_upBendUp_tgt",
+        "tongue_outUp_tgt",
+        "tongue_outBendUp_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        1083.8205360000002,
+        55.821000000000005
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_lateralLeft_tgt": {
+      "name": "tongue_lateralLeft_tgt",
+      "layer": 3,
+      "inputs": [
+        "tongue_narrowLeft_tgt",
+        "tongue_outLeft_tgt",
+        "tongue_dartingOut_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        1083.8205360000002,
+        167.46300000000002
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    },
+    "tongue_lateralRight_tgt": {
+      "name": "tongue_lateralRight_tgt",
+      "layer": 3,
+      "inputs": [
+        "tongue_narrowRight_tgt",
+        "tongue_outRight_tgt",
+        "tongue_dartingOut_tgt"
+      ],
+      "outputs": [],
+      "position": [
+        1083.8205360000002,
+        279.105
+      ],
+      "_active": false,
+      "downstream": false,
+      "upstream": false,
+      "_disabled": false,
+      "_locked": false,
+      "_custom_color": "#3a3a3a"
+    }
+  }
+}

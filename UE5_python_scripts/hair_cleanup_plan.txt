@@ -1,0 +1,138 @@
+================================================================
+ OWIS Hair 정리 계획  (DRY-RUN=False)
+================================================================
+ 변경 103건 | 폴더이동 103 | 이름변경 33 | 충돌 0 | 스킵 0
+ 옵션: UNIFY_ABP_PREFIX=True
+
+[Mem1/Hair_A]
+  [MOVE] MAT MI_CH_Mem1_Hair_A                        -> Material/MI_CH_Mem1_Hair_A
+  [MOVE] RIG ABP_Hair_Mem1_Hair_A                     -> Rig/ABP_HA_Mem1_Hair_A
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem1_Hair_A              -> Rig/SKM_CH_Mem1_Hair_A
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem1_Hair_A_PhysicsAsset -> Rig/SKM_CH_Mem1_Hair_A_PhysicsAsset
+
+[Mem1/Hair_B]
+  [MOVE] MAT MI_CH_Mem1_Hair_B                        -> Material/MI_CH_Mem1_Hair_B
+  [MOVE] RIG ABP_HA_Mem1_Hair_B                       -> Rig/ABP_HA_Mem1_Hair_B
+  [MOVE] RIG Rigs/SKM_CH_Mem1_hair                    -> Rig/SKM_CH_Mem1_Hair
+  [MOVE] RIG Rigs/SKM_CH_Mem1_hair_PhysicsAsset       -> Rig/SKM_CH_Mem1_Hair_PhysicsAsset
+  [MOVE] RIG Rigs/SKM_CH_Mem1_Head                    -> Rig/SKM_CH_Mem1_Head
+  [MOVE] RIG Rigs/SKM_CH_Mem1_Head_PhysicsAsset       -> Rig/SKM_CH_Mem1_Head_PhysicsAsset
+  [MOVE] RIG SKM_HA_Mem1_Hair_B                       -> Rig/SKM_HA_Mem1_Hair_B
+  [MOVE] RIG SKM_HA_Mem1_Hair_B_PhysicsAsset          -> Rig/SKM_HA_Mem1_Hair_B_PhysicsAsset
+
+[Mem1/Hair_C]
+  [MOVE] MAT MI_CH_Mem1_Hair_C                        -> Material/MI_CH_Mem1_Hair_C
+  [MOVE] RIG ABP_HA_Mem1_Hair_C                       -> Rig/ABP_HA_Mem1_Hair_C
+  [MOVE] RIG Rigs/SKM_CH_Mem1_Hair_C_Body_PhysicsAsset -> Rig/SKM_CH_Mem1_Hair_C_Body_PhysicsAsset
+  [MOVE] RIG Rigs/SKM_CH_Mem1_Head                    -> Rig/SKM_CH_Mem1_Head
+  [MOVE] RIG Rigs/SKM_CH_Mem1_Head_PhysicsAsset       -> Rig/SKM_CH_Mem1_Head_PhysicsAsset
+  [MOVE] RIG SKM_HA_Mem1_Hair_C                       -> Rig/SKM_HA_Mem1_Hair_C
+  [MOVE] RIG SKM_HA_Mem1_Hair_C_PhysicsAsset          -> Rig/SKM_HA_Mem1_Hair_C_PhysicsAsset
+
+[Mem2/Hair_A]
+  [MOVE] MAT MI_CH_Mem2_Hair_A                        -> Material/MI_CH_Mem2_Hair_A
+  [MOVE] RIG ABP_Hair_Mem2_Hair_A                     -> Rig/ABP_HA_Mem2_Hair_A
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem2_Hair_A              -> Rig/SKM_CH_Mem2_Hair_A
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem2_Hair_A_PhysicsAsset -> Rig/SKM_CH_Mem2_Hair_A_PhysicsAsset
+
+[Mem2/Hair_B]
+  [MOVE] MAT MI_CH_Mem2_Hair_B                        -> Material/MI_CH_Mem2_Hair_B
+  [MOVE] RIG ABP_HA_Mem2_Hair_B                       -> Rig/ABP_HA_Mem2_Hair_B
+  [MOVE] RIG SKM_HA_Mem2_Hair_B                       -> Rig/SKM_HA_Mem2_Hair_B
+  [MOVE] RIG SKM_HA_Mem2_Hair_B_Physics               -> Rig/SKM_HA_Mem2_Hair_B_PhysicsAsset
+
+[Mem2/Hair_C]
+  [MOVE] MAT MI_CH_Mem2_Hair_C                        -> Material/MI_CH_Mem2_Hair_C
+  [MOVE] RIG ABP_CH_Mem2_Hair_C                       -> Rig/ABP_HA_Mem2_Hair_C
+  [MOVE] RIG ABP_CH_Mem2_Hair_C_MKT_TMV               -> Rig/ABP_HA_Mem2_Hair_C_MKT_TMV
+  [MOVE] RIG Rigs/SKM_CH_Mem2_Hair_C_Body             -> Rig/SKM_CH_Mem2_Hair_C_Body
+  [MOVE] RIG Rigs/SKM_CH_Mem2_Hair_C_Body_PhysicsAsset -> Rig/SKM_CH_Mem2_Hair_C_Body_PhysicsAsset
+  [MOVE] RIG SKM_HA_Mem2_Hair_C                       -> Rig/SKM_HA_Mem2_Hair_C
+  [MOVE] RIG SKM_HA_Mem2_Hair_C_PhysicsAsset          -> Rig/SKM_HA_Mem2_Hair_C_PhysicsAsset
+
+[Mem3/Hair_A]
+  [MOVE] MAT MI_CH_Mem3_Hair_A                        -> Material/MI_CH_Mem3_Hair_A
+  [MOVE] RIG ABP_Hair_Mem3_Hair_A                     -> Rig/ABP_HA_Mem3_Hair_A
+  [MOVE] RIG ABP_Hair_Mem3_Hair_A_Child_MVA_Top       -> Rig/ABP_HA_Mem3_Hair_A_Child_MVA_Top
+  [MOVE] RIG ABP_Hair_Mem3_Hair_A_Child_test          -> Rig/ABP_HA_Mem3_Hair_A_Child_test
+  [MOVE] RIG ABP_Hair_Mem3_Hair_A_CSD                 -> Rig/ABP_HA_Mem3_Hair_A_CSD
+  [MOVE] RIG ABP_Hair_Mem3_Hair_A_LooseFit            -> Rig/ABP_HA_Mem3_Hair_A_LooseFit
+  [MOVE] RIG MV_A/ABP_Hair_Mem3_Hair_A_MV_A           -> Rig/ABP_HA_Mem3_Hair_A_MV_A
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem3_Hair_A              -> Rig/SKM_CH_Mem3_Hair_A
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem3_Hair_A_PhysicsAsset -> Rig/SKM_CH_Mem3_Hair_A_PhysicsAsset
+
+[Mem3/Hair_B]
+  [MOVE] MAT MI_CH_Mem3_Hair_B                        -> Material/MI_CH_Mem3_Hair_B
+  [MOVE] MAT MI_CH_Mem3_Hair_B_BabyHair               -> Material/MI_CH_Mem3_Hair_B_BabyHair
+  [MOVE] RIG ABP_HA_Mem3_Hair_B                       -> Rig/ABP_HA_Mem3_Hair_B
+  [MOVE] RIG Rigs/SKM_CH_Mem3_Hair_B                  -> Rig/SKM_CH_Mem3_Hair_B
+  [MOVE] RIG Rigs/SKM_CH_Mem3_Hair_B_Body_PhysicsAsset -> Rig/SKM_CH_Mem3_Hair_B_Body_PhysicsAsset
+  [MOVE] RIG Rigs/SKM_CH_Mem3_Head                    -> Rig/SKM_CH_Mem3_Head
+  [MOVE] RIG Rigs/SKM_CH_Mem3_Head_PhysicsAsset       -> Rig/SKM_CH_Mem3_Head_PhysicsAsset
+  [MOVE] RIG SKM_HA_Mem3_Hair_B                       -> Rig/SKM_HA_Mem3_Hair_B
+  [MOVE] RIG SKM_HA_Mem3_Hair_B_PhysicsAsset          -> Rig/SKM_HA_Mem3_Hair_B_PhysicsAsset
+
+[Mem3/Hair_C]
+  [MOVE] MAT MI_CH_Mem3_Hair_C                        -> Material/MI_CH_Mem3_Hair_C
+  [MOVE] MAT MI_CH_Mem3_Hair_C_BabyHair               -> Material/MI_CH_Mem3_Hair_C_BabyHair
+  [MOVE] RIG ABP_HA_Mem3_Hair_C                       -> Rig/ABP_HA_Mem3_Hair_C
+  [MOVE] RIG Rigs/SKM_CH_Mem3_Hair                    -> Rig/SKM_CH_Mem3_Hair
+  [MOVE] RIG Rigs/SKM_CH_Mem3_Hair_PhysicsAsset       -> Rig/SKM_CH_Mem3_Hair_PhysicsAsset
+  [MOVE] RIG Rigs/SKM_CH_Mem3_Head                    -> Rig/SKM_CH_Mem3_Head
+  [MOVE] RIG Rigs/SKM_CH_Mem3_Head_PhysicsAsset       -> Rig/SKM_CH_Mem3_Head_PhysicsAsset
+  [MOVE] RIG SKM_HA_Mem3_Hair_C                       -> Rig/SKM_HA_Mem3_Hair_C
+  [MOVE] RIG SKM_HA_Mem3_Hair_C_Physics               -> Rig/SKM_HA_Mem3_Hair_C_PhysicsAsset
+
+[Mem4/Hair_A]
+  [MOVE] MAT MI_CH_Mem4_Hair_A                        -> Material/MI_CH_Mem4_Hair_A
+  [MOVE] RIG ABP_Hair_Mem4_Hair_A                     -> Rig/ABP_HA_Mem4_Hair_A
+  [MOVE] RIG ABP_Hair_Mem4_Hair_A_Justin              -> Rig/ABP_HA_Mem4_Hair_A_Justin
+  [MOVE] RIG ABP_Hair_Mem4_Hair_A_Justin_backup       -> Rig/ABP_HA_Mem4_Hair_A_Justin_backup
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem4_Hair_A              -> Rig/SKM_CH_Mem4_Hair_A
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem4_Hair_A_PhysicsAsset -> Rig/SKM_CH_Mem4_Hair_A_PhysicsAsset
+
+[Mem4/Hair_B]
+  [MOVE] MAT MI_CH_Mem4_Hair_B                        -> Material/MI_CH_Mem4_Hair_B
+  [MOVE] RIG ABP_HA_Mem4_Hair_B                       -> Rig/ABP_HA_Mem4_Hair_B
+  [MOVE] RIG SKM_HA_Mem4_Hair_B                       -> Rig/SKM_HA_Mem4_Hair_B
+  [MOVE] RIG SKM_HA_Mem4_Hair_B_PhysicsAsset          -> Rig/SKM_HA_Mem4_Hair_B_PhysicsAsset
+
+[Mem4/Hair_C]
+  [MOVE] MAT MI_CH_Mem4_Hair_C                        -> Material/MI_CH_Mem4_Hair_C
+  [MOVE] RIG ABP_HA_Mem4_Hair_C                       -> Rig/ABP_HA_Mem4_Hair_C
+  [MOVE] RIG Rigs/SKM_CH_Mem4_Body                    -> Rig/SKM_CH_Mem4_Body
+  [MOVE] RIG Rigs/SKM_CH_Mem4_Head                    -> Rig/SKM_CH_Mem4_Head
+  [MOVE] RIG Rigs/SKM_CH_Mem4_Head_PhysicsAsset       -> Rig/SKM_CH_Mem4_Head_PhysicsAsset
+  [MOVE] RIG Rigs/SKM_CH_Mem4_MVB_Hair_PhysicsAsset   -> Rig/SKM_CH_Mem4_MVB_Hair_PhysicsAsset
+  [MOVE] RIG SKM/SKM_HA_Mem4_Hair_C                   -> Rig/SKM_HA_Mem4_Hair_C
+  [MOVE] RIG SKM/SKM_HA_Mem4_Hair_C_PhysicsAsset      -> Rig/SKM_HA_Mem4_Hair_C_PhysicsAsset
+
+[Mem5/Hair_A]
+  [MOVE] MAT MI_CH_Mem5_Hair_A                        -> Material/MI_CH_Mem5_Hair_A
+  [MOVE] RIG ABP_Hair_Mem5_Hair_A                     -> Rig/ABP_HA_Mem5_Hair_A
+  [MOVE] RIG ABP_Hair_Mem5_Hair_A_Justin              -> Rig/ABP_HA_Mem5_Hair_A_Justin
+  [MOVE] RIG ABP_Hair_Mem5_Hair_A_new                 -> Rig/ABP_HA_Mem5_Hair_A_new
+  [MOVE] RIG ABP_Hair_Mem5_Hair_A_SCB_MKT_Goldenbell  -> Rig/ABP_HA_Mem5_Hair_A_SCB_MKT_Goldenbell
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem5_Hair_A              -> Rig/SKM_CH_Mem5_Hair_A
+  [MOVE] RIG SKM/SKM_CH_Hair_Mem5_Hair_A_PhysicsAsset -> Rig/SKM_CH_Mem5_Hair_A_PhysicsAsset
+
+[Mem5/Hair_B]
+  [MOVE] MAT MI_CH_Mem5_Hair_B                        -> Material/MI_CH_Mem5_Hair_B
+  [MOVE] MAT Rigs/Skin_Mat                            -> Material/Skin_Mat
+  [MOVE] RIG ABP_HA_Mem5_Hair_B                       -> Rig/ABP_HA_Mem5_Hair_B
+  [MOVE] RIG Rigs/SKM_CH_Mem5_Hair                    -> Rig/SKM_CH_Mem5_Hair
+  [MOVE] RIG Rigs/SKM_CH_Mem5_Hair_PhysicsAsset       -> Rig/SKM_CH_Mem5_Hair_PhysicsAsset
+  [MOVE] RIG Rigs/SKM_CH_Mem5_Head                    -> Rig/SKM_CH_Mem5_Head
+  [MOVE] RIG Rigs/SKM_CH_Mem5_Head_PhysicsAsset       -> Rig/SKM_CH_Mem5_Head_PhysicsAsset
+  [MOVE] RIG SKM_HA_Mem5_Hair_B                       -> Rig/SKM_HA_Mem5_Hair_B
+  [MOVE] RIG SKM_HA_Mem5_Hair_B_Physics               -> Rig/SKM_HA_Mem5_Hair_B_PhysicsAsset
+
+[Mem5/Hair_C]
+  [MOVE] MAT MI_CH_Mem5_Hair_C                        -> Material/MI_CH_Mem5_Hair_C
+  [MOVE] RIG ABP_HA_Mem5_Hair_C                       -> Rig/ABP_HA_Mem5_Hair_C
+  [MOVE] RIG Rigs/SKM_CH_Mem5_Hair_C                  -> Rig/SKM_CH_Mem5_Hair_C
+  [MOVE] RIG Rigs/SKM_CH_Mem5_Hair_C_Body_PhysicsAsset -> Rig/SKM_CH_Mem5_Hair_C_Body_PhysicsAsset
+  [MOVE] RIG Rigs/SKM_CH_Mem5_Head                    -> Rig/SKM_CH_Mem5_Head
+  [MOVE] RIG Rigs/SKM_CH_Mem5_Head_PhysicsAsset       -> Rig/SKM_CH_Mem5_Head_PhysicsAsset
+  [MOVE] RIG SKM_HA_Mem5_Hair_C                       -> Rig/SKM_HA_Mem5_Hair_C
+  [MOVE] RIG SKM_HA_Mem5_Hair_C_Physics               -> Rig/SKM_HA_Mem5_Hair_C_PhysicsAsset

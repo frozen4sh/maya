@@ -1,0 +1,2 @@
+path = python
+args = -u -c "import qtpy.__main__ as m;m.main()"

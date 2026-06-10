@@ -1,0 +1,9 @@
+{
+  "transform_mapping": {
+    "root_drv": "root"
+  },
+  "search": "(?P<transform>[a-zA-Z0-9_]+)(?P<suffix>_drv)",
+  "replace": "{transform}",
+  "map_hierarchy": true,
+  "mapping_mode": "regex"
+}

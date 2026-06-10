@@ -1,0 +1,13 @@
+/* Specific CSS */
+
+#MetaHumanButton {
+    border: none;
+    background-color: transparent;
+}
+
+#PythonButton {
+    border: 1px solid var(--gray010);
+    border-radius: 4px;
+    color: var(--blue300);
+    background-color: var(--gray030);
+}
