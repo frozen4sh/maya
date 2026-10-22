@@ -1,0 +1,25 @@
+{
+    "context": "ttf",
+    "history": [
+        [
+            "SequenceEditor",
+            "MultiCutTool",
+            "XgCreateIgSplineEditor",
+            "XgmCreateInteractiveGroomSplines",
+            "XgmSetCombBrushTool",
+            "XgmSplineCacheExport",
+            "OpenXGenEditor",
+            "SetMeshSculptTool",
+            "SculptGeometryTool",
+            "Symmetrize",
+            "MirrorPolygonGeometry",
+            "CleanupPolygon",
+            "QuadDrawTool",
+            "PolyRetopo"
+        ],
+        [],
+        [],
+        []
+    ],
+    "version": "0.21"
+}

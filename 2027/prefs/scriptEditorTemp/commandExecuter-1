@@ -1,0 +1,2 @@
+// Select one camera in the Outliner, then drag this file onto Maya.
+python("import runpy; runpy.run_path('D:/Justin/PJT_2026/26.10_Baseball/Maya/scripts/maya_billboard_gap_mask.py', run_name='__main__')");
